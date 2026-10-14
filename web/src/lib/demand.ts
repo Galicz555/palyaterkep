@@ -101,17 +101,55 @@ export function demandColor(demands: Demands | null): [number, number, number] {
 /** The polar angle, from the pole, of the cap's rim: where a pure demand lands. */
 export const CAP_ANGLE = deg(84);
 
+/** How far a mix is from the triangle's centre: 0 balanced, 1 a pure demand. */
+export const triangleRadius = (mix: Mix): number => {
+  const [east, north] = triangle(mix);
+  return Math.min(1, Math.hypot(east, north));
+};
+
+/**
+ * A monotone stretch of the triangle radius, built from the radii of the roles themselves: the
+ * radius that a share `fill` of the roles lie within is moved towards where an even spread over
+ * the cap would put it (a cap's area grows with the radius, so the median goes to the square root
+ * of one half). Order is kept, so a mix closer to a corner stays closer to its star, and 0 and 1
+ * stay where they are; `fill` 0 leaves every radius as it is.
+ */
+export function radialStretch(radii: number[], fill = 1): (radius: number) => number {
+  const sorted = [...radii].sort((a, b) => a - b);
+  const steps = 64;
+  const xs = [0];
+  const ys = [0];
+  for (let k = 1; k < steps && sorted.length > 0; k++) {
+    const x = sorted[Math.floor((k / steps) * (sorted.length - 1))]!;
+    if (x <= xs.at(-1)! + 1e-9 || x >= 1) continue;
+    xs.push(x);
+    ys.push((1 - fill) * x + fill * Math.sqrt(k / steps));
+  }
+  xs.push(1);
+  ys.push(1);
+  return (radius) => {
+    const r = Math.min(1, Math.max(0, radius));
+    let hi = 1;
+    while (xs[hi]! < r) hi++;
+    const t = (r - xs[hi - 1]!) / (xs[hi]! - xs[hi - 1]!);
+    return ys[hi - 1]! + t * (ys[hi]! - ys[hi - 1]!);
+  };
+}
+
 /**
  * The triangle laid on a spherical cap (y is the pole, north is -z): a balanced mix lands on the
  * pole and a pure demand at CAP_ANGLE from it, in its corner's direction, so the mixes spread over
  * a good part of a hemisphere. The distance from the pole follows the distance from the triangle's
  * centre (azimuthal equidistant), so what is close on the triangle stays close on the sphere.
- * `curve` below 1 pushes the middle outwards (the distance from the centre is raised to it), for
- * mixes that crowd near the middle; the centre and the corners stay where they are.
+ * `stretch` (see `radialStretch`) moves the middle outwards, for mixes that crowd near it; it must
+ * be monotone and keep 0 and 1 where they are.
  */
-export function capDirection(mix: Mix, curve = 1): [number, number, number] {
+export function capDirection(
+  mix: Mix,
+  stretch: (radius: number) => number = (r) => r,
+): [number, number, number] {
   const [east, north] = triangle(mix);
-  const polar = Math.pow(Math.min(1, Math.hypot(east, north)), curve) * CAP_ANGLE;
+  const polar = stretch(triangleRadius(mix)) * CAP_ANGLE;
   const azimuth = Math.atan2(east, north);
   const ring = Math.sin(polar);
   return [ring * Math.sin(azimuth), Math.cos(polar), -ring * Math.cos(azimuth)];

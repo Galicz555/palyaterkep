@@ -8,7 +8,9 @@ import {
   stretched,
   magnitudeOf,
   mixOf,
+  radialStretch,
   triangle,
+  triangleRadius,
   type Mix,
 } from "../src/lib/demand.ts";
 
@@ -66,7 +68,7 @@ describe("the triangle on a cap", () => {
       [0.1, 0.1, 0.8],
     ];
     for (const m of mixes) {
-      const d = capDirection(m, 0.6);
+      const d = capDirection(m, radialStretch([0.05, 0.1, 0.2, 0.3, 0.4, 0.9]));
       expect(Math.hypot(...d)).toBeCloseTo(1);
       expect(polar(d)).toBeLessThanOrEqual(CAP_ANGLE + 1e-9);
     }
@@ -74,6 +76,43 @@ describe("the triangle on a cap", () => {
 
   it("puts the middle of an edge halfway between the centre and a corner", () => {
     expect(Math.hypot(...triangle([0.5, 0.5, 0]))).toBeCloseTo(0.5);
+  });
+});
+
+describe("the radial stretch", () => {
+  // Radii bunched near the middle, as the real roles' are: half of them within 0.3.
+  const crowded = Array.from({ length: 500 }, (_, k) => 0.6 * Math.pow(k / 499, 2.2) + 0.05);
+  const stretch = radialStretch(crowded);
+
+  it("keeps the centre and the corners where they are", () => {
+    expect(stretch(0)).toBeCloseTo(0);
+    expect(stretch(1)).toBeCloseTo(1);
+  });
+
+  it("never reorders: a mix closer to a corner stays closer on the cap", () => {
+    let last = -1;
+    for (let k = 0; k <= 200; k++) {
+      const at = stretch(k / 200);
+      expect(at).toBeGreaterThanOrEqual(last);
+      last = at;
+    }
+    const near = capDirection([0.5, 0.3, 0.2], stretch);
+    const far = capDirection([0.7, 0.2, 0.1], stretch);
+    expect(polar(far)).toBeGreaterThan(polar(near));
+  });
+
+  it("moves the median of the crowd to where an even spread over the cap has it", () => {
+    const sorted = [...crowded].sort((a, b) => a - b);
+    const median = stretch(sorted[Math.floor(sorted.length / 2)]!);
+    expect(median).toBeGreaterThan(Math.sqrt(0.5) - 0.03);
+    expect(median).toBeLessThan(Math.sqrt(0.5) + 0.03);
+    expect(radialStretch(crowded, 0)(0.3)).toBeCloseTo(0.3);
+  });
+
+  it("is the identity for no roles, and measures a mix from the triangle's centre", () => {
+    expect(radialStretch([])(0.4)).toBeCloseTo(0.4);
+    expect(triangleRadius(BALANCED)).toBeCloseTo(0);
+    expect(triangleRadius([0, 1, 0])).toBeCloseTo(1);
   });
 });
 

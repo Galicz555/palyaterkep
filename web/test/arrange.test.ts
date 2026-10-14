@@ -1,6 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { arranger, type Arrangement } from "../src/lib/arrange.ts";
-import { capDirection, magnitudeOf, mixOf } from "../src/lib/demand.ts";
+import { arranger, CAP_FILL, type Arrangement } from "../src/lib/arrange.ts";
+import {
+  capDirection,
+  magnitudeOf,
+  mixOf,
+  radialStretch,
+  triangleRadius,
+} from "../src/lib/demand.ts";
 import { R_OUT } from "../src/lib/layout.ts";
 import { mapData } from "../src/lib/server/data.ts";
 
@@ -48,13 +54,27 @@ describe("layout A, the sphere", () => {
   });
 
   it("points each role the way its mix says, within the spread of roles that share a score", () => {
+    const stretch = radialStretch(
+      data.roles.filter((r) => r.demands).map((r) => triangleRadius(mixOf(r.demands))),
+      CAP_FILL,
+    );
     data.roles.forEach((r, i) => {
       const p = at(sphere, i);
-      const want = capDirection(mixOf(r.demands), 0.55);
+      const want = capDirection(mixOf(r.demands), stretch);
       const along = (p[0] * want[0] + p[1] * want[1] + p[2] * want[2]) / Math.hypot(...p);
       // 79 roles share one triple at worst: their spiral is about 15 units wide on a shell 30 to 100.
       expect(along, r.id).toBeGreaterThan(Math.cos((25 * Math.PI) / 180));
     });
+  });
+
+  it("spreads the roles over the cap: the median role is past 0.65 of the way to the rim", () => {
+    const polar = data.roles
+      .map((r, i) => ({ r, p: at(sphere, i) }))
+      .filter(({ r }) => r.demands)
+      .map(({ p }) => Math.acos(p[1] / Math.hypot(...p)) / ((84 * Math.PI) / 180))
+      .sort((a, b) => a - b);
+    expect(polar[Math.floor(polar.length / 2)]!).toBeGreaterThan(0.65);
+    expect(polar[Math.floor(polar.length * 0.9)]!).toBeGreaterThan(0.88);
   });
 
   it("does not stack two roles on one spot, though 516 triples are shared", () => {
