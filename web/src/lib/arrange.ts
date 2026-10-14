@@ -35,6 +35,8 @@ export type FrameSpec =
       kind: "sphere";
       /** One glass shell per level, innermost first. */
       shells: { level: Level; radius: number }[];
+      /** Where the level names stand on the front meridian, degrees from the top; 72 if absent. */
+      labelPolar?: number;
       /** The three demand stars, in `DEMANDS` order. */
       anchors: { label: string; at: Vec3 }[];
     }
@@ -201,6 +203,70 @@ function sphere(data: MapData): Arrangement {
     free: true,
     extent: R_OUT,
     sizes,
+    alpha: 0.6,
+  };
+}
+
+/** The latitude, in degrees, that the least and the most demanding roles reach. */
+const LATITUDE = 72;
+
+/**
+ * The whole sphere: the direction of the mix is the longitude (the angle of the role's place on the
+ * triangle, so it points at the star of the demand it asks most of), the magnitude the latitude
+ * and the level the shell. A balanced role has no direction: the triangle's angle is meaningless
+ * near its centre, so those take a hash of the id.
+ */
+function globe(data: MapData): Arrangement {
+  const { roles } = data;
+  const positions = new Float32Array(roles.length * 3);
+  const offsets = spread(
+    roles.map((r) => `${r.level}|${mixKey(r.demands)}|${Math.round(magnitudeOf(r.demands) * 40)}`),
+    SPACING,
+  );
+  roles.forEach((role, i) => {
+    const [east, north] = triangle(mixOf(role.demands));
+    const around =
+      Math.hypot(east, north) < 0.05 ? hash(role.id) * 2 * Math.PI : Math.atan2(east, north);
+    const lat = deg(
+      Math.max(-1, Math.min(1, (magnitudeOf(role.demands) - 0.51) / 0.26)) * LATITUDE,
+    );
+    const dir: Vec3 = [
+      Math.cos(lat) * Math.sin(around),
+      Math.sin(lat),
+      -Math.cos(lat) * Math.cos(around),
+    ];
+    const radius = SHELL[role.level - 1]! - SHELL_BAND * hash(role.id);
+    const [e1, e2] = tangents(dir);
+    const dx = offsets[i * 2]!;
+    const dy = offsets[i * 2 + 1]!;
+    const p: Vec3 = [0, 1, 2].map((k) => dir[k]! * radius + e1[k]! * dx + e2[k]! * dy) as Vec3;
+    const keep = radius / Math.hypot(...p);
+    positions.set([p[0] * keep, p[1] * keep, p[2] * keep], i * 3);
+  });
+  // Roles of one level crowd where the mixes do: keep neighbours on a shell 1.3 units apart.
+  relax(
+    positions,
+    roles.map((r) => r.level),
+    [0, 1, 2],
+    1.3,
+  );
+  return {
+    id: "J",
+    positions,
+    frame: {
+      kind: "sphere",
+      shells: SHELL.map((radius, k) => ({ level: (k + 1) as Level, radius })),
+      labelPolar: 118,
+      // The three demand stars stand on the equator, at the longitude of their corner.
+      anchors: DEMANDS.map((d, k) => ({
+        label: d.label,
+        at: [Math.sin(CORNER_ANGLE[k]!) * R_OUT, 0, -Math.cos(CORNER_ANGLE[k]!) * R_OUT] as Vec3,
+      })),
+    },
+    home: { target: [0, 0, 0], az: deg(20), pol: deg(68), fit: [R_OUT * 1.15, R_OUT * 1.15] },
+    free: true,
+    extent: R_OUT,
+    sizes: null,
     alpha: 0.6,
   };
 }
@@ -411,6 +477,8 @@ export function arranger(data: MapData): (id: LayoutId, axis?: number) => Arrang
         return tetra(data);
       case "F":
         return nebula(data);
+      case "J":
+        return globe(data);
       case "G":
         return { ...disc(id, plan, data), colors: demandColors(data) };
     }

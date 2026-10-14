@@ -428,7 +428,7 @@ function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame
   }));
   // The level names run down one meridian on the side facing the camera, just below the data.
   const shellPins = spec.shells.map((shell) => {
-    const polar = (72 * Math.PI) / 180;
+    const polar = ((spec.labelPolar ?? 72) * Math.PI) / 180;
     const r = shell.radius;
     return {
       e: p.pin("lbl-shell", `${shell.level} ${LEVEL_NAMES[shell.level]}`),

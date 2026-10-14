@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { arranger, type Arrangement } from "../src/lib/arrange.ts";
-import { capDirection, mixOf } from "../src/lib/demand.ts";
+import { capDirection, magnitudeOf, mixOf } from "../src/lib/demand.ts";
+import { R_OUT } from "../src/lib/layout.ts";
 import { mapData } from "../src/lib/server/data.ts";
 
 // The real roles with the real demand data: a layout is only as good as it is on the 3047 roles.
@@ -195,9 +196,32 @@ describe("layout F, the nebula", () => {
   });
 });
 
+describe("layout J, the whole sphere", () => {
+  const globe = place("J");
+  it("keeps the level as the distance from the middle, inside its shell", () => {
+    data.roles.forEach((r, i) => {
+      const d = Math.hypot(...at(globe, i));
+      expect(d).toBeLessThan(R_OUT + 8);
+      expect(d).toBeGreaterThan(0.3 * R_OUT - 10);
+    });
+    const mean = (level: number) => {
+      const own = data.roles.map((r, i) => (r.level === level ? Math.hypot(...at(globe, i)) : -1));
+      const kept = own.filter((d) => d >= 0);
+      return kept.reduce((s, d) => s + d, 0) / kept.length;
+    };
+    for (let level = 2; level <= 5; level++) expect(mean(level)).toBeGreaterThan(mean(level - 1));
+  });
+  it("puts the most demanding role higher up the sphere than the lightest", () => {
+    const mags = data.roles.map((r) => magnitudeOf(r.demands));
+    const high = at(globe, mags.indexOf(Math.max(...mags)));
+    const low = at(globe, mags.indexOf(Math.min(...mags)));
+    expect(high[1]! / Math.hypot(...high)).toBeGreaterThan(low[1]! / Math.hypot(...low));
+  });
+});
+
 describe("every layout", () => {
   it("has finite positions, a camera that has something to show and a size per role", () => {
-    for (const id of ["A", "B", "C", "D", "F", "G"] as const) {
+    for (const id of ["A", "B", "C", "D", "F", "G", "J"] as const) {
       const arrangement = place(id);
       expect(arrangement.positions.every(Number.isFinite)).toBe(true);
       expect(arrangement.home.fit[0]).toBeGreaterThan(0);
