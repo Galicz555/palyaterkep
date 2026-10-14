@@ -21,31 +21,31 @@ export const MAX_MARK_PX = 30;
 const MANAGE_GROW = 0.4;
 const MANAGE_GAIN = 0.6;
 /** The four-point spikes of a held role: their length in core radii, and how bright they are. */
-const SPIKE_REACH = 4.5;
-const SPIKE_GAIN = 0.8;
+const SPIKE_REACH = 6.0;
+const SPIKE_GAIN = 1.0;
 /** How much of its brightness a point on the far side of the map keeps. */
 const FAR = 0.5;
 
 export const NODE_VERT = /* glsl */ `
-attribute vec3 aTo; attribute float aSize; attribute float aSizeFrom; attribute float aAlpha; attribute float aShape; attribute float aMark; attribute float aManage; attribute vec3 aColor; attribute vec3 aColorFrom; attribute vec3 aArms; attribute vec3 aArmsFrom;
+attribute vec3 aTo; attribute float aSize; attribute float aSizeFrom; attribute float aAlpha; attribute float aMark; attribute float aManage; attribute vec3 aColor; attribute vec3 aColorFrom; attribute vec3 aArms; attribute vec3 aArmsFrom;
 uniform float uMorph; uniform float uScale; uniform float uPR; uniform float uNear; uniform float uSpan; uniform float uMinPx;
-varying vec3 vColor; varying float vAlpha; varying float vShape; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying vec3 vArms;
+varying vec3 vColor; varying float vAlpha; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying vec3 vArms;
 void main() {
   vec4 mv = modelViewMatrix * vec4(mix(position, aTo, uMorph), 1.0);
   float depth = clamp((-mv.z - uNear) / uSpan, 0.0, 1.0);
-  vAlpha = aAlpha * mix(1.0, ${FAR.toFixed(2)}, depth);
-  vColor = mix(aColorFrom, aColor, uMorph); vArms = mix(aArmsFrom, aArms, uMorph); vMark = aMark; vManage = aManage;
+  // A marked role keeps its full brightness at any depth: it has to read as white.
+  vAlpha = aAlpha * mix(1.0, ${FAR.toFixed(2)}, depth * (1.0 - step(0.01, aMark)));
+  vColor = mix(aColorFrom, aColor, uMorph); vArms = mix(aArmsFrom, aArms, uMorph); vMark = aMark;
+  // A marked role's size and brightness say its state, so management adds nothing there.
+  vManage = aManage * (1.0 - step(0.01, aMark));
   // The core's diameter in device pixels (its size and colour morph with the points), kept small
   // however close the camera comes: a star does not swell into a blob.
   float cap = (aMark > 0.0 ? ${MAX_MARK_PX.toFixed(1)} : ${MAX_PX.toFixed(1)}) * uPR;
-  float px = min(max(mix(aSizeFrom, aSize, uMorph) * uScale / -mv.z, uMinPx) * uPR * (1.0 + ${MANAGE_GROW.toFixed(2)} * aManage), cap);
+  float px = min(max(mix(aSizeFrom, aSize, uMorph) * uScale / -mv.z, uMinPx) * uPR * (1.0 + ${MANAGE_GROW.toFixed(2)} * vManage), cap);
   // The sprite is wide enough for the tail, a held role's spikes and a three-armed star's longest arm.
   float spiked = step(0.95, aMark);
   float reach = px * 1.1 * (1.0 + ${ARM_REACH.toFixed(1)} * max(vArms.x, max(vArms.y, vArms.z)));
   float size = min(max(max(px * ${SPRITE.toFixed(1)}, reach), spiked * px * ${(1.25 * SPIKE_REACH).toFixed(2)}), 600.0);
-  // A role no one has checked is a ring, once it is big enough on the screen to show one; as a
-  // point it is a point like the rest.
-  vShape = aShape * smoothstep(5.0, 9.0, px / uPR);
   vPx = px; vSize = size;
   gl_PointSize = size;
   gl_Position = projectionMatrix * mv;
@@ -53,7 +53,7 @@ void main() {
 
 export const NODE_FRAG = /* glsl */ `
 precision highp float;
-varying vec3 vColor; varying float vAlpha; varying float vShape; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying vec3 vArms;
+varying vec3 vColor; varying float vAlpha; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying vec3 vArms;
 // Where an arm points on the screen, and its colour: the triangle of the demands, physical lower
 // left, mental on top, emotional lower right, as on the disc's own triangle.
 const vec2 DIR0 = vec2(-0.8660, -0.5);
@@ -79,10 +79,7 @@ void main() {
   vec2 p = vec2(q.x, -q.y) * vSize / vPx;
   float l = length(p);
   float aa = 2.0 / vPx;
-  float w = max(0.3, 2.4 / vPx);
-  float disc = 1.0 - smoothstep(0.7 - aa, 1.0 + aa, l);
-  float ring = 1.0 - smoothstep(-aa, aa, abs(l - (1.0 - w)) - w);
-  float body = mix(disc, ring, vShape);
+  float body = 1.0 - smoothstep(0.7 - aa, 1.0 + aa, l);
   // A tight tail, and a hot centre that is whiter, most for a management role.
   float tail = 0.16 * exp(-max(l - 0.9, 0.0) * 4.5);
   float hot = 1.0 - smoothstep(0.0, 0.6, l);
@@ -91,7 +88,7 @@ void main() {
   // A held role's four spikes, thin and crisp, along the screen's axes.
   float spiked = step(0.95, vMark);
   vec2 ap = abs(p);
-  float wd = max(0.06, 2.0 / vPx);
+  float wd = max(0.08, 2.6 / vPx);
   float spike = (1.0 - smoothstep(0.0, wd, ap.y)) * pow(1.0 - smoothstep(0.0, ${SPIKE_REACH.toFixed(1)}, ap.x), 2.0)
               + (1.0 - smoothstep(0.0, wd, ap.x)) * pow(1.0 - smoothstep(0.0, ${SPIKE_REACH.toFixed(1)}, ap.y), 2.0);
   a += spiked * spike * ${SPIKE_GAIN.toFixed(1)};

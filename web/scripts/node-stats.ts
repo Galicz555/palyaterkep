@@ -2,7 +2,7 @@
 // nodes and without, so that only the light the nodes add is measured: the median footprint of an
 // isolated node (connected pixels they light, clusters left out) and the share of the frame they
 // light above a low threshold. Nodes should read as points of light.
-// Usage: node web/scripts/node-stats.ts [layouts, e.g. AC] [base url] [file prefix]
+// Usage: node web/scripts/node-stats.ts [layouts, e.g. AC] [base url] [file prefix] [WIDTHxHEIGHT]
 
 import { mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -11,6 +11,7 @@ import { launch } from "./chrome.ts";
 const ids = (process.argv[2] ?? "AC").split("");
 const base = process.argv[3] ?? "http://127.0.0.1:4186";
 const prefix = process.argv[4] ?? "stats-";
+const [width = 1440, height = 900] = (process.argv[5] ?? "1440x900").split("x").map(Number);
 const OUT = fileURLToPath(new URL("../../raw/screens/", import.meta.url));
 mkdirSync(OUT, { recursive: true });
 const flags = (process.env["CHROME_FLAGS"] ?? "").split(" ").filter(Boolean);
@@ -24,7 +25,7 @@ const ISOLATED = 24;
 const browser = await launch(flags);
 const { page } = browser;
 try {
-  await page.viewport(1440, 900);
+  await page.viewport(width, height);
   for (const id of ids) {
     await page.goto(`${base}/?elrendezes=${id}&teljesitmeny`);
     await page.waitFor(

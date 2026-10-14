@@ -76,7 +76,7 @@ export interface MapView {
 const FOV = 38;
 const TAU = Math.PI * 2;
 /** Width of one node in map units. */
-const NODE_D = 1.0;
+const NODE_D = 0.8;
 /** Smallest node on screen, in CSS pixels, so the far ones stay visible. */
 const MIN_PX = 2.4;
 const MIN_DIST = 14;
@@ -116,7 +116,7 @@ export function createMap(
   canvas.setAttribute("role", "img");
   canvas.setAttribute(
     "aria-label",
-    `Pályatérkép: ${data.roles.length} szerep. A térkép egérrel és érintéssel mozgatható, a nyilak a nézetet tolják. A szerepeket a Lista nézet is felsorolja, billentyűzettel és képernyőolvasóval is használhatóan.`,
+    `Pályatérkép: ${data.roles.length} szerep. A térkép egérrel és érintéssel mozgatható, a nyilak a nézetet tolják. A szerepeket a Lista oldal is felsorolja, billentyűzettel és képernyőolvasóval is használhatóan.`,
   );
   const layer = el("div", "labels");
   layer.setAttribute("aria-hidden", "true");
@@ -172,10 +172,8 @@ export function createMap(
   const aArmsFrom = new BufferAttribute(new Float32Array(N * 3), 3);
   const aAlpha = new BufferAttribute(new Float32Array(N), 1);
   const aMark = new BufferAttribute(new Float32Array(N), 1);
-  const aShape = new BufferAttribute(new Float32Array(N), 1);
   const aManage = new BufferAttribute(new Float32Array(N), 1);
   roles.forEach((r, i) => {
-    aShape.setX(i, r.curated ? 0 : 1);
     aManage.setX(i, r.management ? 1 : 0);
   });
   nodeGeo.setAttribute("aColor", aColor);
@@ -193,7 +191,6 @@ export function createMap(
   (aArmsFrom.array as Float32Array).set(aArms.array);
   nodeGeo.setAttribute("aAlpha", aAlpha);
   nodeGeo.setAttribute("aMark", aMark);
-  nodeGeo.setAttribute("aShape", aShape);
   nodeGeo.setAttribute("aManage", aManage);
   /** The order the nodes are drawn in: far to near, so a near star covers a far one. */
   const order = new Uint32Array(N).map((_, i) => i);
@@ -278,19 +275,19 @@ export function createMap(
       const m = marks?.[i] ?? MARK.none;
       if (m === MARK.held) {
         color = markColor;
-        size = NODE_D * 3.6;
+        size = NODE_D * 5.5;
         mark = 1;
         alpha = 1;
       } else if (m === MARK.covered) {
         color = markColor;
-        size = NODE_D * 2.4;
+        size = NODE_D * 3.4;
         mark = 0.75;
         alpha = 1;
       } else if (m === MARK.reachable) {
         color = markColor;
-        size = NODE_D * 1.7;
+        size = NODE_D * 2.2;
         mark = 0.6;
-        alpha = 0.85;
+        alpha = 0.8;
       } else if (marks) {
         color = mix(base[i]!, GREY, arr.field?.grey ?? 0.6);
         alpha = arr.field?.alpha ?? 0.22;
@@ -304,7 +301,7 @@ export function createMap(
       }
       if (spotlight && !m && i !== selected && !spotlight.has(i)) alpha *= 0.45;
       if (i === selected) {
-        size = Math.max(size * 1.5, NODE_D * 1.8);
+        size = Math.max(size * 1.5, NODE_D * 2.2);
         mark = Math.max(mark, 0.9);
         alpha = 1;
       }
