@@ -26,8 +26,8 @@ skills:
 lateral:
   - "[[innovacios-munkatars]]"
   - "[[ikt-kutatasvezeto]]"
-  - "[[ikt-uzleti-elemzesi-menedzser]]"
   - "[[kozfinanszirozasi-tanacsado]]"
+  - "[[ikt-uzleti-elemzesi-menedzser]]"
 ---
 
 # Infokommunikációs üzletfejlesztési menedzser
@@ -62,5 +62,5 @@ Az infokommunikációs üzletfejlesztési menedzserek növelik a szervezet üzle
 
 - [[innovacios-munkatars|innovációs munkatárs]]
 - [[ikt-kutatasvezeto|IKT kutatásvezető]]
-- [[ikt-uzleti-elemzesi-menedzser|IKT üzleti elemzési menedzser]]
 - [[kozfinanszirozasi-tanacsado|közfinanszírozási tanácsadó]]
+- [[ikt-uzleti-elemzesi-menedzser|IKT üzleti elemzési menedzser]]

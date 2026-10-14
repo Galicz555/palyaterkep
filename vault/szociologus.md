@@ -53,11 +53,11 @@ skills:
   - http://data.europa.eu/esco/skill/ff64e9fc-36dd-4035-872a-83aa41dc1ad9
 lateral:
   - "[[viselkedeskutato]]"
-  - "[[demografus]]"
   - "[[politologus]]"
   - "[[geografus]]"
   - "[[kriminologus]]"
   - "[[antropologus]]"
+  - "[[tanatologus]]"
 ---
 
 # Szociológus
@@ -119,8 +119,8 @@ A szociológusok a társadalmi és társas viselkedést tanulmányozzák, illetv
 ## Váltások
 
 - [[viselkedeskutato|viselkedéskutató]]
-- [[demografus|demográfus]]
 - [[politologus|politológus]]
 - [[geografus|geográfus]]
 - [[kriminologus|kriminológus]]
 - [[antropologus|antropológus]]
+- [[tanatologus|tanatológus]]

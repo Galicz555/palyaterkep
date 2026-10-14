@@ -25,8 +25,7 @@ skills:
   - http://data.europa.eu/esco/skill/ddc3119d-1d6e-4324-9125-a3380d299ac5
   - http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2
   - http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51
-lateral:
-  - "[[mesterseges-intelligenciaval-foglalkozo-mernok-ai-mernok]]"
+lateral: []
 ---
 
 # A dolgok internetének fejlesztője
@@ -61,4 +60,4 @@ A dolgok internetének fejlesztői adatokat elemeznek és gyűjtenek a mintázat
 
 ## Váltások
 
-- [[mesterseges-intelligenciaval-foglalkozo-mernok-ai-mernok|mesterséges intelligenciával foglalkozó mérnök (AI-mérnök)]]
+Nincs.

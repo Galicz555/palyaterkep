@@ -54,7 +54,7 @@ lateral:
   - "[[geografus]]"
   - "[[geologus]]"
   - "[[paleontologus]]"
-  - "[[biometrikai-szakerto]]"
+  - "[[demografus]]"
 ---
 
 # Szeizmológus
@@ -117,4 +117,4 @@ A szeizmológusok tanulmányozzák a Föld tektonikus lemezeinek mozgását, ami
 - [[geografus|geográfus]]
 - [[geologus|geológus]]
 - [[paleontologus|paleontológus]]
-- [[biometrikai-szakerto|biometrikai szakértő]]
+- [[demografus|demográfus]]

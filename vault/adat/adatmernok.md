@@ -37,7 +37,6 @@ lateral:
   - "[[adattudos]]"
   - "[[adatelemzesi-vezeto]]"
   - "[[adatbazis-integrator]]"
-  - "[[szamitastechnikai-vizualizacios-mernok]]"
 progression:
   - "[[adatarchitekt]]"
 ---
@@ -89,4 +88,3 @@ Az adatok útját építi és üzemelteti: adatfeldolgozó alkalmazásokat, ETL-
 - [[adattudos|Adattudós]]
 - [[adatelemzesi-vezeto|Adatelemzési vezető]]
 - [[adatbazis-integrator|adatbázis integrátor]]
-- [[szamitastechnikai-vizualizacios-mernok|számítástechnikai vizualizációs mérnök]]

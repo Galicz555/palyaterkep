@@ -53,9 +53,9 @@ lateral:
   - "[[szociologus]]"
   - "[[regesz]]"
   - "[[tanatologus]]"
+  - "[[viselkedeskutato]]"
   - "[[hidrologus]]"
   - "[[oktataskutato]]"
-  - "[[kineziologus]]"
 ---
 
 # Antropológus
@@ -117,6 +117,6 @@ Az antropológusok az emberi életet vizsgálják minden tekintetben. Tanulmány
 - [[szociologus|szociológus]]
 - [[regesz|régész]]
 - [[tanatologus|tanatológus]]
+- [[viselkedeskutato|viselkedéskutató]]
 - [[hidrologus|hidrológus]]
 - [[oktataskutato|oktatáskutató]]
-- [[kineziologus|kineziológus]]

@@ -59,10 +59,10 @@ skills:
 lateral:
   - "[[informatikus]]"
   - "[[allatkutato-tudomanyos-munkatars]]"
-  - "[[mineralogus]]"
   - "[[metrologus]]"
   - "[[bioinformatikus]]"
   - "[[telepulestervezo-mernok]]"
+  - "[[muzeologus]]"
 ---
 
 # IKT kutatási tanácsadó
@@ -130,7 +130,7 @@ Az IKT-kutatási tanácsadók célzott IKT-kutatást végeznek, és az ügyféln
 
 - [[informatikus|informatikus]]
 - [[allatkutato-tudomanyos-munkatars|állatkutató tudományos munkatárs]]
-- [[mineralogus|mineralógus]]
 - [[metrologus|metrológus]]
 - [[bioinformatikus|bioinformatikus]]
 - [[telepulestervezo-mernok|településtervező mérnök]]
+- [[muzeologus|muzeológus]]

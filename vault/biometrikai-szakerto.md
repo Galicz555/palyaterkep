@@ -52,12 +52,12 @@ skills:
   - http://data.europa.eu/esco/skill/fa642fc3-5cc5-41cf-8926-6617a8b976a7
   - http://data.europa.eu/esco/skill/ff64e9fc-36dd-4035-872a-83aa41dc1ad9
 lateral:
-  - "[[szeizmologus]]"
   - "[[regesz]]"
   - "[[epidemiologus]]"
   - "[[statisztikus]]"
   - "[[matematikus]]"
   - "[[meteorologus]]"
+  - "[[kozgazdasz]]"
 ---
 
 # Biometrikai szakértő
@@ -118,9 +118,9 @@ A biometrikai szakértők a biometrikus azonosítók terén végeznek kutatások
 
 ## Váltások
 
-- [[szeizmologus|szeizmológus]]
 - [[regesz|régész]]
 - [[epidemiologus|epidemiológus]]
 - [[statisztikus|statisztikus]]
 - [[matematikus|matematikus]]
 - [[meteorologus|meteorológus]]
+- [[kozgazdasz|közgazdász]]

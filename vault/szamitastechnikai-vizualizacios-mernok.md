@@ -42,7 +42,6 @@ skills:
 lateral:
   - "[[adattudos]]"
   - "[[senior-adatelemzo]]"
-  - "[[adatmernok]]"
 ---
 
 # Számítástechnikai vizualizációs mérnök
@@ -94,4 +93,3 @@ A számítástechnikai vizualizációs mérnökök olyan mesterségesintelligenc
 
 - [[adattudos|Adattudós]]
 - [[senior-adatelemzo|Senior adatelemző]]
-- [[adatmernok|Adatmérnök]]

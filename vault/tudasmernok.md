@@ -35,7 +35,6 @@ skills:
 lateral:
   - "[[it-rendszermernok]]"
   - "[[adattarhaz-tervezo]]"
-  - "[[mesterseges-intelligenciaval-foglalkozo-mernok-ai-mernok]]"
   - "[[digitalisjatek-tervezo]]"
 ---
 
@@ -80,5 +79,4 @@ A tudásmérnökök strukturált tudást (tudásbázis) építenek be a számít
 
 - [[it-rendszermernok|IT rendszermérnök]]
 - [[adattarhaz-tervezo|adattárház-tervező]]
-- [[mesterseges-intelligenciaval-foglalkozo-mernok-ai-mernok|mesterséges intelligenciával foglalkozó mérnök (AI-mérnök)]]
 - [[digitalisjatek-tervezo|digitálisjáték-tervező]]

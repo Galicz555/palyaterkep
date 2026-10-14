@@ -29,7 +29,6 @@ lateral:
   - "[[felhasznaloi-felulet-tervezo]]"
   - "[[junior-szoftverfejleszto]]"
   - "[[alkalmazasmernok]]"
-  - "[[senior-szoftverfejleszto]]"
 ---
 
 # Felhasználói felület fejlesztő
@@ -67,4 +66,3 @@ A felhasználóifelület-fejlesztők végrehajtják, kódolják, dokumentálják
 - [[felhasznaloi-felulet-tervezo|felhasználói felület tervező]]
 - [[junior-szoftverfejleszto|Junior szoftverfejlesztő]]
 - [[alkalmazasmernok|alkalmazásmérnök]]
-- [[senior-szoftverfejleszto|Senior szoftverfejlesztő]]

@@ -58,7 +58,7 @@ lateral:
   - "[[mineralogus]]"
   - "[[metrologus]]"
   - "[[kozmetikai-vegyesz]]"
-  - "[[okologus]]"
+  - "[[kineziologus]]"
 ---
 
 # Irodalmár
@@ -125,4 +125,4 @@ Az irodalomtudósok irodalmi műveket, az irodalomtörténetet, az irodalmi műf
 - [[mineralogus|mineralógus]]
 - [[metrologus|metrológus]]
 - [[kozmetikai-vegyesz|kozmetikai vegyész]]
-- [[okologus|ökológus]]
+- [[kineziologus|kineziológus]]

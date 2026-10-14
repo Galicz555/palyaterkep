@@ -55,10 +55,10 @@ skills:
 lateral:
   - "[[erdo-es-termeszetvedelmi-mernok]]"
   - "[[kozmetikai-vegyesz]]"
-  - "[[irodalmar]]"
   - "[[metrologus]]"
   - "[[biologus]]"
   - "[[allatkutato-tudomanyos-munkatars]]"
+  - "[[mezogazdasagi-kutato]]"
 ---
 
 # Ökológus
@@ -122,7 +122,7 @@ Az ökológusok értékeléseket végeznek az élő szervezetek, nevezetesen az 
 
 - [[erdo-es-termeszetvedelmi-mernok|erdő- és természetvédelmi mérnök]]
 - [[kozmetikai-vegyesz|kozmetikai vegyész]]
-- [[irodalmar|irodalmár]]
 - [[metrologus|metrológus]]
 - [[biologus|biológus]]
 - [[allatkutato-tudomanyos-munkatars|állatkutató tudományos munkatárs]]
+- [[mezogazdasagi-kutato|mezőgazdasági kutató]]

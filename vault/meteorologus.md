@@ -49,8 +49,8 @@ skills:
   - http://data.europa.eu/esco/skill/ff64e9fc-36dd-4035-872a-83aa41dc1ad9
 lateral:
   - "[[kozgazdasz]]"
-  - "[[biometrikai-szakerto]]"
   - "[[elemzo-vegyesz]]"
+  - "[[biometrikai-szakerto]]"
   - "[[matematikus]]"
   - "[[filozofus]]"
   - "[[regesz]]"
@@ -111,8 +111,8 @@ A meteorológusok tanulmányozzák az éghajlati folyamatokat, mérik és előre
 ## Váltások
 
 - [[kozgazdasz|közgazdász]]
-- [[biometrikai-szakerto|biometrikai szakértő]]
 - [[elemzo-vegyesz|elemző vegyész]]
+- [[biometrikai-szakerto|biometrikai szakértő]]
 - [[matematikus|matematikus]]
 - [[filozofus|filozófus]]
 - [[regesz|régész]]

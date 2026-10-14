@@ -41,6 +41,7 @@ lateral:
   - "[[adatarchitekt]]"
   - "[[szamitastechnikai-vizualizacios-mernok]]"
   - "[[adatminoseg-elemzo]]"
+  - "[[ai-mernok]]"
 progression:
   - "[[adatelemzesi-vezeto]]"
 ---
@@ -96,3 +97,4 @@ Statisztikai és gépi tanulási modellekkel jósol és magyaráz (data scientis
 - [[adatarchitekt|Adatarchitekt]]
 - [[szamitastechnikai-vizualizacios-mernok|számítástechnikai vizualizációs mérnök]]
 - [[adatminoseg-elemzo|adatminőség-elemző]]
+- [[ai-mernok|AI-mérnök]]

@@ -45,8 +45,8 @@ lateral:
   - "[[senior-szoftverfejleszto]]"
   - "[[precizios-mernok]]"
   - "[[medior-szoftverfejleszto]]"
-  - "[[fejlesztesi-csoportvezeto]]"
   - "[[felhasznaloi-felulet-fejleszto]]"
+  - "[[ai-mernok]]"
 ---
 
 # Alkalmazásmérnök
@@ -100,5 +100,5 @@ Az alkalmazásmérnökök a műszaki követelményekkel, az irányítással és 
 - [[senior-szoftverfejleszto|Senior szoftverfejlesztő]]
 - [[precizios-mernok|precíziós mérnök]]
 - [[medior-szoftverfejleszto|Medior szoftverfejlesztő]]
-- [[fejlesztesi-csoportvezeto|Fejlesztési csoportvezető]]
 - [[felhasznaloi-felulet-fejleszto|felhasználói felület fejlesztő]]
+- [[ai-mernok|AI-mérnök]]

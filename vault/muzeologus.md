@@ -56,8 +56,8 @@ skills:
 lateral:
   - "[[allatkutato-tudomanyos-munkatars]]"
   - "[[erdo-es-termeszetvedelmi-mernok]]"
+  - "[[ikt-kutatasi-tanacsado]]"
   - "[[telepulestervezo-mernok]]"
-  - "[[mezogazdasagi-kutato]]"
   - "[[hardvertervezo]]"
   - "[[biokemiai-mernok]]"
 ---
@@ -125,7 +125,7 @@ A muzeológusok általános múzeumokban, botanikai kertekben, művészeti galé
 
 - [[allatkutato-tudomanyos-munkatars|állatkutató tudományos munkatárs]]
 - [[erdo-es-termeszetvedelmi-mernok|erdő- és természetvédelmi mérnök]]
+- [[ikt-kutatasi-tanacsado|IKT kutatási tanácsadó]]
 - [[telepulestervezo-mernok|településtervező mérnök]]
-- [[mezogazdasagi-kutato|mezőgazdasági kutató]]
 - [[hardvertervezo|hardvertervező]]
 - [[biokemiai-mernok|biokémiai mérnök]]

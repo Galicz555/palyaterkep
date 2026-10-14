@@ -57,8 +57,8 @@ lateral:
   - "[[epidemiologus]]"
   - "[[kommunikaciokutato]]"
   - "[[antropologus]]"
-  - "[[kozgazdasz]]"
   - "[[statisztikus]]"
+  - "[[mineralogus]]"
 ---
 
 # Hidrológus
@@ -124,5 +124,5 @@ A hidrológusok a víz minőségét, aktuális kihívásait és elosztását kut
 - [[epidemiologus|epidemiológus]]
 - [[kommunikaciokutato|kommunikációkutató]]
 - [[antropologus|antropológus]]
-- [[kozgazdasz|közgazdász]]
 - [[statisztikus|statisztikus]]
+- [[mineralogus|mineralógus]]

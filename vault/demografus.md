@@ -53,11 +53,11 @@ skills:
   - http://data.europa.eu/esco/skill/ff64e9fc-36dd-4035-872a-83aa41dc1ad9
 lateral:
   - "[[csillagasz]]"
+  - "[[szeizmologus]]"
   - "[[kriminologus]]"
   - "[[statisztikus]]"
   - "[[viselkedeskutato]]"
   - "[[politologus]]"
-  - "[[szociologus]]"
 ---
 
 # Demográfus
@@ -119,8 +119,8 @@ A demográfusok a népességhez kapcsolódó különböző paraméterekkel fogla
 ## Váltások
 
 - [[csillagasz|csillagász]]
+- [[szeizmologus|szeizmológus]]
 - [[kriminologus|kriminológus]]
 - [[statisztikus|statisztikus]]
 - [[viselkedeskutato|viselkedéskutató]]
 - [[politologus|politológus]]
-- [[szociologus|szociológus]]

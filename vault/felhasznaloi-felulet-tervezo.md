@@ -38,8 +38,8 @@ lateral:
   - "[[felhasznaloi-felulet-fejleszto]]"
   - "[[digitalis-media-tervezo]]"
   - "[[ikt-hozzaferhetosegi-tesztelo]]"
-  - "[[ugyfelelmeny-elemzo]]"
   - "[[digitalisjatek-tervezo]]"
+  - "[[ugyfelelmeny-elemzo]]"
 ---
 
 # Felhasználói felület tervező
@@ -86,5 +86,5 @@ A felhasználóifelület-tervezők feladata, hogy felhasználói interfészeket 
 - [[felhasznaloi-felulet-fejleszto|felhasználói felület fejlesztő]]
 - [[digitalis-media-tervezo|digitális média tervező]]
 - [[ikt-hozzaferhetosegi-tesztelo|IKT hozzáférhetőségi tesztelő]]
-- [[ugyfelelmeny-elemzo|ügyfélélmény elemző]]
 - [[digitalisjatek-tervezo|digitálisjáték-tervező]]
+- [[ugyfelelmeny-elemzo|ügyfélélmény elemző]]
