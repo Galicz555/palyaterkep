@@ -11,11 +11,13 @@
     "esco": "node src/esco/ingest.ts",
     "branches:review": "node src/branches/review.ts",
     "propose": "node src/vault/propose.ts",
+    "vault": "node src/vault/generate.ts",
+    "vault:lint": "node src/vault/lint.ts",
     "test": "vitest run",
     "types": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "pnpm format:check && pnpm types && pnpm test"
+    "check": "pnpm format:check && pnpm types && pnpm test && pnpm vault:lint"
   },
   "devDependencies": {
     "@types/node": "24.13.5",
