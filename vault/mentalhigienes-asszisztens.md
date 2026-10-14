@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/5a9acd29-666c-4ca1-b10e-e086584a526b
 label: mentálhigiénés asszisztens
-level: 1
+level: 2
 track: individual
 branch: health-social
 subBranch: social-work
@@ -83,7 +83,7 @@ lateral:
 
 # Mentálhigiénés asszisztens
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Szociális munka  
 **ESCO:** [mentálhigiénés asszisztens](http://data.europa.eu/esco/occupation/5a9acd29-666c-4ca1-b10e-e086584a526b) (3412.4.8)

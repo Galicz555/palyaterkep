@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/06ac0f53-431e-4bc6-acb8-2f5da041b5d3
 label: táncpróbavezető
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: performing-arts
@@ -47,7 +47,7 @@ lateral:
 
 # Táncpróbavezető
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Előadó-művészet  
 **ESCO:** [táncpróbavezető](http://data.europa.eu/esco/occupation/06ac0f53-431e-4bc6-acb8-2f5da041b5d3) (2653.1.2)

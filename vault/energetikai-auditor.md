@@ -24,7 +24,6 @@ skills:
 lateral:
   - "[[energiagazdalkodo]]"
   - "[[energetikai-elemzo]]"
-  - "[[energiaugyi-igazgato]]"
   - "[[energetikai-tanacsado]]"
   - "[[lakossagi-energetikai-auditor]]"
   - "[[napenergia-tanacsado]]"
@@ -60,7 +59,6 @@ Az energetikai auditorok épületek energiateljesítményét határozzák meg. E
 
 - [[energiagazdalkodo|energiagazdálkodó]]
 - [[energetikai-elemzo|energetikai elemző]]
-- [[energiaugyi-igazgato|energiaügyi igazgató]]
 - [[energetikai-tanacsado|energetikai tanácsadó]]
 - [[lakossagi-energetikai-auditor|lakossági energetikai auditor]]
 - [[napenergia-tanacsado|napenergia-tanácsadó]]

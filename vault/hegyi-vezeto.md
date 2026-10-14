@@ -37,6 +37,7 @@ lateral:
   - "[[parki-idegenvezeto]]"
   - "[[idegenvezeto]]"
   - "[[utazasszervezo-tanacsado]]"
+  - "[[utazasi-irodai-ugyintezo]]"
 ---
 
 # Hegyi vezető
@@ -83,3 +84,4 @@ A hegyi vezetők segítséget nyújtanak a látogatóknak, értelmezik a termés
 - [[parki-idegenvezeto|parki idegenvezető]]
 - [[idegenvezeto|idegenvezető]]
 - [[utazasszervezo-tanacsado|utazásszervező tanácsadó]]
+- [[utazasi-irodai-ugyintezo|utazási irodai ügyintéző]]

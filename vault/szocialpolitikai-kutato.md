@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3af4d6be-90b5-41f6-be06-3330dab3df73
 label: szociálpolitikai kutató
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: humanities
@@ -59,12 +59,11 @@ lateral:
   - "[[szocialismunka-oktato-felsooktatasi-intezmenyben]]"
   - "[[pszichologus]]"
   - "[[adattudos]]"
-  - "[[szocialis-asszisztens]]"
 ---
 
 # Szociálpolitikai kutató
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Társadalom- és bölcsészettudomány  
 **ESCO:** [szociálpolitikai kutató](http://data.europa.eu/esco/occupation/3af4d6be-90b5-41f6-be06-3330dab3df73) (2632.6.1)
@@ -127,4 +126,3 @@ A szociálismunka-kutatók olyan kutatási projekteket kezelnek, amelyek célja 
 - [[szocialismunka-oktato-felsooktatasi-intezmenyben|szociálismunka-oktató felsőoktatási intézményben]]
 - [[pszichologus|pszichológus]]
 - [[adattudos|adattudós]]
-- [[szocialis-asszisztens|szociális asszisztens]]

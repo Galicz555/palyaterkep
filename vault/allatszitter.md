@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/84cdc2ef-ee7c-42b1-be19-5e1c6b537f8f
 label: állatszitter
-level: 2
+level: 1
 track: individual
 branch: agriculture
 subBranch: animal-care
@@ -31,12 +31,12 @@ lateral:
   - "[[allatidomar]]"
   - "[[eloallat-szallito]]"
   - "[[kutyakikepzo]]"
-  - "[[etologus]]"
+  - "[[loidomar]]"
 ---
 
 # Állatszitter
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Állategészségügy és állatgondozás  
 **ESCO:** [állatszitter](http://data.europa.eu/esco/occupation/84cdc2ef-ee7c-42b1-be19-5e1c6b537f8f) (5164.9)
@@ -71,4 +71,4 @@ Az állatszitterek állatszittelési szolgáltatásokat nyújtanak, többek köz
 - [[allatidomar|állatidomár]]
 - [[eloallat-szallito|élőállat szállító]]
 - [[kutyakikepzo|kutyakiképző]]
-- [[etologus|etológus]]
+- [[loidomar|lóidomár]]

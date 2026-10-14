@@ -24,7 +24,6 @@ skills:
   - http://data.europa.eu/esco/skill/f2d57f41-43b4-4f5b-8100-3df5c21eda50
 lateral:
   - "[[gazdasagkutato]]"
-  - "[[prediktiv-karbantartasi-szakerto]]"
   - "[[aktuarius-asszisztens]]"
 ---
 
@@ -58,5 +57,4 @@ A statisztikai asszisztensek összegyűjtik az adatokat, és statisztikai képle
 ## Váltások
 
 - [[gazdasagkutato|gazdaságkutató]]
-- [[prediktiv-karbantartasi-szakerto|prediktív karbantartási szakértő]]
 - [[aktuarius-asszisztens|aktuárius asszisztens]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/07bd65d7-c13f-443a-bdf6-88903f3822be
 label: bíró
-level: 3
+level: 4
 track: individual
 branch: public
 subBranch: legal
@@ -19,15 +19,15 @@ skills:
   - http://data.europa.eu/esco/skill/db10b60e-efd2-4ba9-a873-d1e2ec37620f
   - http://data.europa.eu/esco/skill/f85bb847-febe-4853-9dbf-7d25424e5921
 lateral:
+  - "[[legfelsobb-birosag-biraja]]"
   - "[[bekebiro]]"
   - "[[ombudsman]]"
   - "[[jogtanacsos]]"
-  - "[[birosagi-ugyintezo]]"
 ---
 
 # Bíró
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Jog és igazságszolgáltatás  
 **ESCO:** [bíró](http://data.europa.eu/esco/occupation/07bd65d7-c13f-443a-bdf6-88903f3822be) (2612.1)
@@ -50,7 +50,7 @@ A bírósági ügyekben, a meghallgatások, fellebbezések és bírósági eljá
 
 ## Váltások
 
+- [[legfelsobb-birosag-biraja|legfelsőbb bíróság bírája]]
 - [[bekebiro|békebíró]]
 - [[ombudsman|ombudsman]]
 - [[jogtanacsos|jogtanácsos]]
-- [[birosagi-ugyintezo|bírósági ügyintéző]]

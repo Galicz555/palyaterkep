@@ -46,11 +46,11 @@ skills:
   - http://data.europa.eu/esco/skill/fcc0a1c8-d36e-4f8e-b928-00d5bca10a47
 lateral:
   - "[[pirotechnikai-tervezo]]"
-  - "[[smink-es-frizuratervezo]]"
   - "[[jelmeztervezo]]"
   - "[[eloadasok-vilagitastervezoje]]"
   - "[[diszlettervezo]]"
   - "[[hangtervezo]]"
+  - "[[videotervezo]]"
 ---
 
 # Bábtervező
@@ -106,8 +106,8 @@ A bábtervezők bábok és manipulálható tárgyak tervezését és kialakítá
 ## Váltások
 
 - [[pirotechnikai-tervezo|pirotechnikai tervező]]
-- [[smink-es-frizuratervezo|smink- és frizuratervező]]
 - [[jelmeztervezo|jelmeztervező]]
 - [[eloadasok-vilagitastervezoje|előadások világítástervezője]]
 - [[diszlettervezo|díszlettervező]]
 - [[hangtervezo|hangtervező]]
+- [[videotervezo|videotervező]]

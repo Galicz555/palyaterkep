@@ -35,7 +35,6 @@ skills:
   - http://data.europa.eu/esco/skill/ff599c4c-f7bc-44fc-b75f-eea4b7178692
 lateral:
   - "[[uzleti-konzulens]]"
-  - "[[uzletiintelligencia-menedzser]]"
   - "[[penzugyi-kockazatkezelo]]"
   - "[[penzugyi-elemzo]]"
 ---
@@ -81,6 +80,5 @@ A gazdasági elemzők vállalkozások és vállalatok stratégiai helyzetét kut
 ## Váltások
 
 - [[uzleti-konzulens|üzleti konzulens]]
-- [[uzletiintelligencia-menedzser|üzletiintelligencia-menedzser]]
 - [[penzugyi-kockazatkezelo|pénzügyi kockázatkezelő]]
 - [[penzugyi-elemzo|pénzügyi elemző]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2c9939ef-ebab-4111-8f27-605ae8782791
 label: szerződéskezelő
-level: 3
+level: 2
 track: individual
 branch: public
 subBranch: legal
@@ -41,11 +41,12 @@ lateral:
   - "[[onallo-kozbeszerzo]]"
   - "[[kozbeszerzesi-szakerto]]"
   - "[[kozbeszerzesi-kategoria-szakertoje]]"
+  - "[[kozbeszerzest-tamogato-munkatars]]"
 ---
 
 # Szerződéskezelő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Jog és igazságszolgáltatás  
 **ESCO:** [szerződéskezelő](http://data.europa.eu/esco/occupation/2c9939ef-ebab-4111-8f27-605ae8782791) (2619.1)
@@ -91,3 +92,4 @@ A szerződéskezelők felügyelik az odaítélt szerződések betartását annak
 - [[onallo-kozbeszerzo|Önálló közbeszerző]]
 - [[kozbeszerzesi-szakerto|közbeszerzési szakértő]]
 - [[kozbeszerzesi-kategoria-szakertoje|közbeszerzési kategória szakértője]]
+- [[kozbeszerzest-tamogato-munkatars|közbeszerzést támogató munkatárs]]

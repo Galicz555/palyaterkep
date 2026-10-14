@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/bc659adc-f42c-4ef6-89fe-fd030033f446
 label: kozmológus
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: physical-sciences
@@ -72,7 +72,7 @@ lateral:
 
 # Kozmológus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Fizika, kémia és földtudományok  
 **ESCO:** [kozmológus](http://data.europa.eu/esco/occupation/bc659adc-f42c-4ef6-89fe-fd030033f446) (2111.2)

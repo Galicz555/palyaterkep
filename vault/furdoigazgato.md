@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/080fc550-b7ca-4576-aaf5-06fffbede994
 label: fürdőigazgató
-level: 4
+level: 3
 track: management
 branch: culture
 subBranch: culture-management
@@ -54,17 +54,17 @@ skills:
   - http://data.europa.eu/esco/skill/f7a76fcc-7159-4eb3-8cbb-865fcc6084ca
   - http://data.europa.eu/esco/skill/fe30a4b0-1a99-4fc7-afff-b162b8c834ba
 lateral:
+  - "[[szepsegszalon-vezetoje]]"
   - "[[rekreacios-kozpont-vezetoje]]"
   - "[[botanikus]]"
   - "[[mosoda-es-vegytisztito-vezetoje]]"
   - "[[allatkerti-kurator]]"
   - "[[szolgaltatasmenedzser]]"
-  - "[[ugyfelkapcsolati-menedzser]]"
 ---
 
 # Fürdőigazgató
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Kulturális és szabadidős intézmények vezetése  
 **ESCO:** [fürdőigazgató](http://data.europa.eu/esco/occupation/080fc550-b7ca-4576-aaf5-06fffbede994) (1431.2.5)
@@ -122,9 +122,9 @@ A fürdőigazgatók koordinálják a fürdőlétesítmény napi működését an
 
 ## Váltások
 
+- [[szepsegszalon-vezetoje|szépségszalon vezetője]]
 - [[rekreacios-kozpont-vezetoje|rekreációs központ vezetője]]
 - [[botanikus|botanikus]]
 - [[mosoda-es-vegytisztito-vezetoje|mosoda és vegytisztító vezetője]]
 - [[allatkerti-kurator|állatkerti kurátor]]
 - [[szolgaltatasmenedzser|szolgáltatásmenedzser]]
-- [[ugyfelkapcsolati-menedzser|ügyfélkapcsolati menedzser]]

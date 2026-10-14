@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c3c8c56c-b3ab-4425-a38a-abcace020d22
 label: klinikai pszichológus
-level: 2
+level: 3
 track: individual
 branch: health-social
 subBranch: psychology
@@ -110,13 +110,14 @@ lateral:
   - "[[egeszsegpszichologus]]"
   - "[[pszichoterapeuta]]"
   - "[[pszichologus]]"
-  - "[[pszichologiai-asszisztens]]"
+  - "[[szakkiropraktor]]"
   - "[[zeneterapeuta]]"
+  - "[[vezeto-fizioterapeuta]]"
 ---
 
 # Klinikai pszichológus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Pszichológia  
 **ESCO:** [klinikai pszichológus](http://data.europa.eu/esco/occupation/c3c8c56c-b3ab-4425-a38a-abcace020d22) (2634.2.1)
@@ -230,5 +231,6 @@ A klinikai szakpszichológusok kognitív eszközök alkalmazása és megfelelő 
 - [[egeszsegpszichologus|egészségpszichológus]]
 - [[pszichoterapeuta|pszichoterapeuta]]
 - [[pszichologus|pszichológus]]
-- [[pszichologiai-asszisztens|pszichológiai asszisztens]]
+- [[szakkiropraktor|szakkiropraktőr]]
 - [[zeneterapeuta|zeneterapeuta]]
+- [[vezeto-fizioterapeuta|vezető fizioterapeuta]]

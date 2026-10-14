@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/1663e9d9-857b-4efa-9ab6-886c7fc763f6
 label: gépjármű-vevőszolgálati menedzser
 level: 3
-track: individual
+track: management
 branch: trade
 subBranch: marketing
 skills:
@@ -32,7 +32,7 @@ lateral:
 
 # Gépjármű-vevőszolgálati menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Értékesítési vezetés és marketing  
 **ESCO:** [gépjármű-vevőszolgálati menedzser](http://data.europa.eu/esco/occupation/1663e9d9-857b-4efa-9ab6-886c7fc763f6) (1221.3.2.1.3)

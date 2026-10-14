@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/836f0a96-7546-4003-9fc8-714fc79199d4
 label: ellenőrző mérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: other-engineering
@@ -32,7 +32,7 @@ lateral:
 
 # Ellenőrző mérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Egyéb mérnöki szakterületek  
 **ESCO:** [ellenőrző mérnök](http://data.europa.eu/esco/occupation/836f0a96-7546-4003-9fc8-714fc79199d4) (2149.2.3)

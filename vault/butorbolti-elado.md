@@ -45,11 +45,11 @@ skills:
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
   - "[[epitoanyagbolti-elado]]"
+  - "[[zoldseg-gyumolcs-elado]]"
   - "[[ora-ekszer-elado]]"
   - "[[hobbiallat-bolti-elado]]"
   - "[[ruhazati-bolti-elado]]"
   - "[[szamitogepesjatek-szoftver-es-mediabolti-elado]]"
-  - "[[konyvesbolti-elado]]"
 ---
 
 # Bútorbolti eladó
@@ -103,8 +103,8 @@ A bútorbolti eladók bútorokat és egyéb háztartási cikkeket értékesíten
 ## Váltások
 
 - [[epitoanyagbolti-elado|építőanyagbolti eladó]]
+- [[zoldseg-gyumolcs-elado|zöldség-gyümölcs eladó]]
 - [[ora-ekszer-elado|óra-ékszer eladó]]
 - [[hobbiallat-bolti-elado|hobbiállat-bolti eladó]]
 - [[ruhazati-bolti-elado|ruházati bolti eladó]]
 - [[szamitogepesjatek-szoftver-es-mediabolti-elado|számítógépesjáték-, szoftver- és médiabolti eladó]]
-- [[konyvesbolti-elado|könyvesbolti eladó]]

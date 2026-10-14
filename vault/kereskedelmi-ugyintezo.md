@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/5c1eba1e-7820-4287-9746-4c5906320100
 label: kereskedelmi ügyintéző
-level: 1
+level: 2
 track: individual
 branch: business
 subBranch: accounting
@@ -22,7 +22,7 @@ lateral:
 
 # Kereskedelmi ügyintéző
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Pénzügyi vezetés és számvitel  
 **ESCO:** [kereskedelmi ügyintéző](http://data.europa.eu/esco/occupation/5c1eba1e-7820-4287-9746-4c5906320100) (4311.2)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/920c22e1-10a1-4afa-86b3-c43da8488391
 label: szociálismunka-oktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -67,16 +67,17 @@ skills:
   - http://data.europa.eu/esco/skill/f2f2cd3b-6afd-482e-80af-5823250ef0b8
   - http://data.europa.eu/esco/skill/fdb44237-c0b0-4924-9439-911332e0d884
 lateral:
+  - "[[tanacsado-szocialis-munkas]]"
   - "[[iskolai-gyermekvedelmi-felelos]]"
-  - "[[szocialis-asszisztens]]"
   - "[[szocialpolitikai-kutato]]"
-  - "[[csaladtervezesi-tanacsado]]"
+  - "[[lakhatasi-igazgato]]"
+  - "[[idosek-otthonanak-igazgatoja]]"
   - "[[kozossegi-egeszsegugyi-dolgozo]]"
 ---
 
 # Szociálismunka-oktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [szociálismunka-oktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/920c22e1-10a1-4afa-86b3-c43da8488391) (2310.1.37)
@@ -147,8 +148,9 @@ A felsőoktatási intézményekben szociális munkát oktatók olyan szakemberek
 
 ## Váltások
 
+- [[tanacsado-szocialis-munkas|tanácsadó szociális munkás]]
 - [[iskolai-gyermekvedelmi-felelos|iskolai gyermekvédelmi felelős]]
-- [[szocialis-asszisztens|szociális asszisztens]]
 - [[szocialpolitikai-kutato|szociálpolitikai kutató]]
-- [[csaladtervezesi-tanacsado|családtervezési tanácsadó]]
+- [[lakhatasi-igazgato|lakhatási igazgató]]
+- [[idosek-otthonanak-igazgatoja|idősek otthonának igazgatója]]
 - [[kozossegi-egeszsegugyi-dolgozo|közösségi egészségügyi dolgozó]]

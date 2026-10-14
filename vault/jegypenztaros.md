@@ -54,8 +54,8 @@ lateral:
   - "[[hobbiallat-bolti-elado]]"
   - "[[szamitogepesjatek-szoftver-es-mediabolti-elado]]"
   - "[[konyvesbolti-elado]]"
+  - "[[kerteszeti-es-viragbolti-elado]]"
   - "[[jegyertekesito]]"
-  - "[[gepjarmu-ertekesitesi-elado]]"
 ---
 
 # Jegypénztáros
@@ -118,5 +118,5 @@ A jegypénztárosok szolgáltatást nyújtanak ügyfeleknek, jegyeket értékes�
 - [[hobbiallat-bolti-elado|hobbiállat-bolti eladó]]
 - [[szamitogepesjatek-szoftver-es-mediabolti-elado|számítógépesjáték-, szoftver- és médiabolti eladó]]
 - [[konyvesbolti-elado|könyvesbolti eladó]]
+- [[kerteszeti-es-viragbolti-elado|kertészeti és virágbolti eladó]]
 - [[jegyertekesito|jegyértékesítő]]
-- [[gepjarmu-ertekesitesi-elado|gépjármű-értékesítési eladó]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/bbd1fe06-1b55-4937-9317-fc162311ab38
 label: dandártábornok
-level: 4
+level: 5
 track: management
 branch: public
 subBranch: military
@@ -23,14 +23,14 @@ skills:
 lateral:
   - "[[vezerezredes]]"
   - "[[ezredes]]"
-  - "[[szazados]]"
   - "[[birosagi-igazgatasi-vezeto]]"
   - "[[flottaparancsnok]]"
+  - "[[ornagy]]"
 ---
 
 # Dandártábornok
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Stratégiai szint (5), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Honvédelem  
 **ESCO:** [dandártábornok](http://data.europa.eu/esco/occupation/bbd1fe06-1b55-4937-9317-fc162311ab38) (0110.7)
@@ -57,6 +57,6 @@ A dandártábornokok nagy katonai egységek (dandárok) parancsnokai, felügyeli
 
 - [[vezerezredes|vezérezredes]]
 - [[ezredes|ezredes]]
-- [[szazados|százados]]
 - [[birosagi-igazgatasi-vezeto|bírósági igazgatási vezető]]
 - [[flottaparancsnok|flottaparancsnok]]
+- [[ornagy|őrnagy]]

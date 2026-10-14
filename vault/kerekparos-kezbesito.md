@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3a959644-beed-4afc-8e57-d5068ae6a43e
 label: kerékpáros kézbesítő
-level: 2
+level: 1
 track: individual
 branch: transport
 subBranch: postal-courier
@@ -26,7 +26,7 @@ lateral:
 
 # Kerékpáros kézbesítő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Posta és futárszolgálat  
 **ESCO:** [kerékpáros kézbesítő](http://data.europa.eu/esco/occupation/3a959644-beed-4afc-8e57-d5068ae6a43e) (9331.1)

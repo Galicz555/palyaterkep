@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/207d5c25-46fe-401c-b32f-551684e9a8ea
 label: víziélőlény-begyűjtő
-level: 2
+level: 1
 track: individual
 branch: agriculture
 subBranch: fishing
@@ -22,7 +22,7 @@ lateral:
 
 # Víziélőlény-begyűjtő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Halászat és halgazdálkodás  
 **ESCO:** [víziélőlény-begyűjtő](http://data.europa.eu/esco/occupation/207d5c25-46fe-401c-b32f-551684e9a8ea) (9216.3)

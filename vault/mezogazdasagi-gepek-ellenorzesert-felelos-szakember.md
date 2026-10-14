@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/1765f9b2-8483-490d-8df6-6e39db30ad82
 label: mezőgazdasági gépek ellenőrzésért felelős szakember
 level: 3
-track: individual
+track: management
 branch: agriculture
 subBranch: crops
 skills:
@@ -24,7 +24,7 @@ lateral: []
 
 # Mezőgazdasági gépek ellenőrzésért felelős szakember
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Növénytermesztés és kertészet  
 **ESCO:** [mezőgazdasági gépek ellenőrzésért felelős szakember](http://data.europa.eu/esco/occupation/1765f9b2-8483-490d-8df6-6e39db30ad82) (8341.3)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8a007cd3-ba40-4c55-b238-587bd59e74b2
 label: aranyműves
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: crafts
@@ -33,7 +33,7 @@ lateral:
 
 # Aranyműves
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [aranyműves](http://data.europa.eu/esco/occupation/8a007cd3-ba40-4c55-b238-587bd59e74b2) (7313.1.2)

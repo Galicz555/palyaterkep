@@ -46,9 +46,9 @@ lateral:
   - "[[edessegbolti-elado]]"
   - "[[halbolti-elado]]"
   - "[[hus-es-hentesaru-elado]]"
-  - "[[jatekbolti-elado]]"
   - "[[epitoanyagbolti-elado]]"
   - "[[ora-ekszer-elado]]"
+  - "[[butorbolti-elado]]"
 ---
 
 # Zöldség-gyümölcs eladó
@@ -103,6 +103,6 @@ A zöldség-gyümölcs eladók gyümölcsöket és zöldségeket értékesítene
 - [[edessegbolti-elado|édességbolti eladó]]
 - [[halbolti-elado|halbolti eladó]]
 - [[hus-es-hentesaru-elado|hús- és hentesáru-eladó]]
-- [[jatekbolti-elado|játékbolti eladó]]
 - [[epitoanyagbolti-elado|építőanyagbolti eladó]]
 - [[ora-ekszer-elado|óra-ékszer eladó]]
+- [[butorbolti-elado|bútorbolti eladó]]

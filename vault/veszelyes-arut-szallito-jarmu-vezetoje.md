@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c5d779f4-345b-4918-872b-a1cbaeb1d9be
 label: veszélyes árut szállító jármű vezetője
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: road
@@ -35,7 +35,7 @@ lateral:
 
 # Veszélyes árut szállító jármű vezetője
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Közúti közlekedés  
 **ESCO:** [veszélyes árut szállító jármű vezetője](http://data.europa.eu/esco/occupation/c5d779f4-345b-4918-872b-a1cbaeb1d9be) (8332.4)

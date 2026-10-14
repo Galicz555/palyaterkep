@@ -24,7 +24,6 @@ lateral:
   - "[[adoellenor]]"
   - "[[allamhaztartasi-merlegkepes-konyvelo]]"
   - "[[adotanacsado]]"
-  - "[[konyvelo]]"
 ---
 
 # Adópolitikai tanácsadó
@@ -57,4 +56,3 @@ Az adópolitikai tanácsadók az adók kiszámításáért, valamint a magánsze
 - [[adoellenor|adóellenőr]]
 - [[allamhaztartasi-merlegkepes-konyvelo|államháztartási mérlegképes könyvelő]]
 - [[adotanacsado|adótanácsadó]]
-- [[konyvelo|könyvelő]]

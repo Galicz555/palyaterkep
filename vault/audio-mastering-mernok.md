@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/239707a0-4754-4f4b-80b6-6b1ef5657aed
 label: audio mastering mérnök
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: stage-film
@@ -26,7 +26,7 @@ lateral:
 
 # Audio mastering mérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Színház-, film- és műsorgyártás  
 **ESCO:** [audio mastering mérnök](http://data.europa.eu/esco/occupation/239707a0-4754-4f4b-80b6-6b1ef5657aed) (3521.1.9)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c6bd511a-d966-4df9-a48e-4f800354f268
 label: operatív vezető
-level: 4
+level: 3
 track: management
 branch: industry
 subBranch: production-management
@@ -42,7 +42,7 @@ lateral:
 
 # Operatív vezető
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Gyártásirányítás  
 **ESCO:** [operatív vezető](http://data.europa.eu/esco/occupation/c6bd511a-d966-4df9-a48e-4f800354f268) (1321.2.3)

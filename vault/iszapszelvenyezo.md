@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d8ff83c0-be8b-47f9-93e3-b13e261e7da5
 label: iszapszelvényező
-level: 2
+level: 1
 track: individual
 branch: engineering
 subBranch: physical-sciences
@@ -24,7 +24,6 @@ skills:
   - http://data.europa.eu/esco/skill/cde9911c-f92e-4de1-811f-336e177ac4ce
 lateral:
   - "[[geotechnikus]]"
-  - "[[gazfeldolgozo-uzemi-kozponti-iranyitotermi-operator]]"
   - "[[geokemikus]]"
   - "[[legszennyezettseg-elemzo]]"
   - "[[geologiai-technikus]]"
@@ -32,7 +31,7 @@ lateral:
 
 # Iszapszelvényező
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Fizika, kémia és földtudományok  
 **ESCO:** [iszapszelvényező](http://data.europa.eu/esco/occupation/d8ff83c0-be8b-47f9-93e3-b13e261e7da5) (2114.1.7)
@@ -60,7 +59,6 @@ Az iszapszelvényezők elemzik a fúrófolyadékokat a fúrást követően. A fo
 ## Váltások
 
 - [[geotechnikus|geotechnikus]]
-- [[gazfeldolgozo-uzemi-kozponti-iranyitotermi-operator|gázfeldolgozó-üzemi központi irányítótermi operátor]]
 - [[geokemikus|geokémikus]]
 - [[legszennyezettseg-elemzo|légszennyezettség-elemző]]
 - [[geologiai-technikus|geológiai technikus]]

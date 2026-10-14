@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f0296b9c-764d-42ab-8de9-2a3729a9b67a
 label: tengerbiológus
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -39,7 +39,7 @@ lateral:
 
 # Tengerbiológus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [tengerbiológus](http://data.europa.eu/esco/occupation/f0296b9c-764d-42ab-8de9-2a3729a9b67a) (2131.4.9)

@@ -28,6 +28,7 @@ skills:
   - http://data.europa.eu/esco/skill/ef1e63c9-f8c1-46ad-8c74-3cea311c9377
 lateral:
   - "[[elsosegelynyujto-oktato]]"
+  - "[[egyetemi-tanarseged]]"
   - "[[jelnyelvi-tolmacs]]"
 ---
 
@@ -65,4 +66,5 @@ A jelnyelvtanárok jelnyelvet oktatnak, nem korosztályhoz kötött módon. A je
 ## Váltások
 
 - [[elsosegelynyujto-oktato|elsősegélynyújtó-oktató]]
+- [[egyetemi-tanarseged|egyetemi tanársegéd]]
 - [[jelnyelvi-tolmacs|jelnyelvi tolmács]]

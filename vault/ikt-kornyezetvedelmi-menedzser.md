@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c90e5009-37f2-4dcd-aea2-362fc817bc98
 label: IKT környezetvédelmi menedzser
-level: 3
-track: individual
+level: 4
+track: management
 branch: it
 subBranch: it-management
 skills:
@@ -28,13 +28,12 @@ skills:
   - http://data.europa.eu/esco/skill/e5609f89-0daf-40bb-bd6b-94f5d7498131
   - http://data.europa.eu/esco/skill/f3cc52e3-a96c-4549-b841-6e41a846fa99
   - http://data.europa.eu/esco/skill/f4a85869-1855-45d5-a43c-7ee8cd451996
-lateral:
-  - "[[kornyezetvedelmi-szakerto]]"
+lateral: []
 ---
 
 # IKT környezetvédelmi menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › IT-vezetés  
 **ESCO:** [IKT környezetvédelmi menedzser](http://data.europa.eu/esco/occupation/c90e5009-37f2-4dcd-aea2-362fc817bc98) (1330.10)
@@ -67,4 +66,4 @@ Az IKT környezetvédelmi menedzserek ismerik a környezetvédelmi vonatkozású
 
 ## Váltások
 
-- [[kornyezetvedelmi-szakerto|környezetvédelmi szakértő]]
+Nincs.

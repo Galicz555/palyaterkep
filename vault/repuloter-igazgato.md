@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/fc35b7ca-ecec-40d7-91b5-5065f662d955
 label: repülőtér-igazgató
-level: 4
+level: 5
 track: management
 branch: transport
 subBranch: air
@@ -36,7 +36,7 @@ lateral:
 
 # Repülőtér-igazgató
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Stratégiai szint (5), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [repülőtér-igazgató](http://data.europa.eu/esco/occupation/fc35b7ca-ecec-40d7-91b5-5065f662d955) (1324.1)

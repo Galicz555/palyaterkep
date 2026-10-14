@@ -25,11 +25,8 @@ skills:
   - http://data.europa.eu/esco/skill/e207163b-7963-4c3e-9494-7a4bb000211b
   - http://data.europa.eu/esco/skill/f78d5c04-a440-4068-90c2-fab03409a911
 lateral:
-  - "[[tartomanyi-kormanyzo]]"
   - "[[polgarmester]]"
-  - "[[allamtitkar]]"
   - "[[lobbista]]"
-  - "[[onkormanyzati-kepviselo]]"
 ---
 
 # Igazgatásszervező
@@ -63,8 +60,5 @@ A közigazgatási vezetők a kormányzati politikák végrehajtását irányítj
 
 ## Váltások
 
-- [[tartomanyi-kormanyzo|tartományi kormányzó]]
 - [[polgarmester|polgármester]]
-- [[allamtitkar|államtitkár]]
 - [[lobbista|lobbista]]
-- [[onkormanyzati-kepviselo|önkormányzati képviselő]]

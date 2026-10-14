@@ -54,6 +54,7 @@ skills:
   - http://data.europa.eu/esco/skill/f842b607-730e-4a01-b27d-12e3e4535975
 lateral:
   - "[[allatorvosi-szakseged]]"
+  - "[[allatjoleti-felelos]]"
   - "[[szakallatorvos]]"
   - "[[altalanos-allatorvos]]"
   - "[[allatorvosi-rendelo-recepciosa]]"
@@ -120,6 +121,7 @@ Az állatorvosi asszisztens feladata az állatorvosi ellátásban részesített 
 ## Váltások
 
 - [[allatorvosi-szakseged|állatorvosi szaksegéd]]
+- [[allatjoleti-felelos|állatjóléti felelős]]
 - [[szakallatorvos|szakállatorvos]]
 - [[altalanos-allatorvos|általános állatorvos]]
 - [[allatorvosi-rendelo-recepciosa|állatorvosi rendelő recepciósa]]

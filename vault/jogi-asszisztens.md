@@ -28,6 +28,7 @@ lateral:
   - "[[birosagi-ugyintezo]]"
   - "[[jogi-adminisztrator]]"
   - "[[jogpolitikai-tisztviselo]]"
+  - "[[eskudtszeki-koordinator]]"
 ---
 
 # Jogi asszisztens
@@ -64,3 +65,4 @@ A jogi asszisztensek a bíróság elé terjesztett ügyek kutatása és előkés
 - [[birosagi-ugyintezo|bírósági ügyintéző]]
 - [[jogi-adminisztrator|jogi adminisztrátor]]
 - [[jogpolitikai-tisztviselo|jogpolitikai tisztviselő]]
+- [[eskudtszeki-koordinator|esküdtszéki koordinátor]]

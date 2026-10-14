@@ -40,7 +40,6 @@ skills:
 lateral:
   - "[[ivadeknevelesi-akvakultura-technikus]]"
   - "[[keltetesi-akvakultura-dolgozo]]"
-  - "[[keltetesi-akvakultura-vezeto]]"
   - "[[recirkulacios-akvakultura-technikus]]"
 ---
 
@@ -90,5 +89,4 @@ A keltetési akvakultúra-technikusok koordinálják és ellenőrzik a keltető�
 
 - [[ivadeknevelesi-akvakultura-technikus|ivadéknevelési akvakultúra-technikus]]
 - [[keltetesi-akvakultura-dolgozo|keltetési akvakultúra-dolgozó]]
-- [[keltetesi-akvakultura-vezeto|keltetési akvakultúra-vezető]]
 - [[recirkulacios-akvakultura-technikus|recirkulációs akvakultúra-technikus]]

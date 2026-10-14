@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/a79e7622-2307-44e2-94cc-d1ff1caf655a
 label: ifjúsági programigazgató
 level: 4
-track: individual
+track: management
 branch: health-social
 subBranch: social-work
 skills:
@@ -26,7 +26,7 @@ lateral: []
 
 # Ifjúsági programigazgató
 
-Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Szociális munka  
 **ESCO:** [ifjúsági programigazgató](http://data.europa.eu/esco/occupation/a79e7622-2307-44e2-94cc-d1ff1caf655a) (1344.1.3)

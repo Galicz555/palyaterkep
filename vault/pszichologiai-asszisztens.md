@@ -30,7 +30,6 @@ skills:
   - http://data.europa.eu/esco/skill/f90d4810-8bac-4e5e-b870-3e35a4138ff7
   - http://data.europa.eu/esco/skill/f9f258e3-4728-4107-9e08-293d5d2ef65e
 lateral:
-  - "[[klinikai-pszichologus]]"
   - "[[egeszsegpszichologus]]"
 ---
 
@@ -70,5 +69,4 @@ A pszichológiai asszisztens a pszichológusok munkáját segíti. Egészségüg
 
 ## Váltások
 
-- [[klinikai-pszichologus|klinikai pszichológus]]
 - [[egeszsegpszichologus|egészségpszichológus]]

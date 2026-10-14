@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/ada3fc30-c205-4279-90b8-ed5c7c467626
 label: bőripari termékfejlesztési menedzser
 level: 3
-track: individual
+track: management
 branch: engineering
 subBranch: rnd-management
 skills:
@@ -42,7 +42,7 @@ lateral:
 
 # Bőripari termékfejlesztési menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Kutatás-fejlesztés és termékfejlesztés vezetése  
 **ESCO:** [bőripari termékfejlesztési menedzser](http://data.europa.eu/esco/occupation/ada3fc30-c205-4279-90b8-ed5c7c467626) (1223.2.1.4)

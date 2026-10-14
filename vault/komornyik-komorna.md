@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/e65a9b0e-7347-4f6e-945e-aaeee976ef6e
 label: komornyik/komorna
 level: 3
-track: individual
+track: management
 branch: hospitality
 subBranch: accommodation
 skills:
@@ -19,16 +19,16 @@ skills:
   - http://data.europa.eu/esco/skill/f8180a0a-fba3-43de-bab2-f25cb9d64ad7
 lateral:
   - "[[szallodaportas]]"
+  - "[[vendeglato-egyseg-recepciosa]]"
+  - "[[kempingszolgaltatasok-uzemeltetoje-iranyitoja]]"
   - "[[ejszakai-recepcios]]"
   - "[[utaskisero]]"
   - "[[panziovezeto]]"
-  - "[[portas-portasno]]"
-  - "[[vasuti-utaskisero]]"
 ---
 
 # Komornyik/komorna
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Szálláshely-szolgáltatás  
 **ESCO:** [komornyik/komorna](http://data.europa.eu/esco/occupation/e65a9b0e-7347-4f6e-945e-aaeee976ef6e) (5151.1)
@@ -51,8 +51,8 @@ A komornyikok/komornák magas szintű vendéglátó létesítményekben nyújtan
 ## Váltások
 
 - [[szallodaportas|szállodaportás]]
+- [[vendeglato-egyseg-recepciosa|vendéglátó egység recepciósa]]
+- [[kempingszolgaltatasok-uzemeltetoje-iranyitoja|kempingszolgáltatások üzemeltetője/irányítója]]
 - [[ejszakai-recepcios|éjszakai recepciós]]
 - [[utaskisero|utaskísérő]]
 - [[panziovezeto|panzióvezető]]
-- [[portas-portasno|portás/portásnő]]
-- [[vasuti-utaskisero|vasúti utaskísérő]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ce594060-b05a-45d8-ac41-1cf3bb980085
 label: cipővarró
-level: 1
+level: 2
 track: individual
 branch: industry
 subBranch: textiles
@@ -22,12 +22,12 @@ lateral:
   - "[[cipoipari-minoseg-ellenorzesi-laboratoriumi-technikus]]"
   - "[[cipominta-keszito]]"
   - "[[cipoipari-cad-mintatervezo]]"
-  - "[[cipogyarto-gep-kezeloje]]"
+  - "[[cipoipari-termelesi-vezeto]]"
 ---
 
 # Cipővarró
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Textil-, ruha- és bőripar  
 **ESCO:** [cipővarró](http://data.europa.eu/esco/occupation/ce594060-b05a-45d8-ac41-1cf3bb980085) (7536.2.4)
@@ -53,4 +53,4 @@ A cipővarrók a vágott bőr és egyéb anyagok vágott darabjait dolgozzák ö
 - [[cipoipari-minoseg-ellenorzesi-laboratoriumi-technikus|cipőipari minőség-ellenőrzési laboratóriumi technikus]]
 - [[cipominta-keszito|cipőminta-készítő]]
 - [[cipoipari-cad-mintatervezo|cipőipari CAD-mintatervező]]
-- [[cipogyarto-gep-kezeloje|cipőgyártó gép kezelője]]
+- [[cipoipari-termelesi-vezeto|cipőipari termelési vezető]]

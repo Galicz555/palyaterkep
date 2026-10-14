@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8de99659-5b10-4825-ac67-0c50189bcc3c
 label: csomagolástechnológiai mérnök
-level: 2
-track: individual
+level: 3
+track: management
 branch: engineering
 subBranch: production-engineering
 skills:
@@ -32,7 +32,7 @@ lateral:
 
 # Csomagolástechnológiai mérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Ipari és gyártástechnológiai mérnöki terület  
 **ESCO:** [csomagolástechnológiai mérnök](http://data.europa.eu/esco/occupation/8de99659-5b10-4825-ac67-0c50189bcc3c) (2141.9)

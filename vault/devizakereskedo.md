@@ -26,6 +26,7 @@ lateral:
   - "[[arutozsdei-kereskedo]]"
   - "[[kereskedelmi-ugynok]]"
   - "[[gazdasagkutato]]"
+  - "[[befektetesialap-kezelo-asszisztens]]"
 ---
 
 # Devizakereskedő
@@ -60,3 +61,4 @@ A devizakereskedő devizát ad és vesz abban a reményben, hogy az árfolyam-in
 - [[arutozsdei-kereskedo|árutőzsdei kereskedő]]
 - [[kereskedelmi-ugynok|kereskedelmi ügynök]]
 - [[gazdasagkutato|gazdaságkutató]]
+- [[befektetesialap-kezelo-asszisztens|befektetésialap-kezelő asszisztens]]

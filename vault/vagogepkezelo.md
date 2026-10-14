@@ -29,10 +29,10 @@ skills:
 lateral:
   - "[[tuzodei-elokeszito]]"
   - "[[automata-cipoalkatreszvago-gep-kezeloje]]"
-  - "[[ortopediai-cipesz]]"
   - "[[cipokikeszito-es-csomagolo]]"
   - "[[egyedi-cipokeszito]]"
   - "[[cipojavito]]"
+  - "[[cipogyarto-gep-kezeloje]]"
 ---
 
 # Vágógépkezelő
@@ -72,7 +72,7 @@ A vágógépek kezelői ellenőrzik a bőrt, a textileket, a szintetikus anyagok
 
 - [[tuzodei-elokeszito|tűzödei előkészítő]]
 - [[automata-cipoalkatreszvago-gep-kezeloje|automata cipőalkatrészvágó gép kezelője]]
-- [[ortopediai-cipesz|ortopédiai cipész]]
 - [[cipokikeszito-es-csomagolo|cipőkikészítő és -csomagoló]]
 - [[egyedi-cipokeszito|egyedi cipőkészítő]]
 - [[cipojavito|cipőjavító]]
+- [[cipogyarto-gep-kezeloje|cipőgyártó gép kezelője]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/aa9c6416-6a17-4e2f-a7c4-6d47c205d480
 label: gyógyszertári eladó
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: retail
@@ -49,7 +49,7 @@ lateral:
 
 # Gyógyszertári eladó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Bolti értékesítés  
 **ESCO:** [gyógyszertári eladó](http://data.europa.eu/esco/occupation/aa9c6416-6a17-4e2f-a7c4-6d47c205d480) (5223.7.24)

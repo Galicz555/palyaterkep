@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/3b43dafb-8c6b-4906-9fe5-bc218aacad55
 label: futballedző
 level: 3
-track: individual
+track: management
 branch: culture
 subBranch: sport-leisure
 skills:
@@ -34,7 +34,7 @@ lateral:
 
 # Futballedző
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Sport, szabadidő és szerencsejáték  
 **ESCO:** [futballedző](http://data.europa.eu/esco/occupation/3b43dafb-8c6b-4906-9fe5-bc218aacad55) (3422.3.1)

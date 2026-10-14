@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6d16c41d-81a7-44a9-836d-7aed46ccb955
 label: üvegfestő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: crafts
@@ -33,7 +33,7 @@ lateral:
 
 # Üvegfestő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [üvegfestő](http://data.europa.eu/esco/occupation/6d16c41d-81a7-44a9-836d-7aed46ccb955) (7316.1.2)

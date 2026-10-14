@@ -34,8 +34,8 @@ lateral:
   - "[[tuzertiszt]]"
   - "[[tengeresztiszt]]"
   - "[[a-legiero-tisztje]]"
-  - "[[gyalogos]]"
   - "[[hadviselesi-szakerto]]"
+  - "[[szakaszvezeto]]"
 ---
 
 # Különleges alakulat tisztje
@@ -78,5 +78,5 @@ A különleges alakulatok tisztjei olyan speciális küldetésekben vesznek rés
 - [[tuzertiszt|tüzértiszt]]
 - [[tengeresztiszt|tengerésztiszt]]
 - [[a-legiero-tisztje|a légierő tisztje]]
-- [[gyalogos|gyalogos]]
 - [[hadviselesi-szakerto|hadviselési szakértő]]
+- [[szakaszvezeto|szakaszvezető]]

@@ -42,8 +42,8 @@ lateral:
   - "[[nyelviskolai-nyelvtanar]]"
   - "[[iras-olvasast-tanito-felnottoktato]]"
   - "[[vallalati-trener]]"
+  - "[[repulesoktato]]"
   - "[[egyetemi-tanarseged]]"
-  - "[[elsosegelynyujto-oktato]]"
 ---
 
 # Digitális készségfejlesztő tanár
@@ -94,5 +94,5 @@ A digitális készségfejlesztő tanárok a számítógép-használat (alapszint
 - [[nyelviskolai-nyelvtanar|nyelviskolai nyelvtanár]]
 - [[iras-olvasast-tanito-felnottoktato|írás-olvasást tanító felnőttoktató]]
 - [[vallalati-trener|vállalati tréner]]
+- [[repulesoktato|repülésoktató]]
 - [[egyetemi-tanarseged|egyetemi tanársegéd]]
-- [[elsosegelynyujto-oktato|elsősegélynyújtó-oktató]]

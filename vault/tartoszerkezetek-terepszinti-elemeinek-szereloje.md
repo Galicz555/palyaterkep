@@ -21,9 +21,9 @@ skills:
 lateral:
   - "[[satorepito]]"
   - "[[rendezvenyi-villamoshalozat-szerelo]]"
-  - "[[magasepito-tartoszerkezet-szerelo]]"
   - "[[rendezvenytechnikai-tartoszerkezet-szerelo]]"
   - "[[fejgepes-vilagosito]]"
+  - "[[hangszertechnikus]]"
   - "[[szinpadepito]]"
 ---
 
@@ -55,7 +55,7 @@ A tartószerkezetek terepszinti elemeinek szerelői segítik az ideiglenes függ
 
 - [[satorepito|sátorépítő]]
 - [[rendezvenyi-villamoshalozat-szerelo|rendezvényi villamoshálózat szerelő]]
-- [[magasepito-tartoszerkezet-szerelo|magasépítő tartószerkezet-szerelő]]
 - [[rendezvenytechnikai-tartoszerkezet-szerelo|rendezvénytechnikai tartószerkezet-szerelő]]
 - [[fejgepes-vilagosito|fejgépes világosító]]
+- [[hangszertechnikus|hangszertechnikus]]
 - [[szinpadepito|színpadépítő]]

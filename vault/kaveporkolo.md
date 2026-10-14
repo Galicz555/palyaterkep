@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/36b11444-8634-4194-b679-ed302acdfb22
 label: kávépörkölő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: food
@@ -29,14 +29,14 @@ lateral:
   - "[[kakaobab-porkolo]]"
   - "[[malataporkolo-kezeloje]]"
   - "[[leparolouzem-dolgozoja]]"
-  - "[[szaritasi-tevekenyseget-vegzo-dolgozo]]"
-  - "[[kavedaralo-gep-kezeloje]]"
+  - "[[kaveporkolo-mester]]"
   - "[[ragogumigyarto-gep-kezeloje]]"
+  - "[[kavekostolo]]"
 ---
 
 # Kávépörkölő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [kávépörkölő](http://data.europa.eu/esco/occupation/36b11444-8634-4194-b679-ed302acdfb22) (8160.23)
@@ -69,6 +69,6 @@ A kávépörölők gáztüzelésű pörkölőket üzemeltetnek kávébab szárí
 - [[kakaobab-porkolo|kakaóbab-pörkölő]]
 - [[malataporkolo-kezeloje|malátapörkölő kezelője]]
 - [[leparolouzem-dolgozoja|lepárolóüzem dolgozója]]
-- [[szaritasi-tevekenyseget-vegzo-dolgozo|szárítási tevékenységet végző dolgozó]]
-- [[kavedaralo-gep-kezeloje|kávédaráló gép kezelője]]
+- [[kaveporkolo-mester|kávépörkölő mester]]
 - [[ragogumigyarto-gep-kezeloje|rágógumigyártó gép kezelője]]
+- [[kavekostolo|kávékóstoló]]

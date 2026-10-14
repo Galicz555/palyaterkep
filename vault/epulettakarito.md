@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/303a1e34-cb16-4054-b323-81e5eec17397
 label: épülettakarító
-level: 2
+level: 1
 track: individual
 branch: hospitality
 subBranch: cleaning
@@ -36,13 +36,12 @@ lateral:
   - "[[haztartasi-takarito]]"
   - "[[vonattakarito]]"
   - "[[ablaktisztito]]"
-  - "[[hazvezeto-hazvezetono]]"
   - "[[szonyeg-karpit-fuggonytisztito]]"
 ---
 
 # Épülettakarító
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Takarítás, háztartás és épületgondnokság  
 **ESCO:** [épülettakarító](http://data.europa.eu/esco/occupation/303a1e34-cb16-4054-b323-81e5eec17397) (9112.2)
@@ -82,5 +81,4 @@ Az épülettakarítók különböző típusú épületek, például irodák, kó
 - [[haztartasi-takarito|háztartási takarító]]
 - [[vonattakarito|vonattakarító]]
 - [[ablaktisztito|ablaktisztító]]
-- [[hazvezeto-hazvezetono|házvezető/házvezetőnő]]
 - [[szonyeg-karpit-fuggonytisztito|szőnyeg-, kárpit-, függönytisztító]]

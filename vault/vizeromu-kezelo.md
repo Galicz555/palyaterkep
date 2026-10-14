@@ -25,7 +25,7 @@ lateral:
   - "[[fosszilis-tuzeloanyaggal-mukodo-eromu-kezeloje]]"
   - "[[geotermikus-eromu-kezeloje]]"
   - "[[eromukezelo]]"
-  - "[[tuzoltoszivattyu-mukodtetoje]]"
+  - "[[femhulladek-darabolo]]"
 ---
 
 # Vízerőmű-kezelő
@@ -59,4 +59,4 @@ A vízerőmű-kezelő működteti és tartja karban a vízmozgásból származó
 - [[fosszilis-tuzeloanyaggal-mukodo-eromu-kezeloje|fosszilis tüzelőanyaggal működő erőmű kezelője]]
 - [[geotermikus-eromu-kezeloje|geotermikus erőmű kezelője]]
 - [[eromukezelo|erőműkezelő]]
-- [[tuzoltoszivattyu-mukodtetoje|tűzoltószivattyú működtetője]]
+- [[femhulladek-darabolo|fémhulladék-daraboló]]

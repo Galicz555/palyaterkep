@@ -31,7 +31,6 @@ skills:
 lateral:
   - "[[promocios-asszisztens]]"
   - "[[titkar-titkarno]]"
-  - "[[igazgatoi-asszisztens]]"
   - "[[menedzserasszisztens]]"
   - "[[logisztikai-ugyintezo]]"
 ---
@@ -74,6 +73,5 @@ A marketingasszisztensek támogatják a marketingvezetők és tisztviselők ált
 
 - [[promocios-asszisztens|promóciós asszisztens]]
 - [[titkar-titkarno|titkár/titkárnő]]
-- [[igazgatoi-asszisztens|igazgatói asszisztens]]
 - [[menedzserasszisztens|menedzserasszisztens]]
 - [[logisztikai-ugyintezo|logisztikai ügyintéző]]

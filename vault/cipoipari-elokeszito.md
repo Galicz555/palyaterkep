@@ -26,9 +26,9 @@ lateral:
   - "[[cipotalpalo-es-sarkalo]]"
   - "[[cipesz]]"
   - "[[cipofelsoresz-kaptafazo]]"
-  - "[[egyedi-cipokeszito]]"
   - "[[cipoipari-technikus]]"
   - "[[cipokikeszito-es-csomagolo]]"
+  - "[[automata-cipoalkatreszvago-gep-kezeloje]]"
 ---
 
 # Cipőipari előkészítő
@@ -63,6 +63,6 @@ A cipőipari előkészítők kezelik azokat az eszközöket és berendezéseket,
 - [[cipotalpalo-es-sarkalo|cipőtalpaló és -sarkaló]]
 - [[cipesz|cipész]]
 - [[cipofelsoresz-kaptafazo|cipőfelsőrész-kaptafázó]]
-- [[egyedi-cipokeszito|egyedi cipőkészítő]]
 - [[cipoipari-technikus|cipőipari technikus]]
 - [[cipokikeszito-es-csomagolo|cipőkikészítő és -csomagoló]]
+- [[automata-cipoalkatreszvago-gep-kezeloje|automata cipőalkatrészvágó gép kezelője]]

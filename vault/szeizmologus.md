@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b79cfd33-6e46-4b71-b180-c9a84422f047
 label: szeizmológus
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: physical-sciences
@@ -59,7 +59,7 @@ lateral:
 
 # Szeizmológus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Fizika, kémia és földtudományok  
 **ESCO:** [szeizmológus](http://data.europa.eu/esco/occupation/b79cfd33-6e46-4b71-b180-c9a84422f047) (2114.1.10)

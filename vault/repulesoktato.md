@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b3b32930-05f0-4b2e-93bf-34d1e3f89a3b
 label: repülésoktató
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: air
@@ -30,14 +30,14 @@ lateral:
   - "[[szakoktato]]"
   - "[[hajozasoktato]]"
   - "[[kotottpalyas-jarmuvek-vezetesenek-oktatoja]]"
-  - "[[egyetemi-tanarseged]]"
   - "[[tutor]]"
   - "[[vallalati-trener]]"
+  - "[[digitalis-keszsegfejleszto-tanar]]"
 ---
 
 # Repülésoktató
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [repülésoktató](http://data.europa.eu/esco/occupation/b3b32930-05f0-4b2e-93bf-34d1e3f89a3b) (3153.2.3)
@@ -71,6 +71,6 @@ A repülésoktató olyan kezdő és tapasztalt pilótáknak nyújt képzést a l
 - [[szakoktato|szakoktató]]
 - [[hajozasoktato|hajózásoktató]]
 - [[kotottpalyas-jarmuvek-vezetesenek-oktatoja|kötöttpályás járművek vezetésének oktatója]]
-- [[egyetemi-tanarseged|egyetemi tanársegéd]]
 - [[tutor|tutor]]
 - [[vallalati-trener|vállalati tréner]]
+- [[digitalis-keszsegfejleszto-tanar|digitális készségfejlesztő tanár]]

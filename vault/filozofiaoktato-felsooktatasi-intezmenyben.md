@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ae2c1bf4-669e-4fec-a7d7-698753699083
 label: filozófiaoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -47,7 +47,7 @@ lateral:
 
 # Filozófiaoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [filozófiaoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/ae2c1bf4-669e-4fec-a7d7-698753699083) (2310.1.32)

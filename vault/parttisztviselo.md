@@ -18,7 +18,6 @@ skills:
   - http://data.europa.eu/esco/skill/cd74c564-57af-4aa2-b775-13e7609ffca1
   - http://data.europa.eu/esco/skill/faf8943c-72ff-4736-a587-25508695d6f0
 lateral:
-  - "[[valasztasi-kampanymenedzser]]"
   - "[[politikai-kampanytanacsado]]"
 ---
 
@@ -46,5 +45,4 @@ A párttisztviselők kezelik a politikai pártok adminisztratív feladatait, min
 
 ## Váltások
 
-- [[valasztasi-kampanymenedzser|választási kampánymenedzser]]
 - [[politikai-kampanytanacsado|politikai kampánytanácsadó]]

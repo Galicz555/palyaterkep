@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/5bca96fd-4203-400b-be58-9e9b50bc98da
 label: parlamenti képviselő
-level: 3
+level: 4
 track: individual
 branch: public
 subBranch: politics
@@ -23,16 +23,16 @@ skills:
   - http://data.europa.eu/esco/skill/fbf53f87-9192-4a7f-b3c9-92a8c395c719
 lateral:
   - "[[szenator]]"
+  - "[[miniszter]]"
   - "[[tartomanyi-kormanyzo]]"
   - "[[allamtitkar]]"
   - "[[onkormanyzati-kepviselo]]"
   - "[[lobbista]]"
-  - "[[jogszabaly-szerkeszto]]"
 ---
 
 # Parlamenti képviselő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Politika és kormányzati vezetés  
 **ESCO:** [parlamenti képviselő](http://data.europa.eu/esco/occupation/5bca96fd-4203-400b-be58-9e9b50bc98da) (1111.5)
@@ -59,8 +59,8 @@ A parlamenti képviselők politikai pártjuk érdekeit képviselik a parlamentek
 ## Váltások
 
 - [[szenator|szenátor]]
+- [[miniszter|miniszter]]
 - [[tartomanyi-kormanyzo|tartományi kormányzó]]
 - [[allamtitkar|államtitkár]]
 - [[onkormanyzati-kepviselo|önkormányzati képviselő]]
 - [[lobbista|lobbista]]
-- [[jogszabaly-szerkeszto|jogszabály-szerkesztő]]

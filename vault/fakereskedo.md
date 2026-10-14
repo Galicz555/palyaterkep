@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c3dc576e-2a58-4481-9b6f-9853067af8ea
 label: fakereskedő
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: purchasing
@@ -28,7 +28,7 @@ lateral: []
 
 # Fakereskedő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Beszerzés  
 **ESCO:** [fakereskedő](http://data.europa.eu/esco/occupation/c3dc576e-2a58-4481-9b6f-9853067af8ea) (3323.5)

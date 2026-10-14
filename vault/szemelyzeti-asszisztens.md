@@ -29,7 +29,6 @@ lateral:
   - "[[toborzasi-tanacsado]]"
   - "[[munkaeropiaci-szolgaltatasi-ugyintezo]]"
   - "[[foglalkoztatasi-tanacsado]]"
-  - "[[poligrafszakerto]]"
 ---
 
 # Személyzeti asszisztens
@@ -67,4 +66,3 @@ A személyzeti asszisztensek a személyzeti vezetők által végzett folyamatok 
 - [[toborzasi-tanacsado|toborzási tanácsadó]]
 - [[munkaeropiaci-szolgaltatasi-ugyintezo|munkaerőpiaci szolgáltatási ügyintéző]]
 - [[foglalkoztatasi-tanacsado|foglalkoztatási tanácsadó]]
-- [[poligrafszakerto|poligráfszakértő]]

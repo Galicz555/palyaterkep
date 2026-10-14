@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/dca305c8-d665-462c-bdc9-c3a19734ba18
 label: felületmérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: production-engineering
@@ -33,7 +33,7 @@ lateral:
 
 # Felületmérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Ipari és gyártástechnológiai mérnöki terület  
 **ESCO:** [felületmérnök](http://data.europa.eu/esco/occupation/dca305c8-d665-462c-bdc9-c3a19734ba18) (2141.4.3)

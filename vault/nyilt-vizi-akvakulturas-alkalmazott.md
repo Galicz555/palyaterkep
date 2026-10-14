@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/aa0fd823-2f45-41c8-a3c6-97d97885e455
 label: nyílt vízi akvakultúrás alkalmazott
-level: 2
+level: 1
 track: individual
 branch: agriculture
 subBranch: fishing
@@ -49,12 +49,11 @@ lateral:
   - "[[akvakulturalis-betakarito]]"
   - "[[lehalaszasi-akvakultura-technikus]]"
   - "[[ketreces-akvakultura-technikus]]"
-  - "[[nyilt-vizi-akvakultura-technikus]]"
 ---
 
 # Nyílt vízi akvakultúrás alkalmazott
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Halászat és halgazdálkodás  
 **ESCO:** [nyílt vízi akvakultúrás alkalmazott](http://data.europa.eu/esco/occupation/aa0fd823-2f45-41c8-a3c6-97d97885e455) (9216.4)
@@ -107,4 +106,3 @@ A nyílt vízi akvakultúrás alkalmazottak kézzel végzett tevékenységeket v
 - [[akvakulturalis-betakarito|akvakulturális betakarító]]
 - [[lehalaszasi-akvakultura-technikus|lehalászási akvakultúra-technikus]]
 - [[ketreces-akvakultura-technikus|ketreces akvakultúra-technikus]]
-- [[nyilt-vizi-akvakultura-technikus|nyílt vízi akvakultúra-technikus]]

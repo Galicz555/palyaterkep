@@ -19,9 +19,7 @@ skills:
   - http://data.europa.eu/esco/skill/d11e4683-d2fe-45fd-bb1a-e995f7877851
   - http://data.europa.eu/esco/skill/d60f6482-39b0-4a8d-acdc-ac26fbe5fca7
 lateral:
-  - "[[zenei-igazgato]]"
   - "[[zeneszerzo]]"
-  - "[[zenei-producer]]"
   - "[[karnagy]]"
 ---
 
@@ -50,7 +48,5 @@ A hangszerelők hangszerelik a zenét az után, hogy azt a zeneszerző megírta.
 
 ## Váltások
 
-- [[zenei-igazgato|zenei igazgató]]
 - [[zeneszerzo|zeneszerző]]
-- [[zenei-producer|zenei producer]]
 - [[karnagy|karnagy]]

@@ -38,7 +38,6 @@ skills:
 lateral:
   - "[[ipari-buvar]]"
   - "[[mentobuvar]]"
-  - "[[epitesvezeto]]"
   - "[[szetszerelesvezeto]]"
   - "[[villamoshalozat-kiepitesi-vezeto]]"
   - "[[felvonotelepites-vezeto]]"
@@ -88,7 +87,6 @@ A víz alatti mélyépítési munkák irányítója felügyeli a víz alatti ép
 
 - [[ipari-buvar|ipari búvár]]
 - [[mentobuvar|mentőbúvár]]
-- [[epitesvezeto|építésvezető]]
 - [[szetszerelesvezeto|szétszerelésvezető]]
 - [[villamoshalozat-kiepitesi-vezeto|villamoshálózat-kiépítési vezető]]
 - [[felvonotelepites-vezeto|felvonótelepítés-vezető]]

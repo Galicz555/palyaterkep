@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8edd8bff-cb59-4c9c-ab0f-59e77d18be48
 label: prediktív karbantartási szakértő
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: electrical
@@ -28,13 +28,12 @@ skills:
   - http://data.europa.eu/esco/skill/fe4a9fb8-2963-4b23-8a18-e033197304f2
   - http://data.europa.eu/esco/skill/ffdd5e53-7191-4043-ae0e-eea1bb077080
 lateral:
-  - "[[statisztikai-asszisztens]]"
   - "[[muszermernok]]"
 ---
 
 # Prediktív karbantartási szakértő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Villamosmérnöki terület és elektronika  
 **ESCO:** [prediktív karbantartási szakértő](http://data.europa.eu/esco/occupation/8edd8bff-cb59-4c9c-ab0f-59e77d18be48) (2152.1.13)
@@ -67,5 +66,4 @@ A prediktív karbantartási szakértők elemzik a gyárakban, gépekben, gépkoc
 
 ## Váltások
 
-- [[statisztikai-asszisztens|statisztikai asszisztens]]
 - [[muszermernok|műszermérnök]]

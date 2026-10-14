@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/4163b31e-440b-4991-b5c3-48d0515250ef
 label: hálózati értékesítő
-level: 2
+level: 1
 track: individual
 branch: trade
 subBranch: marketing
@@ -32,7 +32,7 @@ lateral:
 
 # Hálózati értékesítő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Értékesítési vezetés és marketing  
 **ESCO:** [hálózati értékesítő](http://data.europa.eu/esco/occupation/4163b31e-440b-4991-b5c3-48d0515250ef) (2431.13)

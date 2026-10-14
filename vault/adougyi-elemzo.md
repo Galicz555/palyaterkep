@@ -27,7 +27,6 @@ skills:
 lateral:
   - "[[gazdasagi-tanacsado]]"
   - "[[parlamenti-asszisztens]]"
-  - "[[szabalyozasi-menedzser]]"
 ---
 
 # Adóügyi elemző
@@ -63,4 +62,3 @@ Az „adópolitikai elemzők kutatják és dolgozzák ki az adópolitikákat és
 
 - [[gazdasagi-tanacsado|gazdasági tanácsadó]]
 - [[parlamenti-asszisztens|parlamenti asszisztens]]
-- [[szabalyozasi-menedzser|szabályozási menedzser]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9dbbeb2c-0d51-4c03-8ef6-8dfa7360db22
 label: másodgéptiszt
-level: 1
+level: 2
 track: individual
 branch: transport
 subBranch: water
@@ -41,7 +41,7 @@ lateral:
 
 # Másodgéptiszt
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Vízi közlekedés  
 **ESCO:** [másodgéptiszt](http://data.europa.eu/esco/occupation/9dbbeb2c-0d51-4c03-8ef6-8dfa7360db22) (3151.3)

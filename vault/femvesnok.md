@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8b2d562c-8407-49cd-9843-636c352b8c82
 label: fémvésnök
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: crafts
@@ -31,7 +31,7 @@ lateral:
 
 # Fémvésnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [fémvésnök](http://data.europa.eu/esco/occupation/8b2d562c-8407-49cd-9843-636c352b8c82) (7316.3)

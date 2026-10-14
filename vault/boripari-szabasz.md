@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e666c384-2a14-4cd9-981f-7067dc0bb9a9
 label: bőripari szabász
-level: 1
+level: 2
 track: individual
 branch: industry
 subBranch: textiles
@@ -28,7 +28,7 @@ lateral:
 
 # Bőripari szabász
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Textil-, ruha- és bőripar  
 **ESCO:** [bőripari szabász](http://data.europa.eu/esco/occupation/e666c384-2a14-4cd9-981f-7067dc0bb9a9) (7536.1.3)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c5328083-eda0-4ca8-b9cb-99a46e73a9bc
 label: növénytani szakértő
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -24,7 +24,7 @@ lateral: []
 
 # Növénytani szakértő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [növénytani szakértő](http://data.europa.eu/esco/occupation/c5328083-eda0-4ca8-b9cb-99a46e73a9bc) (2131.4.5)

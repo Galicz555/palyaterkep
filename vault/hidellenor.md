@@ -24,7 +24,6 @@ skills:
   - http://data.europa.eu/esco/skill/efa141df-f382-418f-9121-bd88fd735669
 lateral:
   - "[[epitesi-muszaki-ellenor]]"
-  - "[[epitoipari-minosegbiztositasi-vezeto]]"
   - "[[betonozo]]"
 ---
 
@@ -58,5 +57,4 @@ A hídellenőrök átvizsgálják a hídstruktúrákat és törött illesztések
 ## Váltások
 
 - [[epitesi-muszaki-ellenor|építési műszaki ellenőr]]
-- [[epitoipari-minosegbiztositasi-vezeto|építőipari minőségbiztosítási vezető]]
 - [[betonozo|betonozó]]

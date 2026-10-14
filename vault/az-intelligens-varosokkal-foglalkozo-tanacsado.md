@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8d463763-5d38-4f47-903c-1c4df32141c1
 label: az intelligens városokkal foglalkozó tanácsadó
-level: 2
+level: 3
 track: individual
 branch: construction
 subBranch: architecture
@@ -49,7 +49,7 @@ lateral:
 
 # Az intelligens városokkal foglalkozó tanácsadó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építészet, településtervezés és földmérés  
 **ESCO:** [az intelligens városokkal foglalkozó tanácsadó](http://data.europa.eu/esco/occupation/8d463763-5d38-4f47-903c-1c4df32141c1) (2421.8)

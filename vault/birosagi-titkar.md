@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0f63619d-63ea-4345-81f5-4673353fe8d2
 label: bírósági titkár
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: legal
@@ -20,16 +20,16 @@ skills:
   - http://data.europa.eu/esco/skill/db10b60e-efd2-4ba9-a873-d1e2ec37620f
 lateral:
   - "[[birosagi-ugyintezo]]"
-  - "[[eskudtszeki-koordinator]]"
   - "[[jogi-adminisztrator]]"
   - "[[ugyesz]]"
   - "[[jogasz]]"
   - "[[vallalati-jogasz]]"
+  - "[[birosagi-igazgatasi-vezeto]]"
 ---
 
 # Bírósági titkár
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Jog és igazságszolgáltatás  
 **ESCO:** [bírósági titkár](http://data.europa.eu/esco/occupation/0f63619d-63ea-4345-81f5-4673353fe8d2) (3411.5)
@@ -53,8 +53,8 @@ A bírósági titkárok a törvényszéki bíróknak nyújtanak segítséget. A 
 ## Váltások
 
 - [[birosagi-ugyintezo|bírósági ügyintéző]]
-- [[eskudtszeki-koordinator|esküdtszéki koordinátor]]
 - [[jogi-adminisztrator|jogi adminisztrátor]]
 - [[ugyesz|ügyész]]
 - [[jogasz|jogász]]
 - [[vallalati-jogasz|vállalati jogász]]
+- [[birosagi-igazgatasi-vezeto|bírósági igazgatási vezető]]

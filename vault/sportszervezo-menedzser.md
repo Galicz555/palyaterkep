@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/20e39113-05f5-4184-94e2-f5e8e8c8d2ea
 label: sportszervező, -menedzser
 level: 3
-track: individual
+track: management
 branch: culture
 subBranch: sport-leisure
 skills:
@@ -34,7 +34,7 @@ lateral:
 
 # Sportszervező, -menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Sport, szabadidő és szerencsejáték  
 **ESCO:** [sportszervező, -menedzser](http://data.europa.eu/esco/occupation/20e39113-05f5-4184-94e2-f5e8e8c8d2ea) (1349.22)

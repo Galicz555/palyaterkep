@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/779d13be-60b4-48f3-a339-fe483be96c7f
 label: szabályozási menedzser
-level: 3
-track: individual
+level: 4
+track: management
 branch: public
 subBranch: legal
 skills:
@@ -38,13 +38,12 @@ lateral:
   - "[[szakpolitikai-vezeto]]"
   - "[[kornyezetvedelmi-igazgato]]"
   - "[[uzletiintelligencia-menedzser]]"
-  - "[[adougyi-elemzo]]"
   - "[[gazdasagi-tanacsado]]"
 ---
 
 # Szabályozási menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Jog és igazságszolgáltatás  
 **ESCO:** [szabályozási menedzser](http://data.europa.eu/esco/occupation/779d13be-60b4-48f3-a339-fe483be96c7f) (2619.12)
@@ -86,5 +85,4 @@ A szabályozásügyi menedzserek több ágazatban, például az egészségügyi,
 - [[szakpolitikai-vezeto|szakpolitikai vezető]]
 - [[kornyezetvedelmi-igazgato|környezetvédelmi igazgató]]
 - [[uzletiintelligencia-menedzser|üzletiintelligencia-menedzser]]
-- [[adougyi-elemzo|adóügyi elemző]]
 - [[gazdasagi-tanacsado|gazdasági tanácsadó]]

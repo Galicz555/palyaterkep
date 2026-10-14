@@ -35,7 +35,7 @@ lateral:
   - "[[elelmiszergyarto-gep-kezeloje]]"
   - "[[ipari-szakacs]]"
   - "[[haltermeles-iranyitoja]]"
-  - "[[uditoital-turmixgep-kezeloje]]"
+  - "[[halfeldolgozo]]"
 ---
 
 # Készételhűtő gépkezelő
@@ -79,4 +79,4 @@ A készételhűtő gépkezelők különféle eljárásokat végeznek, és a kés
 - [[elelmiszergyarto-gep-kezeloje|élelmiszergyártó gép kezelője]]
 - [[ipari-szakacs|ipari szakács]]
 - [[haltermeles-iranyitoja|haltermelés irányítója]]
-- [[uditoital-turmixgep-kezeloje|üdítőital-turmixgép kezelője]]
+- [[halfeldolgozo|halfeldolgozó]]

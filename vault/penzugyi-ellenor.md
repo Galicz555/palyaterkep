@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/5e5b1b61-1351-4d3b-a293-deb3661715dd
 label: pénzügyi ellenőr
-level: 4
-track: management
+level: 3
+track: individual
 branch: business
 subBranch: accounting
 skills:
@@ -27,12 +27,15 @@ skills:
 lateral:
   - "[[koltsegvetesi-vezeto]]"
   - "[[szamviteli-vezeto]]"
+  - "[[konyvelo]]"
+  - "[[koltsegvetesi-elemzo]]"
   - "[[vallalati-penzugyi-vezeto]]"
+  - "[[analitikus-konyvelo]]"
 ---
 
 # Pénzügyi ellenőr
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Pénzügyi vezetés és számvitel  
 **ESCO:** [pénzügyi ellenőr](http://data.europa.eu/esco/occupation/5e5b1b61-1351-4d3b-a293-deb3661715dd) (2411.1.8)
@@ -63,4 +66,7 @@ A pénzügyi ellenőrök kezelik a vállalkozás vagy szervezet költségvetés-
 
 - [[koltsegvetesi-vezeto|költségvetési vezető]]
 - [[szamviteli-vezeto|számviteli vezető]]
+- [[konyvelo|könyvelő]]
+- [[koltsegvetesi-elemzo|költségvetési elemző]]
 - [[vallalati-penzugyi-vezeto|vállalati pénzügyi vezető]]
+- [[analitikus-konyvelo|analitikus könyvelő]]

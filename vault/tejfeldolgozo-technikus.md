@@ -35,6 +35,7 @@ skills:
   - http://data.europa.eu/esco/skill/ed883d6b-cd2a-4d87-8bef-13f66f80fcb6
   - http://data.europa.eu/esco/skill/f5de9360-de44-418f-81da-d0350dbc86a2
 lateral:
+  - "[[tejtermekgyarto-munkatars]]"
   - "[[tejfeldolgozas-teruleten-dolgozo-gepkezelo]]"
   - "[[tejtermekgyarto]]"
   - "[[malatacsiraztato-felugyeloje]]"
@@ -81,6 +82,7 @@ A tejfeldolgozó technikusok felügyelik és koordinálják a tej, a sajt, a fag
 
 ## Váltások
 
+- [[tejtermekgyarto-munkatars|tejtermékgyártó munkatárs]]
 - [[tejfeldolgozas-teruleten-dolgozo-gepkezelo|tejfeldolgozás területén dolgozó gépkezelő]]
 - [[tejtermekgyarto|tejtermékgyártó]]
 - [[malatacsiraztato-felugyeloje|malátacsíráztató felügyelője]]

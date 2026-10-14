@@ -31,7 +31,7 @@ lateral:
   - "[[vallalati-banki-tanacsado]]"
   - "[[kereskedelmi-ugynok]]"
   - "[[hataridos-kereskedo]]"
-  - "[[arutozsdei-kereskedo]]"
+  - "[[devizakereskedo]]"
 ---
 
 # Befektetésialap-kezelő asszisztens
@@ -71,4 +71,4 @@ A befektetési alapok kezelésével foglalkozó asszisztensek pénzügyi tervez�
 - [[vallalati-banki-tanacsado|vállalati banki tanácsadó]]
 - [[kereskedelmi-ugynok|kereskedelmi ügynök]]
 - [[hataridos-kereskedo|határidős kereskedő]]
-- [[arutozsdei-kereskedo|árutőzsdei kereskedő]]
+- [[devizakereskedo|devizakereskedő]]

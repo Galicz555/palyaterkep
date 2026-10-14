@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a1acd539-c359-4af3-8a4a-07f1b611e368
 label: baromfi befogásával foglalkozó munkás
-level: 2
+level: 1
 track: individual
 branch: agriculture
 subBranch: livestock
@@ -21,7 +21,7 @@ lateral:
 
 # Baromfi befogásával foglalkozó munkás
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Állattenyésztés  
 **ESCO:** [baromfi befogásával foglalkozó munkás](http://data.europa.eu/esco/occupation/a1acd539-c359-4af3-8a4a-07f1b611e368) (9212.1)

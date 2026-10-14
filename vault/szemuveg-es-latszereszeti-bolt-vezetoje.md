@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f88fb9dd-5a46-4086-a284-b1992174e55c
 label: szemüveg- és látszerészeti bolt vezetője
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -49,7 +49,7 @@ lateral:
 
 # Szemüveg- és látszerészeti bolt vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [szemüveg- és látszerészeti bolt vezetője](http://data.europa.eu/esco/occupation/f88fb9dd-5a46-4086-a284-b1992174e55c) (1420.4.19)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3f54ceba-3c4e-4ba1-8ddb-9e49a881a60a
 label: építőipari munkavédelmi vezető
-level: 3
+level: 4
 track: management
 branch: construction
 subBranch: civil-engineering
@@ -26,7 +26,7 @@ lateral:
 
 # Építőipari munkavédelmi vezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőmérnöki terület és műszaki ellenőrzés  
 **ESCO:** [építőipari munkavédelmi vezető](http://data.europa.eu/esco/occupation/3f54ceba-3c4e-4ba1-8ddb-9e49a881a60a) (3112.3)

@@ -19,7 +19,6 @@ skills:
   - http://data.europa.eu/esco/skill/fd7ee717-1259-469f-8e3e-18da96456198
 lateral:
   - "[[felekezeti-szocialis-munkas]]"
-  - "[[vallasi-vezeto]]"
   - "[[szerzetes-apaca]]"
   - "[[hitterito]]"
 ---
@@ -49,6 +48,5 @@ A káplánok vallási tevékenységeket végeznek a világi intézményekben. Ta
 ## Váltások
 
 - [[felekezeti-szocialis-munkas|felekezeti szociális munkás]]
-- [[vallasi-vezeto|vallási vezető]]
 - [[szerzetes-apaca|szerzetes/apáca]]
 - [[hitterito|hittérítő]]

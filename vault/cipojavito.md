@@ -22,6 +22,7 @@ skills:
   - http://data.europa.eu/esco/skill/f74c755e-6fbb-414f-b96c-5aa56dcc9059
 lateral:
   - "[[ortopediai-cipesz]]"
+  - "[[egyedi-cipokeszito]]"
   - "[[vagogepkezelo]]"
 ---
 
@@ -53,4 +54,5 @@ A cipőjavítók megjavítják és megújítják a leromlott állapotú cipőket
 ## Váltások
 
 - [[ortopediai-cipesz|ortopédiai cipész]]
+- [[egyedi-cipokeszito|egyedi cipőkészítő]]
 - [[vagogepkezelo|vágógépkezelő]]

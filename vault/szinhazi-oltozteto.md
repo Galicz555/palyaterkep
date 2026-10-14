@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2a6784d7-c457-413d-ba99-e320de11fc98
 label: színházi öltöztető
-level: 2
+level: 1
 track: individual
 branch: culture
 subBranch: stage-film
@@ -32,7 +32,7 @@ lateral:
 
 # Színházi öltöztető
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Színház-, film- és műsorgyártás  
 **ESCO:** [színházi öltöztető](http://data.europa.eu/esco/occupation/2a6784d7-c457-413d-ba99-e320de11fc98) (3435.7)

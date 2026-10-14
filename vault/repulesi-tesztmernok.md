@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/608edf30-fe37-4ae5-bdd1-2d3a8fd347bd
 label: repülési tesztmérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: electrical
@@ -37,7 +37,7 @@ lateral:
 
 # Repülési tesztmérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Villamosmérnöki terület és elektronika  
 **ESCO:** [repülési tesztmérnök](http://data.europa.eu/esco/occupation/608edf30-fe37-4ae5-bdd1-2d3a8fd347bd) (2152.1.2)

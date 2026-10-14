@@ -28,7 +28,6 @@ skills:
 lateral:
   - "[[felhasznaloi-felulet-tervezo]]"
   - "[[tudasmernok]]"
-  - "[[szoftvermernok]]"
   - "[[digitalis-media-tervezo]]"
 ---
 
@@ -66,5 +65,4 @@ A digitálisjáték-tervezők egy digitális játék kinézetét, logikáját, k
 
 - [[felhasznaloi-felulet-tervezo|felhasználói felület tervező]]
 - [[tudasmernok|tudásmérnök]]
-- [[szoftvermernok|szoftvermérnök]]
 - [[digitalis-media-tervezo|digitális média tervező]]

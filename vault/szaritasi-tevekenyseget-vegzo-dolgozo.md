@@ -40,10 +40,10 @@ skills:
 lateral:
   - "[[gabonatisztito-gep-kezeloje]]"
   - "[[kakaobab-porkolo]]"
-  - "[[kaveporkolo]]"
   - "[[kemenyito-konvertalas-kezelo]]"
   - "[[malataporkolo-kezeloje]]"
   - "[[omlesztettaru-kezelok]]"
+  - "[[molnar]]"
 ---
 
 # Szárítási tevékenységet végző dolgozó
@@ -92,7 +92,7 @@ A szárítási tevékenységet végző dolgozók forgó szárítógépeket szolg
 
 - [[gabonatisztito-gep-kezeloje|gabonatisztító-gép kezelője]]
 - [[kakaobab-porkolo|kakaóbab-pörkölő]]
-- [[kaveporkolo|kávépörkölő]]
 - [[kemenyito-konvertalas-kezelo|keményítő konvertálás kezelő]]
 - [[malataporkolo-kezeloje|malátapörkölő kezelője]]
 - [[omlesztettaru-kezelok|ömlesztettáru-kezelők]]
+- [[molnar|molnár]]

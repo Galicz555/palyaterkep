@@ -19,12 +19,11 @@ skills:
   - http://data.europa.eu/esco/skill/d5e1e30e-44ab-4aba-abab-b8263e801b7a
   - http://data.europa.eu/esco/skill/edff6d20-660d-4d33-b412-9a5b664a14be
 lateral:
-  - "[[repulesoktato]]"
   - "[[adjunktus]]"
   - "[[tutor]]"
-  - "[[uszomester-oktato]]"
   - "[[digitalis-keszsegfejleszto-tanar]]"
   - "[[vallalati-trener]]"
+  - "[[jelnyelvtanar]]"
 ---
 
 # Egyetemi tanársegéd
@@ -52,9 +51,8 @@ Az egyetemi tanársegédek egyetemi hallgatók vagy friss diplomások, akik egy 
 
 ## Váltások
 
-- [[repulesoktato|repülésoktató]]
 - [[adjunktus|adjunktus]]
 - [[tutor|tutor]]
-- [[uszomester-oktato|úszómester-oktató]]
 - [[digitalis-keszsegfejleszto-tanar|digitális készségfejlesztő tanár]]
 - [[vallalati-trener|vállalati tréner]]
+- [[jelnyelvtanar|jelnyelvtanár]]

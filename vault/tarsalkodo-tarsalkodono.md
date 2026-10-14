@@ -25,7 +25,6 @@ skills:
 lateral:
   - "[[hazi-gondozo]]"
   - "[[haztartasi-takarito]]"
-  - "[[hazvezeto-hazvezetono]]"
 ---
 
 # Társalkodó/társalkodónő
@@ -59,4 +58,3 @@ A társalkodók/társalkodónők házvezetési feladatokat látnak el, valamint 
 
 - [[hazi-gondozo|házi gondozó]]
 - [[haztartasi-takarito|háztartási takarító]]
-- [[hazvezeto-hazvezetono|házvezető/házvezetőnő]]

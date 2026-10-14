@@ -38,7 +38,6 @@ skills:
   - http://data.europa.eu/esco/skill/ea4a7e5e-923d-4a15-ad55-362a3ff41641
 lateral:
   - "[[ettermi-host-hostess]]"
-  - "[[fokomornyik]]"
   - "[[gyorskiszolgalo-ettermi-szemelyzet]]"
   - "[[fopincer-fopincerno]]"
   - "[[mixer-barpultos]]"
@@ -88,7 +87,6 @@ A pincérek/pincérnők a rendelés szerinti ételekkel és italokkal látják e
 ## Váltások
 
 - [[ettermi-host-hostess|éttermi host/hostess]]
-- [[fokomornyik|főkomornyik]]
 - [[gyorskiszolgalo-ettermi-szemelyzet|gyorskiszolgáló éttermi személyzet]]
 - [[fopincer-fopincerno|főpincér/főpincérnő]]
 - [[mixer-barpultos|mixer bárpultos]]

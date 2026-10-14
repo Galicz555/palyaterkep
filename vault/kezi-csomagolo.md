@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f5cb9901-86fc-48d0-9cde-667fbe8cef3a
 label: kézi csomagoló
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: packaging
@@ -23,7 +23,7 @@ lateral:
 
 # Kézi csomagoló
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Csomagolás és általános gyári munka  
 **ESCO:** [kézi csomagoló](http://data.europa.eu/esco/occupation/f5cb9901-86fc-48d0-9cde-667fbe8cef3a) (9321.2)

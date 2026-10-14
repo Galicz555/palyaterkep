@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/114e1eff-215e-47df-8e10-45a5b72f8197
 label: megújulóenergia-tanácsadó
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: technical-sales
@@ -43,7 +43,7 @@ lateral:
 
 # Megújulóenergia-tanácsadó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Műszaki és üzleti értékesítés  
 **ESCO:** [megújulóenergia-tanácsadó](http://data.europa.eu/esco/occupation/114e1eff-215e-47df-8e10-45a5b72f8197) (2433.3)

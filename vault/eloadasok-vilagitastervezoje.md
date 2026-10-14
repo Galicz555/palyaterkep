@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/068df7d1-516f-4829-b339-294cb0cf6318
 label: előadások világítástervezője
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: design
@@ -60,7 +60,7 @@ lateral:
 
 # Előadások világítástervezője
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Tervezés és design  
 **ESCO:** [előadások világítástervezője](http://data.europa.eu/esco/occupation/068df7d1-516f-4829-b339-294cb0cf6318) (2166.11)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/656674ac-9d4e-4a91-963f-c0b6edfd55a4
 label: buszjárattervező koordinátor
-level: 2
+level: 3
 track: management
 branch: transport
 subBranch: dispatch
@@ -32,7 +32,7 @@ lateral:
 
 # Buszjárattervező koordinátor
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Forgalomirányítás és fuvarszervezés  
 **ESCO:** [buszjárattervező koordinátor](http://data.europa.eu/esco/occupation/656674ac-9d4e-4a91-963f-c0b6edfd55a4) (4323.4)

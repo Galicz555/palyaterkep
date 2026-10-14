@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d811881c-5241-47b1-be29-64ee488d3642
 label: légiforgalmi poggyászkezelő
-level: 2
+level: 3
 track: management
 branch: transport
 subBranch: dispatch
@@ -26,13 +26,13 @@ skills:
   - http://data.europa.eu/esco/skill/f6100198-9398-4c31-9003-d976c37d5022
 lateral:
   - "[[repuloteri-biztonsagi-tiszt]]"
-  - "[[repuloteri-poggyaszkezelo]]"
   - "[[repuloteri-karbantarto-technikus]]"
+  - "[[repulogep-karbantarto-csoportvezeto]]"
 ---
 
 # Légiforgalmi poggyászkezelő
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Forgalomirányítás és fuvarszervezés  
 **ESCO:** [légiforgalmi poggyászkezelő](http://data.europa.eu/esco/occupation/d811881c-5241-47b1-be29-64ee488d3642) (4323.3)
@@ -62,5 +62,5 @@ A légiforgalmi poggyászkezelők a repülőtéri poggyászáramlást követik n
 ## Váltások
 
 - [[repuloteri-biztonsagi-tiszt|repülőtéri biztonsági tiszt]]
-- [[repuloteri-poggyaszkezelo|repülőtéri poggyászkezelő]]
 - [[repuloteri-karbantarto-technikus|repülőtéri karbantartó technikus]]
+- [[repulogep-karbantarto-csoportvezeto|repülőgép-karbantartó csoportvezető]]

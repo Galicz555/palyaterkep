@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/55f001af-fa48-4c0c-a7e5-fc69babe3d45
 label: botanikus
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -33,17 +33,16 @@ skills:
   - http://data.europa.eu/esco/skill/e517f098-dce4-4ecd-9371-499936c0f947
   - http://data.europa.eu/esco/skill/f5f5b244-6cea-4fbc-8a50-8f712791bc09
 lateral:
-  - "[[rekreacios-kozpont-vezetoje]]"
   - "[[szepsegszalon-vezetoje]]"
   - "[[furdoigazgato]]"
-  - "[[allatkerti-kurator]]"
   - "[[szerencsejatek-ertekesitohely-vezetoje]]"
-  - "[[eloadomuveszeti-igazgato]]"
+  - "[[lottozo-vezetoje]]"
+  - "[[sportfogadasi-iroda-vezetoje]]"
 ---
 
 # Botanikus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [botanikus](http://data.europa.eu/esco/occupation/55f001af-fa48-4c0c-a7e5-fc69babe3d45) (2131.4.6)
@@ -80,9 +79,8 @@ A botanikusok a világ számos növényének termesztésével foglalkoznak, gyak
 
 ## Váltások
 
-- [[rekreacios-kozpont-vezetoje|rekreációs központ vezetője]]
 - [[szepsegszalon-vezetoje|szépségszalon vezetője]]
 - [[furdoigazgato|fürdőigazgató]]
-- [[allatkerti-kurator|állatkerti kurátor]]
 - [[szerencsejatek-ertekesitohely-vezetoje|szerencsejáték-értékesítőhely vezetője]]
-- [[eloadomuveszeti-igazgato|előadóművészeti igazgató]]
+- [[lottozo-vezetoje|lottózó vezetője]]
+- [[sportfogadasi-iroda-vezetoje|sportfogadási iroda vezetője]]

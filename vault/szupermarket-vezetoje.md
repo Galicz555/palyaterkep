@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b7744a45-a4ce-4037-b679-3d2377e17f31
 label: szupermarket vezetője
-level: 3
+level: 4
 track: management
 branch: trade
 subBranch: retail-management
@@ -48,7 +48,7 @@ lateral:
 
 # Szupermarket vezetője
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [szupermarket vezetője](http://data.europa.eu/esco/occupation/b7744a45-a4ce-4037-b679-3d2377e17f31) (1420.5)

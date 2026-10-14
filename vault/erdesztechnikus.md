@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/fbf3aefb-70ff-440b-8724-bac3ed5e2c93
 label: erdésztechnikus
 level: 2
-track: management
+track: individual
 branch: agriculture
 subBranch: forestry
 skills:
@@ -36,7 +36,7 @@ lateral:
 
 # Erdésztechnikus
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Erdészet és vadgazdálkodás  
 **ESCO:** [erdésztechnikus](http://data.europa.eu/esco/occupation/fbf3aefb-70ff-440b-8724-bac3ed5e2c93) (3143.1)

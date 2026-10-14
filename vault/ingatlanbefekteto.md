@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7e46c066-2b98-4eaf-bed6-9848c79902e0
 label: ingatlanbefektető
-level: 2
+level: 3
 track: individual
 branch: business
 subBranch: real-estate
@@ -33,7 +33,7 @@ lateral:
 
 # Ingatlanbefektető
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Ingatlan  
 **ESCO:** [ingatlanbefektető](http://data.europa.eu/esco/occupation/7e46c066-2b98-4eaf-bed6-9848c79902e0) (3334.3.2)

@@ -86,7 +86,7 @@ lateral:
   - "[[audiologus]]"
   - "[[muveszetterapeuta]]"
   - "[[dietetikus]]"
-  - "[[szakkiropraktor]]"
+  - "[[fizioterapeuta]]"
 ---
 
 # Beszéd- és nyelvterapeuta
@@ -181,4 +181,4 @@ A beszéd- és nyelvterapeuták munkájuk során a kommunikációs nehézségek 
 - [[audiologus|audiológus]]
 - [[muveszetterapeuta|művészetterapeuta]]
 - [[dietetikus|dietetikus]]
-- [[szakkiropraktor|szakkiropraktőr]]
+- [[fizioterapeuta|fizioterapeuta]]

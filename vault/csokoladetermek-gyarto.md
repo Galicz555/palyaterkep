@@ -38,7 +38,6 @@ skills:
 lateral:
   - "[[cukrasz]]"
   - "[[kakaomasszat-keszito-orlogep-kezeloje]]"
-  - "[[malatakezelo-mester]]"
 ---
 
 # Csokoládétermék-gyártó
@@ -85,4 +84,3 @@ A csokoládétermék-gyártók csokoládétartalmú édesipari termékeket kész
 
 - [[cukrasz|cukrász]]
 - [[kakaomasszat-keszito-orlogep-kezeloje|kakaómasszát készítő őrlőgép kezelője]]
-- [[malatakezelo-mester|malátakezelő mester]]

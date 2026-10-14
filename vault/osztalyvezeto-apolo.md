@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/36494988-69d2-4420-9db4-eb56605ac983
 label: osztályvezető ápoló
-level: 4
+level: 3
 track: management
 branch: health-social
 subBranch: nursing
@@ -66,11 +66,12 @@ skills:
   - http://data.europa.eu/esco/skill/fa477985-066a-4d7f-972f-c21d0d1095a6
 lateral:
   - "[[szakapolo]]"
+  - "[[betegapolo]]"
 ---
 
 # Osztályvezető ápoló
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Ápolás, szülészet és betegellátás  
 **ESCO:** [osztályvezető ápoló](http://data.europa.eu/esco/occupation/36494988-69d2-4420-9db4-eb56605ac983) (2221.1)
@@ -140,3 +141,4 @@ Az osztályvezető ápolók feladata a betegek egészségének előmozdítása �
 ## Váltások
 
 - [[szakapolo|szakápoló]]
+- [[betegapolo|betegápoló]]

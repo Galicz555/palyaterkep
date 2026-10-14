@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ff656b3a-65a8-4b4f-b04e-9db12936519b
 label: demográfus
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: mathematics
@@ -62,7 +62,7 @@ lateral:
 
 # Demográfus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Matematika és statisztika  
 **ESCO:** [demográfus](http://data.europa.eu/esco/occupation/ff656b3a-65a8-4b4f-b04e-9db12936519b) (2120.2)

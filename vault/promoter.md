@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/21ae429f-a152-46a6-a73c-9ec65c7803f0
 label: promóter
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: marketing
@@ -29,7 +29,7 @@ lateral:
 
 # Promóter
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Értékesítési vezetés és marketing  
 **ESCO:** [promóter](http://data.europa.eu/esco/occupation/21ae429f-a152-46a6-a73c-9ec65c7803f0) (3339.4)

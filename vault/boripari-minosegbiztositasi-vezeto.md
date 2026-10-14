@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/1f8967ce-9faa-4d56-a656-50e041f7d07e
 label: bőripari minőségbiztosítási vezető
 level: 3
-track: individual
+track: management
 branch: industry
 subBranch: production-management
 skills:
@@ -32,7 +32,7 @@ lateral:
 
 # Bőripari minőségbiztosítási vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Gyártásirányítás  
 **ESCO:** [bőripari minőségbiztosítási vezető](http://data.europa.eu/esco/occupation/1f8967ce-9faa-4d56-a656-50e041f7d07e) (1321.2.2.2)

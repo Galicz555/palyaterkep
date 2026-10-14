@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/92b7776f-5d90-413d-b05f-51e429e28346
 label: kempingszolgáltatások üzemeltetője/irányítója
-level: 1
+level: 2
 track: individual
 branch: hospitality
 subBranch: accommodation
@@ -22,14 +22,14 @@ lateral:
   - "[[szallodaportas]]"
   - "[[vendeglato-egyseg-recepciosa]]"
   - "[[utaskisero]]"
+  - "[[komornyik-komorna]]"
   - "[[londiner]]"
   - "[[ejszakai-recepcios]]"
-  - "[[portas-portasno]]"
 ---
 
 # Kempingszolgáltatások üzemeltetője/irányítója
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Szálláshely-szolgáltatás  
 **ESCO:** [kempingszolgáltatások üzemeltetője/irányítója](http://data.europa.eu/esco/occupation/92b7776f-5d90-413d-b05f-51e429e28346) (4224.1.1)
@@ -55,6 +55,6 @@ A kempingszolgáltatások üzemeltetői/irányítói kempingekben végeznek ügy
 - [[szallodaportas|szállodaportás]]
 - [[vendeglato-egyseg-recepciosa|vendéglátó egység recepciósa]]
 - [[utaskisero|utaskísérő]]
+- [[komornyik-komorna|komornyik/komorna]]
 - [[londiner|londiner]]
 - [[ejszakai-recepcios|éjszakai recepciós]]
-- [[portas-portasno|portás/portásnő]]

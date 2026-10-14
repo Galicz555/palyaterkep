@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d0e85fe6-78e3-4218-b21a-99b75438b775
 label: brókercég vezetője
-level: 4
+level: 5
 track: management
 branch: business
 subBranch: banking
@@ -25,7 +25,7 @@ lateral: []
 
 # Brókercég vezetője
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Stratégiai szint (5), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Banki szolgáltatások  
 **ESCO:** [brókercég vezetője](http://data.europa.eu/esco/occupation/d0e85fe6-78e3-4218-b21a-99b75438b775) (1346.2)

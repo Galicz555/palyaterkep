@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/522c55ca-ee4a-407d-9fc6-f810c5266523
 label: légiforgalmi pilóta
-level: 3
+level: 4
 track: individual
 branch: transport
 subBranch: air
@@ -45,17 +45,16 @@ skills:
   - http://data.europa.eu/esco/skill/fc511e12-fe90-40a0-bec8-227abb5e4255
   - http://data.europa.eu/esco/skill/ff862044-d49e-4417-bf65-1ae2c0a47e5a
 lateral:
-  - "[[masodpilota]]"
   - "[[helikopterpilota]]"
-  - "[[maganpilota]]"
   - "[[legijarmu-vezeto]]"
   - "[[kereskedelmi-pilota]]"
-  - "[[repulogepvezeto]]"
+  - "[[legiforgalmi-iranyito]]"
+  - "[[legiforgalmiiranyito-oktato]]"
 ---
 
 # Légiforgalmi pilóta
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [légiforgalmi pilóta](http://data.europa.eu/esco/occupation/522c55ca-ee4a-407d-9fc6-f810c5266523) (3153.2.2.1)
@@ -104,9 +103,8 @@ A légiforgalmi pilóta több mint 5 700 kilogramm maximális felszálló töm
 
 ## Váltások
 
-- [[masodpilota|másodpilóta]]
 - [[helikopterpilota|helikopterpilóta]]
-- [[maganpilota|magánpilóta]]
 - [[legijarmu-vezeto|légijármű-vezető]]
 - [[kereskedelmi-pilota|kereskedelmi pilóta]]
-- [[repulogepvezeto|repülőgépvezető]]
+- [[legiforgalmi-iranyito|légiforgalmi irányító]]
+- [[legiforgalmiiranyito-oktato|légiforgalmiirányító-oktató]]

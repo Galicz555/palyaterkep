@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/4975c4cc-a89f-4ea8-82aa-501258dfb2f9
 label: vagyonbiztosítási kockázatelbíráló
-level: 2
+level: 3
 track: individual
 branch: business
 subBranch: insurance
@@ -35,7 +35,7 @@ lateral:
 
 # Vagyonbiztosítási kockázatelbíráló
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Biztosítás és értékbecslés  
 **ESCO:** [vagyonbiztosítási kockázatelbíráló](http://data.europa.eu/esco/occupation/4975c4cc-a89f-4ea8-82aa-501258dfb2f9) (3321.3.1)

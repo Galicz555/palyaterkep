@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0458929a-f6c9-40ed-8ce3-caa9f03a6b5b
 label: kávédaráló gép kezelője
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: food
@@ -28,13 +28,13 @@ lateral:
   - "[[kakaobaborlo-kezeloje]]"
   - "[[szeszipari-italdesztillalo]]"
   - "[[eleszto-desztillalo]]"
-  - "[[kaveporkolo]]"
   - "[[kakaobab-tisztito]]"
+  - "[[uditoital-turmixgep-kezeloje]]"
 ---
 
 # Kávédaráló gép kezelője
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [kávédaráló gép kezelője](http://data.europa.eu/esco/occupation/0458929a-f6c9-40ed-8ce3-caa9f03a6b5b) (8160.22)
@@ -66,5 +66,5 @@ A kávédaráló gépek kezelői darálókat működtetnek a kávébab meghatár
 - [[kakaobaborlo-kezeloje|kakaóbabőrlő kezelője]]
 - [[szeszipari-italdesztillalo|szeszipari italdesztilláló]]
 - [[eleszto-desztillalo|élesztő desztilláló]]
-- [[kaveporkolo|kávépörkölő]]
 - [[kakaobab-tisztito|kakaóbab-tisztító]]
+- [[uditoital-turmixgep-kezeloje|üdítőital-turmixgép kezelője]]

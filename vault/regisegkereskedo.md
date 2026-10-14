@@ -43,9 +43,9 @@ lateral:
   - "[[hallokeszulekszakuzleti-elado]]"
   - "[[dohanybolti-elado]]"
   - "[[italbolti-elado]]"
-  - "[[benzinkuti-elado]]"
   - "[[vasaru-es-festekbolti-elado]]"
   - "[[loszerkereskedo]]"
+  - "[[haztartasikeszulek-elado]]"
 ---
 
 # Régiségkereskedő
@@ -97,6 +97,6 @@ A régiségkereskedők régiségeket értékesítenek szaküzletekben.
 - [[hallokeszulekszakuzleti-elado|hallókészülékszaküzleti eladó]]
 - [[dohanybolti-elado|dohánybolti eladó]]
 - [[italbolti-elado|italbolti eladó]]
-- [[benzinkuti-elado|benzinkúti eladó]]
 - [[vasaru-es-festekbolti-elado|vasáru- és festékbolti eladó]]
 - [[loszerkereskedo|lőszerkereskedő]]
+- [[haztartasikeszulek-elado|háztartásikészülék-eladó]]

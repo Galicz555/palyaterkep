@@ -80,12 +80,12 @@ skills:
   - http://data.europa.eu/esco/skill/fbdfc3bf-56a0-4454-a17d-2f513fe57b53
   - http://data.europa.eu/esco/skill/fdb44237-c0b0-4924-9439-911332e0d884
 lateral:
+  - "[[gyakorlati-szocialismunka-oktato]]"
+  - "[[szocialismunka-oktato-felsooktatasi-intezmenyben]]"
   - "[[szocialis-tevekenyseget-folytato-egyseg-vezetoje]]"
   - "[[gyermeknapkozi-vezetoje]]"
   - "[[mentoallomas-vezeto]]"
   - "[[ifjusagi-kozpont-vezetoje]]"
-  - "[[lakhatasi-igazgato]]"
-  - "[[idosek-otthonanak-igazgatoja]]"
 ---
 
 # Tanácsadó szociális munkás
@@ -174,9 +174,9 @@ A tanácsadó szociális munkások magas színvonalú szociális szolgáltatáso
 
 ## Váltások
 
+- [[gyakorlati-szocialismunka-oktato|gyakorlati szociálismunka-oktató]]
+- [[szocialismunka-oktato-felsooktatasi-intezmenyben|szociálismunka-oktató felsőoktatási intézményben]]
 - [[szocialis-tevekenyseget-folytato-egyseg-vezetoje|szociális tevékenységet folytató egység vezetője]]
 - [[gyermeknapkozi-vezetoje|gyermeknapközi vezetője]]
 - [[mentoallomas-vezeto|mentőállomás-vezető]]
 - [[ifjusagi-kozpont-vezetoje|ifjúsági központ vezetője]]
-- [[lakhatasi-igazgato|lakhatási igazgató]]
-- [[idosek-otthonanak-igazgatoja|idősek otthonának igazgatója]]

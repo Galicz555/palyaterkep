@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/49ca9fe4-4513-4657-b27f-eaad11e6158a
 label: lottózó vezetője
-level: 2
+level: 3
 track: management
 branch: culture
 subBranch: culture-management
@@ -38,11 +38,12 @@ skills:
 lateral:
   - "[[sportfogadasi-iroda-vezetoje]]"
   - "[[szerencsejatek-ertekesitohely-vezetoje]]"
+  - "[[botanikus]]"
 ---
 
 # Lottózó vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Kulturális és szabadidős intézmények vezetése  
 **ESCO:** [lottózó vezetője](http://data.europa.eu/esco/occupation/49ca9fe4-4513-4657-b27f-eaad11e6158a) (1431.2.4)
@@ -84,3 +85,4 @@ A lottózók vezetői megszervezik és koordinálják a lottóval foglalkozó sz
 
 - [[sportfogadasi-iroda-vezetoje|sportfogadási iroda vezetője]]
 - [[szerencsejatek-ertekesitohely-vezetoje|szerencsejáték-értékesítőhely vezetője]]
+- [[botanikus|botanikus]]

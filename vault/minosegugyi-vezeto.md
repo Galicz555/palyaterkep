@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/109e0a5d-203d-4af6-8f70-692111335ec3
 label: minőségügyi vezető
-level: 3
+level: 4
 track: management
 branch: business
 subBranch: management
@@ -29,7 +29,7 @@ lateral: []
 
 # Minőségügyi vezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Vállalatvezetés, stratégia és tanácsadás  
 **ESCO:** [minőségügyi vezető](http://data.europa.eu/esco/occupation/109e0a5d-203d-4af6-8f70-692111335ec3) (1219.7)

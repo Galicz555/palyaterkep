@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3cee6bea-4a19-4511-9bbb-fdf820857555
 label: bűnügyi nyomozó
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: policing
@@ -20,7 +20,7 @@ lateral: []
 
 # Bűnügyi nyomozó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Rendőrség és büntetés-végrehajtás  
 **ESCO:** [bűnügyi nyomozó](http://data.europa.eu/esco/occupation/3cee6bea-4a19-4511-9bbb-fdf820857555) (3355.1)

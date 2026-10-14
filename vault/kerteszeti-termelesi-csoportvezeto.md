@@ -53,8 +53,8 @@ lateral:
   - "[[gyumolcstermeszto]]"
   - "[[mezogazdasagi-novenytermesztesi-brigad-vezetoje]]"
   - "[[novenytermesztes-vezetoje]]"
-  - "[[kertesz]]"
   - "[[tajkertesz]]"
+  - "[[komlotermeszto]]"
 ---
 
 # Kertészeti termelési csoportvezető
@@ -116,5 +116,5 @@ A kertészeti termelési csoportvezetők feladata a dolgozók irányítása és 
 - [[gyumolcstermeszto|gyümölcstermesztő]]
 - [[mezogazdasagi-novenytermesztesi-brigad-vezetoje|mezőgazdasági növénytermesztési brigád vezetője]]
 - [[novenytermesztes-vezetoje|növénytermesztés vezetője]]
-- [[kertesz|kertész]]
 - [[tajkertesz|tájkertész]]
+- [[komlotermeszto|komlótermesztő]]

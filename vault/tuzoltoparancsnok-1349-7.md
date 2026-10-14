@@ -24,8 +24,9 @@ skills:
   - http://data.europa.eu/esco/skill/eaa4cdc0-43e0-4388-9b8a-e2779218d10e
   - http://data.europa.eu/esco/skill/ecf7869e-7d87-478d-9d80-edfdcd39ec52
 lateral:
-  - "[[tuzolto-szakoktato]]"
+  - "[[tuzoltoauto-vezeto]]"
   - "[[tuzoltoparancsnok-1112-4]]"
+  - "[[tuzvedelmi-felugyelo]]"
 ---
 
 # Tűzoltóparancsnok
@@ -58,5 +59,6 @@ A tűzoltóparancsnokok felügyelik a tűzoltóságot. Koordinálják a szerveze
 
 ## Váltások
 
-- [[tuzolto-szakoktato|tűzoltó szakoktató]]
+- [[tuzoltoauto-vezeto|tűzoltóautó-vezető]]
 - [[tuzoltoparancsnok-1112-4|tűzoltóparancsnok]]
+- [[tuzvedelmi-felugyelo|tűzvédelmi felügyelő]]

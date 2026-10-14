@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f8e435dd-7aa9-4d7a-97c3-b3b5789b6b25
 label: testőr
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: security
@@ -33,16 +33,16 @@ skills:
   - http://data.europa.eu/esco/skill/fcc97ec2-e8c3-4cad-aaac-1041cd732ac6
 lateral:
   - "[[biztonsagi-or]]"
-  - "[[utasbiztonsagi-ellenor]]"
   - "[[kidoboember]]"
   - "[[tomegiranyito]]"
-  - "[[portas]]"
   - "[[aruhazi-biztonsagi-or]]"
+  - "[[biztonsagi-or-pancelozott-jarmuben]]"
+  - "[[vizimento]]"
 ---
 
 # Testőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Vagyonvédelem és közbiztonság  
 **ESCO:** [testőr](http://data.europa.eu/esco/occupation/f8e435dd-7aa9-4d7a-97c3-b3b5789b6b25) (5414.1.3)
@@ -79,8 +79,8 @@ A testőrök személyi védelmet nyújtanak ügyfeleik számára a sérülések,
 ## Váltások
 
 - [[biztonsagi-or|biztonsági őr]]
-- [[utasbiztonsagi-ellenor|utasbiztonsági ellenőr]]
 - [[kidoboember|kidobóember]]
 - [[tomegiranyito|tömegirányító]]
-- [[portas|portás]]
 - [[aruhazi-biztonsagi-or|áruházi biztonsági őr]]
+- [[biztonsagi-or-pancelozott-jarmuben|biztonsági őr páncélozott járműben]]
+- [[vizimento|vízimentő]]

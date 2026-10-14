@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/e04bca7b-c0c7-454d-9d15-dfb64a30dc0a
 label: mezőgazdasági gépek és berendezések disztribúciójával foglalkozó vezető
 level: 3
-track: individual
+track: management
 branch: trade
 subBranch: wholesale
 skills:
@@ -44,7 +44,7 @@ lateral:
 
 # Mezőgazdasági gépek és berendezések disztribúciójával foglalkozó vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Nagykereskedelem és import-export  
 **ESCO:** [mezőgazdasági gépek és berendezések disztribúciójával foglalkozó vezető](http://data.europa.eu/esco/occupation/e04bca7b-c0c7-454d-9d15-dfb64a30dc0a) (1324.3.1.6.1)

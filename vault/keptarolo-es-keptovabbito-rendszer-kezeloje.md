@@ -27,7 +27,6 @@ lateral:
   - "[[covid-tesztelo]]"
   - "[[varolista-koordinator]]"
   - "[[orvosirnok]]"
-  - "[[egeszsegugyi-dokumentacios-vezeto]]"
 ---
 
 # Képtároló és képtovábbító rendszer kezelője
@@ -63,4 +62,3 @@ A képtároló és képtovábbító rendszer kezelője képarchiváló és kommu
 - [[covid-tesztelo|Covid-tesztelő]]
 - [[varolista-koordinator|várólista-koordinátor]]
 - [[orvosirnok|orvosírnok]]
-- [[egeszsegugyi-dokumentacios-vezeto|egészségügyi dokumentációs vezető]]

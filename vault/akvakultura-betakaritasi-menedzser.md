@@ -44,7 +44,6 @@ skills:
 lateral:
   - "[[lehalaszasi-akvakultura-technikus]]"
   - "[[akvakulturas-tenyesztesi-menedzser]]"
-  - "[[akvakulturalis-betakarito]]"
   - "[[akvakulturas-termelesi-vezeto]]"
   - "[[keltetesi-akvakultura-vezeto]]"
   - "[[recirkulacios-akvakultura-vezeto]]"
@@ -100,7 +99,6 @@ Az akvakultúra-betakarítási menedzserek a vízi szervezetek betakarítását 
 
 - [[lehalaszasi-akvakultura-technikus|lehalászási akvakultúra-technikus]]
 - [[akvakulturas-tenyesztesi-menedzser|akvakultúrás-tenyésztési menedzser]]
-- [[akvakulturalis-betakarito|akvakulturális betakarító]]
 - [[akvakulturas-termelesi-vezeto|akvakultúrás termelési vezető]]
 - [[keltetesi-akvakultura-vezeto|keltetési akvakultúra-vezető]]
 - [[recirkulacios-akvakultura-vezeto|recirkulációs akvakultúra-vezető]]

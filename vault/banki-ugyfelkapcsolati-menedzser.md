@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d96de969-d43d-4082-8559-7fc35484a217
 label: banki ügyfélkapcsolati menedzser
-level: 2
-track: individual
+level: 3
+track: management
 branch: business
 subBranch: investment
 skills:
@@ -35,15 +35,15 @@ skills:
 lateral:
   - "[[bankszamla-ugyintezo]]"
   - "[[banki-termekmenedzser]]"
+  - "[[hitelezesi-vezeto]]"
   - "[[vallalati-banki-tanacsado]]"
   - "[[biztositotarsasag-vezetoje]]"
   - "[[penzugyi-broker]]"
-  - "[[penzugyi-tervezo]]"
 ---
 
 # Banki ügyfélkapcsolati menedzser
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Befektetés és pénzügyi elemzés  
 **ESCO:** [banki ügyfélkapcsolati menedzser](http://data.europa.eu/esco/occupation/d96de969-d43d-4082-8559-7fc35484a217) (2412.4.1)
@@ -82,7 +82,7 @@ A banki ügyfélkapcsolati menedzserek fenntartják és bővítik a meglévő é
 
 - [[bankszamla-ugyintezo|bankszámla-ügyintéző]]
 - [[banki-termekmenedzser|banki termékmenedzser]]
+- [[hitelezesi-vezeto|hitelezési vezető]]
 - [[vallalati-banki-tanacsado|vállalati banki tanácsadó]]
 - [[biztositotarsasag-vezetoje|biztosítótársaság vezetője]]
 - [[penzugyi-broker|pénzügyi bróker]]
-- [[penzugyi-tervezo|pénzügyi tervező]]

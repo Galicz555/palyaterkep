@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6d50f735-dca9-4a02-96dc-e4310ed98ae2
 label: házvezető/házvezetőnő
-level: 2
+level: 3
 track: individual
 branch: hospitality
 subBranch: cleaning
@@ -30,16 +30,12 @@ skills:
   - http://data.europa.eu/esco/skill/ce2dbe33-9e13-47bb-91bf-00cf799ac34c
   - http://data.europa.eu/esco/skill/e0c6fdd1-336a-4e2f-91d1-ab4a2f9c385d
   - http://data.europa.eu/esco/skill/e1f5c539-7c93-49ee-917d-a24e0d887686
-lateral:
-  - "[[haztartasi-takarito]]"
-  - "[[tarsalkodo-tarsalkodono]]"
-  - "[[szonyeg-karpit-fuggonytisztito]]"
-  - "[[epulettakarito]]"
+lateral: []
 ---
 
 # Házvezető/házvezetőnő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Takarítás, háztartás és épületgondnokság  
 **ESCO:** [házvezető/házvezetőnő](http://data.europa.eu/esco/occupation/6d50f735-dca9-4a02-96dc-e4310ed98ae2) (5152.2)
@@ -74,7 +70,4 @@ A házvezetők/házvezetőnők a magáházakban felmerülő összes háztartási
 
 ## Váltások
 
-- [[haztartasi-takarito|háztartási takarító]]
-- [[tarsalkodo-tarsalkodono|társalkodó/társalkodónő]]
-- [[szonyeg-karpit-fuggonytisztito|szőnyeg-, kárpit-, függönytisztító]]
-- [[epulettakarito|épülettakarító]]
+Nincs.

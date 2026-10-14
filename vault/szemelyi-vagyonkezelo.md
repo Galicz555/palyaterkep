@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7284ccbf-e2fd-4e2f-8bbf-bc54eab610d5
 label: személyi vagyonkezelő
-level: 2
+level: 3
 track: individual
 branch: business
 subBranch: investment
@@ -26,7 +26,7 @@ lateral:
 
 # Személyi vagyonkezelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Befektetés és pénzügyi elemzés  
 **ESCO:** [személyi vagyonkezelő](http://data.europa.eu/esco/occupation/7284ccbf-e2fd-4e2f-8bbf-bc54eab610d5) (2412.8)

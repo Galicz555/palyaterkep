@@ -27,7 +27,6 @@ skills:
 lateral:
   - "[[parki-idegenvezeto]]"
   - "[[idegenforgalmi-tajekoztato-munkatars]]"
-  - "[[vendeglato-egyseg-recepciosa]]"
   - "[[idegenvezeto]]"
 ---
 
@@ -65,5 +64,4 @@ A házigazdák/háziasszonyok fogadják és tájékoztatják a látogatókat a r
 
 - [[parki-idegenvezeto|parki idegenvezető]]
 - [[idegenforgalmi-tajekoztato-munkatars|idegenforgalmi tájékoztató munkatárs]]
-- [[vendeglato-egyseg-recepciosa|vendéglátó egység recepciósa]]
 - [[idegenvezeto|idegenvezető]]

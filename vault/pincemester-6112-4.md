@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/c56295bb-ef33-4ccd-a929-59e3dd73f876
 label: pincemester
 level: 4
-track: individual
+track: management
 branch: agriculture
 subBranch: crops
 skills:
@@ -31,7 +31,7 @@ lateral:
 
 # Pincemester
 
-Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Növénytermesztés és kertészet  
 **ESCO:** [pincemester](http://data.europa.eu/esco/occupation/c56295bb-ef33-4ccd-a929-59e3dd73f876) (6112.4)

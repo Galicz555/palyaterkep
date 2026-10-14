@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/71f09c8b-a172-408c-b9e7-32e580e39ff6
 label: háziorvos
-level: 2
+level: 3
 track: individual
 branch: health-social
 subBranch: medicine
@@ -24,7 +24,7 @@ lateral:
 
 # Háziorvos
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Orvoslás  
 **ESCO:** [háziorvos](http://data.europa.eu/esco/occupation/71f09c8b-a172-408c-b9e7-32e580e39ff6) (2211.1)

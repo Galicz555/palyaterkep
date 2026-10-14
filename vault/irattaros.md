@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9ab0f0db-1128-4050-becd-b09db5eabdaa
 label: irattáros
-level: 2
+level: 1
 track: individual
 branch: business
 subBranch: office
@@ -29,7 +29,7 @@ lateral:
 
 # Irattáros
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Irodai és adminisztratív munka  
 **ESCO:** [irattáros](http://data.europa.eu/esco/occupation/9ab0f0db-1128-4050-becd-b09db5eabdaa) (4415.1)

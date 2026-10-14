@@ -22,6 +22,7 @@ skills:
   - http://data.europa.eu/esco/skill/d4ae9564-0b61-4aa0-9df0-d4fdc969fd6f
   - http://data.europa.eu/esco/skill/fd8c0029-9dc7-4b54-845b-ed30c61ba0f8
 lateral:
+  - "[[ugyesz]]"
   - "[[lokalizacios-szakember]]"
   - "[[jelnyelvi-tolmacs]]"
   - "[[jogpolitikai-tisztviselo]]"
@@ -57,6 +58,7 @@ A jogász-nyelvészek jogi szövegeket értelmeznek és fordítanak le egyik nye
 
 ## Váltások
 
+- [[ugyesz|ügyész]]
 - [[lokalizacios-szakember|lokalizációs szakember]]
 - [[jelnyelvi-tolmacs|jelnyelvi tolmács]]
 - [[jogpolitikai-tisztviselo|jogpolitikai tisztviselő]]

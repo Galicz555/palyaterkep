@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b0473a10-e3de-480c-a841-171f2356a074
 label: repülésbiztonsági ellenőr
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: air
@@ -36,7 +36,7 @@ lateral: []
 
 # Repülésbiztonsági ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [repülésbiztonsági ellenőr](http://data.europa.eu/esco/occupation/b0473a10-e3de-480c-a841-171f2356a074) (3154.2)

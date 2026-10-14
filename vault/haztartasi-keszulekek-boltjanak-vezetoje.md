@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/19c2acbf-766c-4728-b960-b91252a95fd1
 label: háztartási készülékek boltjának vezetője
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -50,7 +50,7 @@ lateral:
 
 # Háztartási készülékek boltjának vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [háztartási készülékek boltjának vezetője](http://data.europa.eu/esco/occupation/19c2acbf-766c-4728-b960-b91252a95fd1) (1420.4.17)

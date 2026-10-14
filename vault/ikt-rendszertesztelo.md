@@ -24,7 +24,6 @@ lateral:
   - "[[digitalisjatek-tesztelo]]"
   - "[[szoftvertesztelo]]"
   - "[[ikt-tesztelemzo]]"
-  - "[[ikt-minosegbiztositasi-menedzser]]"
   - "[[beagyazott-rendszerekkel-foglalkozo-biztonsagi-mernok]]"
 ---
 
@@ -58,5 +57,4 @@ Az IKT rendszertesztelő teszteléseket és némi teszteléstervezési tevékeny
 - [[digitalisjatek-tesztelo|digitálisjáték-tesztelő]]
 - [[szoftvertesztelo|szoftvertesztelő]]
 - [[ikt-tesztelemzo|IKT-tesztelemző]]
-- [[ikt-minosegbiztositasi-menedzser|IKT minőségbiztosítási menedzser]]
 - [[beagyazott-rendszerekkel-foglalkozo-biztonsagi-mernok|beágyazott rendszerekkel foglalkozó biztonsági mérnök]]

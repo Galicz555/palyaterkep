@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1738173e-ef9c-4222-88c8-b6aa9bad3cf7
 label: biofizikus
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -65,7 +65,7 @@ lateral:
 
 # Biofizikus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [biofizikus](http://data.europa.eu/esco/occupation/1738173e-ef9c-4222-88c8-b6aa9bad3cf7) (2131.4.4)

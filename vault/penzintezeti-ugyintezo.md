@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2ff9e53c-6e7f-42af-8d71-b5dd7f283089
 label: pénzintézeti ügyintéző
-level: 1
+level: 2
 track: individual
 branch: business
 subBranch: banking
@@ -32,7 +32,7 @@ lateral:
 
 # Pénzintézeti ügyintéző
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Banki szolgáltatások  
 **ESCO:** [pénzintézeti ügyintéző](http://data.europa.eu/esco/occupation/2ff9e53c-6e7f-42af-8d71-b5dd7f283089) (4211.1)

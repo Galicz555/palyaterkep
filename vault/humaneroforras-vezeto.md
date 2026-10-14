@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f605bcd2-90b6-45a0-a558-d05016d68a77
 label: humánerőforrás-vezető
-level: 3
+level: 4
 track: management
 branch: business
 subBranch: hr
@@ -47,14 +47,13 @@ lateral:
   - "[[egyenlosegert-es-inkluzioert-felelos-vezeto]]"
   - "[[vallalati-kepzesi-felelos]]"
   - "[[nyugdijrendszer-igazgatoja]]"
-  - "[[szemelyzeti-es-palyavalasztasi-szakerto]]"
   - "[[munkaugyi-kozpont-vezetoje]]"
-  - "[[munkaeropiaci-szolgaltatasi-ugyintezo]]"
+  - "[[munkaugyi-kapcsolattarto]]"
 ---
 
 # Humánerőforrás-vezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Emberi erőforrások  
 **ESCO:** [humánerőforrás-vezető](http://data.europa.eu/esco/occupation/f605bcd2-90b6-45a0-a558-d05016d68a77) (1212.2)
@@ -105,6 +104,5 @@ A humánerőforrás-vezetők vállalatok humántőkéjével kapcsolatos folyamat
 - [[egyenlosegert-es-inkluzioert-felelos-vezeto|egyenlőségért és inklúzióért felelős vezető]]
 - [[vallalati-kepzesi-felelos|vállalati képzési felelős]]
 - [[nyugdijrendszer-igazgatoja|nyugdíjrendszer igazgatója]]
-- [[szemelyzeti-es-palyavalasztasi-szakerto|személyzeti és pályaválasztási szakértő]]
 - [[munkaugyi-kozpont-vezetoje|munkaügyi központ vezetője]]
-- [[munkaeropiaci-szolgaltatasi-ugyintezo|munkaerőpiaci szolgáltatási ügyintéző]]
+- [[munkaugyi-kapcsolattarto|munkaügyi kapcsolattartó]]

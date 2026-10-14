@@ -26,7 +26,6 @@ skills:
   - http://data.europa.eu/esco/skill/fcd02121-ae3e-4d20-92ee-e2e368658a45
   - http://data.europa.eu/esco/skill/fce3268c-c944-4a5f-8b9c-034a72d5df13
 lateral:
-  - "[[biztositotarsasag-vezetoje]]"
   - "[[biztositasi-dijelemzo]]"
   - "[[biztositasi-kockazatelbiralo]]"
   - "[[biztositasi-nyomozo]]"
@@ -66,7 +65,6 @@ A biztosítási ügynökök népszerűsítik és adják el a különféle biztos
 
 ## Váltások
 
-- [[biztositotarsasag-vezetoje|biztosítótársaság vezetője]]
 - [[biztositasi-dijelemzo|biztosítási díjelemző]]
 - [[biztositasi-kockazatelbiralo|biztosítási kockázatelbíráló]]
 - [[biztositasi-nyomozo|biztosítási nyomozó]]

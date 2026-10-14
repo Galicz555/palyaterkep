@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/523ab5a0-5e72-418d-9d61-a6126a446123
 label: kereskedelmi pilóta
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: air
@@ -60,7 +60,7 @@ lateral:
 
 # Kereskedelmi pilóta
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [kereskedelmi pilóta](http://data.europa.eu/esco/occupation/523ab5a0-5e72-418d-9d61-a6126a446123) (3153.2.2)

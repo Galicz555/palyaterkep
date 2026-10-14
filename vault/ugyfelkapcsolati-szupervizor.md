@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9d2aae3e-cbfe-409f-86cc-7cef9cd0435a
 label: ügyfélkapcsolati szupervizor
-level: 2
+level: 3
 track: management
 branch: business
 subBranch: office
@@ -33,7 +33,7 @@ lateral:
 
 # Ügyfélkapcsolati szupervizor
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Irodai és adminisztratív munka  
 **ESCO:** [ügyfélkapcsolati szupervizor](http://data.europa.eu/esco/occupation/9d2aae3e-cbfe-409f-86cc-7cef9cd0435a) (3341.4)

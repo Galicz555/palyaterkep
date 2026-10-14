@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/74cbe6fb-336f-4f3f-8c8f-7645b279a231
 label: főkomornyik
-level: 3
-track: individual
+level: 4
+track: management
 branch: hospitality
 subBranch: cleaning
 skills:
@@ -24,13 +24,12 @@ skills:
   - http://data.europa.eu/esco/skill/c5bc42be-4970-4dce-80e2-af78bae42e84
   - http://data.europa.eu/esco/skill/de2f0ce8-f8d6-48c5-a213-4d065251cecf
   - http://data.europa.eu/esco/skill/ea4a7e5e-923d-4a15-ad55-362a3ff41641
-lateral:
-  - "[[pincer-pincerno]]"
+lateral: []
 ---
 
 # Főkomornyik
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Takarítás, háztartás és épületgondnokság  
 **ESCO:** [főkomornyik](http://data.europa.eu/esco/occupation/74cbe6fb-336f-4f3f-8c8f-7645b279a231) (5152.2.1)
@@ -59,4 +58,4 @@ A főkomornyikok hivatalos étkezéseknél szolgálnak fel, figyelemmel kíséri
 
 ## Váltások
 
-- [[pincer-pincerno|pincér/pincérnő]]
+Nincs.

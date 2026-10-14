@@ -20,7 +20,6 @@ skills:
 lateral:
   - "[[ornagy]]"
   - "[[katonai-kikepzotiszt]]"
-  - "[[a-legiero-tisztje]]"
 ---
 
 # Század-parancsnok
@@ -49,4 +48,3 @@ A század-parancsnokok különböző műveletekre szakosodott századok parancsn
 
 - [[ornagy|őrnagy]]
 - [[katonai-kikepzotiszt|katonai kiképzőtiszt]]
-- [[a-legiero-tisztje|a légierő tisztje]]

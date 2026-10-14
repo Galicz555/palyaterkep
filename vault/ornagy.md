@@ -20,10 +20,10 @@ skills:
 lateral:
   - "[[torzsormester]]"
   - "[[szazados]]"
-  - "[[fohadnagy]]"
   - "[[szazad-parancsnok]]"
   - "[[katonai-kikepzotiszt]]"
   - "[[ezredes]]"
+  - "[[dandartabornok]]"
 ---
 
 # Őrnagy
@@ -52,7 +52,7 @@ Az őrnagyok nagyméretű katonai egységek, tisztek és katonák parancsnokai, 
 
 - [[torzsormester|törzsőrmester]]
 - [[szazados|százados]]
-- [[fohadnagy|főhadnagy]]
 - [[szazad-parancsnok|század-parancsnok]]
 - [[katonai-kikepzotiszt|katonai kiképzőtiszt]]
 - [[ezredes|ezredes]]
+- [[dandartabornok|dandártábornok]]

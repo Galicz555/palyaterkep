@@ -16,7 +16,6 @@ skills:
   - http://data.europa.eu/esco/skill/e3e95567-666a-42bd-8565-ed3e4d3bb378
 lateral:
   - "[[kiallitasi-adminisztrator]]"
-  - "[[gyujtemenyigazgato]]"
 ---
 
 # Művészeti szakértő
@@ -41,4 +40,3 @@ A művészeti szakértők olyan szakképzett egyének, akik múzeumokban és mű
 ## Váltások
 
 - [[kiallitasi-adminisztrator|kiállítási adminisztrátor]]
-- [[gyujtemenyigazgato|gyűjteményigazgató]]

@@ -27,8 +27,8 @@ lateral:
   - "[[befektetesialap-kezelo-asszisztens]]"
   - "[[fuzios-es-felvasarlasi-elemzo]]"
   - "[[szemelyi-vagyonkezelo]]"
+  - "[[penzugyi-tervezo]]"
   - "[[kereskedelmi-ugynok]]"
-  - "[[aktuarius]]"
 ---
 
 # Vállalati banki tanácsadó
@@ -64,5 +64,5 @@ A vállalati banki tanácsadók a pénzügyi termékek és szolgáltatások szé
 - [[befektetesialap-kezelo-asszisztens|befektetésialap-kezelő asszisztens]]
 - [[fuzios-es-felvasarlasi-elemzo|fúziós és felvásárlási elemző]]
 - [[szemelyi-vagyonkezelo|személyi vagyonkezelő]]
+- [[penzugyi-tervezo|pénzügyi tervező]]
 - [[kereskedelmi-ugynok|kereskedelmi ügynök]]
-- [[aktuarius|aktuárius]]

@@ -45,12 +45,12 @@ skills:
   - http://data.europa.eu/esco/skill/f81ff65a-f235-41ea-af47-620e535c51e0
   - http://data.europa.eu/esco/skill/fa46ff13-5ad7-4a11-85d6-4b0614e411de
 lateral:
-  - "[[elelmiszer-osztalyozo]]"
   - "[[elelmiszer-biotechnologus]]"
   - "[[elelmiszertechnologus]]"
   - "[[elelmiszerbiztonsagi-felugyelo]]"
   - "[[elelmiszergyarto-mernok]]"
   - "[[elelmiszeranalitikus]]"
+  - "[[allateledel-ellenor]]"
 ---
 
 # Élelmiszerszabályozási tanácsadó
@@ -104,9 +104,9 @@ Az élelmiszerszabályozási tanácsadók a bíróságon kívüli vagy az igazs�
 
 ## Váltások
 
-- [[elelmiszer-osztalyozo|élelmiszer-osztályozó]]
 - [[elelmiszer-biotechnologus|élelmiszer biotechnológus]]
 - [[elelmiszertechnologus|élelmiszertechnológus]]
 - [[elelmiszerbiztonsagi-felugyelo|élelmiszerbiztonsági felügyelő]]
 - [[elelmiszergyarto-mernok|élelmiszergyártó mérnök]]
 - [[elelmiszeranalitikus|élelmiszeranalitikus]]
+- [[allateledel-ellenor|állateledel ellenőr]]

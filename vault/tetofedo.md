@@ -35,8 +35,8 @@ lateral:
   - "[[szigetelo]]"
   - "[[allvanyozo]]"
   - "[[epuletszobrasz]]"
-  - "[[padloszonyeg-fekteto]]"
   - "[[napenergia-technikus]]"
+  - "[[hazepito-mester]]"
 ---
 
 # Tetőfedő
@@ -80,5 +80,5 @@ A tetőfedők cseréppel fedik be a tetőszerkezeteket. Lapos vagy ferde súlyta
 - [[szigetelo|szigetelő]]
 - [[allvanyozo|állványozó]]
 - [[epuletszobrasz|épületszobrász]]
-- [[padloszonyeg-fekteto|padlószőnyeg-fektető]]
 - [[napenergia-technikus|napenergia-technikus]]
+- [[hazepito-mester|házépítő mester]]

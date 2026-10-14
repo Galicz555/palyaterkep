@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a2fa73d0-7e51-456f-95c6-90f126f52ab8
 label: vasúti forgalomirányító
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: rail
@@ -23,7 +23,7 @@ lateral:
 
 # Vasúti forgalomirányító
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Vasúti közlekedés  
 **ESCO:** [vasúti forgalomirányító](http://data.europa.eu/esco/occupation/a2fa73d0-7e51-456f-95c6-90f126f52ab8) (8312.4)

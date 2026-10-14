@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b3855886-bfee-4fd9-827e-2a0b6b4b4441
 label: bányászati szellőztetési mérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: mechanical
@@ -30,7 +30,7 @@ lateral:
 
 # Bányászati szellőztetési mérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Gépészmérnöki terület  
 **ESCO:** [bányászati szellőztetési mérnök](http://data.europa.eu/esco/occupation/b3855886-bfee-4fd9-827e-2a0b6b4b4441) (2144.1.13)

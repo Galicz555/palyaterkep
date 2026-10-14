@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/4e82464b-e9d7-4d51-9116-294ab40c5169
 label: segítő technológus
-level: 3
+level: 2
 track: individual
 branch: education
 subBranch: adult-learning
@@ -53,7 +53,7 @@ lateral:
 
 # Segítő technológus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felnőttképzés és egyéb oktatás  
 **ESCO:** [segítő technológus](http://data.europa.eu/esco/occupation/4e82464b-e9d7-4d51-9116-294ab40c5169) (2359.5)

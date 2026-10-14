@@ -22,7 +22,8 @@ skills:
   - http://data.europa.eu/esco/skill/eb0d83b2-3aa4-4a36-a60a-99b6746429e2
   - http://data.europa.eu/esco/skill/f7464f30-662b-4177-85a0-3df9693e9e58
   - http://data.europa.eu/esco/skill/f83c245f-4aa9-484f-8fd2-4ad65dd82ae5
-lateral: []
+lateral:
+  - "[[testor]]"
 ---
 
 # Vízimentő
@@ -54,4 +55,4 @@ A vízimentők a vészhelyzetek megelőzése és az azokra való reagálás rév
 
 ## Váltások
 
-Nincs.
+- [[testor|testőr]]

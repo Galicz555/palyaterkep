@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7cb71c5f-c310-481c-b46b-d0044328758c
 label: járműtakarító
-level: 2
+level: 1
 track: individual
 branch: hospitality
 subBranch: cleaning
@@ -28,7 +28,7 @@ lateral:
 
 # Járműtakarító
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Takarítás, háztartás és épületgondnokság  
 **ESCO:** [járműtakarító](http://data.europa.eu/esco/occupation/7cb71c5f-c310-481c-b46b-d0044328758c) (9122.1)

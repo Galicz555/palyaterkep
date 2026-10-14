@@ -77,10 +77,10 @@ skills:
 lateral:
   - "[[dentalhigienikus]]"
   - "[[fogaszati-asszisztens]]"
-  - "[[vezeto-fizioterapeuta]]"
+  - "[[fizioterapeuta]]"
   - "[[optometrista]]"
-  - "[[szakapolo]]"
   - "[[fogtechnikus]]"
+  - "[[latszeresz]]"
 ---
 
 # Fogorvos
@@ -166,7 +166,7 @@ A fogorvosok megelőzik, diagnosztizálják és kezelik a fogakat, szájat, áll
 
 - [[dentalhigienikus|dentálhigiénikus]]
 - [[fogaszati-asszisztens|fogászati asszisztens]]
-- [[vezeto-fizioterapeuta|vezető fizioterapeuta]]
+- [[fizioterapeuta|fizioterapeuta]]
 - [[optometrista|optometrista]]
-- [[szakapolo|szakápoló]]
 - [[fogtechnikus|fogtechnikus]]
+- [[latszeresz|látszerész]]

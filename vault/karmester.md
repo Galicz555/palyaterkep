@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0e216d47-fc12-43e9-8953-ad8ba11f4b96
 label: karmester
-level: 3
+level: 4
 track: management
 branch: culture
 subBranch: performing-arts
@@ -41,7 +41,7 @@ lateral:
 
 # Karmester
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Előadó-művészet  
 **ESCO:** [karmester](http://data.europa.eu/esco/occupation/0e216d47-fc12-43e9-8953-ad8ba11f4b96) (2652.3.1)

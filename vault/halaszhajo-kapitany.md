@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/bcead4e9-3697-4831-b62e-ddb83d7d469d
 label: halászhajó-kapitány
-level: 3
+level: 4
 track: management
 branch: agriculture
 subBranch: fishing
@@ -53,16 +53,13 @@ skills:
   - http://data.europa.eu/esco/skill/fc651e3f-c163-4bdb-bb79-8061fbe780db
 lateral:
   - "[[part-menti-halaszatot-folytato-hajo-parancsnoka]]"
-  - "[[halasz]]"
   - "[[fedelzetmester-halaszhajon]]"
-  - "[[halaszati-or]]"
-  - "[[melytengeri-halasz]]"
   - "[[hajoparancsnok-belvizi-hajon]]"
 ---
 
 # Halászhajó-kapitány
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Halászat és halgazdálkodás  
 **ESCO:** [halászhajó-kapitány](http://data.europa.eu/esco/occupation/bcead4e9-3697-4831-b62e-ddb83d7d469d) (6223.2)
@@ -119,8 +116,5 @@ A halászhajó-kapitányok megtervezik, irányítják és végrehajtják a halá
 ## Váltások
 
 - [[part-menti-halaszatot-folytato-hajo-parancsnoka|part menti halászatot folytató hajó parancsnoka]]
-- [[halasz|halász]]
 - [[fedelzetmester-halaszhajon|fedélzetmester halászhajón]]
-- [[halaszati-or|halászati őr]]
-- [[melytengeri-halasz|mélytengeri halász]]
 - [[hajoparancsnok-belvizi-hajon|hajóparancsnok belvízi hajón]]

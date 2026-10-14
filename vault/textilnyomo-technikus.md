@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/32fcdc6f-1c8a-44e9-99b8-5519e4db4414
 label: textilnyomó technikus
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: printing
@@ -27,7 +27,7 @@ lateral:
 
 # Textilnyomó technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Nyomdaipar  
 **ESCO:** [textilnyomó technikus](http://data.europa.eu/esco/occupation/32fcdc6f-1c8a-44e9-99b8-5519e4db4414) (7322.7)

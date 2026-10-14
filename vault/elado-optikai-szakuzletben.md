@@ -43,11 +43,11 @@ skills:
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
   - "[[hallokeszulekszakuzleti-elado]]"
+  - "[[textilbolti-elado]]"
   - "[[szorakoztato-elektronikai-szakuzleti-elado]]"
   - "[[illatszerbolti-elado]]"
   - "[[cipo-es-boraru-elado]]"
   - "[[jatekbolti-elado]]"
-  - "[[epitoanyagbolti-elado]]"
 ---
 
 # Eladó optikai szaküzletben
@@ -99,8 +99,8 @@ Az optikai szaküzleti eladók szemüvegeket és optikai eszközöket értékes�
 ## Váltások
 
 - [[hallokeszulekszakuzleti-elado|hallókészülékszaküzleti eladó]]
+- [[textilbolti-elado|textilbolti eladó]]
 - [[szorakoztato-elektronikai-szakuzleti-elado|szórakoztató elektronikai szaküzleti eladó]]
 - [[illatszerbolti-elado|illatszerbolti eladó]]
 - [[cipo-es-boraru-elado|cipő- és bőráru-eladó]]
 - [[jatekbolti-elado|játékbolti eladó]]
-- [[epitoanyagbolti-elado|építőanyagbolti eladó]]

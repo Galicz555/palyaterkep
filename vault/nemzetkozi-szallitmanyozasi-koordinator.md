@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/56fa783a-cca4-42ef-8862-1fb6e43f215c
 label: nemzetközi szállítmányozási koordinátor
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: dispatch
@@ -32,7 +32,7 @@ lateral:
 
 # Nemzetközi szállítmányozási koordinátor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Forgalomirányítás és fuvarszervezés  
 **ESCO:** [nemzetközi szállítmányozási koordinátor](http://data.europa.eu/esco/occupation/56fa783a-cca4-42ef-8862-1fb6e43f215c) (3331.3)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/264e1a4a-5074-47e2-a6d9-d225d48e8a9a
 label: bukméker
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: sport-leisure
@@ -29,7 +29,7 @@ lateral:
 
 # Bukméker
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Sport, szabadidő és szerencsejáték  
 **ESCO:** [bukméker](http://data.europa.eu/esco/occupation/264e1a4a-5074-47e2-a6d9-d225d48e8a9a) (4212.2)

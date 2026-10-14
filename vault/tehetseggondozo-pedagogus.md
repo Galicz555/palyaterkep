@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1044dedc-81d1-48b6-96b3-ced5393b2de1
 label: tehetséggondozó pedagógus
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: special-needs
@@ -53,7 +53,7 @@ lateral:
 
 # Tehetséggondozó pedagógus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Gyógypedagógia  
 **ESCO:** [tehetséggondozó pedagógus](http://data.europa.eu/esco/occupation/1044dedc-81d1-48b6-96b3-ced5393b2de1) (2352.2)

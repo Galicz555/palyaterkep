@@ -18,8 +18,8 @@ skills:
   - http://data.europa.eu/esco/skill/c9f4efcd-e16a-4515-a0cb-60c6c479853d
   - http://data.europa.eu/esco/skill/d9cc828c-61fc-422d-91e7-b2e8e4aa48a5
 lateral:
+  - "[[aktuarius]]"
   - "[[statisztikai-asszisztens]]"
-  - "[[gazdasagi-tanacsado]]"
 ---
 
 # Aktuárius asszisztens
@@ -46,5 +46,5 @@ Az aktuárius asszisztensek statisztikai adatokat kutatnak a biztosítási díja
 
 ## Váltások
 
+- [[aktuarius|aktuárius]]
 - [[statisztikai-asszisztens|statisztikai asszisztens]]
-- [[gazdasagi-tanacsado|gazdasági tanácsadó]]

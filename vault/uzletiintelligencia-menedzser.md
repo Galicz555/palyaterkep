@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/207d7b18-6540-432e-8aa6-785ed434572f
 label: üzletiintelligencia-menedzser
-level: 3
+level: 4
 track: management
 branch: business
 subBranch: management
@@ -46,12 +46,12 @@ lateral:
   - "[[kornyezetvedelmi-igazgato]]"
   - "[[szakpolitikai-vezeto]]"
   - "[[szabalyozasi-menedzser]]"
-  - "[[gazdasagi-elemzo]]"
+  - "[[cegvezeto]]"
 ---
 
 # Üzletiintelligencia-menedzser
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Vállalatvezetés, stratégia és tanácsadás  
 **ESCO:** [üzletiintelligencia-menedzser](http://data.europa.eu/esco/occupation/207d7b18-6540-432e-8aa6-785ed434572f) (2421.3)
@@ -101,4 +101,4 @@ Az üzletiintelligencia-menedzserek ismereteket szereznek az ágazatról, az abb
 - [[kornyezetvedelmi-igazgato|környezetvédelmi igazgató]]
 - [[szakpolitikai-vezeto|szakpolitikai vezető]]
 - [[szabalyozasi-menedzser|szabályozási menedzser]]
-- [[gazdasagi-elemzo|gazdasági elemző]]
+- [[cegvezeto|cégvezető]]

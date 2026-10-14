@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1e3c569b-e7ef-46b4-943a-2768a9969961
 label: sörfőzde-üzemeltető
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: food
@@ -41,14 +41,13 @@ lateral:
   - "[[sorfozo-mester]]"
   - "[[pincemester-8160-13]]"
   - "[[szen-dioxid-telitessel-foglalkozo-operator]]"
-  - "[[konzervipari-es-palackozo-operator]]"
   - "[[szeszes-ital-kevero]]"
   - "[[viztisztito-berendezes-kezeloje]]"
 ---
 
 # Sörfőzde-üzemeltető
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [sörfőzde-üzemeltető](http://data.europa.eu/esco/occupation/1e3c569b-e7ef-46b4-943a-2768a9969961) (8160.7)
@@ -93,6 +92,5 @@ A sörfőzde-üzemeltetők nyomon követik a cefrézést, a máslást és a nyer
 - [[sorfozo-mester|sörfőző mester]]
 - [[pincemester-8160-13|pincemester]]
 - [[szen-dioxid-telitessel-foglalkozo-operator|szén-dioxid telítéssel foglalkozó operátor]]
-- [[konzervipari-es-palackozo-operator|konzervipari és palackozó operátor]]
 - [[szeszes-ital-kevero|szeszes ital keverő]]
 - [[viztisztito-berendezes-kezeloje|víztisztító berendezés kezelője]]

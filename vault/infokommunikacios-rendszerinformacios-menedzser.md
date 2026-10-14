@@ -35,7 +35,6 @@ skills:
   - http://data.europa.eu/esco/skill/fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5
 lateral:
   - "[[adatkezelesert-felelos-igazgato]]"
-  - "[[mesterseges-intelligenciaval-foglalkozo-mernok-ai-mernok]]"
 ---
 
 # Infokommunikációs rendszerinformációs menedzser
@@ -79,4 +78,3 @@ Az infokommunikációs rendszerinformációs menedzserek hozzájárulnak a szerv
 ## Váltások
 
 - [[adatkezelesert-felelos-igazgato|adatkezelésért felelős igazgató]]
-- [[mesterseges-intelligenciaval-foglalkozo-mernok-ai-mernok|mesterséges intelligenciával foglalkozó mérnök (AI-mérnök)]]

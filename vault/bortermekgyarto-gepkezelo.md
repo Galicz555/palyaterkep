@@ -27,7 +27,6 @@ lateral:
   - "[[boripari-termelesi-muvezeto]]"
   - "[[bortermek-csomagolo]]"
   - "[[bordiszmuves]]"
-  - "[[cipogyarto-gep-kezeloje]]"
 ---
 
 # Bőrtermékgyártó gépkezelő
@@ -63,4 +62,3 @@ A bőrtermékgyártó gépkezelők a bőráruk ipari gyártásában alkalmazott 
 - [[boripari-termelesi-muvezeto|bőripari termelési művezető]]
 - [[bortermek-csomagolo|bőrtermék-csomagoló]]
 - [[bordiszmuves|bőrdíszműves]]
-- [[cipogyarto-gep-kezeloje|cipőgyártó gép kezelője]]

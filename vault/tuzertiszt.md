@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/7696b15a-c52e-4ac5-b38d-9eeb010c5fa3
 label: tüzértiszt
 level: 3
-track: individual
+track: management
 branch: public
 subBranch: military
 skills:
@@ -24,16 +24,16 @@ skills:
   - http://data.europa.eu/esco/skill/ff8bd17c-77e9-4d4e-929a-a0cf86f3ed34
 lateral:
   - "[[katonatiszt]]"
-  - "[[gyalogos]]"
   - "[[tengeresztiszt]]"
   - "[[kulonleges-alakulat-tisztje]]"
   - "[[a-legiero-tisztje]]"
   - "[[hadviselesi-szakerto]]"
+  - "[[szakaszvezeto]]"
 ---
 
 # Tüzértiszt
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Honvédelem  
 **ESCO:** [tüzértiszt](http://data.europa.eu/esco/occupation/7696b15a-c52e-4ac5-b38d-9eeb010c5fa3) (0110.6)
@@ -61,8 +61,8 @@ A tüzértisztek támogatást nyújtanak a célszerzés, az információk össze
 ## Váltások
 
 - [[katonatiszt|katonatiszt]]
-- [[gyalogos|gyalogos]]
 - [[tengeresztiszt|tengerésztiszt]]
 - [[kulonleges-alakulat-tisztje|különleges alakulat tisztje]]
 - [[a-legiero-tisztje|a légierő tisztje]]
 - [[hadviselesi-szakerto|hadviselési szakértő]]
+- [[szakaszvezeto|szakaszvezető]]

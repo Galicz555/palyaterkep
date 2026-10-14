@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3b6d4443-4518-4fb3-ae44-188a958e328d
 label: tőzsdei kereskedő
-level: 3
+level: 2
 track: individual
 branch: business
 subBranch: investment
@@ -34,7 +34,7 @@ lateral:
 
 # Tőzsdei kereskedő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Befektetés és pénzügyi elemzés  
 **ESCO:** [tőzsdei kereskedő](http://data.europa.eu/esco/occupation/3b6d4443-4518-4fb3-ae44-188a958e328d) (3311.3.5)

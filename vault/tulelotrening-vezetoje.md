@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/52a769ab-c899-4e8c-b31d-e5c2a01f32e3
 label: túlélőtréning vezetője
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: sport-leisure
@@ -39,7 +39,7 @@ lateral:
 
 # Túlélőtréning vezetője
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Sport, szabadidő és szerencsejáték  
 **ESCO:** [túlélőtréning vezetője](http://data.europa.eu/esco/occupation/52a769ab-c899-4e8c-b31d-e5c2a01f32e3) (3423.1.2.2.1)

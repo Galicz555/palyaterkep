@@ -44,7 +44,6 @@ lateral:
   - "[[devops-felhomernok]]"
   - "[[felhoalapuszoftver-fejleszto]]"
   - "[[felhoalapuszemelyazonossag-kezelo]]"
-  - "[[felho-architekt]]"
 ---
 
 # Felhőmérnök
@@ -98,4 +97,3 @@ A felhőmérnökök felelnek a felhőalapú rendszerek kialakításáért, terve
 - [[devops-felhomernok|DevOps felhőmérnök]]
 - [[felhoalapuszoftver-fejleszto|felhőalapúszoftver-fejlesztő]]
 - [[felhoalapuszemelyazonossag-kezelo|felhőalapúszemélyazonosság-kezelő]]
-- [[felho-architekt|felhő-architekt]]

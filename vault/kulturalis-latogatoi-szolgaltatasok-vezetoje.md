@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b9b47087-6045-405d-b769-6a0c94e2eb84
 label: kulturális látogatói szolgáltatások vezetője
-level: 3
+level: 4
 track: management
 branch: culture
 subBranch: heritage
@@ -21,14 +21,13 @@ skills:
   - http://data.europa.eu/esco/skill/c72d6c85-9eeb-4584-ba1c-262581eeb741
   - http://data.europa.eu/esco/skill/d39ee246-1eae-4e56-b7b7-ea341c6dfbfe
 lateral:
-  - "[[muveszeti-oktatasi-tisztviselo]]"
   - "[[kulturalis-letesitmeny-vezetoje]]"
   - "[[kulturalis-kozpont-igazgatoja]]"
 ---
 
 # Kulturális látogatói szolgáltatások vezetője
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Múzeum, könyvtár és levéltár  
 **ESCO:** [kulturális látogatói szolgáltatások vezetője](http://data.europa.eu/esco/occupation/b9b47087-6045-405d-b769-6a0c94e2eb84) (2621.5)
@@ -54,6 +53,5 @@ A kulturális látogatói szolgáltatások vezetői felelősek a kulturális hel
 
 ## Váltások
 
-- [[muveszeti-oktatasi-tisztviselo|művészeti oktatási tisztviselő]]
 - [[kulturalis-letesitmeny-vezetoje|kulturális létesítmény vezetője]]
 - [[kulturalis-kozpont-igazgatoja|kulturális központ igazgatója]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2e4b41dd-b63d-403d-a0ad-dd323cd3ddac
 label: akvakultúrás ketrecrögzítő
-level: 2
+level: 1
 track: individual
 branch: agriculture
 subBranch: fishing
@@ -54,7 +54,7 @@ lateral:
 
 # Akvakultúrás ketrecrögzítő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Halászat és halgazdálkodás  
 **ESCO:** [akvakultúrás ketrecrögzítő](http://data.europa.eu/esco/occupation/2e4b41dd-b63d-403d-a0ad-dd323cd3ddac) (9216.1)

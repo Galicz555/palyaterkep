@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c90a6ebe-adcc-4395-9f5b-ff3e96e93cef
 label: vallástanoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -46,7 +46,7 @@ lateral:
 
 # Vallástanoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [vallástanoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/c90a6ebe-adcc-4395-9f5b-ff3e96e93cef) (2310.1.36)

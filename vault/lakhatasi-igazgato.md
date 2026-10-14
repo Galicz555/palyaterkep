@@ -85,7 +85,7 @@ lateral:
   - "[[gyermeknapkozi-vezetoje]]"
   - "[[idosek-otthonanak-igazgatoja]]"
   - "[[szocialis-tevekenyseget-folytato-egyseg-vezetoje]]"
-  - "[[tanacsado-szocialis-munkas]]"
+  - "[[szocialismunka-oktato-felsooktatasi-intezmenyben]]"
 ---
 
 # Lakhatási igazgató
@@ -179,4 +179,4 @@ A lakhatási igazgatók stratégiákat dolgoznak ki a közösségek lakhatási p
 - [[gyermeknapkozi-vezetoje|gyermeknapközi vezetője]]
 - [[idosek-otthonanak-igazgatoja|idősek otthonának igazgatója]]
 - [[szocialis-tevekenyseget-folytato-egyseg-vezetoje|szociális tevékenységet folytató egység vezetője]]
-- [[tanacsado-szocialis-munkas|tanácsadó szociális munkás]]
+- [[szocialismunka-oktato-felsooktatasi-intezmenyben|szociálismunka-oktató felsőoktatási intézményben]]

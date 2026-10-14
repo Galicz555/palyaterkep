@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/07ba3429-cccd-435b-a7d0-c02ba962bbd9
 label: egyedi cipőkészítő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: textiles
@@ -33,14 +33,14 @@ lateral:
   - "[[cipesz]]"
   - "[[ortopediai-cipesz]]"
   - "[[cipotalpalo-es-sarkalo]]"
-  - "[[cipoipari-elokeszito]]"
-  - "[[cipofelsoresz-kaptafazo]]"
   - "[[vagogepkezelo]]"
+  - "[[cipojavito]]"
+  - "[[cipogyarto-gep-kezeloje]]"
 ---
 
 # Egyedi cipőkészítő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Textil-, ruha- és bőripar  
 **ESCO:** [egyedi cipőkészítő](http://data.europa.eu/esco/occupation/07ba3429-cccd-435b-a7d0-c02ba962bbd9) (7536.2.1)
@@ -77,6 +77,6 @@ Az egyedi cipőkészítők kis gyártási környezetben (pl. műhelyekben) végz
 - [[cipesz|cipész]]
 - [[ortopediai-cipesz|ortopédiai cipész]]
 - [[cipotalpalo-es-sarkalo|cipőtalpaló és -sarkaló]]
-- [[cipoipari-elokeszito|cipőipari előkészítő]]
-- [[cipofelsoresz-kaptafazo|cipőfelsőrész-kaptafázó]]
 - [[vagogepkezelo|vágógépkezelő]]
+- [[cipojavito|cipőjavító]]
+- [[cipogyarto-gep-kezeloje|cipőgyártó gép kezelője]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/5b9a678a-7c35-4c50-a804-754b82652ee6
 label: utazásszervező tanácsadó
-level: 2
+level: 3
 track: individual
 branch: hospitality
 subBranch: tourism-events
@@ -42,7 +42,7 @@ lateral:
 
 # Utazásszervező tanácsadó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Turizmus, utazás és rendezvényszervezés  
 **ESCO:** [utazásszervező tanácsadó](http://data.europa.eu/esco/occupation/5b9a678a-7c35-4c50-a804-754b82652ee6) (4221.6)

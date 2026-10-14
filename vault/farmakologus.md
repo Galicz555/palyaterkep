@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/10291962-c0c7-4e5b-a7ed-0762b4d9b010
 label: farmakológus
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -73,7 +73,7 @@ lateral:
 
 # Farmakológus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [farmakológus](http://data.europa.eu/esco/occupation/10291962-c0c7-4e5b-a7ed-0762b4d9b010) (2131.7)

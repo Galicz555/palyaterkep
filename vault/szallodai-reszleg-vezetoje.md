@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/02e19186-458f-40eb-9e78-31c656d12ac7
 label: szállodai részleg vezetője
-level: 3
+level: 4
 track: management
 branch: hospitality
 subBranch: accommodation
@@ -38,7 +38,7 @@ lateral:
 
 # Szállodai részleg vezetője
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Szálláshely-szolgáltatás  
 **ESCO:** [szállodai részleg vezetője](http://data.europa.eu/esco/occupation/02e19186-458f-40eb-9e78-31c656d12ac7) (1411.3)

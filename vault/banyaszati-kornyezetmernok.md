@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/32548f7e-8c25-4c49-9f22-78dee3543704
 label: bányászati környezetmérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: environment
@@ -40,7 +40,7 @@ lateral:
 
 # Bányászati környezetmérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Környezetvédelem  
 **ESCO:** [bányászati környezetmérnök](http://data.europa.eu/esco/occupation/32548f7e-8c25-4c49-9f22-78dee3543704) (2143.1.1)

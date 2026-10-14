@@ -45,6 +45,7 @@ lateral:
   - "[[oktato-allatorvos-tudomanyi-karon]]"
   - "[[egyetemi-tanarseged]]"
   - "[[informatikaoktato-felsooktatasi-intezmenyben]]"
+  - "[[elsosegelynyujto-oktato]]"
 ---
 
 # Adjunktus
@@ -98,3 +99,4 @@ Az adjunktusok részt vesznek az egyetemi vagy főiskolai oktatásban, különö
 - [[oktato-allatorvos-tudomanyi-karon|oktató állatorvos-tudományi karon]]
 - [[egyetemi-tanarseged|egyetemi tanársegéd]]
 - [[informatikaoktato-felsooktatasi-intezmenyben|informatikaoktató felsőoktatási intézményben]]
+- [[elsosegelynyujto-oktato|elsősegélynyújtó-oktató]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9388a977-6f79-4509-81aa-026bc49e1919
 label: konzervipari és palackozó operátor
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: packaging
@@ -33,12 +33,11 @@ lateral:
   - "[[gyumolcs-zoldsegkonzerv-ipari-munkas]]"
   - "[[szen-dioxid-telitessel-foglalkozo-operator]]"
   - "[[szivar-markajelzeset-vegzo-szakmunkas]]"
-  - "[[sorfozde-uzemelteto]]"
 ---
 
 # Konzervipari és palackozó operátor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Csomagolás és általános gyári munka  
 **ESCO:** [konzervipari és palackozó operátor](http://data.europa.eu/esco/occupation/9388a977-6f79-4509-81aa-026bc49e1919) (8183.1)
@@ -76,4 +75,3 @@ A konzervipari és palackozó operátorok megfigyelik az előállítási folyama
 - [[gyumolcs-zoldsegkonzerv-ipari-munkas|gyümölcs- zöldségkonzerv-ipari munkás]]
 - [[szen-dioxid-telitessel-foglalkozo-operator|szén-dioxid telítéssel foglalkozó operátor]]
 - [[szivar-markajelzeset-vegzo-szakmunkas|szivar márkajelzését végző szakmunkás]]
-- [[sorfozde-uzemelteto|sörfőzde-üzemeltető]]

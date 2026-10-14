@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/5fdfa822-c1ba-477e-87cc-3d742e59310d
 label: biológiaoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -50,7 +50,7 @@ lateral:
 
 # Biológiaoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [biológiaoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/5fdfa822-c1ba-477e-87cc-3d742e59310d) (2310.1.6)

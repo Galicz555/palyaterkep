@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e5a63940-57d3-4065-8713-74b4e2c93063
 label: termék- és szolgáltatásmenedzser
-level: 4
+level: 3
 track: management
 branch: trade
 subBranch: marketing
@@ -31,7 +31,7 @@ lateral: []
 
 # Termék- és szolgáltatásmenedzser
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Értékesítési vezetés és marketing  
 **ESCO:** [termék- és szolgáltatásmenedzser](http://data.europa.eu/esco/occupation/e5a63940-57d3-4065-8713-74b4e2c93063) (2431.15)

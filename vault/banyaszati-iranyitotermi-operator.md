@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7c64479f-7a76-49e9-ac42-bd925f2bf99d
 label: bányászati irányítótermi operátor
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: chemicals
@@ -29,7 +29,7 @@ lateral:
 
 # Bányászati irányítótermi operátor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [bányászati irányítótermi operátor](http://data.europa.eu/esco/occupation/7c64479f-7a76-49e9-ac42-bd925f2bf99d) (8131.11)

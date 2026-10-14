@@ -52,8 +52,6 @@ lateral:
   - "[[kerteszeti-termelessel-foglalkozo-egyseg-vezetoje]]"
   - "[[mezogazdasagi-novenytermesztesi-brigad-vezetoje]]"
   - "[[novenytermesztes-vezetoje]]"
-  - "[[kertesz]]"
-  - "[[novenytermeszto]]"
 ---
 
 # Gyümölcstermesztő
@@ -114,5 +112,3 @@ A gyümölcstermesztők feladata a dolgozók irányítása és munkájuk segít�
 - [[kerteszeti-termelessel-foglalkozo-egyseg-vezetoje|kertészeti termeléssel foglalkozó egység vezetője]]
 - [[mezogazdasagi-novenytermesztesi-brigad-vezetoje|mezőgazdasági növénytermesztési brigád vezetője]]
 - [[novenytermesztes-vezetoje|növénytermesztés vezetője]]
-- [[kertesz|kertész]]
-- [[novenytermeszto|növénytermesztő]]

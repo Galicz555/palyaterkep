@@ -19,7 +19,6 @@ skills:
   - http://data.europa.eu/esco/skill/f2d57f41-43b4-4f5b-8100-3df5c21eda50
 lateral:
   - "[[adatminoseg-elemzo]]"
-  - "[[adatrogzitesi-szupervizor]]"
   - "[[nagy-archivalt-adatallomanyok-kezeloje]]"
 ---
 
@@ -48,5 +47,4 @@ Az adatrögzítők számítógépes rendszereken tárolt információkat frissí
 ## Váltások
 
 - [[adatminoseg-elemzo|adatminőség-elemző]]
-- [[adatrogzitesi-szupervizor|adatrögzítési szupervizor]]
 - [[nagy-archivalt-adatallomanyok-kezeloje|nagy archivált adatállományok kezelője]]

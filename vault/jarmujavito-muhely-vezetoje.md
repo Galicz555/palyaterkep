@@ -38,8 +38,8 @@ lateral:
   - "[[tagsagszervezo]]"
   - "[[call-center-vezeto]]"
   - "[[ugyfelkapcsolati-menedzser]]"
-  - "[[szepsegszalon-vezetoje]]"
   - "[[szolgaltatasmenedzser]]"
+  - "[[jarmukarbantartasi-vezeto]]"
 ---
 
 # Járműjavító műhely vezetője
@@ -86,5 +86,5 @@ A járműjavító műhelyek vezetői felügyelik a járműszerelők és az admin
 - [[tagsagszervezo|tagságszervező]]
 - [[call-center-vezeto|call center vezető]]
 - [[ugyfelkapcsolati-menedzser|ügyfélkapcsolati menedzser]]
-- [[szepsegszalon-vezetoje|szépségszalon vezetője]]
 - [[szolgaltatasmenedzser|szolgáltatásmenedzser]]
+- [[jarmukarbantartasi-vezeto|járműkarbantartási vezető]]

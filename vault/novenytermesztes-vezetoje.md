@@ -42,8 +42,8 @@ lateral:
   - "[[kerteszeti-termelessel-foglalkozo-egyseg-vezetoje]]"
   - "[[kerteszeti-termelesi-csoportvezeto]]"
   - "[[gyumolcstermeszto]]"
+  - "[[gazdalkodo]]"
   - "[[szoleszetvezeto]]"
-  - "[[agronomus]]"
 ---
 
 # Növénytermesztés vezetője
@@ -94,5 +94,5 @@ A növénytermesztési vezetők megtervezik a termelést, irányítják a válla
 - [[kerteszeti-termelessel-foglalkozo-egyseg-vezetoje|kertészeti termeléssel foglalkozó egység vezetője]]
 - [[kerteszeti-termelesi-csoportvezeto|kertészeti termelési csoportvezető]]
 - [[gyumolcstermeszto|gyümölcstermesztő]]
+- [[gazdalkodo|gazdálkodó]]
 - [[szoleszetvezeto|szőlészetvezető]]
-- [[agronomus|agronómus]]

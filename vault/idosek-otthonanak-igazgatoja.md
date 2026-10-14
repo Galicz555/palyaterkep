@@ -78,7 +78,7 @@ lateral:
   - "[[mentoallomas-vezeto]]"
   - "[[lakhatasi-igazgato]]"
   - "[[szocialis-tevekenyseget-folytato-egyseg-vezetoje]]"
-  - "[[tanacsado-szocialis-munkas]]"
+  - "[[szocialismunka-oktato-felsooktatasi-intezmenyben]]"
 ---
 
 # Idősek otthonának igazgatója
@@ -165,4 +165,4 @@ Az idősek otthonának igazgatói felügyelik, megtervezik, megszervezik és ér
 - [[mentoallomas-vezeto|mentőállomás-vezető]]
 - [[lakhatasi-igazgato|lakhatási igazgató]]
 - [[szocialis-tevekenyseget-folytato-egyseg-vezetoje|szociális tevékenységet folytató egység vezetője]]
-- [[tanacsado-szocialis-munkas|tanácsadó szociális munkás]]
+- [[szocialismunka-oktato-felsooktatasi-intezmenyben|szociálismunka-oktató felsőoktatási intézményben]]

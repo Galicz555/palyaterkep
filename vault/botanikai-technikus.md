@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2c5ae1b4-c3ca-4882-b7ce-e346ae5b5b00
 label: botanikai technikus
-level: 2
+level: 1
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -37,7 +37,7 @@ lateral:
 
 # Botanikai technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [botanikai technikus](http://data.europa.eu/esco/occupation/2c5ae1b4-c3ca-4882-b7ce-e346ae5b5b00) (3141.2.4)

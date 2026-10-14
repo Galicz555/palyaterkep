@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/808becc8-5a4e-4e71-a043-c2ea32b56ae3
 label: anyagmozgató
-level: 2
+level: 1
 track: individual
 branch: transport
 subBranch: warehousing
@@ -36,7 +36,7 @@ lateral:
 
 # Anyagmozgató
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Raktározás és anyagmozgatás  
 **ESCO:** [anyagmozgató](http://data.europa.eu/esco/occupation/808becc8-5a4e-4e71-a043-c2ea32b56ae3) (9333.3)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/47300afa-5496-484c-8f65-14247a98b2b8
 label: mélyépítő technikus
-level: 2
+level: 1
 track: individual
 branch: construction
 subBranch: plant-labour
@@ -45,7 +45,7 @@ lateral:
 
 # Mélyépítő technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőgépek és segédmunka  
 **ESCO:** [mélyépítő technikus](http://data.europa.eu/esco/occupation/47300afa-5496-484c-8f65-14247a98b2b8) (9312.1)

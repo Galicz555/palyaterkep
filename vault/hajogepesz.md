@@ -45,6 +45,7 @@ skills:
   - http://data.europa.eu/esco/skill/efa141df-f382-418f-9121-bd88fd735669
   - http://data.europa.eu/esco/skill/f5fa2654-52cc-45d2-ac92-ac979dee5d12
 lateral:
+  - "[[fedelzeti-gepkezelo]]"
   - "[[fedelzetmester]]"
   - "[[hajoparancsnok-belvizi-hajon]]"
   - "[[hajozasi-geptiszt]]"
@@ -101,6 +102,7 @@ A hajógépészek felelnek a hajómotor és a mechanikai alkatrészek megfelelő
 
 ## Váltások
 
+- [[fedelzeti-gepkezelo|fedélzeti gépkezelő]]
 - [[fedelzetmester|fedélzetmester]]
 - [[hajoparancsnok-belvizi-hajon|hajóparancsnok belvízi hajón]]
 - [[hajozasi-geptiszt|hajózási géptiszt]]

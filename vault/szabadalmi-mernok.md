@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e047b8f5-9491-4da2-8816-7aa37ad2370d
 label: szabadalmi mérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: other-engineering
@@ -27,7 +27,7 @@ lateral:
 
 # Szabadalmi mérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Egyéb mérnöki szakterületek  
 **ESCO:** [szabadalmi mérnök](http://data.europa.eu/esco/occupation/e047b8f5-9491-4da2-8816-7aa37ad2370d) (2149.13)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7235d075-ecf6-42ba-8a60-d7e79bbce152
 label: gyümölcsprésgép-kezelő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: food
@@ -34,7 +34,7 @@ lateral:
 
 # Gyümölcsprésgép-kezelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [gyümölcsprésgép-kezelő](http://data.europa.eu/esco/occupation/7235d075-ecf6-42ba-8a60-d7e79bbce152) (8160.35)

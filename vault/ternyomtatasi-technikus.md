@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/4cf7be91-fed9-47a7-9ca9-e74c7eb6becb
 label: térnyomtatási technikus
-level: 2
+level: 1
 track: individual
 branch: engineering
 subBranch: drafting
@@ -31,7 +31,7 @@ lateral: []
 
 # Térnyomtatási technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Műszaki rajzolás  
 **ESCO:** [térnyomtatási technikus](http://data.europa.eu/esco/occupation/4cf7be91-fed9-47a7-9ca9-e74c7eb6becb) (3118.1)

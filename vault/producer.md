@@ -18,10 +18,12 @@ skills:
   - http://data.europa.eu/esco/skill/e2103a1d-4a84-47a9-b4f7-774787573449
   - http://data.europa.eu/esco/skill/e95058a6-e139-42e7-a470-72038a606649
 lateral:
+  - "[[kiadoi-jogokkal-foglalkozo-ugyintezo]]"
   - "[[konyvkiado]]"
   - "[[zenei-producer]]"
   - "[[filmproducer]]"
   - "[[latvanytervezo]]"
+  - "[[konyvszerkeszto]]"
 ---
 
 # Producer
@@ -48,7 +50,9 @@ A producerek felelősek a zene, a filmek vagy sorozatok előállításának irá
 
 ## Váltások
 
+- [[kiadoi-jogokkal-foglalkozo-ugyintezo|kiadói jogokkal foglalkozó ügyintéző]]
 - [[konyvkiado|könyvkiadó]]
 - [[zenei-producer|zenei producer]]
 - [[filmproducer|filmproducer]]
 - [[latvanytervezo|látványtervező]]
+- [[konyvszerkeszto|könyvszerkesztő]]

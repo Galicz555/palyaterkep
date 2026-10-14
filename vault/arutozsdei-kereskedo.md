@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e4cdfa86-c3b1-41f1-a4e2-384c73d03bd3
 label: árutőzsdei kereskedő
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: wholesale
@@ -25,12 +25,11 @@ lateral:
   - "[[hataridos-kereskedo]]"
   - "[[devizakereskedo]]"
   - "[[devizabroker]]"
-  - "[[befektetesialap-kezelo-asszisztens]]"
 ---
 
 # Árutőzsdei kereskedő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Nagykereskedelem és import-export  
 **ESCO:** [árutőzsdei kereskedő](http://data.europa.eu/esco/occupation/e4cdfa86-c3b1-41f1-a4e2-384c73d03bd3) (3324.2)
@@ -59,4 +58,3 @@ Az árutőzsdei kereskedők a tőzsdei parketten alkalmaznak tárgyalási techni
 - [[hataridos-kereskedo|határidős kereskedő]]
 - [[devizakereskedo|devizakereskedő]]
 - [[devizabroker|devizabróker]]
-- [[befektetesialap-kezelo-asszisztens|befektetésialap-kezelő asszisztens]]

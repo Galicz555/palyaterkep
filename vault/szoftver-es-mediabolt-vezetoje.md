@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/691c86d9-d88f-440f-b885-7ed9726f782c
 label: szoftver- és médiabolt vezetője
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -52,7 +52,7 @@ lateral:
 
 # Szoftver- és médiabolt vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [szoftver- és médiabolt vezetője](http://data.europa.eu/esco/occupation/691c86d9-d88f-440f-b885-7ed9726f782c) (1420.4.12)

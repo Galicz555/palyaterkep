@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/39e9fc8f-02bd-4577-b603-2dc96204ce74
 label: közösségfejlesztési szakértő
-level: 3
+level: 2
 track: individual
 branch: public
 subBranch: policy
@@ -24,13 +24,11 @@ skills:
 lateral:
   - "[[tarsadalombiztositasi-adminisztrator]]"
   - "[[foglalkoztatasi-programkoordinator]]"
-  - "[[polgarmester]]"
-  - "[[onkormanyzati-kepviselo]]"
 ---
 
 # Közösségfejlesztési szakértő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Közpolitika és közigazgatás  
 **ESCO:** [közösségfejlesztési szakértő](http://data.europa.eu/esco/occupation/39e9fc8f-02bd-4577-b603-2dc96204ce74) (2422.2)
@@ -58,5 +56,3 @@ A közösségfejlesztési szakértők a helyi közösségek életminőségének 
 
 - [[tarsadalombiztositasi-adminisztrator|társadalombiztosítási adminisztrátor]]
 - [[foglalkoztatasi-programkoordinator|foglalkoztatási programkoordinátor]]
-- [[polgarmester|polgármester]]
-- [[onkormanyzati-kepviselo|önkormányzati képviselő]]

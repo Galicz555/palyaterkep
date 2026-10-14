@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0a5001af-ce4b-4787-92e8-62af70089e53
 label: cipőfelsőrész-kaptafázó
-level: 1
+level: 2
 track: individual
 branch: industry
 subBranch: textiles
@@ -29,12 +29,12 @@ lateral:
   - "[[cipovarrogep-kezelo]]"
   - "[[cipesz]]"
   - "[[cipoipari-elokeszito]]"
-  - "[[egyedi-cipokeszito]]"
+  - "[[ortopediai-cipesz]]"
 ---
 
 # Cipőfelsőrész-kaptafázó
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Textil-, ruha- és bőripar  
 **ESCO:** [cipőfelsőrész-kaptafázó](http://data.europa.eu/esco/occupation/0a5001af-ce4b-4787-92e8-62af70089e53) (7536.2.6)
@@ -67,4 +67,4 @@ A cipőfelsőrész-kaptafázók formára alakítják és kézzel rögzítik a be
 - [[cipovarrogep-kezelo|cipővarrógép-kezelő]]
 - [[cipesz|cipész]]
 - [[cipoipari-elokeszito|cipőipari előkészítő]]
-- [[egyedi-cipokeszito|egyedi cipőkészítő]]
+- [[ortopediai-cipesz|ortopédiai cipész]]

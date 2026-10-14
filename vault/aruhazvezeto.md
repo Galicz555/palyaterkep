@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7dec82e0-3bfc-4c48-812d-c2095bfe05bb
 label: áruházvezető
-level: 3
+level: 4
 track: management
 branch: trade
 subBranch: retail-management
@@ -34,7 +34,7 @@ lateral:
 
 # Áruházvezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [áruházvezető](http://data.europa.eu/esco/occupation/7dec82e0-3bfc-4c48-812d-c2095bfe05bb) (1420.1)

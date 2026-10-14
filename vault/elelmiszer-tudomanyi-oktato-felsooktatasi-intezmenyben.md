@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9905cc76-d48b-49b1-94ab-17becb30be1a
 label: élelmiszer-tudományi oktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -51,7 +51,7 @@ lateral:
 
 # Élelmiszer-tudományi oktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [élelmiszer-tudományi oktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/9905cc76-d48b-49b1-94ab-17becb30be1a) (2310.1.18)

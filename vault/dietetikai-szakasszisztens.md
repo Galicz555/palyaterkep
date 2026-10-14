@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/68bc2af1-96ea-4ec2-8b2f-5cde76472135
 label: dietetikai szakasszisztens
-level: 2
+level: 1
 track: individual
 branch: health-social
 subBranch: nursing
@@ -38,16 +38,16 @@ skills:
   - http://data.europa.eu/esco/skill/fa46ff13-5ad7-4a11-85d6-4b0614e411de
 lateral:
   - "[[dietetikus]]"
-  - "[[egeszsegugyi-dokumentacios-vezeto]]"
   - "[[fertotlenito-sterilezo]]"
   - "[[legzesfunkcios-asszisztens]]"
   - "[[covid-tesztelo]]"
   - "[[klinikai-perfuzios-asszisztens]]"
+  - "[[verveteli-asszisztens]]"
 ---
 
 # Dietetikai szakasszisztens
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Ápolás, szülészet és betegellátás  
 **ESCO:** [dietetikai szakasszisztens](http://data.europa.eu/esco/occupation/68bc2af1-96ea-4ec2-8b2f-5cde76472135) (3259.5)
@@ -89,8 +89,8 @@ A dietetikai szakasszisztens dietetikusi felügyelet mellett a következőkben t
 ## Váltások
 
 - [[dietetikus|dietetikus]]
-- [[egeszsegugyi-dokumentacios-vezeto|egészségügyi dokumentációs vezető]]
 - [[fertotlenito-sterilezo|fertőtlenítő sterilező]]
 - [[legzesfunkcios-asszisztens|légzésfunkciós asszisztens]]
 - [[covid-tesztelo|Covid-tesztelő]]
 - [[klinikai-perfuzios-asszisztens|klinikai perfúziós asszisztens]]
+- [[verveteli-asszisztens|vérvételi asszisztens]]

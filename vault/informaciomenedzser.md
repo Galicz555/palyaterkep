@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/3765a20d-5160-4e8f-82f1-ad7872b9db24
 label: információmenedzser
 level: 3
-track: individual
+track: management
 branch: culture
 subBranch: heritage
 skills:
@@ -30,7 +30,7 @@ lateral:
 
 # Információmenedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Múzeum, könyvtár és levéltár  
 **ESCO:** [információmenedzser](http://data.europa.eu/esco/occupation/3765a20d-5160-4e8f-82f1-ad7872b9db24) (2622.1)

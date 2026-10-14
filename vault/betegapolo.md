@@ -101,11 +101,11 @@ skills:
   - http://data.europa.eu/esco/skill/f9f258e3-4728-4107-9e08-293d5d2ef65e
 lateral:
   - "[[szakapolo]]"
+  - "[[osztalyvezeto-apolo]]"
   - "[[segedapolo-segedapolono]]"
+  - "[[ergoterapeuta]]"
   - "[[fizioterapeuta]]"
   - "[[dietetikus]]"
-  - "[[szulesz-szuleszno]]"
-  - "[[radiografus]]"
 ---
 
 # Betegápoló
@@ -215,8 +215,8 @@ A betegápolók felelősek a betegek egészségének javításáért és helyre�
 ## Váltások
 
 - [[szakapolo|szakápoló]]
+- [[osztalyvezeto-apolo|osztályvezető ápoló]]
 - [[segedapolo-segedapolono|segédápoló/segédápolónő]]
+- [[ergoterapeuta|ergoterapeuta]]
 - [[fizioterapeuta|fizioterapeuta]]
 - [[dietetikus|dietetikus]]
-- [[szulesz-szuleszno|szülész/szülésznő]]
-- [[radiografus|radiográfus]]

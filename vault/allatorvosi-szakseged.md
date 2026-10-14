@@ -39,7 +39,7 @@ skills:
   - http://data.europa.eu/esco/skill/f8e5f1fd-82ee-45c0-b179-399d8e9a22aa
 lateral:
   - "[[allatorvosi-asszisztens]]"
-  - "[[allatjoleti-felelos]]"
+  - "[[allatkozmetikus]]"
   - "[[allat-embrioatultetes-specialista]]"
   - "[[allatok-mesterseges-megtermekenyiteset-iranyito-szakember]]"
   - "[[allatorvosi-rendelo-recepciosa]]"
@@ -91,7 +91,7 @@ Az állatorvosi szaksegéd a nemzeti jogszabályoknak megfelelően szakmai és a
 ## Váltások
 
 - [[allatorvosi-asszisztens|állatorvosi asszisztens]]
-- [[allatjoleti-felelos|állatjóléti felelős]]
+- [[allatkozmetikus|állatkozmetikus]]
 - [[allat-embrioatultetes-specialista|állat embrióátültetés specialista]]
 - [[allatok-mesterseges-megtermekenyiteset-iranyito-szakember|állatok mesterséges megtermékenyítését irányító szakember]]
 - [[allatorvosi-rendelo-recepciosa|állatorvosi rendelő recepciósa]]

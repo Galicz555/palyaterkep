@@ -32,7 +32,6 @@ skills:
 lateral:
   - "[[termeszetvedelmi-eloado]]"
   - "[[kornyezetvedelmi-szakerto]]"
-  - "[[kornyezetvedelmi-igazgato]]"
   - "[[kornyezetvedelmi-programkoordinator]]"
   - "[[termeszetieroforras-szakerto]]"
   - "[[vizi-elohelyi-kornyezetmernok]]"
@@ -76,7 +75,6 @@ A környezetpolitikai tisztviselők kutatják, elemzik, fejlesztik és végrehaj
 
 - [[termeszetvedelmi-eloado|természetvédelmi előadó]]
 - [[kornyezetvedelmi-szakerto|környezetvédelmi szakértő]]
-- [[kornyezetvedelmi-igazgato|környezetvédelmi igazgató]]
 - [[kornyezetvedelmi-programkoordinator|környezetvédelmi programkoordinátor]]
 - [[termeszetieroforras-szakerto|természetierőforrás-szakértő]]
 - [[vizi-elohelyi-kornyezetmernok|vízi élőhelyi környezetmérnök]]

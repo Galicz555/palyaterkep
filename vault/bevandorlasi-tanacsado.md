@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e19fe26f-0759-4bb1-af71-5bbecf3df69f
 label: bevándorlási tanácsadó
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: regulatory
@@ -26,7 +26,7 @@ lateral:
 
 # Bevándorlási tanácsadó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Hatósági ügyintézés  
 **ESCO:** [bevándorlási tanácsadó](http://data.europa.eu/esco/occupation/e19fe26f-0759-4bb1-af71-5bbecf3df69f) (3354.1)

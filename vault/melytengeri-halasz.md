@@ -39,7 +39,6 @@ lateral:
   - "[[halasz]]"
   - "[[part-menti-halaszatot-folytato-hajo-parancsnoka]]"
   - "[[halaszati-or]]"
-  - "[[halaszhajo-kapitany]]"
 ---
 
 # Mélytengeri halász
@@ -87,4 +86,3 @@ A mélytengeri halászok a halászhajók fedélzetén dolgoznak, feladatuk a mé
 - [[halasz|halász]]
 - [[part-menti-halaszatot-folytato-hajo-parancsnoka|part menti halászatot folytató hajó parancsnoka]]
 - [[halaszati-or|halászati őr]]
-- [[halaszhajo-kapitany|halászhajó-kapitány]]

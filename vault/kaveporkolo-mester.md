@@ -32,6 +32,7 @@ skills:
 lateral:
   - "[[zold-kave-beszerzo]]"
   - "[[kavekostolo]]"
+  - "[[kaveporkolo]]"
 ---
 
 # Kávépörkölő mester
@@ -72,3 +73,4 @@ A kávépörkölő mesterek új kávékeverékeket terveznek, és biztosítják,
 
 - [[zold-kave-beszerzo|zöld kávé beszerző]]
 - [[kavekostolo|kávékóstoló]]
+- [[kaveporkolo|kávépörkölő]]

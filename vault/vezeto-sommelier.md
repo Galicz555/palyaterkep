@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a20e4b15-a128-49b9-a06a-e790e3bd5c68
 label: vezető sommelier
-level: 3
+level: 4
 track: management
 branch: hospitality
 subBranch: food-service
@@ -39,7 +39,7 @@ lateral:
 
 # Vezető sommelier
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Felszolgálás és bár  
 **ESCO:** [vezető sommelier](http://data.europa.eu/esco/occupation/a20e4b15-a128-49b9-a06a-e790e3bd5c68) (5131.2.2.2)

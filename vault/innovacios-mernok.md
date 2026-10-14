@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/29e8a27f-5e68-4d47-b991-5c41f835c72a
 label: innovációs mérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: other-engineering
@@ -38,7 +38,7 @@ lateral:
 
 # Innovációs mérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Egyéb mérnöki szakterületek  
 **ESCO:** [innovációs mérnök](http://data.europa.eu/esco/occupation/29e8a27f-5e68-4d47-b991-5c41f835c72a) (2149.18)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/643a2225-6a01-4899-81b0-e867ca09b9c9
 label: kormányzati tervezési ellenőr
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: policy
@@ -25,7 +25,7 @@ lateral:
 
 # Kormányzati tervezési ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Közpolitika és közigazgatás  
 **ESCO:** [kormányzati tervezési ellenőr](http://data.europa.eu/esco/occupation/643a2225-6a01-4899-81b0-e867ca09b9c9) (2422.5)

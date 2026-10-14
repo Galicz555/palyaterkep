@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/773cf1de-50a4-42e7-bab1-e68dcbae3f54
 label: erdei munkás
-level: 2
+level: 1
 track: individual
 branch: agriculture
 subBranch: forestry
@@ -42,7 +42,7 @@ lateral:
 
 # Erdei munkás
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Erdészet és vadgazdálkodás  
 **ESCO:** [erdei munkás](http://data.europa.eu/esco/occupation/773cf1de-50a4-42e7-bab1-e68dcbae3f54) (9215.1)

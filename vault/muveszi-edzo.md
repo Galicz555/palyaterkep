@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/58f3f9fc-c9f6-4e14-bedf-a71ace5f27c5
 label: művészi edző
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: sport-leisure
@@ -32,7 +32,7 @@ lateral:
 
 # Művészi edző
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Sport, szabadidő és szerencsejáték  
 **ESCO:** [művészi edző](http://data.europa.eu/esco/occupation/58f3f9fc-c9f6-4e14-bedf-a71ace5f27c5) (3422.1)

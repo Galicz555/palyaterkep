@@ -41,7 +41,7 @@ lateral:
   - "[[jarmujavito-muhely-vezetoje]]"
   - "[[mosoda-es-vegytisztito-vezetoje]]"
   - "[[ugyfelkapcsolati-szupervizor]]"
-  - "[[szepsegszalon-vezetoje]]"
+  - "[[ugyfelkapcsolati-menedzser]]"
 ---
 
 # Call center vezető
@@ -91,4 +91,4 @@ A call center vezető meghatározza a szolgáltatás havi, heti és napi céljai
 - [[jarmujavito-muhely-vezetoje|járműjavító műhely vezetője]]
 - [[mosoda-es-vegytisztito-vezetoje|mosoda és vegytisztító vezetője]]
 - [[ugyfelkapcsolati-szupervizor|ügyfélkapcsolati szupervizor]]
-- [[szepsegszalon-vezetoje|szépségszalon vezetője]]
+- [[ugyfelkapcsolati-menedzser|ügyfélkapcsolati menedzser]]

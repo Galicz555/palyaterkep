@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e54683ca-1fc9-468d-b880-6544ff6b7d0b
 label: hulladékgyűjtő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: energy-utilities
@@ -25,7 +25,7 @@ lateral:
 
 # Hulladékgyűjtő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Energia, víz és hulladék  
 **ESCO:** [hulladékgyűjtő](http://data.europa.eu/esco/occupation/e54683ca-1fc9-468d-b880-6544ff6b7d0b) (9611.1)

@@ -46,10 +46,10 @@ skills:
 lateral:
   - "[[allatidomar]]"
   - "[[loidomar]]"
-  - "[[allatszitter]]"
   - "[[kutyakikepzo]]"
   - "[[allatjoleti-felelos]]"
   - "[[allat-embrioatultetes-specialista]]"
+  - "[[allatkozmetikus]]"
 ---
 
 # Etológus
@@ -104,7 +104,7 @@ Az etológusok együttműködnek az állatokkal és az emberekkel az állatok bi
 
 - [[allatidomar|állatidomár]]
 - [[loidomar|lóidomár]]
-- [[allatszitter|állatszitter]]
 - [[kutyakikepzo|kutyakiképző]]
 - [[allatjoleti-felelos|állatjóléti felelős]]
 - [[allat-embrioatultetes-specialista|állat embrióátültetés specialista]]
+- [[allatkozmetikus|állatkozmetikus]]

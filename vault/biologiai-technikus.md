@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/31cc4199-703c-4f8a-9b46-a2070a6d35df
 label: biológiai technikus
-level: 2
+level: 1
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -40,7 +40,7 @@ lateral:
 
 # Biológiai technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [biológiai technikus](http://data.europa.eu/esco/occupation/31cc4199-703c-4f8a-9b46-a2070a6d35df) (3141.2.3)

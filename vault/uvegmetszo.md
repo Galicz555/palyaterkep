@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3a55bf97-a0d2-47a0-a8b3-b248d32c7969
 label: üvegmetsző
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: crafts
@@ -27,7 +27,7 @@ lateral:
 
 # Üvegmetsző
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [üvegmetsző](http://data.europa.eu/esco/occupation/3a55bf97-a0d2-47a0-a8b3-b248d32c7969) (7316.2)

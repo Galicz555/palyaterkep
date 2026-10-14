@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/bd5a2f44-fc06-45fd-909b-3a4001c8b8a3
 label: gyalogos
-level: 2
+level: 1
 track: individual
 branch: public
 subBranch: military
@@ -19,18 +19,12 @@ skills:
   - http://data.europa.eu/esco/skill/e3211ab2-18b5-49b4-90de-d395f3be2378
   - http://data.europa.eu/esco/skill/e4a32aa6-6042-4073-b46b-38362522198b
   - http://data.europa.eu/esco/skill/ff8bd17c-77e9-4d4e-929a-a0cf86f3ed34
-lateral:
-  - "[[tuzertiszt]]"
-  - "[[katonatiszt]]"
-  - "[[tengeresztiszt]]"
-  - "[[kulonleges-alakulat-tisztje]]"
-  - "[[a-legiero-tisztje]]"
-  - "[[hadviselesi-szakerto]]"
+lateral: []
 ---
 
 # Gyalogos
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Honvédelem  
 **ESCO:** [gyalogos](http://data.europa.eu/esco/occupation/bd5a2f44-fc06-45fd-909b-3a4001c8b8a3) (0310.3)
@@ -54,9 +48,4 @@ A gyalogos katonák harci küldetésekben küzdenek, illetve támogatást biztos
 
 ## Váltások
 
-- [[tuzertiszt|tüzértiszt]]
-- [[katonatiszt|katonatiszt]]
-- [[tengeresztiszt|tengerésztiszt]]
-- [[kulonleges-alakulat-tisztje|különleges alakulat tisztje]]
-- [[a-legiero-tisztje|a légierő tisztje]]
-- [[hadviselesi-szakerto|hadviselési szakértő]]
+Nincs.

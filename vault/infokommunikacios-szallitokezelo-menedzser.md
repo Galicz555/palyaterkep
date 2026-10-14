@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/e8bbc7fd-cfa2-406f-a664-57e5024cfbc5
 label: infokommunikációs szállítókezelő menedzser
 level: 3
-track: individual
+track: management
 branch: it
 subBranch: it-management
 skills:
@@ -37,7 +37,7 @@ lateral:
 
 # Infokommunikációs szállítókezelő menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › IT-vezetés  
 **ESCO:** [infokommunikációs szállítókezelő menedzser](http://data.europa.eu/esco/occupation/e8bbc7fd-cfa2-406f-a664-57e5024cfbc5) (1330.8)

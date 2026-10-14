@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/b864c9a3-ef6e-46a0-a40c-66188f74dfa7
 label: ezredes
 level: 4
-track: individual
+track: management
 branch: public
 subBranch: military
 skills:
@@ -20,15 +20,15 @@ skills:
 lateral:
   - "[[szazados]]"
   - "[[dandartabornok]]"
-  - "[[fohadnagy]]"
   - "[[hadviselesi-szakerto]]"
   - "[[ornagy]]"
   - "[[flottaparancsnok]]"
+  - "[[katonai-kikepzotiszt]]"
 ---
 
 # Ezredes
 
-Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Honvédelem  
 **ESCO:** [ezredes](http://data.europa.eu/esco/occupation/b864c9a3-ef6e-46a0-a40c-66188f74dfa7) (0110.8)
@@ -52,7 +52,7 @@ Az ezredesek egy katonai parancsnok személyzetének tagjai, elsődleges tanács
 
 - [[szazados|százados]]
 - [[dandartabornok|dandártábornok]]
-- [[fohadnagy|főhadnagy]]
 - [[hadviselesi-szakerto|hadviselési szakértő]]
 - [[ornagy|őrnagy]]
 - [[flottaparancsnok|flottaparancsnok]]
+- [[katonai-kikepzotiszt|katonai kiképzőtiszt]]

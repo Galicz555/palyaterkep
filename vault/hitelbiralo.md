@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ab5a5073-453c-4a93-aff7-345a19f8b954
 label: hitelbíráló
-level: 2
+level: 3
 track: individual
 branch: business
 subBranch: banking
@@ -29,7 +29,7 @@ lateral:
 
 # Hitelbíráló
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Banki szolgáltatások  
 **ESCO:** [hitelbíráló](http://data.europa.eu/esco/occupation/ab5a5073-453c-4a93-aff7-345a19f8b954) (3312.6)

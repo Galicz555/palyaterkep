@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/715b902f-b1b6-4366-afc6-ddb8ab715229
 label: mezőgazdasági felügyelő
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: regulatory
@@ -32,7 +32,7 @@ lateral:
 
 # Mezőgazdasági felügyelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Hatósági ügyintézés  
 **ESCO:** [mezőgazdasági felügyelő](http://data.europa.eu/esco/occupation/715b902f-b1b6-4366-afc6-ddb8ab715229) (3359.1)

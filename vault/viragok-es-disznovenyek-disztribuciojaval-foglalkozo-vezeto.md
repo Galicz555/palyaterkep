@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/23a9e478-d465-4b61-b6d9-97b7e90af17a
 label: virágok és dísznövények disztribúciójával foglalkozó vezető
 level: 3
-track: individual
+track: management
 branch: trade
 subBranch: wholesale
 skills:
@@ -44,7 +44,7 @@ lateral:
 
 # Virágok és dísznövények disztribúciójával foglalkozó vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Nagykereskedelem és import-export  
 **ESCO:** [virágok és dísznövények disztribúciójával foglalkozó vezető](http://data.europa.eu/esco/occupation/23a9e478-d465-4b61-b6d9-97b7e90af17a) (1324.3.1.6.13)

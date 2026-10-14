@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3ae4fd99-814a-4d06-a7db-5ee680c22e26
 label: utazási szerződések közvetítéséért felelős menedzser
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: marketing
@@ -34,7 +34,7 @@ lateral:
 
 # Utazási szerződések közvetítéséért felelős menedzser
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Értékesítési vezetés és marketing  
 **ESCO:** [utazási szerződések közvetítéséért felelős menedzser](http://data.europa.eu/esco/occupation/3ae4fd99-814a-4d06-a7db-5ee680c22e26) (3339.8)

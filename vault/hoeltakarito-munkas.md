@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1bcc6461-4cc2-4732-a6d0-901687046443
 label: hóeltakarító munkás
-level: 2
+level: 1
 track: individual
 branch: construction
 subBranch: plant-labour
@@ -23,7 +23,7 @@ lateral: []
 
 # Hóeltakarító munkás
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőgépek és segédmunka  
 **ESCO:** [hóeltakarító munkás](http://data.europa.eu/esco/occupation/1bcc6461-4cc2-4732-a6d0-901687046443) (8342.9)

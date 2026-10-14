@@ -24,6 +24,7 @@ lateral:
   - "[[gazfeldolgozo-berendezes-kezeloje]]"
   - "[[foldgazszallitorendszer-kezelo]]"
   - "[[csovezetekes-szallitmanyozasi-ugyintezo]]"
+  - "[[csovezetek-rendszerek-kornyezetvedelmi-projektmenedzsere]]"
 ---
 
 # Gázforgalom-tervező
@@ -56,3 +57,4 @@ A gázforgalom-tervezők nyomon követik és ellenőrzik a földgázvezetékek �
 - [[gazfeldolgozo-berendezes-kezeloje|gázfeldolgozó berendezés kezelője]]
 - [[foldgazszallitorendszer-kezelo|földgázszállítórendszer-kezelő]]
 - [[csovezetekes-szallitmanyozasi-ugyintezo|csővezetékes szállítmányozási ügyintéző]]
+- [[csovezetek-rendszerek-kornyezetvedelmi-projektmenedzsere|csővezeték-rendszerek környezetvédelmi projektmenedzsere]]

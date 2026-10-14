@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/497a65bf-04e5-48ed-939e-2a68419f8144
 label: borász
 level: 3
-track: individual
+track: management
 branch: engineering
 subBranch: process-engineering
 skills:
@@ -51,7 +51,7 @@ lateral:
 
 # Borász
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Vegyész-, kohó- és bányamérnöki terület  
 **ESCO:** [borász](http://data.europa.eu/esco/occupation/497a65bf-04e5-48ed-939e-2a68419f8144) (2145.1.7)

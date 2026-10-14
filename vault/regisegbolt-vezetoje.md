@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/60528794-1a68-4440-a141-2df011be98be
 label: régiségbolt vezetője
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -51,7 +51,7 @@ lateral:
 
 # Régiségbolt vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [régiségbolt vezetője](http://data.europa.eu/esco/occupation/60528794-1a68-4440-a141-2df011be98be) (1420.4.2)

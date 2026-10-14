@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/4552095e-3396-4831-86ad-4fc34ec39a19
 label: mezőgazdasági üzemvezető
-level: 3
+level: 4
 track: management
 branch: agriculture
 subBranch: crops
@@ -28,7 +28,7 @@ lateral:
 
 # Mezőgazdasági üzemvezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Növénytermesztés és kertészet  
 **ESCO:** [mezőgazdasági üzemvezető](http://data.europa.eu/esco/occupation/4552095e-3396-4831-86ad-4fc34ec39a19) (6130.1)

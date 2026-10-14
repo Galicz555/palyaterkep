@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/79082f76-4b11-4594-8437-2db567331f41
 label: útburkolatfestő
-level: 2
+level: 1
 track: individual
 branch: construction
 subBranch: plant-labour
@@ -31,7 +31,7 @@ lateral:
 
 # Útburkolatfestő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőgépek és segédmunka  
 **ESCO:** [útburkolatfestő](http://data.europa.eu/esco/occupation/79082f76-4b11-4594-8437-2db567331f41) (9312.1.4)

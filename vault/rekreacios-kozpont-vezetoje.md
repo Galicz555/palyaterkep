@@ -22,12 +22,12 @@ skills:
   - http://data.europa.eu/esco/skill/da037304-d958-4580-89ad-edc914dc0b21
   - http://data.europa.eu/esco/skill/e517f098-dce4-4ecd-9371-499936c0f947
 lateral:
-  - "[[botanikus]]"
+  - "[[szepsegszalon-vezetoje]]"
   - "[[furdoigazgato]]"
   - "[[allatkerti-kurator]]"
+  - "[[szerencsejatek-ertekesitohely-vezetoje]]"
   - "[[kulturalis-letesitmeny-vezetoje]]"
   - "[[eloadomuveszeti-igazgato]]"
-  - "[[muveszeti-igazgato]]"
 ---
 
 # Rekreációs központ vezetője
@@ -58,9 +58,9 @@ A rekreációs központok vezetői irányítják a szabadidős szolgáltatásoka
 
 ## Váltások
 
-- [[botanikus|botanikus]]
+- [[szepsegszalon-vezetoje|szépségszalon vezetője]]
 - [[furdoigazgato|fürdőigazgató]]
 - [[allatkerti-kurator|állatkerti kurátor]]
+- [[szerencsejatek-ertekesitohely-vezetoje|szerencsejáték-értékesítőhely vezetője]]
 - [[kulturalis-letesitmeny-vezetoje|kulturális létesítmény vezetője]]
 - [[eloadomuveszeti-igazgato|előadóművészeti igazgató]]
-- [[muveszeti-igazgato|művészeti igazgató]]

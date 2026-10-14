@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/961cbd1f-2a9b-4756-b227-67a1c23c94b6
 label: kaszinói pénztáros
-level: 1
+level: 2
 track: individual
 branch: culture
 subBranch: sport-leisure
@@ -29,7 +29,7 @@ lateral:
 
 # Kaszinói pénztáros
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Sport, szabadidő és szerencsejáték  
 **ESCO:** [kaszinói pénztáros](http://data.europa.eu/esco/occupation/961cbd1f-2a9b-4756-b227-67a1c23c94b6) (4212.3)

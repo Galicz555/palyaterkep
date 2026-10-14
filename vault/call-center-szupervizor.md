@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6aa78e46-ce22-421f-8a75-e915ac63c9d0
 label: call center szupervizor
-level: 2
+level: 3
 track: management
 branch: business
 subBranch: office
@@ -37,7 +37,7 @@ lateral:
 
 # Call center szupervizor
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Irodai és adminisztratív munka  
 **ESCO:** [call center szupervizor](http://data.europa.eu/esco/occupation/6aa78e46-ce22-421f-8a75-e915ac63c9d0) (3341.3)

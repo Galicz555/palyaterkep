@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/00ab29a3-6d4a-4df9-b46d-de31069e36e8
 label: bányafelmérő
-level: 2
+level: 3
 track: individual
 branch: construction
 subBranch: architecture
@@ -32,7 +32,7 @@ lateral:
 
 # Bányafelmérő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építészet, településtervezés és földmérés  
 **ESCO:** [bányafelmérő](http://data.europa.eu/esco/occupation/00ab29a3-6d4a-4df9-b46d-de31069e36e8) (2165.4.2)

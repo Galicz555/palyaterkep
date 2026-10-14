@@ -29,6 +29,7 @@ lateral:
   - "[[szamviteli-vezeto]]"
   - "[[konyvelo]]"
   - "[[penzugyi-konyvvizsgalo]]"
+  - "[[penzugyi-ellenor]]"
   - "[[vezeto-konyvvizsgalo]]"
 ---
 
@@ -67,4 +68,5 @@ Az analitikus könyvelők értékelik az ügyfelek (rendszerint vállalatok) pé
 - [[szamviteli-vezeto|számviteli vezető]]
 - [[konyvelo|könyvelő]]
 - [[penzugyi-konyvvizsgalo|pénzügyi könyvvizsgáló]]
+- [[penzugyi-ellenor|pénzügyi ellenőr]]
 - [[vezeto-konyvvizsgalo|vezető könyvvizsgáló]]

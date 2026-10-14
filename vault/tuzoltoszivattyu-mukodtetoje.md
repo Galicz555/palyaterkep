@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7c320679-131d-4828-87ed-94886614b7ed
 label: tűzoltószivattyú működtetője
-level: 1
+level: 2
 track: individual
 branch: public
 subBranch: fire-service
@@ -31,13 +31,13 @@ lateral:
   - "[[tuzoltoauto-vezeto]]"
   - "[[tengeri-tuzolto]]"
   - "[[ipari-tuzolto]]"
+  - "[[tuzolto-szakoktato]]"
   - "[[tuzvedelmi-technikus]]"
-  - "[[vizeromu-kezelo]]"
 ---
 
 # Tűzoltószivattyú működtetője
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Tűzoltóság  
 **ESCO:** [tűzoltószivattyú működtetője](http://data.europa.eu/esco/occupation/7c320679-131d-4828-87ed-94886614b7ed) (5411.1.4)
@@ -72,5 +72,5 @@ A tűzoltószivattyú működtetői segédkeznek a tűzoltási műveletekben az�
 - [[tuzoltoauto-vezeto|tűzoltóautó-vezető]]
 - [[tengeri-tuzolto|tengeri tűzoltó]]
 - [[ipari-tuzolto|ipari tűzoltó]]
+- [[tuzolto-szakoktato|tűzoltó szakoktató]]
 - [[tuzvedelmi-technikus|tűzvédelmi technikus]]
-- [[vizeromu-kezelo|vízerőmű-kezelő]]

@@ -20,6 +20,7 @@ skills:
 lateral:
   - "[[vallalati-jogasz]]"
   - "[[ugyesz]]"
+  - "[[eskudtszeki-koordinator]]"
   - "[[jogtanacsos]]"
   - "[[jogasz-nyelvesz]]"
   - "[[jogi-asszisztens]]"
@@ -51,6 +52,7 @@ A jogpolitikai tisztviselők a jogi ágazattal kapcsolatos szakpolitikákat kuta
 
 - [[vallalati-jogasz|vállalati jogász]]
 - [[ugyesz|ügyész]]
+- [[eskudtszeki-koordinator|esküdtszéki koordinátor]]
 - [[jogtanacsos|jogtanácsos]]
 - [[jogasz-nyelvesz|jogász-nyelvész]]
 - [[jogi-asszisztens|jogi asszisztens]]

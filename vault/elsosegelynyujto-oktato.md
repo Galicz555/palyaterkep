@@ -33,9 +33,9 @@ lateral:
   - "[[apolastan-oktato-felsooktatasi-intezmenyben]]"
   - "[[uszomester-oktato]]"
   - "[[apolasi-es-szuleszeti-szakoktato]]"
-  - "[[digitalis-keszsegfejleszto-tanar]]"
   - "[[fenykepeszet-oktato]]"
   - "[[jelnyelvtanar]]"
+  - "[[adjunktus]]"
 ---
 
 # Elsősegélynyújtó-oktató
@@ -77,6 +77,6 @@ Az elsősegélynyújtó-oktató sürgősségi betegellátást és életmentő be
 - [[apolastan-oktato-felsooktatasi-intezmenyben|ápolástan-oktató felsőoktatási intézményben]]
 - [[uszomester-oktato|úszómester-oktató]]
 - [[apolasi-es-szuleszeti-szakoktato|ápolási és szülészeti szakoktató]]
-- [[digitalis-keszsegfejleszto-tanar|digitális készségfejlesztő tanár]]
 - [[fenykepeszet-oktato|fényképészet-oktató]]
 - [[jelnyelvtanar|jelnyelvtanár]]
+- [[adjunktus|adjunktus]]

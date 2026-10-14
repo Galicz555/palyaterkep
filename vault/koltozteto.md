@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c84a055d-00fe-4789-a054-f4a62914ff6e
 label: költöztető
-level: 2
+level: 1
 track: individual
 branch: transport
 subBranch: warehousing
@@ -27,7 +27,7 @@ lateral:
 
 # Költöztető
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Raktározás és anyagmozgatás  
 **ESCO:** [költöztető](http://data.europa.eu/esco/occupation/c84a055d-00fe-4789-a054-f4a62914ff6e) (9333.4)

@@ -38,7 +38,6 @@ lateral:
   - "[[szinpadi-fodrasz]]"
   - "[[szinhazi-oltozteto]]"
   - "[[kozmetikus]]"
-  - "[[legijelenet-rendezo]]"
 ---
 
 # Sminkmester
@@ -86,4 +85,3 @@ A sminkmesterek az előadások, illetve filmek vagy televízióműsorok forgatá
 - [[szinpadi-fodrasz|színpadi fodrász]]
 - [[szinhazi-oltozteto|színházi öltöztető]]
 - [[kozmetikus|kozmetikus]]
-- [[legijelenet-rendezo|légijelenet-rendező]]

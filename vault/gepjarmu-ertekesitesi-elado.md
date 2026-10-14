@@ -49,7 +49,7 @@ skills:
   - http://data.europa.eu/esco/skill/fa01d9a8-34ee-497f-a8ac-27726695a14d
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
-  - "[[jegypenztaros]]"
+  - "[[konyvesbolti-elado]]"
   - "[[ertekesitesi-asszisztens]]"
   - "[[bolti-elado]]"
 ---
@@ -111,6 +111,6 @@ A gépjármű-értékesítési eladók személygépkocsikat és gépjárműveket
 
 ## Váltások
 
-- [[jegypenztaros|jegypénztáros]]
+- [[konyvesbolti-elado|könyvesbolti eladó]]
 - [[ertekesitesi-asszisztens|értékesítési asszisztens]]
 - [[bolti-elado|bolti eladó]]

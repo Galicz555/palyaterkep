@@ -40,12 +40,12 @@ skills:
   - http://data.europa.eu/esco/skill/f10cf304-f32c-40ee-97a7-ec8d84d72955
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
+  - "[[regisegkereskedo]]"
   - "[[benzinkuti-elado]]"
   - "[[vasaru-es-festekbolti-elado]]"
   - "[[loszerkereskedo]]"
   - "[[elado-fal-es-padloburkolasi-szakuzletben]]"
   - "[[sportbolti-elado]]"
-  - "[[gyogyaszatisegedeszkoz-elado]]"
 ---
 
 # Háztartásikészülék-eladó
@@ -94,9 +94,9 @@ A háztartásikészülék-eladók háztartási készülékeket értékesítenek 
 
 ## Váltások
 
+- [[regisegkereskedo|régiségkereskedő]]
 - [[benzinkuti-elado|benzinkúti eladó]]
 - [[vasaru-es-festekbolti-elado|vasáru- és festékbolti eladó]]
 - [[loszerkereskedo|lőszerkereskedő]]
 - [[elado-fal-es-padloburkolasi-szakuzletben|eladó fal- és padlóburkolási szaküzletben]]
 - [[sportbolti-elado|sportbolti eladó]]
-- [[gyogyaszatisegedeszkoz-elado|gyógyászatisegédeszköz-eladó]]

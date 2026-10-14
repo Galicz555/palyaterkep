@@ -24,10 +24,10 @@ skills:
   - http://data.europa.eu/esco/skill/fa3e5cec-703e-4d46-b3bb-e8a89540ab54
 lateral:
   - "[[egeszsegugyi-dokumentator]]"
-  - "[[egeszsegugyi-dokumentacios-vezeto]]"
   - "[[varolista-koordinator]]"
   - "[[keptarolo-es-keptovabbito-rendszer-kezeloje]]"
   - "[[covid-tesztelo]]"
+  - "[[klinikai-kodrogzito]]"
 ---
 
 # Orvosírnok
@@ -60,7 +60,7 @@ Az orvosírnokok az orvos vagy más egészségügyi szakemberek által diktált 
 ## Váltások
 
 - [[egeszsegugyi-dokumentator|egészségügyi dokumentátor]]
-- [[egeszsegugyi-dokumentacios-vezeto|egészségügyi dokumentációs vezető]]
 - [[varolista-koordinator|várólista-koordinátor]]
 - [[keptarolo-es-keptovabbito-rendszer-kezeloje|képtároló és képtovábbító rendszer kezelője]]
 - [[covid-tesztelo|Covid-tesztelő]]
+- [[klinikai-kodrogzito|klinikai kódrögzítő]]

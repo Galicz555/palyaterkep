@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/20786e6d-36f0-4d1e-b033-05101fa71f3c
 label: a korábbi tanulmányok értékelője
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: adult-learning
@@ -34,7 +34,7 @@ lateral:
 
 # A korábbi tanulmányok értékelője
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felnőttképzés és egyéb oktatás  
 **ESCO:** [a korábbi tanulmányok értékelője](http://data.europa.eu/esco/occupation/20786e6d-36f0-4d1e-b033-05101fa71f3c) (2359.4)

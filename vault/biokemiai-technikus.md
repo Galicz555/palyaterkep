@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/95324a4a-a5ea-4d89-8ede-4422ccb46a28
 label: biokémiai technikus
-level: 2
+level: 1
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -41,7 +41,7 @@ lateral:
 
 # Biokémiai technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [biokémiai technikus](http://data.europa.eu/esco/occupation/95324a4a-a5ea-4d89-8ede-4422ccb46a28) (3141.2.2)

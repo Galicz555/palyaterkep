@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a464015d-a622-44aa-a4fe-bf01e412e120
 label: hajó-összeszerelési felügyelő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: quality-control
@@ -35,7 +35,7 @@ lateral:
 
 # Hajó-összeszerelési felügyelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Minőségellenőrzés  
 **ESCO:** [hajó-összeszerelési felügyelő](http://data.europa.eu/esco/occupation/a464015d-a622-44aa-a4fe-bf01e412e120) (7543.7.7)

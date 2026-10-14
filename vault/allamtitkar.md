@@ -25,9 +25,9 @@ lateral:
   - "[[szenator]]"
   - "[[miniszter]]"
   - "[[parlamenti-kepviselo]]"
+  - "[[onkormanyzati-kepviselo]]"
   - "[[tartomanyi-kormanyzo]]"
   - "[[fotitkar]]"
-  - "[[igazgatasszervezo]]"
 ---
 
 # Államtitkár
@@ -61,6 +61,6 @@ Az államtitkárok segítik a kormányhivatalok vezetőit, így a minisztereket,
 - [[szenator|szenátor]]
 - [[miniszter|miniszter]]
 - [[parlamenti-kepviselo|parlamenti képviselő]]
+- [[onkormanyzati-kepviselo|önkormányzati képviselő]]
 - [[tartomanyi-kormanyzo|tartományi kormányzó]]
 - [[fotitkar|főtitkár]]
-- [[igazgatasszervezo|igazgatásszervező]]

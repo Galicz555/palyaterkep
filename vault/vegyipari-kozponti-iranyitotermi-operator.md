@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b21aac17-8237-4264-bc2c-0e315346fd8f
 label: vegyipari központi irányítótermi operátor
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: chemicals
@@ -23,7 +23,7 @@ lateral:
 
 # Vegyipari központi irányítótermi operátor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [vegyipari központi irányítótermi operátor](http://data.europa.eu/esco/occupation/b21aac17-8237-4264-bc2c-0e315346fd8f) (3133.1.3)

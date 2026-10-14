@@ -32,6 +32,7 @@ lateral:
   - "[[halottaskocsi-vezeto]]"
   - "[[tehergepkocsi-vezeto-kamionsofor]]"
   - "[[veszelyes-arut-szallito-jarmu-vezetoje]]"
+  - "[[utasbiztonsagi-ellenor]]"
 ---
 
 # Páncélozott gépjármű vezetője
@@ -72,3 +73,4 @@ A páncélozott gépjárművek vezetői páncélozott gépkocsival értékes sz�
 - [[halottaskocsi-vezeto|halottaskocsi-vezető]]
 - [[tehergepkocsi-vezeto-kamionsofor|tehergépkocsi-vezető, kamionsofőr]]
 - [[veszelyes-arut-szallito-jarmu-vezetoje|veszélyes árut szállító jármű vezetője]]
+- [[utasbiztonsagi-ellenor|utasbiztonsági ellenőr]]

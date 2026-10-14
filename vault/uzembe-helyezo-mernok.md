@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/76abbb82-c103-4d7a-a4c0-14dba4d6199a
 label: üzembe helyező mérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: other-engineering
@@ -35,7 +35,7 @@ lateral:
 
 # Üzembe helyező mérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Egyéb mérnöki szakterületek  
 **ESCO:** [üzembe helyező mérnök](http://data.europa.eu/esco/occupation/76abbb82-c103-4d7a-a4c0-14dba4d6199a) (2149.6)

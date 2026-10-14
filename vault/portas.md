@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/842d4d83-7e18-493a-a4a6-3f2a36504b18
 label: portás
-level: 2
+level: 1
 track: individual
 branch: public
 subBranch: security
@@ -28,13 +28,13 @@ lateral:
   - "[[kidoboember]]"
   - "[[tomegiranyito]]"
   - "[[biztonsagi-or]]"
-  - "[[testor]]"
   - "[[repuloteri-biztonsagi-tiszt]]"
+  - "[[biztonsagi-or-pancelozott-jarmuben]]"
 ---
 
 # Portás
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Vagyonvédelem és közbiztonság  
 **ESCO:** [portás](http://data.europa.eu/esco/occupation/842d4d83-7e18-493a-a4a6-3f2a36504b18) (5414.1.5)
@@ -66,5 +66,5 @@ A portások feladata, hogy az épületekbe, raktárakba és egyéb létesítmén
 - [[kidoboember|kidobóember]]
 - [[tomegiranyito|tömegirányító]]
 - [[biztonsagi-or|biztonsági őr]]
-- [[testor|testőr]]
 - [[repuloteri-biztonsagi-tiszt|repülőtéri biztonsági tiszt]]
+- [[biztonsagi-or-pancelozott-jarmuben|biztonsági őr páncélozott járműben]]

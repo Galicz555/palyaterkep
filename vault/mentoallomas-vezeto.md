@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/64b136da-aedf-48a2-96a0-72eb850bfcd0
 label: mentőállomás-vezető
-level: 3
+level: 4
 track: management
 branch: public
 subBranch: security
@@ -91,7 +91,7 @@ lateral:
 
 # Mentőállomás-vezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Vagyonvédelem és közbiztonság  
 **ESCO:** [mentőállomás-vezető](http://data.europa.eu/esco/occupation/64b136da-aedf-48a2-96a0-72eb850bfcd0) (1349.20)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/511c8e9f-b19e-4ae8-9959-c047e7410441
 label: vasúti infrastruktúra-felügyelő
-level: 2
+level: 3
 track: individual
 branch: construction
 subBranch: civil-engineering
@@ -28,7 +28,7 @@ lateral:
 
 # Vasúti infrastruktúra-felügyelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőmérnöki terület és műszaki ellenőrzés  
 **ESCO:** [vasúti infrastruktúra-felügyelő](http://data.europa.eu/esco/occupation/511c8e9f-b19e-4ae8-9959-c047e7410441) (3112.9)

@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/96be6ac3-5932-4bfc-933d-84b267d0d486
 label: gyűjteményigazgató
-level: 3
-track: individual
+level: 4
+track: management
 branch: culture
 subBranch: heritage
 skills:
@@ -29,15 +29,14 @@ skills:
   - http://data.europa.eu/esco/skill/e3e95567-666a-42bd-8565-ed3e4d3bb378
 lateral:
   - "[[kulturalis-archivumvezeto]]"
-  - "[[kiallitasi-adminisztrator]]"
+  - "[[muzeumigazgato]]"
   - "[[kulturalis-oroksegvedelmi-szakember]]"
   - "[[kurator]]"
-  - "[[muveszeti-szakerto]]"
 ---
 
 # Gyűjteményigazgató
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Múzeum, könyvtár és levéltár  
 **ESCO:** [gyűjteményigazgató](http://data.europa.eu/esco/occupation/96be6ac3-5932-4bfc-933d-84b267d0d486) (2621.2)
@@ -70,7 +69,6 @@ A gyűjteménykezelők biztosítják a kulturális intézményeken, például m�
 ## Váltások
 
 - [[kulturalis-archivumvezeto|kulturális archívumvezető]]
-- [[kiallitasi-adminisztrator|kiállítási adminisztrátor]]
+- [[muzeumigazgato|múzeumigazgató]]
 - [[kulturalis-oroksegvedelmi-szakember|kulturális örökségvédelmi szakember]]
 - [[kurator|kurátor]]
-- [[muveszeti-szakerto|művészeti szakértő]]

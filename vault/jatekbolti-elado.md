@@ -42,12 +42,12 @@ skills:
   - http://data.europa.eu/esco/skill/f3be7a2c-c91d-4ae9-86f5-778dd3497309
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
+  - "[[szorakoztato-elektronikai-szakuzleti-elado]]"
   - "[[illatszerbolti-elado]]"
   - "[[cipo-es-boraru-elado]]"
   - "[[elado-optikai-szakuzletben]]"
   - "[[epitoanyagbolti-elado]]"
   - "[[hus-es-hentesaru-elado]]"
-  - "[[zoldseg-gyumolcs-elado]]"
 ---
 
 # Játékbolti eladó
@@ -98,9 +98,9 @@ A játékbolti eladók játékokat értékesítenek szaküzletekben.
 
 ## Váltások
 
+- [[szorakoztato-elektronikai-szakuzleti-elado|szórakoztató elektronikai szaküzleti eladó]]
 - [[illatszerbolti-elado|illatszerbolti eladó]]
 - [[cipo-es-boraru-elado|cipő- és bőráru-eladó]]
 - [[elado-optikai-szakuzletben|eladó optikai szaküzletben]]
 - [[epitoanyagbolti-elado|építőanyagbolti eladó]]
 - [[hus-es-hentesaru-elado|hús- és hentesáru-eladó]]
-- [[zoldseg-gyumolcs-elado|zöldség-gyümölcs eladó]]

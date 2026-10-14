@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ff2c1183-3fd7-40c7-8ddc-b20b100363c3
 label: közösségfejlesztő szociális munkás
-level: 3
+level: 2
 track: individual
 branch: health-social
 subBranch: social-work
@@ -84,7 +84,7 @@ lateral:
 
 # Közösségfejlesztő szociális munkás
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Szociális munka  
 **ESCO:** [közösségfejlesztő szociális munkás](http://data.europa.eu/esco/occupation/ff2c1183-3fd7-40c7-8ddc-b20b100363c3) (2635.3.5)

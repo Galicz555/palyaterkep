@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f0e479d9-7afd-40b1-b60f-b68c400c15fb
 label: építőipari felügyelő
-level: 2
+level: 3
 track: individual
 branch: construction
 subBranch: civil-engineering
@@ -32,7 +32,7 @@ lateral:
 
 # Építőipari felügyelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőmérnöki terület és műszaki ellenőrzés  
 **ESCO:** [építőipari felügyelő](http://data.europa.eu/esco/occupation/f0e479d9-7afd-40b1-b60f-b68c400c15fb) (3112.1.2)

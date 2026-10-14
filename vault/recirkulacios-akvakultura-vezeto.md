@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/a330b7b6-696e-455c-b6d5-f39f82c1489f
 label: recirkulációs akvakultúra-vezető
 level: 3
-track: individual
+track: management
 branch: agriculture
 subBranch: agri-advisory
 skills:
@@ -50,7 +50,7 @@ lateral:
 
 # Recirkulációs akvakultúra-vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Agrártudomány és szaktanácsadás  
 **ESCO:** [recirkulációs akvakultúra-vezető](http://data.europa.eu/esco/occupation/a330b7b6-696e-455c-b6d5-f39f82c1489f) (2132.3)

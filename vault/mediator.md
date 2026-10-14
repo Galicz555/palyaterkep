@@ -19,8 +19,7 @@ skills:
   - http://data.europa.eu/esco/skill/c68af615-b24c-4719-a199-c4141e08f2bd
   - http://data.europa.eu/esco/skill/d1d4a40d-ad7c-4dcc-bd7d-4f2423a647b1
   - http://data.europa.eu/esco/skill/e7b9d173-32ba-452d-a7df-f15f0e05903c
-lateral:
-  - "[[ombudsman]]"
+lateral: []
 ---
 
 # Mediátor
@@ -49,4 +48,4 @@ A mediátorok két fél közötti vitákat rendeznek az eset vizsgálata, mindk�
 
 ## Váltások
 
-- [[ombudsman|ombudsman]]
+Nincs.

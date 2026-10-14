@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/71898b81-fc2f-4a97-826d-f45e49a8160a
 label: filmrendező-asszisztens
-level: 1
+level: 2
 track: individual
 branch: culture
 subBranch: stage-film
@@ -24,7 +24,7 @@ lateral: []
 
 # Filmrendező-asszisztens
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Színház-, film- és műsorgyártás  
 **ESCO:** [filmrendező-asszisztens](http://data.europa.eu/esco/occupation/71898b81-fc2f-4a97-826d-f45e49a8160a) (3435.2)

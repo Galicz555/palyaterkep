@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/4b72d306-9781-434d-8522-1fcaf892cdce
 label: hajó nélküli fuvarozó
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: wholesale
@@ -39,7 +39,7 @@ lateral:
 
 # Hajó nélküli fuvarozó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Nagykereskedelem és import-export  
 **ESCO:** [hajó nélküli fuvarozó](http://data.europa.eu/esco/occupation/4b72d306-9781-434d-8522-1fcaf892cdce) (3324.3)

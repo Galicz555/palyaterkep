@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f8438d21-c726-4534-8d7c-1c5aa9ef05ef
 label: szőnyeg-, kárpit-, függönytisztító
-level: 2
+level: 1
 track: individual
 branch: hospitality
 subBranch: cleaning
@@ -29,13 +29,12 @@ lateral:
   - "[[onkiszolgalo-mosodai-ugyeletes]]"
   - "[[haztartasi-takarito]]"
   - "[[mosodai-gepkezelo]]"
-  - "[[hazvezeto-hazvezetono]]"
   - "[[epulettakarito]]"
 ---
 
 # Szőnyeg-, kárpit-, függönytisztító
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Takarítás, háztartás és épületgondnokság  
 **ESCO:** [szőnyeg-, kárpit-, függönytisztító](http://data.europa.eu/esco/occupation/f8438d21-c726-4534-8d7c-1c5aa9ef05ef) (9129.1)
@@ -68,5 +67,4 @@ A szőnyeg-, kárpit-, függönytisztítók kárpitok és szőnyegek tisztítás
 - [[onkiszolgalo-mosodai-ugyeletes|önkiszolgáló mosodai ügyeletes]]
 - [[haztartasi-takarito|háztartási takarító]]
 - [[mosodai-gepkezelo|mosodai gépkezelő]]
-- [[hazvezeto-hazvezetono|házvezető/házvezetőnő]]
 - [[epulettakarito|épülettakarító]]

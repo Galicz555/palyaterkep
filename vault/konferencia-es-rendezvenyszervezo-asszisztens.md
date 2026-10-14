@@ -23,8 +23,7 @@ skills:
   - http://data.europa.eu/esco/skill/a571791c-50aa-40d1-ba82-b3f1f4185426
   - http://data.europa.eu/esco/skill/aea9e7b9-53a3-4f03-9d9c-4ef6c383403a
   - http://data.europa.eu/esco/skill/c0156cdb-8587-4278-89e0-075d83e3140b
-lateral:
-  - "[[konferencia-es-rendezvenyszervezo]]"
+lateral: []
 ---
 
 # Konferencia- és rendezvényszervező-asszisztens
@@ -57,4 +56,4 @@ A konferencia- és rendezvényszervező-asszisztensek végrehajtják és nyomon 
 
 ## Váltások
 
-- [[konferencia-es-rendezvenyszervezo|konferencia- és rendezvényszervező]]
+Nincs.

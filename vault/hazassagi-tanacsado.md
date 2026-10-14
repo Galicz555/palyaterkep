@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9cda1c7c-ba07-4381-b831-1bb346ff865f
 label: házassági tanácsadó
-level: 2
+level: 3
 track: individual
 branch: health-social
 subBranch: social-work
@@ -65,7 +65,7 @@ lateral:
 
 # Házassági tanácsadó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Szociális munka  
 **ESCO:** [házassági tanácsadó](http://data.europa.eu/esco/occupation/9cda1c7c-ba07-4381-b831-1bb346ff865f) (2635.1.4)

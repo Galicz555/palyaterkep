@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/a99b38bc-6e71-4bef-b127-0f2b5e357815
 label: IKT katasztrófaelhárítás menedzser
 level: 4
-track: individual
+track: management
 branch: it
 subBranch: cybersecurity
 skills:
@@ -30,13 +30,14 @@ skills:
 lateral:
   - "[[ikt-katasztrofaelharitas-elemzo]]"
   - "[[ikt-biztonsagi-igazgato]]"
+  - "[[biztonsagi-tesztelo]]"
   - "[[kiberbiztonsagi-kockazatkezelo]]"
   - "[[biztonsagi-vezeto]]"
 ---
 
 # IKT katasztrófaelhárítás menedzser
 
-Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Kiberbiztonság  
 **ESCO:** [IKT katasztrófaelhárítás menedzser](http://data.europa.eu/esco/occupation/a99b38bc-6e71-4bef-b127-0f2b5e357815) (2529.5)
@@ -70,5 +71,6 @@ Az IKT katasztrófaelhárítás-menedzserek kutatják, megtervezik és fejleszti
 
 - [[ikt-katasztrofaelharitas-elemzo|IKT katasztrófaelhárítás elemző]]
 - [[ikt-biztonsagi-igazgato|IKT biztonsági igazgató]]
+- [[biztonsagi-tesztelo|biztonsági tesztelő]]
 - [[kiberbiztonsagi-kockazatkezelo|kiberbiztonsági kockázatkezelő]]
 - [[biztonsagi-vezeto|biztonsági vezető]]

@@ -35,6 +35,7 @@ skills:
 lateral:
   - "[[szcenikus]]"
   - "[[szinpadepito]]"
+  - "[[vilagitastechnikus]]"
 ---
 
 # Színháztechnikus
@@ -78,3 +79,4 @@ A színháztechnikusok az élő előadások támogatására szolgáló összes t
 
 - [[szcenikus|szcenikus]]
 - [[szinpadepito|színpadépítő]]
+- [[vilagitastechnikus|világítástechnikus]]

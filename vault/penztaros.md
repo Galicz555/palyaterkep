@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2b871272-bd61-4206-bd1a-0b96d7023098
 label: pénztáros
-level: 2
+level: 1
 track: individual
 branch: trade
 subBranch: retail
@@ -20,13 +20,12 @@ skills:
 lateral:
   - "[[postai-ugyfelkapcsolati-foglalkozasu]]"
   - "[[ertekesitesi-referens]]"
-  - "[[fopenztaros]]"
   - "[[toto-lottoertekesito]]"
 ---
 
 # Pénztáros
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Bolti értékesítés  
 **ESCO:** [pénztáros](http://data.europa.eu/esco/occupation/2b871272-bd61-4206-bd1a-0b96d7023098) (5230.1)
@@ -50,5 +49,4 @@ A pénztárosok működtetik a pénztárgépet, átveszik a vevőktől a kifizet
 
 - [[postai-ugyfelkapcsolati-foglalkozasu|postai ügyfélkapcsolati foglalkozású]]
 - [[ertekesitesi-referens|értékesítési referens]]
-- [[fopenztaros|főpénztáros]]
 - [[toto-lottoertekesito|totó-lottóértékesítő]]

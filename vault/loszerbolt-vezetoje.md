@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/87fd9791-0922-4da0-a984-f518aadf85ec
 label: lőszerbolt vezetője
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -50,7 +50,7 @@ lateral:
 
 # Lőszerbolt vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [lőszerbolt vezetője](http://data.europa.eu/esco/occupation/87fd9791-0922-4da0-a984-f518aadf85ec) (1420.4.1)

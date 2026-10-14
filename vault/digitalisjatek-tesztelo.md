@@ -20,7 +20,6 @@ lateral:
   - "[[szoftvertesztelo]]"
   - "[[ikt-integracios-tesztmernok]]"
   - "[[ikt-rendszertesztelo]]"
-  - "[[ikt-tesztelemzo]]"
   - "[[ikt-hasznalhatosagi-tesztelo]]"
   - "[[ikt-hozzaferhetosegi-tesztelo]]"
 ---
@@ -51,6 +50,5 @@ A digitálisjáték-tesztelők felülvizsgálják és tesztelik a különféle m
 - [[szoftvertesztelo|szoftvertesztelő]]
 - [[ikt-integracios-tesztmernok|IKT integrációs tesztmérnök]]
 - [[ikt-rendszertesztelo|IKT rendszertesztelő]]
-- [[ikt-tesztelemzo|IKT-tesztelemző]]
 - [[ikt-hasznalhatosagi-tesztelo|IKT használhatósági tesztelő]]
 - [[ikt-hozzaferhetosegi-tesztelo|IKT hozzáférhetőségi tesztelő]]

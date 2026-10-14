@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/47ae3ed9-e03c-450e-9ea8-aab317545adc
 label: gázfeldolgozó-üzemi központi irányítótermi operátor
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: chemicals
@@ -20,13 +20,13 @@ lateral:
   - "[[kozponti-iranyitotermi-operator-koolaj-finomitoban]]"
   - "[[banyaszati-iranyitotermi-operator]]"
   - "[[kozponti-iranyitotermi-eromuvi-operator]]"
-  - "[[iszapszelvenyezo]]"
+  - "[[koolaj-es-gazipari-termelesi-vezeto]]"
   - "[[koolajszivattyu-rendszer-kezeloje]]"
 ---
 
 # Gázfeldolgozó-üzemi központi irányítótermi operátor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [gázfeldolgozó-üzemi központi irányítótermi operátor](http://data.europa.eu/esco/occupation/47ae3ed9-e03c-450e-9ea8-aab317545adc) (3134.1)
@@ -50,5 +50,5 @@ A gázfeldolgozó-üzemi központi irányítótermi operátor a feldolgozóüzem
 - [[kozponti-iranyitotermi-operator-koolaj-finomitoban|központi irányítótermi operátor kőolaj-finomítóban]]
 - [[banyaszati-iranyitotermi-operator|bányászati irányítótermi operátor]]
 - [[kozponti-iranyitotermi-eromuvi-operator|központi irányítótermi erőművi operátor]]
-- [[iszapszelvenyezo|iszapszelvényező]]
+- [[koolaj-es-gazipari-termelesi-vezeto|kőolaj- és gázipari termelési vezető]]
 - [[koolajszivattyu-rendszer-kezeloje|kőolajszivattyú-rendszer kezelője]]

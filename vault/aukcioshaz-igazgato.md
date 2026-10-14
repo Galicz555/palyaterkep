@@ -24,6 +24,7 @@ skills:
   - http://data.europa.eu/esco/skill/dc72ad0a-c5dc-4abd-bc0d-ca43e82162e1
   - http://data.europa.eu/esco/skill/f5f5b244-6cea-4fbc-8a50-8f712791bc09
 lateral:
+  - "[[arveresvezeto]]"
   - "[[operativ-vezeto]]"
   - "[[kulturalis-kozpont-igazgatoja]]"
 ---
@@ -58,5 +59,6 @@ Az aukciós házak igazgatói felelősek egy aukciós ház személyzetéért és
 
 ## Váltások
 
+- [[arveresvezeto|árverésvezető]]
 - [[operativ-vezeto|operatív vezető]]
 - [[kulturalis-kozpont-igazgatoja|kulturális központ igazgatója]]

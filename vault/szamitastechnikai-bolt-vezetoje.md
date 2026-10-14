@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d8e5410b-5199-403f-8cbd-d32efb17a296
 label: számítástechnikai bolt vezetője
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -50,7 +50,7 @@ lateral:
 
 # Számítástechnikai bolt vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [számítástechnikai bolt vezetője](http://data.europa.eu/esco/occupation/d8e5410b-5199-403f-8cbd-d32efb17a296) (1420.4.11)

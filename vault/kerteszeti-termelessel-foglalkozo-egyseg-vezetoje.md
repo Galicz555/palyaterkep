@@ -54,7 +54,6 @@ lateral:
   - "[[gyumolcstermeszto]]"
   - "[[mezogazdasagi-novenytermesztesi-brigad-vezetoje]]"
   - "[[novenytermesztes-vezetoje]]"
-  - "[[agronomus]]"
 ---
 
 # Kertészeti termeléssel foglalkozó egység vezetője
@@ -117,4 +116,3 @@ A kertészeti termeléssel foglalkozó egységek vezetői megtervezik a termelé
 - [[gyumolcstermeszto|gyümölcstermesztő]]
 - [[mezogazdasagi-novenytermesztesi-brigad-vezetoje|mezőgazdasági növénytermesztési brigád vezetője]]
 - [[novenytermesztes-vezetoje|növénytermesztés vezetője]]
-- [[agronomus|agronómus]]

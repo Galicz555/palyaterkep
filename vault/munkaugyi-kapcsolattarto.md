@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/20b9f370-6b56-4679-8c06-c23b866a5bd0
 label: munkaügyi kapcsolattartó
-level: 2
+level: 3
 track: individual
 branch: business
 subBranch: hr
@@ -26,11 +26,12 @@ skills:
 lateral:
   - "[[munkavedelmi-es-munkaegeszsegugyi-felugyelo]]"
   - "[[egyenlosegert-es-inkluzioert-felelos-vezeto]]"
+  - "[[humaneroforras-vezeto]]"
 ---
 
 # Munkaügyi kapcsolattartó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Emberi erőforrások  
 **ESCO:** [munkaügyi kapcsolattartó](http://data.europa.eu/esco/occupation/20b9f370-6b56-4679-8c06-c23b866a5bd0) (2423.4)
@@ -60,3 +61,4 @@ A munkaügyi kapcsolattartók egy szervezeten belül hajtják végre a munkaügy
 
 - [[munkavedelmi-es-munkaegeszsegugyi-felugyelo|munkavédelmi és munkaegészségügyi felügyelő]]
 - [[egyenlosegert-es-inkluzioert-felelos-vezeto|egyenlőségért és inklúzióért felelős vezető]]
+- [[humaneroforras-vezeto|humánerőforrás-vezető]]

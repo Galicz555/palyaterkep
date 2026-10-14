@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/6cc19251-763b-4de1-b4f7-526c9ff732d2
 label: közkapcsolati vezető
 level: 3
-track: individual
+track: management
 branch: culture
 subBranch: communications
 skills:
@@ -43,7 +43,7 @@ lateral:
 
 # Közkapcsolati vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Kommunikáció és PR  
 **ESCO:** [közkapcsolati vezető](http://data.europa.eu/esco/occupation/6cc19251-763b-4de1-b4f7-526c9ff732d2) (1222.1.2)

@@ -24,7 +24,7 @@ lateral:
   - "[[ugyesz]]"
   - "[[eskudtszeki-koordinator]]"
   - "[[bekebiro]]"
-  - "[[birosagi-igazgatasi-vezeto]]"
+  - "[[vallalati-jogasz]]"
   - "[[jogi-asszisztens]]"
 ---
 
@@ -58,5 +58,5 @@ A jogi adminisztrátorok a büntető- és polgári ügyek előrehaladását fel�
 - [[ugyesz|ügyész]]
 - [[eskudtszeki-koordinator|esküdtszéki koordinátor]]
 - [[bekebiro|békebíró]]
-- [[birosagi-igazgatasi-vezeto|bírósági igazgatási vezető]]
+- [[vallalati-jogasz|vállalati jogász]]
 - [[jogi-asszisztens|jogi asszisztens]]

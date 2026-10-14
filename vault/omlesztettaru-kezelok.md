@@ -26,7 +26,6 @@ lateral:
   - "[[martaskeszito-gep-kezeloje]]"
   - "[[szaritasi-tevekenyseget-vegzo-dolgozo]]"
   - "[[kemenyito-konvertalas-kezelo]]"
-  - "[[tejtermekgyarto-munkatars]]"
   - "[[nyersanyagatvetel-kezeloje]]"
 ---
 
@@ -62,5 +61,4 @@ Az ömlesztettáru-kezelők élelmiszerek hordókba, csövekbe vagy tartályokba
 - [[martaskeszito-gep-kezeloje|mártáskészítő gép kezelője]]
 - [[szaritasi-tevekenyseget-vegzo-dolgozo|szárítási tevékenységet végző dolgozó]]
 - [[kemenyito-konvertalas-kezelo|keményítő konvertálás kezelő]]
-- [[tejtermekgyarto-munkatars|tejtermékgyártó munkatárs]]
 - [[nyersanyagatvetel-kezeloje|nyersanyagátvétel kezelője]]

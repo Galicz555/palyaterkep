@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0917ab6b-18a8-4cfd-8e7a-843b88cf9457
 label: fióktelep-vezető
-level: 4
+level: 3
 track: management
 branch: business
 subBranch: management
@@ -59,13 +59,11 @@ lateral:
   - "[[bankvezeto]]"
   - "[[reszlegvezeto]]"
   - "[[orvosipraxis-menedzser]]"
-  - "[[ugyvezeto-igazgato]]"
-  - "[[vezerigazgato]]"
 ---
 
 # Fióktelep-vezető
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Vállalatvezetés, stratégia és tanácsadás  
 **ESCO:** [fióktelep-vezető](http://data.europa.eu/esco/occupation/0917ab6b-18a8-4cfd-8e7a-843b88cf9457) (1213.5.1)
@@ -128,5 +126,3 @@ A fióktelep-vezetők felelősek az adott földrajzi régióban vagy üzleti ág
 - [[bankvezeto|bankvezető]]
 - [[reszlegvezeto|részlegvezető]]
 - [[orvosipraxis-menedzser|orvosipraxis-menedzser]]
-- [[ugyvezeto-igazgato|ügyvezető igazgató]]
-- [[vezerigazgato|vezérigazgató]]

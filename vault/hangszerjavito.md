@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3c1b7871-87f9-427b-adcb-fe16be8f9f24
 label: hangszerjavító
-level: 3
+level: 2
 track: individual
 branch: industry
 subBranch: crafts
@@ -27,7 +27,7 @@ lateral:
 
 # Hangszerjavító
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [hangszerjavító](http://data.europa.eu/esco/occupation/3c1b7871-87f9-427b-adcb-fe16be8f9f24) (7312.5)

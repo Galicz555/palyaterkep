@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/835d118e-11db-4b11-b055-d78bfe426cac
 label: szerszámköszörűs
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: metal
@@ -32,7 +32,7 @@ lateral:
 
 # Szerszámköszörűs
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Fémipar és felületkezelés  
 **ESCO:** [szerszámköszörűs](http://data.europa.eu/esco/occupation/835d118e-11db-4b11-b055-d78bfe426cac) (7224.2)

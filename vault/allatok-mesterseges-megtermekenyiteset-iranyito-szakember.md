@@ -35,10 +35,10 @@ skills:
 lateral:
   - "[[allat-embrioatultetes-specialista]]"
   - "[[eloallat-szallito]]"
+  - "[[allatkozmetikus]]"
   - "[[allatjoleti-felelos]]"
   - "[[allatorvosi-szakseged]]"
   - "[[allatorvosi-rendelo-recepciosa]]"
-  - "[[szakallatorvos]]"
 ---
 
 # Állatok mesterséges megtermékenyítését irányító szakember
@@ -82,7 +82,7 @@ Az állatok mesterséges megtermékenyítését irányító szakember feladata a
 
 - [[allat-embrioatultetes-specialista|állat embrióátültetés specialista]]
 - [[eloallat-szallito|élőállat szállító]]
+- [[allatkozmetikus|állatkozmetikus]]
 - [[allatjoleti-felelos|állatjóléti felelős]]
 - [[allatorvosi-szakseged|állatorvosi szaksegéd]]
 - [[allatorvosi-rendelo-recepciosa|állatorvosi rendelő recepciósa]]
-- [[szakallatorvos|szakállatorvos]]

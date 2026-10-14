@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/82025c02-9082-416c-998b-f51eb0359ee6
 label: vendéglátó egység recepciósa
-level: 1
+level: 2
 track: individual
 branch: hospitality
 subBranch: accommodation
@@ -30,15 +30,15 @@ skills:
 lateral:
   - "[[ejszakai-recepcios]]"
   - "[[szallodaportas]]"
+  - "[[komornyik-komorna]]"
   - "[[kempingszolgaltatasok-uzemeltetoje-iranyitoja]]"
+  - "[[panziovezeto]]"
   - "[[utazasi-ugynok]]"
-  - "[[jegyertekesito]]"
-  - "[[hazigazda-haziasszony]]"
 ---
 
 # Vendéglátó egység recepciósa
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Szálláshely-szolgáltatás  
 **ESCO:** [vendéglátó egység recepciósa](http://data.europa.eu/esco/occupation/82025c02-9082-416c-998b-f51eb0359ee6) (4224.1)
@@ -72,7 +72,7 @@ A vendéglátó egységek recepciósai a vendéglátó egységek vendégei szám
 
 - [[ejszakai-recepcios|éjszakai recepciós]]
 - [[szallodaportas|szállodaportás]]
+- [[komornyik-komorna|komornyik/komorna]]
 - [[kempingszolgaltatasok-uzemeltetoje-iranyitoja|kempingszolgáltatások üzemeltetője/irányítója]]
+- [[panziovezeto|panzióvezető]]
 - [[utazasi-ugynok|utazási ügynök]]
-- [[jegyertekesito|jegyértékesítő]]
-- [[hazigazda-haziasszony|házigazda/háziasszony]]

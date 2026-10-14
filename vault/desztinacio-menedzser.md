@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/425ed170-bf90-42c9-b5bd-148282ed96ff
 label: desztináció menedzser
-level: 3
-track: individual
+level: 4
+track: management
 branch: trade
 subBranch: marketing
 skills:
@@ -48,14 +48,13 @@ lateral:
   - "[[turisztikai-termekmenedzser]]"
   - "[[utazasi-iroda-menedzsere]]"
   - "[[utazasszervezoi-tevekenysegek-vezetoje]]"
-  - "[[utazasi-irodai-ugyintezo]]"
   - "[[turizmusfejlesztesi-igazgato]]"
   - "[[turisztikai-informacios-kozpont-menedzser]]"
 ---
 
 # Desztináció menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Értékesítési vezetés és marketing  
 **ESCO:** [desztináció menedzser](http://data.europa.eu/esco/occupation/425ed170-bf90-42c9-b5bd-148282ed96ff) (1221.3.1)
@@ -107,6 +106,5 @@ A desztináció menedzserek felelnek a desztináció-fejlesztés, marketing és 
 - [[turisztikai-termekmenedzser|turisztikai termékmenedzser]]
 - [[utazasi-iroda-menedzsere|utazási iroda menedzsere]]
 - [[utazasszervezoi-tevekenysegek-vezetoje|utazásszervezői tevékenységek vezetője]]
-- [[utazasi-irodai-ugyintezo|utazási irodai ügyintéző]]
 - [[turizmusfejlesztesi-igazgato|turizmusfejlesztési igazgató]]
 - [[turisztikai-informacios-kozpont-menedzser|turisztikai információs központ menedzser]]

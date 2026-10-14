@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0bf68df5-e808-4c27-abf2-6f85440f2d7f
 label: telefonközpont-kezelő
-level: 1
+level: 2
 track: individual
 branch: business
 subBranch: customer-service
@@ -19,7 +19,7 @@ lateral: []
 
 # Telefonközpont-kezelő
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Ügyfélszolgálat és recepció  
 **ESCO:** [telefonközpont-kezelő](http://data.europa.eu/esco/occupation/0bf68df5-e808-4c27-abf2-6f85440f2d7f) (4223.1)

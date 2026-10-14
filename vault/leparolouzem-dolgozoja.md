@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9757122b-1161-4f4a-8286-a603d4ad7012
 label: lepárolóüzem dolgozója
-level: 1
+level: 2
 track: individual
 branch: industry
 subBranch: food
@@ -35,7 +35,7 @@ lateral:
 
 # Lepárolóüzem dolgozója
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [lepárolóüzem dolgozója](http://data.europa.eu/esco/occupation/9757122b-1161-4f4a-8286-a603d4ad7012) (8160.27)

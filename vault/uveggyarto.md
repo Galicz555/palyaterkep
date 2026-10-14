@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/64a68a43-24be-4929-95ce-5b14617199d1
 label: üveggyártó
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: crafts
@@ -31,7 +31,7 @@ lateral:
 
 # Üveggyártó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [üveggyártó](http://data.europa.eu/esco/occupation/64a68a43-24be-4929-95ce-5b14617199d1) (7315.1)

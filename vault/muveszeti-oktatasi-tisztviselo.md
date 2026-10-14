@@ -16,8 +16,7 @@ skills:
   - http://data.europa.eu/esco/skill/88cc9573-e12f-4915-a915-5c3ee19891cb
   - http://data.europa.eu/esco/skill/d2a705e7-2e27-47ba-a8d9-46f30de7f2e2
   - http://data.europa.eu/esco/skill/d39ee246-1eae-4e56-b7b7-ea341c6dfbfe
-lateral:
-  - "[[kulturalis-latogatoi-szolgaltatasok-vezetoje]]"
+lateral: []
 ---
 
 # Művészeti oktatási tisztviselő
@@ -43,4 +42,4 @@ Az oktatási és a látogatói szolgálatok tisztviselőinek a feladatkörébe t
 
 ## Váltások
 
-- [[kulturalis-latogatoi-szolgaltatasok-vezetoje|kulturális látogatói szolgáltatások vezetője]]
+Nincs.

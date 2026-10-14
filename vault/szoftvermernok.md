@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e
 label: szoftvermérnök
-level: 3
+level: 4
 track: individual
 branch: it
 subBranch: software
@@ -27,17 +27,16 @@ skills:
   - http://data.europa.eu/esco/skill/f7e2eb04-3e50-4561-bce1-7e51a1fec308
   - http://data.europa.eu/esco/skill/fae27053-8924-4bfd-b565-c9fe502044c9
 lateral:
-  - "[[beagyazott-rendszer-tervezo]]"
   - "[[it-rendszermernok]]"
   - "[[programtervezo-menedzser]]"
   - "[[szoftvermenedzser]]"
-  - "[[digitalisjatek-tervezo]]"
   - "[[ikt-halozati-mernok]]"
+  - "[[ikt-uzleti-elemzesi-menedzser]]"
 ---
 
 # Szoftvermérnök
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Szoftver- és webfejlesztés  
 **ESCO:** [szoftvermérnök](http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e) (2512.3)
@@ -68,9 +67,8 @@ A szoftvermérnökök működési előírásokon alapuló műszaki tervet és a 
 
 ## Váltások
 
-- [[beagyazott-rendszer-tervezo|beágyazott rendszer tervező]]
 - [[it-rendszermernok|IT rendszermérnök]]
 - [[programtervezo-menedzser|programtervező menedzser]]
 - [[szoftvermenedzser|szoftvermenedzser]]
-- [[digitalisjatek-tervezo|digitálisjáték-tervező]]
 - [[ikt-halozati-mernok|IKT hálózati mérnök]]
+- [[ikt-uzleti-elemzesi-menedzser|IKT üzleti elemzési menedzser]]

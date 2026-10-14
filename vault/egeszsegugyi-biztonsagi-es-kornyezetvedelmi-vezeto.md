@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/57e87533-e523-4ee5-bf21-94a39fcc279b
 label: egészségügyi, biztonsági és környezetvédelmi vezető
 level: 3
-track: individual
+track: management
 branch: health-social
 subBranch: public-health
 skills:
@@ -50,11 +50,12 @@ skills:
 lateral:
   - "[[munkavedelmi-felugyelo]]"
   - "[[munkavedelmi-kepviselo]]"
+  - "[[kornyezetvedelmi-igazgato]]"
 ---
 
 # Egészségügyi, biztonsági és környezetvédelmi vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Népegészségügy és munkavédelem  
 **ESCO:** [egészségügyi, biztonsági és környezetvédelmi vezető](http://data.europa.eu/esco/occupation/57e87533-e523-4ee5-bf21-94a39fcc279b) (1213.7)
@@ -109,3 +110,4 @@ Az egészségügyi, biztonsági és környezetvédelmi vezetők munkahelyi bizto
 
 - [[munkavedelmi-felugyelo|munkavédelmi felügyelő]]
 - [[munkavedelmi-kepviselo|munkavédelmi képviselő]]
+- [[kornyezetvedelmi-igazgato|környezetvédelmi igazgató]]

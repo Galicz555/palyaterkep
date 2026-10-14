@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7dea476a-dffe-4919-9ee2-fb222e283f41
 label: pszichológiaoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -49,7 +49,7 @@ lateral:
 
 # Pszichológiaoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [pszichológiaoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/7dea476a-dffe-4919-9ee2-fb222e283f41) (2310.1.35)

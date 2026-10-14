@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3f6fc9db-18c1-45e8-819e-baf7b6cfe372
 label: bírósági igazgatási vezető
-level: 3
+level: 4
 track: management
 branch: public
 subBranch: legal
@@ -17,16 +17,15 @@ skills:
   - http://data.europa.eu/esco/skill/db10b60e-efd2-4ba9-a873-d1e2ec37620f
   - http://data.europa.eu/esco/skill/e58a3832-4e13-458e-8efd-bfa251eed702
 lateral:
+  - "[[vezerezredes]]"
   - "[[dandartabornok]]"
-  - "[[eskudtszeki-koordinator]]"
   - "[[rendorkapitany]]"
-  - "[[jogi-adminisztrator]]"
-  - "[[vedelmi-igazgatasi-tisztviselo]]"
+  - "[[birosagi-titkar]]"
 ---
 
 # Bírósági igazgatási vezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Jog és igazságszolgáltatás  
 **ESCO:** [bírósági igazgatási vezető](http://data.europa.eu/esco/occupation/3f6fc9db-18c1-45e8-819e-baf7b6cfe372) (1349.10)
@@ -47,8 +46,7 @@ A bírósági igazgatási vezetők vezetői feladatokat látnak el a bírósági
 
 ## Váltások
 
+- [[vezerezredes|vezérezredes]]
 - [[dandartabornok|dandártábornok]]
-- [[eskudtszeki-koordinator|esküdtszéki koordinátor]]
 - [[rendorkapitany|rendőrkapitány]]
-- [[jogi-adminisztrator|jogi adminisztrátor]]
-- [[vedelmi-igazgatasi-tisztviselo|védelmi igazgatási tisztviselő]]
+- [[birosagi-titkar|bírósági titkár]]

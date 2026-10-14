@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/668943cc-c454-4a1b-a296-2fcb524a6222
 label: vízrajzi mérőtechnikus
-level: 2
+level: 1
 track: individual
 branch: engineering
 subBranch: physical-sciences
@@ -38,7 +38,7 @@ lateral:
 
 # Vízrajzi mérőtechnikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Fizika, kémia és földtudományok  
 **ESCO:** [vízrajzi mérőtechnikus](http://data.europa.eu/esco/occupation/668943cc-c454-4a1b-a296-2fcb524a6222) (3111.5)

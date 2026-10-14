@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/068c2787-58ff-468e-bbb6-c4e5dd6ee482
 label: aktuárius
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: mathematics
@@ -24,13 +24,13 @@ skills:
 lateral:
   - "[[penzugyi-broker]]"
   - "[[befektetesi-elemzo]]"
+  - "[[aktuarius-asszisztens]]"
   - "[[penzugyi-tervezo]]"
-  - "[[vallalati-banki-tanacsado]]"
 ---
 
 # Aktuárius
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Matematika és statisztika  
 **ESCO:** [aktuárius](http://data.europa.eu/esco/occupation/068c2787-58ff-468e-bbb6-c4e5dd6ee482) (2120.1)
@@ -58,5 +58,5 @@ Az aktuáriusok elemzik, kezelik a kockázatok pénzügyi hatásait és útmutat
 
 - [[penzugyi-broker|pénzügyi bróker]]
 - [[befektetesi-elemzo|befektetési elemző]]
+- [[aktuarius-asszisztens|aktuárius asszisztens]]
 - [[penzugyi-tervezo|pénzügyi tervező]]
-- [[vallalati-banki-tanacsado|vállalati banki tanácsadó]]

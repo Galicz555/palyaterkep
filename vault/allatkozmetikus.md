@@ -33,12 +33,12 @@ skills:
   - http://data.europa.eu/esco/skill/f37dd722-72b4-4550-bca1-d19176208deb
   - http://data.europa.eu/esco/skill/f9fe044f-3bfd-4bc1-b59d-a601a91beda7
 lateral:
-  - "[[allatgondozo]]"
-  - "[[allatidomar]]"
   - "[[eloallat-szallito]]"
   - "[[allat-embrioatultetes-specialista]]"
-  - "[[loidomar]]"
   - "[[allatjoleti-felelos]]"
+  - "[[allatok-mesterseges-megtermekenyiteset-iranyito-szakember]]"
+  - "[[allatorvosi-szakseged]]"
+  - "[[etologus]]"
 ---
 
 # Állatkozmetikus
@@ -80,9 +80,9 @@ Az állatkozmetikusok feladata, hogy különféle állatokon megfelelő felszere
 
 ## Váltások
 
-- [[allatgondozo|állatgondozó]]
-- [[allatidomar|állatidomár]]
 - [[eloallat-szallito|élőállat szállító]]
 - [[allat-embrioatultetes-specialista|állat embrióátültetés specialista]]
-- [[loidomar|lóidomár]]
 - [[allatjoleti-felelos|állatjóléti felelős]]
+- [[allatok-mesterseges-megtermekenyiteset-iranyito-szakember|állatok mesterséges megtermékenyítését irányító szakember]]
+- [[allatorvosi-szakseged|állatorvosi szaksegéd]]
+- [[etologus|etológus]]

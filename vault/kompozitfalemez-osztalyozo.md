@@ -37,6 +37,7 @@ lateral:
   - "[[fureszaru-minosito]]"
   - "[[femipari-minosegellenor]]"
   - "[[furnerlap-minosito]]"
+  - "[[minosegtechnikus]]"
 ---
 
 # Kompozitfalemez-osztályozó
@@ -82,3 +83,4 @@ A kompozitfalemez-osztályozók a kész mesterséges fatermékeket vizsgálják 
 - [[fureszaru-minosito|fűrészáru-minősítő]]
 - [[femipari-minosegellenor|fémipari minőségellenőr]]
 - [[furnerlap-minosito|furnérlap-minősítő]]
+- [[minosegtechnikus|minőségtechnikus]]

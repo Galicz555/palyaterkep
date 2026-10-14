@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f7ddb68a-beba-4aa9-b5cb-d174d70ea724
 label: hegesztési ellenőr
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: mechanical
@@ -47,7 +47,7 @@ lateral:
 
 # Hegesztési ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Gépészmérnöki terület  
 **ESCO:** [hegesztési ellenőr](http://data.europa.eu/esco/occupation/f7ddb68a-beba-4aa9-b5cb-d174d70ea724) (3115.1.24)

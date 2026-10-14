@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0959cd1d-f6c8-4362-939a-ad7d5f75d659
 label: közgazdaságtan-oktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -47,7 +47,7 @@ lateral:
 
 # Közgazdaságtan-oktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [közgazdaságtan-oktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/0959cd1d-f6c8-4362-939a-ad7d5f75d659) (2310.1.14)

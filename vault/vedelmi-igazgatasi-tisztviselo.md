@@ -21,7 +21,6 @@ skills:
   - http://data.europa.eu/esco/skill/ea1bf5e5-e7f0-4d2c-a415-1c39c00512b1
 lateral:
   - "[[egyhazgondnok]]"
-  - "[[birosagi-igazgatasi-vezeto]]"
 ---
 
 # Védelmi igazgatási tisztviselő
@@ -51,4 +50,3 @@ A védelmi igazgatási tisztviselők vezetői és adminisztratív feladatokat l�
 ## Váltások
 
 - [[egyhazgondnok|egyházgondnok]]
-- [[birosagi-igazgatasi-vezeto|bírósági igazgatási vezető]]

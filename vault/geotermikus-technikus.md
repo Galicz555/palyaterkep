@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/92b7a42c-b437-4412-ac21-1a750883cf21
 label: geotermikus technikus
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: electrical-trades
@@ -39,7 +39,7 @@ lateral:
 
 # Geotermikus technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Villamos- és elektronikai szerelés  
 **ESCO:** [geotermikus technikus](http://data.europa.eu/esco/occupation/92b7a42c-b437-4412-ac21-1a750883cf21) (7412.4)

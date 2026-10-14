@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/af355ac4-dd89-44df-99a6-bba70202d6fe
 label: adatrögzítési szupervizor
-level: 2
+level: 3
 track: management
 branch: business
 subBranch: office
@@ -28,13 +28,12 @@ skills:
   - http://data.europa.eu/esco/skill/f399a9c1-be41-4117-bf86-a64b503c4cfd
   - http://data.europa.eu/esco/skill/f597f772-24d3-4cec-813c-cf5a7027c794
   - http://data.europa.eu/esco/skill/f75b740c-b36c-495e-bc67-efe347bbc6b5
-lateral:
-  - "[[adatrogzito]]"
+lateral: []
 ---
 
 # Adatrögzítési szupervizor
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Irodai és adminisztratív munka  
 **ESCO:** [adatrögzítési szupervizor](http://data.europa.eu/esco/occupation/af355ac4-dd89-44df-99a6-bba70202d6fe) (3341.5)
@@ -67,4 +66,4 @@ Az adatrögzítési felügyelők irányítják az adatbevitellel foglalkozó sze
 
 ## Váltások
 
-- [[adatrogzito|adatrögzítő]]
+Nincs.

@@ -23,6 +23,7 @@ lateral:
   - "[[miniszter]]"
   - "[[allamtitkar]]"
   - "[[tartomanyi-kormanyzo]]"
+  - "[[onkormanyzati-kepviselo]]"
   - "[[jogszabaly-szerkeszto]]"
 ---
 
@@ -55,4 +56,5 @@ A szenátorok jogalkotási feladatokat látnak el központi kormányzati szinten
 - [[miniszter|miniszter]]
 - [[allamtitkar|államtitkár]]
 - [[tartomanyi-kormanyzo|tartományi kormányzó]]
+- [[onkormanyzati-kepviselo|önkormányzati képviselő]]
 - [[jogszabaly-szerkeszto|jogszabály-szerkesztő]]

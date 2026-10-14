@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6eaf90cb-144d-486c-86e7-3d2bf4242525
 label: közúti jelzőtábla elhelyező
-level: 2
+level: 1
 track: individual
 branch: construction
 subBranch: plant-labour
@@ -26,12 +26,12 @@ lateral:
   - "[[mobildaru-kezelo]]"
   - "[[utburkolatfesto]]"
   - "[[lemezlakatos]]"
-  - "[[epuletszobrasz]]"
+  - "[[padloszonyeg-fekteto]]"
 ---
 
 # Közúti jelzőtábla elhelyező
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőgépek és segédmunka  
 **ESCO:** [közúti jelzőtábla elhelyező](http://data.europa.eu/esco/occupation/6eaf90cb-144d-486c-86e7-3d2bf4242525) (9312.1.5)
@@ -61,4 +61,4 @@ A közúti jelzőtábla elhelyezők a közúti jelzéseket a megadott helyre hel
 - [[mobildaru-kezelo|mobildaru-kezelő]]
 - [[utburkolatfesto|útburkolatfestő]]
 - [[lemezlakatos|lemezlakatos]]
-- [[epuletszobrasz|épületszobrász]]
+- [[padloszonyeg-fekteto|padlószőnyeg-fektető]]

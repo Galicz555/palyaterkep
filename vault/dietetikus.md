@@ -89,12 +89,12 @@ skills:
   - http://data.europa.eu/esco/skill/f90d4810-8bac-4e5e-b870-3e35a4138ff7
   - http://data.europa.eu/esco/skill/ff82aa43-aef7-40fe-9d0e-2426e95b4417
 lateral:
+  - "[[ortoptikus]]"
   - "[[dietetikai-szakasszisztens]]"
   - "[[ergoterapeuta]]"
   - "[[beszed-es-nyelvterapeuta]]"
   - "[[betegapolo]]"
   - "[[audiologus]]"
-  - "[[fizioterapeuta]]"
 ---
 
 # Dietetikus
@@ -192,9 +192,9 @@ A dietetikusok felmérik csoportok vagy egyének specifikus táplálkozási igé
 
 ## Váltások
 
+- [[ortoptikus|ortoptikus]]
 - [[dietetikai-szakasszisztens|dietetikai szakasszisztens]]
 - [[ergoterapeuta|ergoterapeuta]]
 - [[beszed-es-nyelvterapeuta|beszéd- és nyelvterapeuta]]
 - [[betegapolo|betegápoló]]
 - [[audiologus|audiológus]]
-- [[fizioterapeuta|fizioterapeuta]]

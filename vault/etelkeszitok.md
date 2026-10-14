@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b4bff870-5c8f-4c33-b07f-f04d79830633
 label: ételkészítők
-level: 2
+level: 1
 track: individual
 branch: hospitality
 subBranch: food-service
@@ -25,7 +25,7 @@ lateral:
 
 # Ételkészítők
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Felszolgálás és bár  
 **ESCO:** [ételkészítők](http://data.europa.eu/esco/occupation/b4bff870-5c8f-4c33-b07f-f04d79830633) (5246.1)

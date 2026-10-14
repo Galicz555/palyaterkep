@@ -37,7 +37,7 @@ lateral:
   - "[[szeszipari-italdesztillalo]]"
   - "[[kemenyito-kivonasaert-felelos-operator]]"
   - "[[kemenyito-konvertalas-kezelo]]"
-  - "[[szivar-markajelzeset-vegzo-szakmunkas]]"
+  - "[[szaritasi-tevekenyseget-vegzo-dolgozo]]"
 ---
 
 # Molnár
@@ -83,4 +83,4 @@ A molnárok malmokat szolgálnak ki gabona őrölésével liszt előállításá
 - [[szeszipari-italdesztillalo|szeszipari italdesztilláló]]
 - [[kemenyito-kivonasaert-felelos-operator|keményítő kivonásáért felelős operátor]]
 - [[kemenyito-konvertalas-kezelo|keményítő konvertálás kezelő]]
-- [[szivar-markajelzeset-vegzo-szakmunkas|szivar márkajelzését végző szakmunkás]]
+- [[szaritasi-tevekenyseget-vegzo-dolgozo|szárítási tevékenységet végző dolgozó]]

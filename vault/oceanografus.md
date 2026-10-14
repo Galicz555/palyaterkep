@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/4b759f0e-8fec-4cf5-80d4-d112a9fd4e51
 label: oceanográfus
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: physical-sciences
@@ -60,7 +60,7 @@ lateral:
 
 # Oceanográfus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Fizika, kémia és földtudományok  
 **ESCO:** [oceanográfus](http://data.europa.eu/esco/occupation/4b759f0e-8fec-4cf5-80d4-d112a9fd4e51) (2114.1.8)

@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/2ad52381-6adb-4262-b17c-ea7fcb3b6696
 label: hal, rák és kagyló disztribúciós vezető
 level: 3
-track: individual
+track: management
 branch: trade
 subBranch: wholesale
 skills:
@@ -44,7 +44,7 @@ lateral:
 
 # Hal, rák és kagyló disztribúciós vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Nagykereskedelem és import-export  
 **ESCO:** [hal, rák és kagyló disztribúciós vezető](http://data.europa.eu/esco/occupation/2ad52381-6adb-4262-b17c-ea7fcb3b6696) (1324.3.1.6.12)

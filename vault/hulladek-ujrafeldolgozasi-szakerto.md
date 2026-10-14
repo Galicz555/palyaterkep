@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7a523273-9fff-4f11-beb6-110eeaec1436
 label: hulladék-újrafeldolgozási szakértő
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: environment
@@ -36,7 +36,7 @@ lateral:
 
 # Hulladék-újrafeldolgozási szakértő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Környezetvédelem  
 **ESCO:** [hulladék-újrafeldolgozási szakértő](http://data.europa.eu/esco/occupation/7a523273-9fff-4f11-beb6-110eeaec1436) (2143.1.3)

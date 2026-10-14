@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/b95bdbed-1e7e-482a-aa73-7bdbb3e36358
 label: befektetésialap-kezelő
 level: 4
-track: management
+track: individual
 branch: business
 subBranch: investment
 skills:
@@ -48,7 +48,7 @@ lateral:
 
 # Befektetésialap-kezelő
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Befektetés és pénzügyi elemzés  
 **ESCO:** [befektetésialap-kezelő](http://data.europa.eu/esco/occupation/b95bdbed-1e7e-482a-aa73-7bdbb3e36358) (2412.7)

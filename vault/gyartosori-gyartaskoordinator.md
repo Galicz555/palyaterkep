@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/187f063b-1002-4d46-9b79-c46b2caedbb3
 label: gyártósori gyártáskoordinátor
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: production-management
@@ -27,7 +27,7 @@ lateral:
 
 # Gyártósori gyártáskoordinátor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Gyártásirányítás  
 **ESCO:** [gyártósori gyártáskoordinátor](http://data.europa.eu/esco/occupation/187f063b-1002-4d46-9b79-c46b2caedbb3) (4322.1)

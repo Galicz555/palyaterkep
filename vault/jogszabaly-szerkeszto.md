@@ -19,7 +19,6 @@ skills:
   - http://data.europa.eu/esco/skill/efb523d0-c998-440d-8639-cd14ba841c4c
 lateral:
   - "[[szenator]]"
-  - "[[parlamenti-kepviselo]]"
 ---
 
 # Jogszabály-szerkesztő
@@ -47,4 +46,3 @@ A jogszabályfogalmazók jogszabályokat kutatnak és szerkesztenek annak érdek
 ## Váltások
 
 - [[szenator|szenátor]]
-- [[parlamenti-kepviselo|parlamenti képviselő]]

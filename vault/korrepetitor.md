@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d23fbcdc-d5e9-4724-a83f-99a0cfa8adb0
 label: korrepetitor
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: performing-arts
@@ -46,7 +46,7 @@ lateral:
 
 # Korrepetitor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Előadó-művészet  
 **ESCO:** [korrepetitor](http://data.europa.eu/esco/occupation/d23fbcdc-d5e9-4724-a83f-99a0cfa8adb0) (2652.4)

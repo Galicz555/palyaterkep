@@ -45,8 +45,8 @@ lateral:
   - "[[zoldseg-gyumolcs-elado]]"
   - "[[halbolti-elado]]"
   - "[[hus-es-hentesaru-elado]]"
+  - "[[gyogyaszatisegedeszkoz-elado]]"
   - "[[textilbolti-elado]]"
-  - "[[szorakoztato-elektronikai-szakuzleti-elado]]"
 ---
 
 # Édességbolti eladó
@@ -100,5 +100,5 @@ Az édességbolti eladók édességeket értékesítenek szaküzletekben.
 - [[zoldseg-gyumolcs-elado|zöldség-gyümölcs eladó]]
 - [[halbolti-elado|halbolti eladó]]
 - [[hus-es-hentesaru-elado|hús- és hentesáru-eladó]]
+- [[gyogyaszatisegedeszkoz-elado|gyógyászatisegédeszköz-eladó]]
 - [[textilbolti-elado|textilbolti eladó]]
-- [[szorakoztato-elektronikai-szakuzleti-elado|szórakoztató elektronikai szaküzleti eladó]]

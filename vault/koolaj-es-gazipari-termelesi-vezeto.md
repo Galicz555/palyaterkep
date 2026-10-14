@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0633ec3f-91f1-4038-bc29-e0ec4cd7f1e9
 label: kőolaj- és gázipari termelési vezető
-level: 4
+level: 3
 track: management
 branch: industry
 subBranch: mining
@@ -31,12 +31,13 @@ skills:
 lateral:
   - "[[banyaszati-termelesi-vezeto]]"
   - "[[banyavezeto]]"
+  - "[[gazfeldolgozo-uzemi-kozponti-iranyitotermi-operator]]"
   - "[[muszakvezeto-koolaj-finomitoban]]"
 ---
 
 # Kőolaj- és gázipari termelési vezető
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Bányászat és ásványi termékek  
 **ESCO:** [kőolaj- és gázipari termelési vezető](http://data.europa.eu/esco/occupation/0633ec3f-91f1-4038-bc29-e0ec4cd7f1e9) (1322.1.2)
@@ -71,4 +72,5 @@ A kőolaj- és gázipari termelési vezetők koordinálják és végrehajtják a
 
 - [[banyaszati-termelesi-vezeto|bányászati termelési vezető]]
 - [[banyavezeto|bányavezető]]
+- [[gazfeldolgozo-uzemi-kozponti-iranyitotermi-operator|gázfeldolgozó-üzemi központi irányítótermi operátor]]
 - [[muszakvezeto-koolaj-finomitoban|műszakvezető kőolaj-finomítóban]]

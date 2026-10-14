@@ -20,8 +20,8 @@ lateral:
   - "[[bordiszmu-osszeallito]]"
   - "[[timar]]"
   - "[[borfeldolgozo-ipari-utomunkalati-technikus]]"
-  - "[[automata-cipoalkatreszvago-gep-kezeloje]]"
   - "[[boripari-szabasz]]"
+  - "[[bortermek-csomagolo]]"
 ---
 
 # Bőripari szabásminta-készítő
@@ -50,5 +50,5 @@ A bőripari szabásminta-készítők kézi és szerszámgépek felhasználásáv
 - [[bordiszmu-osszeallito|bőrdíszmű-összeállító]]
 - [[timar|tímár]]
 - [[borfeldolgozo-ipari-utomunkalati-technikus|bőrfeldolgozó-ipari utómunkálati technikus]]
-- [[automata-cipoalkatreszvago-gep-kezeloje|automata cipőalkatrészvágó gép kezelője]]
 - [[boripari-szabasz|bőripari szabász]]
+- [[bortermek-csomagolo|bőrtermék-csomagoló]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1c5a45b9-440e-4726-b565-16a952abd341
 label: számítástechnikai vizualizációs mérnök
-level: 3
+level: 2
 track: individual
 branch: it
 subBranch: systems-analysis
@@ -46,7 +46,7 @@ lateral:
 
 # Számítástechnikai vizualizációs mérnök
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Rendszerelemzés, architektúra és adat  
 **ESCO:** [számítástechnikai vizualizációs mérnök](http://data.europa.eu/esco/occupation/1c5a45b9-440e-4726-b565-16a952abd341) (2511.2)

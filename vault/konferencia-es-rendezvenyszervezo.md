@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1b38a27d-ef98-4d9f-b1b2-8c109bf47e79
 label: konferencia- és rendezvényszervező
-level: 2
-track: individual
+level: 3
+track: management
 branch: hospitality
 subBranch: tourism-events
 skills:
@@ -27,14 +27,13 @@ skills:
   - http://data.europa.eu/esco/skill/c72d6c85-9eeb-4584-ba1c-262581eeb741
   - http://data.europa.eu/esco/skill/c73ea1b8-e121-4f91-b8f0-dee4ee28d6ec
 lateral:
-  - "[[konferencia-es-rendezvenyszervezo-asszisztens]]"
   - "[[promoter]]"
   - "[[eskuvoszervezo]]"
 ---
 
 # Konferencia- és rendezvényszervező
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Turizmus, utazás és rendezvényszervezés  
 **ESCO:** [konferencia- és rendezvényszervező](http://data.europa.eu/esco/occupation/1b38a27d-ef98-4d9f-b1b2-8c109bf47e79) (3332.2)
@@ -66,6 +65,5 @@ A rendezvények minden szakaszát megszervezik az előirányzott költségvetés
 
 ## Váltások
 
-- [[konferencia-es-rendezvenyszervezo-asszisztens|konferencia- és rendezvényszervező-asszisztens]]
 - [[promoter|promóter]]
 - [[eskuvoszervezo|esküvőszervező]]

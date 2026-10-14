@@ -56,7 +56,7 @@ skills:
 lateral:
   - "[[latszeresz]]"
   - "[[ortoptikus]]"
-  - "[[vezeto-fizioterapeuta]]"
+  - "[[audiologus]]"
   - "[[fogaszati-asszisztens]]"
   - "[[szakapolo]]"
   - "[[fogorvos]]"
@@ -124,7 +124,7 @@ Az optometristák a szemet vizsgálják és tesztelik rendellenességeket, vizu�
 
 - [[latszeresz|látszerész]]
 - [[ortoptikus|ortoptikus]]
-- [[vezeto-fizioterapeuta|vezető fizioterapeuta]]
+- [[audiologus|audiológus]]
 - [[fogaszati-asszisztens|fogászati asszisztens]]
 - [[szakapolo|szakápoló]]
 - [[fogorvos|fogorvos]]

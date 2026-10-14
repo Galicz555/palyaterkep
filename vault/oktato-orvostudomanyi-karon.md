@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0bf5d25a-2b4d-43b5-b053-beeb210fa43a
 label: oktató orvostudományi karon
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -49,7 +49,7 @@ lateral:
 
 # Oktató orvostudományi karon
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [oktató orvostudományi karon](http://data.europa.eu/esco/occupation/0bf5d25a-2b4d-43b5-b053-beeb210fa43a) (2310.1.25)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/daa6197d-dba6-49b5-8223-b31b7a126e4e
 label: viaszfehérítő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: chemicals
@@ -24,7 +24,7 @@ lateral: []
 
 # Viaszfehérítő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [viaszfehérítő](http://data.europa.eu/esco/occupation/daa6197d-dba6-49b5-8223-b31b7a126e4e) (8131.21)

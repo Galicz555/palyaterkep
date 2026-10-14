@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/837502a6-57d9-4df4-903a-8a67dd53927f
 label: fedélzeti gépkezelő
-level: 1
+level: 2
 track: individual
 branch: transport
 subBranch: water
@@ -34,6 +34,7 @@ skills:
   - http://data.europa.eu/esco/skill/ed938748-60ae-4964-a657-ff2685ecc0d0
   - http://data.europa.eu/esco/skill/f5fa2654-52cc-45d2-ac92-ac979dee5d12
 lateral:
+  - "[[hajogepesz]]"
   - "[[hajozasi-geptiszt]]"
   - "[[masodgeptiszt]]"
   - "[[fedelzetmester]]"
@@ -41,7 +42,7 @@ lateral:
 
 # Fedélzeti gépkezelő
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Vízi közlekedés  
 **ESCO:** [fedélzeti gépkezelő](http://data.europa.eu/esco/occupation/837502a6-57d9-4df4-903a-8a67dd53927f) (8350.3)
@@ -79,6 +80,7 @@ A fedélzeti gépkezelők belvízi szállítóhajók fedélzeti osztályához ka
 
 ## Váltások
 
+- [[hajogepesz|hajógépész]]
 - [[hajozasi-geptiszt|hajózási géptiszt]]
 - [[masodgeptiszt|másodgéptiszt]]
 - [[fedelzetmester|fedélzetmester]]

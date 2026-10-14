@@ -25,6 +25,7 @@ skills:
 lateral:
   - "[[banyagepeszmernok]]"
   - "[[banyaszati-geotechnologiai-mernok]]"
+  - "[[banyaszati-tervezomernok]]"
 ---
 
 # Bányamérnök
@@ -58,3 +59,4 @@ A bányamérnökök azt elemzik, hogy a kitermelési módszerek, mint a kitermel
 
 - [[banyagepeszmernok|bányagépészmérnök]]
 - [[banyaszati-geotechnologiai-mernok|bányászati geotechnológiai mérnök]]
+- [[banyaszati-tervezomernok|bányászati tervezőmérnök]]

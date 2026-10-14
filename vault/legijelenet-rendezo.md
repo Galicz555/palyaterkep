@@ -56,12 +56,12 @@ skills:
   - http://data.europa.eu/esco/skill/fafbb75f-ec35-4cc2-996a-20c85ef6c266
   - http://data.europa.eu/esco/skill/fcc0a1c8-d36e-4f8e-b928-00d5bca10a47
 lateral:
+  - "[[smink-es-frizuratervezo]]"
   - "[[szinhazi-ugyelo]]"
   - "[[videotervezo]]"
+  - "[[magasepito-tartoszerkezet-szerelo]]"
   - "[[szinhazi-workshop-vezetoje]]"
   - "[[kellekes]]"
-  - "[[mediaintegracios-technikus]]"
-  - "[[sminkmester]]"
 ---
 
 # Légijelenet-rendező
@@ -126,9 +126,9 @@ A légijelenet-rendezők egy-egy előadáshoz emberi repülési effekteket terve
 
 ## Váltások
 
+- [[smink-es-frizuratervezo|smink- és frizuratervező]]
 - [[szinhazi-ugyelo|színházi ügyelő]]
 - [[videotervezo|videotervező]]
+- [[magasepito-tartoszerkezet-szerelo|magasépítő tartószerkezet-szerelő]]
 - [[szinhazi-workshop-vezetoje|színházi workshop vezetője]]
 - [[kellekes|kellékes]]
-- [[mediaintegracios-technikus|médiaintegrációs technikus]]
-- [[sminkmester|sminkmester]]

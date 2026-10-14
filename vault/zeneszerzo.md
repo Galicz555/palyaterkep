@@ -25,7 +25,6 @@ skills:
   - http://data.europa.eu/esco/skill/e3840f20-1928-4d07-944c-d2dd2ae5cbba
 lateral:
   - "[[zenei-rendezo]]"
-  - "[[zenei-igazgato]]"
 ---
 
 # Zeneszerző
@@ -59,4 +58,3 @@ A zeneszerzők új zenei alkotásokat hoznak létre különböző stílusokban. 
 ## Váltások
 
 - [[zenei-rendezo|zenei rendező]]
-- [[zenei-igazgato|zenei igazgató]]

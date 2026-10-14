@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/68ffc53b-6067-4fe7-bd85-c96f4a6c1e45
 label: élelmiszer biotechnológus
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -63,7 +63,7 @@ lateral:
 
 # Élelmiszer biotechnológus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [élelmiszer biotechnológus](http://data.europa.eu/esco/occupation/68ffc53b-6067-4fe7-bd85-c96f4a6c1e45) (2131.5)

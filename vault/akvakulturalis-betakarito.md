@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/fbf23c18-d9a3-4349-83dc-2bc39948bdf7
 label: akvakulturális betakarító
-level: 2
+level: 1
 track: individual
 branch: agriculture
 subBranch: fishing
@@ -33,13 +33,12 @@ lateral:
   - "[[lehalaszasi-akvakultura-technikus]]"
   - "[[tenyesztesi-akvakultura-munkas]]"
   - "[[nyilt-vizi-akvakulturas-alkalmazott]]"
-  - "[[akvakultura-betakaritasi-menedzser]]"
   - "[[keltetesi-akvakultura-dolgozo]]"
 ---
 
 # Akvakulturális betakarító
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Halászat és halgazdálkodás  
 **ESCO:** [akvakulturális betakarító](http://data.europa.eu/esco/occupation/fbf23c18-d9a3-4349-83dc-2bc39948bdf7) (9216.2)
@@ -76,5 +75,4 @@ Az akvakulturális betakarítók a szárazföldi termelési folyamatokban tenyé
 - [[lehalaszasi-akvakultura-technikus|lehalászási akvakultúra-technikus]]
 - [[tenyesztesi-akvakultura-munkas|tenyésztési akvakultúra-munkás]]
 - [[nyilt-vizi-akvakulturas-alkalmazott|nyílt vízi akvakultúrás alkalmazott]]
-- [[akvakultura-betakaritasi-menedzser|akvakultúra-betakarítási menedzser]]
 - [[keltetesi-akvakultura-dolgozo|keltetési akvakultúra-dolgozó]]

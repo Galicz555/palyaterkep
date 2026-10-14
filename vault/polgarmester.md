@@ -19,11 +19,11 @@ skills:
   - http://data.europa.eu/esco/skill/d39022ab-d102-4720-b689-540d6f056b17
   - http://data.europa.eu/esco/skill/f78d5c04-a440-4068-90c2-fab03409a911
 lateral:
+  - "[[onkormanyzati-kepviselo]]"
   - "[[tartomanyi-kormanyzo]]"
   - "[[igazgatasszervezo]]"
   - "[[nagykovet]]"
   - "[[miniszter]]"
-  - "[[kozossegfejlesztesi-szakerto]]"
   - "[[tarsadalombiztositasi-adminisztrator]]"
 ---
 
@@ -52,9 +52,9 @@ A polgármesterek a joghatóságuk alá tartozó tanácsi ülések elnöki poszt
 
 ## Váltások
 
+- [[onkormanyzati-kepviselo|önkormányzati képviselő]]
 - [[tartomanyi-kormanyzo|tartományi kormányzó]]
 - [[igazgatasszervezo|igazgatásszervező]]
 - [[nagykovet|nagykövet]]
 - [[miniszter|miniszter]]
-- [[kozossegfejlesztesi-szakerto|közösségfejlesztési szakértő]]
 - [[tarsadalombiztositasi-adminisztrator|társadalombiztosítási adminisztrátor]]

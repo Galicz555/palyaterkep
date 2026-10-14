@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/45a28fe1-30a4-4175-af19-e451ada60858
 label: hitelszövetkezet vezetője
-level: 3
+level: 4
 track: management
 branch: business
 subBranch: banking
@@ -42,7 +42,7 @@ lateral:
 
 # Hitelszövetkezet vezetője
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Banki szolgáltatások  
 **ESCO:** [hitelszövetkezet vezetője](http://data.europa.eu/esco/occupation/45a28fe1-30a4-4175-af19-e451ada60858) (1346.3)

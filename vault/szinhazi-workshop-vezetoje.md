@@ -38,6 +38,7 @@ skills:
 lateral:
   - "[[szinhazi-ugyelo]]"
   - "[[legijelenet-rendezo]]"
+  - "[[magasepito-tartoszerkezet-szerelo]]"
 ---
 
 # Színházi workshop vezetője
@@ -84,3 +85,4 @@ A színházi workshopok vezetői a színpadon használt elemeket összeállító
 
 - [[szinhazi-ugyelo|színházi ügyelő]]
 - [[legijelenet-rendezo|légijelenet-rendező]]
+- [[magasepito-tartoszerkezet-szerelo|magasépítő tartószerkezet-szerelő]]

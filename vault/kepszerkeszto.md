@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/72add02e-ae39-4dfb-8047-ced4c1a347f5
 label: képszerkesztő
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: journalism
@@ -32,12 +32,13 @@ skills:
 lateral:
   - "[[hirszerkeszto]]"
   - "[[magazinszerkeszto]]"
+  - "[[foszerkeszto]]"
   - "[[lapszerkeszto]]"
 ---
 
 # Képszerkesztő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Újságírás és műsorvezetés  
 **ESCO:** [képszerkesztő](http://data.europa.eu/esco/occupation/72add02e-ae39-4dfb-8047-ced4c1a347f5) (2642.1.14)
@@ -73,4 +74,5 @@ A képszerkesztők fényképeket és illusztrációkat választanak és hagynak 
 
 - [[hirszerkeszto|hírszerkesztő]]
 - [[magazinszerkeszto|magazinszerkesztő]]
+- [[foszerkeszto|főszerkesztő]]
 - [[lapszerkeszto|lapszerkesztő]]

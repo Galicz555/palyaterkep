@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b65133db-b3de-44d1-88fa-1d3deda08245
 label: jogi oktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -49,7 +49,7 @@ lateral:
 
 # Jogi oktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [jogi oktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/b65133db-b3de-44d1-88fa-1d3deda08245) (2310.1.22)

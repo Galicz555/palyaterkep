@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0f845e64-de8b-431e-9fe3-1bccf8e1c5b9
 label: gyógyszerellenőr
-level: 2
+level: 3
 track: individual
 branch: health-social
 subBranch: pharmacy
@@ -32,7 +32,7 @@ lateral: []
 
 # Gyógyszerellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Gyógyszerészet  
 **ESCO:** [gyógyszerellenőr](http://data.europa.eu/esco/occupation/0f845e64-de8b-431e-9fe3-1bccf8e1c5b9) (2262.1.1)

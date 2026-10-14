@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/1488589a-7b83-471d-b094-492f5616f4e0
 label: termékfejlesztési menedzser
 level: 3
-track: individual
+track: management
 branch: engineering
 subBranch: rnd-management
 skills:
@@ -32,7 +32,7 @@ lateral:
 
 # Termékfejlesztési menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Kutatás-fejlesztés és termékfejlesztés vezetése  
 **ESCO:** [termékfejlesztési menedzser](http://data.europa.eu/esco/occupation/1488589a-7b83-471d-b094-492f5616f4e0) (1223.2.1)

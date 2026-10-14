@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/c8ee6499-7613-4c02-9edf-2a0edcf47705
 label: repülésbiztonsági megbízott
 level: 3
-track: individual
+track: management
 branch: engineering
 subBranch: production-engineering
 skills:
@@ -30,7 +30,7 @@ lateral:
 
 # Repülésbiztonsági megbízott
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Ipari és gyártástechnológiai mérnöki terület  
 **ESCO:** [repülésbiztonsági megbízott](http://data.europa.eu/esco/occupation/c8ee6499-7613-4c02-9edf-2a0edcf47705) (3119.3)

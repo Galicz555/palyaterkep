@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/de99886e-59e3-432d-ba53-9652dbe378d6
 label: programfinanszírozási menedzser
-level: 3
-track: individual
+level: 4
+track: management
 branch: business
 subBranch: investment
 skills:
@@ -17,7 +17,7 @@ lateral: []
 
 # Programfinanszírozási menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Befektetés és pénzügyi elemzés  
 **ESCO:** [programfinanszírozási menedzser](http://data.europa.eu/esco/occupation/de99886e-59e3-432d-ba53-9652dbe378d6) (2412.9)

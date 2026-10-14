@@ -48,8 +48,6 @@ lateral:
   - "[[eloadomuveszeti-igazgato]]"
   - "[[kulturalis-kozpont-igazgatoja]]"
   - "[[kulturalis-letesitmeny-vezetoje]]"
-  - "[[rekreacios-kozpont-vezetoje]]"
-  - "[[allatkerti-kurator]]"
 ---
 
 # Művészeti igazgató
@@ -106,5 +104,3 @@ A művészeti igazgatók egy művészeti projekt vagy kulturális szervezet prog
 - [[eloadomuveszeti-igazgato|előadóművészeti igazgató]]
 - [[kulturalis-kozpont-igazgatoja|kulturális központ igazgatója]]
 - [[kulturalis-letesitmeny-vezetoje|kulturális létesítmény vezetője]]
-- [[rekreacios-kozpont-vezetoje|rekreációs központ vezetője]]
-- [[allatkerti-kurator|állatkerti kurátor]]

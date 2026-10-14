@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8188136d-df82-4910-91e1-b185ec17c3c9
 label: tejkezelő alapanyagátvevő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: food
@@ -40,7 +40,7 @@ lateral:
 
 # Tejkezelő alapanyagátvevő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [tejkezelő alapanyagátvevő](http://data.europa.eu/esco/occupation/8188136d-df82-4910-91e1-b185ec17c3c9) (7513.2)

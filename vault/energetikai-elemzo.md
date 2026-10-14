@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/cbde1a3a-406d-4d17-b30b-03981925035d
 label: energetikai elemző
-level: 2
+level: 3
 track: individual
 branch: construction
 subBranch: civil-engineering
@@ -45,7 +45,7 @@ lateral:
 
 # Energetikai elemző
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőmérnöki terület és műszaki ellenőrzés  
 **ESCO:** [energetikai elemző](http://data.europa.eu/esco/occupation/cbde1a3a-406d-4d17-b30b-03981925035d) (3112.5)

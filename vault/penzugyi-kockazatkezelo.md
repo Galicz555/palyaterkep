@@ -44,8 +44,8 @@ skills:
   - http://data.europa.eu/esco/skill/f60c9e52-95fc-4ca1-a73c-18a491153b63
 lateral:
   - "[[hitelkockazati-elemzo]]"
-  - "[[penzugyi-vezeto]]"
   - "[[vallalati-kockazatkezelo]]"
+  - "[[banki-termekmenedzser]]"
   - "[[gazdasagi-elemzo]]"
   - "[[vallalati-penzugyi-vezeto]]"
   - "[[allamhaztartasi-referens]]"
@@ -102,8 +102,8 @@ A pénzügyi kockázatkezelők azonosítják és értékelik a szervezetek eszk�
 ## Váltások
 
 - [[hitelkockazati-elemzo|hitelkockázati elemző]]
-- [[penzugyi-vezeto|pénzügyi vezető]]
 - [[vallalati-kockazatkezelo|vállalati kockázatkezelő]]
+- [[banki-termekmenedzser|banki termékmenedzser]]
 - [[gazdasagi-elemzo|gazdasági elemző]]
 - [[vallalati-penzugyi-vezeto|vállalati pénzügyi vezető]]
 - [[allamhaztartasi-referens|államháztartási referens]]

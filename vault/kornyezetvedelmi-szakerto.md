@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a7358961-46d4-4715-ac1e-6148fd042510
 label: környezetvédelmi szakértő
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: environment
@@ -43,12 +43,12 @@ lateral:
   - "[[vizi-elohelyi-kornyezetmernok]]"
   - "[[kornyezetvedelmi-technikus]]"
   - "[[kornyezetmernok]]"
-  - "[[ikt-kornyezetvedelmi-menedzser]]"
+  - "[[legszennyezettseg-elemzo]]"
 ---
 
 # Környezetvédelmi szakértő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Környezetvédelem  
 **ESCO:** [környezetvédelmi szakértő](http://data.europa.eu/esco/occupation/a7358961-46d4-4715-ac1e-6148fd042510) (2143.2)
@@ -95,4 +95,4 @@ A környezetvédelmi szakértők technológiai megoldásokat keresnek a környez
 - [[vizi-elohelyi-kornyezetmernok|vízi élőhelyi környezetmérnök]]
 - [[kornyezetvedelmi-technikus|környezetvédelmi technikus]]
 - [[kornyezetmernok|környezetmérnök]]
-- [[ikt-kornyezetvedelmi-menedzser|IKT környezetvédelmi menedzser]]
+- [[legszennyezettseg-elemzo|légszennyezettség-elemző]]

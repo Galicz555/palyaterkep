@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d3de3205-dd5c-4112-86bc-161e41cd77a5
 label: szivarellenőr
-level: 1
+level: 2
 track: individual
 branch: industry
 subBranch: quality-control
@@ -40,7 +40,7 @@ lateral:
 
 # Szivarellenőr
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Minőségellenőrzés  
 **ESCO:** [szivarellenőr](http://data.europa.eu/esco/occupation/d3de3205-dd5c-4112-86bc-161e41cd77a5) (7543.10.1)

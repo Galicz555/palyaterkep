@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8d765d88-c8d6-406e-8dfe-e37c5aa89be6
 label: fúrómunkás
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: mining
@@ -24,7 +24,7 @@ lateral: []
 
 # Fúrómunkás
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Bányászat és ásványi termékek  
 **ESCO:** [fúrómunkás](http://data.europa.eu/esco/occupation/8d765d88-c8d6-406e-8dfe-e37c5aa89be6) (8113.5)

@@ -25,6 +25,7 @@ skills:
   - http://data.europa.eu/esco/skill/e8cb0cff-c577-4395-8369-6bd469caff24
   - http://data.europa.eu/esco/skill/fd446407-b08e-49da-b8e3-7e7c79618c3f
 lateral:
+  - "[[tuzvedelmi-felugyelo]]"
   - "[[tuzoltoparancsnok-1349-7]]"
 ---
 
@@ -59,4 +60,5 @@ A tűzoltóparancsnokok felügyelik a tűzoltóság tevékenységét, biztosítv
 
 ## Váltások
 
+- [[tuzvedelmi-felugyelo|tűzvédelmi felügyelő]]
 - [[tuzoltoparancsnok-1349-7|tűzoltóparancsnok]]

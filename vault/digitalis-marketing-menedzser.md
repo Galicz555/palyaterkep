@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/dc97adbe-f807-4ad8-8f3c-c24b3416cdef
 label: digitális marketing menedzser
 level: 3
-track: individual
+track: management
 branch: trade
 subBranch: marketing
 skills:
@@ -47,7 +47,7 @@ lateral:
 
 # Digitális marketing menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Értékesítési vezetés és marketing  
 **ESCO:** [digitális marketing menedzser](http://data.europa.eu/esco/occupation/dc97adbe-f807-4ad8-8f3c-c24b3416cdef) (1221.5)

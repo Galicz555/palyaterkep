@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/1c85eee2-a8ca-4750-a889-10a3e6c17b80
 label: uniós alapok kezelője
 level: 3
-track: individual
+track: management
 branch: public
 subBranch: policy
 skills:
@@ -47,7 +47,7 @@ lateral: []
 
 # Uniós alapok kezelője
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Közpolitika és közigazgatás  
 **ESCO:** [uniós alapok kezelője](http://data.europa.eu/esco/occupation/1c85eee2-a8ca-4750-a889-10a3e6c17b80) (1213.6)

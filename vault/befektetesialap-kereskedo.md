@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c9839843-6cac-4564-8aa7-de4a5b9b62e1
 label: befektetésialap-kereskedő
-level: 2
+level: 3
 track: individual
 branch: business
 subBranch: investment
@@ -35,7 +35,7 @@ lateral:
 
 # Befektetésialap-kereskedő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Befektetés és pénzügyi elemzés  
 **ESCO:** [befektetésialap-kereskedő](http://data.europa.eu/esco/occupation/c9839843-6cac-4564-8aa7-de4a5b9b62e1) (3311.2.3)

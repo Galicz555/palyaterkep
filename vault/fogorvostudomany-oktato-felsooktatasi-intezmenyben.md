@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3d7a1284-824c-47d9-8387-b8e1cd5888b5
 label: fogorvostudomány-oktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -52,7 +52,7 @@ lateral:
 
 # Fogorvostudomány-oktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [fogorvostudomány-oktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/3d7a1284-824c-47d9-8387-b8e1cd5888b5) (2310.1.12)

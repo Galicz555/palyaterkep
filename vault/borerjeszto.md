@@ -27,7 +27,6 @@ skills:
 lateral:
   - "[[borasz]]"
   - "[[almabor-erjesztesevel-foglalkozo-szakember]]"
-  - "[[almabor-keszito-mester]]"
   - "[[vermutgyarto]]"
   - "[[sor-sommelier]]"
 ---
@@ -65,6 +64,5 @@ A borerjesztők zúzott gyümölcs vagy must erjesztésével bort előállító 
 
 - [[borasz|borász]]
 - [[almabor-erjesztesevel-foglalkozo-szakember|almabor erjesztésével foglalkozó szakember]]
-- [[almabor-keszito-mester|almabor készítő mester]]
 - [[vermutgyarto|vermutgyártó]]
 - [[sor-sommelier|sör sommelier]]

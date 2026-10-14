@@ -39,6 +39,7 @@ skills:
 lateral:
   - "[[legiutaskisero-oktato]]"
   - "[[legiforgalmi-iranyito]]"
+  - "[[legiforgalmi-pilota]]"
 ---
 
 # Légiforgalmiirányító-oktató
@@ -86,3 +87,4 @@ A légiforgalmiirányító-oktatók képzést biztosítanak a léginavigációs 
 
 - [[legiutaskisero-oktato|légiutaskísérő-oktató]]
 - [[legiforgalmi-iranyito|légiforgalmi irányító]]
+- [[legiforgalmi-pilota|légiforgalmi pilóta]]

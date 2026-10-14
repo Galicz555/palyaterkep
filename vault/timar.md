@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1d188cae-90e9-4950-9666-3e1a9500de50
 label: tímár
-level: 1
+level: 2
 track: individual
 branch: industry
 subBranch: textiles
@@ -23,7 +23,7 @@ lateral:
 
 # Tímár
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Textil-, ruha- és bőripar  
 **ESCO:** [tímár](http://data.europa.eu/esco/occupation/1d188cae-90e9-4950-9666-3e1a9500de50) (7536.1.2)

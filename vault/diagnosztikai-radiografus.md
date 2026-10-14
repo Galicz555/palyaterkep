@@ -66,7 +66,6 @@ lateral:
   - "[[nuklearismedicina-radiografus]]"
   - "[[radiografus]]"
   - "[[sugarterapeuta]]"
-  - "[[orvosfizikai-szakerto]]"
   - "[[legzesfunkcios-asszisztens]]"
   - "[[klinikai-perfuzios-asszisztens]]"
 ---
@@ -143,6 +142,5 @@ A diagnosztikai radiográfusok diagnosztikai képalkotó vizsgálatokat és utó
 - [[nuklearismedicina-radiografus|nukleárismedicina-radiográfus]]
 - [[radiografus|radiográfus]]
 - [[sugarterapeuta|sugárterapeuta]]
-- [[orvosfizikai-szakerto|orvosfizikai szakértő]]
 - [[legzesfunkcios-asszisztens|légzésfunkciós asszisztens]]
 - [[klinikai-perfuzios-asszisztens|klinikai perfúziós asszisztens]]

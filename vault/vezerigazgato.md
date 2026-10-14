@@ -39,7 +39,6 @@ skills:
 lateral:
   - "[[ugyvezeto-igazgato]]"
   - "[[cegvezeto]]"
-  - "[[fioktelep-vezeto]]"
   - "[[strategiai-tervezesi-vezeto]]"
 ---
 
@@ -88,5 +87,4 @@ A vezérigazgatók egy társasági struktúrában a legmagasabb rangú vezető t
 
 - [[ugyvezeto-igazgato|ügyvezető igazgató]]
 - [[cegvezeto|cégvezető]]
-- [[fioktelep-vezeto|fióktelep-vezető]]
 - [[strategiai-tervezesi-vezeto|stratégiai tervezési vezető]]

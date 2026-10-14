@@ -22,9 +22,9 @@ lateral:
   - "[[cipokikeszito-es-csomagolo]]"
   - "[[cipo-osszeallitasi-muvezeto]]"
   - "[[cipoipari-technikus]]"
-  - "[[cipovarro]]"
+  - "[[egyedi-cipokeszito]]"
   - "[[cipominta-keszito]]"
-  - "[[bortermekgyarto-gepkezelo]]"
+  - "[[vagogepkezelo]]"
 ---
 
 # Cipőgyártó gép kezelője
@@ -55,6 +55,6 @@ A cipőgyártó gépek kezelői a cipőgyártás területén speciális gépeket
 - [[cipokikeszito-es-csomagolo|cipőkikészítő és -csomagoló]]
 - [[cipo-osszeallitasi-muvezeto|cipő-összeállítási művezető]]
 - [[cipoipari-technikus|cipőipari technikus]]
-- [[cipovarro|cipővarró]]
+- [[egyedi-cipokeszito|egyedi cipőkészítő]]
 - [[cipominta-keszito|cipőminta-készítő]]
-- [[bortermekgyarto-gepkezelo|bőrtermékgyártó gépkezelő]]
+- [[vagogepkezelo|vágógépkezelő]]

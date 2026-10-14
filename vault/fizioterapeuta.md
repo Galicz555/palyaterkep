@@ -98,12 +98,12 @@ skills:
   - http://data.europa.eu/esco/skill/f9f258e3-4728-4107-9e08-293d5d2ef65e
   - http://data.europa.eu/esco/skill/fd02e17b-05ea-4449-963d-95273199159d
 lateral:
-  - "[[vezeto-fizioterapeuta]]"
-  - "[[szakkiropraktor]]"
   - "[[fizioterapias-asszisztens]]"
   - "[[ergoterapeuta]]"
+  - "[[beszed-es-nyelvterapeuta]]"
   - "[[betegapolo]]"
-  - "[[dietetikus]]"
+  - "[[fogorvos]]"
+  - "[[egeszsegpszichologus]]"
 ---
 
 # Fizioterapeuta
@@ -210,9 +210,9 @@ A fizioterapeuták autonóm egészségügyi szakemberek, akik a motoros funkció
 
 ## Váltások
 
-- [[vezeto-fizioterapeuta|vezető fizioterapeuta]]
-- [[szakkiropraktor|szakkiropraktőr]]
 - [[fizioterapias-asszisztens|fizioterápiás asszisztens]]
 - [[ergoterapeuta|ergoterapeuta]]
+- [[beszed-es-nyelvterapeuta|beszéd- és nyelvterapeuta]]
 - [[betegapolo|betegápoló]]
-- [[dietetikus|dietetikus]]
+- [[fogorvos|fogorvos]]
+- [[egeszsegpszichologus|egészségpszichológus]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/5684182e-7b4c-4eea-97d9-4c2b88b9f906
 label: hajókarbantartó
-level: 2
+level: 1
 track: individual
 branch: transport
 subBranch: water
@@ -41,7 +41,7 @@ lateral:
 
 # Hajókarbantartó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Vízi közlekedés  
 **ESCO:** [hajókarbantartó](http://data.europa.eu/esco/occupation/5684182e-7b4c-4eea-97d9-4c2b88b9f906) (8350.7)

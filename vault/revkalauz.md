@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1ff5cf0d-e81f-4287-ba00-096816b16777
 label: révkalauz
-level: 3
+level: 4
 track: individual
 branch: transport
 subBranch: water
@@ -33,7 +33,7 @@ lateral: []
 
 # Révkalauz
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Vízi közlekedés  
 **ESCO:** [révkalauz](http://data.europa.eu/esco/occupation/1ff5cf0d-e81f-4287-ba00-096816b16777) (3152.3)

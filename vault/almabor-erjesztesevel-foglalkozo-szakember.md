@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e3713dd7-572d-4c6c-87ec-1944b3572175
 label: almabor erjesztésével foglalkozó szakember
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: food
@@ -33,7 +33,7 @@ lateral:
 
 # Almabor erjesztésével foglalkozó szakember
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [almabor erjesztésével foglalkozó szakember](http://data.europa.eu/esco/occupation/e3713dd7-572d-4c6c-87ec-1944b3572175) (8160.17)

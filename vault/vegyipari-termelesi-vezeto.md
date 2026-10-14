@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0d21a30d-25d9-427b-b8e4-339408425ff5
 label: vegyipari termelési vezető
-level: 4
+level: 3
 track: management
 branch: industry
 subBranch: production-management
@@ -43,12 +43,13 @@ skills:
   - http://data.europa.eu/esco/skill/fb39ea51-74e5-4f05-bf6c-ff2c05dac89c
 lateral:
   - "[[vegyi-uzem-vezetoje]]"
+  - "[[vegyipari-feldolgozo-berendezes-kezeloje]]"
   - "[[ipari-termelesi-vezeto]]"
 ---
 
 # Vegyipari termelési vezető
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Gyártásirányítás  
 **ESCO:** [vegyipari termelési vezető](http://data.europa.eu/esco/occupation/0d21a30d-25d9-427b-b8e4-339408425ff5) (1321.2.1.1)
@@ -95,4 +96,5 @@ A vegyipari termelési vezetők vegyipari folyamatok technikai koordinációjá�
 ## Váltások
 
 - [[vegyi-uzem-vezetoje|vegyi üzem vezetője]]
+- [[vegyipari-feldolgozo-berendezes-kezeloje|vegyipari feldolgozó berendezés kezelője]]
 - [[ipari-termelesi-vezeto|ipari termelési vezető]]

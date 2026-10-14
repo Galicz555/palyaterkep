@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/5ff7a990-a306-40c2-9224-b2bf7f15b2f9
 label: zenei producer
-level: 3
-track: individual
+level: 4
+track: management
 branch: culture
 subBranch: stage-film
 skills:
@@ -28,12 +28,11 @@ lateral:
   - "[[producer]]"
   - "[[radioproducer]]"
   - "[[konyvkiado]]"
-  - "[[zenei-rendezo]]"
 ---
 
 # Zenei producer
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Színház-, film- és műsorgyártás  
 **ESCO:** [zenei producer](http://data.europa.eu/esco/occupation/5ff7a990-a306-40c2-9224-b2bf7f15b2f9) (2654.3.1)
@@ -65,4 +64,3 @@ A zenei producerek feladata a kiadásra szánt zene megszerzése. Zeneszámok de
 - [[producer|producer]]
 - [[radioproducer|rádióproducer]]
 - [[konyvkiado|könyvkiadó]]
-- [[zenei-rendezo|zenei rendező]]

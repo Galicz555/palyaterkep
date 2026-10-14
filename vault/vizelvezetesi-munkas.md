@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/fb18dfef-2b90-4219-8b39-a5fcddb8f238
 label: vízelvezetési munkás
-level: 2
+level: 1
 track: individual
 branch: construction
 subBranch: plant-labour
@@ -37,7 +37,7 @@ lateral:
 
 # Vízelvezetési munkás
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőgépek és segédmunka  
 **ESCO:** [vízelvezetési munkás](http://data.europa.eu/esco/occupation/fb18dfef-2b90-4219-8b39-a5fcddb8f238) (9312.1.1)

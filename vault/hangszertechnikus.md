@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/72f4abfe-5337-49be-b9b8-32096fc2ca1f
 label: hangszertechnikus
-level: 3
+level: 2
 track: individual
 branch: industry
 subBranch: crafts
@@ -34,17 +34,17 @@ skills:
   - http://data.europa.eu/esco/skill/f16238ba-b135-4fa5-806d-89d513ad35e1
   - http://data.europa.eu/esco/skill/f32eb5de-3fc7-4bba-853a-c6f2f043c33e
 lateral:
+  - "[[tartoszerkezetek-terepszinti-elemeinek-szereloje]]"
   - "[[szinhazi-oltozteto]]"
   - "[[kellekes]]"
   - "[[szinpadi-fodrasz]]"
   - "[[magasepito-tartoszerkezet-szerelo]]"
   - "[[rendezvenyi-villamoshalozat-szerelo]]"
-  - "[[vilagitastechnikus]]"
 ---
 
 # Hangszertechnikus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [hangszertechnikus](http://data.europa.eu/esco/occupation/72f4abfe-5337-49be-b9b8-32096fc2ca1f) (7312.2)
@@ -83,9 +83,9 @@ A hangszertechnikus segítik a zenészeket fellépés előtt, alatt és után, h
 
 ## Váltások
 
+- [[tartoszerkezetek-terepszinti-elemeinek-szereloje|tartószerkezetek terepszinti elemeinek szerelője]]
 - [[szinhazi-oltozteto|színházi öltöztető]]
 - [[kellekes|kellékes]]
 - [[szinpadi-fodrasz|színpadi fodrász]]
 - [[magasepito-tartoszerkezet-szerelo|magasépítő tartószerkezet-szerelő]]
 - [[rendezvenyi-villamoshalozat-szerelo|rendezvényi villamoshálózat szerelő]]
-- [[vilagitastechnikus|világítástechnikus]]

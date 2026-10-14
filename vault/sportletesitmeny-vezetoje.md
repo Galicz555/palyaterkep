@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/825ab049-2f0c-4acf-b402-9c6bb51acca2
 label: sportlétesítmény vezetője
-level: 4
+level: 3
 track: management
 branch: culture
 subBranch: culture-management
@@ -36,7 +36,7 @@ lateral:
 
 # Sportlétesítmény vezetője
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Kulturális és szabadidős intézmények vezetése  
 **ESCO:** [sportlétesítmény vezetője](http://data.europa.eu/esco/occupation/825ab049-2f0c-4acf-b402-9c6bb51acca2) (1431.3)

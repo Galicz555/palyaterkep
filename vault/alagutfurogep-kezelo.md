@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7a0afb5e-f118-449a-82bd-d8b9230fd49f
 label: alagútfúrógép-kezelő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: mining
@@ -23,16 +23,16 @@ skills:
   - http://data.europa.eu/esco/skill/efa141df-f382-418f-9121-bd88fd735669
 lateral:
   - "[[csatornafekteto]]"
-  - "[[vaganyfekteto]]"
   - "[[colopvero-kalapacs-kezeloje]]"
   - "[[kotrogepkezelo]]"
   - "[[betonozo]]"
   - "[[betonszivattyu-kezelo]]"
+  - "[[utepito]]"
 ---
 
 # Alagútfúrógép-kezelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Bányászat és ásványi termékek  
 **ESCO:** [alagútfúrógép-kezelő](http://data.europa.eu/esco/occupation/7a0afb5e-f118-449a-82bd-d8b9230fd49f) (8113.8)
@@ -59,8 +59,8 @@ Az alagútfúrógép-kezelők nagyméretű alagútfúró berendezéseket, közis
 ## Váltások
 
 - [[csatornafekteto|csatornafektető]]
-- [[vaganyfekteto|vágányfektető]]
 - [[colopvero-kalapacs-kezeloje|cölöpverő kalapács kezelője]]
 - [[kotrogepkezelo|kotrógépkezelő]]
 - [[betonozo|betonozó]]
 - [[betonszivattyu-kezelo|betonszivattyú-kezelő]]
+- [[utepito|útépítő]]

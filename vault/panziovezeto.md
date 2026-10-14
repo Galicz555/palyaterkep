@@ -29,6 +29,7 @@ skills:
   - http://data.europa.eu/esco/skill/f7e7ccb6-fadc-4c35-935d-e1040be40dfe
 lateral:
   - "[[ejszakai-recepcios]]"
+  - "[[vendeglato-egyseg-recepciosa]]"
   - "[[szallodai-reszleg-vezetoje]]"
   - "[[szallashely-szolgaltatasi-tevekenysegeket-folytato-egyseg-vezetoje]]"
   - "[[komornyik-komorna]]"
@@ -69,6 +70,7 @@ A panzióvezetők a panziók mindennapi tevékenységét irányítják. Gondosko
 ## Váltások
 
 - [[ejszakai-recepcios|éjszakai recepciós]]
+- [[vendeglato-egyseg-recepciosa|vendéglátó egység recepciósa]]
 - [[szallodai-reszleg-vezetoje|szállodai részleg vezetője]]
 - [[szallashely-szolgaltatasi-tevekenysegeket-folytato-egyseg-vezetoje|szálláshely-szolgáltatási tevékenységeket folytató egység vezetője]]
 - [[komornyik-komorna|komornyik/komorna]]

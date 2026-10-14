@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ea6cd713-94ca-4292-9ba9-ca8a4ec3ed5f
 label: szétszerelő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: metal
@@ -39,7 +39,7 @@ lateral:
 
 # Szétszerelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Fémipar és felületkezelés  
 **ESCO:** [szétszerelő](http://data.europa.eu/esco/occupation/ea6cd713-94ca-4292-9ba9-ca8a4ec3ed5f) (7214.1)

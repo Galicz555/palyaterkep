@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/4bef1707-a251-427e-9d8b-96595ec38d45
 label: könyvszerkesztő
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: writing
@@ -23,12 +23,14 @@ skills:
   - http://data.europa.eu/esco/skill/e258707b-7676-4e9b-9c36-20c38018b349
   - http://data.europa.eu/esco/skill/e95058a6-e139-42e7-a470-72038a606649
 lateral:
+  - "[[konyvkiado]]"
+  - "[[producer]]"
   - "[[iro]]"
 ---
 
 # Könyvszerkesztő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Írás, szerkesztés és fordítás  
 **ESCO:** [könyvszerkesztő](http://data.europa.eu/esco/occupation/4bef1707-a251-427e-9d8b-96595ec38d45) (2641.1)
@@ -55,4 +57,6 @@ A könyvszerkesztők olyan kéziratokat keresnek, amelyeket ki lehet adni. Átte
 
 ## Váltások
 
+- [[konyvkiado|könyvkiadó]]
+- [[producer|producer]]
 - [[iro|író]]

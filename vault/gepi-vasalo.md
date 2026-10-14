@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2edd910a-e53e-44ee-b8c2-09e9f9d0395b
 label: gépi vasaló
-level: 2
+level: 1
 track: individual
 branch: hospitality
 subBranch: cleaning
@@ -20,15 +20,15 @@ skills:
 lateral:
   - "[[varrogepkezelo]]"
   - "[[gepi-varro]]"
-  - "[[ruhaipari-fejlesztesi-menedzser]]"
   - "[[ruhaszabo]]"
   - "[[ruhaipari-technologus]]"
   - "[[lakastextil-keszito]]"
+  - "[[himzogepkezelo]]"
 ---
 
 # Gépi vasaló
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Takarítás, háztartás és épületgondnokság  
 **ESCO:** [gépi vasaló](http://data.europa.eu/esco/occupation/2edd910a-e53e-44ee-b8c2-09e9f9d0395b) (9121.2)
@@ -52,7 +52,7 @@ A gépi vasalók ruházati termékeket alakítanak gőzvasaló, vákuumvasaló v
 
 - [[varrogepkezelo|varrógépkezelő]]
 - [[gepi-varro|gépi varró]]
-- [[ruhaipari-fejlesztesi-menedzser|ruhaipari fejlesztési menedzser]]
 - [[ruhaszabo|ruhaszabó]]
 - [[ruhaipari-technologus|ruhaipari technológus]]
 - [[lakastextil-keszito|lakástextil-készítő]]
+- [[himzogepkezelo|hímzőgépkezelő]]

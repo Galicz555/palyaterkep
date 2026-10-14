@@ -28,7 +28,7 @@ skills:
   - http://data.europa.eu/esco/skill/fe1ec582-d63b-466c-9149-e7fc4fe93e22
 lateral:
   - "[[kozbeszerzesi-szakerto]]"
-  - "[[onallo-kozbeszerzo]]"
+  - "[[szerzodeskezelo]]"
 ---
 
 # Közbeszerzést támogató munkatárs
@@ -66,4 +66,4 @@ A közbeszerzést támogató munkatársak feladata, hogy a beszerzési folyamato
 ## Váltások
 
 - [[kozbeszerzesi-szakerto|közbeszerzési szakértő]]
-- [[onallo-kozbeszerzo|Önálló közbeszerző]]
+- [[szerzodeskezelo|szerződéskezelő]]

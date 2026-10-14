@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/dab9c6dd-8efb-4fe2-8b10-477ef2bcfd8b
 label: matematikaoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -50,7 +50,7 @@ lateral:
 
 # Matematikaoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [matematikaoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/dab9c6dd-8efb-4fe2-8b10-477ef2bcfd8b) (2310.1.24)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e69697d0-2639-4aad-b73a-05e0b98357b1
 label: bányavillamossági mérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: electrical
@@ -37,7 +37,7 @@ lateral:
 
 # Bányavillamossági mérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Villamosmérnöki terület és elektronika  
 **ESCO:** [bányavillamossági mérnök](http://data.europa.eu/esco/occupation/e69697d0-2639-4aad-b73a-05e0b98357b1) (2151.1.4)

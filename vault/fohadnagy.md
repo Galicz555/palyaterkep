@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b223f402-0318-4e27-8691-df6e7f7295d2
 label: főhadnagy
-level: 3
+level: 2
 track: management
 branch: public
 subBranch: military
@@ -21,17 +21,17 @@ skills:
   - http://data.europa.eu/esco/skill/e58a3832-4e13-458e-8efd-bfa251eed702
   - http://data.europa.eu/esco/skill/ff8bd17c-77e9-4d4e-929a-a0cf86f3ed34
 lateral:
-  - "[[ornagy]]"
   - "[[torzsormester]]"
   - "[[katonai-kikepzotiszt]]"
   - "[[szakaszvezeto]]"
-  - "[[ezredes]]"
   - "[[szazados]]"
+  - "[[tengeresztiszt]]"
+  - "[[a-legiero-tisztje]]"
 ---
 
 # Főhadnagy
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Honvédelem  
 **ESCO:** [főhadnagy](http://data.europa.eu/esco/occupation/b223f402-0318-4e27-8691-df6e7f7295d2) (0110.10)
@@ -56,9 +56,9 @@ A főhadnagyok szakaszokból álló csapatok parancsnokai, és vezető szerepet 
 
 ## Váltások
 
-- [[ornagy|őrnagy]]
 - [[torzsormester|törzsőrmester]]
 - [[katonai-kikepzotiszt|katonai kiképzőtiszt]]
 - [[szakaszvezeto|szakaszvezető]]
-- [[ezredes|ezredes]]
 - [[szazados|százados]]
+- [[tengeresztiszt|tengerésztiszt]]
+- [[a-legiero-tisztje|a légierő tisztje]]

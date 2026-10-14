@@ -51,7 +51,7 @@ lateral:
   - "[[penz-es-tokepiaci-hattermuveleti-osztaly-vezetoje]]"
   - "[[befektetesi-ugyfelkapcsolati-menedzser]]"
   - "[[vallalati-penzugyi-vezeto]]"
-  - "[[penzugyi-kockazatkezelo]]"
+  - "[[biztositotarsasag-vezetoje]]"
 ---
 
 # Pénzügyi vezető
@@ -111,4 +111,4 @@ A pénzügyi vezetők a vállalat pénzügyeivel és befektetéseivel kapcsolato
 - [[penz-es-tokepiaci-hattermuveleti-osztaly-vezetoje|pénz- és tőkepiaci háttérműveleti osztály vezetője]]
 - [[befektetesi-ugyfelkapcsolati-menedzser|befektetési ügyfélkapcsolati menedzser]]
 - [[vallalati-penzugyi-vezeto|vállalati pénzügyi vezető]]
-- [[penzugyi-kockazatkezelo|pénzügyi kockázatkezelő]]
+- [[biztositotarsasag-vezetoje|biztosítótársaság vezetője]]

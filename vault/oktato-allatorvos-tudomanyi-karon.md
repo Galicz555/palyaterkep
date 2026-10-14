@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3c305542-a51b-4b96-8d45-af11ca05eaa2
 label: oktató állatorvos-tudományi karon
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -54,7 +54,7 @@ lateral:
 
 # Oktató állatorvos-tudományi karon
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [oktató állatorvos-tudományi karon](http://data.europa.eu/esco/occupation/3c305542-a51b-4b96-8d45-af11ca05eaa2) (2310.1.43)

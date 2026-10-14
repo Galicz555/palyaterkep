@@ -27,8 +27,8 @@ lateral:
   - "[[regionalis-fejlesztespolitikai-tisztviselo]]"
   - "[[versenypolitikai-referens]]"
   - "[[gazdasagkutato]]"
-  - "[[onkormanyzati-kepviselo]]"
   - "[[lobbista]]"
+  - "[[sportpolitikai-tisztviselo]]"
 ---
 
 # Gazdaságpolitikai referens
@@ -64,5 +64,5 @@ A gazdaságpolitikai referensek gazdasági stratégiákat dolgoznak ki. A gazdas
 - [[regionalis-fejlesztespolitikai-tisztviselo|regionális fejlesztéspolitikai tisztviselő]]
 - [[versenypolitikai-referens|versenypolitikai referens]]
 - [[gazdasagkutato|gazdaságkutató]]
-- [[onkormanyzati-kepviselo|önkormányzati képviselő]]
 - [[lobbista|lobbista]]
+- [[sportpolitikai-tisztviselo|sportpolitikai tisztviselő]]

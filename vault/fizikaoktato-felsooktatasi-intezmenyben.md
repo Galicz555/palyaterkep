@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/59a02420-91df-4e46-b37b-22e3fd8c11f0
 label: fizikaoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -47,7 +47,7 @@ lateral:
 
 # Fizikaoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [fizikaoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/59a02420-91df-4e46-b37b-22e3fd8c11f0) (2310.1.33)

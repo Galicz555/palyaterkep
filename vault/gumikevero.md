@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e7ef8a86-6acd-458d-bf48-634b8fd28950
 label: gumikeverő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: chemicals
@@ -23,7 +23,7 @@ lateral:
 
 # Gumikeverő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [gumikeverő](http://data.europa.eu/esco/occupation/e7ef8a86-6acd-458d-bf48-634b8fd28950) (8141.1.3)

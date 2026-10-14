@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/158965f1-bd83-441c-bca8-1975b74dedc5
 label: veterángépjármű-restaurátor technikus
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: maintenance
@@ -24,13 +24,12 @@ skills:
   - http://data.europa.eu/esco/skill/b7c8f418-08d5-45d6-b697-ab26c6ecbfb4
   - http://data.europa.eu/esco/skill/bcc663c1-176b-4137-991b-1f706299aea2
   - http://data.europa.eu/esco/skill/ca99a4f9-4ead-4d17-a430-dda2cd6fb5ed
-lateral:
-  - "[[gepjarmu-karbantarto-es-apolo]]"
+lateral: []
 ---
 
 # Veterángépjármű-restaurátor technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Gépjavítás és karbantartás  
 **ESCO:** [veterángépjármű-restaurátor technikus](http://data.europa.eu/esco/occupation/158965f1-bd83-441c-bca8-1975b74dedc5) (7231.5)
@@ -59,4 +58,4 @@ A veterángépjármű-restaurátor technikusok régi és klasszikus járműveket
 
 ## Váltások
 
-- [[gepjarmu-karbantarto-es-apolo|gépjármű-karbantartó és -ápoló]]
+Nincs.

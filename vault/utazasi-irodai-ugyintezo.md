@@ -41,8 +41,8 @@ lateral:
   - "[[utazasszervezo-tanacsado]]"
   - "[[utazasi-tanacsado]]"
   - "[[idegenforgalmi-tajekoztato-munkatars]]"
-  - "[[desztinacio-menedzser]]"
   - "[[utazasi-iroda-menedzsere]]"
+  - "[[hegyi-vezeto]]"
 ---
 
 # Utazási irodai ügyintéző
@@ -92,5 +92,5 @@ Az utazási irodai ügyintézők az utazásszervező nevében gyakorlati inform�
 - [[utazasszervezo-tanacsado|utazásszervező tanácsadó]]
 - [[utazasi-tanacsado|utazási tanácsadó]]
 - [[idegenforgalmi-tajekoztato-munkatars|idegenforgalmi tájékoztató munkatárs]]
-- [[desztinacio-menedzser|desztináció menedzser]]
 - [[utazasi-iroda-menedzsere|utazási iroda menedzsere]]
+- [[hegyi-vezeto|hegyi vezető]]

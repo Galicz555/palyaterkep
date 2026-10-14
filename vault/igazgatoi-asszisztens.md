@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2a04a1df-a3b9-403e-a245-e7f93fdddd44
 label: igazgatói asszisztens
-level: 2
+level: 3
 track: individual
 branch: business
 subBranch: office
@@ -36,12 +36,11 @@ lateral:
   - "[[menedzserasszisztens]]"
   - "[[titkar-titkarno]]"
   - "[[igazgatasi-asszisztens]]"
-  - "[[marketingasszisztens]]"
 ---
 
 # Igazgatói asszisztens
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Irodai és adminisztratív munka  
 **ESCO:** [igazgatói asszisztens](http://data.europa.eu/esco/occupation/2a04a1df-a3b9-403e-a245-e7f93fdddd44) (3343.3)
@@ -81,4 +80,3 @@ Az igazgatói asszisztensek olyan magas szintű adminisztratív szakemberek, aki
 - [[menedzserasszisztens|menedzserasszisztens]]
 - [[titkar-titkarno|titkár/titkárnő]]
 - [[igazgatasi-asszisztens|igazgatási asszisztens]]
-- [[marketingasszisztens|marketingasszisztens]]

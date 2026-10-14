@@ -16,6 +16,7 @@ skills:
   - http://data.europa.eu/esco/skill/f675d28f-9e1f-4938-ae49-c1d07f902fed
 lateral:
   - "[[novenytermeszto]]"
+  - "[[kertesz]]"
 ---
 
 # Gyümölcs- és zöldségválogató osztályozó
@@ -40,3 +41,4 @@ A gyümölcs- és zöldségválogató osztályozók a gyümölcsök, zöldségek
 ## Váltások
 
 - [[novenytermeszto|növénytermesztő]]
+- [[kertesz|kertész]]

@@ -41,12 +41,12 @@ skills:
   - http://data.europa.eu/esco/skill/f10cf304-f32c-40ee-97a7-ec8d84d72955
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
-  - "[[haztartasikeszulek-elado]]"
   - "[[elado-fal-es-padloburkolasi-szakuzletben]]"
   - "[[sportbolti-elado]]"
   - "[[textilbolti-elado]]"
   - "[[szorakoztato-elektronikai-szakuzleti-elado]]"
   - "[[illatszerbolti-elado]]"
+  - "[[edessegbolti-elado]]"
 ---
 
 # Gyógyászatisegédeszköz-eladó
@@ -96,9 +96,9 @@ A gyógyászatisegédeszköz-eladók gyógyászati segédeszközöket értékes�
 
 ## Váltások
 
-- [[haztartasikeszulek-elado|háztartásikészülék-eladó]]
 - [[elado-fal-es-padloburkolasi-szakuzletben|eladó fal- és padlóburkolási szaküzletben]]
 - [[sportbolti-elado|sportbolti eladó]]
 - [[textilbolti-elado|textilbolti eladó]]
 - [[szorakoztato-elektronikai-szakuzleti-elado|szórakoztató elektronikai szaküzleti eladó]]
 - [[illatszerbolti-elado|illatszerbolti eladó]]
+- [[edessegbolti-elado|édességbolti eladó]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/75c5bab4-2546-4ba3-996d-42a9a1bab55d
 label: jármű-elektronikai technikus
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: electrical-trades
@@ -37,7 +37,7 @@ lateral:
 
 # Jármű-elektronikai technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Villamos- és elektronikai szerelés  
 **ESCO:** [jármű-elektronikai technikus](http://data.europa.eu/esco/occupation/75c5bab4-2546-4ba3-996d-42a9a1bab55d) (7421.6)

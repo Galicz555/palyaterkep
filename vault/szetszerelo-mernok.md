@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/01989dd8-36c0-43cc-a82d-2bfc409de9c4
 label: szétszerelő mérnök
 level: 3
-track: individual
+track: management
 branch: engineering
 subBranch: other-engineering
 skills:
@@ -31,7 +31,7 @@ lateral: []
 
 # Szétszerelő mérnök
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Egyéb mérnöki szakterületek  
 **ESCO:** [szétszerelő mérnök](http://data.europa.eu/esco/occupation/01989dd8-36c0-43cc-a82d-2bfc409de9c4) (2149.8)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/76a1a76c-b014-4600-8901-56cb936de7ed
 label: IKT audit menedzser
-level: 3
+level: 4
 track: management
 branch: it
 subBranch: software-testing
@@ -28,12 +28,13 @@ skills:
   - http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081
 lateral:
   - "[[informatikai-auditor]]"
+  - "[[ikt-biztonsagi-igazgato]]"
   - "[[megfelelesi-es-informaciobiztonsagi-igazgato]]"
 ---
 
 # IKT audit menedzser
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Szoftvertesztelés és minőségbiztosítás  
 **ESCO:** [IKT audit menedzser](http://data.europa.eu/esco/occupation/76a1a76c-b014-4600-8901-56cb936de7ed) (2519.2)
@@ -65,4 +66,5 @@ Az IKT auditormenedzserek felügyelik az információs rendszerek, platformok é
 ## Váltások
 
 - [[informatikai-auditor|informatikai auditor]]
+- [[ikt-biztonsagi-igazgato|IKT biztonsági igazgató]]
 - [[megfelelesi-es-informaciobiztonsagi-igazgato|megfelelési és információbiztonsági igazgató]]

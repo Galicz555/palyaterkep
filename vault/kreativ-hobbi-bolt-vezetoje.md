@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b66eb697-e65d-4bbb-b51c-d847f6875f1a
 label: kreatív hobbi bolt vezetője
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -46,7 +46,7 @@ lateral:
 
 # Kreatív hobbi bolt vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [kreatív hobbi bolt vezetője](http://data.europa.eu/esco/occupation/b66eb697-e65d-4bbb-b51c-d847f6875f1a) (1420.4.15)

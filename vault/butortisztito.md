@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/23be4cb6-c5e7-449e-8d76-8edfe9a00478
 label: bútortisztító
-level: 2
+level: 1
 track: individual
 branch: hospitality
 subBranch: cleaning
@@ -25,7 +25,7 @@ lateral: []
 
 # Bútortisztító
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Takarítás, háztartás és épületgondnokság  
 **ESCO:** [bútortisztító](http://data.europa.eu/esco/occupation/23be4cb6-c5e7-449e-8d76-8edfe9a00478) (9112.3)

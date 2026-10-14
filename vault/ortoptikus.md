@@ -76,7 +76,7 @@ lateral:
   - "[[optometrista]]"
   - "[[ergoterapeuta]]"
   - "[[audiologus]]"
-  - "[[szakkiropraktor]]"
+  - "[[dietetikus]]"
 ---
 
 # Ortoptikus
@@ -162,4 +162,4 @@ Az ortoptikusok a binokuláris látás rendellenességeinek diagnosztizálását
 - [[optometrista|optometrista]]
 - [[ergoterapeuta|ergoterapeuta]]
 - [[audiologus|audiológus]]
-- [[szakkiropraktor|szakkiropraktőr]]
+- [[dietetikus|dietetikus]]

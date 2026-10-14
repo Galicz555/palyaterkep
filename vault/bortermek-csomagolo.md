@@ -19,11 +19,11 @@ skills:
   - http://data.europa.eu/esco/skill/f7a1ccf0-fb40-49ef-ae9b-8a1f8646c218
 lateral:
   - "[[borgyari-raktaros]]"
+  - "[[boripari-szabasminta-keszito]]"
   - "[[boripari-szabasz]]"
   - "[[bortermekgyarto-gepkezelo]]"
   - "[[bordiszmuves]]"
   - "[[ruhaipari-vegkikeszito]]"
-  - "[[cipogyari-raktaros]]"
 ---
 
 # Bőrtermék-csomagoló
@@ -51,8 +51,8 @@ A bőrtermék-csomagolók a bőrtermékekkel végső felülvizsgálatát végzik
 ## Váltások
 
 - [[borgyari-raktaros|bőrgyári raktáros]]
+- [[boripari-szabasminta-keszito|bőripari szabásminta-készítő]]
 - [[boripari-szabasz|bőripari szabász]]
 - [[bortermekgyarto-gepkezelo|bőrtermékgyártó gépkezelő]]
 - [[bordiszmuves|bőrdíszműves]]
 - [[ruhaipari-vegkikeszito|ruhaipari végkikészítő]]
-- [[cipogyari-raktaros|cipőgyári raktáros]]

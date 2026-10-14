@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6c39cf1c-7332-41c1-86c3-6ed3daf3c479
 label: halszeletelő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: food
@@ -25,17 +25,14 @@ skills:
   - http://data.europa.eu/esco/skill/c72feae6-648b-4cc1-9219-4a6af721e769
   - http://data.europa.eu/esco/skill/e81bd620-65a7-4794-b907-b37801019533
 lateral:
-  - "[[haltermeles-iranyitoja]]"
   - "[[halkonzervipari-gepkezelo]]"
   - "[[halfeldolgozo]]"
   - "[[gyumolcs-zoldsegkonzerv-ipari-munkas]]"
-  - "[[allatszuro]]"
-  - "[[halal-allatszuro]]"
 ---
 
 # Halszeletelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [halszeletelő](http://data.europa.eu/esco/occupation/6c39cf1c-7332-41c1-86c3-6ed3daf3c479) (7511.3)
@@ -64,9 +61,6 @@ A halszeletelők levágják a halak fejét, és a halak testéből eltávolítj�
 
 ## Váltások
 
-- [[haltermeles-iranyitoja|haltermelés irányítója]]
 - [[halkonzervipari-gepkezelo|halkonzervipari gépkezelő]]
 - [[halfeldolgozo|halfeldolgozó]]
 - [[gyumolcs-zoldsegkonzerv-ipari-munkas|gyümölcs- zöldségkonzerv-ipari munkás]]
-- [[allatszuro|állatszúró]]
-- [[halal-allatszuro|halal állatszúró]]

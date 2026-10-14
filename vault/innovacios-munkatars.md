@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/9f1d546b-1b4e-4b64-97e8-600fc502304b
 label: innovációs munkatárs
 level: 3
-track: management
+track: individual
 branch: engineering
 subBranch: rnd-management
 skills:
@@ -32,7 +32,7 @@ lateral:
 
 # Innovációs munkatárs
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Kutatás-fejlesztés és termékfejlesztés vezetése  
 **ESCO:** [innovációs munkatárs](http://data.europa.eu/esco/occupation/9f1d546b-1b4e-4b64-97e8-600fc502304b) (1223.2.3)

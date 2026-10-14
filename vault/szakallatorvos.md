@@ -55,7 +55,6 @@ lateral:
   - "[[altalanos-allatorvos]]"
   - "[[hatosagi-allatorvos]]"
   - "[[allatorvosi-asszisztens]]"
-  - "[[allatok-mesterseges-megtermekenyiteset-iranyito-szakember]]"
 ---
 
 # Szakállatorvos
@@ -121,4 +120,3 @@ A szakállatorvosok átfogó tudományos képzettséggel rendelkező szakemberek
 - [[altalanos-allatorvos|általános állatorvos]]
 - [[hatosagi-allatorvos|hatósági állatorvos]]
 - [[allatorvosi-asszisztens|állatorvosi asszisztens]]
-- [[allatok-mesterseges-megtermekenyiteset-iranyito-szakember|állatok mesterséges megtermékenyítését irányító szakember]]

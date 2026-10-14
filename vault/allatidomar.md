@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/fc1da244-880f-407d-bfa7-789a2f468ea0
 label: állatidomár
-level: 3
+level: 2
 track: individual
 branch: agriculture
 subBranch: animal-care
@@ -37,14 +37,14 @@ lateral:
   - "[[allatgondozo-idomar]]"
   - "[[loidomar]]"
   - "[[kutyakikepzo]]"
+  - "[[allatgondozo]]"
   - "[[etologus]]"
   - "[[allatszitter]]"
-  - "[[allatkozmetikus]]"
 ---
 
 # Állatidomár
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Állategészségügy és állatgondozás  
 **ESCO:** [állatidomár](http://data.europa.eu/esco/occupation/fc1da244-880f-407d-bfa7-789a2f468ea0) (5164.2.1)
@@ -85,6 +85,6 @@ Az állatidomárok a nemzeti jogszabályoknak megfelelően állatokat és/vagy �
 - [[allatgondozo-idomar|állatgondozó idomár]]
 - [[loidomar|lóidomár]]
 - [[kutyakikepzo|kutyakiképző]]
+- [[allatgondozo|állatgondozó]]
 - [[etologus|etológus]]
 - [[allatszitter|állatszitter]]
-- [[allatkozmetikus|állatkozmetikus]]

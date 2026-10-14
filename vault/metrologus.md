@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/fa5b9075-3796-4e86-be0a-b5e6d725c25a
 label: metrológus
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: physical-sciences
@@ -66,7 +66,7 @@ lateral:
 
 # Metrológus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Fizika, kémia és földtudományok  
 **ESCO:** [metrológus](http://data.europa.eu/esco/occupation/fa5b9075-3796-4e86-be0a-b5e6d725c25a) (2112.2)

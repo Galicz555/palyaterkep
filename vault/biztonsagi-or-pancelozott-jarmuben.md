@@ -23,6 +23,9 @@ skills:
   - http://data.europa.eu/esco/skill/fecc4fba-8f4b-4fde-846e-045d9889aa76
 lateral:
   - "[[pancelozott-gepjarmu-vezetoje]]"
+  - "[[tomegiranyito]]"
+  - "[[testor]]"
+  - "[[portas]]"
 ---
 
 # Biztonsági őr páncélozott járműben
@@ -54,3 +57,6 @@ A páncélozott járműben utazó biztonsági őrök gondoskodnak a vagyontárgy
 ## Váltások
 
 - [[pancelozott-gepjarmu-vezetoje|páncélozott gépjármű vezetője]]
+- [[tomegiranyito|tömegirányító]]
+- [[testor|testőr]]
+- [[portas|portás]]

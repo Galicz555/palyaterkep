@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3f3748a7-4bb3-40b4-9ae3-1c5040c70f52
 label: vasúti projektmérnök
-level: 2
+level: 3
 track: individual
 branch: construction
 subBranch: civil-engineering
@@ -42,7 +42,7 @@ lateral: []
 
 # Vasúti projektmérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőmérnöki terület és műszaki ellenőrzés  
 **ESCO:** [vasúti projektmérnök](http://data.europa.eu/esco/occupation/3f3748a7-4bb3-40b4-9ae3-1c5040c70f52) (2142.1.8)

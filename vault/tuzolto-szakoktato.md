@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b8139469-92cc-4f57-9e69-a0d9f7fc3817
 label: tűzoltó szakoktató
-level: 3
+level: 2
 track: individual
 branch: education
 subBranch: vocational
@@ -30,14 +30,14 @@ lateral:
   - "[[tuzolto]]"
   - "[[tengeri-tuzolto]]"
   - "[[ipari-tuzolto]]"
-  - "[[tuzoltoparancsnok-1349-7]]"
   - "[[tuzoltoauto-vezeto]]"
+  - "[[tuzoltoszivattyu-mukodtetoje]]"
   - "[[uszomester-oktato]]"
 ---
 
 # Tűzoltó szakoktató
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Szakképzés  
 **ESCO:** [tűzoltó szakoktató](http://data.europa.eu/esco/occupation/b8139469-92cc-4f57-9e69-a0d9f7fc3817) (2320.1.12)
@@ -71,6 +71,6 @@ A tűzoltó oktatók próbaidősek, az akadémiáról frissen kikerültek, illet
 - [[tuzolto|tűzoltó]]
 - [[tengeri-tuzolto|tengeri tűzoltó]]
 - [[ipari-tuzolto|ipari tűzoltó]]
-- [[tuzoltoparancsnok-1349-7|tűzoltóparancsnok]]
 - [[tuzoltoauto-vezeto|tűzoltóautó-vezető]]
+- [[tuzoltoszivattyu-mukodtetoje|tűzoltószivattyú működtetője]]
 - [[uszomester-oktato|úszómester-oktató]]

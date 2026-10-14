@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/25eca7d1-e8ea-4f9d-b922-c532d971e17c
 label: anaerob biológiai lebontást végző üzem üzemeltetője
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: chemicals
@@ -23,7 +23,7 @@ lateral: []
 
 # Anaerob biológiai lebontást végző üzem üzemeltetője
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [anaerob biológiai lebontást végző üzem üzemeltetője](http://data.europa.eu/esco/occupation/25eca7d1-e8ea-4f9d-b922-c532d971e17c) (8131.22)

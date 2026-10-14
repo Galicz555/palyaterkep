@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/bca063d2-a904-45db-b3f4-0fd7e681753e
 label: orvosi műszerész
-level: 3
+level: 2
 track: individual
 branch: industry
 subBranch: crafts
@@ -31,7 +31,7 @@ lateral:
 
 # Orvosi műszerész
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [orvosi műszerész](http://data.europa.eu/esco/occupation/bca063d2-a904-45db-b3f4-0fd7e681753e) (7311.5)

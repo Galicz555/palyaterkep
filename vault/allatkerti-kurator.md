@@ -54,11 +54,11 @@ skills:
   - http://data.europa.eu/esco/skill/fc39a239-f574-4109-b280-cf1f06966bda
 lateral:
   - "[[rekreacios-kozpont-vezetoje]]"
-  - "[[botanikus]]"
+  - "[[szepsegszalon-vezetoje]]"
   - "[[allattarto-letesitmeny-vezetoje]]"
   - "[[furdoigazgato]]"
   - "[[allatkerti-reszlegvezeto]]"
-  - "[[muveszeti-igazgato]]"
+  - "[[szerencsejatek-ertekesitohely-vezetoje]]"
 ---
 
 # Állatkerti kurátor
@@ -121,8 +121,8 @@ Az állatkerti kurátorok általában az intézményen belüli középvezetők. 
 ## Váltások
 
 - [[rekreacios-kozpont-vezetoje|rekreációs központ vezetője]]
-- [[botanikus|botanikus]]
+- [[szepsegszalon-vezetoje|szépségszalon vezetője]]
 - [[allattarto-letesitmeny-vezetoje|állattartó létesítmény vezetője]]
 - [[furdoigazgato|fürdőigazgató]]
 - [[allatkerti-reszlegvezeto|állatkerti részlegvezető]]
-- [[muveszeti-igazgato|művészeti igazgató]]
+- [[szerencsejatek-ertekesitohely-vezetoje|szerencsejáték-értékesítőhely vezetője]]

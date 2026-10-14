@@ -85,12 +85,12 @@ skills:
   - http://data.europa.eu/esco/skill/fdb44237-c0b0-4924-9439-911332e0d884
   - http://data.europa.eu/esco/skill/fddc5d4f-0dfe-42fb-a1c0-3ad827db2216
 lateral:
-  - "[[gyakorlati-szocialismunka-oktato]]"
   - "[[szocialis-munkas]]"
   - "[[szocialismunka-oktato-felsooktatasi-intezmenyben]]"
   - "[[szocialpedagogus]]"
   - "[[szocialis-asszisztens]]"
   - "[[szocialpolitikai-kutato]]"
+  - "[[csaladtervezesi-tanacsado]]"
 ---
 
 # Iskolai gyermekvédelmi felelős
@@ -184,9 +184,9 @@ Az iskolai gyermekvédelmi felelősök foglalkoznak a diákok szociális és psz
 
 ## Váltások
 
-- [[gyakorlati-szocialismunka-oktato|gyakorlati szociálismunka-oktató]]
 - [[szocialis-munkas|szociális munkás]]
 - [[szocialismunka-oktato-felsooktatasi-intezmenyben|szociálismunka-oktató felsőoktatási intézményben]]
 - [[szocialpedagogus|szociálpedagógus]]
 - [[szocialis-asszisztens|szociális asszisztens]]
 - [[szocialpolitikai-kutato|szociálpolitikai kutató]]
+- [[csaladtervezesi-tanacsado|családtervezési tanácsadó]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e5e3ea36-4ed9-4c57-987c-9974385551a8
 label: szőlőmunkás
-level: 2
+level: 1
 track: individual
 branch: agriculture
 subBranch: crops
@@ -23,12 +23,11 @@ skills:
   - http://data.europa.eu/esco/skill/bed64efc-fd94-4fa4-aa3a-048c92c9255b
 lateral:
   - "[[szoleszeti-gepkezelo]]"
-  - "[[vinceller]]"
 ---
 
 # Szőlőmunkás
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Növénytermesztés és kertészet  
 **ESCO:** [szőlőmunkás](http://data.europa.eu/esco/occupation/e5e3ea36-4ed9-4c57-987c-9974385551a8) (9211.2)
@@ -55,4 +54,3 @@ A szőlőmunkások kézzel végzik tevékenységeiket a műveléssel, szőlőfaj
 ## Váltások
 
 - [[szoleszeti-gepkezelo|szőlészeti gépkezelő]]
-- [[vinceller|vincellér]]

@@ -43,7 +43,6 @@ skills:
   - http://data.europa.eu/esco/skill/f7f4d43e-86fb-4395-b52f-552f3c6ba9b4
 lateral:
   - "[[keltetesi-akvakultura-technikus]]"
-  - "[[keltetesi-akvakultura-vezeto]]"
   - "[[keltetesi-akvakultura-dolgozo]]"
   - "[[recirkulacios-akvakultura-technikus]]"
   - "[[viziallatokkal-foglalkozo-egeszsegugyi-szakember]]"
@@ -98,7 +97,6 @@ Az ivadéknevelési akvakultúra-technikusok a vízi szervezetek nevelésében v
 ## Váltások
 
 - [[keltetesi-akvakultura-technikus|keltetési akvakultúra-technikus]]
-- [[keltetesi-akvakultura-vezeto|keltetési akvakultúra-vezető]]
 - [[keltetesi-akvakultura-dolgozo|keltetési akvakultúra-dolgozó]]
 - [[recirkulacios-akvakultura-technikus|recirkulációs akvakultúra-technikus]]
 - [[viziallatokkal-foglalkozo-egeszsegugyi-szakember|víziállatokkal foglalkozó egészségügyi szakember]]

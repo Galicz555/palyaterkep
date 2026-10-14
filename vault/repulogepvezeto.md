@@ -46,9 +46,9 @@ lateral:
   - "[[legijarmu-vezeto]]"
   - "[[maganpilota]]"
   - "[[kereskedelmi-pilota]]"
-  - "[[legiforgalmi-pilota]]"
   - "[[helikopterpilota]]"
   - "[[masodpilota]]"
+  - "[[masodtiszt]]"
 ---
 
 # Repülőgépvezető
@@ -103,6 +103,6 @@ A repülőgépvezetők légi járműveket működtetnek a harci küldetések, ő
 - [[legijarmu-vezeto|légijármű-vezető]]
 - [[maganpilota|magánpilóta]]
 - [[kereskedelmi-pilota|kereskedelmi pilóta]]
-- [[legiforgalmi-pilota|légiforgalmi pilóta]]
 - [[helikopterpilota|helikopterpilóta]]
 - [[masodpilota|másodpilóta]]
+- [[masodtiszt|másodtiszt]]

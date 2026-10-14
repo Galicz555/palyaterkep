@@ -24,10 +24,7 @@ skills:
   - http://data.europa.eu/esco/skill/edf6ed6b-bc24-4211-ae0f-6b5cb9de4437
   - http://data.europa.eu/esco/skill/f49df8e2-f451-49aa-9aa9-b21b2afdbb87
 lateral:
-  - "[[logondozo-belovaglo-lokikepzo]]"
-  - "[[lovasz]]"
   - "[[allattenyesztesi-tanacsado]]"
-  - "[[allattenyeszto]]"
   - "[[baromfi-ivarmeghatarozasaval-foglalkozo-munkas]]"
 ---
 
@@ -61,8 +58,5 @@ Az istállóvezetők felelősségi körébe tartozik az istálló napi működé
 
 ## Váltások
 
-- [[logondozo-belovaglo-lokikepzo|lógondozó belovagló lókiképző]]
-- [[lovasz|lovász]]
 - [[allattenyesztesi-tanacsado|állattenyésztési tanácsadó]]
-- [[allattenyeszto|állattenyésztő]]
 - [[baromfi-ivarmeghatarozasaval-foglalkozo-munkas|baromfi ivarmeghatározásával foglalkozó munkás]]

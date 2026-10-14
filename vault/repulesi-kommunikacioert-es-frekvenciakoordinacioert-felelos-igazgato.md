@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/2f8acdc5-76f5-498b-9818-df075e324eaa
 label: repülési kommunikációért és frekvenciakoordinációért felelős igazgató
 level: 4
-track: individual
+track: management
 branch: transport
 subBranch: air
 skills:
@@ -28,7 +28,7 @@ lateral:
 
 # Repülési kommunikációért és frekvenciakoordinációért felelős igazgató
 
-Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [repülési kommunikációért és frekvenciakoordinációért felelős igazgató](http://data.europa.eu/esco/occupation/2f8acdc5-76f5-498b-9818-df075e324eaa) (1349.4)

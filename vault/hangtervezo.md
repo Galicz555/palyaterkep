@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/790c8dca-f624-4bdc-ac16-27bc13ead188
 label: hangtervező
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: stage-film
@@ -62,7 +62,7 @@ lateral:
 
 # Hangtervező
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Színház-, film- és műsorgyártás  
 **ESCO:** [hangtervező](http://data.europa.eu/esco/occupation/790c8dca-f624-4bdc-ac16-27bc13ead188) (3521.1.7)

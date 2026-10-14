@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/dc3cc282-488d-4d8f-be80-191c6b521823
 label: malátakezelő mester
-level: 3
+level: 4
 track: individual
 branch: industry
 subBranch: food
@@ -37,14 +37,13 @@ skills:
 lateral:
   - "[[malatacsiraztato-felugyeloje]]"
   - "[[sorfozo-mester]]"
-  - "[[csokoladetermek-gyarto]]"
   - "[[almabor-keszito-mester]]"
   - "[[allateledel-ellenor]]"
 ---
 
 # Malátakezelő mester
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [malátakezelő mester](http://data.europa.eu/esco/occupation/dc3cc282-488d-4d8f-be80-191c6b521823) (7515.4)
@@ -85,6 +84,5 @@ A malátakezelő mesterek sörfőzési célokból érzékszervi vizsgálattal ki
 
 - [[malatacsiraztato-felugyeloje|malátacsíráztató felügyelője]]
 - [[sorfozo-mester|sörfőző mester]]
-- [[csokoladetermek-gyarto|csokoládétermék-gyártó]]
 - [[almabor-keszito-mester|almabor készítő mester]]
 - [[allateledel-ellenor|állateledel ellenőr]]

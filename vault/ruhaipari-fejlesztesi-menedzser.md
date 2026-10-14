@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/01bcac9f-7881-4664-bd63-dea700e3b117
 label: ruhaipari fejlesztési menedzser
 level: 3
-track: individual
+track: management
 branch: engineering
 subBranch: rnd-management
 skills:
@@ -27,14 +27,14 @@ lateral:
   - "[[ruhaipari-folyamatiranyito-technikus]]"
   - "[[ruhaipari-minosegellenor]]"
   - "[[ruhaipari-technologus]]"
-  - "[[gepi-vasalo]]"
   - "[[ruhaszabo]]"
   - "[[varrogepkezelo]]"
+  - "[[ruhaipari-operativ-vezeto]]"
 ---
 
 # Ruhaipari fejlesztési menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Kutatás-fejlesztés és termékfejlesztés vezetése  
 **ESCO:** [ruhaipari fejlesztési menedzser](http://data.europa.eu/esco/occupation/01bcac9f-7881-4664-bd63-dea700e3b117) (1223.2.1.1)
@@ -65,6 +65,6 @@ A ruhaipari fejlesztési menedzserek olyan termékkoncepciókat határoznak meg,
 - [[ruhaipari-folyamatiranyito-technikus|ruhaipari folyamatirányító technikus]]
 - [[ruhaipari-minosegellenor|ruhaipari minőségellenőr]]
 - [[ruhaipari-technologus|ruhaipari technológus]]
-- [[gepi-vasalo|gépi vasaló]]
 - [[ruhaszabo|ruhaszabó]]
 - [[varrogepkezelo|varrógépkezelő]]
+- [[ruhaipari-operativ-vezeto|ruhaipari operatív vezető]]

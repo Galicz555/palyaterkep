@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/12da0bb1-26c8-46eb-9476-797f4f1c441e
 label: gyalogátkelőhelyi forgalomirányító
-level: 2
+level: 1
 track: individual
 branch: public
 subBranch: security
@@ -24,7 +24,7 @@ lateral:
 
 # Gyalogátkelőhelyi forgalomirányító
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Vagyonvédelem és közbiztonság  
 **ESCO:** [gyalogátkelőhelyi forgalomirányító](http://data.europa.eu/esco/occupation/12da0bb1-26c8-46eb-9476-797f4f1c441e) (5419.4)

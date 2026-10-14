@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/35553663-deab-4d9a-bf22-15c1625d28e8
 label: mesterséges intelligenciával foglalkozó mérnök (AI-mérnök)
-level: 3
+level: 2
 track: individual
 branch: it
 subBranch: systems-analysis
@@ -41,14 +41,13 @@ skills:
 lateral:
   - "[[tudasmernok]]"
   - "[[adatelemzo]]"
-  - "[[infokommunikacios-rendszerinformacios-menedzser]]"
   - "[[a-dolgok-internetenek-fejlesztoje]]"
   - "[[adattudos]]"
 ---
 
 # Mesterséges intelligenciával foglalkozó mérnök (AI-mérnök)
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Rendszerelemzés, architektúra és adat  
 **ESCO:** [mesterséges intelligenciával foglalkozó mérnök (AI-mérnök)](http://data.europa.eu/esco/occupation/35553663-deab-4d9a-bf22-15c1625d28e8) (2511.11)
@@ -93,6 +92,5 @@ A mesterséges intelligenciával foglalkozó mérnökök a mesterséges intellig
 
 - [[tudasmernok|tudásmérnök]]
 - [[adatelemzo|adatelemző]]
-- [[infokommunikacios-rendszerinformacios-menedzser|infokommunikációs rendszerinformációs menedzser]]
 - [[a-dolgok-internetenek-fejlesztoje|a dolgok internetének fejlesztője]]
 - [[adattudos|adattudós]]

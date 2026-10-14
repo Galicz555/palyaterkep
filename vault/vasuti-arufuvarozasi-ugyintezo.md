@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/279c0ab1-212b-4e89-a41f-048f5de9dadf
 label: vasúti árufuvarozási ügyintéző
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: dispatch
@@ -32,7 +32,7 @@ lateral: []
 
 # Vasúti árufuvarozási ügyintéző
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Forgalomirányítás és fuvarszervezés  
 **ESCO:** [vasúti árufuvarozási ügyintéző](http://data.europa.eu/esco/occupation/279c0ab1-212b-4e89-a41f-048f5de9dadf) (4323.12)

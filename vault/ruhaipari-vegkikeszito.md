@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/87afe3f0-c891-45de-a498-ad2608471c86
 label: ruhaipari végkikészítő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: packaging
@@ -16,13 +16,12 @@ skills:
   - http://data.europa.eu/esco/skill/a15e06f6-9562-465f-b6bd-549becd67633
   - http://data.europa.eu/esco/skill/a4fdbe1e-4382-4bc9-8c41-5fb49b4ec4fd
 lateral:
-  - "[[himzogepkezelo]]"
   - "[[bortermek-csomagolo]]"
 ---
 
 # Ruhaipari végkikészítő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Csomagolás és általános gyári munka  
 **ESCO:** [ruhaipari végkikészítő](http://data.europa.eu/esco/occupation/87afe3f0-c891-45de-a498-ad2608471c86) (9321.1)
@@ -42,5 +41,4 @@ A ruhaipari végkikészítők rövidárukat (pl. Ruhazáró kellékek, húzózá
 
 ## Váltások
 
-- [[himzogepkezelo|hímzőgépkezelő]]
 - [[bortermek-csomagolo|bőrtermék-csomagoló]]

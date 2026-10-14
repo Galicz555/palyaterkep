@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0ec62c2e-30c9-434e-bf36-5277a0840450
 label: járműfelújító technikus
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: maintenance
@@ -23,7 +23,7 @@ lateral:
 
 # Járműfelújító technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Gépjavítás és karbantartás  
 **ESCO:** [járműfelújító technikus](http://data.europa.eu/esco/occupation/0ec62c2e-30c9-434e-bf36-5277a0840450) (7231.4)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ef9c2914-2f3d-464c-ae0a-d02b403dc7e9
 label: légijárműmotor-ellenőr
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: mechanical
@@ -38,7 +38,7 @@ lateral:
 
 # Légijárműmotor-ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Gépészmérnöki terület  
 **ESCO:** [légijárműmotor-ellenőr](http://data.europa.eu/esco/occupation/ef9c2914-2f3d-464c-ae0a-d02b403dc7e9) (3115.1.2)

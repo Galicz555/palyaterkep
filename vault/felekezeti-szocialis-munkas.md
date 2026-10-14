@@ -18,7 +18,6 @@ skills:
   - http://data.europa.eu/esco/skill/fd7ee717-1259-469f-8e3e-18da96456198
 lateral:
   - "[[lelkesz-lelkeszno]]"
-  - "[[vallasi-vezeto]]"
   - "[[szerzetes-apaca]]"
   - "[[hitterito]]"
 ---
@@ -47,6 +46,5 @@ A felekezeti szociális munkások a vallási közösségeket támogatják. Spiri
 ## Váltások
 
 - [[lelkesz-lelkeszno|lelkész/lelkésznő]]
-- [[vallasi-vezeto|vallási vezető]]
 - [[szerzetes-apaca|szerzetes/apáca]]
 - [[hitterito|hittérítő]]

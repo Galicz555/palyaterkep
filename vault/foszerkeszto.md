@@ -31,6 +31,7 @@ lateral:
   - "[[hirszerkeszto]]"
   - "[[lapszerkeszto]]"
   - "[[magazinszerkeszto]]"
+  - "[[kepszerkeszto]]"
 ---
 
 # Főszerkesztő
@@ -70,3 +71,4 @@ A főszerkesztők felügyelik újságok, magazinok, folyóiratok és egyéb sajt
 - [[hirszerkeszto|hírszerkesztő]]
 - [[lapszerkeszto|lapszerkesztő]]
 - [[magazinszerkeszto|magazinszerkesztő]]
+- [[kepszerkeszto|képszerkesztő]]

@@ -24,7 +24,6 @@ skills:
   - http://data.europa.eu/esco/skill/f399a9c1-be41-4117-bf86-a64b503c4cfd
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
-  - "[[infokommunikacios-ugyfelszolgalati-munkatars]]"
   - "[[call-center-szupervizor]]"
   - "[[ugyfelkapcsolati-szupervizor]]"
 ---
@@ -59,6 +58,5 @@ Az infokommunikációs ügyfélszolgálati menedzserek az ügyfeleknek nyújtott
 
 ## Váltások
 
-- [[infokommunikacios-ugyfelszolgalati-munkatars|infokommunikációs ügyfélszolgálati munkatárs]]
 - [[call-center-szupervizor|call center szupervizor]]
 - [[ugyfelkapcsolati-szupervizor|ügyfélkapcsolati szupervizor]]

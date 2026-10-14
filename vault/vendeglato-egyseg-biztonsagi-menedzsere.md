@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/ebb4061a-906f-45fe-b4c0-a871c11f6fab
 label: vendéglátó egység biztonsági menedzsere
 level: 3
-track: individual
+track: management
 branch: public
 subBranch: security
 skills:
@@ -33,7 +33,7 @@ lateral: []
 
 # Vendéglátó egység biztonsági menedzsere
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Vagyonvédelem és közbiztonság  
 **ESCO:** [vendéglátó egység biztonsági menedzsere](http://data.europa.eu/esco/occupation/ebb4061a-906f-45fe-b4c0-a871c11f6fab) (5414.1.6)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8b490c1a-2f8c-4693-bcfa-ecfc88838a8e
 label: gépjárműmotor-ellenőr
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: mechanical
@@ -38,7 +38,7 @@ lateral:
 
 # Gépjárműmotor-ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Gépészmérnöki terület  
 **ESCO:** [gépjárműmotor-ellenőr](http://data.europa.eu/esco/occupation/8b490c1a-2f8c-4693-bcfa-ecfc88838a8e) (3115.1.12)

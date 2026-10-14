@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7bcafcd7-3f35-4a72-849c-c92b334927fd
 label: biztosítási konzultáns
-level: 2
+level: 3
 track: individual
 branch: business
 subBranch: insurance
@@ -32,7 +32,7 @@ lateral:
 
 # Biztosítási konzultáns
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Biztosítás és értékbecslés  
 **ESCO:** [biztosítási konzultáns](http://data.europa.eu/esco/occupation/7bcafcd7-3f35-4a72-849c-c92b334927fd) (3321.2)

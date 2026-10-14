@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f0978ec0-ae7d-4c4a-8f80-3fd200edddac
 label: építési műszaki ellenőr
-level: 2
+level: 3
 track: individual
 branch: construction
 subBranch: civil-engineering
@@ -27,6 +27,7 @@ skills:
   - http://data.europa.eu/esco/skill/fc1a75bb-70e3-4005-881f-7709bf7b0ed4
 lateral:
   - "[[epitoipari-minosegbiztositasi-vezeto]]"
+  - "[[epitesvezeto]]"
   - "[[szetszerelesvezeto]]"
   - "[[epitoipari-munkavedelmi-felugyelo]]"
   - "[[felvonotelepites-vezeto]]"
@@ -35,7 +36,7 @@ lateral:
 
 # Építési műszaki ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőmérnöki terület és műszaki ellenőrzés  
 **ESCO:** [építési műszaki ellenőr](http://data.europa.eu/esco/occupation/f0978ec0-ae7d-4c4a-8f80-3fd200edddac) (3112.1.3)
@@ -66,6 +67,7 @@ Az építőanyag-ipari minőségellenőrök nyomon követik a nagyobb építkez�
 ## Váltások
 
 - [[epitoipari-minosegbiztositasi-vezeto|építőipari minőségbiztosítási vezető]]
+- [[epitesvezeto|építésvezető]]
 - [[szetszerelesvezeto|szétszerelésvezető]]
 - [[epitoipari-munkavedelmi-felugyelo|építőipari munkavédelmi felügyelő]]
 - [[felvonotelepites-vezeto|felvonótelepítés-vezető]]

@@ -35,6 +35,7 @@ skills:
   - http://data.europa.eu/esco/skill/f32eb5de-3fc7-4bba-853a-c6f2f043c33e
   - http://data.europa.eu/esco/skill/fafbb75f-ec35-4cc2-996a-20c85ef6c266
 lateral:
+  - "[[satorepito]]"
   - "[[szinpadepito]]"
   - "[[rendezvenytechnikai-tartoszerkezet-szerelo]]"
   - "[[vilagitastechnikus]]"
@@ -84,6 +85,7 @@ A rendezvénytechnikusok előkészítik, karbantartják, kiadják, szállítják
 
 ## Váltások
 
+- [[satorepito|sátorépítő]]
 - [[szinpadepito|színpadépítő]]
 - [[rendezvenytechnikai-tartoszerkezet-szerelo|rendezvénytechnikai tartószerkezet-szerelő]]
 - [[vilagitastechnikus|világítástechnikus]]

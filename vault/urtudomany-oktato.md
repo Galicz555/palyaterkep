@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8b128a08-606f-4bb1-806e-07e0ed98b40e
 label: űrtudomány-oktató
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -49,7 +49,7 @@ lateral:
 
 # Űrtudomány-oktató
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [űrtudomány-oktató](http://data.europa.eu/esco/occupation/8b128a08-606f-4bb1-806e-07e0ed98b40e) (2310.1.39)

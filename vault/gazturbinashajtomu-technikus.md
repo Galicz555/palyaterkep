@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7d599049-d15a-4fda-afe9-b334b0614ec7
 label: gázturbináshajtómű-technikus
-level: 3
+level: 2
 track: individual
 branch: industry
 subBranch: maintenance
@@ -38,7 +38,7 @@ lateral:
 
 # Gázturbináshajtómű-technikus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Gépjavítás és karbantartás  
 **ESCO:** [gázturbináshajtómű-technikus](http://data.europa.eu/esco/occupation/7d599049-d15a-4fda-afe9-b334b0614ec7) (7232.3)

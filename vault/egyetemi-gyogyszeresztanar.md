@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/55a785db-0636-41b8-950f-0b65abe5e81b
 label: egyetemi gyógyszerésztanár
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -50,7 +50,7 @@ lateral:
 
 # Egyetemi gyógyszerésztanár
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [egyetemi gyógyszerésztanár](http://data.europa.eu/esco/occupation/55a785db-0636-41b8-950f-0b65abe5e81b) (2310.1.31)

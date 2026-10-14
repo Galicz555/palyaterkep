@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7ed2e153-8da8-4c0d-b4c5-3402c623f34b
 label: postai kézbesítő
-level: 2
+level: 1
 track: individual
 branch: transport
 subBranch: postal-courier
@@ -32,7 +32,7 @@ lateral:
 
 # Postai kézbesítő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Posta és futárszolgálat  
 **ESCO:** [postai kézbesítő](http://data.europa.eu/esco/occupation/7ed2e153-8da8-4c0d-b4c5-3402c623f34b) (4412.2)

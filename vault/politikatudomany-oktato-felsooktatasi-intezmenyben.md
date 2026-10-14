@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c593ded7-2e97-44a5-a5f3-f6115ff98233
 label: politikatudomány-oktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -50,7 +50,7 @@ lateral:
 
 # Politikatudomány-oktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [politikatudomány-oktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/c593ded7-2e97-44a5-a5f3-f6115ff98233) (2310.1.34)

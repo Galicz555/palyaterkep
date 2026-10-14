@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/cfda19c9-c7e1-497d-a18b-66e29c773745
 label: légtérhasználatért felelős igazgató
-level: 4
-track: individual
+level: 5
+track: management
 branch: transport
 subBranch: air
 skills:
@@ -28,7 +28,7 @@ lateral: []
 
 # Légtérhasználatért felelős igazgató
 
-Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Stratégiai szint (5), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [légtérhasználatért felelős igazgató](http://data.europa.eu/esco/occupation/cfda19c9-c7e1-497d-a18b-66e29c773745) (1349.2)

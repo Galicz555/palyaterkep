@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d97fd1e8-4c61-459b-82cd-1bd0e792c568
 label: vágányfektető
-level: 2
+level: 1
 track: individual
 branch: construction
 subBranch: plant-labour
@@ -29,14 +29,14 @@ lateral:
   - "[[csatornafekteto]]"
   - "[[ontozorendszer-telepito]]"
   - "[[betonozo]]"
-  - "[[alagutfurogep-kezelo]]"
   - "[[lemezlakatos]]"
   - "[[allvanyozo]]"
+  - "[[epuletszobrasz]]"
 ---
 
 # Vágányfektető
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőgépek és segédmunka  
 **ESCO:** [vágányfektető](http://data.europa.eu/esco/occupation/d97fd1e8-4c61-459b-82cd-1bd0e792c568) (9312.1.2)
@@ -69,6 +69,6 @@ A vágányfektetők megépítik a vasúti pályát az elkészített területeken
 - [[csatornafekteto|csatornafektető]]
 - [[ontozorendszer-telepito|öntözőrendszer-telepítő]]
 - [[betonozo|betonozó]]
-- [[alagutfurogep-kezelo|alagútfúrógép-kezelő]]
 - [[lemezlakatos|lemezlakatos]]
 - [[allvanyozo|állványozó]]
+- [[epuletszobrasz|épületszobrász]]

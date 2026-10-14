@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c28cb56b-003e-499a-8dbf-b654864e7867
 label: hirdetéselhelyező
-level: 2
+level: 1
 track: individual
 branch: culture
 subBranch: sport-leisure
@@ -22,7 +22,7 @@ lateral: []
 
 # Hirdetéselhelyező
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Sport, szabadidő és szerencsejáték  
 **ESCO:** [hirdetéselhelyező](http://data.europa.eu/esco/occupation/c28cb56b-003e-499a-8dbf-b654864e7867) (9629.1)

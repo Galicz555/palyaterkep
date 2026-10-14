@@ -22,7 +22,8 @@ skills:
   - http://data.europa.eu/esco/skill/db10b60e-efd2-4ba9-a873-d1e2ec37620f
   - http://data.europa.eu/esco/skill/f055364f-26ea-455e-a393-b575c149c7e4
   - http://data.europa.eu/esco/skill/f85bb847-febe-4853-9dbf-7d25424e5921
-lateral: []
+lateral:
+  - "[[biro]]"
 ---
 
 # Legfelsőbb bíróság bírája
@@ -54,4 +55,4 @@ A Legfelsőbb Bíróság bírái az összetett büntető- és polgári ügyeket 
 
 ## Váltások
 
-Nincs.
+- [[biro|bíró]]

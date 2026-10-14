@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c25b3700-6095-42b7-99fc-b87dc326c044
 label: mezőgazdasági kutató
-level: 3
+level: 2
 track: individual
 branch: agriculture
 subBranch: agri-advisory
@@ -71,7 +71,7 @@ lateral:
 
 # Mezőgazdasági kutató
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Agrártudomány és szaktanácsadás  
 **ESCO:** [mezőgazdasági kutató](http://data.europa.eu/esco/occupation/c25b3700-6095-42b7-99fc-b87dc326c044) (2132.1)

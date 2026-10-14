@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ffade2f4-2528-4dfd-b36a-6e4092be08ed
 label: közigazgatási ügyintéző
-level: 2
+level: 1
 track: individual
 branch: public
 subBranch: policy
@@ -25,7 +25,7 @@ lateral:
 
 # Közigazgatási ügyintéző
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Közpolitika és közigazgatás  
 **ESCO:** [közigazgatási ügyintéző](http://data.europa.eu/esco/occupation/ffade2f4-2528-4dfd-b36a-6e4092be08ed) (2422.1)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0f905036-055f-41d9-b292-e3c02617a193
 label: brikettáló gép kezelője
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: metal
@@ -22,7 +22,7 @@ lateral:
 
 # Brikettáló gép kezelője
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Fémipar és felületkezelés  
 **ESCO:** [brikettáló gép kezelője](http://data.europa.eu/esco/occupation/0f905036-055f-41d9-b292-e3c02617a193) (7223.2)

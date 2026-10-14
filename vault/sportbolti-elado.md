@@ -41,12 +41,12 @@ skills:
   - http://data.europa.eu/esco/skill/f10cf304-f32c-40ee-97a7-ec8d84d72955
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
+  - "[[benzinkuti-elado]]"
   - "[[vasaru-es-festekbolti-elado]]"
   - "[[loszerkereskedo]]"
   - "[[haztartasikeszulek-elado]]"
   - "[[elado-fal-es-padloburkolasi-szakuzletben]]"
   - "[[gyogyaszatisegedeszkoz-elado]]"
-  - "[[textilbolti-elado]]"
 ---
 
 # Sportbolti eladó
@@ -96,9 +96,9 @@ A sportbolti eladók sportcikkeket, horgászfelszerelést, kempingcikkeket, csó
 
 ## Váltások
 
+- [[benzinkuti-elado|benzinkúti eladó]]
 - [[vasaru-es-festekbolti-elado|vasáru- és festékbolti eladó]]
 - [[loszerkereskedo|lőszerkereskedő]]
 - [[haztartasikeszulek-elado|háztartásikészülék-eladó]]
 - [[elado-fal-es-padloburkolasi-szakuzletben|eladó fal- és padlóburkolási szaküzletben]]
 - [[gyogyaszatisegedeszkoz-elado|gyógyászatisegédeszköz-eladó]]
-- [[textilbolti-elado|textilbolti eladó]]

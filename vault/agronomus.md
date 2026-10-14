@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c40ef517-d4ab-4932-b184-9c2ea5b24fe2
 label: agronómus
-level: 3
+level: 2
 track: individual
 branch: agriculture
 subBranch: agri-advisory
@@ -43,14 +43,12 @@ skills:
   - http://data.europa.eu/esco/skill/f8460277-3c9a-4be4-b203-600a2a295f47
   - http://data.europa.eu/esco/skill/fdc388ba-c8f4-4455-a55f-ffdf29b05f5f
 lateral:
-  - "[[kerteszeti-termelessel-foglalkozo-egyseg-vezetoje]]"
   - "[[talajkutato]]"
-  - "[[novenytermesztes-vezetoje]]"
 ---
 
 # Agronómus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Agrártudomány és szaktanácsadás  
 **ESCO:** [agronómus](http://data.europa.eu/esco/occupation/c40ef517-d4ab-4932-b184-9c2ea5b24fe2) (2132.2)
@@ -97,6 +95,4 @@ Az agronómusok konzultációs szolgáltatásokat nyújtanak a vállalkozások, 
 
 ## Váltások
 
-- [[kerteszeti-termelessel-foglalkozo-egyseg-vezetoje|kertészeti termeléssel foglalkozó egység vezetője]]
 - [[talajkutato|talajkutató]]
-- [[novenytermesztes-vezetoje|növénytermesztés vezetője]]

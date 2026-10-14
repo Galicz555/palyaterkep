@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6df6c5cb-c1a2-42c8-acd0-1ee5563c36c1
 label: biokémikus
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -72,7 +72,7 @@ lateral:
 
 # Biokémikus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [biokémikus](http://data.europa.eu/esco/occupation/6df6c5cb-c1a2-42c8-acd0-1ee5563c36c1) (2131.4.2)

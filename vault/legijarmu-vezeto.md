@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9a4ba556-e72b-49c2-834c-d6a03a2fc906
 label: légijármű-vezető
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: air
@@ -42,7 +42,7 @@ lateral:
 
 # Légijármű-vezető
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [légijármű-vezető](http://data.europa.eu/esco/occupation/9a4ba556-e72b-49c2-834c-d6a03a2fc906) (3153.2)

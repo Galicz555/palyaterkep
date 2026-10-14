@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/89a0af2a-edf4-4d1a-8526-f4a8f476cea2
 label: helyszínfelelős
 level: 3
-track: individual
+track: management
 branch: culture
 subBranch: stage-film
 skills:
@@ -27,7 +27,7 @@ lateral: []
 
 # Helyszínfelelős
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Színház-, film- és műsorgyártás  
 **ESCO:** [helyszínfelelős](http://data.europa.eu/esco/occupation/89a0af2a-edf4-4d1a-8526-f4a8f476cea2) (3435.11)

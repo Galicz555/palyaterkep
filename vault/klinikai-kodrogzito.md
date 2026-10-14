@@ -21,11 +21,11 @@ skills:
   - http://data.europa.eu/esco/skill/f022b5ff-8496-4722-a7a3-ef3c072f01f6
 lateral:
   - "[[egeszsegugyi-dokumentator]]"
-  - "[[egeszsegugyi-dokumentacios-vezeto]]"
   - "[[egeszsegugyi-recepcios]]"
   - "[[varolista-koordinator]]"
   - "[[covid-tesztelo]]"
   - "[[klinikai-vizsgalati-asszisztens]]"
+  - "[[orvosirnok]]"
 ---
 
 # Klinikai kódrögzítő
@@ -55,8 +55,8 @@ A klinikai kódrögzítő olvassa a betegek egészségügyi nyilvántartásait. 
 ## Váltások
 
 - [[egeszsegugyi-dokumentator|egészségügyi dokumentátor]]
-- [[egeszsegugyi-dokumentacios-vezeto|egészségügyi dokumentációs vezető]]
 - [[egeszsegugyi-recepcios|egészségügyi recepciós]]
 - [[varolista-koordinator|várólista-koordinátor]]
 - [[covid-tesztelo|Covid-tesztelő]]
 - [[klinikai-vizsgalati-asszisztens|klinikai vizsgálati asszisztens]]
+- [[orvosirnok|orvosírnok]]

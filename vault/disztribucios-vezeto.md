@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/632e61c8-4e4b-44c7-b213-6dd5a174b143
 label: disztribúciós vezető
 level: 3
-track: individual
+track: management
 branch: trade
 subBranch: wholesale
 skills:
@@ -45,7 +45,7 @@ lateral:
 
 # Disztribúciós vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Nagykereskedelem és import-export  
 **ESCO:** [disztribúciós vezető](http://data.europa.eu/esco/occupation/632e61c8-4e4b-44c7-b213-6dd5a174b143) (1324.3.1)

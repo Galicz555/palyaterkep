@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c66b4569-09aa-4d8d-93d9-ac9b9176655d
 label: biztonsági tanácsadó
-level: 3
+level: 4
 track: individual
 branch: public
 subBranch: security
@@ -29,13 +29,12 @@ skills:
   - http://data.europa.eu/esco/skill/f69722f4-7e34-4aaa-ba5a-7bf621421085
   - http://data.europa.eu/esco/skill/ff8bd17c-77e9-4d4e-929a-a0cf86f3ed34
 lateral:
-  - "[[tomegiranyito]]"
   - "[[biztonsagi-szupervizor]]"
 ---
 
 # Biztonsági tanácsadó
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Vagyonvédelem és közbiztonság  
 **ESCO:** [biztonsági tanácsadó](http://data.europa.eu/esco/occupation/c66b4569-09aa-4d8d-93d9-ac9b9176655d) (5414.1.8)
@@ -68,5 +67,4 @@ A biztonsági tanácsadók a vészhelyzetek megelőzésében, a vészhelyzeti te
 
 ## Váltások
 
-- [[tomegiranyito|tömegirányító]]
 - [[biztonsagi-szupervizor|biztonsági szupervizor]]

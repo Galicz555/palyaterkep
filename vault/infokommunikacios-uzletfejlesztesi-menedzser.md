@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/57b459d4-655c-4053-b189-3c249ce33faf
 label: infokommunikációs üzletfejlesztési menedzser
 level: 3
-track: individual
+track: management
 branch: it
 subBranch: it-business
 skills:
@@ -32,7 +32,7 @@ lateral:
 
 # Infokommunikációs üzletfejlesztési menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › IT-üzletfejlesztés és -értékesítés  
 **ESCO:** [infokommunikációs üzletfejlesztési menedzser](http://data.europa.eu/esco/occupation/57b459d4-655c-4053-b189-3c249ce33faf) (2434.2)

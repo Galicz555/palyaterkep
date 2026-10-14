@@ -48,6 +48,7 @@ lateral:
   - "[[orvosipraxis-menedzser]]"
   - "[[vezerigazgato]]"
   - "[[ugyvezeto-igazgato]]"
+  - "[[uzletiintelligencia-menedzser]]"
 ---
 
 # Cégvezető
@@ -104,3 +105,4 @@ A cégvezetők felelősek a társaság üzleti egysége célkitűzéseinek megha
 - [[orvosipraxis-menedzser|orvosipraxis-menedzser]]
 - [[vezerigazgato|vezérigazgató]]
 - [[ugyvezeto-igazgato|ügyvezető igazgató]]
+- [[uzletiintelligencia-menedzser|üzletiintelligencia-menedzser]]

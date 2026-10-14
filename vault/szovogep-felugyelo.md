@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/5d0e1510-7248-4eca-abe4-13de830d1614
 label: szövőgép-felügyelő
 level: 3
-track: individual
+track: management
 branch: industry
 subBranch: textiles
 skills:
@@ -27,7 +27,7 @@ lateral:
 
 # Szövőgép-felügyelő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Textil-, ruha- és bőripar  
 **ESCO:** [szövőgép-felügyelő](http://data.europa.eu/esco/occupation/5d0e1510-7248-4eca-abe4-13de830d1614) (8152.3.2)

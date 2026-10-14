@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6a3d3d28-0ab6-49b0-9a32-697e5e104bf1
 label: talajkutató
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: environment
@@ -28,7 +28,7 @@ lateral:
 
 # Talajkutató
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Környezetvédelem  
 **ESCO:** [talajkutató](http://data.europa.eu/esco/occupation/6a3d3d28-0ab6-49b0-9a32-697e5e104bf1) (2133.11)

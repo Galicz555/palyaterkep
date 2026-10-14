@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d2df16f3-87d7-4c6e-a640-95cee39a8f4e
 label: almabor készítő mester
-level: 3
-track: individual
+level: 4
+track: management
 branch: engineering
 subBranch: process-engineering
 skills:
@@ -46,14 +46,13 @@ skills:
 lateral:
   - "[[sorfozo-mester]]"
   - "[[borasz]]"
-  - "[[borerjeszto]]"
   - "[[malatakezelo-mester]]"
   - "[[allateledel-ellenor]]"
 ---
 
 # Almabor készítő mester
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Vegyész-, kohó- és bányamérnöki terület  
 **ESCO:** [almabor készítő mester](http://data.europa.eu/esco/occupation/d2df16f3-87d7-4c6e-a640-95cee39a8f4e) (2145.1.3)
@@ -103,6 +102,5 @@ Az almabor készítő mesterek az almaborkészítés folyamatát tervezik. Bizto
 
 - [[sorfozo-mester|sörfőző mester]]
 - [[borasz|borász]]
-- [[borerjeszto|borerjesztő]]
 - [[malatakezelo-mester|malátakezelő mester]]
 - [[allateledel-ellenor|állateledel ellenőr]]

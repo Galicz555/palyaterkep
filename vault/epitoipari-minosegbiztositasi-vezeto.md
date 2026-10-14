@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/326027fc-5408-47cd-9b32-fbe770dbbe80
 label: építőipari minőségbiztosítási vezető
-level: 3
-track: individual
+level: 4
+track: management
 branch: construction
 subBranch: civil-engineering
 skills:
@@ -27,12 +27,11 @@ skills:
   - http://data.europa.eu/esco/skill/f14ff4b7-be1e-4b55-b39b-520005f8a97e
 lateral:
   - "[[epitesi-muszaki-ellenor]]"
-  - "[[hidellenor]]"
 ---
 
 # Építőipari minőségbiztosítási vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőmérnöki terület és műszaki ellenőrzés  
 **ESCO:** [építőipari minőségbiztosítási vezető](http://data.europa.eu/esco/occupation/326027fc-5408-47cd-9b32-fbe770dbbe80) (3112.1.4)
@@ -63,4 +62,3 @@ Az építőipari minőségbiztosítási vezetők gondoskodnak arról, hogy a mun
 ## Váltások
 
 - [[epitesi-muszaki-ellenor|építési műszaki ellenőr]]
-- [[hidellenor|hídellenőr]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/bf802371-4758-4268-a780-58e3d269831b
 label: sugárvédelmi megbízott
-level: 2
+level: 3
 track: individual
 branch: health-social
 subBranch: public-health
@@ -39,7 +39,7 @@ lateral:
 
 # Sugárvédelmi megbízott
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Népegészségügy és munkavédelem  
 **ESCO:** [sugárvédelmi megbízott](http://data.europa.eu/esco/occupation/bf802371-4758-4268-a780-58e3d269831b) (2263.5)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d47d495f-159b-40c9-b3d2-6b651c903e28
 label: állatszúró
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: food
@@ -42,13 +42,12 @@ lateral:
   - "[[halal-allatszuro]]"
   - "[[meszaros]]"
   - "[[husszeletelo]]"
-  - "[[halszeletelo]]"
   - "[[koser-meszaros]]"
 ---
 
 # Állatszúró
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [állatszúró](http://data.europa.eu/esco/occupation/d47d495f-159b-40c9-b3d2-6b651c903e28) (7511.6.2)
@@ -94,5 +93,4 @@ Az állatszúrók állatokat vágnak le és kóser hasított testeket készíten
 - [[halal-allatszuro|halal állatszúró]]
 - [[meszaros|mészáros]]
 - [[husszeletelo|hússzeletelő]]
-- [[halszeletelo|halszeletelő]]
 - [[koser-meszaros|kóser mészáros]]

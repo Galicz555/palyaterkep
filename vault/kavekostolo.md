@@ -27,6 +27,7 @@ skills:
 lateral:
   - "[[zold-kave-beszerzo]]"
   - "[[kaveporkolo-mester]]"
+  - "[[kaveporkolo]]"
   - "[[zold-kaveval-kapcsolatos-tevekenysegek-koordinatora]]"
 ---
 
@@ -63,4 +64,5 @@ A kávékóstolók megkóstolják a kávémintákat a termék tulajdonságainak 
 
 - [[zold-kave-beszerzo|zöld kávé beszerző]]
 - [[kaveporkolo-mester|kávépörkölő mester]]
+- [[kaveporkolo|kávépörkölő]]
 - [[zold-kaveval-kapcsolatos-tevekenysegek-koordinatora|zöld kávéval kapcsolatos tevékenységek koordinátora]]

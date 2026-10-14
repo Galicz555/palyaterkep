@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/605e58d6-ad27-4828-b1f5-16707f327fa0
 label: pedagógiaoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -47,7 +47,7 @@ lateral:
 
 # Pedagógiaoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [pedagógiaoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/605e58d6-ad27-4828-b1f5-16707f327fa0) (2310.1.15)

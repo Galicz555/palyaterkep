@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/af69484e-b43f-4685-b22d-f3418df45c4d
 label: pszichoterapeuta
-level: 2
+level: 3
 track: individual
 branch: health-social
 subBranch: psychology
@@ -89,7 +89,7 @@ lateral:
 
 # Pszichoterapeuta
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Pszichológia  
 **ESCO:** [pszichoterapeuta](http://data.europa.eu/esco/occupation/af69484e-b43f-4685-b22d-f3418df45c4d) (2634.2.4)

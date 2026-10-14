@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6630d23f-4c8e-4855-abb0-8ca1e72c74ba
 label: lovász
-level: 2
+level: 1
 track: individual
 branch: agriculture
 subBranch: livestock
@@ -23,13 +23,12 @@ skills:
   - http://data.europa.eu/esco/skill/f49df8e2-f451-49aa-9aa9-b21b2afdbb87
 lateral:
   - "[[logondozo-belovaglo-lokikepzo]]"
-  - "[[istallovezeto]]"
   - "[[allattenyeszto]]"
 ---
 
 # Lovász
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Állattenyésztés  
 **ESCO:** [lovász](http://data.europa.eu/esco/occupation/6630d23f-4c8e-4855-abb0-8ca1e72c74ba) (9212.2)
@@ -56,5 +55,4 @@ A lovászok gondozási tevékenységet végeznek lovak és pónik számára.
 ## Váltások
 
 - [[logondozo-belovaglo-lokikepzo|lógondozó belovagló lókiképző]]
-- [[istallovezeto|istállóvezető]]
 - [[allattenyeszto|állattenyésztő]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/45517bc3-0887-416d-95fe-6ace1b90bddd
 label: metallurgiai vezető
-level: 4
+level: 3
 track: management
 branch: industry
 subBranch: production-management
@@ -26,7 +26,7 @@ lateral:
 
 # Metallurgiai vezető
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Gyártásirányítás  
 **ESCO:** [metallurgiai vezető](http://data.europa.eu/esco/occupation/45517bc3-0887-416d-95fe-6ace1b90bddd) (1321.2.1.7)

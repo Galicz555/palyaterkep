@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d5ce0c23-6f8a-459f-9bf9-a7cb9768740a
 label: személyi stylist
-level: 3
+level: 2
 track: individual
 branch: hospitality
 subBranch: beauty
@@ -32,7 +32,7 @@ lateral:
 
 # Személyi stylist
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Fodrászat és szépségápolás  
 **ESCO:** [személyi stylist](http://data.europa.eu/esco/occupation/d5ce0c23-6f8a-459f-9bf9-a7cb9768740a) (5142.9)

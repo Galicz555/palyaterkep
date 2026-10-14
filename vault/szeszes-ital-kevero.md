@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f4e0016b-29fa-48ac-b98d-364c658f8aed
 label: szeszes ital keverő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: food
@@ -39,7 +39,7 @@ lateral:
 
 # Szeszes ital keverő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [szeszes ital keverő](http://data.europa.eu/esco/occupation/f4e0016b-29fa-48ac-b98d-364c658f8aed) (8160.41)

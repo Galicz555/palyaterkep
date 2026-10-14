@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ff4c28e2-66b1-4ae7-9053-fba8ec3428be
 label: zoológiai technikus
-level: 2
+level: 1
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -37,7 +37,7 @@ lateral:
 
 # Zoológiai technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [zoológiai technikus](http://data.europa.eu/esco/occupation/ff4c28e2-66b1-4ae7-9053-fba8ec3428be) (3141.2.5)

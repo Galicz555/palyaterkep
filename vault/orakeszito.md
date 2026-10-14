@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/11eb55d3-4dbe-45c5-a6ce-f04ae843c938
 label: órakészítő
-level: 3
+level: 2
 track: individual
 branch: industry
 subBranch: crafts
@@ -28,7 +28,7 @@ lateral:
 
 # Órakészítő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [órakészítő](http://data.europa.eu/esco/occupation/11eb55d3-4dbe-45c5-a6ce-f04ae843c938) (7311.1)

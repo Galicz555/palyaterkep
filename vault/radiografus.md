@@ -66,9 +66,9 @@ lateral:
   - "[[diagnosztikai-radiografus]]"
   - "[[nuklearismedicina-radiografus]]"
   - "[[sugarterapeuta]]"
-  - "[[betegapolo]]"
   - "[[segedapolo-segedapolono]]"
   - "[[legzesfunkcios-asszisztens]]"
+  - "[[szulesz-szuleszno]]"
 ---
 
 # Radiográfus
@@ -143,6 +143,6 @@ A radiográfusok számos technológia segítségével vizsgálják, kezelik és 
 - [[diagnosztikai-radiografus|diagnosztikai radiográfus]]
 - [[nuklearismedicina-radiografus|nukleárismedicina-radiográfus]]
 - [[sugarterapeuta|sugárterapeuta]]
-- [[betegapolo|betegápoló]]
 - [[segedapolo-segedapolono|segédápoló/segédápolónő]]
 - [[legzesfunkcios-asszisztens|légzésfunkciós asszisztens]]
+- [[szulesz-szuleszno|szülész/szülésznő]]

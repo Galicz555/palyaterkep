@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e80cee57-3672-4aaf-8ca7-53b90771c364
 label: ékszíjburkoló gép kezelője
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: chemicals
@@ -20,7 +20,7 @@ lateral: []
 
 # Ékszíjburkoló gép kezelője
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [ékszíjburkoló gép kezelője](http://data.europa.eu/esco/occupation/e80cee57-3672-4aaf-8ca7-53b90771c364) (8141.1.9.1)

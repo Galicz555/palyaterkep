@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/68f4fdd9-182c-4c0d-a73d-f767b8a8355e
 label: akvakultúra-biológus
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -83,7 +83,7 @@ lateral:
 
 # Akvakultúra-biológus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [akvakultúra-biológus](http://data.europa.eu/esco/occupation/68f4fdd9-182c-4c0d-a73d-f767b8a8355e) (2131.4.1)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/65bd2342-f7de-4932-9164-eb480e35a791
 label: állattenyésztő
-level: 2
+level: 1
 track: individual
 branch: agriculture
 subBranch: livestock
@@ -25,13 +25,12 @@ skills:
   - http://data.europa.eu/esco/skill/d69f2971-5de6-4493-9000-5323115c5c06
 lateral:
   - "[[logondozo-belovaglo-lokikepzo]]"
-  - "[[istallovezeto]]"
   - "[[lovasz]]"
 ---
 
 # Állattenyésztő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Állattenyésztés  
 **ESCO:** [állattenyésztő](http://data.europa.eu/esco/occupation/65bd2342-f7de-4932-9164-eb480e35a791) (9212.4)
@@ -60,5 +59,4 @@ Az állattenyésztők az állatok egészségét és jólétét tartják fenn. Fe
 ## Váltások
 
 - [[logondozo-belovaglo-lokikepzo|lógondozó belovagló lókiképző]]
-- [[istallovezeto|istállóvezető]]
 - [[lovasz|lovász]]

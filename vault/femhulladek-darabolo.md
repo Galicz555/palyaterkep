@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/cb3432f8-bad7-4703-ba66-dc980a4ce4f7
 label: fémhulladék-daraboló
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: metal
@@ -18,11 +18,12 @@ skills:
   - http://data.europa.eu/esco/skill/fc511e12-fe90-40a0-bec8-227abb5e4255
 lateral:
   - "[[brikettalo-gep-kezeloje]]"
+  - "[[vizeromu-kezelo]]"
 ---
 
 # Fémhulladék-daraboló
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Fémipar és felületkezelés  
 **ESCO:** [fémhulladék-daraboló](http://data.europa.eu/esco/occupation/cb3432f8-bad7-4703-ba66-dc980a4ce4f7) (7223.18)
@@ -44,3 +45,4 @@ A fémhulladék-darabolók nagy méretű fémhulladék-lemezeket vágnak fel, ho
 ## Váltások
 
 - [[brikettalo-gep-kezeloje|brikettáló gép kezelője]]
+- [[vizeromu-kezelo|vízerőmű-kezelő]]

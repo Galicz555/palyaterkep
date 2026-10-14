@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f1ecc3c4-8212-4386-871a-6fda1b5b4d91
 label: árverésvezető
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: marketing
@@ -27,12 +27,13 @@ skills:
   - http://data.europa.eu/esco/skill/d6d3fee7-47e2-47f4-a0ec-6c75f28c6abd
   - http://data.europa.eu/esco/skill/dc72ad0a-c5dc-4abd-bc0d-ca43e82162e1
   - http://data.europa.eu/esco/skill/f9759731-c199-4d02-8a12-b1bc9c31c8c3
-lateral: []
+lateral:
+  - "[[aukcioshaz-igazgato]]"
 ---
 
 # Árverésvezető
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Értékesítési vezetés és marketing  
 **ESCO:** [árverésvezető](http://data.europa.eu/esco/occupation/f1ecc3c4-8212-4386-871a-6fda1b5b4d91) (3339.2)
@@ -64,4 +65,4 @@ Az árverésvezetők az ajánlatok elfogadásával és az eladott áruk bejelent
 
 ## Váltások
 
-Nincs.
+- [[aukcioshaz-igazgato|aukciósház-igazgató]]

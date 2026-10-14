@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/abc849b6-9e75-41ce-b1aa-4d488280a8a3
 label: tejellenőrzésért felelős szakember
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: food
@@ -33,7 +33,7 @@ lateral:
 
 # Tejellenőrzésért felelős szakember
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [tejellenőrzésért felelős szakember](http://data.europa.eu/esco/occupation/abc849b6-9e75-41ce-b1aa-4d488280a8a3) (7515.2)

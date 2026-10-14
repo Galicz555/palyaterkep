@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/fa404a79-4091-47f9-a635-c2e3c576ece8
 label: kikötői ügyintéző
 level: 3
-track: management
+track: individual
 branch: transport
 subBranch: dispatch
 skills:
@@ -47,7 +47,7 @@ lateral:
 
 # Kikötői ügyintéző
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Forgalomirányítás és fuvarszervezés  
 **ESCO:** [kikötői ügyintéző](http://data.europa.eu/esco/occupation/fa404a79-4091-47f9-a635-c2e3c576ece8) (4323.11)

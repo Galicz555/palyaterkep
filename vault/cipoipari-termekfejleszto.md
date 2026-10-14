@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1209b85e-80f1-490f-a7e1-6ad220bb956d
 label: cipőipari termékfejlesztő
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: production-engineering
@@ -52,7 +52,7 @@ lateral:
 
 # Cipőipari termékfejlesztő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Ipari és gyártástechnológiai mérnöki terület  
 **ESCO:** [cipőipari termékfejlesztő](http://data.europa.eu/esco/occupation/1209b85e-80f1-490f-a7e1-6ad220bb956d) (3119.6)

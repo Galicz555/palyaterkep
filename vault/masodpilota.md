@@ -51,12 +51,12 @@ skills:
   - http://data.europa.eu/esco/skill/fc511e12-fe90-40a0-bec8-227abb5e4255
   - http://data.europa.eu/esco/skill/ff862044-d49e-4417-bf65-1ae2c0a47e5a
 lateral:
-  - "[[legiforgalmi-pilota]]"
   - "[[helikopterpilota]]"
   - "[[kereskedelmi-pilota]]"
   - "[[maganpilota]]"
   - "[[legijarmu-vezeto]]"
   - "[[repulogepvezeto]]"
+  - "[[masodtiszt]]"
 ---
 
 # Másodpilóta
@@ -116,9 +116,9 @@ A másodpilóta a kapitány munkáját segíti a rádiós kommunikáció, a rep�
 
 ## Váltások
 
-- [[legiforgalmi-pilota|légiforgalmi pilóta]]
 - [[helikopterpilota|helikopterpilóta]]
 - [[kereskedelmi-pilota|kereskedelmi pilóta]]
 - [[maganpilota|magánpilóta]]
 - [[legijarmu-vezeto|légijármű-vezető]]
 - [[repulogepvezeto|repülőgépvezető]]
+- [[masodtiszt|másodtiszt]]

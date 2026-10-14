@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/351a0eb0-a1d0-49bd-a2f8-6dc447ddf316
 label: csővezeték-rendszerek környezetvédelmi projektmenedzsere
-level: 4
+level: 3
 track: management
 branch: engineering
 subBranch: environment
@@ -27,11 +27,12 @@ lateral:
   - "[[csovezetek-megfelelosegi-koordinator]]"
   - "[[csovezetekrendszer-tervezesi-felugyelo]]"
   - "[[csovezetekes-szallitmanyozasi-ugyintezo]]"
+  - "[[gazforgalom-tervezo]]"
 ---
 
 # Csővezeték-rendszerek környezetvédelmi projektmenedzsere
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Környezetvédelem  
 **ESCO:** [csővezeték-rendszerek környezetvédelmi projektmenedzsere](http://data.europa.eu/esco/occupation/351a0eb0-a1d0-49bd-a2f8-6dc447ddf316) (2133.10)
@@ -62,3 +63,4 @@ A csővezeték-rendszerek környezetvédelmi projektmenedzserei biztosítják a 
 - [[csovezetek-megfelelosegi-koordinator|csővezeték-megfelelőségi koordinátor]]
 - [[csovezetekrendszer-tervezesi-felugyelo|csővezetékrendszer-tervezési felügyelő]]
 - [[csovezetekes-szallitmanyozasi-ugyintezo|csővezetékes szállítmányozási ügyintéző]]
+- [[gazforgalom-tervezo|gázforgalom-tervező]]

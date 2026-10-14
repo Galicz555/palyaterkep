@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9a20c93e-a345-4a46-a406-9ffbf11daeef
 label: hulladékgazdálkodási felügyelő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: production-management
@@ -29,12 +29,12 @@ lateral:
   - "[[hulladek-ujrafeldolgozasi-szakerto]]"
   - "[[szilardhulladek-kezelo]]"
   - "[[hulladekkozvetito]]"
-  - "[[ujrafeldolgozo]]"
+  - "[[veszelyesanyag-ellenor]]"
 ---
 
 # Hulladékgazdálkodási felügyelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Gyártásirányítás  
 **ESCO:** [hulladékgazdálkodási felügyelő](http://data.europa.eu/esco/occupation/9a20c93e-a345-4a46-a406-9ffbf11daeef) (1321.2.5)
@@ -67,4 +67,4 @@ A hulladékgazdálkodási felügyelők tanácsadást végeznek és a hulladéká
 - [[hulladek-ujrafeldolgozasi-szakerto|hulladék-újrafeldolgozási szakértő]]
 - [[szilardhulladek-kezelo|szilárdhulladék-kezelő]]
 - [[hulladekkozvetito|hulladékközvetítő]]
-- [[ujrafeldolgozo|újrafeldolgozó]]
+- [[veszelyesanyag-ellenor|veszélyesanyag-ellenőr]]

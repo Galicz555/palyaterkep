@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d4dd502d-9407-456c-a54a-b733fc9cf68b
 label: illatszerbolt vezetője
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -48,7 +48,7 @@ lateral:
 
 # Illatszerbolt vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [illatszerbolt vezetője](http://data.europa.eu/esco/occupation/d4dd502d-9407-456c-a54a-b733fc9cf68b) (1420.4.14)

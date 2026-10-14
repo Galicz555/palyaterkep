@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c549f0de-c415-428e-865c-973bcd224b39
 label: nyelvészetoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -50,7 +50,7 @@ lateral:
 
 # Nyelvészetoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [nyelvészetoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/c549f0de-c415-428e-865c-973bcd224b39) (2310.1.23)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/cb932c74-c13b-47e9-9a85-318bd8eb2f96
 label: vonattakarító
-level: 2
+level: 1
 track: individual
 branch: hospitality
 subBranch: cleaning
@@ -32,7 +32,7 @@ lateral:
 
 # Vonattakarító
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Takarítás, háztartás és épületgondnokság  
 **ESCO:** [vonattakarító](http://data.europa.eu/esco/occupation/cb932c74-c13b-47e9-9a85-318bd8eb2f96) (9112.6)

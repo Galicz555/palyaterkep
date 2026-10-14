@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/96186698-f79d-423a-9652-a2a58085d5f1
 label: fafestő művész
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: crafts
@@ -32,7 +32,7 @@ lateral:
 
 # Fafestő művész
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [fafestő művész](http://data.europa.eu/esco/occupation/96186698-f79d-423a-9652-a2a58085d5f1) (7316.1.4)

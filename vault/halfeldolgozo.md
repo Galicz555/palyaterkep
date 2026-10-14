@@ -32,6 +32,7 @@ lateral:
   - "[[halszeletelo]]"
   - "[[haltermeles-iranyitoja]]"
   - "[[halkonzervipari-gepkezelo]]"
+  - "[[keszetelhuto-gepkezelo]]"
 ---
 
 # Halfeldolgozó
@@ -72,3 +73,4 @@ A halfeldolgozók a halak és kagylók higiéniai, élelmiszer-biztonsági és k
 - [[halszeletelo|halszeletelő]]
 - [[haltermeles-iranyitoja|haltermelés irányítója]]
 - [[halkonzervipari-gepkezelo|halkonzervipari gépkezelő]]
+- [[keszetelhuto-gepkezelo|készételhűtő gépkezelő]]

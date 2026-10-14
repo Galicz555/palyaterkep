@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1999bdfa-f9c4-4a0b-8565-0305108ca65e
 label: pirotechnikai szárítóhelyiség felügyelője
-level: 1
+level: 2
 track: individual
 branch: industry
 subBranch: chemicals
@@ -24,7 +24,7 @@ lateral: []
 
 # Pirotechnikai szárítóhelyiség felügyelője
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [pirotechnikai szárítóhelyiség felügyelője](http://data.europa.eu/esco/occupation/1999bdfa-f9c4-4a0b-8565-0305108ca65e) (8131.6)

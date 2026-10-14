@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7226c10f-701b-4711-8843-140aace12c6f
 label: önkormányzati képviselő
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: politics
@@ -19,17 +19,17 @@ skills:
   - http://data.europa.eu/esco/skill/dbdd03ec-f64f-4916-8a86-cc71d765cc20
   - http://data.europa.eu/esco/skill/fa68995c-305b-4962-96e7-70782fc385f8
 lateral:
+  - "[[polgarmester]]"
+  - "[[allamtitkar]]"
+  - "[[szenator]]"
   - "[[lobbista]]"
   - "[[parlamenti-kepviselo]]"
   - "[[szocialpolitikai-szakerto]]"
-  - "[[gazdasagpolitikai-referens]]"
-  - "[[kozossegfejlesztesi-szakerto]]"
-  - "[[igazgatasszervezo]]"
 ---
 
 # Önkormányzati képviselő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Politika és kormányzati vezetés  
 **ESCO:** [önkormányzati képviselő](http://data.europa.eu/esco/occupation/7226c10f-701b-4711-8843-140aace12c6f) (1111.1)
@@ -52,9 +52,9 @@ Az önkormányzati képviselők egy helyi önkormányzat lakosait képviselik, h
 
 ## Váltások
 
+- [[polgarmester|polgármester]]
+- [[allamtitkar|államtitkár]]
+- [[szenator|szenátor]]
 - [[lobbista|lobbista]]
 - [[parlamenti-kepviselo|parlamenti képviselő]]
 - [[szocialpolitikai-szakerto|szociálpolitikai szakértő]]
-- [[gazdasagpolitikai-referens|gazdaságpolitikai referens]]
-- [[kozossegfejlesztesi-szakerto|közösségfejlesztési szakértő]]
-- [[igazgatasszervezo|igazgatásszervező]]

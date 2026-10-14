@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/41beead9-98ad-4c89-b6e0-a14149f4eeab
 label: benzinkúti eladó
-level: 2
+level: 1
 track: individual
 branch: trade
 subBranch: retail
@@ -42,15 +42,15 @@ skills:
 lateral:
   - "[[vasaru-es-festekbolti-elado]]"
   - "[[hallokeszulekszakuzleti-elado]]"
-  - "[[regisegkereskedo]]"
   - "[[loszerkereskedo]]"
   - "[[haztartasikeszulek-elado]]"
   - "[[elado-fal-es-padloburkolasi-szakuzletben]]"
+  - "[[sportbolti-elado]]"
 ---
 
 # Benzinkúti eladó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Bolti értékesítés  
 **ESCO:** [benzinkúti eladó](http://data.europa.eu/esco/occupation/41beead9-98ad-4c89-b6e0-a14149f4eeab) (5245.1)
@@ -96,7 +96,7 @@ A benzinkúti eladók benzinkutakon értékesítenek üzemanyagokat, kenőanyago
 
 - [[vasaru-es-festekbolti-elado|vasáru- és festékbolti eladó]]
 - [[hallokeszulekszakuzleti-elado|hallókészülékszaküzleti eladó]]
-- [[regisegkereskedo|régiségkereskedő]]
 - [[loszerkereskedo|lőszerkereskedő]]
 - [[haztartasikeszulek-elado|háztartásikészülék-eladó]]
 - [[elado-fal-es-padloburkolasi-szakuzletben|eladó fal- és padlóburkolási szaküzletben]]
+- [[sportbolti-elado|sportbolti eladó]]

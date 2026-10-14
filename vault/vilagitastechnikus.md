@@ -39,9 +39,9 @@ lateral:
   - "[[fenytechnikus]]"
   - "[[szcenikus]]"
   - "[[szinpadmester]]"
-  - "[[hangszertechnikus]]"
   - "[[kellekes]]"
   - "[[rendezvenytechnikus]]"
+  - "[[szinhaztechnikus]]"
 ---
 
 # Világítástechnikus
@@ -89,6 +89,6 @@ A világítástechnikusok berendezéseket állítanak be, készítenek elő, ell
 - [[fenytechnikus|fénytechnikus]]
 - [[szcenikus|szcenikus]]
 - [[szinpadmester|színpadmester]]
-- [[hangszertechnikus|hangszertechnikus]]
 - [[kellekes|kellékes]]
 - [[rendezvenytechnikus|rendezvénytechnikus]]
+- [[szinhaztechnikus|színháztechnikus]]

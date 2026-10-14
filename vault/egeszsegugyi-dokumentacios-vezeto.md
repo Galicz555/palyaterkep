@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/983c2816-a339-4817-97f4-151a9ff3e64d
 label: egészségügyi dokumentációs vezető
-level: 3
+level: 4
 track: management
 branch: health-social
 subBranch: health-management
@@ -37,16 +37,12 @@ skills:
   - http://data.europa.eu/esco/skill/f022b5ff-8496-4722-a7a3-ef3c072f01f6
   - http://data.europa.eu/esco/skill/fa3e5cec-703e-4d46-b3bb-e8a89540ab54
   - http://data.europa.eu/esco/skill/fb15ca73-68fb-41db-a235-0b61d7d9021e
-lateral:
-  - "[[klinikai-kodrogzito]]"
-  - "[[orvosirnok]]"
-  - "[[dietetikai-szakasszisztens]]"
-  - "[[keptarolo-es-keptovabbito-rendszer-kezeloje]]"
+lateral: []
 ---
 
 # Egészségügyi dokumentációs vezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Egészségügyi menedzsment és adminisztráció  
 **ESCO:** [egészségügyi dokumentációs vezető](http://data.europa.eu/esco/occupation/983c2816-a339-4817-97f4-151a9ff3e64d) (3252.2)
@@ -88,7 +84,4 @@ Az egészségügyi dokumentációs vezető felelős a betegadatokat fenntartó �
 
 ## Váltások
 
-- [[klinikai-kodrogzito|klinikai kódrögzítő]]
-- [[orvosirnok|orvosírnok]]
-- [[dietetikai-szakasszisztens|dietetikai szakasszisztens]]
-- [[keptarolo-es-keptovabbito-rendszer-kezeloje|képtároló és képtovábbító rendszer kezelője]]
+Nincs.

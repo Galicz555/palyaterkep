@@ -43,11 +43,11 @@ skills:
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
   - "[[cipo-es-boraru-elado]]"
-  - "[[elado-optikai-szakuzletben]]"
   - "[[jatekbolti-elado]]"
   - "[[zoldseg-gyumolcs-elado]]"
   - "[[ora-ekszer-elado]]"
   - "[[butorbolti-elado]]"
+  - "[[halbolti-elado]]"
 ---
 
 # Építőanyagbolti eladó
@@ -99,8 +99,8 @@ Az építőanyagbolti eladók építőanyagokat értékesítenek szaküzletekben
 ## Váltások
 
 - [[cipo-es-boraru-elado|cipő- és bőráru-eladó]]
-- [[elado-optikai-szakuzletben|eladó optikai szaküzletben]]
 - [[jatekbolti-elado|játékbolti eladó]]
 - [[zoldseg-gyumolcs-elado|zöldség-gyümölcs eladó]]
 - [[ora-ekszer-elado|óra-ékszer eladó]]
 - [[butorbolti-elado|bútorbolti eladó]]
+- [[halbolti-elado|halbolti eladó]]

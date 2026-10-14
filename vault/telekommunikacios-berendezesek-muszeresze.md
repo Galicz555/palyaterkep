@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d07e6a57-a339-4cfd-bf22-a951713148a3
 label: telekommunikációs berendezések műszerésze
-level: 2
+level: 3
 track: individual
 branch: it
 subBranch: telecom
@@ -23,7 +23,7 @@ lateral:
 
 # Telekommunikációs berendezések műszerésze
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Távközlés  
 **ESCO:** [telekommunikációs berendezések műszerésze](http://data.europa.eu/esco/occupation/d07e6a57-a339-4cfd-bf22-a951713148a3) (7422.6)

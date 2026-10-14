@@ -32,6 +32,7 @@ skills:
   - http://data.europa.eu/esco/skill/f27bc0b0-5270-4467-9ea8-d6e8c2dbd9dc
   - http://data.europa.eu/esco/skill/fafbb75f-ec35-4cc2-996a-20c85ef6c266
 lateral:
+  - "[[tetofedo]]"
   - "[[fapadlo-es-parkettarako]]"
 ---
 
@@ -73,4 +74,5 @@ A házépítő mesterek házak vagy hasonló kisebb épületek építését, kar
 
 ## Váltások
 
+- [[tetofedo|tetőfedő]]
 - [[fapadlo-es-parkettarako|fapadló- és parkettarakó]]

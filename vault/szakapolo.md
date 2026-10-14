@@ -80,10 +80,10 @@ skills:
 lateral:
   - "[[betegapolo]]"
   - "[[osztalyvezeto-apolo]]"
+  - "[[vezeto-fizioterapeuta]]"
   - "[[orvosbiologiai-kutato]]"
   - "[[optometrista]]"
-  - "[[mentotiszt]]"
-  - "[[fogorvos]]"
+  - "[[szakkiropraktor]]"
 ---
 
 # Szakápoló
@@ -173,7 +173,7 @@ A szakápolók elősegítik és helyreállítják az emberek egészségét, diag
 
 - [[betegapolo|betegápoló]]
 - [[osztalyvezeto-apolo|osztályvezető ápoló]]
+- [[vezeto-fizioterapeuta|vezető fizioterapeuta]]
 - [[orvosbiologiai-kutato|orvosbiológiai kutató]]
 - [[optometrista|optometrista]]
-- [[mentotiszt|mentőtiszt]]
-- [[fogorvos|fogorvos]]
+- [[szakkiropraktor|szakkiropraktőr]]

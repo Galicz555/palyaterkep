@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b5e21e2b-ab0c-4c8d-8277-d98be4ad79c4
 label: légijármű-ellenőr
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: electrical
@@ -40,7 +40,7 @@ lateral:
 
 # Légijármű-ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Villamosmérnöki terület és elektronika  
 **ESCO:** [légijármű-ellenőr](http://data.europa.eu/esco/occupation/b5e21e2b-ab0c-4c8d-8277-d98be4ad79c4) (3114.1.1)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e44d2570-10cc-4984-9692-63ece1b6dce8
 label: ékszerpolírozó
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: crafts
@@ -23,7 +23,7 @@ lateral:
 
 # Ékszerpolírozó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [ékszerpolírozó](http://data.europa.eu/esco/occupation/e44d2570-10cc-4984-9692-63ece1b6dce8) (7313.1.5)

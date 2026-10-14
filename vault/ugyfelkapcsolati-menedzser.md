@@ -39,8 +39,7 @@ lateral:
   - "[[szolgaltatasmenedzser]]"
   - "[[tagsagszervezo]]"
   - "[[jarmujavito-muhely-vezetoje]]"
-  - "[[szepsegszalon-vezetoje]]"
-  - "[[furdoigazgato]]"
+  - "[[call-center-vezeto]]"
   - "[[pr-tanacsado]]"
 ---
 
@@ -89,6 +88,5 @@ Az ügyfélkapcsolati menedzserek a társaság és ügyfelei közötti közvetí
 - [[szolgaltatasmenedzser|szolgáltatásmenedzser]]
 - [[tagsagszervezo|tagságszervező]]
 - [[jarmujavito-muhely-vezetoje|járműjavító műhely vezetője]]
-- [[szepsegszalon-vezetoje|szépségszalon vezetője]]
-- [[furdoigazgato|fürdőigazgató]]
+- [[call-center-vezeto|call center vezető]]
 - [[pr-tanacsado|PR-tanácsadó]]

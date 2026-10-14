@@ -33,7 +33,6 @@ lateral:
   - "[[toborzasi-tanacsado]]"
   - "[[munkaeropiaci-szolgaltatasi-ugyintezo]]"
   - "[[foglalkoztatasi-tanacsado]]"
-  - "[[humaneroforras-vezeto]]"
   - "[[egyenlosegert-es-inkluzioert-felelos-vezeto]]"
 ---
 
@@ -76,5 +75,4 @@ A humánerőforrás tisztviselők olyan stratégiákat dolgoznak ki és hajtanak
 - [[toborzasi-tanacsado|toborzási tanácsadó]]
 - [[munkaeropiaci-szolgaltatasi-ugyintezo|munkaerőpiaci szolgáltatási ügyintéző]]
 - [[foglalkoztatasi-tanacsado|foglalkoztatási tanácsadó]]
-- [[humaneroforras-vezeto|humánerőforrás-vezető]]
 - [[egyenlosegert-es-inkluzioert-felelos-vezeto|egyenlőségért és inklúzióért felelős vezető]]

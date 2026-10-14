@@ -44,9 +44,9 @@ lateral:
   - "[[gyogyaszatisegedeszkoz-elado]]"
   - "[[textilbolti-elado]]"
   - "[[illatszerbolti-elado]]"
-  - "[[edessegbolti-elado]]"
   - "[[cipo-es-boraru-elado]]"
   - "[[elado-optikai-szakuzletben]]"
+  - "[[jatekbolti-elado]]"
 ---
 
 # Szórakoztató elektronikai szaküzleti eladó
@@ -99,6 +99,6 @@ A szórakoztató elektronikai szaküzleti eladók audio- és videoberendezéseke
 - [[gyogyaszatisegedeszkoz-elado|gyógyászatisegédeszköz-eladó]]
 - [[textilbolti-elado|textilbolti eladó]]
 - [[illatszerbolti-elado|illatszerbolti eladó]]
-- [[edessegbolti-elado|édességbolti eladó]]
 - [[cipo-es-boraru-elado|cipő- és bőráru-eladó]]
 - [[elado-optikai-szakuzletben|eladó optikai szaküzletben]]
+- [[jatekbolti-elado|játékbolti eladó]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/dd89e26f-bb5c-45cb-91c6-8b4d5d82a31f
 label: bontómunkás
-level: 2
+level: 1
 track: individual
 branch: construction
 subBranch: building-structure
@@ -34,7 +34,7 @@ lateral:
 
 # Bontómunkás
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Szerkezetépítés  
 **ESCO:** [bontómunkás](http://data.europa.eu/esco/occupation/dd89e26f-bb5c-45cb-91c6-8b4d5d82a31f) (7119.2)

@@ -22,7 +22,7 @@ lateral:
   - "[[londiner]]"
   - "[[portas-portasno]]"
   - "[[legiutas-kisero]]"
-  - "[[komornyik-komorna]]"
+  - "[[kisero-iskolabuszon]]"
 ---
 
 # Vasúti utaskísérő
@@ -53,4 +53,4 @@ A vasúti utaskísérők vonaton nyújtanak szolgáltatásokat, például üdvö
 - [[londiner|londiner]]
 - [[portas-portasno|portás/portásnő]]
 - [[legiutas-kisero|légiutas-kísérő]]
-- [[komornyik-komorna|komornyik/komorna]]
+- [[kisero-iskolabuszon|kísérő iskolabuszon]]

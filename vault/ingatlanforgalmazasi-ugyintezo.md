@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c5c1c40f-d2b7-437f-b3e8-b9da48f6d728
 label: ingatlanforgalmazási ügyintéző
-level: 1
+level: 2
 track: individual
 branch: business
 subBranch: banking
@@ -38,7 +38,7 @@ lateral:
 
 # Ingatlanforgalmazási ügyintéző
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Banki szolgáltatások  
 **ESCO:** [ingatlanforgalmazási ügyintéző](http://data.europa.eu/esco/occupation/c5c1c40f-d2b7-437f-b3e8-b9da48f6d728) (4312.6)

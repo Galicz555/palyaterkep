@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8c778238-98a4-4fec-a828-a4e978fb7a64
 label: sátorépítő
-level: 2
+level: 1
 track: individual
 branch: construction
 subBranch: building-structure
@@ -24,13 +24,13 @@ lateral:
   - "[[rendezvenyi-villamoshalozat-szerelo]]"
   - "[[rendezvenytechnikai-tartoszerkezet-szerelo]]"
   - "[[fejgepes-vilagosito]]"
-  - "[[magasepito-tartoszerkezet-szerelo]]"
   - "[[szinpadepito]]"
+  - "[[rendezvenytechnikus]]"
 ---
 
 # Sátorépítő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Szerkezetépítés  
 **ESCO:** [sátorépítő](http://data.europa.eu/esco/occupation/8c778238-98a4-4fec-a828-a4e978fb7a64) (7119.5)
@@ -58,5 +58,5 @@ A sátorépítők ideiglenes menedékeket, sátrakat és cirkuszi sátrakat, val
 - [[rendezvenyi-villamoshalozat-szerelo|rendezvényi villamoshálózat szerelő]]
 - [[rendezvenytechnikai-tartoszerkezet-szerelo|rendezvénytechnikai tartószerkezet-szerelő]]
 - [[fejgepes-vilagosito|fejgépes világosító]]
-- [[magasepito-tartoszerkezet-szerelo|magasépítő tartószerkezet-szerelő]]
 - [[szinpadepito|színpadépítő]]
+- [[rendezvenytechnikus|rendezvénytechnikus]]

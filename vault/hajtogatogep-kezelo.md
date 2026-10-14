@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c11e2b53-06f7-465f-9b5c-708016bc96f4
 label: hajtogatógép-kezelő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: printing
@@ -33,7 +33,7 @@ lateral:
 
 # Hajtogatógép-kezelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Nyomdaipar  
 **ESCO:** [hajtogatógép-kezelő](http://data.europa.eu/esco/occupation/c11e2b53-06f7-465f-9b5c-708016bc96f4) (7323.4)

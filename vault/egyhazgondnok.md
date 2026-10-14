@@ -21,7 +21,6 @@ lateral:
   - "[[vedelmi-igazgatasi-tisztviselo]]"
   - "[[birosagi-ugyintezo]]"
   - "[[kozigazgatasi-ugyintezo]]"
-  - "[[vallasi-vezeto]]"
 ---
 
 # Egyházgondnok
@@ -51,4 +50,3 @@ Az egyházgondnokok egyházak és egyházközségek számára végeznek adminisz
 - [[vedelmi-igazgatasi-tisztviselo|védelmi igazgatási tisztviselő]]
 - [[birosagi-ugyintezo|bírósági ügyintéző]]
 - [[kozigazgatasi-ugyintezo|közigazgatási ügyintéző]]
-- [[vallasi-vezeto|vallási vezető]]

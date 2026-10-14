@@ -27,8 +27,8 @@ lateral:
   - "[[tuzertiszt]]"
   - "[[katonai-kikepzotiszt]]"
   - "[[ezredes]]"
+  - "[[tengeresztiszt]]"
   - "[[a-legiero-tisztje]]"
-  - "[[gyalogos]]"
 ---
 
 # Hadviselési szakértő
@@ -64,5 +64,5 @@ A hadviselési szakértők stratégiai feladatokat látnak el, például taktika
 - [[tuzertiszt|tüzértiszt]]
 - [[katonai-kikepzotiszt|katonai kiképzőtiszt]]
 - [[ezredes|ezredes]]
+- [[tengeresztiszt|tengerésztiszt]]
 - [[a-legiero-tisztje|a légierő tisztje]]
-- [[gyalogos|gyalogos]]

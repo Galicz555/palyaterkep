@@ -18,6 +18,7 @@ skills:
   - http://data.europa.eu/esco/skill/f8d4a24c-fb62-444e-9525-7aa5662f440d
 lateral:
   - "[[gyermekfelugyelo]]"
+  - "[[vasuti-utaskisero]]"
 ---
 
 # Kísérő iskolabuszon
@@ -44,3 +45,4 @@ A kísérők az iskolabuszon felügyelik a diákbuszokkal kapcsolatos tevékenys
 ## Váltások
 
 - [[gyermekfelugyelo|gyermekfelügyelő]]
+- [[vasuti-utaskisero|vasúti utaskísérő]]

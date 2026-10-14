@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/db3b1cb9-8460-4de0-8fc7-aff7a9a74b7e
 label: porcelánfestő művész
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: crafts
@@ -35,7 +35,7 @@ lateral:
 
 # Porcelánfestő művész
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [porcelánfestő művész](http://data.europa.eu/esco/occupation/db3b1cb9-8460-4de0-8fc7-aff7a9a74b7e) (7316.1.3)

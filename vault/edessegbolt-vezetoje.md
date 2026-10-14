@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e1c9b304-2784-48e7-b7e8-089867743bbf
 label: édességbolt vezetője
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -48,7 +48,7 @@ lateral:
 
 # Édességbolt vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [édességbolt vezetője](http://data.europa.eu/esco/occupation/e1c9b304-2784-48e7-b7e8-089867743bbf) (1420.4.13)

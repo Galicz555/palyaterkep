@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6a6e174e-cffa-49a9-9f2f-aa39c81cdee5
 label: postai ügyfélkapcsolati foglalkozású
-level: 1
+level: 2
 track: individual
 branch: business
 subBranch: banking
@@ -30,7 +30,7 @@ lateral:
 
 # Postai ügyfélkapcsolati foglalkozású
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Banki szolgáltatások  
 **ESCO:** [postai ügyfélkapcsolati foglalkozású](http://data.europa.eu/esco/occupation/6a6e174e-cffa-49a9-9f2f-aa39c81cdee5) (4211.2)

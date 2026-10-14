@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1da55a33-09b3-4ac7-818e-2a0fea68cecc
 label: kiadói jogokkal foglalkozó ügyintéző
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: marketing
@@ -18,12 +18,13 @@ skills:
   - http://data.europa.eu/esco/skill/ee3c5d5e-d454-4ac4-beeb-9848c54dc15b
 lateral:
   - "[[zenei-producer]]"
+  - "[[producer]]"
   - "[[radioproducer]]"
 ---
 
 # Kiadói jogokkal foglalkozó ügyintéző
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Értékesítési vezetés és marketing  
 **ESCO:** [kiadói jogokkal foglalkozó ügyintéző](http://data.europa.eu/esco/occupation/1da55a33-09b3-4ac7-818e-2a0fea68cecc) (3339.5)
@@ -45,4 +46,5 @@ A kiadói jogokkal foglalkozó ügyintézők felelősek a könyvek szerzői jog�
 ## Váltások
 
 - [[zenei-producer|zenei producer]]
+- [[producer|producer]]
 - [[radioproducer|rádióproducer]]

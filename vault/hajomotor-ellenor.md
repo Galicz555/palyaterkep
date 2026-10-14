@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/da6220cb-21ee-4076-8796-1e922b44c394
 label: hajómotor-ellenőr
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: mechanical
@@ -38,7 +38,7 @@ lateral:
 
 # Hajómotor-ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Gépészmérnöki terület  
 **ESCO:** [hajómotor-ellenőr](http://data.europa.eu/esco/occupation/da6220cb-21ee-4076-8796-1e922b44c394) (3115.1.22)

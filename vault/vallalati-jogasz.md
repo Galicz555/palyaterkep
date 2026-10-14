@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/fdfce14e-992d-4ff4-9f9d-7a353c75654e
 label: vállalati jogász
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: legal
@@ -32,14 +32,14 @@ lateral:
   - "[[jogasz]]"
   - "[[ugyesz]]"
   - "[[jogtanacsos]]"
-  - "[[eskudtszeki-koordinator]]"
   - "[[birosagi-titkar]]"
   - "[[jogpolitikai-tisztviselo]]"
+  - "[[jogi-adminisztrator]]"
 ---
 
 # Vállalati jogász
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Jog és igazságszolgáltatás  
 **ESCO:** [vállalati jogász](http://data.europa.eu/esco/occupation/fdfce14e-992d-4ff4-9f9d-7a353c75654e) (2611.1.1)
@@ -75,6 +75,6 @@ A vállalati jogászok jogi tanácsadási szolgáltatásokat és képviseletet b
 - [[jogasz|jogász]]
 - [[ugyesz|ügyész]]
 - [[jogtanacsos|jogtanácsos]]
-- [[eskudtszeki-koordinator|esküdtszéki koordinátor]]
 - [[birosagi-titkar|bírósági titkár]]
 - [[jogpolitikai-tisztviselo|jogpolitikai tisztviselő]]
+- [[jogi-adminisztrator|jogi adminisztrátor]]

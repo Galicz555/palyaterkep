@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/88990bdf-4f6b-4411-82c9-9eecad1db8fb
 label: zeneművészeti tanár
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -44,7 +44,7 @@ lateral:
 
 # Zeneművészeti tanár
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [zeneművészeti tanár](http://data.europa.eu/esco/occupation/88990bdf-4f6b-4411-82c9-9eecad1db8fb) (2310.1.27)

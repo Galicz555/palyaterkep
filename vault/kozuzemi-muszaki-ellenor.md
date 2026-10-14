@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3288a2fe-4934-47c8-ad0b-11b16c9cd461
 label: közüzemi műszaki ellenőr
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: production-engineering
@@ -37,7 +37,7 @@ lateral:
 
 # Közüzemi műszaki ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Ipari és gyártástechnológiai mérnöki terület  
 **ESCO:** [közüzemi műszaki ellenőr](http://data.europa.eu/esco/occupation/3288a2fe-4934-47c8-ad0b-11b16c9cd461) (3119.19)

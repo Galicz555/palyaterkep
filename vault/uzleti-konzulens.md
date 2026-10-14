@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6a29d804-f775-446c-bec7-35fc4e28ac97
 label: üzleti konzulens
-level: 2
+level: 3
 track: individual
 branch: business
 subBranch: management
@@ -37,12 +37,13 @@ skills:
 lateral:
   - "[[gazdasagi-elemzo]]"
   - "[[uzletiintelligencia-menedzser]]"
+  - "[[kockazatitoke-befekteto]]"
   - "[[kozfinanszirozasi-tanacsado]]"
 ---
 
 # Üzleti konzulens
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Vállalatvezetés, stratégia és tanácsadás  
 **ESCO:** [üzleti konzulens](http://data.europa.eu/esco/occupation/6a29d804-f775-446c-bec7-35fc4e28ac97) (2421.2)
@@ -83,4 +84,5 @@ Az üzleti tanácsadók elemzik a vállalkozások és társaságok helyzetét, s
 
 - [[gazdasagi-elemzo|gazdasági elemző]]
 - [[uzletiintelligencia-menedzser|üzletiintelligencia-menedzser]]
+- [[kockazatitoke-befekteto|kockázatitőke-befektető]]
 - [[kozfinanszirozasi-tanacsado|közfinanszírozási tanácsadó]]

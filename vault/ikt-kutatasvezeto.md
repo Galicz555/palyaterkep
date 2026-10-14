@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9db7d74c-b46d-45c0-b611-6bcb7456ecc6
 label: IKT kutatásvezető
-level: 3
-track: individual
+level: 4
+track: management
 branch: engineering
 subBranch: rnd-management
 skills:
@@ -32,7 +32,7 @@ lateral:
 
 # IKT kutatásvezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Kutatás-fejlesztés és termékfejlesztés vezetése  
 **ESCO:** [IKT kutatásvezető](http://data.europa.eu/esco/occupation/9db7d74c-b46d-45c0-b611-6bcb7456ecc6) (1223.2.2.1)

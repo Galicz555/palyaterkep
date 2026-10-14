@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/bff716c9-42c7-471e-8af0-582f799fb29a
 label: vízi élőhelyi környezetmérnök
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: environment
@@ -43,7 +43,7 @@ lateral:
 
 # Vízi élőhelyi környezetmérnök
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Környezetvédelem  
 **ESCO:** [vízi élőhelyi környezetmérnök](http://data.europa.eu/esco/occupation/bff716c9-42c7-471e-8af0-582f799fb29a) (2133.2)

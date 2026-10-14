@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/624986f9-21ef-4cdf-8cf6-8407a337ec2f
 label: földmérő technikus
-level: 2
+level: 1
 track: individual
 branch: construction
 subBranch: civil-engineering
@@ -41,7 +41,7 @@ lateral:
 
 # Földmérő technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőmérnöki terület és műszaki ellenőrzés  
 **ESCO:** [földmérő technikus](http://data.europa.eu/esco/occupation/624986f9-21ef-4cdf-8cf6-8407a337ec2f) (3112.10)

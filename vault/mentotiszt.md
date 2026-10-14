@@ -85,7 +85,6 @@ lateral:
   - "[[betegszallito]]"
   - "[[mentoauto-vezeto]]"
   - "[[segedapolo-segedapolono]]"
-  - "[[szakapolo]]"
   - "[[szulesz-szuleszno]]"
 ---
 
@@ -180,5 +179,4 @@ A mentőtiszt feladata, hogy vészhelyzetben még az orvosi létesítményekbe t
 - [[betegszallito|betegszállító]]
 - [[mentoauto-vezeto|mentőautó-vezető]]
 - [[segedapolo-segedapolono|segédápoló/segédápolónő]]
-- [[szakapolo|szakápoló]]
 - [[szulesz-szuleszno|szülész/szülésznő]]

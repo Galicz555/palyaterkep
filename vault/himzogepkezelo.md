@@ -19,9 +19,9 @@ lateral:
   - "[[himzo]]"
   - "[[varrogepkezelo]]"
   - "[[gepi-varro]]"
+  - "[[gepi-vasalo]]"
   - "[[lakastextil-keszito]]"
   - "[[kesztyukeszito]]"
-  - "[[ruhaipari-vegkikeszito]]"
 ---
 
 # Hímzőgépkezelő
@@ -49,6 +49,6 @@ A hímzőgépkezelők olyan hímzőgépeket használnak ruházati termékek dís
 - [[himzo|hímző]]
 - [[varrogepkezelo|varrógépkezelő]]
 - [[gepi-varro|gépi varró]]
+- [[gepi-vasalo|gépi vasaló]]
 - [[lakastextil-keszito|lakástextil-készítő]]
 - [[kesztyukeszito|kesztyűkészítő]]
-- [[ruhaipari-vegkikeszito|ruhaipari végkikészítő]]

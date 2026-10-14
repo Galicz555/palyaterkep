@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/949f1dc9-fb19-4212-8ac6-35ce83c88921
 label: súgó
-level: 1
+level: 2
 track: individual
 branch: culture
 subBranch: stage-film
@@ -31,7 +31,7 @@ lateral:
 
 # Súgó
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Színház-, film- és műsorgyártás  
 **ESCO:** [súgó](http://data.europa.eu/esco/occupation/949f1dc9-fb19-4212-8ac6-35ce83c88921) (3435.16)

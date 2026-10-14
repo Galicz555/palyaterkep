@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e9f50268-4dab-4579-90c2-2ff219eb56f1
 label: mérnöki ismeretek oktatója felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -51,7 +51,7 @@ lateral:
 
 # Mérnöki ismeretek oktatója felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [mérnöki ismeretek oktatója felsőoktatási intézményben](http://data.europa.eu/esco/occupation/e9f50268-4dab-4579-90c2-2ff219eb56f1) (2310.1.16)

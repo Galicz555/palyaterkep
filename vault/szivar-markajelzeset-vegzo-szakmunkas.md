@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/17abb59e-a1f9-4ce8-88b7-569e5413dca9
 label: szivar márkajelzését végző szakmunkás
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: packaging
@@ -26,7 +26,6 @@ skills:
   - http://data.europa.eu/esco/skill/d94d9eaa-073f-40bc-b111-5f6278e7d742
   - http://data.europa.eu/esco/skill/ed847e01-3264-4f86-a1fd-852c499786bf
 lateral:
-  - "[[molnar]]"
   - "[[konzervipari-es-palackozo-operator]]"
   - "[[dohanylevel-valogato]]"
   - "[[szivarellenor]]"
@@ -36,7 +35,7 @@ lateral:
 
 # Szivar márkajelzését végző szakmunkás
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Csomagolás és általános gyári munka  
 **ESCO:** [szivar márkajelzését végző szakmunkás](http://data.europa.eu/esco/occupation/17abb59e-a1f9-4ce8-88b7-569e5413dca9) (8183.2)
@@ -66,7 +65,6 @@ A szivar márkajelzését végző szakmunkások gépeket kezelnek, amelyek márk
 
 ## Váltások
 
-- [[molnar|molnár]]
 - [[konzervipari-es-palackozo-operator|konzervipari és palackozó operátor]]
 - [[dohanylevel-valogato|dohánylevél-válogató]]
 - [[szivarellenor|szivarellenőr]]

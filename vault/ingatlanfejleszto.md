@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/b9711647-463f-4991-a858-d5de66ff2f83
 label: ingatlanfejlesztő
 level: 4
-track: individual
+track: management
 branch: construction
 subBranch: construction-management
 skills:
@@ -33,7 +33,7 @@ lateral:
 
 # Ingatlanfejlesztő
 
-Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építésvezetés  
 **ESCO:** [ingatlanfejlesztő](http://data.europa.eu/esco/occupation/b9711647-463f-4991-a858-d5de66ff2f83) (1323.1.2)

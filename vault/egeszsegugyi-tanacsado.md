@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/61053604-8091-4a8e-9c63-5151051722e3
 label: egészségügyi tanácsadó
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: policy
@@ -23,11 +23,12 @@ skills:
   - http://data.europa.eu/esco/skill/fbe6232a-e2b2-4830-a5e6-ed6415f01e85
 lateral:
   - "[[egeszsegpolitikai-szakerto]]"
+  - "[[egeszsegugyi-tevekenyseget-folytato-egyseg-vezetoje]]"
 ---
 
 # Egészségügyi tanácsadó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Közpolitika és közigazgatás  
 **ESCO:** [egészségügyi tanácsadó](http://data.europa.eu/esco/occupation/61053604-8091-4a8e-9c63-5151051722e3) (2422.6)
@@ -54,3 +55,4 @@ Az egészségügyi tanácsadók tanácsot adnak az egészségügyi szervezetekne
 ## Váltások
 
 - [[egeszsegpolitikai-szakerto|egészségpolitikai szakértő]]
+- [[egeszsegugyi-tevekenyseget-folytato-egyseg-vezetoje|egészségügyi tevékenységet folytató egység vezetője]]

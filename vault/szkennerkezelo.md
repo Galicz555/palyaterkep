@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/cea4d5c9-7805-434a-8e6b-af5e9fa54c9e
 label: szkennerkezelő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: printing
@@ -22,13 +22,12 @@ skills:
   - http://data.europa.eu/esco/skill/baffa7a3-a6d4-4ea8-a0ad-1afec3fc0acb
   - http://data.europa.eu/esco/skill/d86595cb-0c68-4d98-aea8-32269da7eef5
   - http://data.europa.eu/esco/skill/f96c8129-91b8-4d29-bfa2-3d889e427e74
-lateral:
-  - "[[reprografiai-technikus]]"
+lateral: []
 ---
 
 # Szkennerkezelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Nyomdaipar  
 **ESCO:** [szkennerkezelő](http://data.europa.eu/esco/occupation/cea4d5c9-7805-434a-8e6b-af5e9fa54c9e) (7321.1.4)
@@ -55,4 +54,4 @@ A szkennerkezelők szkennerekkel dolgoznak. Betáplálják a nyomtatott anyagoka
 
 ## Váltások
 
-- [[reprografiai-technikus|reprográfiai technikus]]
+Nincs.

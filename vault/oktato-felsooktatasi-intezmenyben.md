@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/684fd8d5-9b40-4b02-a680-438f0082d923
 label: oktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -43,7 +43,7 @@ lateral:
 
 # Oktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [oktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/684fd8d5-9b40-4b02-a680-438f0082d923) (2310.1)

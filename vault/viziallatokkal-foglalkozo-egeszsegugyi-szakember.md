@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8467dda9-34c6-4c6f-aa37-e7bddffac007
 label: víziállatokkal foglalkozó egészségügyi szakember
-level: 2
+level: 3
 track: individual
 branch: agriculture
 subBranch: animal-care
@@ -67,7 +67,7 @@ lateral:
 
 # Víziállatokkal foglalkozó egészségügyi szakember
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Állategészségügy és állatgondozás  
 **ESCO:** [víziállatokkal foglalkozó egészségügyi szakember](http://data.europa.eu/esco/occupation/8467dda9-34c6-4c6f-aa37-e7bddffac007) (2250.5)

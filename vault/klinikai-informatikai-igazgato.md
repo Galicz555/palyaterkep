@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ef909843-97c6-4c48-8038-2e7aefdfcad5
 label: klinikai informatikai igazgató
-level: 3
+level: 4
 track: management
 branch: health-social
 subBranch: health-management
@@ -40,7 +40,7 @@ lateral: []
 
 # Klinikai informatikai igazgató
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Egészségügyi menedzsment és adminisztráció  
 **ESCO:** [klinikai informatikai igazgató](http://data.europa.eu/esco/occupation/ef909843-97c6-4c48-8038-2e7aefdfcad5) (1342.1)

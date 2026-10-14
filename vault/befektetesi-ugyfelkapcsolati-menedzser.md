@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/4c715719-3c3f-4058-ba00-9b2ef34848e8
 label: befektetési ügyfélkapcsolati menedzser
 level: 3
-track: individual
+track: management
 branch: business
 subBranch: investment
 skills:
@@ -44,7 +44,7 @@ lateral:
 
 # Befektetési ügyfélkapcsolati menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Befektetés és pénzügyi elemzés  
 **ESCO:** [befektetési ügyfélkapcsolati menedzser](http://data.europa.eu/esco/occupation/4c715719-3c3f-4058-ba00-9b2ef34848e8) (2412.6.4)

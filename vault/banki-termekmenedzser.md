@@ -41,7 +41,7 @@ lateral:
   - "[[hitelszovetkezet-vezetoje]]"
   - "[[bankszamla-ugyintezo]]"
   - "[[tarsashazkezelo]]"
-  - "[[hitelezesi-vezeto]]"
+  - "[[penzugyi-kockazatkezelo]]"
 ---
 
 # Banki termékmenedzser
@@ -91,4 +91,4 @@ A banki termékmenedzserek a banki termékek piacait tanulmányozzák, és hozz�
 - [[hitelszovetkezet-vezetoje|hitelszövetkezet vezetője]]
 - [[bankszamla-ugyintezo|bankszámla-ügyintéző]]
 - [[tarsashazkezelo|társasházkezelő]]
-- [[hitelezesi-vezeto|hitelezési vezető]]
+- [[penzugyi-kockazatkezelo|pénzügyi kockázatkezelő]]

@@ -26,6 +26,7 @@ skills:
   - http://data.europa.eu/esco/skill/dbfb9dda-48d9-4a10-9821-3237f868071b
   - http://data.europa.eu/esco/skill/f7b5d916-52f0-4865-b6a6-e1a3b711cb5e
 lateral:
+  - "[[egeszsegugyi-tanacsado]]"
   - "[[egeszsegpolitikai-szakerto]]"
 ---
 
@@ -61,4 +62,5 @@ Az egészségügyi tevékenységet folytató egységek vezetői felügyelik az e
 
 ## Váltások
 
+- [[egeszsegugyi-tanacsado|egészségügyi tanácsadó]]
 - [[egeszsegpolitikai-szakerto|egészségpolitikai szakértő]]

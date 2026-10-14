@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c9191f7f-28b5-4df8-991d-804c53009b83
 label: növénytermesztő
-level: 2
+level: 1
 track: individual
 branch: agriculture
 subBranch: crops
@@ -25,16 +25,13 @@ skills:
   - http://data.europa.eu/esco/skill/f675d28f-9e1f-4938-ae49-c1d07f902fed
 lateral:
   - "[[kertesz]]"
-  - "[[mezogazdasagi-novenytermesztesi-brigad-vezetoje]]"
   - "[[komlotermeszto]]"
   - "[[gyumolcs-es-zoldsegvalogato-osztalyozo]]"
-  - "[[gyumolcstermeszto]]"
-  - "[[gazdalkodo]]"
 ---
 
 # Növénytermesztő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Növénytermesztés és kertészet  
 **ESCO:** [növénytermesztő](http://data.europa.eu/esco/occupation/c9191f7f-28b5-4df8-991d-804c53009b83) (9213.1)
@@ -63,8 +60,5 @@ A növénytermesztők gyakorlati tevékenységeket folytatnak és segítséget n
 ## Váltások
 
 - [[kertesz|kertész]]
-- [[mezogazdasagi-novenytermesztesi-brigad-vezetoje|mezőgazdasági növénytermesztési brigád vezetője]]
 - [[komlotermeszto|komlótermesztő]]
 - [[gyumolcs-es-zoldsegvalogato-osztalyozo|gyümölcs- és zöldségválogató osztályozó]]
-- [[gyumolcstermeszto|gyümölcstermesztő]]
-- [[gazdalkodo|gazdálkodó]]

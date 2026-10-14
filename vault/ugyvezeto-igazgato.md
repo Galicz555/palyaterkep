@@ -31,7 +31,6 @@ skills:
 lateral:
   - "[[vezerigazgato]]"
   - "[[cegvezeto]]"
-  - "[[fioktelep-vezeto]]"
 ---
 
 # Ügyvezető igazgató
@@ -71,4 +70,3 @@ Az ügyvezető igazgatók a vezérigazgatók legfontosabb kollégái, a vállala
 
 - [[vezerigazgato|vezérigazgató]]
 - [[cegvezeto|cégvezető]]
-- [[fioktelep-vezeto|fióktelep-vezető]]

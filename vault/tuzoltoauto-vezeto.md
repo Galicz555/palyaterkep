@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1bb2aa65-1524-4961-8dba-ad25f34f195f
 label: tűzoltóautó-vezető
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: road
@@ -35,12 +35,13 @@ lateral:
   - "[[tengeri-tuzolto]]"
   - "[[ipari-tuzolto]]"
   - "[[tuzoltoszivattyu-mukodtetoje]]"
+  - "[[tuzoltoparancsnok-1349-7]]"
   - "[[tuzolto-szakoktato]]"
 ---
 
 # Tűzoltóautó-vezető
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Közúti közlekedés  
 **ESCO:** [tűzoltóautó-vezető](http://data.europa.eu/esco/occupation/1bb2aa65-1524-4961-8dba-ad25f34f195f) (8332.5)
@@ -79,4 +80,5 @@ A tűzoltóautó-vezetők sürgősségi járműveket, például tűzoltókocsika
 - [[tengeri-tuzolto|tengeri tűzoltó]]
 - [[ipari-tuzolto|ipari tűzoltó]]
 - [[tuzoltoszivattyu-mukodtetoje|tűzoltószivattyú működtetője]]
+- [[tuzoltoparancsnok-1349-7|tűzoltóparancsnok]]
 - [[tuzolto-szakoktato|tűzoltó szakoktató]]

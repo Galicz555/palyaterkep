@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/ef6020f9-11b4-4d1a-96e0-903331594121
 label: cipőipari termékfejlesztési menedzser
 level: 3
-track: individual
+track: management
 branch: engineering
 subBranch: rnd-management
 skills:
@@ -45,7 +45,7 @@ lateral:
 
 # Cipőipari termékfejlesztési menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Kutatás-fejlesztés és termékfejlesztés vezetése  
 **ESCO:** [cipőipari termékfejlesztési menedzser](http://data.europa.eu/esco/occupation/ef6020f9-11b4-4d1a-96e0-903331594121) (1223.2.1.2)

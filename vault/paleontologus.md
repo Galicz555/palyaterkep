@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/82e37849-30ec-4461-a40e-263d4c984f88
 label: paleontológus
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: physical-sciences
@@ -56,7 +56,7 @@ lateral:
 
 # Paleontológus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Fizika, kémia és földtudományok  
 **ESCO:** [paleontológus](http://data.europa.eu/esco/occupation/82e37849-30ec-4461-a40e-263d4c984f88) (2114.1.9)

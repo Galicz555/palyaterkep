@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6ce86c90-36cc-43ef-a1e0-885d8151f976
 label: hajózási géptiszt
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: water
@@ -41,7 +41,7 @@ lateral:
 
 # Hajózási géptiszt
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Vízi közlekedés  
 **ESCO:** [hajózási géptiszt](http://data.europa.eu/esco/occupation/6ce86c90-36cc-43ef-a1e0-885d8151f976) (3151.4)

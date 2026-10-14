@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b7fc1cd1-0d6d-4e9e-8a9f-c3270201be81
 label: valutapénztáros
-level: 1
+level: 2
 track: individual
 branch: business
 subBranch: banking
@@ -29,7 +29,7 @@ lateral:
 
 # Valutapénztáros
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Banki szolgáltatások  
 **ESCO:** [valutapénztáros](http://data.europa.eu/esco/occupation/b7fc1cd1-0d6d-4e9e-8a9f-c3270201be81) (4312.3)

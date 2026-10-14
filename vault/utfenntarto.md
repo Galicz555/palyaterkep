@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f272a521-1a38-4d34-a78e-3adeca95b977
 label: útfenntartó
-level: 2
+level: 1
 track: individual
 branch: construction
 subBranch: plant-labour
@@ -32,7 +32,7 @@ lateral:
 
 # Útfenntartó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőgépek és segédmunka  
 **ESCO:** [útfenntartó](http://data.europa.eu/esco/occupation/f272a521-1a38-4d34-a78e-3adeca95b977) (9312.1.3)

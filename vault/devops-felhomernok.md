@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/cc867bee-ab5c-427f-9244-f7a204d9574b
 label: DevOps felhőmérnök
-level: 2
+level: 3
 track: individual
 branch: it
 subBranch: software
@@ -40,7 +40,7 @@ lateral:
 
 # DevOps felhőmérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Szoftver- és webfejlesztés  
 **ESCO:** [DevOps felhőmérnök](http://data.europa.eu/esco/occupation/cc867bee-ab5c-427f-9244-f7a204d9574b) (2512.7)

@@ -45,12 +45,12 @@ skills:
   - http://data.europa.eu/esco/skill/f10cf304-f32c-40ee-97a7-ec8d84d72955
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
-  - "[[butorbolti-elado]]"
   - "[[hobbiallat-bolti-elado]]"
   - "[[ruhazati-bolti-elado]]"
   - "[[szamitogepesjatek-szoftver-es-mediabolti-elado]]"
   - "[[kerteszeti-es-viragbolti-elado]]"
   - "[[jegypenztaros]]"
+  - "[[gepjarmu-ertekesitesi-elado]]"
 ---
 
 # Könyvesbolti eladó
@@ -104,9 +104,9 @@ A könyvesbolti eladók könyveket értékesítenek szaküzletekben. Ezenkívül
 
 ## Váltások
 
-- [[butorbolti-elado|bútorbolti eladó]]
 - [[hobbiallat-bolti-elado|hobbiállat-bolti eladó]]
 - [[ruhazati-bolti-elado|ruházati bolti eladó]]
 - [[szamitogepesjatek-szoftver-es-mediabolti-elado|számítógépesjáték-, szoftver- és médiabolti eladó]]
 - [[kerteszeti-es-viragbolti-elado|kertészeti és virágbolti eladó]]
 - [[jegypenztaros|jegypénztáros]]
+- [[gepjarmu-ertekesitesi-elado|gépjármű-értékesítési eladó]]

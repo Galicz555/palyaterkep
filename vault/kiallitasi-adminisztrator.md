@@ -29,7 +29,6 @@ skills:
   - http://data.europa.eu/esco/skill/df1265b9-81fd-4a40-a746-f0442ffbf7ef
   - http://data.europa.eu/esco/skill/ed0acb70-1077-4005-a611-fdc4f6942ef5
 lateral:
-  - "[[gyujtemenyigazgato]]"
   - "[[muveszeti-szakerto]]"
   - "[[kulturalis-oroksegvedelmi-szakember]]"
   - "[[kurator]]"
@@ -70,7 +69,6 @@ A kiállítási regisztrátorok szervezik, irányítják és dokumentálják a m
 
 ## Váltások
 
-- [[gyujtemenyigazgato|gyűjteményigazgató]]
 - [[muveszeti-szakerto|művészeti szakértő]]
 - [[kulturalis-oroksegvedelmi-szakember|kulturális örökségvédelmi szakember]]
 - [[kurator|kurátor]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/056bef79-c125-47ab-b6b9-8eed05c9458c
 label: távközlési technikus
-level: 2
+level: 3
 track: individual
 branch: it
 subBranch: telecom
@@ -41,7 +41,7 @@ lateral:
 
 # Távközlési technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Távközlés  
 **ESCO:** [távközlési technikus](http://data.europa.eu/esco/occupation/056bef79-c125-47ab-b6b9-8eed05c9458c) (7422.7)

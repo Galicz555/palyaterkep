@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f1783e61-38b7-468e-b495-9c3c92f5ab0d
 label: halal állatszúró
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: food
@@ -44,12 +44,11 @@ lateral:
   - "[[allatszuro]]"
   - "[[meszaros]]"
   - "[[halal-hentes]]"
-  - "[[halszeletelo]]"
 ---
 
 # Halal állatszúró
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [halal állatszúró](http://data.europa.eu/esco/occupation/f1783e61-38b7-468e-b495-9c3c92f5ab0d) (7511.6.1)
@@ -97,4 +96,3 @@ A halal állatszúrók állatokat vágnak le és halal marha- és csirkehúst k�
 - [[allatszuro|állatszúró]]
 - [[meszaros|mészáros]]
 - [[halal-hentes|halal-hentes]]
-- [[halszeletelo|halszeletelő]]

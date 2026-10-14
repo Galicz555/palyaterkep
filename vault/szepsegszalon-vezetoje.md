@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/33e3a746-f209-4a1a-96df-301505531cb2
 label: szépségszalon vezetője
-level: 2
+level: 3
 track: management
 branch: culture
 subBranch: culture-management
@@ -48,17 +48,17 @@ skills:
   - http://data.europa.eu/esco/skill/f5f5b244-6cea-4fbc-8a50-8f712791bc09
   - http://data.europa.eu/esco/skill/fe30a4b0-1a99-4fc7-afff-b162b8c834ba
 lateral:
+  - "[[furdoigazgato]]"
+  - "[[rekreacios-kozpont-vezetoje]]"
   - "[[botanikus]]"
   - "[[mosoda-es-vegytisztito-vezetoje]]"
+  - "[[allatkerti-kurator]]"
   - "[[tagsagszervezo]]"
-  - "[[jarmujavito-muhely-vezetoje]]"
-  - "[[ugyfelkapcsolati-menedzser]]"
-  - "[[call-center-vezeto]]"
 ---
 
 # Szépségszalon vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Kulturális és szabadidős intézmények vezetése  
 **ESCO:** [szépségszalon vezetője](http://data.europa.eu/esco/occupation/33e3a746-f209-4a1a-96df-301505531cb2) (1431.2.1)
@@ -110,9 +110,9 @@ A szépségszalonok vezetői a szépségszalonok napi működését és a szemé
 
 ## Váltások
 
+- [[furdoigazgato|fürdőigazgató]]
+- [[rekreacios-kozpont-vezetoje|rekreációs központ vezetője]]
 - [[botanikus|botanikus]]
 - [[mosoda-es-vegytisztito-vezetoje|mosoda és vegytisztító vezetője]]
+- [[allatkerti-kurator|állatkerti kurátor]]
 - [[tagsagszervezo|tagságszervező]]
-- [[jarmujavito-muhely-vezetoje|járműjavító műhely vezetője]]
-- [[ugyfelkapcsolati-menedzser|ügyfélkapcsolati menedzser]]
-- [[call-center-vezeto|call center vezető]]

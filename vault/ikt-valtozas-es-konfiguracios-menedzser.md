@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/3b1ea27c-781c-41eb-821f-214285260dd2
 label: IKT változás- és konfigurációs menedzser
 level: 3
-track: individual
+track: management
 branch: it
 subBranch: software-testing
 skills:
@@ -30,7 +30,7 @@ lateral:
 
 # IKT változás- és konfigurációs menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Szoftvertesztelés és minőségbiztosítás  
 **ESCO:** [IKT változás- és konfigurációs menedzser](http://data.europa.eu/esco/occupation/3b1ea27c-781c-41eb-821f-214285260dd2) (2519.3)

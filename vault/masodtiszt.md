@@ -36,7 +36,9 @@ skills:
   - http://data.europa.eu/esco/skill/faf2d093-d95a-471a-9d6b-3fc6951498f0
   - http://data.europa.eu/esco/skill/fc511e12-fe90-40a0-bec8-227abb5e4255
 lateral:
+  - "[[masodpilota]]"
   - "[[legiforgalmi-iranyito]]"
+  - "[[repulogepvezeto]]"
   - "[[kabinszemelyzet-menedzser]]"
   - "[[legikozlekedes-biztonsagi-technikus]]"
   - "[[legiutas-kisero]]"
@@ -84,7 +86,9 @@ A másodtiszt feladata a különböző légi járművek – többek között a m
 
 ## Váltások
 
+- [[masodpilota|másodpilóta]]
 - [[legiforgalmi-iranyito|légiforgalmi irányító]]
+- [[repulogepvezeto|repülőgépvezető]]
 - [[kabinszemelyzet-menedzser|kabinszemélyzet-menedzser]]
 - [[legikozlekedes-biztonsagi-technikus|légiközlekedés-biztonsági technikus]]
 - [[legiutas-kisero|légiutas-kísérő]]

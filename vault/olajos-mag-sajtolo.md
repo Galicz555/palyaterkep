@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/303931a2-860a-4f76-83ac-3c190d67287e
 label: olajos mag sajtoló
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: food
@@ -36,7 +36,7 @@ lateral:
 
 # Olajos mag sajtoló
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [olajos mag sajtoló](http://data.europa.eu/esco/occupation/303931a2-860a-4f76-83ac-3c190d67287e) (7514.3)

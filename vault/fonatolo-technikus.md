@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/28dbd459-d634-484a-92d7-e6f8dc1ec532
 label: fonatoló technikus
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: textiles
@@ -27,7 +27,7 @@ lateral:
 
 # Fonatoló technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Textil-, ruha- és bőripar  
 **ESCO:** [fonatoló technikus](http://data.europa.eu/esco/occupation/28dbd459-d634-484a-92d7-e6f8dc1ec532) (8159.2)

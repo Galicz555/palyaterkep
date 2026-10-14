@@ -33,6 +33,8 @@ skills:
 lateral:
   - "[[kertesz]]"
   - "[[novenytermeszto]]"
+  - "[[mezogazdasagi-novenytermesztesi-brigad-vezetoje]]"
+  - "[[kerteszeti-termelesi-csoportvezeto]]"
   - "[[kerteszeti-alkalmazott]]"
 ---
 
@@ -75,4 +77,6 @@ A komlótermesztők feladata a komlóültetés, -művelés és -betakarítás ol
 
 - [[kertesz|kertész]]
 - [[novenytermeszto|növénytermesztő]]
+- [[mezogazdasagi-novenytermesztesi-brigad-vezetoje|mezőgazdasági növénytermesztési brigád vezetője]]
+- [[kerteszeti-termelesi-csoportvezeto|kertészeti termelési csoportvezető]]
 - [[kerteszeti-alkalmazott|kertészeti alkalmazott]]

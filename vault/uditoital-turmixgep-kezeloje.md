@@ -27,7 +27,7 @@ lateral:
   - "[[almabor-erjesztesevel-foglalkozo-szakember]]"
   - "[[pincemester-8160-13]]"
   - "[[csokoladeonto-gep-kezeloje]]"
-  - "[[keszetelhuto-gepkezelo]]"
+  - "[[kavedaralo-gep-kezeloje]]"
 ---
 
 # Üdítőital-turmixgép kezelője
@@ -63,4 +63,4 @@ Az üdítőital-turmixgépek kezelői alkoholmentes, ízesített vizeket gyárta
 - [[almabor-erjesztesevel-foglalkozo-szakember|almabor erjesztésével foglalkozó szakember]]
 - [[pincemester-8160-13|pincemester]]
 - [[csokoladeonto-gep-kezeloje|csokoládéöntő-gép kezelője]]
-- [[keszetelhuto-gepkezelo|készételhűtő gépkezelő]]
+- [[kavedaralo-gep-kezeloje|kávédaráló gép kezelője]]

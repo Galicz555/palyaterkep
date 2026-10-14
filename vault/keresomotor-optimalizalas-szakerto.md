@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/092fdeeb-a76f-4ed2-b248-90fd6eaaffef
 label: keresőmotor-optimalizálás szakértő
-level: 2
+level: 3
 track: individual
 branch: it
 subBranch: software
@@ -27,7 +27,7 @@ lateral:
 
 # Keresőmotor-optimalizálás szakértő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Szoftver- és webfejlesztés  
 **ESCO:** [keresőmotor-optimalizálás szakértő](http://data.europa.eu/esco/occupation/092fdeeb-a76f-4ed2-b248-90fd6eaaffef) (2513.2)

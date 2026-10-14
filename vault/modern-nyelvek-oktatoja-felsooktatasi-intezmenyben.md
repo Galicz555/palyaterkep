@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/be3c021d-bd93-45a0-ad32-e8fa8e0d17ef
 label: modern nyelvek oktatója felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -47,7 +47,7 @@ lateral:
 
 # Modern nyelvek oktatója felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [modern nyelvek oktatója felsőoktatási intézményben](http://data.europa.eu/esco/occupation/be3c021d-bd93-45a0-ad32-e8fa8e0d17ef) (2310.1.26)

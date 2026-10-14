@@ -68,8 +68,7 @@ skills:
   - http://data.europa.eu/esco/skill/f8bc0c97-e56f-4f19-bedc-fededf7bea26
   - http://data.europa.eu/esco/skill/fc879b9b-9f87-41e2-9a87-bd941a11dc4e
   - http://data.europa.eu/esco/skill/fd02e17b-05ea-4449-963d-95273199159d
-lateral:
-  - "[[szakkiropraktor]]"
+lateral: []
 ---
 
 # Kiropraktőr
@@ -147,4 +146,4 @@ A kiropraktőrök felelnek a neuro-váz-izom rendszerrel kapcsolatos rendellenes
 
 ## Váltások
 
-- [[szakkiropraktor|szakkiropraktőr]]
+Nincs.

@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/a5826284-14fb-4866-b9be-69ce69db1b71
 label: akvakultúrás-tenyésztési menedzser
 level: 3
-track: individual
+track: management
 branch: agriculture
 subBranch: fishing
 skills:
@@ -57,7 +57,7 @@ lateral:
 
 # Akvakultúrás-tenyésztési menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Halászat és halgazdálkodás  
 **ESCO:** [akvakultúrás-tenyésztési menedzser](http://data.europa.eu/esco/occupation/a5826284-14fb-4866-b9be-69ce69db1b71) (1312.2)

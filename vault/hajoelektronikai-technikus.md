@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1d196f32-05ca-4ea5-a347-4fccbb3da863
 label: hajóelektronikai technikus
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: electrical-trades
@@ -38,7 +38,7 @@ lateral:
 
 # Hajóelektronikai technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Villamos- és elektronikai szerelés  
 **ESCO:** [hajóelektronikai technikus](http://data.europa.eu/esco/occupation/1d196f32-05ca-4ea5-a347-4fccbb3da863) (7421.4)

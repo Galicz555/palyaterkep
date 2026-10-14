@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b156960c-8508-4067-908d-f167847c55b1
 label: kőfejtővezető
-level: 3
+level: 4
 track: management
 branch: industry
 subBranch: mining
@@ -30,14 +30,12 @@ skills:
 lateral:
   - "[[banyavezeto]]"
   - "[[banyaszati-termelesi-vezeto]]"
-  - "[[banyaszati-tervezomernok]]"
-  - "[[banyaszati-fejlesztesi-mernok]]"
   - "[[banyaszati-szakmai-iranyito]]"
 ---
 
 # Kőfejtővezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Bányászat és ásványi termékek  
 **ESCO:** [kőfejtővezető](http://data.europa.eu/esco/occupation/b156960c-8508-4067-908d-f167847c55b1) (1322.2)
@@ -71,6 +69,4 @@ A kőfejtővezetők kőbánya-műveleteket terveznek, felügyelnek és koordiná
 
 - [[banyavezeto|bányavezető]]
 - [[banyaszati-termelesi-vezeto|bányászati termelési vezető]]
-- [[banyaszati-tervezomernok|bányászati tervezőmérnök]]
-- [[banyaszati-fejlesztesi-mernok|bányászati fejlesztési mérnök]]
 - [[banyaszati-szakmai-iranyito|bányászati szakmai irányító]]

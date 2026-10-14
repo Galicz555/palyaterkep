@@ -35,10 +35,10 @@ skills:
   - http://data.europa.eu/esco/skill/ecadff1d-9ba6-4802-bd27-6f534ab5c478
   - http://data.europa.eu/esco/skill/f2d9677b-ba41-4b02-9db9-b2e05a462830
 lateral:
-  - "[[halaszhajo-kapitany]]"
   - "[[fedelzetmester-halaszhajon]]"
   - "[[part-menti-halaszatot-folytato-hajo-parancsnoka]]"
   - "[[matroz-halaszhajon]]"
+  - "[[halasz]]"
   - "[[melytengeri-halasz]]"
   - "[[gepuzemseged]]"
 ---
@@ -84,9 +84,9 @@ A halászati őrök a hajó helyzetének, a halászeszközök használatának é
 
 ## Váltások
 
-- [[halaszhajo-kapitany|halászhajó-kapitány]]
 - [[fedelzetmester-halaszhajon|fedélzetmester halászhajón]]
 - [[part-menti-halaszatot-folytato-hajo-parancsnoka|part menti halászatot folytató hajó parancsnoka]]
 - [[matroz-halaszhajon|matróz halászhajón]]
+- [[halasz|halász]]
 - [[melytengeri-halasz|mélytengeri halász]]
 - [[gepuzemseged|gépüzemsegéd]]

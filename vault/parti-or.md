@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/bd1cd902-1fb1-40b1-abce-bb9ef60805b4
 label: parti őr
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: security
@@ -28,7 +28,7 @@ lateral:
 
 # Parti őr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Vagyonvédelem és közbiztonság  
 **ESCO:** [parti őr](http://data.europa.eu/esco/occupation/bd1cd902-1fb1-40b1-abce-bb9ef60805b4) (5419.3)

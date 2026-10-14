@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b567a979-c556-49fa-8b36-8af6cfe97624
 label: rakodómunkás
-level: 2
+level: 1
 track: individual
 branch: transport
 subBranch: warehousing
@@ -50,7 +50,7 @@ lateral:
 
 # Rakodómunkás
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Raktározás és anyagmozgatás  
 **ESCO:** [rakodómunkás](http://data.europa.eu/esco/occupation/b567a979-c556-49fa-8b36-8af6cfe97624) (9333.6)

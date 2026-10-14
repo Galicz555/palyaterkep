@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/64e38ce7-3901-4261-bfee-77c7a77397f2
 label: szakpolitikai vezető
-level: 4
+level: 3
 track: management
 branch: public
 subBranch: policy
@@ -36,7 +36,7 @@ lateral:
 
 # Szakpolitikai vezető
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Közpolitika és közigazgatás  
 **ESCO:** [szakpolitikai vezető](http://data.europa.eu/esco/occupation/64e38ce7-3901-4261-bfee-77c7a77397f2) (1213.2)

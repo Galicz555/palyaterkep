@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/bff7e8a3-6206-4d38-b25f-fcb6e634c7af
 label: archeológiaoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -48,7 +48,7 @@ lateral:
 
 # Archeológiaoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [archeológiaoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/bff7e8a3-6206-4d38-b25f-fcb6e634c7af) (2310.1.2)

@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/d954fd71-0e2f-4cf9-85f0-c040fa6cbda9
 label: promóciós menedzser
 level: 3
-track: individual
+track: management
 branch: trade
 subBranch: marketing
 skills:
@@ -53,7 +53,7 @@ lateral:
 
 # Promóciós menedzser
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Értékesítési vezetés és marketing  
 **ESCO:** [promóciós menedzser](http://data.europa.eu/esco/occupation/d954fd71-0e2f-4cf9-85f0-c040fa6cbda9) (1221.3.3)

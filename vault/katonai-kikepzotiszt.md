@@ -30,7 +30,7 @@ lateral:
   - "[[torzsormester]]"
   - "[[hadviselesi-szakerto]]"
   - "[[ornagy]]"
-  - "[[szakaszvezeto]]"
+  - "[[ezredes]]"
   - "[[szazad-parancsnok]]"
 ---
 
@@ -70,5 +70,5 @@ A katonai kiképzőtisztek próbaidősek, az akadémiáról frissen kikerültek,
 - [[torzsormester|törzsőrmester]]
 - [[hadviselesi-szakerto|hadviselési szakértő]]
 - [[ornagy|őrnagy]]
-- [[szakaszvezeto|szakaszvezető]]
+- [[ezredes|ezredes]]
 - [[szazad-parancsnok|század-parancsnok]]

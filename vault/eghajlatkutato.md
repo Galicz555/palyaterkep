@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3dbd758c-6dc0-41fe-8248-2250c9bfa4ab
 label: éghajlatkutató
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: physical-sciences
@@ -24,7 +24,7 @@ lateral:
 
 # Éghajlatkutató
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Fizika, kémia és földtudományok  
 **ESCO:** [éghajlatkutató](http://data.europa.eu/esco/occupation/3dbd758c-6dc0-41fe-8248-2250c9bfa4ab) (2112.1.2)

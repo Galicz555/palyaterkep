@@ -38,10 +38,10 @@ skills:
 lateral:
   - "[[allatgondozo-idomar]]"
   - "[[allatszitter]]"
+  - "[[allatidomar]]"
   - "[[eloallat-szallito]]"
   - "[[kutyakikepzo]]"
   - "[[loidomar]]"
-  - "[[allatkozmetikus]]"
 ---
 
 # Állatgondozó
@@ -88,7 +88,7 @@ Az állatgondozók a nem hasznukért tartott állatoknak biztosítanak rutinszer
 
 - [[allatgondozo-idomar|állatgondozó idomár]]
 - [[allatszitter|állatszitter]]
+- [[allatidomar|állatidomár]]
 - [[eloallat-szallito|élőállat szállító]]
 - [[kutyakikepzo|kutyakiképző]]
 - [[loidomar|lóidomár]]
-- [[allatkozmetikus|állatkozmetikus]]

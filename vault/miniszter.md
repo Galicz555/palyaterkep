@@ -23,6 +23,7 @@ skills:
   - http://data.europa.eu/esco/skill/fa68995c-305b-4962-96e7-70782fc385f8
 lateral:
   - "[[szenator]]"
+  - "[[parlamenti-kepviselo]]"
   - "[[allamtitkar]]"
   - "[[tartomanyi-kormanyzo]]"
   - "[[polgarmester]]"
@@ -57,6 +58,7 @@ A miniszterek a nemzeti vagy regionális kormányzatok döntéshozói és a mini
 ## Váltások
 
 - [[szenator|szenátor]]
+- [[parlamenti-kepviselo|parlamenti képviselő]]
 - [[allamtitkar|államtitkár]]
 - [[tartomanyi-kormanyzo|tartományi kormányzó]]
 - [[polgarmester|polgármester]]

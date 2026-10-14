@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7d9e2a65-758c-4cbd-b66d-3a595d3d63b1
 label: poligráfszakértő
-level: 2
+level: 3
 track: individual
 branch: health-social
 subBranch: psychology
@@ -21,13 +21,12 @@ skills:
   - http://data.europa.eu/esco/skill/ac7267c8-4b65-4622-9d8d-3532e5c7faa7
   - http://data.europa.eu/esco/skill/c544a9f3-5945-4b54-afed-de0697852817
   - http://data.europa.eu/esco/skill/e1f09038-b493-4771-ae29-a2d3e7ea013a
-lateral:
-  - "[[szemelyzeti-asszisztens]]"
+lateral: []
 ---
 
 # Poligráfszakértő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Pszichológia  
 **ESCO:** [poligráfszakértő](http://data.europa.eu/esco/occupation/7d9e2a65-758c-4cbd-b66d-3a595d3d63b1) (2634.1)
@@ -53,4 +52,4 @@ A poligráfszakértők felkészítik az egyéneket a poligráftesztre, azt el is
 
 ## Váltások
 
-- [[szemelyzeti-asszisztens|személyzeti asszisztens]]
+Nincs.

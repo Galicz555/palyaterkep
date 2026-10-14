@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/526ba8e1-fc71-4657-8d27-52f03e8ca81d
 label: gyermekgondozási koordinátor
 level: 2
-track: individual
+track: management
 branch: education
 subBranch: early-childhood
 skills:
@@ -34,7 +34,7 @@ lateral:
 
 # Gyermekgondozási koordinátor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Kisgyermekkori nevelés  
 **ESCO:** [gyermekgondozási koordinátor](http://data.europa.eu/esco/occupation/526ba8e1-fc71-4657-8d27-52f03e8ca81d) (1341.1)

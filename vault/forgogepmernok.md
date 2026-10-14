@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/24677ef2-512c-4f4a-bc1c-14bf374e9f22
 label: forgógépmérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: mechanical
@@ -42,7 +42,7 @@ lateral:
 
 # Forgógépmérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Gépészmérnöki terület  
 **ESCO:** [forgógépmérnök](http://data.europa.eu/esco/occupation/24677ef2-512c-4f4a-bc1c-14bf374e9f22) (2144.1.20)

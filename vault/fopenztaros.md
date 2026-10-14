@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c76dda38-938c-404e-8a6d-78c8705eebc0
 label: főpénztáros
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -29,12 +29,11 @@ skills:
   - http://data.europa.eu/esco/skill/efe5d94c-2249-4a50-8c44-6e77331c698d
 lateral:
   - "[[uzletvezeto]]"
-  - "[[penztaros]]"
 ---
 
 # Főpénztáros
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [főpénztáros](http://data.europa.eu/esco/occupation/c76dda38-938c-404e-8a6d-78c8705eebc0) (5222.1.1)
@@ -67,4 +66,3 @@ A főpénztárosok szupermarketekben és más nagy áruházakban felügyelik a p
 ## Váltások
 
 - [[uzletvezeto|üzletvezető]]
-- [[penztaros|pénztáros]]

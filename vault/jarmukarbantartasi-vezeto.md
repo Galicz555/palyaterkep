@@ -28,6 +28,7 @@ skills:
   - http://data.europa.eu/esco/skill/f5798f9c-42a3-4a54-b4c2-ec33a2ddd863
 lateral:
   - "[[kozuti-jarmuszerelo]]"
+  - "[[jarmujavito-muhely-vezetoje]]"
 ---
 
 # Járműkarbantartási vezető
@@ -64,3 +65,4 @@ A járműkarbantartási vezetők feladata a szervizállomások napi szintű műk
 ## Váltások
 
 - [[kozuti-jarmuszerelo|közúti járműszerelő]]
+- [[jarmujavito-muhely-vezetoje|járműjavító műhely vezetője]]

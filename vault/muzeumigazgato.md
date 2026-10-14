@@ -34,6 +34,7 @@ skills:
   - http://data.europa.eu/esco/skill/f509c7cb-ec40-49b8-a2eb-c3bc35934bbc
 lateral:
   - "[[kulturalis-archivumvezeto]]"
+  - "[[gyujtemenyigazgato]]"
 ---
 
 # Múzeumigazgató
@@ -76,3 +77,4 @@ A múzeumigazgatók felügyelik a műgyűjtemények, műalkotások és a kiáll�
 ## Váltások
 
 - [[kulturalis-archivumvezeto|kulturális archívumvezető]]
+- [[gyujtemenyigazgato|gyűjteményigazgató]]

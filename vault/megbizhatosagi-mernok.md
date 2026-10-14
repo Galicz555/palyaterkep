@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/07dfff6d-a0d0-4202-a697-fe9176c15999
 label: megbízhatósági mérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: other-engineering
@@ -36,7 +36,7 @@ lateral:
 
 # Megbízhatósági mérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Egyéb mérnöki szakterületek  
 **ESCO:** [megbízhatósági mérnök](http://data.europa.eu/esco/occupation/07dfff6d-a0d0-4202-a697-fe9176c15999) (2149.7)

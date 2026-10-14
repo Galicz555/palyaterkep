@@ -43,7 +43,6 @@ skills:
   - http://data.europa.eu/esco/skill/fb7b6c08-4952-4017-9f67-d23445d5882d
 lateral:
   - "[[szoleszetvezeto]]"
-  - "[[szolomunkas]]"
   - "[[szoleszeti-gepkezelo]]"
 ---
 
@@ -96,5 +95,4 @@ A vincellérek felügyelik a szőlőültetvényeken végzett munkát, megszervez
 ## Váltások
 
 - [[szoleszetvezeto|szőlészetvezető]]
-- [[szolomunkas|szőlőmunkás]]
 - [[szoleszeti-gepkezelo|szőlészeti gépkezelő]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2079755f-d809-49e6-8037-4de6180e54c0
 label: adatmérnök
-level: 3
+level: 2
 track: individual
 branch: it
 subBranch: systems-analysis
@@ -36,7 +36,7 @@ lateral:
 
 # Adatmérnök
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Rendszerelemzés, architektúra és adat  
 **ESCO:** [adatmérnök](http://data.europa.eu/esco/occupation/2079755f-d809-49e6-8037-4de6180e54c0) (2511.20)

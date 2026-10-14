@@ -32,7 +32,7 @@ lateral:
   - "[[utasbiztonsagi-ellenor]]"
   - "[[testor]]"
   - "[[portas]]"
-  - "[[biztonsagi-tanacsado]]"
+  - "[[biztonsagi-or-pancelozott-jarmuben]]"
 ---
 
 # Tömegirányító
@@ -73,4 +73,4 @@ Az incidensek megelőzése vagy az azokra való gyors reagálás érdekében a t
 - [[utasbiztonsagi-ellenor|utasbiztonsági ellenőr]]
 - [[testor|testőr]]
 - [[portas|portás]]
-- [[biztonsagi-tanacsado|biztonsági tanácsadó]]
+- [[biztonsagi-or-pancelozott-jarmuben|biztonsági őr páncélozott járműben]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/76ef0a87-6afe-4560-b5d0-9a086abe45c5
 label: biztonsági tesztelő
-level: 2
+level: 3
 track: individual
 branch: it
 subBranch: cybersecurity
@@ -45,14 +45,16 @@ skills:
   - http://data.europa.eu/esco/skill/fe1c2b32-7fe9-4668-affa-07ff658a68cf
 lateral:
   - "[[infokommunikacios-biztonsagtechnikus]]"
+  - "[[kiberbiztonsagi-kockazatkezelo]]"
   - "[[digitalis-kriminalisztika-szakerto]]"
   - "[[kiberbiztonsagi-esemenykezelo]]"
   - "[[beagyazott-rendszerekkel-foglalkozo-biztonsagi-mernok]]"
+  - "[[ikt-katasztrofaelharitas-menedzser]]"
 ---
 
 # Biztonsági tesztelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Kiberbiztonság  
 **ESCO:** [biztonsági tesztelő](http://data.europa.eu/esco/occupation/76ef0a87-6afe-4560-b5d0-9a086abe45c5) (2529.4)
@@ -101,6 +103,8 @@ Az etikus hackerek az iparági elfogadott módszereknek és protokolloknak megfe
 ## Váltások
 
 - [[infokommunikacios-biztonsagtechnikus|infokommunikációs biztonságtechnikus]]
+- [[kiberbiztonsagi-kockazatkezelo|kiberbiztonsági kockázatkezelő]]
 - [[digitalis-kriminalisztika-szakerto|digitális kriminalisztika szakértő]]
 - [[kiberbiztonsagi-esemenykezelo|kiberbiztonsági eseménykezelő]]
 - [[beagyazott-rendszerekkel-foglalkozo-biztonsagi-mernok|beágyazott rendszerekkel foglalkozó biztonsági mérnök]]
+- [[ikt-katasztrofaelharitas-menedzser|IKT katasztrófaelhárítás menedzser]]

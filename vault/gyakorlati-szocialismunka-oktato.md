@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3a55ef85-5abf-48e2-884b-5efaf881bfb1
 label: gyakorlati szociálismunka-oktató
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -81,13 +81,13 @@ lateral:
   - "[[munkaugyi-szocialis-munkas]]"
   - "[[buntetes-vegrehajtasi-szocialis-munkas]]"
   - "[[szocialis-munkas]]"
+  - "[[tanacsado-szocialis-munkas]]"
   - "[[katonai-szocialis-munkas]]"
-  - "[[iskolai-gyermekvedelmi-felelos]]"
 ---
 
 # Gyakorlati szociálismunka-oktató
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [gyakorlati szociálismunka-oktató](http://data.europa.eu/esco/occupation/3a55ef85-5abf-48e2-884b-5efaf881bfb1) (2310.2)
@@ -172,5 +172,5 @@ A szociális munkával foglalkozó gyakorlati oktatók a szociális munkát vég
 - [[munkaugyi-szocialis-munkas|munkaügyi szociális munkás]]
 - [[buntetes-vegrehajtasi-szocialis-munkas|büntetés-végrehajtási szociális munkás]]
 - [[szocialis-munkas|szociális munkás]]
+- [[tanacsado-szocialis-munkas|tanácsadó szociális munkás]]
 - [[katonai-szocialis-munkas|katonai szociális munkás]]
-- [[iskolai-gyermekvedelmi-felelos|iskolai gyermekvédelmi felelős]]

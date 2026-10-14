@@ -22,9 +22,9 @@ lateral:
   - "[[torzsormester]]"
   - "[[katonatiszt]]"
   - "[[szazados]]"
+  - "[[kulonleges-alakulat-tisztje]]"
   - "[[fohadnagy]]"
-  - "[[katonai-kikepzotiszt]]"
-  - "[[tengeresztiszt]]"
+  - "[[tuzertiszt]]"
 ---
 
 # Szakaszvezető
@@ -55,6 +55,6 @@ A szakaszvezetők katonai szakaszokat felügyelnek, és utasítási feladatokat 
 - [[torzsormester|törzsőrmester]]
 - [[katonatiszt|katonatiszt]]
 - [[szazados|százados]]
+- [[kulonleges-alakulat-tisztje|különleges alakulat tisztje]]
 - [[fohadnagy|főhadnagy]]
-- [[katonai-kikepzotiszt|katonai kiképzőtiszt]]
-- [[tengeresztiszt|tengerésztiszt]]
+- [[tuzertiszt|tüzértiszt]]

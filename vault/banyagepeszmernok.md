@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/fcbb66f5-843b-4152-9ce4-e7b19c2a88d9
 label: bányagépészmérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: mechanical
@@ -37,7 +37,7 @@ lateral:
 
 # Bányagépészmérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Gépészmérnöki terület  
 **ESCO:** [bányagépészmérnök](http://data.europa.eu/esco/occupation/fcbb66f5-843b-4152-9ce4-e7b19c2a88d9) (2144.1.12)

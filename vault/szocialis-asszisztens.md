@@ -33,10 +33,8 @@ skills:
   - http://data.europa.eu/esco/skill/fdb44237-c0b0-4924-9439-911332e0d884
 lateral:
   - "[[kozossegi-egeszsegugyi-dolgozo]]"
-  - "[[szocialismunka-oktato-felsooktatasi-intezmenyben]]"
   - "[[iskolai-gyermekvedelmi-felelos]]"
   - "[[segelyvonal-operator]]"
-  - "[[szocialpolitikai-kutato]]"
 ---
 
 # Szociális asszisztens
@@ -78,7 +76,5 @@ A szociális asszisztensek olyan gyakorlati szakemberek, akik előmozdítják a 
 ## Váltások
 
 - [[kozossegi-egeszsegugyi-dolgozo|közösségi egészségügyi dolgozó]]
-- [[szocialismunka-oktato-felsooktatasi-intezmenyben|szociálismunka-oktató felsőoktatási intézményben]]
 - [[iskolai-gyermekvedelmi-felelos|iskolai gyermekvédelmi felelős]]
 - [[segelyvonal-operator|segélyvonal-operátor]]
-- [[szocialpolitikai-kutato|szociálpolitikai kutató]]

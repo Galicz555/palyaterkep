@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/e74513c3-8ba8-462f-978c-0450522f4427
 label: kémiaoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -53,7 +53,7 @@ lateral:
 
 # Kémiaoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [kémiaoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/e74513c3-8ba8-462f-978c-0450522f4427) (2310.1.8)

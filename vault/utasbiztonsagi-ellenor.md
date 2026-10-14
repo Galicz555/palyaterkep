@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/933d02c0-3dfa-418f-9c2d-470b525cc42c
 label: utasbiztonsági ellenőr
-level: 2
+level: 1
 track: individual
 branch: public
 subBranch: regulatory
@@ -26,14 +26,14 @@ lateral:
   - "[[biztonsagi-or]]"
   - "[[portas]]"
   - "[[tomegiranyito]]"
-  - "[[testor]]"
   - "[[kidoboember]]"
   - "[[aruhazi-biztonsagi-or]]"
+  - "[[pancelozott-gepjarmu-vezetoje]]"
 ---
 
 # Utasbiztonsági ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Hatósági ügyintézés  
 **ESCO:** [utasbiztonsági ellenőr](http://data.europa.eu/esco/occupation/933d02c0-3dfa-418f-9c2d-470b525cc42c) (3351.2)
@@ -63,6 +63,6 @@ Az utasbiztonsági ellenőrök magánszemélyek poggyászát ellenőrzik a poten
 - [[biztonsagi-or|biztonsági őr]]
 - [[portas|portás]]
 - [[tomegiranyito|tömegirányító]]
-- [[testor|testőr]]
 - [[kidoboember|kidobóember]]
 - [[aruhazi-biztonsagi-or|áruházi biztonsági őr]]
+- [[pancelozott-gepjarmu-vezetoje|páncélozott gépjármű vezetője]]

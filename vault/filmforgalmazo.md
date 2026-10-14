@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3530b443-d2bf-4741-b771-12c77e7c6232
 label: filmforgalmazó
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: stage-film
@@ -29,7 +29,7 @@ lateral: []
 
 # Filmforgalmazó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Színház-, film- és műsorgyártás  
 **ESCO:** [filmforgalmazó](http://data.europa.eu/esco/occupation/3530b443-d2bf-4741-b771-12c77e7c6232) (1324.5)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/666846b2-01ce-43f6-8cb7-f3be09fac4a2
 label: ombudsman
-level: 4
+level: 5
 track: individual
 branch: public
 subBranch: legal
@@ -19,14 +19,13 @@ skills:
   - http://data.europa.eu/esco/skill/a0e23745-6ba4-45e2-9510-df6e71ed1230
   - http://data.europa.eu/esco/skill/f79e4715-5776-485c-ab7d-631c9b8d70ad
 lateral:
-  - "[[mediator]]"
   - "[[biro]]"
   - "[[vallasi-vezeto]]"
 ---
 
 # Ombudsman
 
-Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Stratégiai szint (5), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Jog és igazságszolgáltatás  
 **ESCO:** [ombudsman](http://data.europa.eu/esco/occupation/666846b2-01ce-43f6-8cb7-f3be09fac4a2) (2619.11)
@@ -49,6 +48,5 @@ Az ombudsmanok pártatlan közvetítőként rendeznek olyan vitákat, ahol a ké
 
 ## Váltások
 
-- [[mediator|mediátor]]
 - [[biro|bíró]]
 - [[vallasi-vezeto|vallási vezető]]

@@ -43,10 +43,10 @@ skills:
 lateral:
   - "[[kereskedelmi-pilota]]"
   - "[[legijarmu-vezeto]]"
-  - "[[legiforgalmi-pilota]]"
   - "[[helikopterpilota]]"
   - "[[repulogepvezeto]]"
   - "[[masodpilota]]"
+  - "[[legiforgalmi-iranyito]]"
 ---
 
 # Magánpilóta
@@ -98,7 +98,7 @@ A magánpilóta nem kereskedelmi, hanem szabadidős célú utakra szolgáló, ko
 
 - [[kereskedelmi-pilota|kereskedelmi pilóta]]
 - [[legijarmu-vezeto|légijármű-vezető]]
-- [[legiforgalmi-pilota|légiforgalmi pilóta]]
 - [[helikopterpilota|helikopterpilóta]]
 - [[repulogepvezeto|repülőgépvezető]]
 - [[masodpilota|másodpilóta]]
+- [[legiforgalmi-iranyito|légiforgalmi irányító]]

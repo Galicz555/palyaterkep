@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/15d5636f-7714-4697-850a-67b7f7cb3837
 label: optikai szerszámkészítő
-level: 3
+level: 2
 track: individual
 branch: industry
 subBranch: crafts
@@ -45,7 +45,7 @@ lateral:
 
 # Optikai szerszámkészítő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [optikai szerszámkészítő](http://data.europa.eu/esco/occupation/15d5636f-7714-4697-850a-67b7f7cb3837) (7311.2)

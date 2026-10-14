@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/66527cdc-b7a5-4996-9448-7e327b68d08d
 label: művészettörténet-oktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -46,7 +46,7 @@ lateral:
 
 # Művészettörténet-oktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [művészettörténet-oktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/66527cdc-b7a5-4996-9448-7e327b68d08d) (2310.1.4)

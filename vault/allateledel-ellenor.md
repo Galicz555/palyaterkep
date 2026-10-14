@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c7ee21d5-9a13-4cf8-a3b9-292eefd37f7a
 label: állateledel ellenőr
-level: 2
-track: individual
+level: 3
+track: management
 branch: industry
 subBranch: production-management
 skills:
@@ -42,12 +42,13 @@ lateral:
   - "[[elelmiszergyarto-mernok]]"
   - "[[malatakezelo-mester]]"
   - "[[leparolouzemi-felugyelo]]"
+  - "[[elelmiszerszabalyozasi-tanacsado]]"
   - "[[almabor-keszito-mester]]"
 ---
 
 # Állateledel ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Gyártásirányítás  
 **ESCO:** [állateledel ellenőr](http://data.europa.eu/esco/occupation/c7ee21d5-9a13-4cf8-a3b9-292eefd37f7a) (3122.4.1)
@@ -93,4 +94,5 @@ Az állateledel ellenőrök felügyelik az állateledelek gyártási folyamatát
 - [[elelmiszergyarto-mernok|élelmiszergyártó mérnök]]
 - [[malatakezelo-mester|malátakezelő mester]]
 - [[leparolouzemi-felugyelo|lepárolóüzemi felügyelő]]
+- [[elelmiszerszabalyozasi-tanacsado|élelmiszerszabályozási tanácsadó]]
 - [[almabor-keszito-mester|almabor készítő mester]]

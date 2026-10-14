@@ -47,9 +47,9 @@ lateral:
   - "[[novenytermesztes-vezetoje]]"
   - "[[kerteszeti-termelessel-foglalkozo-egyseg-vezetoje]]"
   - "[[kerteszeti-termelesi-csoportvezeto]]"
-  - "[[novenytermeszto]]"
   - "[[gyumolcstermeszto]]"
-  - "[[kertesz]]"
+  - "[[komlotermeszto]]"
+  - "[[gazdalkodo]]"
 ---
 
 # Mezőgazdasági növénytermesztési brigád vezetője
@@ -105,6 +105,6 @@ A mezőgazdasági növénytermesztési brigádok vezetőinek feladata a növény
 - [[novenytermesztes-vezetoje|növénytermesztés vezetője]]
 - [[kerteszeti-termelessel-foglalkozo-egyseg-vezetoje|kertészeti termeléssel foglalkozó egység vezetője]]
 - [[kerteszeti-termelesi-csoportvezeto|kertészeti termelési csoportvezető]]
-- [[novenytermeszto|növénytermesztő]]
 - [[gyumolcstermeszto|gyümölcstermesztő]]
-- [[kertesz|kertész]]
+- [[komlotermeszto|komlótermesztő]]
+- [[gazdalkodo|gazdálkodó]]

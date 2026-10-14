@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f33a70bd-c5b6-495d-8e0c-5e2c6e56d93e
 label: központi irányítótermi erőművi operátor
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: energy-utilities
@@ -40,7 +40,7 @@ lateral:
 
 # Központi irányítótermi erőművi operátor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Energia, víz és hulladék  
 **ESCO:** [központi irányítótermi erőművi operátor](http://data.europa.eu/esco/occupation/f33a70bd-c5b6-495d-8e0c-5e2c6e56d93e) (3131.3.7)

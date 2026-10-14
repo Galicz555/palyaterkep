@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/92cba6b4-8fca-49bb-b68c-45c5096fedc9
 label: ablaktisztító
-level: 2
+level: 1
 track: individual
 branch: hospitality
 subBranch: cleaning
@@ -28,11 +28,12 @@ lateral:
   - "[[illemhelykezelo]]"
   - "[[epulettakarito]]"
   - "[[vonattakarito]]"
+  - "[[haztartasi-takarito]]"
 ---
 
 # Ablaktisztító
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Takarítás, háztartás és épületgondnokság  
 **ESCO:** [ablaktisztító](http://data.europa.eu/esco/occupation/92cba6b4-8fca-49bb-b68c-45c5096fedc9) (9123.1)
@@ -64,3 +65,4 @@ Az ablaktisztítók tisztítóeszközök, mint pl. szivacsok és tisztítószere
 - [[illemhelykezelo|illemhelykezelő]]
 - [[epulettakarito|épülettakarító]]
 - [[vonattakarito|vonattakarító]]
+- [[haztartasi-takarito|háztartási takarító]]

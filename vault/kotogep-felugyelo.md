@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/ab104661-db96-4752-8c84-97d98f6e8969
 label: kötőgép-felügyelő
 level: 3
-track: individual
+track: management
 branch: industry
 subBranch: textiles
 skills:
@@ -23,7 +23,7 @@ lateral:
 
 # Kötőgép-felügyelő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Textil-, ruha- és bőripar  
 **ESCO:** [kötőgép-felügyelő](http://data.europa.eu/esco/occupation/ab104661-db96-4752-8c84-97d98f6e8969) (8152.1.1)

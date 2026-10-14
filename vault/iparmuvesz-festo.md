@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/41a51397-089d-459d-9b7e-f1cdee5ad6bb
 label: iparművész-festő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: crafts
@@ -39,7 +39,7 @@ lateral:
 
 # Iparművész-festő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [iparművész-festő](http://data.europa.eu/esco/occupation/41a51397-089d-459d-9b7e-f1cdee5ad6bb) (7316.1)

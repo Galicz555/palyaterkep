@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/9cee6106-04cf-401a-ae4c-b4b8652d6915
 label: főkalauz
 level: 3
-track: individual
+track: management
 branch: transport
 subBranch: rail
 skills:
@@ -39,7 +39,7 @@ lateral:
 
 # Főkalauz
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Vasúti közlekedés  
 **ESCO:** [főkalauz](http://data.europa.eu/esco/occupation/9cee6106-04cf-401a-ae4c-b4b8652d6915) (5112.1)

@@ -31,7 +31,6 @@ skills:
   - http://data.europa.eu/esco/skill/e81bd620-65a7-4794-b907-b37801019533
   - http://data.europa.eu/esco/skill/f2d873cb-d6c0-40cf-81de-8c5ccca5961f
 lateral:
-  - "[[halszeletelo]]"
   - "[[halfeldolgozo]]"
   - "[[halkonzervipari-gepkezelo]]"
   - "[[keszetelhuto-gepkezelo]]"
@@ -75,7 +74,6 @@ A haltermelés irányítói halfeldolgozó üzemeket irányítanak és felügyel
 
 ## Váltások
 
-- [[halszeletelo|halszeletelő]]
 - [[halfeldolgozo|halfeldolgozó]]
 - [[halkonzervipari-gepkezelo|halkonzervipari gépkezelő]]
 - [[keszetelhuto-gepkezelo|készételhűtő gépkezelő]]

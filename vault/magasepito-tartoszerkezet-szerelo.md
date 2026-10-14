@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/19cb84ca-952e-4f33-b31a-c918db074a6e
 label: magasépítő tartószerkezet-szerelő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: metal
@@ -29,17 +29,17 @@ skills:
   - http://data.europa.eu/esco/skill/f8b05146-5ffc-44a9-846b-63e3ad1fe187
   - http://data.europa.eu/esco/skill/fafbb75f-ec35-4cc2-996a-20c85ef6c266
 lateral:
-  - "[[tartoszerkezetek-terepszinti-elemeinek-szereloje]]"
-  - "[[satorepito]]"
   - "[[rendezvenyi-villamoshalozat-szerelo]]"
   - "[[rendezvenytechnikai-tartoszerkezet-szerelo]]"
   - "[[szinhazi-ugyelo]]"
   - "[[hangszertechnikus]]"
+  - "[[legijelenet-rendezo]]"
+  - "[[szinhazi-workshop-vezetoje]]"
 ---
 
 # Magasépítő tartószerkezet-szerelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Fémipar és felületkezelés  
 **ESCO:** [magasépítő tartószerkezet-szerelő](http://data.europa.eu/esco/occupation/19cb84ca-952e-4f33-b31a-c918db074a6e) (7215.2.3)
@@ -72,9 +72,9 @@ A magasépítő tartószerkezet-szerelők ideiglenes függesztőszerkezeteket é
 
 ## Váltások
 
-- [[tartoszerkezetek-terepszinti-elemeinek-szereloje|tartószerkezetek terepszinti elemeinek szerelője]]
-- [[satorepito|sátorépítő]]
 - [[rendezvenyi-villamoshalozat-szerelo|rendezvényi villamoshálózat szerelő]]
 - [[rendezvenytechnikai-tartoszerkezet-szerelo|rendezvénytechnikai tartószerkezet-szerelő]]
 - [[szinhazi-ugyelo|színházi ügyelő]]
 - [[hangszertechnikus|hangszertechnikus]]
+- [[legijelenet-rendezo|légijelenet-rendező]]
+- [[szinhazi-workshop-vezetoje|színházi workshop vezetője]]

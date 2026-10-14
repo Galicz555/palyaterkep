@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/53cdcc84-e5ee-488c-aa09-88084e06d6d7
 label: ipari gyógyszerész
-level: 2
+level: 3
 track: individual
 branch: health-social
 subBranch: pharmacy
@@ -34,7 +34,7 @@ lateral:
 
 # Ipari gyógyszerész
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Gyógyszerészet  
 **ESCO:** [ipari gyógyszerész](http://data.europa.eu/esco/occupation/53cdcc84-e5ee-488c-aa09-88084e06d6d7) (2262.1.2.2)

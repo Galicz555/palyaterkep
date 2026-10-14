@@ -82,8 +82,8 @@ skills:
   - http://data.europa.eu/esco/skill/f90d4810-8bac-4e5e-b870-3e35a4138ff7
 lateral:
   - "[[szuleszi-tevekenyseg-segitoje]]"
-  - "[[betegapolo]]"
   - "[[orvosbiologus]]"
+  - "[[radiografus]]"
   - "[[mentotiszt]]"
 ---
 
@@ -175,6 +175,6 @@ A szülész/szülésznők segítséget nyújtanak a nőknek a szülés során, b
 ## Váltások
 
 - [[szuleszi-tevekenyseg-segitoje|szülészi tevékenység segítője]]
-- [[betegapolo|betegápoló]]
 - [[orvosbiologus|orvosbiológus]]
+- [[radiografus|radiográfus]]
 - [[mentotiszt|mentőtiszt]]

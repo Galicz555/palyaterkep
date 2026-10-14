@@ -26,6 +26,7 @@ lateral:
   - "[[utfenntarto]]"
   - "[[melyepito-technikus]]"
   - "[[csatornafekteto]]"
+  - "[[alagutfurogep-kezelo]]"
   - "[[utburkolatfesto]]"
 ---
 
@@ -61,4 +62,5 @@ Az útépítők útépítést végeznek földmunkák segítségével, utak alép
 - [[utfenntarto|útfenntartó]]
 - [[melyepito-technikus|mélyépítő technikus]]
 - [[csatornafekteto|csatornafektető]]
+- [[alagutfurogep-kezelo|alagútfúrógép-kezelő]]
 - [[utburkolatfesto|útburkolatfestő]]

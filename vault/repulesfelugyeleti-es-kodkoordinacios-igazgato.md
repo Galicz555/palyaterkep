@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/8c8ec7a2-adbb-4d1a-9a56-a7048d66c00b
 label: repülésfelügyeleti és kódkoordinációs igazgató
 level: 4
-track: individual
+track: management
 branch: transport
 subBranch: air
 skills:
@@ -34,7 +34,7 @@ lateral:
 
 # Repülésfelügyeleti és kódkoordinációs igazgató
 
-Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [repülésfelügyeleti és kódkoordinációs igazgató](http://data.europa.eu/esco/occupation/8c8ec7a2-adbb-4d1a-9a56-a7048d66c00b) (1349.5)

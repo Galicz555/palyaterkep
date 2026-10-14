@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8afab6c4-6145-4ea1-a0ae-d2c3438bda7e
 label: hajóépítő
-level: 3
+level: 2
 track: individual
 branch: industry
 subBranch: metal
@@ -35,7 +35,7 @@ lateral:
 
 # Hajóépítő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Fémipar és felületkezelés  
 **ESCO:** [hajóépítő](http://data.europa.eu/esco/occupation/8afab6c4-6145-4ea1-a0ae-d2c3438bda7e) (7214.2)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0ce5a9f4-e00a-4bbe-b255-3c63407167a4
 label: kiberbiztonsági eseménykezelő
-level: 2
+level: 3
 track: individual
 branch: it
 subBranch: cybersecurity
@@ -31,6 +31,7 @@ skills:
   - http://data.europa.eu/esco/skill/f9a6f35b-01a7-40c9-8b61-b6ee46f97272
   - http://data.europa.eu/esco/skill/fcbb3a90-cdde-49ff-9ecc-8e2c0a6dfca2
 lateral:
+  - "[[kiberbiztonsagi-kockazatkezelo]]"
   - "[[biztonsagi-tesztelo]]"
   - "[[digitalis-kriminalisztika-szakerto]]"
   - "[[infokommunikacios-biztonsagtechnikus]]"
@@ -39,7 +40,7 @@ lateral:
 
 # Kiberbiztonsági eseménykezelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Kiberbiztonság  
 **ESCO:** [kiberbiztonsági eseménykezelő](http://data.europa.eu/esco/occupation/0ce5a9f4-e00a-4bbe-b255-3c63407167a4) (2529.7)
@@ -74,6 +75,7 @@ A kiberbiztonsági eseménykezelők figyelemmel kísérik és értékelik akiber
 
 ## Váltások
 
+- [[kiberbiztonsagi-kockazatkezelo|kiberbiztonsági kockázatkezelő]]
 - [[biztonsagi-tesztelo|biztonsági tesztelő]]
 - [[digitalis-kriminalisztika-szakerto|digitális kriminalisztika szakértő]]
 - [[infokommunikacios-biztonsagtechnikus|infokommunikációs biztonságtechnikus]]

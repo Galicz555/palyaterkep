@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d08b4700-758c-467d-ab77-d5a8029c4070
 label: Önálló közbeszerző
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: purchasing
@@ -39,13 +39,12 @@ lateral:
   - "[[kozbeszerzesi-szakerto]]"
   - "[[beszerzesi-osztalyvezeto]]"
   - "[[szerzodeskezelo]]"
-  - "[[kozbeszerzest-tamogato-munkatars]]"
   - "[[kozbeszerzesi-kategoria-szakertoje]]"
 ---
 
 # Önálló közbeszerző
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Beszerzés  
 **ESCO:** [Önálló közbeszerző](http://data.europa.eu/esco/occupation/d08b4700-758c-467d-ab77-d5a8029c4070) (3323.4)
@@ -89,5 +88,4 @@ Az önálló közbeszerzők irányítják a közbeszerzési eljárást, és lefe
 - [[kozbeszerzesi-szakerto|közbeszerzési szakértő]]
 - [[beszerzesi-osztalyvezeto|beszerzési osztályvezető]]
 - [[szerzodeskezelo|szerződéskezelő]]
-- [[kozbeszerzest-tamogato-munkatars|közbeszerzést támogató munkatárs]]
 - [[kozbeszerzesi-kategoria-szakertoje|közbeszerzési kategória szakértője]]

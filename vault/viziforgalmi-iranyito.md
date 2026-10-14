@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8908d5aa-ac58-465e-9b75-7e02ed4af3a9
 label: víziforgalmi irányító
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: dispatch
@@ -40,7 +40,7 @@ lateral:
 
 # Víziforgalmi irányító
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Forgalomirányítás és fuvarszervezés  
 **ESCO:** [víziforgalmi irányító](http://data.europa.eu/esco/occupation/8908d5aa-ac58-465e-9b75-7e02ed4af3a9) (4323.20)

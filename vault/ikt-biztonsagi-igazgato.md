@@ -60,6 +60,7 @@ lateral:
   - "[[technologiai-igazgato]]"
   - "[[informatikai-igazgato]]"
   - "[[megfelelesi-es-informaciobiztonsagi-igazgato]]"
+  - "[[ikt-audit-menedzser]]"
 ---
 
 # IKT biztonsági igazgató
@@ -128,3 +129,4 @@ A vezető IKT biztonsági tisztviselők védik a céginformációkat és a munka
 - [[technologiai-igazgato|technológiai igazgató]]
 - [[informatikai-igazgato|informatikai igazgató]]
 - [[megfelelesi-es-informaciobiztonsagi-igazgato|megfelelési és információbiztonsági igazgató]]
+- [[ikt-audit-menedzser|IKT audit menedzser]]

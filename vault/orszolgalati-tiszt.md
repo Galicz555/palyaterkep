@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/17e39591-7137-4960-94c8-8169f7a5d67b
 label: őrszolgálati tiszt
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: water
@@ -26,7 +26,7 @@ lateral: []
 
 # Őrszolgálati tiszt
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Vízi közlekedés  
 **ESCO:** [őrszolgálati tiszt](http://data.europa.eu/esco/occupation/17e39591-7137-4960-94c8-8169f7a5d67b) (3152.6)

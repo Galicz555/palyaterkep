@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d63789ac-74b5-40e3-b890-685513c38e12
 label: tartományi kormányzó
-level: 4
+level: 5
 track: management
 branch: public
 subBranch: politics
@@ -22,14 +22,14 @@ lateral:
   - "[[parlamenti-kepviselo]]"
   - "[[szenator]]"
   - "[[polgarmester]]"
-  - "[[igazgatasszervezo]]"
   - "[[miniszter]]"
   - "[[allamtitkar]]"
+  - "[[fotitkar]]"
 ---
 
 # Tartományi kormányzó
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Stratégiai szint (5), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Politika és kormányzati vezetés  
 **ESCO:** [tartományi kormányzó](http://data.europa.eu/esco/occupation/d63789ac-74b5-40e3-b890-685513c38e12) (1111.3)
@@ -55,6 +55,6 @@ A kormányzók egy nemzeti alegység, például egy állam vagy tartomány fő t
 - [[parlamenti-kepviselo|parlamenti képviselő]]
 - [[szenator|szenátor]]
 - [[polgarmester|polgármester]]
-- [[igazgatasszervezo|igazgatásszervező]]
 - [[miniszter|miniszter]]
 - [[allamtitkar|államtitkár]]
+- [[fotitkar|főtitkár]]

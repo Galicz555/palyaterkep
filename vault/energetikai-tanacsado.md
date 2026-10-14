@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/de74eb4e-c95e-425a-9b3a-7be805ec0321
 label: energetikai tanácsadó
-level: 2
+level: 3
 track: individual
 branch: construction
 subBranch: civil-engineering
@@ -24,7 +24,7 @@ lateral:
 
 # Energetikai tanácsadó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőmérnöki terület és műszaki ellenőrzés  
 **ESCO:** [energetikai tanácsadó](http://data.europa.eu/esco/occupation/de74eb4e-c95e-425a-9b3a-7be805ec0321) (3112.7)

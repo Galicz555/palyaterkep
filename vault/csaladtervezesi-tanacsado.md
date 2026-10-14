@@ -63,7 +63,7 @@ lateral:
   - "[[szocialis-tanacsado]]"
   - "[[szenvedelybetegekkel-foglalkozo-tanacsado]]"
   - "[[szexualis-eroszak-aldozataival-foglalkozo-tanacsado]]"
-  - "[[szocialismunka-oktato-felsooktatasi-intezmenyben]]"
+  - "[[iskolai-gyermekvedelmi-felelos]]"
 ---
 
 # Családtervezési tanácsadó
@@ -135,4 +135,4 @@ A családtervezési tanácsadók a jogszabályoknak és gyakorlatoknak megfelel�
 - [[szocialis-tanacsado|szociális tanácsadó]]
 - [[szenvedelybetegekkel-foglalkozo-tanacsado|szenvedélybetegekkel foglalkozó tanácsadó]]
 - [[szexualis-eroszak-aldozataival-foglalkozo-tanacsado|szexuális erőszak áldozataival foglalkozó tanácsadó]]
-- [[szocialismunka-oktato-felsooktatasi-intezmenyben|szociálismunka-oktató felsőoktatási intézményben]]
+- [[iskolai-gyermekvedelmi-felelos|iskolai gyermekvédelmi felelős]]

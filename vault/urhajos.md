@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d4edb527-2e5d-440c-9f8c-cd5caa9cc4d6
 label: űrhajós
-level: 3
+level: 4
 track: individual
 branch: transport
 subBranch: air
@@ -30,7 +30,7 @@ lateral: []
 
 # Űrhajós
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [űrhajós](http://data.europa.eu/esco/occupation/d4edb527-2e5d-440c-9f8c-cd5caa9cc4d6) (3153.3)

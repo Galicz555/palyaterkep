@@ -20,6 +20,7 @@ skills:
   - http://data.europa.eu/esco/skill/f69d330a-c343-433f-9532-fed6b8654b0e
 lateral:
   - "[[dandartabornok]]"
+  - "[[birosagi-igazgatasi-vezeto]]"
 ---
 
 # Vezérezredes
@@ -48,3 +49,4 @@ A vezérezredesek a hadsereg nagy hadtesteinek parancsnokai. Vezetői feladatoka
 ## Váltások
 
 - [[dandartabornok|dandártábornok]]
+- [[birosagi-igazgatasi-vezeto|bírósági igazgatási vezető]]

@@ -38,6 +38,7 @@ lateral:
   - "[[fertotlenito-sterilezo]]"
   - "[[boncmester]]"
   - "[[citotechnologus]]"
+  - "[[dietetikai-szakasszisztens]]"
 ---
 
 # Vérvételi asszisztens
@@ -84,3 +85,4 @@ A vérvételi asszisztensek a betegbiztonsági szabályokat betartva laboratóri
 - [[fertotlenito-sterilezo|fertőtlenítő sterilező]]
 - [[boncmester|boncmester]]
 - [[citotechnologus|citotechnológus]]
+- [[dietetikai-szakasszisztens|dietetikai szakasszisztens]]

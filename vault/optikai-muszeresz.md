@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2ada3e89-9159-49e7-88f7-4dd435fd95ac
 label: optikai műszerész
-level: 3
+level: 2
 track: individual
 branch: industry
 subBranch: crafts
@@ -39,7 +39,7 @@ lateral:
 
 # Optikai műszerész
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [optikai műszerész](http://data.europa.eu/esco/occupation/2ada3e89-9159-49e7-88f7-4dd435fd95ac) (7311.3)

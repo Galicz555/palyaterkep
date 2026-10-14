@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/146f2c99-3f8b-4856-95ba-3ecfea681809
 label: szerencsejáték-értékesítőhely vezetője
-level: 2
+level: 3
 track: management
 branch: culture
 subBranch: culture-management
@@ -36,12 +36,15 @@ skills:
 lateral:
   - "[[sportfogadasi-iroda-vezetoje]]"
   - "[[botanikus]]"
+  - "[[rekreacios-kozpont-vezetoje]]"
   - "[[lottozo-vezetoje]]"
+  - "[[eloadomuveszeti-igazgato]]"
+  - "[[allatkerti-kurator]]"
 ---
 
 # Szerencsejáték-értékesítőhely vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Kulturális és szabadidős intézmények vezetése  
 **ESCO:** [szerencsejáték-értékesítőhely vezetője](http://data.europa.eu/esco/occupation/146f2c99-3f8b-4856-95ba-3ecfea681809) (1431.2.3)
@@ -81,4 +84,7 @@ A szerencsejáték-értékesítőhelyek vezetői megszervezik és koordinálják
 
 - [[sportfogadasi-iroda-vezetoje|sportfogadási iroda vezetője]]
 - [[botanikus|botanikus]]
+- [[rekreacios-kozpont-vezetoje|rekreációs központ vezetője]]
 - [[lottozo-vezetoje|lottózó vezetője]]
+- [[eloadomuveszeti-igazgato|előadóművészeti igazgató]]
+- [[allatkerti-kurator|állatkerti kurátor]]

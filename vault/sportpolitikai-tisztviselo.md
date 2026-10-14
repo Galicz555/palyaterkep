@@ -21,6 +21,7 @@ lateral:
   - "[[sportprogram-koordinator]]"
   - "[[tarsadalombiztositasi-adminisztrator]]"
   - "[[foglalkoztataspolitikai-tisztviselo]]"
+  - "[[gazdasagpolitikai-referens]]"
 ---
 
 # Sportpolitikai tisztviselő
@@ -50,3 +51,4 @@ A szabadidő-politikáért felelős tisztviselők kutatják, elemzik és fejlesz
 - [[sportprogram-koordinator|sportprogram-koordinátor]]
 - [[tarsadalombiztositasi-adminisztrator|társadalombiztosítási adminisztrátor]]
 - [[foglalkoztataspolitikai-tisztviselo|foglalkoztatáspolitikai tisztviselő]]
+- [[gazdasagpolitikai-referens|gazdaságpolitikai referens]]

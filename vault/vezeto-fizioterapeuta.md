@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a317e9c2-62d5-4a24-8ad4-5cb7b9db3f3b
 label: vezető fizioterapeuta
-level: 3
+level: 4
 track: individual
 branch: health-social
 subBranch: therapy
@@ -73,17 +73,15 @@ skills:
   - http://data.europa.eu/esco/skill/f90d4810-8bac-4e5e-b870-3e35a4138ff7
   - http://data.europa.eu/esco/skill/fd02e17b-05ea-4449-963d-95273199159d
 lateral:
-  - "[[fizioterapeuta]]"
   - "[[szakkiropraktor]]"
-  - "[[audiologus]]"
   - "[[orvosbiologiai-kutato]]"
-  - "[[optometrista]]"
-  - "[[fogorvos]]"
+  - "[[szakapolo]]"
+  - "[[klinikai-pszichologus]]"
 ---
 
 # Vezető fizioterapeuta
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Terápia és rehabilitáció  
 **ESCO:** [vezető fizioterapeuta](http://data.europa.eu/esco/occupation/a317e9c2-62d5-4a24-8ad4-5cb7b9db3f3b) (2264.1)
@@ -160,9 +158,7 @@ A vezető fizioterapeuták nagymértékben szakosodottak. Összetett döntéseke
 
 ## Váltások
 
-- [[fizioterapeuta|fizioterapeuta]]
 - [[szakkiropraktor|szakkiropraktőr]]
-- [[audiologus|audiológus]]
 - [[orvosbiologiai-kutato|orvosbiológiai kutató]]
-- [[optometrista|optometrista]]
-- [[fogorvos|fogorvos]]
+- [[szakapolo|szakápoló]]
+- [[klinikai-pszichologus|klinikai pszichológus]]

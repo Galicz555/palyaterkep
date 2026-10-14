@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/375137f7-5fc2-424e-9f63-d7ff4441c11e
 label: ékszervésnök
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: crafts
@@ -29,7 +29,7 @@ lateral:
 
 # Ékszervésnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [ékszervésnök](http://data.europa.eu/esco/occupation/375137f7-5fc2-424e-9f63-d7ff4441c11e) (7313.1.3)

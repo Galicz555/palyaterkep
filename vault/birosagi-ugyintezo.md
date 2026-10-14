@@ -23,7 +23,7 @@ lateral:
   - "[[birosagi-rendfenntarto]]"
   - "[[jogi-asszisztens]]"
   - "[[egyhazgondnok]]"
-  - "[[biro]]"
+  - "[[eskudtszeki-koordinator]]"
   - "[[bekebiro]]"
 ---
 
@@ -56,5 +56,5 @@ A bírósági ügyintézők adminisztratív és támogató feladatokat látnak e
 - [[birosagi-rendfenntarto|bírósági rendfenntartó]]
 - [[jogi-asszisztens|jogi asszisztens]]
 - [[egyhazgondnok|egyházgondnok]]
-- [[biro|bíró]]
+- [[eskudtszeki-koordinator|esküdtszéki koordinátor]]
 - [[bekebiro|békebíró]]

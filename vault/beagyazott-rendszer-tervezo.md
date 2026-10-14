@@ -24,8 +24,7 @@ skills:
   - http://data.europa.eu/esco/skill/e76dd90d-91c4-49c0-bfd0-dfa2c4c90c81
   - http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998
   - http://data.europa.eu/esco/skill/fae27053-8924-4bfd-b565-c9fe502044c9
-lateral:
-  - "[[szoftvermernok]]"
+lateral: []
 ---
 
 # Beágyazott rendszer tervező
@@ -59,4 +58,4 @@ A beágyazottrendszer-tervezők átültetik és megtervezik a követelményeket,
 
 ## Váltások
 
-- [[szoftvermernok|szoftvermérnök]]
+Nincs.

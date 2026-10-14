@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/95cd3d64-20d0-4681-857d-d6c63d07349f
 label: sörfőző mester
-level: 3
-track: individual
+level: 4
+track: management
 branch: engineering
 subBranch: process-engineering
 skills:
@@ -58,7 +58,7 @@ lateral:
 
 # Sörfőző mester
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Vegyész-, kohó- és bányamérnöki terület  
 **ESCO:** [sörfőző mester](http://data.europa.eu/esco/occupation/95cd3d64-20d0-4681-857d-d6c63d07349f) (2145.1.2)

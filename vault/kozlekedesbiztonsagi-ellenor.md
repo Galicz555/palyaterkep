@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1b422c31-f242-46b5-bbdc-aa63885e4b5c
 label: közlekedésbiztonsági ellenőr
-level: 2
+level: 3
 track: individual
 branch: health-social
 subBranch: public-health
@@ -33,7 +33,7 @@ lateral: []
 
 # Közlekedésbiztonsági ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Népegészségügy és munkavédelem  
 **ESCO:** [közlekedésbiztonsági ellenőr](http://data.europa.eu/esco/occupation/1b422c31-f242-46b5-bbdc-aa63885e4b5c) (3257.6)

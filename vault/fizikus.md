@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7f2761eb-4edc-48ad-9fbf-eed0a0db9a21
 label: fizikus
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: physical-sciences
@@ -68,7 +68,7 @@ lateral:
 
 # Fizikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Fizika, kémia és földtudományok  
 **ESCO:** [fizikus](http://data.europa.eu/esco/occupation/7f2761eb-4edc-48ad-9fbf-eed0a0db9a21) (2111.3)

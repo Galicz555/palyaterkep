@@ -63,6 +63,7 @@ skills:
 lateral:
   - "[[optometrista]]"
   - "[[optikai-technikus]]"
+  - "[[fogorvos]]"
 ---
 
 # Látszerész
@@ -135,3 +136,4 @@ A látszerészek segítenek az egyén látásának javításában és korrekció
 
 - [[optometrista|optometrista]]
 - [[optikai-technikus|optikai technikus]]
+- [[fogorvos|fogorvos]]

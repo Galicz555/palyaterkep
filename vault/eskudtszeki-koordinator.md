@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/76884a72-d8b8-4819-bd40-71d6420a9a42
 label: esküdtszéki koordinátor
-level: 2
+level: 1
 track: individual
 branch: public
 subBranch: legal
@@ -18,17 +18,16 @@ skills:
   - http://data.europa.eu/esco/skill/db10b60e-efd2-4ba9-a873-d1e2ec37620f
   - http://data.europa.eu/esco/skill/ea451251-71ab-4f89-8c0d-53344ef7004f
 lateral:
-  - "[[birosagi-titkar]]"
   - "[[jogasz]]"
-  - "[[vallalati-jogasz]]"
-  - "[[ugyesz]]"
   - "[[jogi-adminisztrator]]"
-  - "[[birosagi-igazgatasi-vezeto]]"
+  - "[[jogpolitikai-tisztviselo]]"
+  - "[[birosagi-ugyintezo]]"
+  - "[[jogi-asszisztens]]"
 ---
 
 # Esküdtszéki koordinátor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Jog és igazságszolgáltatás  
 **ESCO:** [esküdtszéki koordinátor](http://data.europa.eu/esco/occupation/76884a72-d8b8-4819-bd40-71d6420a9a42) (2619.3)
@@ -50,9 +49,8 @@ Az esküdtszéki koordinátorok segítséget nyújtanak az ügyvédeknek a bír�
 
 ## Váltások
 
-- [[birosagi-titkar|bírósági titkár]]
 - [[jogasz|jogász]]
-- [[vallalati-jogasz|vállalati jogász]]
-- [[ugyesz|ügyész]]
 - [[jogi-adminisztrator|jogi adminisztrátor]]
-- [[birosagi-igazgatasi-vezeto|bírósági igazgatási vezető]]
+- [[jogpolitikai-tisztviselo|jogpolitikai tisztviselő]]
+- [[birosagi-ugyintezo|bírósági ügyintéző]]
+- [[jogi-asszisztens|jogi asszisztens]]

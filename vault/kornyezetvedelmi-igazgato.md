@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/4b214899-ed00-4156-b269-a23df0fb1093
 label: környezetvédelmi igazgató
-level: 3
-track: individual
+level: 4
+track: management
 branch: engineering
 subBranch: environment
 skills:
@@ -38,13 +38,13 @@ lateral:
   - "[[strategiai-tervezesi-vezeto]]"
   - "[[uzletiintelligencia-menedzser]]"
   - "[[szabalyozasi-menedzser]]"
-  - "[[kornyezetpolitikai-referens]]"
   - "[[kornyezetvedelmi-programkoordinator]]"
+  - "[[egeszsegugyi-biztonsagi-es-kornyezetvedelmi-vezeto]]"
 ---
 
 # Környezetvédelmi igazgató
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Környezetvédelem  
 **ESCO:** [környezetvédelmi igazgató](http://data.europa.eu/esco/occupation/4b214899-ed00-4156-b269-a23df0fb1093) (1349.13)
@@ -86,5 +86,5 @@ A környezetvédelmi igazgatók tanácsot adnak a kormányzati és hivatalos int
 - [[strategiai-tervezesi-vezeto|stratégiai tervezési vezető]]
 - [[uzletiintelligencia-menedzser|üzletiintelligencia-menedzser]]
 - [[szabalyozasi-menedzser|szabályozási menedzser]]
-- [[kornyezetpolitikai-referens|környezetpolitikai referens]]
 - [[kornyezetvedelmi-programkoordinator|környezetvédelmi programkoordinátor]]
+- [[egeszsegugyi-biztonsagi-es-kornyezetvedelmi-vezeto|egészségügyi, biztonsági és környezetvédelmi vezető]]

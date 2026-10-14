@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/731ecac4-06e8-4ec2-a559-101fecbd9183
 label: szállodai szobaszemélyzet
-level: 2
+level: 1
 track: individual
 branch: hospitality
 subBranch: cleaning
@@ -22,7 +22,7 @@ lateral:
 
 # Szállodai szobaszemélyzet
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Takarítás, háztartás és épületgondnokság  
 **ESCO:** [szállodai szobaszemélyzet](http://data.europa.eu/esco/occupation/731ecac4-06e8-4ec2-a559-101fecbd9183) (9112.4)

@@ -24,6 +24,7 @@ lateral:
   - "[[banyaszati-szelloztetesi-mernok]]"
   - "[[banyamernok]]"
   - "[[geotechnikus]]"
+  - "[[banyaszati-fejlesztesi-mernok]]"
 ---
 
 # Bányászati geotechnológiai mérnök
@@ -56,3 +57,4 @@ A bányászati geotechnológiai mérnökök mérnöki, hidrológiai és geológi
 - [[banyaszati-szelloztetesi-mernok|bányászati szellőztetési mérnök]]
 - [[banyamernok|bányamérnök]]
 - [[geotechnikus|geotechnikus]]
+- [[banyaszati-fejlesztesi-mernok|bányászati fejlesztési mérnök]]

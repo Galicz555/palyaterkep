@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c302791c-6864-4ec5-9a6c-2fca38764f0e
 label: tűzvédelmi felügyelő
-level: 2
+level: 3
 track: individual
 branch: construction
 subBranch: civil-engineering
@@ -20,12 +20,14 @@ skills:
   - http://data.europa.eu/esco/skill/c1b0bfc2-4932-4e03-9077-92bc56042511
   - http://data.europa.eu/esco/skill/ccde26f3-e822-4b6a-94a1-39af4ae41fed
   - http://data.europa.eu/esco/skill/e2649956-6e7c-4ac6-92ee-fab9c61badf2
-lateral: []
+lateral:
+  - "[[tuzoltoparancsnok-1112-4]]"
+  - "[[tuzoltoparancsnok-1349-7]]"
 ---
 
 # Tűzvédelmi felügyelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőmérnöki terület és műszaki ellenőrzés  
 **ESCO:** [tűzvédelmi felügyelő](http://data.europa.eu/esco/occupation/c302791c-6864-4ec5-9a6c-2fca38764f0e) (3112.1.6)
@@ -50,4 +52,5 @@ A tűzvédelmi ellenőrök ellenőrzik az épületeket és ingatlanokat annak bi
 
 ## Váltások
 
-Nincs.
+- [[tuzoltoparancsnok-1112-4|tűzoltóparancsnok]]
+- [[tuzoltoparancsnok-1349-7|tűzoltóparancsnok]]

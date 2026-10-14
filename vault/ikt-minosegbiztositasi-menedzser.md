@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a28dff76-74df-46ee-929f-d1fffbb63cd7
 label: IKT minőségbiztosítási menedzser
-level: 3
+level: 4
 track: management
 branch: it
 subBranch: software-testing
@@ -24,14 +24,13 @@ skills:
   - http://data.europa.eu/esco/skill/f7b5d916-52f0-4865-b6a6-e1a3b711cb5e
   - http://data.europa.eu/esco/skill/fafe0b9d-dbd9-46bd-b770-26299539ce66
 lateral:
-  - "[[ikt-rendszertesztelo]]"
-  - "[[minosegtechnikus]]"
+  - "[[ikt-tesztelemzo]]"
   - "[[informatikai-auditor]]"
 ---
 
 # IKT minőségbiztosítási menedzser
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Szoftvertesztelés és minőségbiztosítás  
 **ESCO:** [IKT minőségbiztosítási menedzser](http://data.europa.eu/esco/occupation/a28dff76-74df-46ee-929f-d1fffbb63cd7) (2519.5)
@@ -59,6 +58,5 @@ Az IKT minőségbiztosítási menedzserek a belső és külső normákkal és a 
 
 ## Váltások
 
-- [[ikt-rendszertesztelo|IKT rendszertesztelő]]
-- [[minosegtechnikus|minőségtechnikus]]
+- [[ikt-tesztelemzo|IKT-tesztelemző]]
 - [[informatikai-auditor|informatikai auditor]]

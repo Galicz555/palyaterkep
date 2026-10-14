@@ -33,7 +33,7 @@ lateral:
   - "[[fodempanel-elhelyezo]]"
   - "[[fapadlo-es-muanyagburkolo]]"
   - "[[padloszonyeg-fekteto]]"
-  - "[[kozuti-jelzotabla-elhelyezo]]"
+  - "[[vaganyfekteto]]"
 ---
 
 # Épületszobrász
@@ -75,4 +75,4 @@ Az épületszobrászok építkezési célokra felhasznált köveket faragják ki
 - [[fodempanel-elhelyezo|födémpanel-elhelyező]]
 - [[fapadlo-es-muanyagburkolo|fapadló- és műanyagburkoló]]
 - [[padloszonyeg-fekteto|padlószőnyeg-fektető]]
-- [[kozuti-jelzotabla-elhelyezo|közúti jelzőtábla elhelyező]]
+- [[vaganyfekteto|vágányfektető]]

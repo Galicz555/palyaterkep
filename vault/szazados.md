@@ -24,7 +24,6 @@ lateral:
   - "[[ornagy]]"
   - "[[szakaszvezeto]]"
   - "[[ezredes]]"
-  - "[[dandartabornok]]"
   - "[[fohadnagy]]"
 ---
 
@@ -58,5 +57,4 @@ A századosok támogatást nyújtanak a nagyméretű katonai egységek felügyel
 - [[ornagy|őrnagy]]
 - [[szakaszvezeto|szakaszvezető]]
 - [[ezredes|ezredes]]
-- [[dandartabornok|dandártábornok]]
 - [[fohadnagy|főhadnagy]]

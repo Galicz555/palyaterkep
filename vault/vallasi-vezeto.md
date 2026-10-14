@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ed256ed0-0432-4969-8544-3e5e01a517a9
 label: vallási vezető
-level: 3
+level: 4
 track: management
 branch: culture
 subBranch: religion
@@ -26,16 +26,13 @@ skills:
   - http://data.europa.eu/esco/skill/fd32742d-25bb-4ff2-8d90-513f76b31b51
   - http://data.europa.eu/esco/skill/fd7ee717-1259-469f-8e3e-18da96456198
 lateral:
-  - "[[lelkesz-lelkeszno]]"
-  - "[[felekezeti-szocialis-munkas]]"
   - "[[hitterito]]"
-  - "[[egyhazgondnok]]"
   - "[[ombudsman]]"
 ---
 
 # Vallási vezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Vallás  
 **ESCO:** [vallási vezető](http://data.europa.eu/esco/occupation/ed256ed0-0432-4969-8544-3e5e01a517a9) (2636.2)
@@ -65,8 +62,5 @@ A plébánosok vallási szervezeteket vagy közösségeket vezetnek, spirituáli
 
 ## Váltások
 
-- [[lelkesz-lelkeszno|lelkész/lelkésznő]]
-- [[felekezeti-szocialis-munkas|felekezeti szociális munkás]]
 - [[hitterito|hittérítő]]
-- [[egyhazgondnok|egyházgondnok]]
 - [[ombudsman|ombudsman]]

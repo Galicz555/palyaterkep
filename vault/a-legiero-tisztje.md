@@ -31,10 +31,10 @@ skills:
 lateral:
   - "[[tuzertiszt]]"
   - "[[tengeresztiszt]]"
+  - "[[katonatiszt]]"
   - "[[kulonleges-alakulat-tisztje]]"
-  - "[[gyalogos]]"
   - "[[hadviselesi-szakerto]]"
-  - "[[szazad-parancsnok]]"
+  - "[[fohadnagy]]"
 ---
 
 # A légierő tisztje
@@ -74,7 +74,7 @@ A légierő tisztjei légi vagy földi feladatokra szakosodtak, és felügyelik 
 
 - [[tuzertiszt|tüzértiszt]]
 - [[tengeresztiszt|tengerésztiszt]]
+- [[katonatiszt|katonatiszt]]
 - [[kulonleges-alakulat-tisztje|különleges alakulat tisztje]]
-- [[gyalogos|gyalogos]]
 - [[hadviselesi-szakerto|hadviselési szakértő]]
-- [[szazad-parancsnok|század-parancsnok]]
+- [[fohadnagy|főhadnagy]]

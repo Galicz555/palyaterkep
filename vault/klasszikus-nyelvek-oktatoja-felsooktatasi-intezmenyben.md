@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/fbc9ab3e-18f1-4b7b-8cd5-d6374ed5e9a9
 label: klasszikus nyelvek oktatója felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -50,7 +50,7 @@ lateral:
 
 # Klasszikus nyelvek oktatója felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [klasszikus nyelvek oktatója felsőoktatási intézményben](http://data.europa.eu/esco/occupation/fbc9ab3e-18f1-4b7b-8cd5-d6374ed5e9a9) (2310.1.9)

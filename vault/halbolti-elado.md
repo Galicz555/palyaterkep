@@ -50,7 +50,7 @@ lateral:
   - "[[zoldseg-gyumolcs-elado]]"
   - "[[hus-es-hentesaru-elado]]"
   - "[[ora-ekszer-elado]]"
-  - "[[kerteszeti-es-viragbolti-elado]]"
+  - "[[epitoanyagbolti-elado]]"
 ---
 
 # Halbolti eladó
@@ -110,4 +110,4 @@ A halbolti eladók halat, rákféléket és puhatestűeket értékesítenek szak
 - [[zoldseg-gyumolcs-elado|zöldség-gyümölcs eladó]]
 - [[hus-es-hentesaru-elado|hús- és hentesáru-eladó]]
 - [[ora-ekszer-elado|óra-ékszer eladó]]
-- [[kerteszeti-es-viragbolti-elado|kertészeti és virágbolti eladó]]
+- [[epitoanyagbolti-elado|építőanyagbolti eladó]]

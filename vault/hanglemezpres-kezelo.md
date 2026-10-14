@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ae3f1edd-d191-4a8d-8dfc-099dcdc6f1e8
 label: hanglemezprés-kezelő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: chemicals
@@ -29,7 +29,7 @@ lateral:
 
 # Hanglemezprés-kezelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [hanglemezprés-kezelő](http://data.europa.eu/esco/occupation/ae3f1edd-d191-4a8d-8dfc-099dcdc6f1e8) (8142.13)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c995fe34-0909-4ce3-b7b7-97945efede56
 label: videotervező
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: design
@@ -35,15 +35,17 @@ skills:
   - http://data.europa.eu/esco/skill/dade132a-487b-40fb-9d8e-f20ce5e6c076
   - http://data.europa.eu/esco/skill/fcc0a1c8-d36e-4f8e-b928-00d5bca10a47
 lateral:
+  - "[[babtervezo]]"
+  - "[[smink-es-frizuratervezo]]"
+  - "[[jelmeztervezo]]"
   - "[[legijelenet-rendezo]]"
   - "[[szinhazi-ugyelo]]"
   - "[[cimfesto]]"
-  - "[[mediaintegracios-technikus]]"
 ---
 
 # Videotervező
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Tervezés és design  
 **ESCO:** [videotervező](http://data.europa.eu/esco/occupation/c995fe34-0909-4ce3-b7b7-97945efede56) (2166.12)
@@ -82,7 +84,9 @@ A videotervezők vetített képkoncepciót alakítanak ki egy előadásra vonatk
 
 ## Váltások
 
+- [[babtervezo|bábtervező]]
+- [[smink-es-frizuratervezo|smink- és frizuratervező]]
+- [[jelmeztervezo|jelmeztervező]]
 - [[legijelenet-rendezo|légijelenet-rendező]]
 - [[szinhazi-ugyelo|színházi ügyelő]]
 - [[cimfesto|címfestő]]
-- [[mediaintegracios-technikus|médiaintegrációs technikus]]

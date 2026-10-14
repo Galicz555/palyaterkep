@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/bc1c82a5-0fc3-453f-8537-9d1a6e9e85aa
 label: repülőtér-tervező mérnök
-level: 2
+level: 3
 track: individual
 branch: construction
 subBranch: civil-engineering
@@ -32,7 +32,7 @@ lateral:
 
 # Repülőtér-tervező mérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Építőmérnöki terület és műszaki ellenőrzés  
 **ESCO:** [repülőtér-tervező mérnök](http://data.europa.eu/esco/occupation/bc1c82a5-0fc3-453f-8537-9d1a6e9e85aa) (2142.1.1)

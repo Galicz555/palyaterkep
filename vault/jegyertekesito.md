@@ -28,7 +28,6 @@ lateral:
   - "[[idegenforgalmi-tajekoztato-munkatars]]"
   - "[[turisztikai-programszervezo]]"
   - "[[utazasi-tanacsado]]"
-  - "[[vendeglato-egyseg-recepciosa]]"
   - "[[turisztikai-informacios-kozpont-menedzser]]"
 ---
 
@@ -66,5 +65,4 @@ A jegyértékesítők alapszolgáltatást nyújtanak az ügyfeleknek, menetjegye
 - [[idegenforgalmi-tajekoztato-munkatars|idegenforgalmi tájékoztató munkatárs]]
 - [[turisztikai-programszervezo|turisztikai programszervező]]
 - [[utazasi-tanacsado|utazási tanácsadó]]
-- [[vendeglato-egyseg-recepciosa|vendéglátó egység recepciósa]]
 - [[turisztikai-informacios-kozpont-menedzser|turisztikai információs központ menedzser]]

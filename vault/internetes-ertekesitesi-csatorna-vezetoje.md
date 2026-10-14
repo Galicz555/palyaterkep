@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/1dd7c3cb-2d58-4dad-ae15-c9081174ab7e
 label: internetes értékesítési csatorna vezetője
 level: 3
-track: individual
+track: management
 branch: trade
 subBranch: marketing
 skills:
@@ -29,7 +29,7 @@ lateral:
 
 # Internetes értékesítési csatorna vezetője
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Értékesítési vezetés és marketing  
 **ESCO:** [internetes értékesítési csatorna vezetője](http://data.europa.eu/esco/occupation/1dd7c3cb-2d58-4dad-ae15-c9081174ab7e) (1221.3.2.1.4)

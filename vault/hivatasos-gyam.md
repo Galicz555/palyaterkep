@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/021663ca-a367-472e-a1f0-6d8ab5b2d860
 label: hivatásos gyám
-level: 2
+level: 3
 track: individual
 branch: health-social
 subBranch: social-work
@@ -26,7 +26,7 @@ lateral: []
 
 # Hivatásos gyám
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Szociális munka  
 **ESCO:** [hivatásos gyám](http://data.europa.eu/esco/occupation/021663ca-a367-472e-a1f0-6d8ab5b2d860) (3412.2)

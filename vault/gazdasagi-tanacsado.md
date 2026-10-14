@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/56afc09a-75a0-49c7-a5cb-256df45d8f2d
 label: gazdasági tanácsadó
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: policy
@@ -30,15 +30,14 @@ skills:
   - http://data.europa.eu/esco/skill/faf8943c-72ff-4736-a587-25508695d6f0
 lateral:
   - "[[adougyi-elemzo]]"
-  - "[[parlamenti-asszisztens]]"
   - "[[gazdasagkutato]]"
   - "[[szabalyozasi-menedzser]]"
-  - "[[aktuarius-asszisztens]]"
+  - "[[strategiai-tervezesi-vezeto]]"
 ---
 
 # Gazdasági tanácsadó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Közpolitika és közigazgatás  
 **ESCO:** [gazdasági tanácsadó](http://data.europa.eu/esco/occupation/56afc09a-75a0-49c7-a5cb-256df45d8f2d) (2631.2.2)
@@ -72,7 +71,6 @@ A gazdasági tanácsadók kutatják a gazdasági fejlődést és tanácsot adnak
 ## Váltások
 
 - [[adougyi-elemzo|adóügyi elemző]]
-- [[parlamenti-asszisztens|parlamenti asszisztens]]
 - [[gazdasagkutato|gazdaságkutató]]
 - [[szabalyozasi-menedzser|szabályozási menedzser]]
-- [[aktuarius-asszisztens|aktuárius asszisztens]]
+- [[strategiai-tervezesi-vezeto|stratégiai tervezési vezető]]

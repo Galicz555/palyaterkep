@@ -14,7 +14,8 @@ skills:
   - http://data.europa.eu/esco/skill/881cd4ec-5b52-46c6-abc4-60551d58b355
   - http://data.europa.eu/esco/skill/96d549bb-3e62-4c45-92a7-f114df089581
   - http://data.europa.eu/esco/skill/e8db787b-d1a2-4000-b74a-e3db5436fef6
-lateral: []
+lateral:
+  - "[[ruhaipari-fejlesztesi-menedzser]]"
 ---
 
 # Ruhaipari operatív vezető
@@ -38,4 +39,4 @@ A ruhaipari operatív vezetők ütemezik a rendelések és szállítások rendj�
 
 ## Váltások
 
-Nincs.
+- [[ruhaipari-fejlesztesi-menedzser|ruhaipari fejlesztési menedzser]]

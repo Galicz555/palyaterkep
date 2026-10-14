@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3d974e0c-8ed9-47a7-aec2-ebdb34391c87
 label: repülőtéri poggyászkezelő
-level: 2
+level: 1
 track: individual
 branch: transport
 subBranch: warehousing
@@ -23,13 +23,12 @@ skills:
   - http://data.europa.eu/esco/skill/ab2bb44a-3956-4028-8715-8b70b1960b99
   - http://data.europa.eu/esco/skill/d15f8745-28f8-4abf-a7b6-6cb8a304efd2
   - http://data.europa.eu/esco/skill/fe29e658-7cad-4b70-a169-10a240ec0bef
-lateral:
-  - "[[legiforgalmi-poggyaszkezelo]]"
+lateral: []
 ---
 
 # Repülőtéri poggyászkezelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Raktározás és anyagmozgatás  
 **ESCO:** [repülőtéri poggyászkezelő](http://data.europa.eu/esco/occupation/3d974e0c-8ed9-47a7-aec2-ebdb34391c87) (9333.1)
@@ -57,4 +56,4 @@ A repülőtéri poggyászkezelők átveszik és visszaadják az utasok poggyász
 
 ## Váltások
 
-- [[legiforgalmi-poggyaszkezelo|légiforgalmi poggyászkezelő]]
+Nincs.

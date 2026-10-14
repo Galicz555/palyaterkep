@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/02e94cd6-8e6d-4e9b-b695-edb460c70528
 label: kerámiafestő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: crafts
@@ -37,7 +37,7 @@ lateral:
 
 # Kerámiafestő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [kerámiafestő](http://data.europa.eu/esco/occupation/02e94cd6-8e6d-4e9b-b695-edb460c70528) (7316.1.1)

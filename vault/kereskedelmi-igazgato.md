@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2d3d7188-47ab-49b9-9045-e452d9db06f1
 label: kereskedelmi igazgató
-level: 4
+level: 5
 track: management
 branch: trade
 subBranch: marketing
@@ -26,7 +26,7 @@ lateral: []
 
 # Kereskedelmi igazgató
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Stratégiai szint (5), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Értékesítési vezetés és marketing  
 **ESCO:** [kereskedelmi igazgató](http://data.europa.eu/esco/occupation/2d3d7188-47ab-49b9-9045-e452d9db06f1) (1221.4)

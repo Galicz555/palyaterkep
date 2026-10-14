@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ceb5277b-2c4d-4cb9-9b7e-b386e66e11ba
 label: szögelő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: wood-paper
@@ -29,7 +29,7 @@ lateral:
 
 # Szögelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Fa- és papíripar  
 **ESCO:** [szögelő](http://data.europa.eu/esco/occupation/ceb5277b-2c4d-4cb9-9b7e-b386e66e11ba) (7523.1)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/be235deb-6181-43ca-8127-7010a689643a
 label: szakkiropraktőr
-level: 3
+level: 4
 track: individual
 branch: health-social
 subBranch: therapy
@@ -79,17 +79,15 @@ skills:
   - http://data.europa.eu/esco/skill/f90d4810-8bac-4e5e-b870-3e35a4138ff7
   - http://data.europa.eu/esco/skill/fd02e17b-05ea-4449-963d-95273199159d
 lateral:
-  - "[[fizioterapeuta]]"
   - "[[vezeto-fizioterapeuta]]"
-  - "[[ortoptikus]]"
-  - "[[ergoterapeuta]]"
-  - "[[kiropraktor]]"
-  - "[[beszed-es-nyelvterapeuta]]"
+  - "[[orvosbiologiai-kutato]]"
+  - "[[klinikai-pszichologus]]"
+  - "[[szakapolo]]"
 ---
 
 # Szakkiropraktőr
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Terápia és rehabilitáció  
 **ESCO:** [szakkiropraktőr](http://data.europa.eu/esco/occupation/be235deb-6181-43ca-8127-7010a689643a) (2269.10)
@@ -173,9 +171,7 @@ A szakkiropraktőrök fejlett tudással és ismeretekkel rendelkeznek egy adott 
 
 ## Váltások
 
-- [[fizioterapeuta|fizioterapeuta]]
 - [[vezeto-fizioterapeuta|vezető fizioterapeuta]]
-- [[ortoptikus|ortoptikus]]
-- [[ergoterapeuta|ergoterapeuta]]
-- [[kiropraktor|kiropraktőr]]
-- [[beszed-es-nyelvterapeuta|beszéd- és nyelvterapeuta]]
+- [[orvosbiologiai-kutato|orvosbiológiai kutató]]
+- [[klinikai-pszichologus|klinikai pszichológus]]
+- [[szakapolo|szakápoló]]

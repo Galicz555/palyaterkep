@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a79d9e58-36be-4e67-a4db-ea6c8ff445fc
 label: áruházi osztály-, részlegvezető
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -30,12 +30,13 @@ lateral:
   - "[[aruhazvezeto]]"
   - "[[gyogyszertarvezeto]]"
   - "[[szupermarket-vezetoje]]"
+  - "[[kereskedelmi-regionalis-vezeto]]"
   - "[[kiskereskedo]]"
 ---
 
 # Áruházi osztály-, részlegvezető
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [áruházi osztály-, részlegvezető](http://data.europa.eu/esco/occupation/a79d9e58-36be-4e67-a4db-ea6c8ff445fc) (1420.2)
@@ -69,4 +70,5 @@ Az áruházi osztályok vezetői felelősek az üzlet valamely részlegén végz
 - [[aruhazvezeto|áruházvezető]]
 - [[gyogyszertarvezeto|gyógyszertárvezető]]
 - [[szupermarket-vezetoje|szupermarket vezetője]]
+- [[kereskedelmi-regionalis-vezeto|kereskedelmi regionális vezető]]
 - [[kiskereskedo|kiskereskedő]]

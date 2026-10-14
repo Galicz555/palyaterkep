@@ -20,6 +20,7 @@ skills:
   - http://data.europa.eu/esco/skill/f75b740c-b36c-495e-bc67-efe347bbc6b5
 lateral:
   - "[[koltsegelemzo]]"
+  - "[[penzugyi-ellenor]]"
 ---
 
 # Költségvetési elemző
@@ -48,3 +49,4 @@ A költségvetési elemzők nyomon követik az állami és magánintézmények �
 ## Váltások
 
 - [[koltsegelemzo|költségelemző]]
+- [[penzugyi-ellenor|pénzügyi ellenőr]]

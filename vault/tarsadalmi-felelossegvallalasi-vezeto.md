@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/1313aeea-63a9-4b4d-82d1-dbe00ff9ed10
 label: társadalmi felelősségvállalási vezető
 level: 3
-track: individual
+track: management
 branch: business
 subBranch: management
 skills:
@@ -40,7 +40,7 @@ lateral:
 
 # Társadalmi felelősségvállalási vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Vállalatvezetés, stratégia és tanácsadás  
 **ESCO:** [társadalmi felelősségvállalási vezető](http://data.europa.eu/esco/occupation/1313aeea-63a9-4b4d-82d1-dbe00ff9ed10) (1219.2)

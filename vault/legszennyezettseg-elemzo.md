@@ -26,6 +26,7 @@ skills:
   - http://data.europa.eu/esco/skill/f3cc52e3-a96c-4549-b841-6e41a846fa99
 lateral:
   - "[[iszapszelvenyezo]]"
+  - "[[kornyezetvedelmi-szakerto]]"
 ---
 
 # Légszennyezettség-elemző
@@ -60,3 +61,4 @@ A légszennyezettség-elemzők különböző területeken a levegő szennyezetts
 ## Váltások
 
 - [[iszapszelvenyezo|iszapszelvényező]]
+- [[kornyezetvedelmi-szakerto|környezetvédelmi szakértő]]

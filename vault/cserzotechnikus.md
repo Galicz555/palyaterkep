@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3c0c688b-f7ca-40dc-8222-ab011d4e2449
 label: cserzőtechnikus
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: production-engineering
@@ -42,7 +42,7 @@ lateral: []
 
 # Cserzőtechnikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Ipari és gyártástechnológiai mérnöki terület  
 **ESCO:** [cserzőtechnikus](http://data.europa.eu/esco/occupation/3c0c688b-f7ca-40dc-8222-ab011d4e2449) (3119.17)

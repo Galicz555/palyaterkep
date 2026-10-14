@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/beedd3c0-d3e2-4efe-8f39-381df669ee35
 label: lógondozó belovagló lókiképző
-level: 2
+level: 1
 track: individual
 branch: agriculture
 subBranch: livestock
@@ -36,12 +36,11 @@ skills:
 lateral:
   - "[[lovasz]]"
   - "[[allattenyeszto]]"
-  - "[[istallovezeto]]"
 ---
 
 # Lógondozó belovagló lókiképző
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Állattenyésztés  
 **ESCO:** [lógondozó belovagló lókiképző](http://data.europa.eu/esco/occupation/beedd3c0-d3e2-4efe-8f39-381df669ee35) (9212.3)
@@ -82,4 +81,3 @@ Részt vesznek a lovak edzésében, takarítják és karbantartják az istálló
 
 - [[lovasz|lovász]]
 - [[allattenyeszto|állattenyésztő]]
-- [[istallovezeto|istállóvezető]]

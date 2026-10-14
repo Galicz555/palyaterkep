@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/40b77b1b-6f9c-4d25-8b08-8b3cb0aaf7e7
 label: robbantástechnikai mérnök
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: process-engineering
@@ -29,7 +29,7 @@ lateral:
 
 # Robbantástechnikai mérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Vegyész-, kohó- és bányamérnöki terület  
 **ESCO:** [robbantástechnikai mérnök](http://data.europa.eu/esco/occupation/40b77b1b-6f9c-4d25-8b08-8b3cb0aaf7e7) (2146.3)

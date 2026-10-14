@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/aaeec9a7-dc57-4485-890c-86b3eef735f9
 label: infokommunikációs ügyfélszolgálati munkatárs
-level: 2
+level: 1
 track: individual
 branch: it
 subBranch: it-operations
@@ -28,14 +28,13 @@ skills:
   - http://data.europa.eu/esco/skill/f642d7ed-e8d7-4355-a747-b85094d4e2e3
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
-  - "[[infokommunikacios-ugyfelszolgalati-menedzser]]"
   - "[[vevoszolgalati-technikus]]"
   - "[[call-center-operator]]"
 ---
 
 # Infokommunikációs ügyfélszolgálati munkatárs
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Rendszer- és hálózatüzemeltetés, felhasználói támogatás  
 **ESCO:** [infokommunikációs ügyfélszolgálati munkatárs](http://data.europa.eu/esco/occupation/aaeec9a7-dc57-4485-890c-86b3eef735f9) (3512.1)
@@ -67,6 +66,5 @@ Az infokommunikációs ügyfélszolgálati munkatársak telefonon vagy elektroni
 
 ## Váltások
 
-- [[infokommunikacios-ugyfelszolgalati-menedzser|infokommunikációs ügyfélszolgálati menedzser]]
 - [[vevoszolgalati-technikus|vevőszolgálati technikus]]
 - [[call-center-operator|call center operátor]]

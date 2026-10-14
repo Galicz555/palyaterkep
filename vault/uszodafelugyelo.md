@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/4779055b-f769-4c6d-8e0e-088bb74cfce9
 label: uszodafelügyelő
-level: 1
+level: 2
 track: individual
 branch: hospitality
 subBranch: cleaning
@@ -22,7 +22,7 @@ lateral: []
 
 # Uszodafelügyelő
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Takarítás, háztartás és épületgondnokság  
 **ESCO:** [uszodafelügyelő](http://data.europa.eu/esco/occupation/4779055b-f769-4c6d-8e0e-088bb74cfce9) (9129.3)

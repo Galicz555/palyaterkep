@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/103aaf7a-48da-4e25-99fc-5cf1ee1388b1
 label: filigránkészítő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: crafts
@@ -37,7 +37,7 @@ lateral:
 
 # Filigránkészítő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [filigránkészítő](http://data.europa.eu/esco/occupation/103aaf7a-48da-4e25-99fc-5cf1ee1388b1) (7313.1.1)

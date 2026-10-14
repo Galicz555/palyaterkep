@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b874b541-2cb3-460b-96d7-4f83fe04b41d
 label: villamosvasúti technikus
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: electrical-trades
@@ -23,7 +23,7 @@ lateral:
 
 # Villamosvasúti technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Villamos- és elektronikai szerelés  
 **ESCO:** [villamosvasúti technikus](http://data.europa.eu/esco/occupation/b874b541-2cb3-460b-96d7-4f83fe04b41d) (7421.9)

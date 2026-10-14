@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a005f8a2-2d8a-433e-8d89-13575f822fd4
 label: energiaügyi igazgató
-level: 3
-track: individual
+level: 4
+track: management
 branch: industry
 subBranch: energy-utilities
 skills:
@@ -48,17 +48,17 @@ skills:
   - http://data.europa.eu/esco/skill/f5bf985b-ac78-4d23-881a-18a359234528
   - http://data.europa.eu/esco/skill/f5f5b244-6cea-4fbc-8a50-8f712791bc09
 lateral:
-  - "[[energetikai-auditor]]"
   - "[[energetikai-elemzo]]"
   - "[[energiagazdalkodo]]"
   - "[[operativ-vezeto]]"
   - "[[energetikai-tanacsado]]"
   - "[[megujuloenergia-tanacsado]]"
+  - "[[letesitmenyvezeto]]"
 ---
 
 # Energiaügyi igazgató
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Energia, víz és hulladék  
 **ESCO:** [energiaügyi igazgató](http://data.europa.eu/esco/occupation/a005f8a2-2d8a-433e-8d89-13575f822fd4) (1349.12)
@@ -110,9 +110,9 @@ Az energiaügyi igazgatók koordinálják a szervezeten belüli energiafelhaszn�
 
 ## Váltások
 
-- [[energetikai-auditor|energetikai auditor]]
 - [[energetikai-elemzo|energetikai elemző]]
 - [[energiagazdalkodo|energiagazdálkodó]]
 - [[operativ-vezeto|operatív vezető]]
 - [[energetikai-tanacsado|energetikai tanácsadó]]
 - [[megujuloenergia-tanacsado|megújulóenergia-tanácsadó]]
+- [[letesitmenyvezeto|létesítményvezető]]

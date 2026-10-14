@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/13d8b1be-d711-4bbc-a45e-cad605162f41
 label: zenei igazgató
-level: 3
+level: 4
 track: management
 branch: culture
 subBranch: performing-arts
@@ -29,15 +29,13 @@ skills:
   - http://data.europa.eu/esco/skill/e3840f20-1928-4d07-944c-d2dd2ae5cbba
   - http://data.europa.eu/esco/skill/fbb9ceec-26c2-417c-b849-bf613a7b3e9f
 lateral:
-  - "[[zenei-rendezo]]"
   - "[[karnagy]]"
-  - "[[zeneszerzo]]"
   - "[[karmester]]"
 ---
 
 # Zenei igazgató
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Előadó-művészet  
 **ESCO:** [zenei igazgató](http://data.europa.eu/esco/occupation/13d8b1be-d711-4bbc-a45e-cad605162f41) (2652.2)
@@ -70,7 +68,5 @@ A zenei vezetők együtteseket, például zenekarokat és együtteseket vezetnek
 
 ## Váltások
 
-- [[zenei-rendezo|zenei rendező]]
 - [[karnagy|karnagy]]
-- [[zeneszerzo|zeneszerző]]
 - [[karmester|karmester]]

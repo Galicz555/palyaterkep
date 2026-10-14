@@ -25,7 +25,6 @@ lateral:
   - "[[kozuti-jarmuszerelo]]"
   - "[[gepjarmu-karbantarto-es-javito]]"
   - "[[jarmutakarito]]"
-  - "[[veterangepjarmu-restaurator-technikus]]"
 ---
 
 # Gépjármű-karbantartó és -ápoló
@@ -59,4 +58,3 @@ A gépjármű-karbantartó és -ápolók olyan alapvető feladatokat látnak el,
 - [[kozuti-jarmuszerelo|közúti járműszerelő]]
 - [[gepjarmu-karbantarto-es-javito|gépjármű-karbantartó és -javító]]
 - [[jarmutakarito|járműtakarító]]
-- [[veterangepjarmu-restaurator-technikus|veterángépjármű-restaurátor technikus]]

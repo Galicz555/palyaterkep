@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/82fe0140-7069-47f9-a7d4-d63a611cb5bd
 label: választási kampánymenedzser
-level: 3
+level: 4
 track: management
 branch: culture
 subBranch: communications
@@ -18,13 +18,12 @@ skills:
   - http://data.europa.eu/esco/skill/e1964543-0312-4deb-8cba-aa07f3fb0904
   - http://data.europa.eu/esco/skill/eed2447e-13a2-4583-9066-cdb38d90c808
 lateral:
-  - "[[parttisztviselo]]"
   - "[[politikai-kampanytanacsado]]"
 ---
 
 # Választási kampánymenedzser
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Kommunikáció és PR  
 **ESCO:** [választási kampánymenedzser](http://data.europa.eu/esco/occupation/82fe0140-7069-47f9-a7d4-d63a611cb5bd) (2432.2)
@@ -46,5 +45,4 @@ A választásikampány-menedzserek menedzselik a politikai jelöltek kampányát
 
 ## Váltások
 
-- [[parttisztviselo|párttisztviselő]]
 - [[politikai-kampanytanacsado|politikai kampánytanácsadó]]

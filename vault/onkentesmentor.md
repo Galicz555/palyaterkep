@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1f13d8c3-f601-4d3b-adc8-c8d52e0c15d5
 label: önkéntesmentor
-level: 3
+level: 2
 track: individual
 branch: health-social
 subBranch: social-work
@@ -36,7 +36,7 @@ lateral:
 
 # Önkéntesmentor
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Szociális munka  
 **ESCO:** [önkéntesmentor](http://data.europa.eu/esco/occupation/1f13d8c3-f601-4d3b-adc8-c8d52e0c15d5) (3412.6)

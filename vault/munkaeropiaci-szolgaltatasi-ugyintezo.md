@@ -29,7 +29,6 @@ lateral:
   - "[[foglalkoztatasi-tanacsado]]"
   - "[[szemelyzeti-es-palyavalasztasi-szakerto]]"
   - "[[szemelyzeti-asszisztens]]"
-  - "[[humaneroforras-vezeto]]"
 ---
 
 # Munkaerőpiaci szolgáltatási ügyintéző
@@ -67,4 +66,3 @@ A munkaerőpiaci szolgáltatási ügyintézők foglalkoztatási szolgálatoknál
 - [[foglalkoztatasi-tanacsado|foglalkoztatási tanácsadó]]
 - [[szemelyzeti-es-palyavalasztasi-szakerto|személyzeti és pályaválasztási szakértő]]
 - [[szemelyzeti-asszisztens|személyzeti asszisztens]]
-- [[humaneroforras-vezeto|humánerőforrás-vezető]]

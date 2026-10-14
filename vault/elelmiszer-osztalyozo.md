@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b4306d87-7992-47fc-914a-4485a4e7003c
 label: élelmiszer-osztályozó
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: food
@@ -38,7 +38,6 @@ skills:
   - http://data.europa.eu/esco/skill/fa46ff13-5ad7-4a11-85d6-4b0614e411de
   - http://data.europa.eu/esco/skill/ff207c62-ccd0-4788-b99a-996a14320fad
 lateral:
-  - "[[elelmiszerszabalyozasi-tanacsado]]"
   - "[[elelmiszerbiztonsagi-felugyelo]]"
   - "[[elelmiszer-biotechnologus]]"
   - "[[elelmiszertechnologus]]"
@@ -48,7 +47,7 @@ lateral:
 
 # Élelmiszer-osztályozó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [élelmiszer-osztályozó](http://data.europa.eu/esco/occupation/b4306d87-7992-47fc-914a-4485a4e7003c) (7515.3)
@@ -90,7 +89,6 @@ Az élelmiszer-osztályozók ellenőrzik, válogatják és osztályozzák az él
 
 ## Váltások
 
-- [[elelmiszerszabalyozasi-tanacsado|élelmiszerszabályozási tanácsadó]]
 - [[elelmiszerbiztonsagi-felugyelo|élelmiszerbiztonsági felügyelő]]
 - [[elelmiszer-biotechnologus|élelmiszer biotechnológus]]
 - [[elelmiszertechnologus|élelmiszertechnológus]]

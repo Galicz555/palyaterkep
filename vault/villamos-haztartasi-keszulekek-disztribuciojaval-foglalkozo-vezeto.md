@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/de0084a5-7e00-43cc-bc51-3cb70a031295
 label: villamos háztartási készülékek disztribúciójával foglalkozó vezető
 level: 3
-track: individual
+track: management
 branch: trade
 subBranch: wholesale
 skills:
@@ -44,7 +44,7 @@ lateral:
 
 # Villamos háztartási készülékek disztribúciójával foglalkozó vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Nagykereskedelem és import-export  
 **ESCO:** [villamos háztartási készülékek disztribúciójával foglalkozó vezető](http://data.europa.eu/esco/occupation/de0084a5-7e00-43cc-bc51-3cb70a031295) (1324.3.1.6.10)

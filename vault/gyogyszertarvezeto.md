@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d871af8b-f6d7-4377-b609-d422afe3b5de
 label: gyógyszertárvezető
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -39,7 +39,7 @@ lateral:
 
 # Gyógyszertárvezető
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [gyógyszertárvezető](http://data.europa.eu/esco/occupation/d871af8b-f6d7-4377-b609-d422afe3b5de) (1420.4.18)

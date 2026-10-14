@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0ab5c12c-c1c1-4772-8345-aa287d0e391d
 label: IKT-tesztelemző
-level: 2
+level: 3
 track: individual
 branch: it
 subBranch: software-testing
@@ -17,17 +17,17 @@ skills:
   - http://data.europa.eu/esco/skill/b9f16465-56a9-426b-a047-0f9f1f95ec92
   - http://data.europa.eu/esco/skill/eb3aa8c1-fb14-47b4-a352-b7975abd2480
 lateral:
-  - "[[digitalisjatek-tesztelo]]"
   - "[[szoftvertesztelo]]"
   - "[[ikt-integracios-tesztmernok]]"
   - "[[ikt-rendszertesztelo]]"
   - "[[ikt-hasznalhatosagi-tesztelo]]"
   - "[[ikt-hozzaferhetosegi-tesztelo]]"
+  - "[[ikt-minosegbiztositasi-menedzser]]"
 ---
 
 # IKT-tesztelemző
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Szoftvertesztelés és minőségbiztosítás  
 **ESCO:** [IKT-tesztelemző](http://data.europa.eu/esco/occupation/0ab5c12c-c1c1-4772-8345-aa287d0e391d) (2519.6)
@@ -48,9 +48,9 @@ Az IKT tesztelemzők tesztkörnyezetben dolgoznak, értékelik a termékeket, el
 
 ## Váltások
 
-- [[digitalisjatek-tesztelo|digitálisjáték-tesztelő]]
 - [[szoftvertesztelo|szoftvertesztelő]]
 - [[ikt-integracios-tesztmernok|IKT integrációs tesztmérnök]]
 - [[ikt-rendszertesztelo|IKT rendszertesztelő]]
 - [[ikt-hasznalhatosagi-tesztelo|IKT használhatósági tesztelő]]
 - [[ikt-hozzaferhetosegi-tesztelo|IKT hozzáférhetőségi tesztelő]]
+- [[ikt-minosegbiztositasi-menedzser|IKT minőségbiztosítási menedzser]]

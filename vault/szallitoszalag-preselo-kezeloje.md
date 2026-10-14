@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0fc6c577-7d5d-4bcd-8ce8-4a4114d6a809
 label: szállítószalag-préselő kezelője
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: chemicals
@@ -21,7 +21,7 @@ lateral: []
 
 # Szállítószalag-préselő kezelője
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [szállítószalag-préselő kezelője](http://data.europa.eu/esco/occupation/0fc6c577-7d5d-4bcd-8ce8-4a4114d6a809) (8141.1.6)

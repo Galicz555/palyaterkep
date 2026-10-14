@@ -28,7 +28,7 @@ lateral:
   - "[[epuletszobrasz]]"
   - "[[tuzvedelmi-eszkoz-es-rendszerszerelo]]"
   - "[[napenergia-technikus]]"
-  - "[[tetofedo]]"
+  - "[[kozuti-jelzotabla-elhelyezo]]"
 ---
 
 # Padlószőnyeg-fektető
@@ -65,4 +65,4 @@ A padlószőnyeg-fektetők szőnyegtekercseket fektetnek le a padlóra. A szőny
 - [[epuletszobrasz|épületszobrász]]
 - [[tuzvedelmi-eszkoz-es-rendszerszerelo|tűzvédelmi eszköz- és rendszerszerelő]]
 - [[napenergia-technikus|napenergia-technikus]]
-- [[tetofedo|tetőfedő]]
+- [[kozuti-jelzotabla-elhelyezo|közúti jelzőtábla elhelyező]]

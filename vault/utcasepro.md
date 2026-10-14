@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/503ea267-93e9-4b8c-ae5e-817fe7e4a245
 label: utcaseprő
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: energy-utilities
@@ -42,7 +42,7 @@ lateral:
 
 # Utcaseprő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Energia, víz és hulladék  
 **ESCO:** [utcaseprő](http://data.europa.eu/esco/occupation/503ea267-93e9-4b8c-ae5e-817fe7e4a245) (9613.1)

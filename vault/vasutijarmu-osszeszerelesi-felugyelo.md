@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c5b45ebe-0e9f-4bc4-9563-7fdf31115e53
 label: vasútijármű-összeszerelési felügyelő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: quality-control
@@ -34,7 +34,7 @@ lateral:
 
 # Vasútijármű-összeszerelési felügyelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Minőségellenőrzés  
 **ESCO:** [vasútijármű-összeszerelési felügyelő](http://data.europa.eu/esco/occupation/c5b45ebe-0e9f-4bc4-9563-7fdf31115e53) (7543.7.6)

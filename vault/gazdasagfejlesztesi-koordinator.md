@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9e1e8379-6377-4969-b141-0d2337218fc9
 label: gazdaságfejlesztési koordinátor
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: policy
@@ -30,7 +30,7 @@ lateral:
 
 # Gazdaságfejlesztési koordinátor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Közpolitika és közigazgatás  
 **ESCO:** [gazdaságfejlesztési koordinátor](http://data.europa.eu/esco/occupation/9e1e8379-6377-4969-b141-0d2337218fc9) (2631.2.3)

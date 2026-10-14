@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/59883630-45f9-40e7-9732-9e5ff9758d2b
 label: környezetvédelmi programkoordinátor
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: environment
@@ -49,7 +49,7 @@ lateral:
 
 # Környezetvédelmi programkoordinátor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Környezetvédelem  
 **ESCO:** [környezetvédelmi programkoordinátor](http://data.europa.eu/esco/occupation/59883630-45f9-40e7-9732-9e5ff9758d2b) (2133.6)

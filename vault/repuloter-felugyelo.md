@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9967986b-570d-4db1-a179-aad7d1623ea8
 label: repülőtér-felügyelő
-level: 2
+level: 3
 track: management
 branch: transport
 subBranch: air
@@ -49,7 +49,7 @@ lateral:
 
 # Repülőtér-felügyelő
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [repülőtér-felügyelő](http://data.europa.eu/esco/occupation/9967986b-570d-4db1-a179-aad7d1623ea8) (3154.1.3)

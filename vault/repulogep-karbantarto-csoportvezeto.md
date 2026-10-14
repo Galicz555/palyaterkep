@@ -22,7 +22,8 @@ skills:
   - http://data.europa.eu/esco/skill/cffc3e97-e942-4b13-a2f3-0bf4910c06d3
   - http://data.europa.eu/esco/skill/d703c741-0f67-4388-9f0c-d2574143ee70
   - http://data.europa.eu/esco/skill/f5dd06b8-5d17-4932-9d03-957d0c4f5051
-lateral: []
+lateral:
+  - "[[legiforgalmi-poggyaszkezelo]]"
 ---
 
 # Repülőgép-karbantartó csoportvezető
@@ -54,4 +55,4 @@ A repülőgép-karbantartó csoportvezetők megtervezik, ütemezik, valamint koo
 
 ## Váltások
 
-Nincs.
+- [[legiforgalmi-poggyaszkezelo|légiforgalmi poggyászkezelő]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/77de6c7d-27bf-4bc2-8c80-5d6f6d9811f4
 label: reprográfiai technikus
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: printing
@@ -24,13 +24,12 @@ skills:
   - http://data.europa.eu/esco/skill/f683ae1d-cb7c-4aa1-b9fe-205e1bd23535
   - http://data.europa.eu/esco/skill/f68cd42c-1d67-4ca7-9b37-8f024763823d
 lateral:
-  - "[[szkennerkezelo]]"
   - "[[kiadvanyszerkeszto-levilagito]]"
 ---
 
 # Reprográfiai technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Nyomdaipar  
 **ESCO:** [reprográfiai technikus](http://data.europa.eu/esco/occupation/77de6c7d-27bf-4bc2-8c80-5d6f6d9811f4) (7322.8)
@@ -58,5 +57,4 @@ A reprográfiai technikusok mechanikus vagy digitális eszközökkel – példá
 
 ## Váltások
 
-- [[szkennerkezelo|szkennerkezelő]]
 - [[kiadvanyszerkeszto-levilagito|kiadványszerkesztő levilágító]]

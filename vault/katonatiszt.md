@@ -32,8 +32,8 @@ lateral:
   - "[[kulonleges-alakulat-tisztje]]"
   - "[[torzsormester]]"
   - "[[tengeresztiszt]]"
-  - "[[gyalogos]]"
   - "[[szakaszvezeto]]"
+  - "[[a-legiero-tisztje]]"
 ---
 
 # Katonatiszt
@@ -74,5 +74,5 @@ A katonatisztek műveleteket és manővereket felügyelnek, feladatokat osztanak
 - [[kulonleges-alakulat-tisztje|különleges alakulat tisztje]]
 - [[torzsormester|törzsőrmester]]
 - [[tengeresztiszt|tengerésztiszt]]
-- [[gyalogos|gyalogos]]
 - [[szakaszvezeto|szakaszvezető]]
+- [[a-legiero-tisztje|a légierő tisztje]]

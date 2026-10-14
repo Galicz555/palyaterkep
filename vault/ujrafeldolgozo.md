@@ -23,7 +23,6 @@ lateral:
   - "[[hulladekosztalyozo-munkas]]"
   - "[[hulladekgyujto]]"
   - "[[szilardhulladek-kezelo]]"
-  - "[[hulladekgazdalkodasi-felugyelo]]"
   - "[[veszelyeshulladek-technikus]]"
 ---
 
@@ -56,5 +55,4 @@ Az újrafeldolgozók anyagok tisztását és a hulladék eltávolítását végz
 - [[hulladekosztalyozo-munkas|hulladékosztályozó munkás]]
 - [[hulladekgyujto|hulladékgyűjtő]]
 - [[szilardhulladek-kezelo|szilárdhulladék-kezelő]]
-- [[hulladekgazdalkodasi-felugyelo|hulladékgazdálkodási felügyelő]]
 - [[veszelyeshulladek-technikus|veszélyeshulladék-technikus]]

@@ -23,6 +23,7 @@ skills:
   - http://data.europa.eu/esco/skill/eb8babfb-ab91-4937-a032-6a79f82e9b7f
   - http://data.europa.eu/esco/skill/f60c9e52-95fc-4ca1-a73c-18a491153b63
 lateral:
+  - "[[uzleti-konzulens]]"
   - "[[befektetesi-bankar]]"
   - "[[kozfinanszirozasi-tanacsado]]"
   - "[[orvosipraxis-menedzser]]"
@@ -58,6 +59,7 @@ A kockázatitőke-befektetők magánfinanszírozást nyújtanak a fiatal vagy ki
 
 ## Váltások
 
+- [[uzleti-konzulens|üzleti konzulens]]
 - [[befektetesi-bankar|befektetési bankár]]
 - [[kozfinanszirozasi-tanacsado|közfinanszírozási tanácsadó]]
 - [[orvosipraxis-menedzser|orvosipraxis-menedzser]]

@@ -26,7 +26,7 @@ lateral:
   - "[[banyaszati-termelesi-vezeto]]"
   - "[[asvanyfeldolgozo-mernok]]"
   - "[[banyageologus]]"
-  - "[[kofejtovezeto]]"
+  - "[[banyamernok]]"
 ---
 
 # Bányászati tervezőmérnök
@@ -61,4 +61,4 @@ A bányászati tervezőmérnökök olyan jövőbeli bányatereket terveznek, ame
 - [[banyaszati-termelesi-vezeto|bányászati termelési vezető]]
 - [[asvanyfeldolgozo-mernok|ásványfeldolgozó mérnök]]
 - [[banyageologus|bányageológus]]
-- [[kofejtovezeto|kőfejtővezető]]
+- [[banyamernok|bányamérnök]]

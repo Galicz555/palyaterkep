@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/be54b8da-bc71-40f0-b150-45c5e0769375
 label: rendezvényszervező
-level: 4
+level: 3
 track: management
 branch: hospitality
 subBranch: tourism-events
@@ -45,7 +45,7 @@ lateral:
 
 # Rendezvényszervező
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Turizmus, utazás és rendezvényszervezés  
 **ESCO:** [rendezvényszervező](http://data.europa.eu/esco/occupation/be54b8da-bc71-40f0-b150-45c5e0769375) (3332.2.1)

@@ -60,8 +60,6 @@ skills:
   - http://data.europa.eu/esco/skill/fafbb75f-ec35-4cc2-996a-20c85ef6c266
 lateral:
   - "[[szinhazi-ugyelo]]"
-  - "[[legijelenet-rendezo]]"
-  - "[[videotervezo]]"
 ---
 
 # Médiaintegrációs technikus
@@ -131,5 +129,3 @@ A médiaintegrációs technikusok a művészi vagy kreatív koncepció alapján,
 ## Váltások
 
 - [[szinhazi-ugyelo|színházi ügyelő]]
-- [[legijelenet-rendezo|légijelenet-rendező]]
-- [[videotervezo|videotervező]]

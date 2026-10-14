@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/898f99f7-8c0a-4212-9e58-9ab00379e5ae
 label: idomszerész
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: metal
@@ -28,7 +28,7 @@ lateral:
 
 # Idomszerész
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Fémipar és felületkezelés  
 **ESCO:** [idomszerész](http://data.europa.eu/esco/occupation/898f99f7-8c0a-4212-9e58-9ab00379e5ae) (7223.7)

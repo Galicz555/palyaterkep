@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a74f6c51-37e5-423e-aa5b-044e98663027
 label: webtartalom-menedzser
-level: 2
+level: 3
 track: management
 branch: it
 subBranch: software
@@ -50,7 +50,7 @@ lateral:
 
 # Webtartalom-menedzser
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Szoftver- és webfejlesztés  
 **ESCO:** [webtartalom-menedzser](http://data.europa.eu/esco/occupation/a74f6c51-37e5-423e-aa5b-044e98663027) (2513.4)

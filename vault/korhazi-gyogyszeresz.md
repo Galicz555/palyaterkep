@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/5fd099da-218a-460e-bd5b-b42f1b76c67c
 label: kórházi gyógyszerész
-level: 2
+level: 3
 track: individual
 branch: health-social
 subBranch: pharmacy
@@ -45,7 +45,7 @@ lateral:
 
 # Kórházi gyógyszerész
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Gyógyszerészet  
 **ESCO:** [kórházi gyógyszerész](http://data.europa.eu/esco/occupation/5fd099da-218a-460e-bd5b-b42f1b76c67c) (2262.1.2.1)

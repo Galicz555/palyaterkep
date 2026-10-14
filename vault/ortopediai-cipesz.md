@@ -32,8 +32,8 @@ lateral:
   - "[[egyedi-cipokeszito]]"
   - "[[cipotalpalo-es-sarkalo]]"
   - "[[farahuzogep-kezelo]]"
+  - "[[cipofelsoresz-kaptafazo]]"
   - "[[cipojavito]]"
-  - "[[vagogepkezelo]]"
 ---
 
 # Ortopédiai cipész
@@ -74,5 +74,5 @@ Az ortopédiai cipészek gyártási technológia felhasználásával lábbeliket
 - [[egyedi-cipokeszito|egyedi cipőkészítő]]
 - [[cipotalpalo-es-sarkalo|cipőtalpaló és -sarkaló]]
 - [[farahuzogep-kezelo|fárahúzógép-kezelő]]
+- [[cipofelsoresz-kaptafazo|cipőfelsőrész-kaptafázó]]
 - [[cipojavito|cipőjavító]]
-- [[vagogepkezelo|vágógépkezelő]]

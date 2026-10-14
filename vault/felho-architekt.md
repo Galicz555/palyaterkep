@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2fb96c6c-8d0b-4ef0-b1ee-3e493305e4eb
 label: felhő-architekt
-level: 3
+level: 4
 track: individual
 branch: it
 subBranch: software
@@ -15,13 +15,11 @@ skills:
   - http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0
 lateral:
   - "[[devops-felhomernok]]"
-  - "[[felhoalapuszoftver-fejleszto]]"
-  - "[[felhomernok]]"
 ---
 
 # Felhő-architekt
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Szoftver- és webfejlesztés  
 **ESCO:** [felhő-architekt](http://data.europa.eu/esco/occupation/2fb96c6c-8d0b-4ef0-b1ee-3e493305e4eb) (2512.6)
@@ -40,5 +38,3 @@ A felhő-architektek felelősek azért, hogy a projekt műszaki jellemzőit a v�
 ## Váltások
 
 - [[devops-felhomernok|DevOps felhőmérnök]]
-- [[felhoalapuszoftver-fejleszto|felhőalapúszoftver-fejlesztő]]
-- [[felhomernok|felhőmérnök]]

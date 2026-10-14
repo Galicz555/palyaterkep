@@ -29,8 +29,8 @@ lateral:
   - "[[fogyasztovedelmi-felugyelo]]"
   - "[[termek-osszeszerelesi-felugyelo]]"
   - "[[furnerlap-minosito]]"
-  - "[[ikt-minosegbiztositasi-menedzser]]"
   - "[[papiripari-rostanyagszakerto]]"
+  - "[[kompozitfalemez-osztalyozo]]"
 ---
 
 # Minőségtechnikus
@@ -68,5 +68,5 @@ A minőségtechnikusok a minőségi mérnökökkel vagy menedzserekkel együtt d
 - [[fogyasztovedelmi-felugyelo|fogyasztóvédelmi felügyelő]]
 - [[termek-osszeszerelesi-felugyelo|termék-összeszerelési felügyelő]]
 - [[furnerlap-minosito|furnérlap-minősítő]]
-- [[ikt-minosegbiztositasi-menedzser|IKT minőségbiztosítási menedzser]]
 - [[papiripari-rostanyagszakerto|papíripari rostanyagszakértő]]
+- [[kompozitfalemez-osztalyozo|kompozitfalemez-osztályozó]]

@@ -40,6 +40,7 @@ lateral:
   - "[[kornyezetvedelmi-igazgato]]"
   - "[[uzletiintelligencia-menedzser]]"
   - "[[vezerigazgato]]"
+  - "[[gazdasagi-tanacsado]]"
 ---
 
 # Stratégiai tervezési vezető
@@ -88,3 +89,4 @@ A stratégiai tervezési vezetők más vezetők egy csoportjával közösen hozn
 - [[kornyezetvedelmi-igazgato|környezetvédelmi igazgató]]
 - [[uzletiintelligencia-menedzser|üzletiintelligencia-menedzser]]
 - [[vezerigazgato|vezérigazgató]]
+- [[gazdasagi-tanacsado|gazdasági tanácsadó]]

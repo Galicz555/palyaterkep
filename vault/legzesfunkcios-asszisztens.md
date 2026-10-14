@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7b8b6118-6876-4a71-81a6-4b5fa9bfa221
 label: légzésfunkciós asszisztens
-level: 2
+level: 1
 track: individual
 branch: health-social
 subBranch: nursing
@@ -35,7 +35,7 @@ lateral:
 
 # Légzésfunkciós asszisztens
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Ápolás, szülészet és betegellátás  
 **ESCO:** [légzésfunkciós asszisztens](http://data.europa.eu/esco/occupation/7b8b6118-6876-4a71-81a6-4b5fa9bfa221) (3259.7)

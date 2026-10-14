@@ -16,9 +16,7 @@ skills:
   - http://data.europa.eu/esco/skill/e2c81781-19c8-4349-94a2-7ae3a541596a
 lateral:
   - "[[londiner]]"
-  - "[[kempingszolgaltatasok-uzemeltetoje-iranyitoja]]"
   - "[[vasuti-utaskisero]]"
-  - "[[komornyik-komorna]]"
 ---
 
 # Portás/portásnő
@@ -43,6 +41,4 @@ A portások fogadják a vendégeket a vendéglátóipari intézményben, és tov
 ## Váltások
 
 - [[londiner|londiner]]
-- [[kempingszolgaltatasok-uzemeltetoje-iranyitoja|kempingszolgáltatások üzemeltetője/irányítója]]
 - [[vasuti-utaskisero|vasúti utaskísérő]]
-- [[komornyik-komorna|komornyik/komorna]]

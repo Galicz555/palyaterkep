@@ -31,7 +31,6 @@ lateral:
   - "[[devops-felhomernok]]"
   - "[[felhomernok]]"
   - "[[felhoalapuszemelyazonossag-kezelo]]"
-  - "[[felho-architekt]]"
 ---
 
 # Felhőalapúszoftver-fejlesztő
@@ -71,4 +70,3 @@ A felhőalapú szoftverek fejlesztői mikroszolgáltatások, konténerek és sze
 - [[devops-felhomernok|DevOps felhőmérnök]]
 - [[felhomernok|felhőmérnök]]
 - [[felhoalapuszemelyazonossag-kezelo|felhőalapúszemélyazonosság-kezelő]]
-- [[felho-architekt|felhő-architekt]]

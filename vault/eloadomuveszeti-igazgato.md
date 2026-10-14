@@ -44,8 +44,8 @@ lateral:
   - "[[muveszeti-igazgato]]"
   - "[[kulturalis-kozpont-igazgatoja]]"
   - "[[kulturalis-letesitmeny-vezetoje]]"
-  - "[[botanikus]]"
   - "[[rekreacios-kozpont-vezetoje]]"
+  - "[[szerencsejatek-ertekesitohely-vezetoje]]"
 ---
 
 # Előadóművészeti igazgató
@@ -98,5 +98,5 @@ Az előadóművészeti igazgatók az előadással kapcsolatos gyakorlati kérdé
 - [[muveszeti-igazgato|művészeti igazgató]]
 - [[kulturalis-kozpont-igazgatoja|kulturális központ igazgatója]]
 - [[kulturalis-letesitmeny-vezetoje|kulturális létesítmény vezetője]]
-- [[botanikus|botanikus]]
 - [[rekreacios-kozpont-vezetoje|rekreációs központ vezetője]]
+- [[szerencsejatek-ertekesitohely-vezetoje|szerencsejáték-értékesítőhely vezetője]]

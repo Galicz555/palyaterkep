@@ -23,6 +23,7 @@ skills:
   - http://data.europa.eu/esco/skill/e95058a6-e139-42e7-a470-72038a606649
   - http://data.europa.eu/esco/skill/fe39d4db-4cb5-4299-bb9f-896c8fd6ab13
 lateral:
+  - "[[konyvszerkeszto]]"
   - "[[kiadvanykoordinator]]"
   - "[[filmproducer]]"
   - "[[producer]]"
@@ -59,6 +60,7 @@ A könyvkiadók felelősek az új anyagok kiválasztásáért. Ők döntik el, h
 
 ## Váltások
 
+- [[konyvszerkeszto|könyvszerkesztő]]
 - [[kiadvanykoordinator|kiadványkoordinátor]]
 - [[filmproducer|filmproducer]]
 - [[producer|producer]]

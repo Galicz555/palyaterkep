@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/57a12047-4f1e-40ed-add5-9736923f231b
 label: csillagász
-level: 2
+level: 3
 track: individual
 branch: engineering
 subBranch: physical-sciences
@@ -59,7 +59,7 @@ lateral:
 
 # Csillagász
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Fizika, kémia és földtudományok  
 **ESCO:** [csillagász](http://data.europa.eu/esco/occupation/57a12047-4f1e-40ed-add5-9736923f231b) (2111.1)

@@ -47,11 +47,11 @@ skills:
   - http://data.europa.eu/esco/skill/fd85fb40-02d8-4f10-a287-6277126e16f5
 lateral:
   - "[[ora-ekszer-elado]]"
-  - "[[halbolti-elado]]"
   - "[[hobbiallat-bolti-elado]]"
   - "[[ruhazati-bolti-elado]]"
   - "[[szamitogepesjatek-szoftver-es-mediabolti-elado]]"
   - "[[konyvesbolti-elado]]"
+  - "[[jegypenztaros]]"
 ---
 
 # Kertészeti és virágbolti eladó
@@ -107,8 +107,8 @@ A kertészeti és virágbolti eladók virágokat, növényeket, vetőmagokat és
 ## Váltások
 
 - [[ora-ekszer-elado|óra-ékszer eladó]]
-- [[halbolti-elado|halbolti eladó]]
 - [[hobbiallat-bolti-elado|hobbiállat-bolti eladó]]
 - [[ruhazati-bolti-elado|ruházati bolti eladó]]
 - [[szamitogepesjatek-szoftver-es-mediabolti-elado|számítógépesjáték-, szoftver- és médiabolti eladó]]
 - [[konyvesbolti-elado|könyvesbolti eladó]]
+- [[jegypenztaros|jegypénztáros]]

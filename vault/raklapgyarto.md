@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a77bc925-c441-42f2-92d4-666b103fc025
 label: raklapgyártó
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: wood-paper
@@ -34,7 +34,7 @@ lateral:
 
 # Raklapgyártó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Fa- és papíripar  
 **ESCO:** [raklapgyártó](http://data.europa.eu/esco/occupation/a77bc925-c441-42f2-92d4-666b103fc025) (7523.4)

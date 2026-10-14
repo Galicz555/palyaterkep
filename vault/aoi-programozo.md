@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3a75b477-e151-40fb-9909-b3641401bfed
 label: AOI-programozó
-level: 1
+level: 2
 track: individual
 branch: industry
 subBranch: quality-control
@@ -34,7 +34,7 @@ lateral:
 
 # AOI-programozó
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Minőségellenőrzés  
 **ESCO:** [AOI-programozó](http://data.europa.eu/esco/occupation/3a75b477-e151-40fb-9909-b3641401bfed) (7543.1)

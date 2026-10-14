@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1391bdf9-bd61-4fb5-91ca-c29036ab2b60
 label: házi gondozó
-level: 1
+level: 2
 track: individual
 branch: health-social
 subBranch: care
@@ -36,7 +36,7 @@ lateral:
 
 # Házi gondozó
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Idős- és otthoni gondozás  
 **ESCO:** [házi gondozó](http://data.europa.eu/esco/occupation/1391bdf9-bd61-4fb5-91ca-c29036ab2b60) (5322.1)

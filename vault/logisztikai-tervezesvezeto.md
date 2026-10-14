@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/aeb7c6bd-22c9-43c2-8551-a1cc2560584f
 label: logisztikai tervezésvezető
 level: 3
-track: individual
+track: management
 branch: transport
 subBranch: dispatch
 skills:
@@ -40,7 +40,7 @@ lateral:
 
 # Logisztikai tervezésvezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Forgalomirányítás és fuvarszervezés  
 **ESCO:** [logisztikai tervezésvezető](http://data.europa.eu/esco/occupation/aeb7c6bd-22c9-43c2-8551-a1cc2560584f) (1324.8.1)

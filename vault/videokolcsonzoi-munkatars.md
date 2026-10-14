@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d6b339ed-8dc9-4281-8c91-c8287eceee40
 label: videokölcsönzői munkatárs
-level: 2
+level: 1
 track: individual
 branch: trade
 subBranch: retail
@@ -40,7 +40,7 @@ lateral:
 
 # Videokölcsönzői munkatárs
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Bolti értékesítés  
 **ESCO:** [videokölcsönzői munkatárs](http://data.europa.eu/esco/occupation/d6b339ed-8dc9-4281-8c91-c8287eceee40) (5249.2.2.2)

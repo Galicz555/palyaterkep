@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d0341f2c-f797-4306-b847-411dee1058a9
 label: művészmodell
-level: 2
+level: 1
 track: individual
 branch: culture
 subBranch: performing-arts
@@ -27,7 +27,7 @@ lateral:
 
 # Művészmodell
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Előadó-művészet  
 **ESCO:** [művészmodell](http://data.europa.eu/esco/occupation/d0341f2c-f797-4306-b847-411dee1058a9) (5241.1)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8529edc5-96ad-4cde-b34a-f86ad3753e4d
 label: értékesítési mérnök
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: technical-sales
@@ -35,7 +35,7 @@ lateral: []
 
 # Értékesítési mérnök
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Műszaki és üzleti értékesítés  
 **ESCO:** [értékesítési mérnök](http://data.europa.eu/esco/occupation/8529edc5-96ad-4cde-b34a-f86ad3753e4d) (2433.4)

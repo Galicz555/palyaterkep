@@ -37,6 +37,7 @@ lateral:
   - "[[cipoipari-technikus]]"
   - "[[cipo-osszeallitasi-muvezeto]]"
   - "[[cipoipari-termelesi-muvezeto]]"
+  - "[[cipovarro]]"
   - "[[boripari-termelesi-muvezeto]]"
   - "[[cipogyari-raktaros]]"
 ---
@@ -84,5 +85,6 @@ A cipőipari termelési vezetők tervezik, kirendelik és koordinálják a cipő
 - [[cipoipari-technikus|cipőipari technikus]]
 - [[cipo-osszeallitasi-muvezeto|cipő-összeállítási művezető]]
 - [[cipoipari-termelesi-muvezeto|cipőipari termelési művezető]]
+- [[cipovarro|cipővarró]]
 - [[boripari-termelesi-muvezeto|bőripari termelési művezető]]
 - [[cipogyari-raktaros|cipőgyári raktáros]]

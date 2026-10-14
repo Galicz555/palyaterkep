@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6ccb925a-264a-4e00-aa3a-503e53c5db2b
 label: ékszíjcsinozó
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: chemicals
@@ -22,7 +22,7 @@ lateral:
 
 # Ékszíjcsinozó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [ékszíjcsinozó](http://data.europa.eu/esco/occupation/6ccb925a-264a-4e00-aa3a-503e53c5db2b) (8141.1.9.2)

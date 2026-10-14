@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/78ed3811-f421-45e5-9574-31364c76af67
 label: előadó-művészeti iskola tánctanára
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -48,7 +48,7 @@ lateral:
 
 # Előadó-művészeti iskola tánctanára
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [előadó-művészeti iskola tánctanára](http://data.europa.eu/esco/occupation/78ed3811-f421-45e5-9574-31364c76af67) (2310.1.29)

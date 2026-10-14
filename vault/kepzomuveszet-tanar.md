@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/54361270-bc5e-40fb-8f84-a0023a85cdf7
 label: képzőművészet-tanár
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -44,7 +44,7 @@ lateral:
 
 # Képzőművészet-tanár
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [képzőművészet-tanár](http://data.europa.eu/esco/occupation/54361270-bc5e-40fb-8f84-a0023a85cdf7) (2310.1.17)

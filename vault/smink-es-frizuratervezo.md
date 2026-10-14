@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/5dd01019-3999-4d90-bc8a-7a04b0b208b0
 label: smink- és frizuratervező
-level: 3
+level: 4
 track: individual
 branch: hospitality
 subBranch: beauty
@@ -46,17 +46,17 @@ skills:
   - http://data.europa.eu/esco/skill/f5eed756-2883-46fe-8990-729100cc3e4b
   - http://data.europa.eu/esco/skill/fcc0a1c8-d36e-4f8e-b928-00d5bca10a47
 lateral:
-  - "[[babtervezo]]"
   - "[[pirotechnikai-tervezo]]"
   - "[[eloadasok-vilagitastervezoje]]"
-  - "[[jelmeztervezo]]"
   - "[[hangtervezo]]"
   - "[[diszlettervezo]]"
+  - "[[videotervezo]]"
+  - "[[legijelenet-rendezo]]"
 ---
 
 # Smink- és frizuratervező
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Fodrászat és szépségápolás  
 **ESCO:** [smink- és frizuratervező](http://data.europa.eu/esco/occupation/5dd01019-3999-4d90-bc8a-7a04b0b208b0) (5142.4)
@@ -107,9 +107,9 @@ A smink- és frizuratervezők az előadóművészek sminkjéhez és frizurájáh
 
 ## Váltások
 
-- [[babtervezo|bábtervező]]
 - [[pirotechnikai-tervezo|pirotechnikai tervező]]
 - [[eloadasok-vilagitastervezoje|előadások világítástervezője]]
-- [[jelmeztervezo|jelmeztervező]]
 - [[hangtervezo|hangtervező]]
 - [[diszlettervezo|díszlettervező]]
+- [[videotervezo|videotervező]]
+- [[legijelenet-rendezo|légijelenet-rendező]]

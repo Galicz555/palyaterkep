@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/047108c3-f987-40a4-bef0-f2b3407ec16a
 label: orvosfizikai szakértő
-level: 3
+level: 4
 track: individual
 branch: health-social
 subBranch: therapy
@@ -40,13 +40,12 @@ skills:
   - http://data.europa.eu/esco/skill/f46220aa-ad70-4c18-99dc-cb978f2850d2
   - http://data.europa.eu/esco/skill/fef20fea-bb6d-4423-9b19-c28e225081a8
 lateral:
-  - "[[diagnosztikai-radiografus]]"
   - "[[sugarvedelmi-megbizott]]"
 ---
 
 # Orvosfizikai szakértő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Terápia és rehabilitáció  
 **ESCO:** [orvosfizikai szakértő](http://data.europa.eu/esco/occupation/047108c3-f987-40a4-bef0-f2b3407ec16a) (2269.3)
@@ -91,5 +90,4 @@ Az orvosfizikai szakértők tanácsot adnak az orvosi sugárterhelésre alkalmaz
 
 ## Váltások
 
-- [[diagnosztikai-radiografus|diagnosztikai radiográfus]]
 - [[sugarvedelmi-megbizott|sugárvédelmi megbízott]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9e81adde-9983-44fa-b74b-c548d0dbfbdd
 label: boltvezető
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -46,7 +46,7 @@ lateral:
 
 # Boltvezető
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [boltvezető](http://data.europa.eu/esco/occupation/9e81adde-9983-44fa-b74b-c548d0dbfbdd) (1420.4)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b5f6bb2c-0602-484d-a87f-9cac33f83010
 label: motoros futár
-level: 2
+level: 1
 track: individual
 branch: transport
 subBranch: postal-courier
@@ -29,7 +29,7 @@ lateral:
 
 # Motoros futár
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Posta és futárszolgálat  
 **ESCO:** [motoros futár](http://data.europa.eu/esco/occupation/b5f6bb2c-0602-484d-a87f-9cac33f83010) (8321.1)

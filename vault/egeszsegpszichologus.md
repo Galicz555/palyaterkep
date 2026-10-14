@@ -94,6 +94,7 @@ lateral:
   - "[[pszichoterapeuta]]"
   - "[[pszichologus]]"
   - "[[pszichologiai-asszisztens]]"
+  - "[[fizioterapeuta]]"
   - "[[zeneterapeuta]]"
 ---
 
@@ -197,4 +198,5 @@ Az egészségpszichológusok foglalkoznak az egyének és a csoportok egészség
 - [[pszichoterapeuta|pszichoterapeuta]]
 - [[pszichologus|pszichológus]]
 - [[pszichologiai-asszisztens|pszichológiai asszisztens]]
+- [[fizioterapeuta|fizioterapeuta]]
 - [[zeneterapeuta|zeneterapeuta]]

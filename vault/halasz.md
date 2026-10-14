@@ -53,11 +53,11 @@ skills:
   - http://data.europa.eu/esco/skill/f774cc69-f0cf-4767-bf13-9b16dc7f7c07
 lateral:
   - "[[part-menti-halaszatot-folytato-hajo-parancsnoka]]"
-  - "[[halaszhajo-kapitany]]"
   - "[[fedelzetmester-halaszhajon]]"
   - "[[matroz-halaszhajon]]"
   - "[[gepuzemseged]]"
   - "[[melytengeri-halasz]]"
+  - "[[halaszati-or]]"
 ---
 
 # Halász
@@ -119,8 +119,8 @@ A halászok kis méretű hajókat üzemeltetnek kizárólag a partok mentén és
 ## Váltások
 
 - [[part-menti-halaszatot-folytato-hajo-parancsnoka|part menti halászatot folytató hajó parancsnoka]]
-- [[halaszhajo-kapitany|halászhajó-kapitány]]
 - [[fedelzetmester-halaszhajon|fedélzetmester halászhajón]]
 - [[matroz-halaszhajon|matróz halászhajón]]
 - [[gepuzemseged|gépüzemsegéd]]
 - [[melytengeri-halasz|mélytengeri halász]]
+- [[halaszati-or|halászati őr]]

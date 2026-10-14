@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/44ec4c04-c2d4-4b92-bb27-e56f5b096d97
 label: légi oldali biztonsági igazgató
-level: 3
-track: individual
+level: 4
+track: management
 branch: transport
 subBranch: air
 skills:
@@ -28,7 +28,7 @@ lateral:
 
 # Légi oldali biztonsági igazgató
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [légi oldali biztonsági igazgató](http://data.europa.eu/esco/occupation/44ec4c04-c2d4-4b92-bb27-e56f5b096d97) (1349.1)

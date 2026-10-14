@@ -37,9 +37,9 @@ lateral:
   - "[[szamviteli-ugyintezo]]"
   - "[[szamviteli-vezeto]]"
   - "[[szamviteli-asszisztens]]"
+  - "[[penzugyi-ellenor]]"
   - "[[analitikus-konyvelo]]"
   - "[[ado-es-illetekhivatali-ugyintezo]]"
-  - "[[adopolitikai-tanacsado]]"
 ---
 
 # Könyvelő
@@ -85,6 +85,6 @@ A könyvelők felülvizsgálják és elemzik a pénzügyi kimutatásokat, költs
 - [[szamviteli-ugyintezo|számviteli ügyintéző]]
 - [[szamviteli-vezeto|számviteli vezető]]
 - [[szamviteli-asszisztens|számviteli asszisztens]]
+- [[penzugyi-ellenor|pénzügyi ellenőr]]
 - [[analitikus-konyvelo|analitikus könyvelő]]
 - [[ado-es-illetekhivatali-ugyintezo|adó- és illetékhivatali ügyintéző]]
-- [[adopolitikai-tanacsado|adópolitikai tanácsadó]]

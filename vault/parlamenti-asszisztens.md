@@ -37,7 +37,6 @@ skills:
   - http://data.europa.eu/esco/skill/fe30a4b0-1a99-4fc7-afff-b162b8c834ba
 lateral:
   - "[[adougyi-elemzo]]"
-  - "[[gazdasagi-tanacsado]]"
 ---
 
 # Parlamenti asszisztens
@@ -83,4 +82,3 @@ A parlamenti asszisztensek regionális, nemzeti és nemzetközi parlamenti tiszt
 ## Váltások
 
 - [[adougyi-elemzo|adóügyi elemző]]
-- [[gazdasagi-tanacsado|gazdasági tanácsadó]]

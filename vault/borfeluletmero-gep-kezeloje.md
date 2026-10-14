@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2c94916d-bd7d-4855-ab89-574d2c439a63
 label: bőrfelületmérő gép kezelője
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: textiles
@@ -24,7 +24,7 @@ lateral:
 
 # Bőrfelületmérő gép kezelője
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Textil-, ruha- és bőripar  
 **ESCO:** [bőrfelületmérő gép kezelője](http://data.europa.eu/esco/occupation/2c94916d-bd7d-4855-ab89-574d2c439a63) (8159.4)

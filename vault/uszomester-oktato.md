@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/5a80044b-9b2f-40eb-a210-0c1c3c958e0e
 label: úszómester-oktató
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: sport-leisure
@@ -30,15 +30,15 @@ skills:
 lateral:
   - "[[elsosegelynyujto-oktato]]"
   - "[[tutor]]"
-  - "[[egyetemi-tanarseged]]"
   - "[[sportturisztikai-programszervezo]]"
   - "[[tuzolto-szakoktato]]"
   - "[[hajozasoktato]]"
+  - "[[kommunikacios-trener]]"
 ---
 
 # Úszómester-oktató
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Sport, szabadidő és szerencsejáték  
 **ESCO:** [úszómester-oktató](http://data.europa.eu/esco/occupation/5a80044b-9b2f-40eb-a210-0c1c3c958e0e) (3422.2)
@@ -72,7 +72,7 @@ Az úszómester-oktatók a leendő (hivatásos) úszómestereknek tanítják a h
 
 - [[elsosegelynyujto-oktato|elsősegélynyújtó-oktató]]
 - [[tutor|tutor]]
-- [[egyetemi-tanarseged|egyetemi tanársegéd]]
 - [[sportturisztikai-programszervezo|sportturisztikai programszervező]]
 - [[tuzolto-szakoktato|tűzoltó szakoktató]]
 - [[hajozasoktato|hajózásoktató]]
+- [[kommunikacios-trener|kommunikációs tréner]]

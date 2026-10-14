@@ -32,11 +32,11 @@ skills:
   - http://data.europa.eu/esco/skill/f7e7ccb6-fadc-4c35-935d-e1040be40dfe
 lateral:
   - "[[befektetesi-tanacsado]]"
-  - "[[banki-ugyfelkapcsolati-menedzser]]"
   - "[[hitelugyi-tanacsado]]"
   - "[[bankszamla-ugyintezo]]"
   - "[[fuzios-es-felvasarlasi-elemzo]]"
   - "[[aktuarius]]"
+  - "[[vallalati-banki-tanacsado]]"
 ---
 
 # Pénzügyi tervező
@@ -77,8 +77,8 @@ A pénzügyi tervezők különféle pénzügyi kérdésekkel foglalkozó személ
 ## Váltások
 
 - [[befektetesi-tanacsado|befektetési tanácsadó]]
-- [[banki-ugyfelkapcsolati-menedzser|banki ügyfélkapcsolati menedzser]]
 - [[hitelugyi-tanacsado|hitelügyi tanácsadó]]
 - [[bankszamla-ugyintezo|bankszámla-ügyintéző]]
 - [[fuzios-es-felvasarlasi-elemzo|fúziós és felvásárlási elemző]]
 - [[aktuarius|aktuárius]]
+- [[vallalati-banki-tanacsado|vállalati banki tanácsadó]]

@@ -28,8 +28,8 @@ lateral:
   - "[[vallalati-jogasz]]"
   - "[[birosagi-titkar]]"
   - "[[jogi-adminisztrator]]"
-  - "[[eskudtszeki-koordinator]]"
   - "[[jogpolitikai-tisztviselo]]"
+  - "[[jogasz-nyelvesz]]"
 ---
 
 # Ügyész
@@ -66,5 +66,5 @@ Az ügyészek kormányzati szervek és a nyilvánosság képviseletét látják 
 - [[vallalati-jogasz|vállalati jogász]]
 - [[birosagi-titkar|bírósági titkár]]
 - [[jogi-adminisztrator|jogi adminisztrátor]]
-- [[eskudtszeki-koordinator|esküdtszéki koordinátor]]
 - [[jogpolitikai-tisztviselo|jogpolitikai tisztviselő]]
+- [[jogasz-nyelvesz|jogász-nyelvész]]

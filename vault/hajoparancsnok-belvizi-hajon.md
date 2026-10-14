@@ -61,6 +61,7 @@ skills:
   - http://data.europa.eu/esco/skill/f5bb6b92-2773-4403-8188-4b04bbc587fd
   - http://data.europa.eu/esco/skill/ff1f5150-82c6-4c52-81ca-770b61b81794
 lateral:
+  - "[[fedelzetmester]]"
   - "[[hajogepesz]]"
   - "[[halaszhajo-kapitany]]"
   - "[[part-menti-halaszatot-folytato-hajo-parancsnoka]]"
@@ -133,6 +134,7 @@ A belvízi hajó hajóparancsnoka rendelkezik a legfelsőbb jogkörrel a hajó f
 
 ## Váltások
 
+- [[fedelzetmester|fedélzetmester]]
 - [[hajogepesz|hajógépész]]
 - [[halaszhajo-kapitany|halászhajó-kapitány]]
 - [[part-menti-halaszatot-folytato-hajo-parancsnoka|part menti halászatot folytató hajó parancsnoka]]

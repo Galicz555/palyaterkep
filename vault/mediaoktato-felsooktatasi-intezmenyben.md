@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/479ede81-bd51-4f3b-9d30-4910699fd211
 label: médiaoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -48,7 +48,7 @@ lateral:
 
 # Médiaoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [médiaoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/479ede81-bd51-4f3b-9d30-4910699fd211) (2310.1.21)

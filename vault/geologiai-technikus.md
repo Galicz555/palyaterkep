@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/fb3f5f35-e6f7-4168-aef2-e4dfb7f2a3ee
 label: geológiai technikus
-level: 2
+level: 1
 track: individual
 branch: engineering
 subBranch: physical-sciences
@@ -38,7 +38,7 @@ lateral:
 
 # Geológiai technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Fizika, kémia és földtudományok  
 **ESCO:** [geológiai technikus](http://data.europa.eu/esco/occupation/fb3f5f35-e6f7-4168-aef2-e4dfb7f2a3ee) (3111.4)

@@ -72,8 +72,8 @@ lateral:
   - "[[ortoptikus]]"
   - "[[konzulens-gyogyszeresz]]"
   - "[[muveszetterapeuta]]"
-  - "[[vezeto-fizioterapeuta]]"
   - "[[dietetikus]]"
+  - "[[optometrista]]"
 ---
 
 # Audiológus
@@ -155,5 +155,5 @@ Az audiológusok értékelik, diagnosztizálják és kezelik a fertőző, geneti
 - [[ortoptikus|ortoptikus]]
 - [[konzulens-gyogyszeresz|konzulens gyógyszerész]]
 - [[muveszetterapeuta|művészetterapeuta]]
-- [[vezeto-fizioterapeuta|vezető fizioterapeuta]]
 - [[dietetikus|dietetikus]]
+- [[optometrista|optometrista]]

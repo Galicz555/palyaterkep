@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/fd1c4e94-25aa-4020-b0ef-0cf5aaf2e4d2
 label: textilipari stratégiai beszerző
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: purchasing
@@ -32,7 +32,7 @@ lateral:
 
 # Textilipari stratégiai beszerző
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Beszerzés  
 **ESCO:** [textilipari stratégiai beszerző](http://data.europa.eu/esco/occupation/fd1c4e94-25aa-4020-b0ef-0cf5aaf2e4d2) (3323.2.4)

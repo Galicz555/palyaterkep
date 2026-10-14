@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2aae7736-f58b-4027-8de4-6884281c3b0b
 label: robbantómester
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: mining
@@ -29,7 +29,7 @@ lateral:
 
 # Robbantómester
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Bányászat és ásványi termékek  
 **ESCO:** [robbantómester](http://data.europa.eu/esco/occupation/2aae7736-f58b-4027-8de4-6884281c3b0b) (7542.1)

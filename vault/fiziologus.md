@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/25829508-63f3-41c3-affc-ddbb5c077930
 label: fiziológus
-level: 3
+level: 2
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -59,7 +59,7 @@ lateral:
 
 # Fiziológus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [fiziológus](http://data.europa.eu/esco/occupation/25829508-63f3-41c3-affc-ddbb5c077930) (2131.4.11)

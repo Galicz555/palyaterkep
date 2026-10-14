@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f3b99acc-b212-45cf-bb4f-7b83cc6f0d71
 label: bakteriológiai technikus
-level: 2
+level: 1
 track: individual
 branch: engineering
 subBranch: life-sciences
@@ -38,7 +38,7 @@ lateral:
 
 # Bakteriológiai technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Élettudományok  
 **ESCO:** [bakteriológiai technikus](http://data.europa.eu/esco/occupation/f3b99acc-b212-45cf-bb4f-7b83cc6f0d71) (3141.2.1)

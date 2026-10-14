@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/87cb6ef5-fa94-4af4-9511-6fe64c463835
 label: tejtermékgyártó munkatárs
-level: 1
+level: 2
 track: individual
 branch: industry
 subBranch: food
@@ -37,15 +37,15 @@ skills:
 lateral:
   - "[[tejfeldolgozas-teruleten-dolgozo-gepkezelo]]"
   - "[[tej-hokezelesi-eljaras-kezelo]]"
+  - "[[tejfeldolgozo-technikus]]"
   - "[[tejtermekgyarto]]"
   - "[[tejkezelo-alapanyagatvevo]]"
   - "[[centrifugakezelo]]"
-  - "[[omlesztettaru-kezelok]]"
 ---
 
 # Tejtermékgyártó munkatárs
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Élelmiszer- és italgyártás  
 **ESCO:** [tejtermékgyártó munkatárs](http://data.europa.eu/esco/occupation/87cb6ef5-fa94-4af4-9511-6fe64c463835) (8160.25)
@@ -86,7 +86,7 @@ A tejtermékgyártó munkatársak tej, sajt, jégkrém és más tejtermék feldo
 
 - [[tejfeldolgozas-teruleten-dolgozo-gepkezelo|tejfeldolgozás területén dolgozó gépkezelő]]
 - [[tej-hokezelesi-eljaras-kezelo|tej-hőkezelési eljárás kezelő]]
+- [[tejfeldolgozo-technikus|tejfeldolgozó technikus]]
 - [[tejtermekgyarto|tejtermékgyártó]]
 - [[tejkezelo-alapanyagatvevo|tejkezelő alapanyagátvevő]]
 - [[centrifugakezelo|centrifugakezelő]]
-- [[omlesztettaru-kezelok|ömlesztettáru-kezelők]]

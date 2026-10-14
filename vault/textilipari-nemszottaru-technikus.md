@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f4c997b5-f9e0-4419-b8e7-8e5e2cffc73e
 label: textilipari nemszőttáru-technikus
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: textiles
@@ -26,7 +26,7 @@ lateral:
 
 # Textilipari nemszőttáru-technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Textil-, ruha- és bőripar  
 **ESCO:** [textilipari nemszőttáru-technikus](http://data.europa.eu/esco/occupation/f4c997b5-f9e0-4419-b8e7-8e5e2cffc73e) (8159.7)

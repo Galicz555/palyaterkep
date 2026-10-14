@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/39803100-c338-4f01-ad2c-085d488920ca
 label: szállítási, szállítmányozási nyilvántartó
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: dispatch
@@ -38,7 +38,7 @@ lateral:
 
 # Szállítási, szállítmányozási nyilvántartó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Forgalomirányítás és fuvarszervezés  
 **ESCO:** [szállítási, szállítmányozási nyilvántartó](http://data.europa.eu/esco/occupation/39803100-c338-4f01-ad2c-085d488920ca) (3331.2)

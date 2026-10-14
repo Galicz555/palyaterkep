@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/16e65196-3449-4c88-b379-0aa98f43db2b
 label: aneszteziológiai szakasszisztens
-level: 2
+level: 1
 track: individual
 branch: health-social
 subBranch: nursing
@@ -52,7 +52,7 @@ lateral:
 
 # Aneszteziológiai szakasszisztens
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Ápolás, szülészet és betegellátás  
 **ESCO:** [aneszteziológiai szakasszisztens](http://data.europa.eu/esco/occupation/16e65196-3449-4c88-b379-0aa98f43db2b) (3259.1)

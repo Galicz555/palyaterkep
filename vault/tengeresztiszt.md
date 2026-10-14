@@ -32,8 +32,8 @@ lateral:
   - "[[a-legiero-tisztje]]"
   - "[[katonatiszt]]"
   - "[[kulonleges-alakulat-tisztje]]"
-  - "[[gyalogos]]"
-  - "[[szakaszvezeto]]"
+  - "[[hadviselesi-szakerto]]"
+  - "[[fohadnagy]]"
 ---
 
 # Tengerésztiszt
@@ -74,5 +74,5 @@ A tengerésztisztek a missziók parancsnokai a konfliktusok során és békeidő
 - [[a-legiero-tisztje|a légierő tisztje]]
 - [[katonatiszt|katonatiszt]]
 - [[kulonleges-alakulat-tisztje|különleges alakulat tisztje]]
-- [[gyalogos|gyalogos]]
-- [[szakaszvezeto|szakaszvezető]]
+- [[hadviselesi-szakerto|hadviselési szakértő]]
+- [[fohadnagy|főhadnagy]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0552ff45-b282-455c-b431-fb05a0e00801
 label: öntödei vezető
-level: 3
+level: 4
 track: management
 branch: industry
 subBranch: production-management
@@ -25,7 +25,7 @@ lateral:
 
 # Öntödei vezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Gyártásirányítás  
 **ESCO:** [öntödei vezető](http://data.europa.eu/esco/occupation/0552ff45-b282-455c-b431-fb05a0e00801) (1219.5.2)

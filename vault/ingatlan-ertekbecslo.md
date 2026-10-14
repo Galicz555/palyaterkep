@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/afc5a0f4-42e5-4bfb-910c-2b54b44f99c5
 label: ingatlan-értékbecslő
-level: 3
+level: 2
 track: individual
 branch: business
 subBranch: insurance
@@ -33,7 +33,7 @@ lateral:
 
 # Ingatlan-értékbecslő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Biztosítás és értékbecslés  
 **ESCO:** [ingatlan-értékbecslő](http://data.europa.eu/esco/occupation/afc5a0f4-42e5-4bfb-910c-2b54b44f99c5) (3315.7)

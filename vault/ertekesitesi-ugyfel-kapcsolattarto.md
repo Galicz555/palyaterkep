@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2eac08c2-a81a-46fc-8d75-eb0e0f3e0f6d
 label: értékesítési ügyfél-kapcsolattartó
-level: 2
+level: 3
 track: individual
 branch: trade
 subBranch: retail-management
@@ -39,7 +39,7 @@ lateral:
 
 # Értékesítési ügyfél-kapcsolattartó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [értékesítési ügyfél-kapcsolattartó](http://data.europa.eu/esco/occupation/2eac08c2-a81a-46fc-8d75-eb0e0f3e0f6d) (1420.3)

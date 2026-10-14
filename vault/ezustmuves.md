@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/eb64b583-20fe-467f-8e44-8aae263a0139
 label: ezüstműves
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: crafts
@@ -34,7 +34,7 @@ lateral:
 
 # Ezüstműves
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [ezüstműves](http://data.europa.eu/esco/occupation/eb64b583-20fe-467f-8e44-8aae263a0139) (7313.1.8)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/10841c22-0154-48ab-aaca-ce61b9a8e448
 label: akkumulátorgyártási technikus
-level: 1
+level: 2
 track: individual
 branch: engineering
 subBranch: electrical
@@ -34,7 +34,7 @@ lateral:
 
 # Akkumulátorgyártási technikus
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Villamosmérnöki terület és elektronika  
 **ESCO:** [akkumulátorgyártási technikus](http://data.europa.eu/esco/occupation/10841c22-0154-48ab-aaca-ce61b9a8e448) (3113.4)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/4cbe5a17-056c-489a-9f10-f9d816905000
 label: polgárőr
-level: 2
+level: 1
 track: individual
 branch: public
 subBranch: security
@@ -21,7 +21,7 @@ lateral:
 
 # Polgárőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Vagyonvédelem és közbiztonság  
 **ESCO:** [polgárőr](http://data.europa.eu/esco/occupation/4cbe5a17-056c-489a-9f10-f9d816905000) (5419.8)

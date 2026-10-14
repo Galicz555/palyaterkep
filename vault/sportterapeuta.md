@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/394bdd9b-3ee8-43a9-b943-442ce146bb21
 label: sportterapeuta
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: sport-leisure
@@ -35,7 +35,7 @@ lateral:
 
 # Sportterapeuta
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Sport, szabadidő és szerencsejáték  
 **ESCO:** [sportterapeuta](http://data.europa.eu/esco/occupation/394bdd9b-3ee8-43a9-b943-442ce146bb21) (3423.2.4)

@@ -33,9 +33,9 @@ lateral:
   - "[[szetszerelesvezeto]]"
   - "[[kotrasvezeto]]"
   - "[[villanyszerelok-muvezetoje]]"
+  - "[[epitesi-muszaki-ellenor]]"
   - "[[vas-es-femszerkezeti-lakatosok-muvezetoje]]"
   - "[[felvonotelepites-vezeto]]"
-  - "[[viz-alatti-melyepitesi-munkak-iranyitoja]]"
 ---
 
 # Építésvezető
@@ -77,6 +77,6 @@ Az építésvezetők az építési folyamat valamennyi szakaszában nyomon köve
 - [[szetszerelesvezeto|szétszerelésvezető]]
 - [[kotrasvezeto|kotrásvezető]]
 - [[villanyszerelok-muvezetoje|villanyszerelők művezetője]]
+- [[epitesi-muszaki-ellenor|építési műszaki ellenőr]]
 - [[vas-es-femszerkezeti-lakatosok-muvezetoje|vas- és fémszerkezeti lakatosok művezetője]]
 - [[felvonotelepites-vezeto|felvonótelepítés-vezető]]
-- [[viz-alatti-melyepitesi-munkak-iranyitoja|víz alatti mélyépítési munkák irányítója]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a9411821-4f54-406e-ba37-4c6e5a39f9fe
 label: ingatlan-ügyintéző
-level: 1
+level: 2
 track: individual
 branch: public
 subBranch: legal
@@ -23,7 +23,7 @@ lateral:
 
 # Ingatlan-ügyintéző
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Jog és igazságszolgáltatás  
 **ESCO:** [ingatlan-ügyintéző](http://data.europa.eu/esco/occupation/a9411821-4f54-406e-ba37-4c6e5a39f9fe) (3411.2)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/31854d78-3615-43a4-aa3a-c597ecb20ceb
 label: jogtanácsos
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: legal
@@ -29,7 +29,7 @@ lateral:
 
 # Jogtanácsos
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Jog és igazságszolgáltatás  
 **ESCO:** [jogtanácsos](http://data.europa.eu/esco/occupation/31854d78-3615-43a4-aa3a-c597ecb20ceb) (2619.7)

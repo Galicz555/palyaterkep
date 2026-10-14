@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a63733fa-f7ff-4733-8961-1ec4eeaab00b
 label: muzeológus
-level: 3
+level: 2
 track: individual
 branch: culture
 subBranch: heritage
@@ -64,7 +64,7 @@ lateral:
 
 # Muzeológus
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Múzeum, könyvtár és levéltár  
 **ESCO:** [muzeológus](http://data.europa.eu/esco/occupation/a63733fa-f7ff-4733-8961-1ec4eeaab00b) (2621.8)

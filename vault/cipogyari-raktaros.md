@@ -20,7 +20,6 @@ skills:
   - http://data.europa.eu/esco/skill/fa7be6bf-f906-4b8e-857d-48a9a7da901c
 lateral:
   - "[[cipominta-keszito]]"
-  - "[[bortermek-csomagolo]]"
   - "[[cipoipari-termelesi-vezeto]]"
 ---
 
@@ -51,5 +50,4 @@ A cipőgyári raktárosok a cipőgyártáshoz szükséges nyers- és segédanyag
 ## Váltások
 
 - [[cipominta-keszito|cipőminta-készítő]]
-- [[bortermek-csomagolo|bőrtermék-csomagoló]]
 - [[cipoipari-termelesi-vezeto|cipőipari termelési vezető]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1a46d0f0-93d7-44d1-bff9-58e3f21bd4c4
 label: szociálpolitikai szakértő
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: policy
@@ -32,7 +32,7 @@ lateral:
 
 # Szociálpolitikai szakértő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Közpolitika és közigazgatás  
 **ESCO:** [szociálpolitikai szakértő](http://data.europa.eu/esco/occupation/1a46d0f0-93d7-44d1-bff9-58e3f21bd4c4) (2422.16)

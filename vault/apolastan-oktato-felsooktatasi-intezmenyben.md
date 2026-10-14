@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1bbaf82c-67ae-4beb-9a55-7298acf5b2af
 label: ápolástan-oktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -61,7 +61,7 @@ lateral:
 
 # Ápolástan-oktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [ápolástan-oktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/1bbaf82c-67ae-4beb-9a55-7298acf5b2af) (2310.1.28)

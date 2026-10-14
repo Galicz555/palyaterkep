@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/73b10c97-b003-45dc-a36d-c1d585c04be1
 label: szociális vállalkozó
 level: 4
-track: individual
+track: management
 branch: business
 subBranch: management
 skills:
@@ -38,7 +38,7 @@ lateral: []
 
 # Szociális vállalkozó
 
-Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Vállalatvezetés, stratégia és tanácsadás  
 **ESCO:** [szociális vállalkozó](http://data.europa.eu/esco/occupation/73b10c97-b003-45dc-a36d-c1d585c04be1) (1120.6)

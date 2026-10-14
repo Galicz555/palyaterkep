@@ -2,8 +2,8 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/f3eb330a-03b5-4537-ac0e-bcee5c67bcff
 label: légi szállítmányozási nyilvántartó
-level: 2
-track: management
+level: 3
+track: individual
 branch: transport
 subBranch: dispatch
 skills:
@@ -36,7 +36,7 @@ lateral: []
 
 # Légi szállítmányozási nyilvántartó
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Forgalomirányítás és fuvarszervezés  
 **ESCO:** [légi szállítmányozási nyilvántartó](http://data.europa.eu/esco/occupation/f3eb330a-03b5-4537-ac0e-bcee5c67bcff) (4323.1)

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/8cce40c1-4479-47e7-b5fc-c976631d919f
 label: menedzserasszisztens
-level: 1
+level: 2
 track: individual
 branch: business
 subBranch: office
@@ -36,7 +36,7 @@ lateral:
 
 # Menedzserasszisztens
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Irodai és adminisztratív munka  
 **ESCO:** [menedzserasszisztens](http://data.europa.eu/esco/occupation/8cce40c1-4479-47e7-b5fc-c976631d919f) (3343.4)

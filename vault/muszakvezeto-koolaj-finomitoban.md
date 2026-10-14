@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/7afeee90-5672-470d-b061-24ffaafb2fc9
 label: műszakvezető kőolaj-finomítóban
-level: 3
+level: 4
 track: management
 branch: industry
 subBranch: chemicals
@@ -24,8 +24,6 @@ skills:
   - http://data.europa.eu/esco/skill/d0f2f8a7-d935-4a6d-8e54-dcc3e5e2cbeb
 lateral:
   - "[[banyamuszak-vezeto]]"
-  - "[[koolaj-feldolgozo-gep-kezeloje]]"
-  - "[[koolajszivattyu-rendszer-kezeloje]]"
   - "[[banyamento]]"
   - "[[banyavezeto]]"
   - "[[koolaj-es-gazipari-termelesi-vezeto]]"
@@ -33,7 +31,7 @@ lateral:
 
 # Műszakvezető kőolaj-finomítóban
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [műszakvezető kőolaj-finomítóban](http://data.europa.eu/esco/occupation/7afeee90-5672-470d-b061-24ffaafb2fc9) (3134.5)
@@ -61,8 +59,6 @@ A kőolaj-finomító műszakvezetője felügyeli a személyzetet, irányítja az
 ## Váltások
 
 - [[banyamuszak-vezeto|bányaműszak-vezető]]
-- [[koolaj-feldolgozo-gep-kezeloje|kőolaj-feldolgozó gép kezelője]]
-- [[koolajszivattyu-rendszer-kezeloje|kőolajszivattyú-rendszer kezelője]]
 - [[banyamento|bányamentő]]
 - [[banyavezeto|bányavezető]]
 - [[koolaj-es-gazipari-termelesi-vezeto|kőolaj- és gázipari termelési vezető]]

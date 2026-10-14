@@ -33,7 +33,7 @@ lateral:
   - "[[allatgondozo-idomar]]"
   - "[[allatgondozo]]"
   - "[[etologus]]"
-  - "[[allatkozmetikus]]"
+  - "[[allatszitter]]"
 ---
 
 # Lóidomár
@@ -75,4 +75,4 @@ A lóidomárok a nemzeti jogszabályoknak megfelelően állatokat és/vagy lovas
 - [[allatgondozo-idomar|állatgondozó idomár]]
 - [[allatgondozo|állatgondozó]]
 - [[etologus|etológus]]
-- [[allatkozmetikus|állatkozmetikus]]
+- [[allatszitter|állatszitter]]

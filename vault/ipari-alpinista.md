@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/ac7c07d1-bc11-4f19-bca5-e468e9b1a53c
 label: ipari alpinista
-level: 3
+level: 2
 track: individual
 branch: construction
 subBranch: building-structure
@@ -26,7 +26,7 @@ lateral:
 
 # Ipari alpinista
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Építőipar › Szerkezetépítés  
 **ESCO:** [ipari alpinista](http://data.europa.eu/esco/occupation/ac7c07d1-bc11-4f19-bca5-e468e9b1a53c) (7119.4)

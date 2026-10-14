@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/d4ccb6d4-ea97-47e5-a319-b72cffbf0631
 label: bányamentő
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: fire-service
@@ -27,7 +27,7 @@ lateral:
 
 # Bányamentő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Tűzoltóság  
 **ESCO:** [bányamentő](http://data.europa.eu/esco/occupation/d4ccb6d4-ea97-47e5-a319-b72cffbf0631) (5411.1.3)

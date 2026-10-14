@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/02bd7cac-8263-4425-b03d-19001ffe8787
 label: keltetési akvakultúra-vezető
-level: 3
+level: 4
 track: management
 branch: agriculture
 subBranch: fishing
@@ -41,15 +41,13 @@ skills:
   - http://data.europa.eu/esco/skill/fd199f25-cb19-4195-9cc4-dd34746ce3f3
 lateral:
   - "[[akvakulturas-termelesi-vezeto]]"
-  - "[[ivadeknevelesi-akvakultura-technikus]]"
-  - "[[keltetesi-akvakultura-technikus]]"
   - "[[akvakultura-telep-vezetoje]]"
   - "[[akvakultura-betakaritasi-menedzser]]"
 ---
 
 # Keltetési akvakultúra-vezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Halászat és halgazdálkodás  
 **ESCO:** [keltetési akvakultúra-vezető](http://data.europa.eu/esco/occupation/02bd7cac-8263-4425-b03d-19001ffe8787) (6221.3)
@@ -94,7 +92,5 @@ A keltetési akvakultúra-vezetők átfogó akvakultúra-műveletek részeként 
 ## Váltások
 
 - [[akvakulturas-termelesi-vezeto|akvakultúrás termelési vezető]]
-- [[ivadeknevelesi-akvakultura-technikus|ivadéknevelési akvakultúra-technikus]]
-- [[keltetesi-akvakultura-technikus|keltetési akvakultúra-technikus]]
 - [[akvakultura-telep-vezetoje|akvakultúra-telep vezetője]]
 - [[akvakultura-betakaritasi-menedzser|akvakultúra-betakarítási menedzser]]

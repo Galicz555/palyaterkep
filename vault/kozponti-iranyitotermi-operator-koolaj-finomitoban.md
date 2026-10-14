@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/217e7ae2-605d-4225-afd2-6319c2408116
 label: központi irányítótermi operátor kőolaj-finomítóban
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: chemicals
@@ -25,7 +25,7 @@ lateral:
 
 # Központi irányítótermi operátor kőolaj-finomítóban
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Vegy-, gumi- és műanyagipar  
 **ESCO:** [központi irányítótermi operátor kőolaj-finomítóban](http://data.europa.eu/esco/occupation/217e7ae2-605d-4225-afd2-6319c2408116) (3134.3)

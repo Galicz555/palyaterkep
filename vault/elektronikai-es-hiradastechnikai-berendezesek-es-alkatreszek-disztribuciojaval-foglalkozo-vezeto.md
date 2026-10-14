@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/032d4115-03ec-49c9-853d-678f8a41969b
 label: elektronikai és híradástechnikai berendezések és alkatrészek disztribúciójával foglalkozó vezető
 level: 3
-track: individual
+track: management
 branch: trade
 subBranch: wholesale
 skills:
@@ -44,7 +44,7 @@ lateral:
 
 # Elektronikai és híradástechnikai berendezések és alkatrészek disztribúciójával foglalkozó vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Nagykereskedelem és import-export  
 **ESCO:** [elektronikai és híradástechnikai berendezések és alkatrészek disztribúciójával foglalkozó vezető](http://data.europa.eu/esco/occupation/032d4115-03ec-49c9-853d-678f8a41969b) (1324.3.1.6.11)

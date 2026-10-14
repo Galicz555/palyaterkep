@@ -36,6 +36,7 @@ skills:
   - http://data.europa.eu/esco/skill/fe39d4db-4cb5-4299-bb9f-896c8fd6ab13
 lateral:
   - "[[kiskereskedo]]"
+  - "[[aruhazi-osztaly-reszlegvezeto]]"
   - "[[szupermarket-vezetoje]]"
   - "[[toltoallomas-vezeto]]"
   - "[[armegallapito]]"
@@ -84,6 +85,7 @@ A kereskedelmi regionális vezetők felelnek egy adott áruházlánc kijelölt r
 ## Váltások
 
 - [[kiskereskedo|kiskereskedő]]
+- [[aruhazi-osztaly-reszlegvezeto|áruházi osztály-, részlegvezető]]
 - [[szupermarket-vezetoje|szupermarket vezetője]]
 - [[toltoallomas-vezeto|töltőállomás vezető]]
 - [[armegallapito|ármegállapító]]

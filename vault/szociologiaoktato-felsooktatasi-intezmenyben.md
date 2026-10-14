@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/116b4c55-5bd0-41e9-9227-98d7ecffeaf6
 label: szociológiaoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -45,7 +45,7 @@ lateral:
 
 # Szociológiaoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [szociológiaoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/116b4c55-5bd0-41e9-9227-98d7ecffeaf6) (2310.1.38)

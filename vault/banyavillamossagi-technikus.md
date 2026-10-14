@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c07ab008-79c1-4516-8dcc-8289f797dc34
 label: bányavillamossági technikus
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: electrical-trades
@@ -27,7 +27,7 @@ lateral:
 
 # Bányavillamossági technikus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Villamos- és elektronikai szerelés  
 **ESCO:** [bányavillamossági technikus](http://data.europa.eu/esco/occupation/c07ab008-79c1-4516-8dcc-8289f797dc34) (7412.9)

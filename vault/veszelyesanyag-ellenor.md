@@ -30,6 +30,7 @@ lateral:
   - "[[veszelyeshulladek-technikus]]"
   - "[[sugarvedelmi-technikus]]"
   - "[[hulladeklerako-vezetoje]]"
+  - "[[hulladekgazdalkodasi-felugyelo]]"
 ---
 
 # Veszélyesanyag-ellenőr
@@ -68,3 +69,4 @@ A veszélyesanyag-ellenőr a veszélyes anyagokat kezelő létesítményeket ell
 - [[veszelyeshulladek-technikus|veszélyeshulladék-technikus]]
 - [[sugarvedelmi-technikus|sugárvédelmi technikus]]
 - [[hulladeklerako-vezetoje|hulladéklerakó vezetője]]
+- [[hulladekgazdalkodasi-felugyelo|hulladékgazdálkodási felügyelő]]

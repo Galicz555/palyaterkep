@@ -21,7 +21,6 @@ skills:
   - http://data.europa.eu/esco/skill/d1d5dace-55b6-46cd-884a-dc4302265c3e
   - http://data.europa.eu/esco/skill/e3e2fe76-cc65-4bf0-8027-a2cf9f139e3d
 lateral:
-  - "[[muszakvezeto-koolaj-finomitoban]]"
   - "[[olajszint-szabalyozo]]"
 ---
 
@@ -52,5 +51,4 @@ A kőolaj-feldolgozó gépek kezelői irányítják és felügyelik az olajlepá
 
 ## Váltások
 
-- [[muszakvezeto-koolaj-finomitoban|műszakvezető kőolaj-finomítóban]]
 - [[olajszint-szabalyozo|olajszint-szabályozó]]

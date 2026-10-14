@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/594170bc-5663-40b0-97ef-c9f1ad51b2a0
 label: biztosítótársaság vezetője
-level: 3
+level: 4
 track: management
 branch: business
 subBranch: banking
@@ -47,13 +47,13 @@ lateral:
   - "[[bankvezeto]]"
   - "[[ingatlanmenedzser]]"
   - "[[biztositasi-karrendezesi-vezeto]]"
-  - "[[biztositasi-ugynok]]"
   - "[[banki-ugyfelkapcsolati-menedzser]]"
+  - "[[penzugyi-vezeto]]"
 ---
 
 # Biztosítótársaság vezetője
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Banki szolgáltatások  
 **ESCO:** [biztosítótársaság vezetője](http://data.europa.eu/esco/occupation/594170bc-5663-40b0-97ef-c9f1ad51b2a0) (1346.4)
@@ -104,5 +104,5 @@ A biztosítótársaságok vezetői koordinálják és felügyelik egy olyan int�
 - [[bankvezeto|bankvezető]]
 - [[ingatlanmenedzser|ingatlanmenedzser]]
 - [[biztositasi-karrendezesi-vezeto|biztosítási kárrendezési vezető]]
-- [[biztositasi-ugynok|biztosítási ügynök]]
 - [[banki-ugyfelkapcsolati-menedzser|banki ügyfélkapcsolati menedzser]]
+- [[penzugyi-vezeto|pénzügyi vezető]]

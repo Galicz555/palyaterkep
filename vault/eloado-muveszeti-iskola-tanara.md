@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/00747307-6341-4266-a061-25416f7c6a96
 label: előadó-művészeti iskola tanára
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -54,7 +54,7 @@ lateral:
 
 # Előadó-művészeti iskola tanára
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [előadó-művészeti iskola tanára](http://data.europa.eu/esco/occupation/00747307-6341-4266-a061-25416f7c6a96) (2310.1.30)

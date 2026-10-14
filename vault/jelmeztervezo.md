@@ -54,10 +54,10 @@ skills:
 lateral:
   - "[[pirotechnikai-tervezo]]"
   - "[[babtervezo]]"
-  - "[[smink-es-frizuratervezo]]"
   - "[[hangtervezo]]"
   - "[[eloadasok-vilagitastervezoje]]"
   - "[[diszlettervezo]]"
+  - "[[videotervezo]]"
 ---
 
 # Jelmeztervező
@@ -121,7 +121,7 @@ A jelmeztervezők jelmezkoncepciókat dolgoznak ki egy előadás, film vagy tele
 
 - [[pirotechnikai-tervezo|pirotechnikai tervező]]
 - [[babtervezo|bábtervező]]
-- [[smink-es-frizuratervezo|smink- és frizuratervező]]
 - [[hangtervezo|hangtervező]]
 - [[eloadasok-vilagitastervezoje|előadások világítástervezője]]
 - [[diszlettervezo|díszlettervező]]
+- [[videotervezo|videotervező]]

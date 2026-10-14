@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/cf7b89d0-1cf9-4567-a8bf-9d6905a2b31b
 label: karnagy
-level: 2
+level: 3
 track: management
 branch: culture
 subBranch: performing-arts
@@ -38,7 +38,7 @@ lateral:
 
 # Karnagy
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Előadó-művészet  
 **ESCO:** [karnagy](http://data.europa.eu/esco/occupation/cf7b89d0-1cf9-4567-a8bf-9d6905a2b31b) (2652.3.1.1)

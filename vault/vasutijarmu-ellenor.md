@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/42e9d1c5-76f1-41ef-996e-38d5ac711a31
 label: vasútijármű-ellenőr
-level: 1
+level: 2
 track: individual
 branch: engineering
 subBranch: mechanical
@@ -39,7 +39,7 @@ lateral:
 
 # Vasútijármű-ellenőr
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mérnöki terület és természettudomány › Gépészmérnöki terület  
 **ESCO:** [vasútijármű-ellenőr](http://data.europa.eu/esco/occupation/42e9d1c5-76f1-41ef-996e-38d5ac711a31) (3115.1.21)

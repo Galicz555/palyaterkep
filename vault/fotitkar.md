@@ -22,6 +22,7 @@ skills:
   - http://data.europa.eu/esco/skill/cd5efa8c-e44d-4cbc-91c6-796018dbed68
 lateral:
   - "[[allamtitkar]]"
+  - "[[tartomanyi-kormanyzo]]"
 ---
 
 # Főtitkár
@@ -52,3 +53,4 @@ A főtitkárok nemzetközi kormányzati vagy nem kormányzati szervezetek vezet�
 ## Váltások
 
 - [[allamtitkar|államtitkár]]
+- [[tartomanyi-kormanyzo|tartományi kormányzó]]

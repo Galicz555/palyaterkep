@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/5945cba8-19a4-4632-8a8f-4186e2bad1a3
 label: akvakultúrás termelési vezető
-level: 3
+level: 4
 track: management
 branch: agriculture
 subBranch: fishing
@@ -56,7 +56,7 @@ lateral:
 
 # Akvakultúrás termelési vezető
 
-Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Halászat és halgazdálkodás  
 **ESCO:** [akvakultúrás termelési vezető](http://data.europa.eu/esco/occupation/5945cba8-19a4-4632-8a8f-4186e2bad1a3) (1312.3)

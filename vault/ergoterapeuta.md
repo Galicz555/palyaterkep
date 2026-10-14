@@ -81,8 +81,8 @@ lateral:
   - "[[beszed-es-nyelvterapeuta]]"
   - "[[ortoptikus]]"
   - "[[fizioterapeuta]]"
-  - "[[szakkiropraktor]]"
   - "[[dietetikus]]"
+  - "[[betegapolo]]"
 ---
 
 # Ergoterapeuta
@@ -173,5 +173,5 @@ Az ergoterapeuták olyan egyének vagy csoportok számára nyújtanak segítség
 - [[beszed-es-nyelvterapeuta|beszéd- és nyelvterapeuta]]
 - [[ortoptikus|ortoptikus]]
 - [[fizioterapeuta|fizioterapeuta]]
-- [[szakkiropraktor|szakkiropraktőr]]
 - [[dietetikus|dietetikus]]
+- [[betegapolo|betegápoló]]

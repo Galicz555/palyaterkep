@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/a520fba4-2a29-43a0-bfd5-43892306501d
 label: épületinformációs modellezési tanácsadó
-level: 2
+level: 3
 track: individual
 branch: business
 subBranch: management
@@ -21,7 +21,7 @@ lateral:
 
 # Épületinformációs modellezési tanácsadó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Vállalatvezetés, stratégia és tanácsadás  
 **ESCO:** [épületinformációs modellezési tanácsadó](http://data.europa.eu/esco/occupation/a520fba4-2a29-43a0-bfd5-43892306501d) (2421.6)

@@ -28,7 +28,7 @@ lateral:
   - "[[cipovarrogep-kezelo]]"
   - "[[ipari-borvarrogep-kezeloje]]"
   - "[[cipokikeszito-es-csomagolo]]"
-  - "[[boripari-szabasminta-keszito]]"
+  - "[[cipoipari-elokeszito]]"
 ---
 
 # Automata cipőalkatrészvágó gép kezelője
@@ -66,4 +66,4 @@ Az automata cipőalkatrész-vágó gépek kezelői a számítógépről a darabo
 - [[cipovarrogep-kezelo|cipővarrógép-kezelő]]
 - [[ipari-borvarrogep-kezeloje|ipari bőrvarrógép kezelője]]
 - [[cipokikeszito-es-csomagolo|cipőkikészítő és -csomagoló]]
-- [[boripari-szabasminta-keszito|bőripari szabásminta-készítő]]
+- [[cipoipari-elokeszito|cipőipari előkészítő]]

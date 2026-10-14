@@ -26,6 +26,7 @@ lateral:
   - "[[vegyipari-termekminoseg-technikus]]"
   - "[[vegyesztechnikus]]"
   - "[[parfumfejleszto-kemikus]]"
+  - "[[vegyipari-termelesi-vezeto]]"
   - "[[vegyipari-folyamatiranyito]]"
   - "[[kromatografus]]"
 ---
@@ -62,5 +63,6 @@ A vegyipari feldolgozó berendezések kezelője a vegyipari termelési folyamato
 - [[vegyipari-termekminoseg-technikus|vegyipari termékminőség-technikus]]
 - [[vegyesztechnikus|vegyésztechnikus]]
 - [[parfumfejleszto-kemikus|parfümfejlesztő kémikus]]
+- [[vegyipari-termelesi-vezeto|vegyipari termelési vezető]]
 - [[vegyipari-folyamatiranyito|vegyipari folyamatirányító]]
 - [[kromatografus|kromatográfus]]

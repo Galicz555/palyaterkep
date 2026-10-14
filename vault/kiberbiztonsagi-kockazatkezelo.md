@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/7754d570-9519-48c2-b1c9-8e165f8bca0f
 label: kiberbiztonsági kockázatkezelő
 level: 4
-track: individual
+track: management
 branch: it
 subBranch: cybersecurity
 skills:
@@ -31,6 +31,8 @@ skills:
   - http://data.europa.eu/esco/skill/ed39edd3-44d0-4a16-9796-bfb99f92baf3
 lateral:
   - "[[ikt-biztonsagi-igazgato]]"
+  - "[[kiberbiztonsagi-esemenykezelo]]"
+  - "[[biztonsagi-tesztelo]]"
   - "[[digitalis-kriminalisztika-szakerto]]"
   - "[[megfelelesi-es-informaciobiztonsagi-igazgato]]"
   - "[[ikt-katasztrofaelharitas-menedzser]]"
@@ -38,7 +40,7 @@ lateral:
 
 # Kiberbiztonsági kockázatkezelő
 
-Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Informatika és távközlés › Kiberbiztonság  
 **ESCO:** [kiberbiztonsági kockázatkezelő](http://data.europa.eu/esco/occupation/7754d570-9519-48c2-b1c9-8e165f8bca0f) (2529.8)
@@ -73,6 +75,8 @@ A kiberbiztonsági kockázatkezelők azonosítják, elemzik, értékelik, megbec
 ## Váltások
 
 - [[ikt-biztonsagi-igazgato|IKT biztonsági igazgató]]
+- [[kiberbiztonsagi-esemenykezelo|kiberbiztonsági eseménykezelő]]
+- [[biztonsagi-tesztelo|biztonsági tesztelő]]
 - [[digitalis-kriminalisztika-szakerto|digitális kriminalisztika szakértő]]
 - [[megfelelesi-es-informaciobiztonsagi-igazgato|megfelelési és információbiztonsági igazgató]]
 - [[ikt-katasztrofaelharitas-menedzser|IKT katasztrófaelhárítás menedzser]]

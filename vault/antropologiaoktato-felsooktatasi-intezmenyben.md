@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/9766cc19-5a64-4b3c-a741-71561285a419
 label: antropológiaoktató felsőoktatási intézményben
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: higher-education
@@ -46,7 +46,7 @@ lateral:
 
 # Antropológiaoktató felsőoktatási intézményben
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felsőoktatás  
 **ESCO:** [antropológiaoktató felsőoktatási intézményben](http://data.europa.eu/esco/occupation/9766cc19-5a64-4b3c-a741-71561285a419) (2310.1.1)

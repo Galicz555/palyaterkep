@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/82ea66b0-0f9c-44ed-94bc-0c5b829531b3
 label: gitárkészítő
-level: 3
+level: 2
 track: individual
 branch: industry
 subBranch: crafts
@@ -39,7 +39,7 @@ lateral:
 
 # Gitárkészítő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Kézműipar  
 **ESCO:** [gitárkészítő](http://data.europa.eu/esco/occupation/82ea66b0-0f9c-44ed-94bc-0c5b829531b3) (7312.6.1)

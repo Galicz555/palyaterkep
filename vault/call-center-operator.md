@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0ededdc2-050a-4ec3-8e70-6295105fcd19
 label: call center operátor
-level: 2
+level: 1
 track: individual
 branch: trade
 subBranch: direct-sales
@@ -34,7 +34,7 @@ lateral:
 
 # Call center operátor
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Közvetlen, telefonos és utcai értékesítés  
 **ESCO:** [call center operátor](http://data.europa.eu/esco/occupation/0ededdc2-050a-4ec3-8e70-6295105fcd19) (5244.1)

@@ -39,8 +39,8 @@ lateral:
   - "[[penz-es-tokepiaci-hattermuveleti-osztaly-vezetoje]]"
   - "[[vagyonkezelo]]"
   - "[[ingatlanmenedzser]]"
+  - "[[banki-ugyfelkapcsolati-menedzser]]"
   - "[[tarsashazkezelo]]"
-  - "[[banki-termekmenedzser]]"
 ---
 
 # Hitelezési vezető
@@ -88,5 +88,5 @@ A hitelezési vezetők felügyelik a hitelpolitika bankon belüli alkalmazását
 - [[penz-es-tokepiaci-hattermuveleti-osztaly-vezetoje|pénz- és tőkepiaci háttérműveleti osztály vezetője]]
 - [[vagyonkezelo|vagyonkezelő]]
 - [[ingatlanmenedzser|ingatlanmenedzser]]
+- [[banki-ugyfelkapcsolati-menedzser|banki ügyfélkapcsolati menedzser]]
 - [[tarsashazkezelo|társasházkezelő]]
-- [[banki-termekmenedzser|banki termékmenedzser]]

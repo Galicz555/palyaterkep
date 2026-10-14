@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3bdf6206-e952-4177-a17b-2a03bfee2144
 label: facsiszoló
-level: 2
+level: 1
 track: individual
 branch: industry
 subBranch: wood-paper
@@ -29,7 +29,7 @@ lateral:
 
 # Facsiszoló
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Fa- és papíripar  
 **ESCO:** [facsiszoló](http://data.europa.eu/esco/occupation/3bdf6206-e952-4177-a17b-2a03bfee2144) (7523.5)

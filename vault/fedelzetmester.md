@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6474e4d4-e3a6-4e88-83ee-971ebbf954e9
 label: fedélzetmester
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: water
@@ -61,15 +61,15 @@ skills:
   - http://data.europa.eu/esco/skill/fa656035-d990-4b73-bc89-16bb90b4b697
   - http://data.europa.eu/esco/skill/fdfc0bfb-180d-4295-b747-1f5569358a7e
 lateral:
+  - "[[hajoparancsnok-belvizi-hajon]]"
   - "[[matroz]]"
   - "[[hajogepesz]]"
-  - "[[tanulomatroz]]"
   - "[[fedelzeti-gepkezelo]]"
 ---
 
 # Fedélzetmester
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Vízi közlekedés  
 **ESCO:** [fedélzetmester](http://data.europa.eu/esco/occupation/6474e4d4-e3a6-4e88-83ee-971ebbf954e9) (3152.2)
@@ -134,7 +134,7 @@ A fedélzetmester a belvízi hajók személyzetének operatív szinten legmagasa
 
 ## Váltások
 
+- [[hajoparancsnok-belvizi-hajon|hajóparancsnok belvízi hajón]]
 - [[matroz|matróz]]
 - [[hajogepesz|hajógépész]]
-- [[tanulomatroz|tanulómatróz]]
 - [[fedelzeti-gepkezelo|fedélzeti gépkezelő]]

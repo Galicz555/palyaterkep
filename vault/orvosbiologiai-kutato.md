@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/acbb7a20-c947-480d-a07e-868a0ab3eab8
 label: orvosbiológiai kutató
 level: 4
-track: management
+track: individual
 branch: health-social
 subBranch: therapy
 skills:
@@ -55,12 +55,13 @@ lateral:
   - "[[vezeto-orvosbiologus]]"
   - "[[konzulens-gyogyszeresz]]"
   - "[[vezeto-fizioterapeuta]]"
+  - "[[szakkiropraktor]]"
   - "[[szakapolo]]"
 ---
 
 # Orvosbiológiai kutató
 
-Kiemelt szint (4), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Egészségügy és szociális ellátás › Terápia és rehabilitáció  
 **ESCO:** [orvosbiológiai kutató](http://data.europa.eu/esco/occupation/acbb7a20-c947-480d-a07e-868a0ab3eab8) (2269.16)
@@ -119,4 +120,5 @@ Orvosbiológus szakemberek egy osztályt vagy szakterületet vezetnek, klinikai 
 - [[vezeto-orvosbiologus|vezető orvosbiológus]]
 - [[konzulens-gyogyszeresz|konzulens gyógyszerész]]
 - [[vezeto-fizioterapeuta|vezető fizioterapeuta]]
+- [[szakkiropraktor|szakkiropraktőr]]
 - [[szakapolo|szakápoló]]

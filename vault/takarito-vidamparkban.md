@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/38eb308f-0075-451e-9c1a-c557fd173022
 label: takarító vidámparkban
-level: 2
+level: 1
 track: individual
 branch: hospitality
 subBranch: cleaning
@@ -22,7 +22,7 @@ lateral:
 
 # Takarító vidámparkban
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Vendéglátás, turizmus és személyi szolgáltatások › Takarítás, háztartás és épületgondnokság  
 **ESCO:** [takarító vidámparkban](http://data.europa.eu/esco/occupation/38eb308f-0075-451e-9c1a-c557fd173022) (9129.4)

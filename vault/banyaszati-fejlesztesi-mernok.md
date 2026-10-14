@@ -37,8 +37,8 @@ lateral:
   - "[[banyaszati-tervezomernok]]"
   - "[[banyaszati-szelloztetesi-mernok]]"
   - "[[banyavillamossagi-mernok]]"
-  - "[[kofejtovezeto]]"
   - "[[banyaszati-szakmai-iranyito]]"
+  - "[[banyaszati-geotechnologiai-mernok]]"
 ---
 
 # Bányászati fejlesztési mérnök
@@ -84,5 +84,5 @@ A bányászati fejlesztési mérnökök bányászati fejlesztési tevékenysége
 - [[banyaszati-tervezomernok|bányászati tervezőmérnök]]
 - [[banyaszati-szelloztetesi-mernok|bányászati szellőztetési mérnök]]
 - [[banyavillamossagi-mernok|bányavillamossági mérnök]]
-- [[kofejtovezeto|kőfejtővezető]]
 - [[banyaszati-szakmai-iranyito|bányászati szakmai irányító]]
+- [[banyaszati-geotechnologiai-mernok|bányászati geotechnológiai mérnök]]

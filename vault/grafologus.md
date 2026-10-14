@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/757da94f-d1f3-48ad-ac61-74e22bc18cca
 label: grafológus
-level: 2
+level: 3
 track: individual
 branch: culture
 subBranch: writing
@@ -23,7 +23,7 @@ lateral: []
 
 # Grafológus
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Írás, szerkesztés és fordítás  
 **ESCO:** [grafológus](http://data.europa.eu/esco/occupation/757da94f-d1f3-48ad-ac61-74e22bc18cca) (2643.1)

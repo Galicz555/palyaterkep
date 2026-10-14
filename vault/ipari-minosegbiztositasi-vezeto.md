@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/fdb16700-109e-4d02-949e-3213f278df93
 label: ipari minőségbiztosítási vezető
 level: 3
-track: individual
+track: management
 branch: industry
 subBranch: production-management
 skills:
@@ -43,7 +43,7 @@ lateral:
 
 # Ipari minőségbiztosítási vezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Gyártásirányítás  
 **ESCO:** [ipari minőségbiztosítási vezető](http://data.europa.eu/esco/occupation/fdb16700-109e-4d02-949e-3213f278df93) (1321.2.2)

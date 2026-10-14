@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/3c2da05f-eb24-41f7-8307-46c96660fee0
 label: légiforgalmi irányító
-level: 2
+level: 3
 track: individual
 branch: transport
 subBranch: air
@@ -42,12 +42,14 @@ skills:
 lateral:
   - "[[masodtiszt]]"
   - "[[legiforgalmiiranyito-oktato]]"
+  - "[[maganpilota]]"
+  - "[[legiforgalmi-pilota]]"
   - "[[legikozlekedes-biztonsagi-technikus]]"
 ---
 
 # Légiforgalmi irányító
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közlekedés és logisztika › Légi közlekedés  
 **ESCO:** [légiforgalmi irányító](http://data.europa.eu/esco/occupation/3c2da05f-eb24-41f7-8307-46c96660fee0) (3154.1)
@@ -93,4 +95,6 @@ A légiforgalmi irányító a pilóták munkáját segíti azáltal, hogy tájé
 
 - [[masodtiszt|másodtiszt]]
 - [[legiforgalmiiranyito-oktato|légiforgalmiirányító-oktató]]
+- [[maganpilota|magánpilóta]]
+- [[legiforgalmi-pilota|légiforgalmi pilóta]]
 - [[legikozlekedes-biztonsagi-technikus|légiközlekedés-biztonsági technikus]]

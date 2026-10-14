@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2c83f279-a1d1-4c9f-a6aa-5e5ee1850e46
 label: társadalombiztosítási ellenőr
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: regulatory
@@ -30,7 +30,7 @@ lateral:
 
 # Társadalombiztosítási ellenőr
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Hatósági ügyintézés  
 **ESCO:** [társadalombiztosítási ellenőr](http://data.europa.eu/esco/occupation/2c83f279-a1d1-4c9f-a6aa-5e5ee1850e46) (3353.1)

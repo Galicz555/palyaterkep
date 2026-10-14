@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/6c7d333a-b2a9-4325-b25b-566d1ecc956d
 label: erdészeti felügyelő
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: regulatory
@@ -27,7 +27,7 @@ lateral:
 
 # Erdészeti felügyelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Hatósági ügyintézés  
 **ESCO:** [erdészeti felügyelő](http://data.europa.eu/esco/occupation/6c7d333a-b2a9-4325-b25b-566d1ecc956d) (3359.4)

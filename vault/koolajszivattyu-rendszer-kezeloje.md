@@ -23,7 +23,6 @@ skills:
   - http://data.europa.eu/esco/skill/bda6846c-72b4-4d22-b3fb-01ebba562f4f
   - http://data.europa.eu/esco/skill/cde9911c-f92e-4de1-811f-336e177ac4ce
 lateral:
-  - "[[muszakvezeto-koolaj-finomitoban]]"
   - "[[olajszint-szabalyozo]]"
   - "[[gazfeldolgozo-uzemi-kozponti-iranyitotermi-operator]]"
   - "[[kozponti-iranyitotermi-operator-koolaj-finomitoban]]"
@@ -58,7 +57,6 @@ A kőolajszivattyú-rendszer kezelője olyan típusú szivattyúkat működtet, 
 
 ## Váltások
 
-- [[muszakvezeto-koolaj-finomitoban|műszakvezető kőolaj-finomítóban]]
 - [[olajszint-szabalyozo|olajszint-szabályozó]]
 - [[gazfeldolgozo-uzemi-kozponti-iranyitotermi-operator|gázfeldolgozó-üzemi központi irányítótermi operátor]]
 - [[kozponti-iranyitotermi-operator-koolaj-finomitoban|központi irányítótermi operátor kőolaj-finomítóban]]

@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/0264b794-3771-47aa-a675-78bf13b62ee7
 label: jogi titkár
-level: 1
+level: 2
 track: individual
 branch: public
 subBranch: legal
@@ -25,7 +25,7 @@ lateral:
 
 # Jogi titkár
 
-Belépő szint (1), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Jog és igazságszolgáltatás  
 **ESCO:** [jogi titkár](http://data.europa.eu/esco/occupation/0264b794-3771-47aa-a675-78bf13b62ee7) (3342.2)

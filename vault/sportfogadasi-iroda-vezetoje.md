@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/87e40e79-16fb-4391-9dcb-c15f40e026c1
 label: sportfogadási iroda vezetője
-level: 2
+level: 3
 track: management
 branch: culture
 subBranch: culture-management
@@ -42,11 +42,12 @@ skills:
 lateral:
   - "[[szerencsejatek-ertekesitohely-vezetoje]]"
   - "[[lottozo-vezetoje]]"
+  - "[[botanikus]]"
 ---
 
 # Sportfogadási iroda vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Kulturális és szabadidős intézmények vezetése  
 **ESCO:** [sportfogadási iroda vezetője](http://data.europa.eu/esco/occupation/87e40e79-16fb-4391-9dcb-c15f40e026c1) (1431.2.2)
@@ -92,3 +93,4 @@ A sportfogadási irodák vezetői megszervezik és koordinálják a fogadóirod�
 
 - [[szerencsejatek-ertekesitohely-vezetoje|szerencsejáték-értékesítőhely vezetője]]
 - [[lottozo-vezetoje|lottózó vezetője]]
+- [[botanikus|botanikus]]

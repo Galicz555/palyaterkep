@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/1c1e86f9-6347-42d6-aa6e-c95b138bf640
 label: gazdálkodó
-level: 2
+level: 3
 track: individual
 branch: agriculture
 subBranch: crops
@@ -27,13 +27,14 @@ skills:
   - http://data.europa.eu/esco/skill/f2f463e5-2382-49cb-8199-e7e043d868df
 lateral:
   - "[[mezogazdasagi-uzemvezeto]]"
+  - "[[novenytermesztes-vezetoje]]"
   - "[[allattenyesztesi-tanacsado]]"
-  - "[[novenytermeszto]]"
+  - "[[mezogazdasagi-novenytermesztesi-brigad-vezetoje]]"
 ---
 
 # Gazdálkodó
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Mezőgazdaság, erdészet és halászat › Növénytermesztés és kertészet  
 **ESCO:** [gazdálkodó](http://data.europa.eu/esco/occupation/1c1e86f9-6347-42d6-aa6e-c95b138bf640) (6130.2)
@@ -64,5 +65,6 @@ A gazdálkodók feladata a haszonállat-állomány és a növénytermesztés val
 ## Váltások
 
 - [[mezogazdasagi-uzemvezeto|mezőgazdasági üzemvezető]]
+- [[novenytermesztes-vezetoje|növénytermesztés vezetője]]
 - [[allattenyesztesi-tanacsado|állattenyésztési tanácsadó]]
-- [[novenytermeszto|növénytermesztő]]
+- [[mezogazdasagi-novenytermesztesi-brigad-vezetoje|mezőgazdasági növénytermesztési brigád vezetője]]

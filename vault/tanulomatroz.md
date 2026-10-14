@@ -49,7 +49,6 @@ skills:
   - http://data.europa.eu/esco/skill/fdfc0bfb-180d-4295-b747-1f5569358a7e
 lateral:
   - "[[matroz]]"
-  - "[[fedelzetmester]]"
   - "[[tengeresz]]"
   - "[[hajokarbantarto]]"
 ---
@@ -109,6 +108,5 @@ A tanulómatrózok belvízi hajók fedélzeti osztályának engedéllyel nem ren
 ## Váltások
 
 - [[matroz|matróz]]
-- [[fedelzetmester|fedélzetmester]]
 - [[tengeresz|tengerész]]
 - [[hajokarbantarto|hajókarbantartó]]

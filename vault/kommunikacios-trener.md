@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/21f4eb29-f6e5-4623-acb9-f3ff9c2f525d
 label: kommunikációs tréner
-level: 2
+level: 3
 track: individual
 branch: education
 subBranch: adult-learning
@@ -26,11 +26,12 @@ skills:
 lateral:
   - "[[fenykepeszet-oktato]]"
   - "[[sportturisztikai-programszervezo]]"
+  - "[[uszomester-oktato]]"
 ---
 
 # Kommunikációs tréner
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Oktatás és nevelés › Felnőttképzés és egyéb oktatás  
 **ESCO:** [kommunikációs tréner](http://data.europa.eu/esco/occupation/21f4eb29-f6e5-4623-acb9-f3ff9c2f525d) (2359.13)
@@ -60,3 +61,4 @@ A kommunikációs trénerek ügyfelek számára biztosítanak gyakran magánjell
 
 - [[fenykepeszet-oktato|fényképészet-oktató]]
 - [[sportturisztikai-programszervezo|sportturisztikai programszervező]]
+- [[uszomester-oktato|úszómester-oktató]]

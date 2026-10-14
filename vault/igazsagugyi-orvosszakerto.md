@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/c6c48286-2037-47e3-a132-b745dce858e2
 label: igazságügyi orvosszakértő
-level: 3
+level: 4
 track: individual
 branch: public
 subBranch: legal
@@ -21,7 +21,7 @@ lateral: []
 
 # Igazságügyi orvosszakértő
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Jog és igazságszolgáltatás  
 **ESCO:** [igazságügyi orvosszakértő](http://data.europa.eu/esco/occupation/c6c48286-2037-47e3-a132-b745dce858e2) (2619.2)

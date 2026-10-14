@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/2de007c6-3223-4cd1-9561-e8a2e16e049d
 label: állatjóléti felelős
-level: 2
+level: 3
 track: individual
 branch: public
 subBranch: security
@@ -38,13 +38,13 @@ lateral:
   - "[[allatkozmetikus]]"
   - "[[hatosagi-allatorvos]]"
   - "[[etologus]]"
-  - "[[allatorvosi-szakseged]]"
   - "[[allatok-mesterseges-megtermekenyiteset-iranyito-szakember]]"
+  - "[[allatorvosi-asszisztens]]"
 ---
 
 # Állatjóléti felelős
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Közigazgatás, jog és rendvédelem › Vagyonvédelem és közbiztonság  
 **ESCO:** [állatjóléti felelős](http://data.europa.eu/esco/occupation/2de007c6-3223-4cd1-9561-e8a2e16e049d) (5419.9)
@@ -86,5 +86,5 @@ Az állatjóléti felelősök állatkínzással vagy állatok elhanyagolásával
 - [[allatkozmetikus|állatkozmetikus]]
 - [[hatosagi-allatorvos|hatósági állatorvos]]
 - [[etologus|etológus]]
-- [[allatorvosi-szakseged|állatorvosi szaksegéd]]
 - [[allatok-mesterseges-megtermekenyiteset-iranyito-szakember|állatok mesterséges megtermékenyítését irányító szakember]]
+- [[allatorvosi-asszisztens|állatorvosi asszisztens]]

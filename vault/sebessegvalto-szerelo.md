@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/02d4f153-8e43-444d-8bd4-8171d49eab12
 label: sebességváltó-szerelő
-level: 2
+level: 3
 track: individual
 branch: industry
 subBranch: metal
@@ -29,7 +29,7 @@ lateral:
 
 # Sebességváltó-szerelő
 
-Önálló szint (2), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Ipar, energetika és bányászat › Fémipar és felületkezelés  
 **ESCO:** [sebességváltó-szerelő](http://data.europa.eu/esco/occupation/02d4f153-8e43-444d-8bd4-8171d49eab12) (7223.8)

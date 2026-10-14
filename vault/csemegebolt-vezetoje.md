@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/acf28133-525f-4838-9248-d852e28b8f98
 label: csemegebolt vezetője
-level: 2
+level: 3
 track: management
 branch: trade
 subBranch: retail-management
@@ -48,7 +48,7 @@ lateral:
 
 # Csemegebolt vezetője
 
-Önálló szint (2), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kereskedelem, értékesítés és marketing › Üzletvezetés  
 **ESCO:** [csemegebolt vezetője](http://data.europa.eu/esco/occupation/acf28133-525f-4838-9248-d852e28b8f98) (1420.4.16)

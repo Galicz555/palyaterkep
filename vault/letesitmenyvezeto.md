@@ -47,6 +47,7 @@ lateral:
   - "[[operativ-vezeto]]"
   - "[[karbantartasi-vezeto-gyartoletesitmenyben]]"
   - "[[programmenedzser]]"
+  - "[[energiaugyi-igazgato]]"
   - "[[biztonsagi-vezeto]]"
   - "[[projektmenedzser]]"
 ---
@@ -104,5 +105,6 @@ A létesítményvezetők stratégiai tervezést, valamint az épületek igazgat�
 - [[operativ-vezeto|operatív vezető]]
 - [[karbantartasi-vezeto-gyartoletesitmenyben|karbantartási vezető gyártólétesítményben]]
 - [[programmenedzser|programmenedzser]]
+- [[energiaugyi-igazgato|energiaügyi igazgató]]
 - [[biztonsagi-vezeto|biztonsági vezető]]
 - [[projektmenedzser|projektmenedzser]]

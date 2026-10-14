@@ -3,7 +3,7 @@ curated: false
 occupation: http://data.europa.eu/esco/occupation/4ebf2dae-c326-4627-befe-fbc91410f432
 label: reklámvezető
 level: 3
-track: individual
+track: management
 branch: culture
 subBranch: communications
 skills:
@@ -49,7 +49,7 @@ lateral:
 
 # Reklámvezető
 
-Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Kultúra, média, művészet és sport › Kommunikáció és PR  
 **ESCO:** [reklámvezető](http://data.europa.eu/esco/occupation/4ebf2dae-c326-4627-befe-fbc91410f432) (1222.1.1)

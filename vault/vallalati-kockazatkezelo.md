@@ -2,7 +2,7 @@
 curated: false
 occupation: http://data.europa.eu/esco/occupation/b09acdda-6680-49d1-a411-129610ee3bc0
 label: vállalati kockázatkezelő
-level: 4
+level: 3
 track: individual
 branch: business
 subBranch: investment
@@ -40,7 +40,7 @@ lateral:
 
 # Vállalati kockázatkezelő
 
-Kiemelt szint (4), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
+Tapasztalt szint (3), szakértői pályatípus. _Gépi javaslat, nem ellenőrzött._
 
 **Ág:** Pénzügy, üzleti szolgáltatások és irodai munka › Befektetés és pénzügyi elemzés  
 **ESCO:** [vállalati kockázatkezelő](http://data.europa.eu/esco/occupation/b09acdda-6680-49d1-a411-129610ee3bc0) (2412.3)
