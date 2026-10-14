@@ -6,7 +6,7 @@
   import type { Arrangement } from "#lib/arrange.ts";
   import type { MapView } from "#lib/map/orbit.ts";
   import type { MapData } from "#lib/model.ts";
-  import { branchPainted, MARK_COLOR, paintedRgb } from "#lib/palette.ts";
+  import { branchPainted, paintedRgb } from "#lib/palette.ts";
   import { DEMANDS, DEMAND_LINEAR } from "#lib/demand.ts";
   import { capitalise, levelText, trackText } from "#lib/text.ts";
 
@@ -143,12 +143,12 @@
       {/each}
       <li><i class="ring"></i> gépi javaslat, nem ellenőrzött</li>
       <li><i class="dot"></i> ellenőrzött</li>
-      <li><i class="haze"></i> lágy fény: vezetői szerep</li>
+      <li><i class="lead"></i> világosabb, nagyobb pont: vezetői szerep</li>
       <li><i class="ghost"></i> halvány szürke pont: nincs terhelési adat</li>
       {#if marks}
-        <li><i class="dot" style:background={MARK_COLOR.held}></i> betöltött</li>
-        <li><i class="dot" style:background={MARK_COLOR.covered}></i> lefedett</li>
-        <li><i class="dot" style:background={MARK_COLOR.reachable}></i> elérhető</li>
+        <li><i class="star held"></i> betöltött: fehér, a legnagyobb, négy sugárral</li>
+        <li><i class="star covered"></i> lefedett: fehér, kisebb</li>
+        <li><i class="star reachable"></i> elérhető: fehér, a legkisebb</li>
       {/if}
     </ul>
     {#if info.demandColors}
@@ -273,14 +273,13 @@
     font-weight: 600;
     letter-spacing: 0.06em;
   }
-  .stage :global(.lbl-held) {
-    color: #ffc247;
-  }
-  .stage :global(.lbl-covered) {
-    color: #5ee0bd;
-  }
+  .stage :global(.lbl-held),
+  .stage :global(.lbl-covered),
   .stage :global(.lbl-reach) {
-    color: #8fcdf4;
+    color: #fff;
+  }
+  .stage :global(.lbl-held) {
+    font-weight: 700;
   }
   .stage :global(.lbl-pick) {
     padding: 0.1rem 0.4rem;
@@ -383,17 +382,48 @@
   .key .dot {
     background: var(--stage-ink);
   }
-  /* A management role: an ordinary point in a wide, faint glow. */
-  .key .haze {
-    background: radial-gradient(
-      circle,
-      var(--stage-ink) 0 22%,
-      rgb(220 230 247 / 0.32) 36%,
-      transparent 70%
-    );
-    width: 1rem;
-    height: 1rem;
-    margin: -0.15rem 0.2rem -0.15rem -0.15rem;
+  /* A management role: the same point, brighter and a little larger, no glow. */
+  .key .lead {
+    background: #fff;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: -0.05rem;
+  }
+  /* The three white states, told apart by size, and spikes on the held one. */
+  .key .star {
+    position: relative;
+    background: #fff;
+  }
+  .key .star.held {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .key .star.held::before,
+  .key .star.held::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+  }
+  .key .star.held::before {
+    width: 1.5rem;
+    height: 1px;
+    transform: translate(-50%, -50%);
+  }
+  .key .star.held::after {
+    width: 1px;
+    height: 1.5rem;
+    transform: translate(-50%, -50%);
+  }
+  .key .star.covered {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .key .star.reachable {
+    width: 0.4rem;
+    height: 0.4rem;
+    opacity: 0.85;
   }
   /* A role without demand data: pale and grey. */
   .key .ghost {

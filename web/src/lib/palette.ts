@@ -1,14 +1,10 @@
-// Colours the map and the list share. States use the Okabe-Ito set, chosen to stay apart for the
-// common kinds of colour blindness; the map also tells them apart by size and halo, and the list
-// by words.
+// Colours the map shows. On the map a role a CV marks is white and its state is size and brightness
+// (held also has spikes); the list tells the states apart by words.
 
 export const BG = "#0b0d12";
 
 export const MARK = { none: 0, held: 1, covered: 2, reachable: 3 } as const;
 export type Mark = (typeof MARK)[keyof typeof MARK];
-
-/** On the map's dark ground. */
-export const MARK_COLOR = { held: "#e69f00", covered: "#2cc6a0", reachable: "#56b4e9" } as const;
 
 /**
  * What the map puts on the screen for a linear colour (see `branchPainted`), as a CSS colour, for

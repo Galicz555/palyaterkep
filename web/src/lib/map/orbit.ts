@@ -4,8 +4,8 @@
 //
 // What changed: the scene is a layout (lib/arrange.ts) instead of a sphere of projects, and the map
 // morphs from one layout to the next; nodes carry a state (held / covered / reachable) as colour,
-// size and halo, because filtering hides and the map needs to show what a CV reads as, and a
-// management role a soft haze; pan and zoom-to-cursor, because the roles are many and small;
+// size and brightness, white, because filtering hides and the map needs to show what a CV reads as,
+// and a management role a brighter, larger core; every node is a star, a point of light; pan and zoom-to-cursor, because the roles are many and small;
 // focus(branch) flies to a sector or frames the branch's points; nothing spins, and nothing is
 // drawn while nothing moves. The GPU-yielding and the decorative stars are gone.
 
@@ -25,10 +25,19 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { R_HOLE, R_OUT, ground } from "../layout.ts";
 import type { Arrangement } from "../arrange.ts";
 import type { MapData } from "../model.ts";
-import { BG, branchColor, MARK, MARK_COLOR } from "../palette.ts";
+import { BG, branchColor, MARK } from "../palette.ts";
 import { capitalise } from "../text.ts";
 import { buildFrame, el, type Box, type Frame, type FrameCtx, type Spot } from "./frames.ts";
-import { ADD, EDGE_FRAG, EDGE_VERT, NODE_BLEND, NODE_FRAG, NODE_VERT } from "./shaders.ts";
+import {
+  ADD,
+  EDGE_FRAG,
+  EDGE_VERT,
+  MAX_MARK_PX,
+  MAX_PX,
+  NODE_BLEND,
+  NODE_FRAG,
+  NODE_VERT,
+} from "./shaders.ts";
 
 export interface MapHooks {
   onSelect(index: number | null): void;
@@ -67,9 +76,9 @@ export interface MapView {
 const FOV = 38;
 const TAU = Math.PI * 2;
 /** Width of one node in map units. */
-const NODE_D = 1.5;
+const NODE_D = 1.0;
 /** Smallest node on screen, in CSS pixels, so the far ones stay visible. */
-const MIN_PX = 3;
+const MIN_PX = 2.4;
 const MIN_DIST = 14;
 const MAX_DIST = 900;
 const TWEEN_MS = 420;
@@ -186,7 +195,7 @@ export function createMap(
   nodeGeo.setAttribute("aMark", aMark);
   nodeGeo.setAttribute("aShape", aShape);
   nodeGeo.setAttribute("aManage", aManage);
-  /** The order the nodes are drawn in: the roles' own, unless the soft look sorts them far to near. */
+  /** The order the nodes are drawn in: far to near, so a near star covers a far one. */
   const order = new Uint32Array(N).map((_, i) => i);
   const orderAttr = new BufferAttribute(order, 1);
   nodeGeo.setIndex(orderAttr);
@@ -197,7 +206,6 @@ export function createMap(
     uNear: { value: 100 },
     uSpan: { value: 200 },
     uMinPx: { value: MIN_PX },
-    uSoft: { value: first.soft ? 1 : 0 },
   };
   const nodes = new Points(
     nodeGeo,
@@ -255,9 +263,10 @@ export function createMap(
   let focused: number | null = null;
   /** A role without demand data is drawn as a pale ghost, so it reads as no data, not balanced. */
   const noData = roles.map((r) => r.demands === null);
-  const heldColor = new Color(MARK_COLOR.held);
-  const coveredColor = new Color(MARK_COLOR.covered);
-  const reachColor = new Color(MARK_COLOR.reachable);
+  // A role the CV marks is a white star: held the largest, brightest and with spikes, covered
+  // smaller, reachable the smallest and a little dimmer.
+  const markColor = new Color("#ffffff");
+  const reachColor = new Color("#8fcdf4");
 
   function paint() {
     const spotlight = selected >= 0 ? neighbours[selected]! : null;
@@ -268,20 +277,20 @@ export function createMap(
       let mark = 0;
       const m = marks?.[i] ?? MARK.none;
       if (m === MARK.held) {
-        color = heldColor;
-        size = NODE_D * 2.7;
+        color = markColor;
+        size = NODE_D * 3.6;
         mark = 1;
         alpha = 1;
       } else if (m === MARK.covered) {
-        color = coveredColor;
-        size = NODE_D * 2.1;
+        color = markColor;
+        size = NODE_D * 2.4;
         mark = 0.75;
         alpha = 1;
       } else if (m === MARK.reachable) {
-        color = reachColor;
-        size = NODE_D * 1.9;
+        color = markColor;
+        size = NODE_D * 1.7;
         mark = 0.6;
-        alpha = 1;
+        alpha = 0.85;
       } else if (marks) {
         color = mix(base[i]!, GREY, arr.field?.grey ?? 0.6);
         alpha = arr.field?.alpha ?? 0.22;
@@ -296,7 +305,7 @@ export function createMap(
       if (spotlight && !m && i !== selected && !spotlight.has(i)) alpha *= 0.45;
       if (i === selected) {
         size = Math.max(size * 1.5, NODE_D * 1.8);
-        mark = 1;
+        mark = Math.max(mark, 0.9);
         alpha = 1;
       }
       aColor.setXYZ(i, color.r, color.g, color.b);
@@ -499,13 +508,12 @@ export function createMap(
   observer.observe(stage);
 
   // Morph: the points, and the frame around them, move from one layout to the next. ---------------
-  let morph: { start: number; softFrom: number; softTo: number } | null = null;
+  let morph: { start: number } | null = null;
   function stepMorph(now: number) {
     if (!morph) return;
     const t = Math.min(1, (now - morph.start) / MORPH_MS);
     const e = ease(t);
     uniforms.uMorph.value = e;
-    uniforms.uSoft.value = morph.softFrom + (morph.softTo - morph.softFrom) * e;
     const from = nodeFrom.array as Float32Array;
     const to = nodeTo.array as Float32Array;
     for (let k = 0; k < cur.length; k++) cur[k] = from[k]! + (to[k]! - from[k]!) * e;
@@ -534,12 +542,7 @@ export function createMap(
     edgeEnds(next.positions, edgeTo);
     leaving?.dispose();
     leaving = frame;
-    const softFrom = uniforms.uSoft.value;
     arr = next;
-    if (!next.soft) {
-      order.forEach((_, k) => (order[k] = k));
-      orderAttr.needsUpdate = true;
-    }
     recolour(next);
     growArms(next);
     paint();
@@ -547,7 +550,6 @@ export function createMap(
     if (reducedMotion()) {
       cur.set(next.positions);
       uniforms.uMorph.value = 1;
-      uniforms.uSoft.value = next.soft ? 1 : 0;
       leaving.dispose();
       leaving = null;
       frame.fade(1);
@@ -555,7 +557,7 @@ export function createMap(
     } else {
       uniforms.uMorph.value = 0;
       frame.fade(0);
-      morph = { start: performance.now(), softFrom, softTo: next.soft ? 1 : 0 };
+      morph = { start: performance.now() };
     }
     if (next.free) controls.maxPolarAngle = Math.PI;
     // Staying in one layout (B with another demand) keeps the camera where the person put it.
@@ -596,7 +598,8 @@ export function createMap(
       sx[i] = tmp.x;
       sy[i] = tmp.y;
       sd[i] = tmp.d;
-      const body = Math.max(aSize.getX(i) * (px / Math.max(1, tmp.d)), MIN_PX);
+      const grown = Math.max(aSize.getX(i) * (px / Math.max(1, tmp.d)), MIN_PX);
+      const body = Math.min(grown, aMark.getX(i) > 0 ? MAX_MARK_PX : MAX_PX);
       // A finger is wider than a node.
       sr[i] = Math.max(body / 2 + 2, coarse ? 12 : 6);
     }
@@ -804,7 +807,7 @@ export function createMap(
     uniforms.uSpan.value = arr.extent * 2;
     projDirty = true;
     ensureProjected();
-    if (arr.soft) sortNodes();
+    sortNodes();
     placeLabels(camera.position.distanceTo(controls.target) / homeView().dist);
     placeMark(selectMark, selected);
     placeMark(hoverMark, hovered === selected ? -1 : hovered);
