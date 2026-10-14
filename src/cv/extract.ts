@@ -14,6 +14,9 @@ const QUOTE_RULE = `Copy every quote from the CV exactly: the same words in the 
 const cvBlock = (cv: string) => `<cv>\n${cv}\n</cv>`;
 
 // Step 1: jobs and skill mentions.
+//
+// No enum or literal in these schemas: the SDK's zod helper (0.131) turns them into description text,
+// so the API would not enforce them and one stray value would fail the whole answer.
 
 export const Extraction = z.object({
   jobs: z.array(
@@ -26,7 +29,7 @@ export const Extraction = z.object({
       years: z.number().nullable().describe("Length of the job in years, from the dates."),
       responsibility: z
         .object({
-          level: z.union([z.literal(4), z.literal(5)]),
+          organisation: z.boolean(),
           leadsPeople: z.boolean(),
           quote: z.string(),
         })
@@ -53,7 +56,7 @@ jobs: every position the person has held: employment, self-employment, internshi
 - occupation: the kind of work in plain English as an occupation classification would name it, without seniority words ("software developer", "nurse", "cook", "army officer").
 - dates: the job's date range exactly as the CV writes it ("2019 – 2023", "03/2021 – jelenleg"), or null if the CV gives none.
 - years: the length of the job in years (2.5 for two and a half), counted from the dates, where "present", "jelenleg" or "napjainkig" means today. null without dates.
-- responsibility: only when the CV states that in this job the person shaped how a team or a field of work is done (level 4: led a team, set the architecture or the methods others work by) or how an organisation or profession works (level 5: ran a company or a division, set its strategy). quote: the CV text that states it. leadsPeople: whether that text says they led people. Otherwise null.
+- responsibility: only when the CV states that in this job the person shaped how a team or a field of work is done (organisation false: led a team, set the architecture or the methods others work by) or how an organisation or profession works (organisation true: ran a company or a division, set its strategy). quote: the CV text that states it. leadsPeople: whether that text says they led people. Otherwise null.
 
 skills: every skill, tool, method, language or field of knowledge the CV shows, whether in a skill list, a described task, a responsibility or a qualification. name: a short English name. quote: the shortest CV text that shows it.
 
@@ -115,7 +118,8 @@ export function checkExtraction(
     let responsibility: Job["responsibility"] = null;
     if (job.responsibility) {
       const quote = findQuote(job.responsibility.quote, cv);
-      if (quote) responsibility = { ...job.responsibility, quote };
+      const { organisation, leadsPeople } = job.responsibility;
+      if (quote) responsibility = { level: organisation ? 5 : 4, leadsPeople, quote };
       else {
         problems.push(
           `jobs[${i}].responsibility.quote "${job.responsibility.quote}" does not occur in the CV`,

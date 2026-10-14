@@ -125,18 +125,21 @@ describe("readCv", () => {
     ]);
   });
 
-  it("drops years that do not fit the dates, and an occupation not among the candidates", async () => {
+  it("drops years that do not fit the dates, an unquoted responsibility, and an occupation not among the candidates", async () => {
+    const nurse = {
+      ...goodJobs[1]!,
+      years: 12,
+      responsibility: { organisation: false, leadsPeople: true, quote: "Az osztályt vezettem" },
+    };
     const { ask } = model({
-      extract: [
-        () => ({ jobs: [{ ...goodJobs[1]!, years: 12 }], skills: [] }),
-        () => ({ jobs: [{ ...goodJobs[1]!, years: 12 }], skills: [] }),
-      ],
+      extract: [() => ({ jobs: [nurse], skills: [] }), () => ({ jobs: [nurse], skills: [] })],
       occupations: [() => ({ jobs: [{ job: 0, occupation: "o99" }] }), () => ({ jobs: [] })],
       skills: [],
     });
     const { result, dropped } = await readCv(CV, { ask, graph, mapper, today: TODAY });
     expect(dropped).toEqual([
       'jobs[0].years 12 does not fit the dates "2012 – 2016"',
+      'jobs[0].responsibility.quote "Az osztályt vezettem" does not occur in the CV',
       "job 0 has no answer",
     ]);
     expect(result).toEqual({ held: [], covered: [], reachable: [], skills: [] });
