@@ -233,19 +233,20 @@ describe("placeCv", () => {
     const { covered, reachable } = placeCv(graph, ["dev-2"], shown);
     expect(covered.map((c) => c.role)).toEqual(["dev-1"]);
     expect(reachable).toEqual([
-      { role: "dev-3", from: "dev-2", edge: "progression", gap: skills("test", "design") },
+      // dev-2 is held and already needs "test", so no gap from it lists it.
+      { role: "dev-3", from: "dev-2", edge: "progression", gap: skills("design") },
       {
         role: "tester",
         from: "dev-2",
         edge: "lateral",
-        gap: skills("test", "report", "plan", "automate"),
+        gap: skills("report", "plan", "automate"),
       },
     ]);
   });
 
   it("does not list a lower rung as reachable by progression", () => {
     const { reachable } = placeCv(graph, ["dev-3"], new Set(), 0.99);
-    expect(reachable.map((r) => r.role)).toEqual(["analyst", "dev-lead"]);
+    expect(reachable.map((r) => r.role)).toEqual(["dev-lead", "analyst"]);
   });
 
   it("never lists a rung below a held role, even by a lateral edge from another held role", () => {
