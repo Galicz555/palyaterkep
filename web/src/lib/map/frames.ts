@@ -567,9 +567,15 @@ function prism(spec: Extract<FrameSpec, { kind: "prism" }>, host: Host): Frame {
 }
 
 /** A glass tetrahedron: six edges, four faint faces, a star and a name at each vertex. */
-function tetra(spec: Extract<FrameSpec, { kind: "tetra" }>, host: Host): Frame {
+function tetra(spec: Extract<FrameSpec, { kind: "tetra" | "nebula" }>, host: Host): Frame {
   const p = parts(host);
   const v = spec.vertices.map((x) => x.at);
+  if (spec.kind === "tetra") solid(p, v);
+  stars(p, host, v);
+  return pinned(p, spec.vertices);
+}
+
+function solid(p: Parts, v: Vec3[]) {
   const edges: number[] = [];
   const faces: number[] = [];
   for (let a = 0; a < 4; a++) {
@@ -589,8 +595,11 @@ function tetra(spec: Extract<FrameSpec, { kind: "tetra" }>, host: Host): Frame {
   const glassMesh = new Mesh(geometry, material);
   glassMesh.renderOrder = 0;
   p.add(glassMesh, (a) => (material.opacity = 0.05 * a));
-  stars(p, host, v);
-  const pins = spec.vertices.map((x) => ({
+}
+
+/** The names of the vertices, pushed outwards from the middle of the frame. */
+function pinned(p: Parts, vertices: { label: string; at: Vec3 }[]): Frame {
+  const pins = vertices.map((x) => ({
     e: p.pin("lbl-anchor", x.label),
     at: new Vector3(...x.at),
   }));
@@ -613,7 +622,7 @@ function tetra(spec: Extract<FrameSpec, { kind: "tetra" }>, host: Host): Frame {
         const length = Math.hypot(dx, dy) || 1;
         ctx.place(
           pin.e,
-          spot.x + (dx / length) * 40,
+          spot.x + (dx / length) * 62,
           spot.y + (dy / length) * 22,
           f,
           " translate(-50%,-50%)",
@@ -626,5 +635,5 @@ function tetra(spec: Extract<FrameSpec, { kind: "tetra" }>, host: Host): Frame {
 export function buildFrame(spec: FrameSpec, data: MapData, host: Host): Frame {
   if (spec.kind === "disc") return disc(spec, data, host);
   if (spec.kind === "sphere") return sphere(spec, host);
-  return spec.kind === "tetra" ? tetra(spec, host) : prism(spec, host);
+  return spec.kind === "tetra" || spec.kind === "nebula" ? tetra(spec, host) : prism(spec, host);
 }

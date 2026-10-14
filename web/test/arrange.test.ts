@@ -168,9 +168,36 @@ describe("layout D, the tetrahedron", () => {
   });
 });
 
+describe("layout F, the nebula", () => {
+  const neb = place("F");
+  it("is the same every time and keeps level a weak signal", () => {
+    expect(place("F").positions).toEqual(neb.positions);
+    const lift = [0, 0, 0, 0, 0, 0];
+    const count = [0, 0, 0, 0, 0, 0];
+    data.roles.forEach((r, i) => {
+      lift[r.level]! += neb.positions[i * 3 + 1]!;
+      count[r.level]! += 1;
+    });
+    // The mean height of level 5 is above level 1's, but by less than the cloud is thick.
+    const gap = lift[5]! / count[5]! - lift[1]! / count[1]!;
+    expect(gap).toBeGreaterThan(5);
+    expect(gap).toBeLessThan(16);
+  });
+  it("puts a pure physical role near the physical attractor", () => {
+    if (neb.frame.kind !== "nebula") throw new Error("F is the nebula");
+    const [physical] = neb.frame.vertices.map((v) => v.at);
+    const i = data.roles.findIndex(
+      (r) => r.demands && r.demands[0] > 0.8 && r.demands[1] < 0.2 && r.demands[2] < 0.2,
+    );
+    expect(i).toBeGreaterThanOrEqual(0);
+    const [x, , z] = at(neb, i);
+    expect(Math.hypot(x! - physical![0], z! - physical![2])).toBeLessThan(40);
+  });
+});
+
 describe("every layout", () => {
   it("has finite positions, a camera that has something to show and a size per role", () => {
-    for (const id of ["A", "B", "C", "D"] as const) {
+    for (const id of ["A", "B", "C", "D", "F"] as const) {
       const arrangement = place(id);
       expect(arrangement.positions.every(Number.isFinite)).toBe(true);
       expect(arrangement.home.fit[0]).toBeGreaterThan(0);

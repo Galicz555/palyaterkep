@@ -43,6 +43,11 @@ export type FrameSpec =
       vertices: { label: string; at: Vec3 }[];
     }
   | {
+      kind: "nebula";
+      /** The three attractors, in `DEMANDS` order. */
+      vertices: { label: string; at: Vec3 }[];
+    }
+  | {
       kind: "prism";
       /** The three vertical edges, in `DEMANDS` order: where each stands on the floor plan. */
       corners: { label: string; x: number; z: number }[];
@@ -305,6 +310,80 @@ function tetra(data: MapData): Arrangement {
   };
 }
 
+/** Where the three attractors stand in the nebula, and how thick it is at most. */
+const NEBULA_R = 78;
+const NEBULA_HEIGHT = 16;
+
+/**
+ * Each role is pulled towards the demands it asks most of: its mix is sharpened (squared) and
+ * placed between the three attractors, then the cloud is twisted, the further out the more, so it
+ * winds into arms, and a hash of the role's id frays it. There is no simulation: the same roles
+ * give the same cloud. Level is a weak signal here: a lift of 3 units per level over a cloud that
+ * is 16 units thick, and a slightly larger node.
+ */
+function nebula(data: MapData): Arrangement {
+  const { roles } = data;
+  const positions = new Float32Array(roles.length * 3);
+  const sizes = new Float32Array(roles.length);
+  roles.forEach((role, i) => {
+    const mix = mixOf(role.demands);
+    const sharp = mix.map((w) => w * w);
+    const total = sharp[0]! + sharp[1]! + sharp[2]!;
+    let east = 0;
+    let north = 0;
+    for (let k = 0; k < 3; k++) {
+      east += (sharp[k]! / total) * Math.sin(CORNER_ANGLE[k]!);
+      north += (sharp[k]! / total) * Math.cos(CORNER_ANGLE[k]!);
+    }
+    const r = Math.hypot(east, north);
+    const turn = 1.15 * r;
+    // The fray sums two hashes (bell-shaped) and is wider at the attractors: they are balls, not points.
+    const fray = 9 * (0.8 + 0.2 * 4 * r * (1 - r)) + 12 * Math.max(0, (r - 0.7) / 0.3) ** 2;
+    const jx = hash(role.id + "x") + hash(role.id + "y") - 1;
+    const jz = hash(role.id + "z") + hash(role.id + "w") - 1;
+    const x = east * Math.cos(turn) + north * Math.sin(turn);
+    const z = -north * Math.cos(turn) + east * Math.sin(turn);
+    const thick = NEBULA_HEIGHT * (1 - 0.55 * r);
+    const jy = (hash(role.id + "v") + hash(role.id + "u") - 1) * thick;
+    positions.set(
+      [x * NEBULA_R + jx * fray, (role.level - 3) * 3 + jy, z * NEBULA_R + jz * fray],
+      i * 3,
+    );
+    sizes[i] = 0.75 + 0.1 * (role.level - 1);
+  });
+  relax(
+    positions,
+    roles.map(() => 0),
+    [0, 1, 2],
+    1.3,
+  );
+  // The cloud leans towards its heavier attractors: the camera looks at its middle, not the origin.
+  const centre: Vec3 = [0, 0, 0];
+  for (let i = 0; i < roles.length; i++) {
+    for (let k = 0; k < 3; k++) centre[k]! += positions[i * 3 + k]! / roles.length;
+  }
+  return {
+    id: "F",
+    positions,
+    frame: {
+      kind: "nebula",
+      vertices: DEMANDS.map((d, k) => ({
+        label: d.label,
+        at: [
+          Math.sin(CORNER_ANGLE[k]! + 1.15) * NEBULA_R,
+          0,
+          -Math.cos(CORNER_ANGLE[k]! + 1.15) * NEBULA_R,
+        ] as Vec3,
+      })),
+    },
+    home: { target: centre, az: 0, pol: deg(50), fit: [NEBULA_R * 1.25, NEBULA_R * 1.1] },
+    free: true,
+    extent: NEBULA_R * 1.2,
+    sizes,
+    alpha: 0.55,
+  };
+}
+
 /** The disc is worked out once and shared by the layouts that stand on it. */
 export function arranger(data: MapData): (id: LayoutId, axis?: number) => Arrangement {
   let plan: Layout | undefined;
@@ -320,6 +399,8 @@ export function arranger(data: MapData): (id: LayoutId, axis?: number) => Arrang
         return prism(data);
       case "D":
         return tetra(data);
+      case "F":
+        return nebula(data);
     }
   };
   return (id, axis = 0) => {
