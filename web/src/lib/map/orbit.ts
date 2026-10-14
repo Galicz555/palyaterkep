@@ -132,13 +132,12 @@ export function createMap(
 
   const { roles } = data;
   const N = roles.length;
-  const nBranches = data.branches.length;
   let arr = first;
 
   // Nodes and edges. Both hold two positions and a morph weight: `position` is where they were,
   // `aTo` where they are going, `uMorph` how far along. `cur` is where each node is right now, for
   // picking and labels.
-  const branchBase = roles.map((r) => new Color(branchColor(r.branch, nBranches, r.sub)));
+  const branchBase = roles.map((r) => new Color(branchColor(r.branch)));
   /** What each role is painted when nothing marks it: the branch's colour, or the layout's own. */
   const base: Color[] = branchBase.map((c) => c.clone());
   const recolour = (a: Arrangement) =>

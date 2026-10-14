@@ -220,7 +220,7 @@ function disc(spec: Extract<FrameSpec, { kind: "disc" }>, data: MapData, host: H
   };
   plan.branches.forEach((sector, b) => {
     sector.subs.forEach((slice, s) => {
-      const tint = mix(bg, new Color(branchColor(b, nBranches, s)), s % 2 ? 0.17 : 0.1);
+      const tint = mix(bg, new Color(branchColor(b)), s % 2 ? 0.17 : 0.1);
       const steps = Math.max(1, Math.ceil((slice.end - slice.start) / ((2 * Math.PI) / 180)));
       for (let k = 0; k < steps; k++) {
         const a0 = slice.start + ((slice.end - slice.start) * k) / steps;

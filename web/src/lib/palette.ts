@@ -17,32 +17,48 @@ export const MARK_COLOR = { held: "#e69f00", covered: "#2cc6a0", reachable: "#56
 export const paintedRgb = ([r, g, b]: readonly number[]): string =>
   `rgb(${[r, g, b].map((c) => Math.round(255 * c!)).join(" ")})`;
 
-const branchHsl = (branch: number, branches: number, sub: number): [number, number, number] => [
-  Math.round((205 + (360 * branch) / branches) % 360),
-  68,
-  58 + (sub % 2) * 9,
-];
+/**
+ * One colour per branch, in branch-table order, as it should look on the map's dark ground. Picked
+ * for distance, not for a hue wheel: five of the eight layouts tell branches apart by colour alone,
+ * so any two sit at least 0.10 apart in OKLab (the old even-hue wheel had pairs 0.018 apart, about
+ * the same colour once drawn), and as far from the three state colours. Lightness stays within
+ * 0.66–0.82 so every branch reads on the dark ground and none looks like a pale no-data point.
+ */
+const BRANCH_SHOWN = [
+  "#35dceb", // it
+  "#947deb", // engineering
+  "#80a108", // agriculture
+  "#b28b45", // industry
+  "#e16941", // construction
+  "#30a5a8", // transport
+  "#fe7b90", // trade
+  "#feac9e", // hospitality
+  "#d664a3", // health-social
+  "#b1d454", // education
+  "#e7a9fb", // culture
+  "#aba0e5", // public
+  "#a6b368", // business
+] as const;
 
-/** One hue per branch, in table order around the wheel, so neighbouring fields look related. */
-export const branchColor = (branch: number, branches: number, sub = 0): string => {
-  const [h, s, l] = branchHsl(branch, branches, sub);
-  return `hsl(${h}, ${s}%, ${l}%)`;
-};
+const shown = (branch: number): string => BRANCH_SHOWN[branch % BRANCH_SHOWN.length]!;
 
 /**
- * What the map's shaders put on the screen for `branchColor`: three.js hands them the colour in
- * linear light and they write it as it is, so a point shows deeper than the same CSS colour does.
- * For the legend's swatches, which have to match the points.
+ * A branch's colour for the map's shaders. three.js reads a CSS colour as sRGB and hands it to them
+ * in linear light, and they write it as it is; so the colour goes in sRGB-encoded once more, and
+ * comes out on screen as `branchPainted`.
  */
-export function branchPainted(branch: number, branches: number, sub = 0): string {
-  const [h, s, l] = branchHsl(branch, branches, sub);
-  const k = s / 100;
-  const light = l / 100;
-  const a = k * Math.min(light, 1 - light);
-  const channel = (n: number) => {
-    const m = (n + h / 30) % 12;
-    const c = light - a * Math.max(-1, Math.min(m - 3, 9 - m, 1));
-    return Math.round(255 * (c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4)));
-  };
-  return `rgb(${channel(0)} ${channel(8)} ${channel(4)})`;
-}
+export const branchColor = (branch: number): string => {
+  const encode = (c: number) => (c <= 0.0031308 ? 12.92 * c : 1.055 * c ** (1 / 2.4) - 0.055);
+  const hex = shown(branch);
+  const channels = [1, 3, 5].map((i) => encode(parseInt(hex.slice(i, i + 2), 16) / 255));
+  return `#${channels
+    .map((c) =>
+      Math.round(255 * c)
+        .toString(16)
+        .padStart(2, "0"),
+    )
+    .join("")}`;
+};
+
+/** A branch's colour as it shows on the map, for CSS: the legend's swatches and the list. */
+export const branchPainted = (branch: number): string => shown(branch);

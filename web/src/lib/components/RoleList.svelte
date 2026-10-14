@@ -5,7 +5,7 @@
   // order is not three thousand links long.
   import type { RoleState } from "#lib/cv.ts";
   import type { MapData, MapRole } from "#lib/model.ts";
-  import { branchColor } from "#lib/palette.ts";
+  import { branchPainted } from "#lib/palette.ts";
   import { capitalise } from "#lib/text.ts";
   import RoleBadges from "./RoleBadges.svelte";
   import StateInfo from "./StateInfo.svelte";
@@ -131,7 +131,7 @@
       {#each data.branches as branch, b (branch.id)}
         <li>
           <a href="#ag-{branch.id}" onclick={() => (touched[branch.id] = true)}>
-            <i style:background={branchColor(b, data.branches.length)} aria-hidden="true"></i>
+            <i style:background={branchPainted(b)} aria-hidden="true"></i>
             {branch.label}
           </a>
         </li>
@@ -157,7 +157,7 @@
             touched[group.branch.id] = !open;
           }}
         >
-          <i style:background={branchColor(b, data.branches.length)} aria-hidden="true"></i>
+          <i style:background={branchPainted(b)} aria-hidden="true"></i>
           <span class="branch-name">{group.branch.label}</span>
           <span class="count">{matches} szerep</span>
         </summary>

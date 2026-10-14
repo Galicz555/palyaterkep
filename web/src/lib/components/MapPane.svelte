@@ -177,8 +177,7 @@
       <ul class="key branches" aria-label="Az ágak színei">
         {#each data.branches as branch, b (branch.id)}
           <li>
-            <i class="dot" style:background={branchPainted(b, data.branches.length)}
-            ></i>{branch.label}
+            <i class="dot" style:background={branchPainted(b)}></i>{branch.label}
           </li>
         {/each}
       </ul>
