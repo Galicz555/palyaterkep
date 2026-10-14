@@ -1,6 +1,7 @@
-// Where every role sits on the map. The layout is semantic, not force-directed: the angle is the
-// branch, the distance from the centre is the level, the height is the track (glossary, axis).
-// A pure function of the roles, so the same vault always draws the same map.
+// Where every role sits on the disc. The layout is semantic, not force-directed: the angle is the
+// branch, the distance from the centre is the level (glossary, axis). The disc is flat; other
+// layouts (lib/arrange.ts) lift or recolour it. A pure function of the roles, so the same vault
+// always draws the same map.
 //
 // The ground is the x/z plane, y is up. Angles run clockwise from north, which is -z, so on the
 // default camera north is the top of the screen: x = r sin(a), z = -r cos(a).
@@ -11,9 +12,6 @@ import type { MapData } from "./model.ts";
 export const R_HOLE = 12;
 /** The last lane ends here. Everything else is in these units. */
 export const R_OUT = 100;
-/** Management roles float this far above individual ones. */
-export const TRACK_HEIGHT = 16;
-
 const TAU = Math.PI * 2;
 const deg = (d: number) => (d * Math.PI) / 180;
 
@@ -58,7 +56,7 @@ export interface Span {
 }
 
 export interface Layout {
-  /** x, y, z of every role, in `MapData.roles` order. */
+  /** x, y, z of every role, in `MapData.roles` order; y is 0. */
   positions: Float32Array;
   /** Per branch, in table order: its sector and the slices of its sub-branches. */
   branches: (Span & { subs: Span[] })[];
@@ -66,7 +64,7 @@ export interface Layout {
   lanes: Span[];
 }
 
-const hash = (text: string) => {
+export const hash = (text: string) => {
   let h = 0x811c9dc5;
   for (let i = 0; i < text.length; i++) h = Math.imul(h ^ text.charCodeAt(i), 0x01000193);
   return (h >>> 0) / 4294967296;
@@ -139,7 +137,7 @@ export function layout(data: MapData): Layout {
   });
 
   // Cells: the roles of one sub-branch and one level share a block of the map. Individual roles
-  // come first, so management roles take the outer rows; their height keeps the two tracks apart.
+  // come first, so management roles take the outer rows of their block.
   const cells = new Map<string, number[]>();
   roles.forEach((role, i) => {
     const key = `${role.branch}/${role.sub}/${role.level}`;
@@ -162,7 +160,7 @@ export function layout(data: MapData): Layout {
         a + ((hash(id) - 0.5) * wobble) / radius,
         radius + (hash(`${id}/r`) - 0.5) * wobble,
       );
-      positions.set([x, roles[i]!.management ? TRACK_HEIGHT / 2 : -TRACK_HEIGHT / 2, z], i * 3);
+      positions.set([x, 0, z], i * 3);
     });
   }
   return { positions, branches: spans, lanes };

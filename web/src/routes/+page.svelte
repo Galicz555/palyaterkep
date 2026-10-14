@@ -1,10 +1,12 @@
 <script lang="ts">
+  import { replaceState } from "$app/navigation";
   import { onMount, tick } from "svelte";
   import CvUpload from "#lib/components/CvUpload.svelte";
   import MapPane from "#lib/components/MapPane.svelte";
   import RoleList from "#lib/components/RoleList.svelte";
   import RolePanel from "#lib/components/RolePanel.svelte";
   import { cv } from "#lib/cv.svelte.ts";
+  import { DEFAULT_LAYOUT, LAYOUTS, layoutOf, type LayoutId } from "#lib/layouts.ts";
   import { MARK } from "#lib/palette.ts";
   import { capitalise, fold } from "#lib/text.ts";
 
@@ -24,6 +26,15 @@
   let query = $state("");
   let branch = $state<number | null>(null);
   let selected = $state<string | null>(null);
+  // Layout: which arrangement of the map; it lives in the address, so a link reproduces it.
+  let layout = $state<LayoutId>(DEFAULT_LAYOUT);
+  const layoutInfo = $derived(LAYOUTS.find((l) => l.id === layout) ?? LAYOUTS[0]!);
+  function chooseLayout(next: LayoutId) {
+    layout = next;
+    const url = new URL(location.href);
+    url.searchParams.set("elrendezes", next);
+    replaceState(url, {});
+  }
   $effect(() => {
     const text = typed;
     const timer = setTimeout(() => (query = text), 150);
@@ -93,6 +104,7 @@
     if (ag >= 0) branch = ag;
     const nezet = params.get("nezet");
     if (nezet === "map" || nezet === "list") mode = nezet;
+    layout = layoutOf(params.get("elrendezes"));
     const szerep = params.get("szerep");
     if (szerep && indexOf.has(szerep)) selected = szerep;
 
@@ -103,10 +115,16 @@
     return () => wideQuery.removeEventListener("change", onChange);
   });
 
-  function onready(bench: (frames: number) => Promise<unknown>) {
-    // Frame timings for the measurement script: ?teljesitmeny on the address.
+  function onready(tools: {
+    benchmark: (frames: number) => Promise<unknown>;
+    where: (i: number) => unknown;
+  }) {
+    // Frame timings and roles' places on screen for the measurement script: ?teljesitmeny on the
+    // address.
     if (new URLSearchParams(location.search).has("teljesitmeny")) {
-      (globalThis as Record<string, unknown>)["__terkepBenchmark"] = bench;
+      const hooks = globalThis as Record<string, unknown>;
+      hooks["__terkepBenchmark"] = tools.benchmark;
+      hooks["__terkepWhere"] = (id: string) => tools.where(indexOf.get(id) ?? -1);
     }
   }
 
@@ -142,7 +160,7 @@
   <header class="intro">
     <h1>Szerepek térképe</h1>
     <p>
-      Minden szerep egy pont: a szög a szakterület, a távolság a szint, a magasság a pályatípus.
+      {layoutInfo.intro}
       {#if !cv.view}Az önéletrajzod beolvasása után itt látszik, melyiket töltötted be, melyiket
         fedik le a készségeid, és melyik van egy lépésre, a hiányzó készségekkel.{/if}
     </p>
@@ -213,6 +231,14 @@
         {/each}
       </select>
     </label>
+    <label class="field">
+      <span>Elrendezés</span>
+      <select value={layout} onchange={(e) => chooseLayout(layoutOf(e.currentTarget.value))}>
+        {#each LAYOUTS as l (l.id)}
+          <option value={l.id}>{l.label}</option>
+        {/each}
+      </select>
+    </label>
     <p class="found" role="status">{matches} szerep{pass ? " a szűrésben" : ""}</p>
   </div>
 
@@ -224,6 +250,7 @@
         {reach}
         {pass}
         {selected}
+        {layout}
         focus={branch ?? resultBranch}
         onselect={(id) => (selected = id)}
         {onready}
