@@ -9,6 +9,7 @@ import {
   capDirection,
   CORNER_ANGLE,
   DEMANDS,
+  demandColor,
   magnitudeOf,
   mixKey,
   mixOf,
@@ -80,11 +81,20 @@ export interface Arrangement {
   extent: number;
   /** A multiplier of each role's node size, by role; null where the layout does not use size. */
   sizes: Float32Array | null;
+  /** Linear r, g, b of every role where the layout paints by something other than the branch. */
+  colors?: Float32Array;
   /** How opaque a node is: where a layout packs the roles close, they are fainter, to stay apart. */
   alpha: number;
 }
 
 const deg = (d: number) => (d * Math.PI) / 180;
+
+/** The colour of every role's demands, in `MapData.roles` order. */
+function demandColors(data: MapData): Float32Array {
+  const out = new Float32Array(data.roles.length * 3);
+  data.roles.forEach((r, i) => out.set(demandColor(r.demands), i * 3));
+  return out;
+}
 
 function disc(id: LayoutId, plan: Layout, data: MapData, lift?: { axis: number }): Arrangement {
   let positions = plan.positions;
@@ -401,6 +411,8 @@ export function arranger(data: MapData): (id: LayoutId, axis?: number) => Arrang
         return tetra(data);
       case "F":
         return nebula(data);
+      case "G":
+        return { ...disc(id, plan, data), colors: demandColors(data) };
     }
   };
   return (id, axis = 0) => {

@@ -138,7 +138,16 @@ export function createMap(
   // Nodes and edges. Both hold two positions and a morph weight: `position` is where they were,
   // `aTo` where they are going, `uMorph` how far along. `cur` is where each node is right now, for
   // picking and labels.
-  const base: Color[] = roles.map((r) => new Color(branchColor(r.branch, nBranches, r.sub)));
+  const branchBase = roles.map((r) => new Color(branchColor(r.branch, nBranches, r.sub)));
+  /** What each role is painted when nothing marks it: the branch's colour, or the layout's own. */
+  const base: Color[] = branchBase.map((c) => c.clone());
+  const recolour = (a: Arrangement) =>
+    base.forEach((c, i) =>
+      a.colors
+        ? c.setRGB(a.colors[i * 3]!, a.colors[i * 3 + 1]!, a.colors[i * 3 + 2]!)
+        : c.copy(branchBase[i]!),
+    );
+  recolour(first);
   const cur = new Float32Array(first.positions);
   const nodeFrom = new BufferAttribute(new Float32Array(first.positions), 3);
   const nodeTo = new BufferAttribute(new Float32Array(first.positions), 3);
@@ -502,6 +511,7 @@ export function createMap(
     leaving?.dispose();
     leaving = frame;
     arr = next;
+    recolour(next);
     paint();
     frame = buildFrame(next.frame, data, host);
     if (reducedMotion()) {

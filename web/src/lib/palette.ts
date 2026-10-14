@@ -10,6 +10,13 @@ export type Mark = (typeof MARK)[keyof typeof MARK];
 /** On the map's dark ground. */
 export const MARK_COLOR = { held: "#e69f00", covered: "#2cc6a0", reachable: "#56b4e9" } as const;
 
+/**
+ * What the map puts on the screen for a linear colour (see `branchPainted`), as a CSS colour, for
+ * the legend's swatches.
+ */
+export const paintedRgb = ([r, g, b]: readonly number[]): string =>
+  `rgb(${[r, g, b].map((c) => Math.round(255 * c!)).join(" ")})`;
+
 const branchHsl = (branch: number, branches: number, sub: number): [number, number, number] => [
   Math.round((205 + (360 * branch) / branches) % 360),
   68,

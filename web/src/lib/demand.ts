@@ -56,6 +56,48 @@ export function triangle(mix: Mix): [number, number] {
   return [east, north];
 }
 
+/**
+ * The demands' colours (sRGB). Their hues, 0, 263 and 313 degrees, keep clear of the CV states'
+ * amber (41), green (166) and sky blue (202), so a mix is never mistaken for a state.
+ */
+export const DEMAND_HEX = ["#ff3b3b", "#9b5cff", "#ff5ad2"] as const;
+
+const linear = (c: number) => (c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4));
+/** The same colours in linear light, which is what the renderer mixes and writes. */
+export const DEMAND_LINEAR: readonly [number, number, number][] = DEMAND_HEX.map(
+  (hex) =>
+    [1, 3, 5].map((at) => linear(parseInt(hex.slice(at, at + 2), 16) / 255)) as [
+      number,
+      number,
+      number,
+    ],
+);
+
+/** What a role without data is painted: a dull grey, which the map greys further. */
+const NO_DATA_COLOR: [number, number, number] = [0.3, 0.3, 0.34];
+
+/**
+ * A mix with its differences exaggerated: the shares move `gain` times further from an even third
+ * (and stay non-negative and sum to one). Half of the roles lie within 0.36 of the triangle's
+ * centre, and an unstretched blend of three hues there is a grey.
+ */
+export function stretched(mix: Mix, gain = 2.2): Mix {
+  const raw = mix.map((w) => Math.max(0, 1 / 3 + gain * (w - 1 / 3)));
+  const sum = raw[0]! + raw[1]! + raw[2]!;
+  return [raw[0]! / sum, raw[1]! / sum, raw[2]! / sum];
+}
+
+/** The colour of a role's demands: its stretched mix blended from the three demand colours, linear. */
+export function demandColor(demands: Demands | null): [number, number, number] {
+  if (!demands) return NO_DATA_COLOR;
+  const mix = stretched(mixOf(demands));
+  return [0, 1, 2].map((c) => mix.reduce((s, w, k) => s + w * DEMAND_LINEAR[k]![c]!, 0)) as [
+    number,
+    number,
+    number,
+  ];
+}
+
 /** The polar angle, from the pole, of the cap's rim: where a pure demand lands. */
 export const CAP_ANGLE = deg(84);
 

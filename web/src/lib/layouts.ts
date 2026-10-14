@@ -1,7 +1,7 @@
 // The layouts the map can show, by name: what the dropdown, the address and the key under the map
 // say about each. Where the roles go is in lib/arrange.ts, which the map loads with three.js.
 
-export type LayoutId = "A" | "B" | "C" | "D" | "F";
+export type LayoutId = "A" | "B" | "C" | "D" | "F" | "G";
 
 export interface LayoutInfo {
   id: LayoutId;
@@ -13,6 +13,8 @@ export interface LayoutInfo {
   key: [channel: string, meaning: string][];
   /** Whether the branch is a place on this map, with its own names around it; else a colour legend. */
   byBranch: boolean;
+  /** Whether colour is the mix of demands, with its own key, instead of the branch. */
+  demandColors?: true;
 }
 
 export const LAYOUTS: readonly LayoutInfo[] = [
@@ -76,6 +78,19 @@ export const LAYOUTS: readonly LayoutInfo[] = [
       ["Szín", "ág"],
     ],
     byBranch: false,
+  },
+  {
+    id: "G",
+    label: "G – Színkeverés",
+    intro:
+      "Minden szerep egy pont a korongon: a szög a szakterület, a távolság a szint, a szín a három terhelés keveréke (piros a fizikai, lila a szellemi, rózsaszín az érzelmi).",
+    key: [
+      ["Szög", "ág"],
+      ["Távolság", "szint, kívül a magasabb"],
+      ["Szín", "a három terhelés keveréke, a különbségek felerősítve"],
+    ],
+    byBranch: true,
+    demandColors: true,
   },
 ];
 

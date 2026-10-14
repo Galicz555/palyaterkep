@@ -197,7 +197,7 @@ describe("layout F, the nebula", () => {
 
 describe("every layout", () => {
   it("has finite positions, a camera that has something to show and a size per role", () => {
-    for (const id of ["A", "B", "C", "D", "F"] as const) {
+    for (const id of ["A", "B", "C", "D", "F", "G"] as const) {
       const arrangement = place(id);
       expect(arrangement.positions.every(Number.isFinite)).toBe(true);
       expect(arrangement.home.fit[0]).toBeGreaterThan(0);

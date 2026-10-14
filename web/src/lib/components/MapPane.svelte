@@ -6,7 +6,8 @@
   import type { Arrangement } from "#lib/arrange.ts";
   import type { MapView } from "#lib/map/orbit.ts";
   import type { MapData } from "#lib/model.ts";
-  import { branchPainted, MARK_COLOR } from "#lib/palette.ts";
+  import { branchPainted, MARK_COLOR, paintedRgb } from "#lib/palette.ts";
+  import { DEMANDS, DEMAND_LINEAR } from "#lib/demand.ts";
   import { capitalise, levelText, trackText } from "#lib/text.ts";
 
   interface Props {
@@ -146,7 +147,15 @@
         <li><i class="dot" style:background={MARK_COLOR.reachable}></i> elérhető</li>
       {/if}
     </ul>
-    {#if !info.byBranch}
+    {#if info.demandColors}
+      <ul class="key branches" aria-label="A terhelések színei">
+        {#each DEMANDS as demand, k (demand.key)}
+          <li>
+            <i class="dot" style:background={paintedRgb(DEMAND_LINEAR[k]!)}></i>{demand.label}
+          </li>
+        {/each}
+      </ul>
+    {:else if !info.byBranch}
       <ul class="key branches" aria-label="Az ágak színei">
         {#each data.branches as branch, b (branch.id)}
           <li>

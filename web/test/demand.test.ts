@@ -3,6 +3,9 @@ import {
   BALANCED,
   CAP_ANGLE,
   capDirection,
+  DEMAND_LINEAR,
+  demandColor,
+  stretched,
   magnitudeOf,
   mixOf,
   triangle,
@@ -71,5 +74,22 @@ describe("the triangle on a cap", () => {
 
   it("puts the middle of an edge halfway between the centre and a corner", () => {
     expect(Math.hypot(...triangle([0.5, 0.5, 0]))).toBeCloseTo(0.5);
+  });
+});
+
+describe("the colour of the demands", () => {
+  it("stretches a mix away from an even third without leaving the triangle", () => {
+    const m = stretched([0.4, 0.35, 0.25]);
+    expect(m[0] + m[1] + m[2]).toBeCloseTo(1);
+    expect(m[0]).toBeGreaterThan(0.4);
+    expect(m[2]).toBeLessThan(0.25);
+    expect(stretched([0.9, 0.1, 0]).every((w) => w >= 0)).toBe(true);
+    for (const [k, w] of stretched(BALANCED).entries()) expect(w).toBeCloseTo(BALANCED[k]!);
+  });
+
+  it("paints a role asking only one demand in that demand's colour, and no data a grey", () => {
+    expect(demandColor([1, 0, 0])).toEqual([...DEMAND_LINEAR[0]!]);
+    const [r, g, b] = demandColor(null);
+    expect(Math.max(r, g, b) - Math.min(r, g, b)).toBeLessThan(0.1);
   });
 });
