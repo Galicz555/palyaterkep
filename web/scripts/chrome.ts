@@ -110,6 +110,21 @@ export class Page {
     writeFileSync(file, Buffer.from(data, "base64"));
   }
 
+  /** Just the element matching `selector`, even when it is below the fold; returns the PNG, base64. */
+  async screenshotOf(file: string, selector: string): Promise<string> {
+    const clip = await this.eval<{ x: number; y: number; width: number; height: number }>(`(() => {
+      const r = document.querySelector(${JSON.stringify(selector)}).getBoundingClientRect();
+      return { x: r.x + scrollX, y: r.y + scrollY, width: r.width, height: r.height };
+    })()`);
+    const { data } = await this.send<{ data: string }>("Page.captureScreenshot", {
+      format: "png",
+      captureBeyondViewport: true,
+      clip: { ...clip, scale: 1 },
+    });
+    writeFileSync(file, Buffer.from(data, "base64"));
+    return data;
+  }
+
   /** Puts files into a file input, as choosing them in the picker would. */
   async setFiles(selector: string, files: string[]) {
     const { root } = await this.send<{ root: { nodeId: number } }>("DOM.getDocument");

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { layout, R_HOLE, R_OUT, TRACK_HEIGHT } from "../src/lib/layout.ts";
+import { layout, R_HOLE, R_OUT } from "../src/lib/layout.ts";
 import { mapData } from "../src/lib/server/data.ts";
 
 // The real vault: the layout is only as good as it is on the 3039 roles it draws.
@@ -50,10 +50,8 @@ describe("layout", () => {
     expect((it.start + it.end) / 2).toBeCloseTo(0, 6);
   });
 
-  it("draws the track as height", () => {
-    data.roles.forEach((role, i) => {
-      expect(map.positions[i * 3 + 1]).toBe(role.management ? TRACK_HEIGHT / 2 : -TRACK_HEIGHT / 2);
-    });
+  it("keeps the disc flat: the track is a glow, not a height", () => {
+    for (let i = 0; i < data.roles.length; i++) expect(map.positions[i * 3 + 1]).toBe(0);
   });
 
   it("does not stack two roles on one spot", () => {

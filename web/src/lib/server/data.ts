@@ -7,6 +7,7 @@ import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { BRANCHES_FILE, loadBranches } from "../../../../src/branches/branches.ts";
+import { readDemands } from "../../../../src/demands/demands.ts";
 import type { Esco, Occupation, Skill } from "../../../../src/esco/model.ts";
 import { readVault, VAULT } from "../../../../src/vault/generate.ts";
 import { linkTarget, readNote, Role } from "../../../../src/vault/note.ts";
@@ -69,6 +70,7 @@ function load(): Loaded {
       a.note.label.localeCompare(b.note.label, "hu"),
   );
 
+  const demands = readDemands();
   const index = new Map(entries.map((e, i) => [e.id, i]));
   const target = (link: string) => {
     const i = index.get(linkTarget(link));
@@ -105,6 +107,7 @@ function load(): Loaded {
         curated: note.curated,
         branch,
         sub,
+        demands: demands.get(note.occupation) ?? null,
       })),
       lateral: [...lateral.values()],
       progression,

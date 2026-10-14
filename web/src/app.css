@@ -16,12 +16,13 @@
   --reach: #00507d;
   --reach-bg: #dcedf9;
   --proposal: #5a5f70;
-  --stage: #0b1020;
+  --stage: #0b0d12;
   --stage-ink: #dce6f7;
   --stage-soft: #a5b4d0;
-  --stage-line: #2a3556;
+  --stage-line: #27304a;
   --stage-focus: #8ec5ff;
   --radius: 0.5rem;
+  --mono: "JetBrains Mono", "IBM Plex Mono", "DejaVu Sans Mono", ui-monospace, monospace;
   font-family:
     system-ui,
     -apple-system,

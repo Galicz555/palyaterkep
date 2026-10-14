@@ -2,9 +2,12 @@
   // The 3D map in its stage: loads the renderer (and three.js) only when the stage is actually
   // shown, so a phone that opens the list never downloads it.
   import { onMount } from "svelte";
+  import { LAYOUTS, type LayoutId } from "#lib/layouts.ts";
+  import type { Arrangement } from "#lib/arrange.ts";
   import type { MapView } from "#lib/map/orbit.ts";
   import type { MapData } from "#lib/model.ts";
-  import { MARK_COLOR } from "#lib/palette.ts";
+  import { branchPainted, MARK_COLOR, paintedRgb } from "#lib/palette.ts";
+  import { DEMANDS, DEMAND_LINEAR } from "#lib/demand.ts";
   import { capitalise, levelText, trackText } from "#lib/text.ts";
 
   interface Props {
@@ -16,15 +19,21 @@
     /** Roles with a 0 are pushed back; null shows all. */
     pass: Uint8Array | null;
     selected: string | null;
-    /** Branch to fly to, an index into `data.branches`. */
+    layout: LayoutId;
+    /** Which demand lifts the points where a layout does that: an index into `DEMANDS`. */
+    axis: number;
+    /** Branch to show, an index into `data.branches`. */
     focus: number | null;
     onselect: (id: string | null) => void;
-    /** Called once with the way to measure frames, when the map is up. */
-    onready?: (bench: (frames: number) => ReturnType<MapView["benchmark"]>) => void;
+    /** Called once with the way to measure frames and to find a role on screen, when the map is up. */
+    onready?: (tools: Pick<MapView, "benchmark" | "where">) => void;
   }
-  let { data, marks, reach, pass, selected, focus, onselect, onready }: Props = $props();
+  let { data, marks, reach, pass, selected, layout, axis, focus, onselect, onready }: Props =
+    $props();
 
   const indexOf = $derived(new Map(data.roles.map((r, i) => [r.id, i])));
+  const info = $derived(LAYOUTS.find((l) => l.id === layout) ?? LAYOUTS[0]!);
+  let arrange = $state.raw<((id: LayoutId, axis: number) => Arrangement) | null>(null);
   let stage = $state<HTMLDivElement>();
   let view = $state.raw<MapView | null>(null);
   let status = $state<"waiting" | "loading" | "ready" | "unsupported" | "failed">("waiting");
@@ -34,21 +43,28 @@
     if (!stage) return;
     status = "loading";
     try {
-      const [{ createMap }, { layout }] = await Promise.all([
+      const [{ createMap }, { arranger }] = await Promise.all([
         import("#lib/map/orbit.ts"),
-        import("#lib/layout.ts"),
+        import("#lib/arrange.ts"),
       ]);
-      const made = createMap(stage, data, layout(data), {
-        onSelect: (i) => onselect(i === null ? null : (data.roles[i]?.id ?? null)),
-        onHover: (i, x, y) => (hover = i === null ? null : { i, x, y }),
-      });
+      const place = arranger(data);
+      const made = createMap(
+        stage,
+        data,
+        {
+          onSelect: (i) => onselect(i === null ? null : (data.roles[i]?.id ?? null)),
+          onHover: (i, x, y) => (hover = i === null ? null : { i, x, y }),
+        },
+        place(layout, axis),
+      );
       if (!made) {
         status = "unsupported";
         return;
       }
+      arrange = place;
       view = made;
       status = "ready";
-      onready?.((frames) => made.benchmark(frames));
+      onready?.({ benchmark: (frames) => made.benchmark(frames), where: (i) => made.where(i) });
     } catch {
       status = "failed";
     }
@@ -70,9 +86,13 @@
   $effect(() => view?.setMarks(marks, reach));
   $effect(() => view?.setFilter(pass));
   $effect(() => view?.select(selected === null ? null : (indexOf.get(selected) ?? null)));
+  $effect(() => {
+    if (arrange) view?.setLayout(arrange(layout, axis));
+  });
   $effect(() => view?.focus(focus));
 
   const hovered = $derived(hover ? data.roles[hover.i] : undefined);
+  const percent = (rank: number) => Math.round(rank * 100);
 </script>
 
 <div class="frame">
@@ -96,6 +116,11 @@
         <strong>{capitalise(hovered.label)}</strong>
         <span>{levelText(hovered.level)} · {trackText(hovered.management)}</span>
         <span>{data.branches[hovered.branch]?.subBranches[hovered.sub]?.label}</span>
+        <span>
+          {hovered.demands
+            ? `fizikai ${percent(hovered.demands[0])} · szellemi ${percent(hovered.demands[1])} · érzelmi ${percent(hovered.demands[2])} (percentilis)`
+            : "nincs terhelési adat"}
+        </span>
       </div>
     {/if}
   </div>
@@ -109,17 +134,55 @@
       >
     </div>
     <ul class="key" aria-label="Jelmagyarázat">
-      <li><span>Szög:</span> ág</li>
-      <li><span>Távolság:</span> szint, kívül a magasabb</li>
-      <li><span>Magasság:</span> pályatípus, a vezetői szerepek fent</li>
+      {#each info.key as [channel, meaning] (channel)}
+        <li><span>{channel}:</span> {meaning}</li>
+      {/each}
       <li><i class="ring"></i> gépi javaslat, nem ellenőrzött</li>
       <li><i class="dot"></i> ellenőrzött</li>
+      <li><i class="haze"></i> lágy fény: vezetői szerep</li>
+      <li><i class="ghost"></i> halvány szürke pont: nincs terhelési adat</li>
       {#if marks}
         <li><i class="dot" style:background={MARK_COLOR.held}></i> betöltött</li>
         <li><i class="dot" style:background={MARK_COLOR.covered}></i> lefedett</li>
         <li><i class="dot" style:background={MARK_COLOR.reachable}></i> elérhető</li>
       {/if}
     </ul>
+    {#if info.demandColors}
+      <ul class="key branches" aria-label="A terhelések színei">
+        {#each DEMANDS as demand, k (demand.key)}
+          <li>
+            <i class="dot" style:background={paintedRgb(DEMAND_LINEAR[k]!)}></i>{demand.label}
+          </li>
+        {/each}
+        {#if layout === "K"}
+          <li>
+            <svg class="glyph" viewBox="-12 -12 24 24" aria-hidden="true">
+              {#each DEMANDS as demand, k (demand.key)}
+                <line
+                  x1="0"
+                  y1="0"
+                  x2={[-9, 0, 9][k]}
+                  y2={[5, -10, 5][k]}
+                  stroke={paintedRgb(DEMAND_LINEAR[k]!)}
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                />
+              {/each}
+            </svg>
+            egy szerep: a kar hossza a terhelés
+          </li>
+        {/if}
+      </ul>
+    {:else if !info.byBranch}
+      <ul class="key branches" aria-label="Az ágak színei">
+        {#each data.branches as branch, b (branch.id)}
+          <li>
+            <i class="dot" style:background={branchPainted(b, data.branches.length)}
+            ></i>{branch.label}
+          </li>
+        {/each}
+      </ul>
+    {/if}
   {/if}
 </div>
 
@@ -153,43 +216,59 @@
     overflow: hidden;
     pointer-events: none;
   }
+  /* Labels in the observatory's hand: monospace capitals, spaced out, on a soft dark halo. */
   .stage :global(.lbl) {
     position: absolute;
     left: 0;
     top: 0;
     transform-origin: 0 0;
     white-space: nowrap;
-    font-size: 0.72rem;
+    font-family: var(--mono);
+    font-size: 0.68rem;
     line-height: 1.2;
-    color: var(--stage-ink);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--stage-soft);
     text-shadow:
-      0 0 3px var(--stage),
-      0 0 6px var(--stage);
+      0 0 6px #000,
+      0 0 2px #000;
     will-change: transform, opacity;
   }
   .stage :global(.lbl-branch) {
-    width: 8.5rem;
+    width: 10rem;
     white-space: normal;
     text-align: center;
-    font-size: 0.78rem;
-    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 1.4;
+    letter-spacing: 0.14em;
+    color: var(--stage-ink);
   }
   .stage :global(.lbl-sub) {
-    max-width: 11rem;
+    max-width: 13rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: var(--stage-soft);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
   }
   .stage :global(.lbl-level) {
-    color: var(--stage-soft);
     font-size: 0.7rem;
     font-weight: 700;
+  }
+  .stage :global(.lbl-anchor) {
+    color: var(--stage-ink);
+    font-size: 0.8rem;
+    letter-spacing: 0.34em;
+  }
+  .stage :global(.lbl-shell) {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
   }
   .stage :global(.lbl-state) {
     padding: 0 0.3rem;
     border-radius: 0.2rem;
-    background: rgb(11 16 32 / 0.78);
+    background: rgb(11 13 18 / 0.78);
     font-weight: 600;
+    letter-spacing: 0.06em;
   }
   .stage :global(.lbl-held) {
     color: #ffc247;
@@ -204,9 +283,10 @@
     padding: 0.1rem 0.4rem;
     border-radius: 0.25rem;
     background: #fff;
-    color: #0b1020;
+    color: #0b0d12;
     text-shadow: none;
     font-weight: 700;
+    letter-spacing: 0.06em;
   }
   .stage :global(.mark) {
     position: absolute;
@@ -241,7 +321,7 @@
     padding: 0.4rem 0.6rem;
     border: 1px solid var(--stage-line);
     border-radius: 0.35rem;
-    background: rgb(11 16 32 / 0.94);
+    background: rgb(11 13 18 / 0.94);
     font-size: 0.8rem;
     pointer-events: none;
   }
@@ -260,7 +340,7 @@
     height: 2.75rem;
     border: 1px solid var(--stage-line);
     border-radius: 0.4rem;
-    background: rgb(11 16 32 / 0.85);
+    background: rgb(11 13 18 / 0.85);
     color: var(--stage-ink);
     font-size: 1.3rem;
     line-height: 1;
@@ -299,5 +379,32 @@
   }
   .key .dot {
     background: var(--stage-ink);
+  }
+  /* A management role: an ordinary point in a wide, faint glow. */
+  .key .haze {
+    background: radial-gradient(
+      circle,
+      var(--stage-ink) 0 22%,
+      rgb(220 230 247 / 0.32) 36%,
+      transparent 70%
+    );
+    width: 1rem;
+    height: 1rem;
+    margin: -0.15rem 0.2rem -0.15rem -0.15rem;
+  }
+  /* A role without demand data: pale and grey. */
+  .key .ghost {
+    background: color-mix(in srgb, var(--stage-soft) 55%, transparent);
+  }
+  .key .glyph {
+    width: 1.1rem;
+    height: 1.1rem;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+  }
+  .key.branches {
+    border-top: 0;
+    padding-top: 0;
+    font-size: 0.75rem;
   }
 </style>

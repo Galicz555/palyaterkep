@@ -2,22 +2,18 @@
 // draw call for every node, one LineSegments for every edge, OrbitControls, screen-space picking,
 // labels as DOM elements placed from the projected positions, frames drawn on demand.
 //
-// What changed: the scene is the semantic layout (lib/layout.ts) instead of a sphere of projects;
-// nodes carry a state (held / covered / reachable) as colour, size and halo, because filtering
-// hides and the map needs to show what a CV reads as; pan and zoom-to-cursor, because the roles
-// are many and small; focus(branch) flies to a sector; nothing spins, and nothing is drawn while
-// nothing moves. The GPU-yielding and the decorative sphere, rings and stars are gone.
+// What changed: the scene is a layout (lib/arrange.ts) instead of a sphere of projects, and the map
+// morphs from one layout to the next; nodes carry a state (held / covered / reachable) as colour,
+// size and halo, because filtering hides and the map needs to show what a CV reads as, and a
+// management role a soft haze; pan and zoom-to-cursor, because the roles are many and small;
+// focus(branch) flies to a sector or frames the branch's points; nothing spins, and nothing is
+// drawn while nothing moves. The GPU-yielding and the decorative stars are gone.
 
 import {
-  AdditiveBlending,
   BufferAttribute,
   BufferGeometry,
   Color,
-  Float32BufferAttribute,
-  LineBasicMaterial,
   LineSegments,
-  Mesh,
-  MeshBasicMaterial,
   PerspectiveCamera,
   Points,
   Scene,
@@ -26,10 +22,13 @@ import {
   WebGLRenderer,
 } from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import { ground, R_HOLE, R_OUT, TRACK_HEIGHT, type Layout } from "../layout.ts";
+import { R_HOLE, R_OUT, ground } from "../layout.ts";
+import type { Arrangement } from "../arrange.ts";
 import type { MapData } from "../model.ts";
 import { BG, branchColor, MARK, MARK_COLOR } from "../palette.ts";
 import { capitalise } from "../text.ts";
+import { buildFrame, el, type Frame, type FrameCtx, type Spot } from "./frames.ts";
+import { ADD, EDGE_FRAG, EDGE_VERT, NODE_FRAG, NODE_VERT } from "./shaders.ts";
 
 export interface MapHooks {
   onSelect(index: number | null): void;
@@ -50,6 +49,8 @@ export interface MapView {
   /** Roles with a 0 are pushed back; `null` shows all. */
   setFilter(pass: Uint8Array | null): void;
   select(index: number | null): void;
+  /** Morphs the points, the frame and the camera to another layout. */
+  setLayout(next: Arrangement): void;
   /** Fly to a branch (index into `MapData.branches`), or back to the whole map for `null`. */
   focus(branch: number | null): void;
   zoomBy(factor: number): void;
@@ -57,6 +58,8 @@ export interface MapView {
   destroy(): void;
   /** Draws `frames` frames while turning the camera, waiting for the GPU after each. */
   benchmark(frames: number): Promise<BenchResult>;
+  /** Where role `index` is on the screen, in pixels inside the stage; null behind the camera. */
+  where(index: number): [number, number] | null;
 }
 
 const FOV = 38;
@@ -65,95 +68,29 @@ const TAU = Math.PI * 2;
 const NODE_D = 1.5;
 /** Smallest node on screen, in CSS pixels, so the far ones stay visible. */
 const MIN_PX = 3;
-const POLAR = (46 * Math.PI) / 180;
 const MIN_DIST = 14;
 const MAX_DIST = 900;
 const TWEEN_MS = 420;
-/** A sub-branch gets its name on the rim once its slice is this wide on screen. */
-const SUB_LABEL_PX = 24;
+/** The points, the frame and the camera take this long to settle into another layout. */
+const MORPH_MS = 800;
+/** A flat layout keeps the camera above the ground. */
+const FLAT_POLAR = (84 * Math.PI) / 180;
 /** Height of a role name on the map, for keeping them from overlapping. */
 const LABEL_H = 18;
 
-const NODE_VERT = /* glsl */ `
-attribute float aSize; attribute float aAlpha; attribute float aShape; attribute float aMark; attribute vec3 aColor;
-uniform float uScale; uniform float uPR; uniform float uNear; uniform float uSpan; uniform float uMinPx;
-varying vec3 vColor; varying float vAlpha; varying float vShape; varying float vMark; varying float vPx;
-#define BODY 0.6
-void main() {
-  vec4 mv = modelViewMatrix * vec4(position, 1.0);
-  float depth = clamp((-mv.z - uNear) / uSpan, 0.0, 1.0);
-  vAlpha = aAlpha * mix(1.0, 0.72, depth);
-  vColor = aColor; vShape = aShape; vMark = aMark;
-  float px = min(max(aSize * uScale / -mv.z, uMinPx) * uPR / BODY, 240.0);
-  vPx = px;
-  gl_PointSize = px;
-  gl_Position = projectionMatrix * mv;
-}`;
-const NODE_FRAG = /* glsl */ `
-precision highp float;
-varying vec3 vColor; varying float vAlpha; varying float vShape; varying float vMark; varying float vPx;
-#define R 0.6
-void main() {
-  vec2 p = gl_PointCoord * 2.0 - 1.0;
-  float l = length(p);
-  float aa = 1.2 / vPx;
-  float body;
-  if (vShape < 0.5) {
-    body = 1.0 - smoothstep(R - aa, R + aa, l);
-  } else {
-    float w = max(0.12, 2.4 / vPx);
-    body = 1.0 - smoothstep(-aa, aa, abs(l - (R - w)) - w);
-  }
-  float halo = exp(-max(l - R, 0.0) * 7.0) * (0.1 + vMark);
-  float core = vMark * (1.0 - smoothstep(0.0, R * 0.7, l));
-  vec3 col = mix(vColor, vec3(1.0), core * 0.55);
-  float a = body + halo + core * 0.6;
-  a *= 1.0 - smoothstep(0.82, 1.0, l);
-  gl_FragColor = vec4(col, clamp(a, 0.0, 1.0) * vAlpha);
-}`;
-const EDGE_VERT = /* glsl */ `
-attribute float aAlpha; attribute vec3 aColor; varying vec3 vColor; varying float vAlpha;
-void main() {
-  vColor = aColor; vAlpha = aAlpha;
-  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-}`;
-const EDGE_FRAG = /* glsl */ `precision highp float; varying vec3 vColor; varying float vAlpha;
-void main() { gl_FragColor = vec4(vColor, vAlpha); }`;
-
-const ADD = {
-  transparent: true,
-  depthWrite: false,
-  depthTest: false,
-  blending: AdditiveBlending,
-};
-
-const el = (tag: string, cls: string, text?: string) => {
-  const e = document.createElement(tag);
-  e.className = cls;
-  if (text !== undefined) e.textContent = text;
-  return e;
-};
+const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const ease = (t: number) => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
 
 const mix = (a: Color, b: Color, t: number) => new Color().copy(a).lerp(b, t);
 const GREY = new Color("#7d8aa3");
-const EDGE_COLOR = new Color("#6f86b8");
 const SELECT_COLOR = new Color("#ffffff");
-
-interface Pin {
-  e: HTMLElement;
-  /** Where on the map it hangs. */
-  at: Vector3;
-  /** Own size in pixels, measured once it is first placed. */
-  w?: number;
-  h?: number;
-}
 
 /** Null when this browser cannot make a WebGL context. */
 export function createMap(
   stage: HTMLElement,
   data: MapData,
-  plan: Layout,
   hooks: MapHooks,
+  first: Arrangement,
 ): MapView | null {
   let renderer: WebGLRenderer;
   try {
@@ -189,90 +126,67 @@ export function createMap(
   controls.zoomToCursor = true;
   controls.minDistance = MIN_DIST;
   controls.maxDistance = MAX_DIST;
-  controls.maxPolarAngle = (84 * Math.PI) / 180;
+  controls.maxPolarAngle = first.free ? Math.PI : FLAT_POLAR;
   controls.listenToKeyEvents(canvas);
   controls.keyPanSpeed = 14;
 
   const { roles } = data;
   const N = roles.length;
   const nBranches = data.branches.length;
-  const floorY = -TRACK_HEIGHT / 2 - 1.5;
+  let arr = first;
 
-  // Scenery: the floor tinted by sub-branch, lane and sector lines, drawn once. -----------------
-  const bg = new Color(BG);
-  const floorPos: number[] = [];
-  const floorCol: number[] = [];
-  const guide: number[] = [];
-  /** The angle in the middle of the empty strip before sector `b`. */
-  const gapBefore = (b: number) => {
-    const prev = plan.branches[(b + nBranches - 1) % nBranches]!;
-    return (plan.branches[b]!.start + prev.end - (b === 0 ? TAU : 0)) / 2;
-  };
-  const quad = (a0: number, a1: number, r0: number, r1: number, c: Color) => {
-    const p = (a: number, r: number) => ground(a, r);
-    const [x00, z00] = p(a0, r0);
-    const [x01, z01] = p(a0, r1);
-    const [x10, z10] = p(a1, r0);
-    const [x11, z11] = p(a1, r1);
-    floorPos.push(x00, floorY, z00, x01, floorY, z01, x11, floorY, z11);
-    floorPos.push(x00, floorY, z00, x11, floorY, z11, x10, floorY, z10);
-    for (let k = 0; k < 6; k++) floorCol.push(c.r, c.g, c.b);
-  };
-  plan.branches.forEach((sector, b) => {
-    sector.subs.forEach((slice, s) => {
-      const tint = mix(bg, new Color(branchColor(b, nBranches, s)), s % 2 ? 0.17 : 0.1);
-      const steps = Math.max(1, Math.ceil((slice.end - slice.start) / ((2 * Math.PI) / 180)));
-      for (let k = 0; k < steps; k++) {
-        const a0 = slice.start + ((slice.end - slice.start) * k) / steps;
-        const a1 = slice.start + ((slice.end - slice.start) * (k + 1)) / steps;
-        quad(a0, a1, R_HOLE - 0.6, R_OUT + 0.6, tint);
-      }
-    });
-    // Sector lines, in the middle of the gap before each sector.
-    const [x0, z0] = ground(gapBefore(b), R_HOLE - 0.6);
-    const [x1, z1] = ground(gapBefore(b), R_OUT + 0.6);
-    guide.push(x0, floorY, z0, x1, floorY, z1);
-  });
-  const ringAt = (r: number) => {
-    for (let k = 0; k < 180; k++) {
-      const [x0, z0] = ground((k / 180) * TAU, r);
-      const [x1, z1] = ground(((k + 1) / 180) * TAU, r);
-      guide.push(x0, floorY, z0, x1, floorY, z1);
-    }
-  };
-  ringAt(R_HOLE - 0.6);
-  ringAt(R_OUT + 0.6);
-  plan.lanes.slice(0, -1).forEach((lane, k) => ringAt((lane.end + plan.lanes[k + 1]!.start) / 2));
-  const floorGeo = new BufferGeometry();
-  floorGeo.setAttribute("position", new Float32BufferAttribute(floorPos, 3));
-  floorGeo.setAttribute("color", new Float32BufferAttribute(floorCol, 3));
-  const floor = new Mesh(floorGeo, new MeshBasicMaterial({ vertexColors: true, depthTest: false }));
-  floor.renderOrder = 0;
-  const guideGeo = new BufferGeometry();
-  guideGeo.setAttribute("position", new Float32BufferAttribute(guide, 3));
-  const lines = new LineSegments(
-    guideGeo,
-    new LineBasicMaterial({ color: 0x3a4d7a, transparent: true, opacity: 0.55, depthTest: false }),
-  );
-  lines.renderOrder = 1;
-  scene.add(floor, lines);
-
-  // Nodes and edges. ------------------------------------------------------------------------------
-  const base: Color[] = roles.map((r) => new Color(branchColor(r.branch, nBranches, r.sub)));
+  // Nodes and edges. Both hold two positions and a morph weight: `position` is where they were,
+  // `aTo` where they are going, `uMorph` how far along. `cur` is where each node is right now, for
+  // picking and labels.
+  const branchBase = roles.map((r) => new Color(branchColor(r.branch, nBranches, r.sub)));
+  /** What each role is painted when nothing marks it: the branch's colour, or the layout's own. */
+  const base: Color[] = branchBase.map((c) => c.clone());
+  const recolour = (a: Arrangement) =>
+    base.forEach((c, i) =>
+      a.colors
+        ? c.setRGB(a.colors[i * 3]!, a.colors[i * 3 + 1]!, a.colors[i * 3 + 2]!)
+        : c.copy(branchBase[i]!),
+    );
+  recolour(first);
+  const cur = new Float32Array(first.positions);
+  const nodeFrom = new BufferAttribute(new Float32Array(first.positions), 3);
+  const nodeTo = new BufferAttribute(new Float32Array(first.positions), 3);
   const nodeGeo = new BufferGeometry();
-  nodeGeo.setAttribute("position", new BufferAttribute(plan.positions, 3));
+  nodeGeo.setAttribute("position", nodeFrom);
+  nodeGeo.setAttribute("aTo", nodeTo);
   const aColor = new BufferAttribute(new Float32Array(N * 3), 3);
   const aSize = new BufferAttribute(new Float32Array(N), 1);
+  const aSizeFrom = new BufferAttribute(new Float32Array(N), 1);
+  const aColorFrom = new BufferAttribute(new Float32Array(N * 3), 3);
+  const aArms = new BufferAttribute(new Float32Array(N * 3), 3);
+  const aArmsFrom = new BufferAttribute(new Float32Array(N * 3), 3);
   const aAlpha = new BufferAttribute(new Float32Array(N), 1);
   const aMark = new BufferAttribute(new Float32Array(N), 1);
   const aShape = new BufferAttribute(new Float32Array(N), 1);
-  roles.forEach((r, i) => aShape.setX(i, r.curated ? 0 : 1));
+  const aManage = new BufferAttribute(new Float32Array(N), 1);
+  roles.forEach((r, i) => {
+    aShape.setX(i, r.curated ? 0 : 1);
+    aManage.setX(i, r.management ? 1 : 0);
+  });
   nodeGeo.setAttribute("aColor", aColor);
   nodeGeo.setAttribute("aSize", aSize);
+  nodeGeo.setAttribute("aSizeFrom", aSizeFrom);
+  nodeGeo.setAttribute("aColorFrom", aColorFrom);
+  nodeGeo.setAttribute("aArms", aArms);
+  nodeGeo.setAttribute("aArmsFrom", aArmsFrom);
+  /** The three arms of every role's star, where the layout draws stars: else none. */
+  const growArms = (a: Arrangement) => {
+    (aArms.array as Float32Array).set(a.arms ?? new Float32Array(N * 3));
+    aArms.needsUpdate = true;
+  };
+  growArms(first);
+  (aArmsFrom.array as Float32Array).set(aArms.array);
   nodeGeo.setAttribute("aAlpha", aAlpha);
   nodeGeo.setAttribute("aMark", aMark);
   nodeGeo.setAttribute("aShape", aShape);
+  nodeGeo.setAttribute("aManage", aManage);
   const uniforms = {
+    uMorph: { value: 1 },
     uScale: { value: 1000 },
     uPR: { value: 1 },
     uNear: { value: 100 },
@@ -287,25 +201,29 @@ export function createMap(
   nodes.renderOrder = 3;
 
   const edges: [number, number][] = [...data.lateral, ...data.progression];
-  const edgeAt = new Map<string, number[]>();
-  edges.forEach(([a, b], k) => {
-    const key = `${Math.min(a, b)}:${Math.max(a, b)}`;
-    edgeAt.set(key, [...(edgeAt.get(key) ?? []), k]);
-  });
-  const edgePos = new Float32Array(edges.length * 6);
-  edges.forEach(([a, b], k) => {
-    edgePos.set(plan.positions.subarray(a * 3, a * 3 + 3), k * 6);
-    edgePos.set(plan.positions.subarray(b * 3, b * 3 + 3), k * 6 + 3);
-  });
+  const edgeFrom = new BufferAttribute(new Float32Array(edges.length * 6), 3);
+  const edgeTo = new BufferAttribute(new Float32Array(edges.length * 6), 3);
+  /** Both ends of every edge, from the positions of the nodes. */
+  const edgeEnds = (positions: Float32Array, out: BufferAttribute) => {
+    const array = out.array as Float32Array;
+    edges.forEach(([a, b], k) => {
+      array.set(positions.subarray(a * 3, a * 3 + 3), k * 6);
+      array.set(positions.subarray(b * 3, b * 3 + 3), k * 6 + 3);
+    });
+    out.needsUpdate = true;
+  };
+  edgeEnds(first.positions, edgeFrom);
+  edgeEnds(first.positions, edgeTo);
   const eColor = new BufferAttribute(new Float32Array(edges.length * 6), 3);
   const eAlpha = new BufferAttribute(new Float32Array(edges.length * 2), 1);
   const edgeGeo = new BufferGeometry();
-  edgeGeo.setAttribute("position", new BufferAttribute(edgePos, 3));
+  edgeGeo.setAttribute("position", edgeFrom);
+  edgeGeo.setAttribute("aTo", edgeTo);
   edgeGeo.setAttribute("aColor", eColor);
   edgeGeo.setAttribute("aAlpha", eAlpha);
   const edgeLines = new LineSegments(
     edgeGeo,
-    new ShaderMaterial({ vertexShader: EDGE_VERT, fragmentShader: EDGE_FRAG, ...ADD }),
+    new ShaderMaterial({ uniforms, vertexShader: EDGE_VERT, fragmentShader: EDGE_FRAG, ...ADD }),
   );
   edgeLines.frustumCulled = false;
   edgeLines.renderOrder = 2;
@@ -323,6 +241,9 @@ export function createMap(
   let pass: Uint8Array | null = null;
   let selected = -1;
   let hovered = -1;
+  let focused: number | null = null;
+  /** A role without demand data is drawn as a pale ghost, so it reads as no data, not balanced. */
+  const noData = roles.map((r) => r.demands === null);
   const heldColor = new Color(MARK_COLOR.held);
   const coveredColor = new Color(MARK_COLOR.covered);
   const reachColor = new Color(MARK_COLOR.reachable);
@@ -331,28 +252,31 @@ export function createMap(
     const spotlight = selected >= 0 ? neighbours[selected]! : null;
     for (let i = 0; i < N; i++) {
       let color = base[i]!;
-      let size = NODE_D;
-      let alpha = 0.78;
+      let size = NODE_D * (arr.sizes?.[i] ?? 1);
+      let alpha = arr.alpha;
       let mark = 0;
       const m = marks?.[i] ?? MARK.none;
       if (m === MARK.held) {
         color = heldColor;
-        size *= 2.7;
+        size = NODE_D * 2.7;
         mark = 1;
         alpha = 1;
       } else if (m === MARK.covered) {
         color = coveredColor;
-        size *= 2.1;
+        size = NODE_D * 2.1;
         mark = 0.75;
         alpha = 1;
       } else if (m === MARK.reachable) {
         color = reachColor;
-        size *= 1.9;
+        size = NODE_D * 1.9;
         mark = 0.6;
         alpha = 1;
       } else if (marks) {
         color = mix(base[i]!, GREY, 0.6);
         alpha = 0.22;
+      } else if (noData[i]) {
+        color = mix(base[i]!, GREY, 0.7);
+        alpha = 0.55;
       }
       if (pass && !pass[i]) {
         alpha *= 0.16;
@@ -360,7 +284,7 @@ export function createMap(
       }
       if (spotlight && !m && i !== selected && !spotlight.has(i)) alpha *= 0.45;
       if (i === selected) {
-        size *= 1.5;
+        size = Math.max(size * 1.5, NODE_D * 1.8);
         mark = 1;
         alpha = 1;
       }
@@ -377,9 +301,10 @@ export function createMap(
       const picked = selected >= 0 && (a === selected || b === selected);
       const stepped = reachKeys.has(`${Math.min(a, b)}:${Math.max(a, b)}`);
       const hidden = pass && !(pass[a] && pass[b]);
-      const color = picked ? SELECT_COLOR : stepped ? reachColor : EDGE_COLOR;
       const alpha = picked ? 0.8 : stepped ? 0.6 : hidden ? 0.004 : marks ? 0.012 : 0.03;
+      // An ordinary edge runs from one end's branch colour to the other's.
       for (const v of [0, 1]) {
+        const color = picked ? SELECT_COLOR : stepped ? reachColor : base[v === 0 ? a : b]!;
         eColor.setXYZ(k * 2 + v, color.r, color.g, color.b);
         eAlpha.setX(k * 2 + v, alpha);
       }
@@ -388,28 +313,10 @@ export function createMap(
     request();
   }
 
-  // Labels. ---------------------------------------------------------------------------------------
-  const branchPins: Pin[] = data.branches.map((branch, b) => {
-    const sector = plan.branches[b]!;
-    const [x, z] = ground((sector.start + sector.end) / 2, R_OUT + 5);
-    const e = el("div", "lbl lbl-branch", branch.label);
-    layer.append(e);
-    return { e, at: new Vector3(x, floorY, z) };
-  });
-  const subPins = data.branches.flatMap((branch, b) =>
-    branch.subBranches.map((sub, s) => {
-      const slice = plan.branches[b]!.subs[s]!;
-      const e = el("div", "lbl lbl-sub", sub.label);
-      layer.append(e);
-      return { e, b, s, mid: (slice.start + slice.end) / 2, slice };
-    }),
-  );
-  const levelPins: Pin[] = plan.lanes.map((lane, k) => {
-    const [x, z] = ground(gapBefore(0), (lane.start + lane.end) / 2);
-    const e = el("div", "lbl lbl-level", String(k + 1));
-    layer.append(e);
-    return { e, at: new Vector3(x, floorY, z) };
-  });
+  // The frame around the points, and the labels of the roles the CV marks. ------------------------
+  const host = { scene, layer, uniforms };
+  let frame: Frame = buildFrame(first.frame, data, host);
+  let leaving: Frame | null = null;
   let markPins: { e: HTMLElement; i: number; rank: number; w?: number }[] = [];
   const selectPin = el("div", "lbl lbl-pick");
   selectPin.hidden = true;
@@ -437,26 +344,26 @@ export function createMap(
   let W = 1;
   let H = 1;
   const tanHalf = Math.tan((FOV * Math.PI) / 360);
-  const wholeView = () => {
-    // The disc and the branch names beyond its rim, wide and (tilted) tall, with some perspective.
-    const extent = R_OUT + 34;
-    const aspect = W / H;
-    const across = (extent * 1.1) / (tanHalf * aspect);
-    const along = (extent * Math.cos(POLAR) * 1.15 + 10) / (tanHalf * 0.95);
-    return { x: 0, z: 0, az: 0, pol: POLAR, dist: Math.min(MAX_DIST, Math.max(across, along)) };
-  };
   interface View {
     x: number;
+    y: number;
     z: number;
     az: number;
     pol: number;
     dist: number;
   }
+  /** The layout's opening view, with the distance that shows what it asks to see. */
+  const homeView = (): View => {
+    const { target, az, pol, fit } = arr.home;
+    const dist = Math.max(fit[0] / (tanHalf * (W / H)), fit[1] / tanHalf);
+    return { x: target[0], y: target[1], z: target[2], az, pol, dist: Math.min(MAX_DIST, dist) };
+  };
   function readView(): View {
     const off = new Vector3().subVectors(camera.position, controls.target);
     const dist = off.length();
     return {
       x: controls.target.x,
+      y: controls.target.y,
       z: controls.target.z,
       az: Math.atan2(off.x, off.z),
       pol: Math.acos(Math.min(1, Math.max(-1, off.y / dist))),
@@ -464,41 +371,96 @@ export function createMap(
     };
   }
   function setView(v: View) {
-    controls.target.set(v.x, 0, v.z);
+    controls.target.set(v.x, v.y, v.z);
     camera.position.set(
       v.x + v.dist * Math.sin(v.pol) * Math.sin(v.az),
-      v.dist * Math.cos(v.pol),
+      v.y + v.dist * Math.cos(v.pol),
       v.z + v.dist * Math.sin(v.pol) * Math.cos(v.az),
     );
     camera.lookAt(controls.target);
   }
-  let tween: { from: View; to: View; start: number } | null = null;
-  function flyTo(to: View) {
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) {
+  let tween: {
+    from: View;
+    to: View;
+    start: number;
+    ms: number;
+    done: (() => void) | undefined;
+  } | null = null;
+  function flyTo(to: View, ms = TWEEN_MS, done?: () => void) {
+    if (reducedMotion()) {
       tween = null;
       setView(to);
       controls.update();
+      done?.();
     } else {
-      tween = { from: readView(), to, start: performance.now() };
+      tween = { from: readView(), to, start: performance.now(), ms, done };
     }
     request();
   }
   function stepTween(now: number) {
     if (!tween) return;
-    const t = Math.min(1, (now - tween.start) / TWEEN_MS);
-    const e = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    const t = Math.min(1, (now - tween.start) / tween.ms);
+    const e = ease(t);
     const { from, to } = tween;
     let da = to.az - from.az;
     da -= TAU * Math.round(da / TAU);
     setView({
       x: from.x + (to.x - from.x) * e,
+      y: from.y + (to.y - from.y) * e,
       z: from.z + (to.z - from.z) * e,
       az: from.az + da * e,
       pol: from.pol + (to.pol - from.pol) * e,
       dist: from.dist * Math.pow(to.dist / from.dist, e),
     });
-    if (t >= 1) tween = null;
+    if (t >= 1) {
+      tween.done?.();
+      tween = null;
+    }
+  }
+  /** Where the camera goes to show one branch: its sector on the disc, else its points. */
+  function branchView(branch: number | null): View {
+    if (branch === null) return homeView();
+    const aspect = W / H;
+    if (arr.frame.kind === "disc") {
+      const sector = arr.frame.plan.branches[branch]!;
+      const mid = (sector.start + sector.end) / 2;
+      const chord = Math.max(60, 2 * R_OUT * Math.sin((sector.end - sector.start) / 2));
+      const pol = arr.home.pol;
+      const across = (chord * 1.25) / (2 * tanHalf * aspect);
+      const along = (((R_OUT - R_HOLE) * Math.cos(pol) + 28) * 1.15) / (2 * tanHalf);
+      const [x, z] = ground(mid, (R_HOLE + R_OUT) / 2 + 6);
+      return {
+        x,
+        y: 0,
+        z,
+        az: -mid,
+        pol,
+        dist: Math.min(MAX_DIST, Math.max(MIN_DIST, across, along)),
+      };
+    }
+    // Where the layout puts the branch's points: their middle, and the distance that holds nine in
+    // ten of them (a few strays would otherwise push the camera back), seen from where we look.
+    const mine: number[] = [];
+    roles.forEach((r, i) => {
+      if (r.branch === branch) mine.push(i);
+    });
+    if (mine.length === 0) return homeView();
+    const mean = [0, 1, 2].map(
+      (k) => mine.reduce((sum, i) => sum + arr.positions[i * 3 + k]!, 0) / mine.length,
+    );
+    const away = mine
+      .map((i) => Math.hypot(...[0, 1, 2].map((k) => arr.positions[i * 3 + k]! - mean[k]!)))
+      .sort((p, q) => p - q);
+    const radius = Math.max(8, away[Math.floor(away.length * 0.9)]! * 1.15);
+    const here = readView();
+    return {
+      x: mean[0]!,
+      y: mean[1]!,
+      z: mean[2]!,
+      az: here.az,
+      pol: here.pol,
+      dist: Math.min(MAX_DIST, Math.max(MIN_DIST, radius / (tanHalf * Math.min(1, aspect)))),
+    };
   }
   let fitted = false;
   function resize() {
@@ -516,7 +478,7 @@ export function createMap(
     uniforms.uPR.value = pr;
     if (!fitted) {
       fitted = true;
-      setView(wholeView());
+      setView(homeView());
       controls.update();
     }
     projDirty = true;
@@ -525,6 +487,71 @@ export function createMap(
   const observer = new ResizeObserver(resize);
   observer.observe(stage);
 
+  // Morph: the points, and the frame around them, move from one layout to the next. ---------------
+  let morph: { start: number } | null = null;
+  function stepMorph(now: number) {
+    if (!morph) return;
+    const t = Math.min(1, (now - morph.start) / MORPH_MS);
+    const e = ease(t);
+    uniforms.uMorph.value = e;
+    const from = nodeFrom.array as Float32Array;
+    const to = nodeTo.array as Float32Array;
+    for (let k = 0; k < cur.length; k++) cur[k] = from[k]! + (to[k]! - from[k]!) * e;
+    frame.fade(e);
+    leaving?.fade(1 - e);
+    if (t >= 1) {
+      morph = null;
+      leaving?.dispose();
+      leaving = null;
+    }
+    projDirty = true;
+  }
+  function setLayout(next: Arrangement) {
+    if (next === arr) return;
+    const sameLayout = next.id === arr.id;
+    // From where the points are right now, even in the middle of another morph; their sizes
+    // and colours go from what they show now.
+    (aSizeFrom.array as Float32Array).set(aSize.array);
+    (aColorFrom.array as Float32Array).set(aColor.array);
+    (aArmsFrom.array as Float32Array).set(aArms.array);
+    aSizeFrom.needsUpdate = aColorFrom.needsUpdate = aArmsFrom.needsUpdate = true;
+    (nodeFrom.array as Float32Array).set(cur);
+    (nodeTo.array as Float32Array).set(next.positions);
+    nodeFrom.needsUpdate = nodeTo.needsUpdate = true;
+    edgeEnds(cur, edgeFrom);
+    edgeEnds(next.positions, edgeTo);
+    leaving?.dispose();
+    leaving = frame;
+    arr = next;
+    recolour(next);
+    growArms(next);
+    paint();
+    frame = buildFrame(next.frame, data, host);
+    if (reducedMotion()) {
+      cur.set(next.positions);
+      uniforms.uMorph.value = 1;
+      leaving.dispose();
+      leaving = null;
+      frame.fade(1);
+      morph = null;
+    } else {
+      uniforms.uMorph.value = 0;
+      frame.fade(0);
+      morph = { start: performance.now() };
+    }
+    if (next.free) controls.maxPolarAngle = Math.PI;
+    // Staying in one layout (B with another demand) keeps the camera where the person put it.
+    if (!sameLayout) {
+      flyTo(
+        branchView(focused),
+        MORPH_MS,
+        next.free ? undefined : () => (controls.maxPolarAngle = FLAT_POLAR),
+      );
+    }
+    projDirty = true;
+    request();
+  }
+
   // Projection and picking: screen positions of every node, only when the camera moved. ----------
   const sx = new Float32Array(N);
   const sy = new Float32Array(N);
@@ -532,7 +559,7 @@ export function createMap(
   const sr = new Float32Array(N);
   let projDirty = true;
   const v = new Vector3();
-  function project(x: number, y: number, z: number, out: { x: number; y: number; d: number }) {
+  function project(x: number, y: number, z: number, out: Spot) {
     v.set(x, y, z);
     const d = v.distanceTo(camera.position);
     v.project(camera);
@@ -540,14 +567,14 @@ export function createMap(
     out.y = (-v.y * 0.5 + 0.5) * H;
     out.d = v.z > 1 ? -1 : d;
   }
-  const tmp = { x: 0, y: 0, d: 0 };
+  const tmp: Spot = { x: 0, y: 0, d: 0 };
   function ensureProjected() {
     if (!projDirty) return;
     projDirty = false;
     camera.updateMatrixWorld();
     const px = H / (2 * tanHalf);
     for (let i = 0; i < N; i++) {
-      project(plan.positions[i * 3]!, plan.positions[i * 3 + 1]!, plan.positions[i * 3 + 2]!, tmp);
+      project(cur[i * 3]!, cur[i * 3 + 1]!, cur[i * 3 + 2]!, tmp);
       sx[i] = tmp.x;
       sy[i] = tmp.y;
       sd[i] = tmp.d;
@@ -613,19 +640,18 @@ export function createMap(
   let raf = 0;
   let destroyed = false;
   function request() {
-    if (!raf && !destroyed) raf = requestAnimationFrame(frame);
+    if (!raf && !destroyed) raf = requestAnimationFrame(frameLoop);
   }
-  function frame(now: number) {
+  function frameLoop(now: number) {
     raf = 0;
     if (destroyed || W < 1) return;
     stepTween(now);
+    stepMorph(now);
     const moving = controls.update();
     draw();
-    if (moving || tween) request();
+    if (moving || tween || morph) request();
   }
 
-  const pinPoint = { x: 0, y: 0, d: 0 };
-  const centre = { x: 0, y: 0, d: 0 };
   function placeMark(e: HTMLElement, i: number) {
     if (i < 0 || sd[i]! < 0 || (pass && !pass[i])) {
       e.hidden = true;
@@ -643,69 +669,12 @@ export function createMap(
   function onScreen(x: number, y: number, pad = 24) {
     return x > -pad && x < W + pad && y > -pad && y < H + pad;
   }
+  const frameCtx: FrameCtx = { project, place, onScreen };
 
   /** `zoom` is 1 for the whole map and falls as the camera comes closer. */
   function placeLabels(zoom: number) {
-    // Branch names beyond the rim of their sector, pushed out by their own size so they do not
-    // cover the nodes; they step aside once the sub-branches are named.
-    const far = Math.min(1, Math.max(0, (zoom - 0.55) / 0.3));
-    project(0, floorY, 0, centre);
-    branchPins.forEach((pin) => {
-      project(pin.at.x, pin.at.y, pin.at.z, pinPoint);
-      if (far === 0 || pinPoint.d < 0 || !onScreen(pinPoint.x, pinPoint.y, 60)) {
-        pin.e.style.opacity = "0";
-        return;
-      }
-      if (!pin.w) {
-        pin.w = pin.e.offsetWidth;
-        pin.h = pin.e.offsetHeight;
-      }
-      const dx = pinPoint.x - centre.x;
-      const dy = pinPoint.y - centre.y;
-      const length = Math.hypot(dx, dy) || 1;
-      const push =
-        ((pin.w ?? 0) / 2) * Math.abs(dx / length) + ((pin.h ?? 0) / 2) * Math.abs(dy / length);
-      place(
-        pin.e,
-        pinPoint.x + (dx / length) * push,
-        pinPoint.y + (dy / length) * push,
-        far,
-        " translate(-50%,-50%)",
-      );
-    });
-    // Sub-branch names, radially along the rim, once their slice is wide enough to hold one.
-    for (const pin of subPins) {
-      const [ax, az] = ground(pin.mid, R_OUT + 1.5);
-      const [bx, bz] = ground(pin.mid, R_OUT + 8);
-      const [lx, lz] = ground(pin.slice.start, R_OUT);
-      const [rx, rz] = ground(pin.slice.end, R_OUT);
-      project(lx, floorY, lz, pinPoint);
-      const l = { x: pinPoint.x, y: pinPoint.y };
-      project(rx, floorY, rz, pinPoint);
-      const width = Math.hypot(pinPoint.x - l.x, pinPoint.y - l.y);
-      project(ax, floorY, az, pinPoint);
-      const a = { x: pinPoint.x, y: pinPoint.y, d: pinPoint.d };
-      project(bx, floorY, bz, pinPoint);
-      if (zoom > 0.9 || a.d < 0 || width < SUB_LABEL_PX || !onScreen(a.x, a.y)) {
-        pin.e.style.opacity = "0";
-        continue;
-      }
-      let rot = Math.atan2(pinPoint.y - a.y, pinPoint.x - a.x);
-      const flip = Math.cos(rot) < 0;
-      if (flip) rot += Math.PI;
-      place(
-        pin.e,
-        a.x,
-        a.y,
-        1,
-        ` rotate(${rot.toFixed(3)}rad) translate(${flip ? "-100%" : "0"},-50%)`,
-      );
-    }
-    for (const pin of levelPins) {
-      project(pin.at.x, pin.at.y, pin.at.z, pinPoint);
-      if (pinPoint.d < 0 || !onScreen(pinPoint.x, pinPoint.y)) pin.e.style.opacity = "0";
-      else place(pin.e, pinPoint.x, pinPoint.y, 0.8, " translate(-50%,-50%)");
-    }
+    frame.place(frameCtx, zoom);
+    leaving?.place(frameCtx, zoom);
     // Roles the CV marks get a name when zoomed in, nearest to the top of the list first and
     // never on top of another name.
     const taken: { x0: number; x1: number; y0: number; y1: number }[] = [];
@@ -748,12 +717,11 @@ export function createMap(
 
   function draw() {
     camera.updateMatrixWorld();
-    const dist = camera.position.distanceTo(controls.target);
-    uniforms.uNear.value = Math.max(1, camera.position.length() - R_OUT);
-    uniforms.uSpan.value = R_OUT * 2;
+    uniforms.uNear.value = Math.max(1, camera.position.length() - arr.extent);
+    uniforms.uSpan.value = arr.extent * 2;
     projDirty = true;
     ensureProjected();
-    placeLabels(dist / wholeView().dist);
+    placeLabels(camera.position.distanceTo(controls.target) / homeView().dist);
     placeMark(selectMark, selected);
     placeMark(hoverMark, hovered === selected ? -1 : hovered);
     renderer.render(scene, camera);
@@ -779,36 +747,30 @@ export function createMap(
       selected = index ?? -1;
       paint();
     },
+    setLayout,
     focus(branch) {
-      if (branch === null) return flyTo(wholeView());
-      const sector = plan.branches[branch]!;
-      const mid = (sector.start + sector.end) / 2;
-      const chord = Math.max(60, 2 * R_OUT * Math.sin((sector.end - sector.start) / 2));
-      const aspect = W / H;
-      const across = (chord * 1.25) / (2 * tanHalf * aspect);
-      const along = (((R_OUT - R_HOLE) * Math.cos(POLAR) + 28) * 1.15) / (2 * tanHalf);
-      const [x, z] = ground(mid, (R_HOLE + R_OUT) / 2 + 6);
-      flyTo({
-        x,
-        z,
-        az: -mid,
-        pol: POLAR,
-        dist: Math.min(MAX_DIST, Math.max(MIN_DIST, across, along)),
-      });
+      focused = branch;
+      flyTo(branchView(branch));
     },
     zoomBy(factor) {
       const now = readView();
       flyTo({ ...now, dist: Math.min(MAX_DIST, Math.max(MIN_DIST, now.dist / factor)) });
     },
     resize,
+    where(index) {
+      ensureProjected();
+      return sd[index]! < 0 ? null : [sx[index]!, sy[index]!];
+    },
     destroy() {
       destroyed = true;
       cancelAnimationFrame(raf);
       observer.disconnect();
       keyOff();
       controls.dispose();
+      frame.dispose();
+      leaving?.dispose();
       scene.traverse((o) => {
-        const mesh = o as Mesh;
+        const mesh = o as Points;
         mesh.geometry?.dispose();
         for (const m of [mesh.material].flat()) m?.dispose();
       });
