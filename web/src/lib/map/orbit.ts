@@ -147,6 +147,8 @@ export function createMap(
   nodeGeo.setAttribute("aTo", nodeTo);
   const aColor = new BufferAttribute(new Float32Array(N * 3), 3);
   const aSize = new BufferAttribute(new Float32Array(N), 1);
+  const aSizeFrom = new BufferAttribute(new Float32Array(N), 1);
+  const aColorFrom = new BufferAttribute(new Float32Array(N * 3), 3);
   const aAlpha = new BufferAttribute(new Float32Array(N), 1);
   const aMark = new BufferAttribute(new Float32Array(N), 1);
   const aShape = new BufferAttribute(new Float32Array(N), 1);
@@ -157,6 +159,8 @@ export function createMap(
   });
   nodeGeo.setAttribute("aColor", aColor);
   nodeGeo.setAttribute("aSize", aSize);
+  nodeGeo.setAttribute("aSizeFrom", aSizeFrom);
+  nodeGeo.setAttribute("aColorFrom", aColorFrom);
   nodeGeo.setAttribute("aAlpha", aAlpha);
   nodeGeo.setAttribute("aMark", aMark);
   nodeGeo.setAttribute("aShape", aShape);
@@ -218,6 +222,8 @@ export function createMap(
   let selected = -1;
   let hovered = -1;
   let focused: number | null = null;
+  /** A role without demand data is drawn as a pale ghost, so it reads as no data, not balanced. */
+  const noData = roles.map((r) => r.demands === null);
   const heldColor = new Color(MARK_COLOR.held);
   const coveredColor = new Color(MARK_COLOR.covered);
   const reachColor = new Color(MARK_COLOR.reachable);
@@ -226,28 +232,31 @@ export function createMap(
     const spotlight = selected >= 0 ? neighbours[selected]! : null;
     for (let i = 0; i < N; i++) {
       let color = base[i]!;
-      let size = NODE_D;
-      let alpha = 0.78;
+      let size = NODE_D * (arr.sizes?.[i] ?? 1);
+      let alpha = arr.alpha;
       let mark = 0;
       const m = marks?.[i] ?? MARK.none;
       if (m === MARK.held) {
         color = heldColor;
-        size *= 2.7;
+        size = NODE_D * 2.7;
         mark = 1;
         alpha = 1;
       } else if (m === MARK.covered) {
         color = coveredColor;
-        size *= 2.1;
+        size = NODE_D * 2.1;
         mark = 0.75;
         alpha = 1;
       } else if (m === MARK.reachable) {
         color = reachColor;
-        size *= 1.9;
+        size = NODE_D * 1.9;
         mark = 0.6;
         alpha = 1;
       } else if (marks) {
         color = mix(base[i]!, GREY, 0.6);
         alpha = 0.22;
+      } else if (noData[i]) {
+        color = mix(base[i]!, GREY, 0.7);
+        alpha = 0.55;
       }
       if (pass && !pass[i]) {
         alpha *= 0.16;
@@ -255,7 +264,7 @@ export function createMap(
       }
       if (spotlight && !m && i !== selected && !spotlight.has(i)) alpha *= 0.45;
       if (i === selected) {
-        size *= 1.5;
+        size = Math.max(size * 1.5, NODE_D * 1.8);
         mark = 1;
         alpha = 1;
       }
@@ -409,30 +418,28 @@ export function createMap(
         dist: Math.min(MAX_DIST, Math.max(MIN_DIST, across, along)),
       };
     }
-    // Where the layout puts the branch's points: their bounding sphere, seen from where we look.
-    const lo = [Infinity, Infinity, Infinity];
-    const hi = [-Infinity, -Infinity, -Infinity];
+    // Where the layout puts the branch's points: their middle, and the distance that holds nine in
+    // ten of them (a few strays would otherwise push the camera back), seen from where we look.
+    const mine: number[] = [];
     roles.forEach((r, i) => {
-      if (r.branch !== branch) return;
-      for (let k = 0; k < 3; k++) {
-        const c = arr.positions[i * 3 + k]!;
-        lo[k] = Math.min(lo[k]!, c);
-        hi[k] = Math.max(hi[k]!, c);
-      }
+      if (r.branch === branch) mine.push(i);
     });
-    if (!Number.isFinite(lo[0]!)) return homeView();
-    const radius = Math.max(8, Math.hypot(hi[0]! - lo[0]!, hi[1]! - lo[1]!, hi[2]! - lo[2]!) / 2);
+    if (mine.length === 0) return homeView();
+    const mean = [0, 1, 2].map(
+      (k) => mine.reduce((sum, i) => sum + arr.positions[i * 3 + k]!, 0) / mine.length,
+    );
+    const away = mine
+      .map((i) => Math.hypot(...[0, 1, 2].map((k) => arr.positions[i * 3 + k]! - mean[k]!)))
+      .sort((p, q) => p - q);
+    const radius = Math.max(8, away[Math.floor(away.length * 0.9)]! * 1.15);
     const here = readView();
     return {
-      x: (lo[0]! + hi[0]!) / 2,
-      y: (lo[1]! + hi[1]!) / 2,
-      z: (lo[2]! + hi[2]!) / 2,
+      x: mean[0]!,
+      y: mean[1]!,
+      z: mean[2]!,
       az: here.az,
       pol: here.pol,
-      dist: Math.min(
-        MAX_DIST,
-        Math.max(MIN_DIST, (radius * 1.35) / (tanHalf * Math.min(1, aspect))),
-      ),
+      dist: Math.min(MAX_DIST, Math.max(MIN_DIST, radius / (tanHalf * Math.min(1, aspect)))),
     };
   }
   let fitted = false;
@@ -481,7 +488,11 @@ export function createMap(
   }
   function setLayout(next: Arrangement) {
     if (next === arr) return;
-    // From where the points are right now, even in the middle of another morph.
+    // From where the points are right now, even in the middle of another morph; their sizes
+    // and colours go from what they show now.
+    (aSizeFrom.array as Float32Array).set(aSize.array);
+    (aColorFrom.array as Float32Array).set(aColor.array);
+    aSizeFrom.needsUpdate = aColorFrom.needsUpdate = true;
     (nodeFrom.array as Float32Array).set(cur);
     (nodeTo.array as Float32Array).set(next.positions);
     nodeFrom.needsUpdate = nodeTo.needsUpdate = true;
@@ -490,6 +501,7 @@ export function createMap(
     leaving?.dispose();
     leaving = frame;
     arr = next;
+    paint();
     frame = buildFrame(next.frame, data, host);
     if (reducedMotion()) {
       cur.set(next.positions);

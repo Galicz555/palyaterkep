@@ -12,7 +12,7 @@ const HAZE_PEAK = 0.3;
 const HAZE_FAR = 0.15;
 
 export const NODE_VERT = /* glsl */ `
-attribute vec3 aTo; attribute float aSize; attribute float aAlpha; attribute float aShape; attribute float aMark; attribute float aManage; attribute vec3 aColor;
+attribute vec3 aTo; attribute float aSize; attribute float aSizeFrom; attribute float aAlpha; attribute float aShape; attribute float aMark; attribute float aManage; attribute vec3 aColor; attribute vec3 aColorFrom;
 uniform float uMorph; uniform float uScale; uniform float uPR; uniform float uNear; uniform float uSpan; uniform float uMinPx;
 varying vec3 vColor; varying float vAlpha; varying float vShape; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying float vUnit;
 #define BODY 0.6
@@ -20,9 +20,10 @@ void main() {
   vec4 mv = modelViewMatrix * vec4(mix(position, aTo, uMorph), 1.0);
   float depth = clamp((-mv.z - uNear) / uSpan, 0.0, 1.0);
   vAlpha = aAlpha * mix(1.0, 0.72, depth);
-  vColor = aColor; vShape = aShape; vMark = aMark; vManage = aManage;
-  // The body's sprite, and the pixels one map unit covers here.
-  float px = min(max(aSize * uScale / -mv.z, uMinPx) * uPR / BODY, 240.0);
+  vColor = mix(aColorFrom, aColor, uMorph); vShape = aShape; vMark = aMark; vManage = aManage;
+  // The body's sprite (its size and colour morph with the points), and the pixels one map
+  // unit covers here.
+  float px = min(max(mix(aSizeFrom, aSize, uMorph) * uScale / -mv.z, uMinPx) * uPR / BODY, 240.0);
   float unit = uScale / -mv.z * uPR;
   float size = min(max(px, aManage * ${HAZE_DIAMETER.toFixed(1)} * unit), 600.0);
   vPx = px; vSize = size; vUnit = unit;

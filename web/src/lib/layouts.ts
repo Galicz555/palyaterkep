@@ -20,11 +20,12 @@ export const LAYOUTS: readonly LayoutInfo[] = [
     id: "A",
     label: "A – Terhelés-gömb",
     intro:
-      "Minden szerep egy pont: az irány a fizikai, szellemi és érzelmi terhelés aránya, a távolság a szint, a szín az ág.",
+      "Minden szerep egy pont: az irány a fizikai, szellemi és érzelmi terhelés aránya, a távolság a szint, a szín az ág, a méret a terhelés mértéke.",
     key: [
       ["Irány", "a három terhelés aránya"],
       ["Távolság", "szint, kívül a magasabb"],
       ["Szín", "ág"],
+      ["Méret", "a három terhelés átlaga"],
     ],
     byBranch: false,
   },

@@ -88,6 +88,7 @@
   $effect(() => view?.focus(focus));
 
   const hovered = $derived(hover ? data.roles[hover.i] : undefined);
+  const percent = (rank: number) => Math.round(rank * 100);
 </script>
 
 <div class="frame">
@@ -111,6 +112,11 @@
         <strong>{capitalise(hovered.label)}</strong>
         <span>{levelText(hovered.level)} · {trackText(hovered.management)}</span>
         <span>{data.branches[hovered.branch]?.subBranches[hovered.sub]?.label}</span>
+        <span>
+          {hovered.demands
+            ? `fizikai ${percent(hovered.demands[0])} · szellemi ${percent(hovered.demands[1])} · érzelmi ${percent(hovered.demands[2])} (percentilis)`
+            : "nincs terhelési adat"}
+        </span>
       </div>
     {/if}
   </div>
@@ -130,6 +136,7 @@
       <li><i class="ring"></i> gépi javaslat, nem ellenőrzött</li>
       <li><i class="dot"></i> ellenőrzött</li>
       <li><i class="haze"></i> lágy fény: vezetői szerep</li>
+      <li><i class="ghost"></i> halvány szürke pont: nincs terhelési adat</li>
       {#if marks}
         <li><i class="dot" style:background={MARK_COLOR.held}></i> betöltött</li>
         <li><i class="dot" style:background={MARK_COLOR.covered}></i> lefedett</li>
@@ -354,6 +361,10 @@
     width: 1rem;
     height: 1rem;
     margin: -0.15rem 0.2rem -0.15rem -0.15rem;
+  }
+  /* A role without demand data: pale and grey. */
+  .key .ghost {
+    background: color-mix(in srgb, var(--stage-soft) 55%, transparent);
   }
   .key.branches {
     border-top: 0;

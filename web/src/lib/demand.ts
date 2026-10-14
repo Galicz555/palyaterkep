@@ -22,6 +22,17 @@ export function mixOf(demands: Demands | null): Mix {
   return sum > 0 ? [demands[0] / sum, demands[1] / sum, demands[2] / sum] : BALANCED;
 }
 
+/**
+ * The mix to the nearest percent, as a key: roles with one key land on one spot. Scores in the same
+ * proportion (0.07 / 0.70 / 0.07 and 0.08 / 0.86 / 0.08) have one mix, and so one key.
+ */
+export const mixKey = (demands: Demands | null): string =>
+  demands
+    ? mixOf(demands)
+        .map((share) => Math.round(share * 100))
+        .join("/")
+    : "none";
+
 /** The mean of the three values: 0 asks for nothing, 1 asks the most of everyone; 0.5 without data. */
 export const magnitudeOf = (demands: Demands | null): number =>
   demands ? (demands[0] + demands[1] + demands[2]) / 3 : 0.5;
@@ -46,19 +57,19 @@ export function triangle(mix: Mix): [number, number] {
 }
 
 /** The polar angle, from the pole, of the cap's rim: where a pure demand lands. */
-export const CAP_ANGLE = deg(78);
+export const CAP_ANGLE = deg(84);
 
 /**
  * The triangle laid on a spherical cap (y is the pole, north is -z): a balanced mix lands on the
  * pole and a pure demand at CAP_ANGLE from it, in its corner's direction, so the mixes spread over
  * a good part of a hemisphere. The distance from the pole follows the distance from the triangle's
  * centre (azimuthal equidistant), so what is close on the triangle stays close on the sphere.
- * `gain` stretches the triangle first, for mixes that crowd near the middle; the result is kept on
- * the cap.
+ * `curve` below 1 pushes the middle outwards (the distance from the centre is raised to it), for
+ * mixes that crowd near the middle; the centre and the corners stay where they are.
  */
-export function capDirection(mix: Mix, gain = 1): [number, number, number] {
+export function capDirection(mix: Mix, curve = 1): [number, number, number] {
   const [east, north] = triangle(mix);
-  const polar = Math.min(1, Math.hypot(east, north) * gain) * CAP_ANGLE;
+  const polar = Math.pow(Math.min(1, Math.hypot(east, north)), curve) * CAP_ANGLE;
   const azimuth = Math.atan2(east, north);
   const ring = Math.sin(polar);
   return [ring * Math.sin(azimuth), Math.cos(polar), -ring * Math.cos(azimuth)];

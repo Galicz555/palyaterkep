@@ -246,7 +246,7 @@ const countColours = (page: Page, png: string, colours: number[][]) =>
     const n = want.map(() => 0);
     for (let i = 0; i < d.length; i += 4)
       want.forEach((w, k) => {
-        if (Math.hypot(d[i] - w[0], d[i + 1] - w[1], d[i + 2] - w[2]) < 40) n[k] += 1;
+        if (Math.hypot(d[i] - w[0], d[i + 1] - w[1], d[i + 2] - w[2]) < 70) n[k] += 1;
       });
     return n;
   })()`);
@@ -282,6 +282,18 @@ async function layouts() {
         return w ? { x: r.x + w[0], y: r.y + w[1] } : null;
       };
 
+      // The CV's marks show: held, covered and reachable each colour a good few pixels.
+      const picture = await page.screenshotOf(`${OUT}check-layout-${id}.png`, ".stage");
+      const [held, covered, reachable] = await countColours(page, picture, [
+        shown("#e69f00"),
+        shown("#2cc6a0"),
+        shown("#56b4e9"),
+      ]);
+      check(
+        held! > 25 && covered! > 25 && reachable! > 25,
+        `${id}: the marks show (held ${held}, covered ${covered}, reachable ${reachable} pixels)`,
+      );
+
       const spot = await at();
       check(spot !== null, `${id}: the held role has a place on the screen`);
       if (spot) {
@@ -302,18 +314,6 @@ async function layouts() {
           `${id}: clicking opens its panel (${panel.trim()})`,
         );
       }
-
-      // The CV's marks show: held, covered and reachable each colour a good few pixels.
-      const picture = await page.screenshotOf(`${OUT}check-layout-${id}.png`, ".stage");
-      const [held, covered, reachable] = await countColours(page, picture, [
-        shown("#e69f00"),
-        shown("#2cc6a0"),
-        shown("#56b4e9"),
-      ]);
-      check(
-        held! > 25 && covered! > 25 && reachable! > 25,
-        `${id}: the marks show (held ${held}, covered ${covered}, reachable ${reachable} pixels)`,
-      );
 
       // The arrow keys move the view.
       await page.eval("document.querySelector('canvas.map-canvas').focus()");

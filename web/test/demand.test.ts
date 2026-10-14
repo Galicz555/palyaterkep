@@ -56,14 +56,14 @@ describe("the triangle on a cap", () => {
     for (let k = 1; k < along.length; k++) expect(along[k]!).toBeGreaterThan(along[k - 1]!);
   });
 
-  it("keeps a stretched mix on the cap, with unit length", () => {
+  it("keeps a mix with the middle pushed out on the cap, with unit length", () => {
     const mixes: Mix[] = [
       [0.4, 0.35, 0.25],
       [0.8, 0.1, 0.1],
       [0.1, 0.1, 0.8],
     ];
     for (const m of mixes) {
-      const d = capDirection(m, 3);
+      const d = capDirection(m, 0.6);
       expect(Math.hypot(...d)).toBeCloseTo(1);
       expect(polar(d)).toBeLessThanOrEqual(CAP_ANGLE + 1e-9);
     }
