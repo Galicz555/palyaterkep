@@ -92,8 +92,6 @@ export interface Arrangement {
   colors?: Float32Array;
   /** The three arms of every role's star, physical, mental, emotional, each 0 to 1; zero without data. */
   arms?: Float32Array;
-  /** The soft look: small glowing points that cover one another, drawn far to near, not additive. */
-  soft?: true;
   /** What the roles a CV does not mark look like beside the marked ones: a share of grey, and an opacity. */
   field?: { grey: number; alpha: number };
   /** Names of marked roles try other places beside their point rather than lie over a name or a point. */
@@ -241,7 +239,6 @@ function sphere(data: MapData): Arrangement {
     free: true,
     extent: R_OUT,
     sizes,
-    soft: true,
     declutter: true,
     labelZoom: 1.05,
     field: { grey: 0.25, alpha: 0.75 },

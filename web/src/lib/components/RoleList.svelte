@@ -8,7 +8,6 @@
   import { branchPainted } from "#lib/palette.ts";
   import { capitalise } from "#lib/text.ts";
   import RoleBadges from "./RoleBadges.svelte";
-  import StateInfo from "./StateInfo.svelte";
 
   interface Props {
     data: MapData;
@@ -52,36 +51,6 @@
   let touched = $state<Record<string, boolean>>({});
   const isOpen = (id: string, b: number, matches: number) =>
     touched[id] ?? (matches > 0 && (searching || picked === b));
-
-  const cvRoles = $derived.by(() => {
-    const out = { held: [] as MapRole[], covered: [] as MapRole[], reachable: [] as MapRole[] };
-    for (const [id, state] of states ?? []) {
-      const i = indexOf.get(id);
-      if (i === undefined || !shown(i)) continue;
-      out[state.kind].push(data.roles[i]!);
-    }
-    const coverage = (r: MapRole) => {
-      const state = states?.get(r.id);
-      return state?.kind === "covered" ? state.coverage : 0;
-    };
-    const gap = (r: MapRole) => {
-      const state = states?.get(r.id);
-      return state?.kind === "reachable" ? state.gap.length : 0;
-    };
-    out.covered.sort((a, b) => coverage(b) - coverage(a));
-    out.reachable.sort((a, b) => gap(a) - gap(b) || a.label.localeCompare(b.label, "hu"));
-    return out;
-  });
-  const CV_GROUPS = [
-    ["held", "Betöltött szerepek"],
-    ["covered", "Lefedett szerepek"],
-    ["reachable", "Elérhető szerepek, hiányzó készségekkel"],
-  ] as const;
-  const fromLabel = (state: RoleState | undefined) => {
-    if (state?.kind !== "reachable") return undefined;
-    const i = indexOf.get(state.from);
-    return i === undefined ? undefined : capitalise(data.roles[i]!.label);
-  };
 </script>
 
 {#snippet roleRow(role: MapRole, withPath: boolean)}
@@ -98,33 +67,6 @@
 
 <section aria-labelledby="list-title" class="list">
   <h2 id="list-title" class="sr-only">Szerepek listája</h2>
-
-  {#if states}
-    <section aria-labelledby="cv-title" class="cv" id="cv-list">
-      <h3 id="cv-title">Az önéletrajz alapján</h3>
-      {#each CV_GROUPS as [kind, title] (kind)}
-        {@const roles = cvRoles[kind]}
-        {#if roles.length > 0}
-          <h4>{title} ({roles.length})</h4>
-          <ul class="roles">
-            {#each roles as role (role.id)}
-              {@const state = stateOf(role)}
-              <li class="role detailed">
-                <a class="name" href="/szerep/{role.id}">{capitalise(role.label)}</a>
-                <span class="path">{pathOf(role)}</span>
-                <RoleBadges
-                  level={role.level}
-                  management={role.management}
-                  curated={role.curated}
-                />
-                {#if state}<StateInfo {state} fromLabel={fromLabel(state)} />{/if}
-              </li>
-            {/each}
-          </ul>
-        {/if}
-      {/each}
-    </section>
-  {/if}
 
   <nav aria-label="Ugrás egy ághoz" class="jump">
     <ul>
@@ -181,19 +123,6 @@
   .list {
     max-width: 62rem;
   }
-  .cv {
-    margin-bottom: 1.5rem;
-    padding: 0.2rem 1rem 1rem;
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    background: var(--surface);
-  }
-  .cv h3 {
-    font-size: 1.2rem;
-  }
-  .cv h4 {
-    margin: 1.2rem 0 0.2rem;
-  }
   .roles {
     margin: 0;
     padding: 0;
@@ -206,14 +135,6 @@
     gap: 0.1rem 0.8rem;
     padding: 0.55rem 0.2rem;
     border-bottom: 1px solid var(--line);
-  }
-  .role.detailed {
-    display: block;
-    padding: 0.8rem 0.2rem 1rem;
-  }
-  .detailed .name,
-  .detailed .path {
-    display: block;
   }
   .name {
     font-weight: 600;

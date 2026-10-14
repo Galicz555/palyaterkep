@@ -376,7 +376,7 @@ function disc(spec: Extract<FrameSpec, { kind: "disc" }>, data: MapData, host: H
   };
 }
 
-/** Bright stars at the corners of a layout: big glowing points, drawn with the nodes' shader. */
+/** Bright stars at the corners of a layout: big pale points, drawn with the nodes' shader. */
 function stars(p: Parts, host: Host, at3: Vec3[]) {
   const n = at3.length;
   const geometry = new BufferGeometry();
@@ -391,8 +391,7 @@ function stars(p: Parts, host: Host, at3: Vec3[]) {
   geometry.setAttribute("aSizeFrom", new BufferAttribute(sizes.slice(), 1));
   const alpha = new BufferAttribute(new Float32Array(n).fill(1), 1);
   geometry.setAttribute("aAlpha", alpha);
-  geometry.setAttribute("aMark", new BufferAttribute(new Float32Array(n).fill(1), 1));
-  geometry.setAttribute("aShape", new BufferAttribute(new Float32Array(n), 1));
+  geometry.setAttribute("aMark", new BufferAttribute(new Float32Array(n).fill(0.8), 1));
   geometry.setAttribute("aManage", new BufferAttribute(new Float32Array(n), 1));
   const points = new Points(
     geometry,

@@ -51,6 +51,19 @@ export interface CvView {
   evidence: Map<string, string[]>;
 }
 
+/**
+ * How many roles are in each state, counting only roles `known` to the map; `unknown` is the
+ * number the result names that the map does not have.
+ */
+export function countStates(states: Map<string, RoleState>, known: (id: string) => boolean) {
+  const out = { held: 0, covered: 0, reachable: 0, unknown: 0 };
+  for (const [id, state] of states) {
+    if (known(id)) out[state.kind] += 1;
+    else out.unknown += 1;
+  }
+  return out;
+}
+
 export function readCvResult(result: CvResult): CvView {
   const states = new Map<string, RoleState>();
   for (const { role, evidence } of result.held) states.set(role, { kind: "held", evidence });

@@ -1,4 +1,4 @@
-// One shot of each layout's map frame, bare and with the demo CV, into a directory of your choice,
+// One shot of each layout's map screen, bare and with the demo CV, into a directory of your choice,
 // for comparing two builds of the map pixel by pixel.
 // Usage: node web/scripts/layout-shots.ts <dir> [base url] [layouts, e.g. BCDFGJK]
 
@@ -23,9 +23,9 @@ try {
     ] as const) {
       await page.goto(`${base}/?elrendezes=${id}${query}`);
       await page.waitFor("!!document.querySelector('canvas.map-canvas')", "map");
-      if (query) await page.waitFor("!!document.querySelector('.summary')", "CV summary");
+      if (query) await page.waitFor("!!document.querySelector('.chip a')", "CV chip");
       await settle(1500);
-      await page.screenshotOf(`${dir}layout-${id}${name}.png`, ".frame");
+      await page.screenshot(`${dir}layout-${id}${name}.png`);
     }
   }
 } finally {

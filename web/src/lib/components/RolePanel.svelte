@@ -1,5 +1,5 @@
 <script lang="ts">
-  // The role picked on the map, beside it. The same facts as the list and the role page.
+  // The role picked on the map, in a card over it: the facts at a glance, and a link to the role's page.
   import type { RoleState } from "#lib/cv.ts";
   import type { MapRole } from "#lib/model.ts";
   import { capitalise } from "#lib/text.ts";
@@ -27,7 +27,7 @@
   <p class="path">{path}</p>
   <p><RoleBadges level={role.level} management={role.management} curated={role.curated} /></p>
   {#if state}
-    <StateInfo {state} {fromLabel} />
+    <StateInfo {state} {fromLabel} brief />
   {/if}
   <p class="more"><a class="button" href="/szerep/{role.id}">Mi kell hozzá? Készséglista</a></p>
 </article>

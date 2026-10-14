@@ -1,14 +1,15 @@
 <script lang="ts">
-  // The 3D map in its stage: loads the renderer (and three.js) only when the stage is actually
-  // shown, so a phone that opens the list never downloads it.
+  // The 3D map, filling its parent, with the zoom buttons and the legend over it. It loads the
+  // renderer (and three.js) only when the stage has a size, so a page that does not show the map
+  // never downloads it.
   import { onMount } from "svelte";
   import { LAYOUTS, type LayoutId } from "#lib/layouts.ts";
   import type { Arrangement } from "#lib/arrange.ts";
   import type { MapView } from "#lib/map/orbit.ts";
   import type { MapData } from "#lib/model.ts";
-  import { branchPainted, MARK_COLOR, paintedRgb } from "#lib/palette.ts";
+  import { branchPainted, paintedRgb } from "#lib/palette.ts";
   import { DEMANDS, DEMAND_LINEAR } from "#lib/demand.ts";
-  import { capitalise, levelText, trackText } from "#lib/text.ts";
+  import { capitalise, CHECKED, levelText, trackText, UNCHECKED } from "#lib/text.ts";
 
   interface Props {
     data: MapData;
@@ -25,8 +26,8 @@
     /** Branch to show, an index into `data.branches`. */
     focus: number | null;
     onselect: (id: string | null) => void;
-    /** Called once with the way to measure frames and to find a role on screen, when the map is up. */
-    onready?: (tools: Pick<MapView, "benchmark" | "where">) => void;
+    /** Called once with the ways to measure frames, to find a role on screen and to hide the nodes, when the map is up. */
+    onready?: (tools: Pick<MapView, "benchmark" | "where" | "showNodes">) => void;
   }
   let { data, marks, reach, pass, selected, layout, axis, focus, onselect, onready }: Props =
     $props();
@@ -64,7 +65,11 @@
       arrange = place;
       view = made;
       status = "ready";
-      onready?.({ benchmark: (frames) => made.benchmark(frames), where: (i) => made.where(i) });
+      onready?.({
+        benchmark: (frames) => made.benchmark(frames),
+        where: (i) => made.where(i),
+        showNodes: (on) => made.showNodes(on),
+      });
     } catch {
       status = "failed";
     }
@@ -101,7 +106,7 @@
       <p class="note" role="status">A térkép betöltődik…</p>
     {:else if status === "unsupported" || status === "failed"}
       <p class="note" role="alert">
-        A 3D térkép ezen az eszközön nem jeleníthető meg. A „Lista” nézet ugyanezt tartalmazza.
+        A 3D térkép ezen az eszközön nem jeleníthető meg. A <a href="/lista">lista</a> ugyanezt tartalmazza.
       </p>
     {/if}
     {#if hovered && hover}
@@ -115,6 +120,7 @@
       >
         <strong>{capitalise(hovered.label)}</strong>
         <span>{levelText(hovered.level)} · {trackText(hovered.management)}</span>
+        <span>{hovered.curated ? CHECKED : UNCHECKED}</span>
         <span>{data.branches[hovered.branch]?.subBranches[hovered.sub]?.label}</span>
         <span>
           {hovered.demands
@@ -133,70 +139,70 @@
       <button type="button" aria-label="Az egész térkép" onclick={() => view?.focus(null)}>⌂</button
       >
     </div>
-    <ul class="key" aria-label="Jelmagyarázat">
-      {#each info.key as [channel, meaning] (channel)}
-        <li><span>{channel}:</span> {meaning}</li>
-      {/each}
-      <li><i class="ring"></i> gépi javaslat, nem ellenőrzött</li>
-      <li><i class="dot"></i> ellenőrzött</li>
-      <li><i class="haze"></i> lágy fény: vezetői szerep</li>
-      <li><i class="ghost"></i> halvány szürke pont: nincs terhelési adat</li>
-      {#if marks}
-        <li><i class="dot" style:background={MARK_COLOR.held}></i> betöltött</li>
-        <li><i class="dot" style:background={MARK_COLOR.covered}></i> lefedett</li>
-        <li><i class="dot" style:background={MARK_COLOR.reachable}></i> elérhető</li>
-      {/if}
-    </ul>
-    {#if info.demandColors}
-      <ul class="key branches" aria-label="A terhelések színei">
-        {#each DEMANDS as demand, k (demand.key)}
-          <li>
-            <i class="dot" style:background={paintedRgb(DEMAND_LINEAR[k]!)}></i>{demand.label}
-          </li>
+    <details class="legend">
+      <summary>Jelmagyarázat</summary>
+      <ul class="key">
+        {#each info.key as [channel, meaning] (channel)}
+          <li><span>{channel}:</span> {meaning}</li>
         {/each}
-        {#if layout === "K"}
-          <li>
-            <svg class="glyph" viewBox="-12 -12 24 24" aria-hidden="true">
-              {#each DEMANDS as demand, k (demand.key)}
-                <line
-                  x1="0"
-                  y1="0"
-                  x2={[-9, 0, 9][k]}
-                  y2={[5, -10, 5][k]}
-                  stroke={paintedRgb(DEMAND_LINEAR[k]!)}
-                  stroke-width="2.4"
-                  stroke-linecap="round"
-                />
-              {/each}
-            </svg>
-            egy szerep: a kar hossza a terhelés
-          </li>
+        <li><i class="lead"></i> világosabb, nagyobb pont: vezetői szerep</li>
+        <li><i class="ghost"></i> halvány szürke pont: nincs terhelési adat</li>
+        {#if marks}
+          <li><i class="star held"></i> betöltött: fehér, a legnagyobb, négy sugárral</li>
+          <li><i class="star covered"></i> lefedett: fehér, kisebb</li>
+          <li><i class="star reachable"></i> elérhető: fehér, a legkisebb</li>
         {/if}
       </ul>
-    {:else if !info.byBranch}
-      <ul class="key branches" aria-label="Az ágak színei">
-        {#each data.branches as branch, b (branch.id)}
-          <li>
-            <i class="dot" style:background={branchPainted(b)}></i>{branch.label}
-          </li>
-        {/each}
-      </ul>
-    {/if}
+      {#if info.demandColors}
+        <ul class="key branches" aria-label="A terhelések színei">
+          {#each DEMANDS as demand, k (demand.key)}
+            <li>
+              <i class="dot" style:background={paintedRgb(DEMAND_LINEAR[k]!)}></i>{demand.label}
+            </li>
+          {/each}
+          {#if layout === "K"}
+            <li>
+              <svg class="glyph" viewBox="-12 -12 24 24" aria-hidden="true">
+                {#each DEMANDS as demand, k (demand.key)}
+                  <line
+                    x1="0"
+                    y1="0"
+                    x2={[-9, 0, 9][k]}
+                    y2={[5, -10, 5][k]}
+                    stroke={paintedRgb(DEMAND_LINEAR[k]!)}
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                  />
+                {/each}
+              </svg>
+              egy szerep: a kar hossza a terhelés
+            </li>
+          {/if}
+        </ul>
+      {:else if !info.byBranch}
+        <ul class="key branches" aria-label="Az ágak színei">
+          {#each data.branches as branch, b (branch.id)}
+            <li>
+              <i class="dot" style:background={branchPainted(b)}></i>{branch.label}
+            </li>
+          {/each}
+        </ul>
+      {/if}
+    </details>
   {/if}
 </div>
 
 <style>
   .frame {
-    position: relative;
-    border-radius: var(--radius);
+    position: absolute;
+    inset: 0;
     overflow: hidden;
     background: var(--stage);
     color: var(--stage-ink);
   }
   .stage {
     position: relative;
-    /* Below the page's header, intro and toolbar (about 14rem) and above the key (3rem). */
-    height: clamp(26rem, calc(100svh - 17rem), 56rem);
+    height: 100%;
     overflow: hidden;
   }
   .stage :global(.map-canvas) {
@@ -269,14 +275,13 @@
     font-weight: 600;
     letter-spacing: 0.06em;
   }
-  .stage :global(.lbl-held) {
-    color: #ffc247;
-  }
-  .stage :global(.lbl-covered) {
-    color: #5ee0bd;
-  }
+  .stage :global(.lbl-held),
+  .stage :global(.lbl-covered),
   .stage :global(.lbl-reach) {
-    color: #8fcdf4;
+    color: #fff;
+  }
+  .stage :global(.lbl-held) {
+    font-weight: 700;
   }
   .stage :global(.lbl-pick) {
     padding: 0.1rem 0.4rem;
@@ -350,16 +355,39 @@
   .zoom button:focus-visible {
     outline-color: var(--stage-focus);
   }
-  .key {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.2rem 1.2rem;
-    margin: 0;
-    padding: 0.5rem 0.8rem;
-    list-style: none;
-    border-top: 1px solid var(--stage-line);
+  .legend {
+    position: absolute;
+    left: 0.6rem;
+    bottom: 0.6rem;
+    box-sizing: border-box;
+    width: min(24rem, calc(100% - 1.2rem));
+    max-height: calc(100% - 8rem);
+    overflow: auto;
+    border: 1px solid var(--stage-line);
+    border-radius: 0.4rem;
+    background: rgb(11 13 18 / 0.88);
     font-size: 0.8rem;
     color: var(--stage-soft);
+  }
+  .legend summary {
+    min-height: 2.75rem;
+    padding: 0 0.8rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--stage-ink);
+    font-weight: 600;
+  }
+  .legend summary:focus-visible {
+    outline-color: var(--stage-focus);
+    outline-offset: -3px;
+  }
+  .key {
+    display: grid;
+    gap: 0.25rem;
+    margin: 0;
+    padding: 0.1rem 0.8rem 0.6rem;
+    list-style: none;
   }
   .key span {
     color: var(--stage-ink);
@@ -373,23 +401,51 @@
     border-radius: 50%;
     vertical-align: -0.05rem;
   }
-  .key .ring {
-    border: 2px solid var(--stage-ink);
-  }
   .key .dot {
     background: var(--stage-ink);
   }
-  /* A management role: an ordinary point in a wide, faint glow. */
-  .key .haze {
-    background: radial-gradient(
-      circle,
-      var(--stage-ink) 0 22%,
-      rgb(220 230 247 / 0.32) 36%,
-      transparent 70%
-    );
-    width: 1rem;
-    height: 1rem;
-    margin: -0.15rem 0.2rem -0.15rem -0.15rem;
+  /* A management role: the same point, brighter and a little larger, no glow. */
+  .key .lead {
+    background: #fff;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: -0.05rem;
+  }
+  /* The three white states, told apart by size, and spikes on the held one. */
+  .key .star {
+    position: relative;
+    background: #fff;
+  }
+  .key .star.held {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .key .star.held::before,
+  .key .star.held::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+  }
+  .key .star.held::before {
+    width: 1.5rem;
+    height: 1px;
+    transform: translate(-50%, -50%);
+  }
+  .key .star.held::after {
+    width: 1px;
+    height: 1.5rem;
+    transform: translate(-50%, -50%);
+  }
+  .key .star.covered {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .key .star.reachable {
+    width: 0.4rem;
+    height: 0.4rem;
+    opacity: 0.85;
   }
   /* A role without demand data: pale and grey. */
   .key .ghost {
@@ -402,8 +458,10 @@
     margin-right: 0.2rem;
   }
   .key.branches {
-    border-top: 0;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
     padding-top: 0;
+    border-top: 1px solid var(--stage-line);
+    padding-top: 0.6rem;
     font-size: 0.75rem;
   }
 </style>

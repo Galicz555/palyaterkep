@@ -1,40 +1,36 @@
 <script lang="ts">
+  // The map and nothing else: it has the whole screen, with a layout choice, the zoom buttons,
+  // a legend and, for a picked role, a small card over it. The list, the CV and the long text have
+  // their own pages (/lista, /oneletrajz).
   import { replaceState } from "$app/navigation";
-  import { onMount, tick } from "svelte";
-  import CvUpload from "#lib/components/CvUpload.svelte";
+  import { onMount } from "svelte";
   import MapPane from "#lib/components/MapPane.svelte";
-  import RoleList from "#lib/components/RoleList.svelte";
   import RolePanel from "#lib/components/RolePanel.svelte";
   import { cv } from "#lib/cv.svelte.ts";
+  import { countStates } from "#lib/cv.ts";
   import { AXES, axisOf, DEFAULT_LAYOUT, LAYOUTS, layoutOf, type LayoutId } from "#lib/layouts.ts";
   import { DEMANDS } from "#lib/demand.ts";
   import { MARK } from "#lib/palette.ts";
-  import { capitalise, fold } from "#lib/text.ts";
+  import { capitalise } from "#lib/text.ts";
 
   let { data } = $props();
   const map = $derived(data.map);
   const indexOf = $derived(new Map(map.roles.map((r, i) => [r.id, i])));
-  const folded = $derived(map.roles.map((r) => fold(r.label)));
 
-  // View: the CSS picks map or list by width until the person chooses (data-view="auto").
-  type Mode = "auto" | "map" | "list";
-  let mode = $state<Mode>("auto");
-  let wide = $state(false);
-  const view = $derived(mode === "auto" ? (wide ? "map" : "list") : mode);
+  // A narrow screen gets a choice first, the list or the map: three thousand specks on a phone
+  // are for people who ask, and the renderer is a download the list does not need.
+  let show = $state<"pending" | "map" | "gate">("pending");
 
-  // Search (debounced: typing should not repaint three thousand nodes per key) and branch.
-  let typed = $state("");
-  let query = $state("");
   let branch = $state<number | null>(null);
   let selected = $state<string | null>(null);
   // Layout: which arrangement of the map; it lives in the address, so a link reproduces it.
   let layout = $state<LayoutId>(DEFAULT_LAYOUT);
-  const layoutInfo = $derived(LAYOUTS.find((l) => l.id === layout) ?? LAYOUTS[0]!);
   // Axis: the demand that lifts the points in layout B.
   let axis = $state(0);
-  function toAddress(name: string, value: string) {
+  function toAddress(name: string, value: string | null) {
     const url = new URL(location.href);
-    url.searchParams.set(name, value);
+    if (value === null) url.searchParams.delete(name);
+    else url.searchParams.set(name, value);
     replaceState(url, {});
   }
   function chooseLayout(next: LayoutId) {
@@ -45,24 +41,18 @@
     axis = next;
     toAddress("tengely", AXES[next]!);
   }
-  $effect(() => {
-    const text = typed;
-    const timer = setTimeout(() => (query = text), 150);
-    return () => clearTimeout(timer);
-  });
+  function clearBranch() {
+    branch = null;
+    toAddress("ag", null);
+  }
 
-  const needle = $derived(fold(query.trim()));
+  // A link from a role page names the branch to show and the role to pick.
   const pass = $derived.by(() => {
-    if (!needle && branch === null) return null;
-    const out = new Uint8Array(map.roles.length);
-    map.roles.forEach((r, i) => {
-      if ((branch === null || r.branch === branch) && folded[i]?.includes(needle)) out[i] = 1;
-    });
-    return out;
+    if (branch === null) return null;
+    return Uint8Array.from(map.roles, (r) => (r.branch === branch ? 1 : 0));
   });
-  const matches = $derived(pass ? pass.reduce((n, v) => n + v, 0) : map.roles.length);
 
-  // What the CV says, as the map wants it (marks and steps) and the list wants it (by id).
+  // What the CV says, as the map wants it: marks, steps.
   const marks = $derived.by(() => {
     if (!cv.view) return null;
     const out = new Uint8Array(map.roles.length);
@@ -81,14 +71,7 @@
     }
     return out;
   });
-  const counts = $derived.by(() => {
-    const out = { held: 0, covered: 0, reachable: 0, unknown: 0 };
-    for (const [id, state] of cv.view?.states ?? []) {
-      if (indexOf.has(id)) out[state.kind] += 1;
-      else out.unknown += 1;
-    }
-    return out;
-  });
+  const counts = $derived(cv.view ? countStates(cv.view.states, (id) => indexOf.has(id)) : null);
 
   // The branch the result is mostly in, so the camera shows it rather than the whole map's specks.
   const resultBranch = $derived.by(() => {
@@ -112,23 +95,18 @@
     const params = new URLSearchParams(location.search);
     const ag = map.branches.findIndex((b) => b.id === params.get("ag"));
     if (ag >= 0) branch = ag;
-    const nezet = params.get("nezet");
-    if (nezet === "map" || nezet === "list") mode = nezet;
     layout = layoutOf(params.get("elrendezes"));
     axis = axisOf(params.get("tengely"));
     const szerep = params.get("szerep");
     if (szerep && indexOf.has(szerep)) selected = szerep;
-
-    const wideQuery = matchMedia("(min-width: 60rem)");
-    wide = wideQuery.matches;
-    const onChange = () => (wide = wideQuery.matches);
-    wideQuery.addEventListener("change", onChange);
-    return () => wideQuery.removeEventListener("change", onChange);
+    // A link to a role on the map is a request for the map, on any screen.
+    show = matchMedia("(min-width: 60rem)").matches || selected !== null ? "map" : "gate";
   });
 
   function onready(tools: {
     benchmark: (frames: number) => Promise<unknown>;
     where: (i: number) => unknown;
+    showNodes: (on: boolean) => void;
   }) {
     // Frame timings and roles' places on screen for the measurement script: ?teljesitmeny on the
     // address.
@@ -136,26 +114,8 @@
       const hooks = globalThis as Record<string, unknown>;
       hooks["__terkepBenchmark"] = tools.benchmark;
       hooks["__terkepWhere"] = (id: string) => tools.where(indexOf.get(id) ?? -1);
+      hooks["__terkepNodes"] = tools.showNodes;
     }
-  }
-
-  /** A result replaces the upload form, so focus goes to the summary that is on screen. */
-  async function focusSummary() {
-    await tick();
-    const shown = [...document.querySelectorAll<HTMLElement>(".summary")];
-    shown.find((el) => el.offsetParent !== null)?.focus();
-  }
-
-  /** Clearing brings the upload form back; focus follows it. */
-  async function clearResult() {
-    cv.clear();
-    await tick();
-    document.getElementById("cv-upload-title")?.focus();
-  }
-
-  function showCvList() {
-    mode = "list";
-    queueMicrotask(() => document.getElementById("cv-list")?.scrollIntoView());
   }
 </script>
 
@@ -167,288 +127,241 @@
   />
 </svelte:head>
 
-<main id="tartalom" class="page" data-view={mode === "auto" ? "auto" : view}>
-  <header class="intro">
-    <h1>Szerepek térképe</h1>
-    <p>
-      {layoutInfo.intro}
-      {#if !cv.view}Az önéletrajzod beolvasása után itt látszik, melyiket töltötted be, melyiket
-        fedik le a készségeid, és melyik van egy lépésre, a hiányzó készségekkel.{/if}
-    </p>
-  </header>
+<svelte:window
+  onkeydown={(e) => {
+    if (e.key === "Escape" && selected !== null) selected = null;
+  }}
+/>
 
-  {#if !cv.view}
-    <CvUpload maxChars={data.maxChars} ondone={focusSummary} />
-  {/if}
+<main id="tartalom" class="screen">
+  <h1 class="sr-only">Szerepek térképe</h1>
 
-  {#snippet summary(withListButton: boolean)}
-    <section class="summary" aria-label="Az önéletrajz eredménye" tabindex="-1">
-      <p>
-        <strong>{counts.held}</strong> betöltött, <strong>{counts.covered}</strong> lefedett,
-        <strong>{counts.reachable}</strong> elérhető szerep.
-        {#if counts.unknown > 0}
-          {counts.unknown} szerep nem szerepel a térképen, ezeket kihagytuk.
-        {/if}
-      </p>
-      <p class="actions">
-        {#if withListButton}
-          <button type="button" class="button" onclick={showCvList}>
-            Hiányzó készségek a listában
-          </button>
-        {/if}
-        <button type="button" class="button" onclick={clearResult}> Eredmény eltüntetése </button>
-      </p>
-    </section>
-  {/snippet}
+  {#if show === "map"}
+    <MapPane
+      data={map}
+      {marks}
+      {reach}
+      {pass}
+      {selected}
+      {layout}
+      {axis}
+      focus={branch ?? resultBranch}
+      onselect={(id) => (selected = id)}
+      {onready}
+    />
 
-  <!-- On the map the summary sits beside it, to leave the map the height; in the list, above. -->
-  {#if cv.view}
-    <div class="summary-top">{@render summary(false)}</div>
-  {/if}
-
-  <div class="toolbar">
-    <div class="modes" role="group" aria-label="Nézet">
-      <button
-        type="button"
-        class="button"
-        aria-pressed={view === "map"}
-        onclick={() => (mode = "map")}
-      >
-        Térkép
-      </button>
-      <button
-        type="button"
-        class="button"
-        aria-pressed={view === "list"}
-        onclick={() => (mode = "list")}
-      >
-        Lista
-      </button>
-    </div>
-    <label class="field grow">
-      <span>Keresés a szerepek között</span>
-      <input type="search" bind:value={typed} autocomplete="off" spellcheck="false" />
-    </label>
-    <label class="field">
-      <span>Szakterület</span>
-      <select
-        value={branch === null ? "" : String(branch)}
-        onchange={(e) =>
-          (branch = e.currentTarget.value === "" ? null : Number(e.currentTarget.value))}
-      >
-        <option value="">Minden ág</option>
-        {#each map.branches as b, i (b.id)}
-          <option value={String(i)}>{b.label}</option>
-        {/each}
-      </select>
-    </label>
-    <label class="field">
-      <span>Elrendezés</span>
-      <select value={layout} onchange={(e) => chooseLayout(layoutOf(e.currentTarget.value))}>
-        {#each LAYOUTS as l (l.id)}
-          <option value={l.id}>{l.label}</option>
-        {/each}
-      </select>
-    </label>
-    {#if layout === "B"}
-      <div class="field axis" role="group" aria-label="A magasságot adó terhelés">
-        <span>Magasság</span>
-        <div class="modes">
-          {#each DEMANDS as d, k (d.key)}
-            <button
-              type="button"
-              class="button"
-              aria-pressed={axis === k}
-              onclick={() => chooseAxis(k)}
-            >
-              {d.label}
-            </button>
+    <div class="controls">
+      <label class="select">
+        <span>Elrendezés</span>
+        <select value={layout} onchange={(e) => chooseLayout(layoutOf(e.currentTarget.value))}>
+          {#each LAYOUTS as l (l.id)}
+            <option value={l.id}>{l.label}</option>
           {/each}
+        </select>
+      </label>
+      {#if layout === "B"}
+        <div class="axis" role="group" aria-label="A magasságot adó terhelés">
+          <span>Magasság</span>
+          <div>
+            {#each DEMANDS as d, k (d.key)}
+              <button type="button" aria-pressed={axis === k} onclick={() => chooseAxis(k)}>
+                {d.label}
+              </button>
+            {/each}
+          </div>
         </div>
-      </div>
-    {/if}
-    <p class="found" role="status">{matches} szerep{pass ? " a szűrésben" : ""}</p>
-  </div>
-
-  <div class="views">
-    <div class="map-view">
-      <MapPane
-        data={map}
-        {marks}
-        {reach}
-        {pass}
-        {selected}
-        {layout}
-        {axis}
-        focus={branch ?? resultBranch}
-        onselect={(id) => (selected = id)}
-        {onready}
-      />
-      <div class="side">
-        {#if cv.view}{@render summary(true)}{/if}
-        <aside aria-label="A kijelölt szerep" aria-live="polite">
-          {#if role}
-            <RolePanel
-              {role}
-              path="{map.branches[role.branch]?.label} › {map.branches[role.branch]?.subBranches[
-                role.sub
-              ]?.label}"
-              state={roleState}
-              fromLabel={fromRole ? capitalise(fromRole.label) : undefined}
-              onclose={() => (selected = null)}
-            />
-          {:else}
-            <p class="hint">
-              Kattints egy pontra a térképen a szerep adataihoz. Egérrel húzva forgathatod, a
-              görgővel nagyíthatod, jobb gombbal húzva eltolhatod. A „Lista” nézet ugyanezt
-              billentyűvel és képernyőolvasóval is eléri.
-            </p>
-          {/if}
-        </aside>
-      </div>
+      {/if}
+      {#if branch !== null}
+        <p class="chip">
+          {map.branches[branch]?.label}
+          <button type="button" onclick={clearBranch} aria-label="Az ág szűrésének megszüntetése">
+            ×
+          </button>
+        </p>
+      {/if}
+      {#if counts}
+        <p class="chip">
+          <a href="/oneletrajz">
+            Önéletrajz: {counts.held} betöltött · {counts.covered} lefedett · {counts.reachable} elérhető
+          </a>
+        </p>
+      {/if}
     </div>
 
-    <div class="list-view">
-      <RoleList
-        data={map}
-        {pass}
-        states={cv.view?.states ?? null}
-        picked={branch}
-        searching={needle !== ""}
-      />
+    <aside class="card" aria-label="A kijelölt szerep" aria-live="polite">
+      {#if role}
+        <RolePanel
+          {role}
+          path="{map.branches[role.branch]?.label} › {map.branches[role.branch]?.subBranches[
+            role.sub
+          ]?.label}"
+          state={roleState}
+          fromLabel={fromRole ? capitalise(fromRole.label) : undefined}
+          onclose={() => (selected = null)}
+        />
+      {/if}
+    </aside>
+  {:else if show === "gate"}
+    <div class="gate">
+      <p>
+        A 3D térkép nagy képernyőn a legjobb. Telefonon a lista könnyebben használható, és ugyanezt
+        tartalmazza.
+      </p>
+      <p class="gate-actions">
+        <a class="button primary" href="/lista">Szerepek listája</a>
+        <button type="button" class="button" onclick={() => (show = "map")}>
+          Térkép megnyitása
+        </button>
+      </p>
     </div>
-  </div>
+  {:else}
+    <p class="loading" role="status">A térkép betöltődik…</p>
+  {/if}
 </main>
 
 <style>
-  .page {
-    max-width: 96rem;
-    margin: 0 auto;
-    padding: 0 1rem 2rem;
+  .screen {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    background: var(--stage);
+    color: var(--stage-ink);
   }
-  .intro {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0 1.5rem;
-    margin: 0.8rem 0 0.6rem;
-  }
-  .intro h1 {
-    margin: 0;
-    font-size: 1.4rem;
-  }
-  .intro p {
-    flex: 1 1 24rem;
-    max-width: 60rem;
-    margin: 0;
-    font-size: 0.92rem;
-    color: var(--ink-soft);
-  }
-  .summary {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem 1rem;
-    margin-bottom: 1rem;
-    padding: 0.4rem 1rem;
-    border: 1px solid var(--line);
-    border-left: 0.35rem solid var(--accent);
-    border-radius: var(--radius);
-    background: var(--surface);
-  }
-  .summary p {
-    margin: 0.3rem 0;
-  }
-  .side {
+  .loading {
+    position: absolute;
+    inset: 0;
     display: grid;
-    gap: 0.8rem;
-  }
-  .side .summary {
+    place-content: center;
     margin: 0;
-    padding-block: 0.6rem;
+    color: var(--stage-soft);
   }
-  .actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+
+  /* Over the map, under the nav panel at the top left. */
+  .controls {
+    position: absolute;
+    left: 0.6rem;
+    top: 4.1rem;
+    z-index: 4;
+    display: grid;
+    justify-items: start;
+    gap: 0.4rem;
+    max-width: calc(100% - 4.6rem);
   }
-  .toolbar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: end;
-    gap: 0.6rem 1rem;
-    margin-bottom: 1rem;
+  .select,
+  .axis,
+  .chip {
+    margin: 0;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--stage-line);
+    border-radius: 0.4rem;
+    background: rgb(11 13 18 / 0.88);
+    font-size: 0.85rem;
   }
-  .modes {
+  .select {
+    display: grid;
+    gap: 0.1rem;
+    color: var(--stage-soft);
+  }
+  .select select {
+    min-height: 2.75rem;
+    max-width: 100%;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--stage-soft);
+    border-radius: 0.3rem;
+    background: var(--stage);
+    color: var(--stage-ink);
+    font-size: 0.95rem;
+  }
+  .axis {
+    display: grid;
+    gap: 0.2rem;
+    color: var(--stage-soft);
+  }
+  .axis div {
     display: flex;
     gap: 0.3rem;
   }
-  .field {
-    display: grid;
-    flex: 1 1 14rem;
-    min-width: 0;
-    gap: 0.15rem;
-    font-size: 0.85rem;
-    color: var(--ink-soft);
-  }
-  .field.axis {
-    flex: 0 0 auto;
-  }
-  .field.grow {
-    flex-grow: 2;
-  }
-  .field input,
-  .field select {
-    width: 100%;
+  .axis button,
+  .chip button {
     min-height: 2.75rem;
-    padding: 0.3rem 0.6rem;
-    border: 1px solid var(--ink-soft);
-    border-radius: var(--radius);
-    background: var(--surface);
+    padding: 0 0.7rem;
+    border: 1px solid var(--stage-line);
+    border-radius: 0.3rem;
+    background: transparent;
+    color: var(--stage-ink);
+  }
+  .axis button[aria-pressed="true"] {
+    background: var(--stage-ink);
+    border-color: var(--stage-ink);
+    color: var(--stage);
+  }
+  .chip {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--stage-ink);
+  }
+  .chip a {
+    color: var(--stage-ink);
+  }
+  .chip button {
+    min-width: 2.75rem;
+    padding: 0;
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+  /* The nav panel wraps to a second line on a narrow screen. */
+  @media (max-width: 40rem) {
+    .controls {
+      top: 7.2rem;
+    }
+  }
+  .controls :focus-visible {
+    outline-color: var(--stage-focus);
+  }
+
+  /* The picked role: a card in the corner, scrolling if the role has a lot to say. */
+  .card {
+    position: absolute;
+    right: 0.6rem;
+    bottom: 0.6rem;
+    z-index: 4;
+    width: min(22rem, calc(100% - 1.2rem));
+    max-height: calc(100% - 8rem);
+    overflow: auto;
     color: var(--ink);
-    font-size: 1rem;
-  }
-  .found {
-    margin: 0 0 0.6rem;
-    font-size: 0.9rem;
-    color: var(--ink-soft);
   }
 
-  .map-view {
+  .gate {
+    position: absolute;
+    inset: 0;
     display: grid;
-    grid-template-columns: minmax(0, 1fr);
+    align-content: center;
+    justify-items: center;
     gap: 1rem;
-    align-items: start;
+    padding: 5rem 1.5rem 2rem;
+    text-align: center;
   }
-  .hint {
+  .gate p {
+    max-width: 28rem;
     margin: 0;
-    padding: 0.8rem 1rem;
-    border: 1px dashed var(--line);
-    border-radius: var(--radius);
-    color: var(--ink-soft);
-    font-size: 0.92rem;
   }
-
-  /* Phones get the list; wide screens the map; a person's choice beats both. */
-  .page[data-view="list"] .map-view,
-  .page[data-view="auto"] .map-view {
-    display: none;
+  .gate-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
   }
-  .page[data-view="map"] .list-view,
-  .page[data-view="map"] .summary-top {
-    display: none;
+  .gate .button {
+    background: var(--stage);
+    border-color: var(--stage-soft);
+    color: var(--stage-ink);
   }
-  @media (min-width: 60rem) {
-    .page[data-view="auto"] .map-view {
-      display: grid;
-    }
-    .page[data-view="auto"] .list-view,
-    .page[data-view="auto"] .summary-top {
-      display: none;
-    }
-    .map-view {
-      grid-template-columns: minmax(0, 1fr) 22rem;
-    }
+  .gate .button.primary {
+    background: var(--stage-ink);
+    color: var(--stage);
+  }
+  .gate :focus-visible {
+    outline-color: var(--stage-focus);
   }
 </style>
