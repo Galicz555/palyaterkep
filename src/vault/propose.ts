@@ -119,7 +119,10 @@ const run = (args: string[], input: string): Promise<string> =>
 if (import.meta.main) {
   const esco = JSON.parse(readFileSync("raw/esco/esco.json", "utf8")) as Esco;
   const proposals = loadProposals();
-  const missing = esco.occupations.filter((o) => !(o.code in proposals));
+  // Sorted by code, so occupations of one ISCO group are judged side by side in one call.
+  const missing = esco.occupations
+    .filter((o) => !(o.code in proposals))
+    .sort((a, b) => (a.code < b.code ? -1 : 1));
   const batches: Occupation[][] = [];
   for (let i = 0; i < missing.length; i += BATCH) batches.push(missing.slice(i, i + BATCH));
   console.log(`${missing.length} occupations to propose in ${batches.length} calls`);
