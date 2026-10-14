@@ -94,6 +94,8 @@ export interface Arrangement {
   arms?: Float32Array;
   /** The soft look: small glowing points that cover one another, drawn far to near, not additive. */
   soft?: true;
+  /** What the roles a CV does not mark look like beside the marked ones: a share of grey, and an opacity. */
+  field?: { grey: number; alpha: number };
   /** How opaque a node is: where a layout packs the roles close, they are fainter, to stay apart. */
   alpha: number;
 }
@@ -236,6 +238,7 @@ function sphere(data: MapData): Arrangement {
     extent: R_OUT,
     sizes,
     soft: true,
+    field: { grey: 0.25, alpha: 0.75 },
     alpha: 0.95,
   };
 }

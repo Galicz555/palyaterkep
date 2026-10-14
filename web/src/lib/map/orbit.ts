@@ -282,8 +282,8 @@ export function createMap(
         mark = 0.6;
         alpha = 1;
       } else if (marks) {
-        color = mix(base[i]!, GREY, 0.6);
-        alpha = 0.22;
+        color = mix(base[i]!, GREY, arr.field?.grey ?? 0.6);
+        alpha = arr.field?.alpha ?? 0.22;
       } else if (noData[i]) {
         color = mix(base[i]!, GREY, 0.7);
         alpha = 0.55;
