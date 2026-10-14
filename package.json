@@ -13,6 +13,7 @@
     "propose": "node src/vault/propose.ts",
     "vault": "node src/vault/generate.ts",
     "vault:lint": "node src/vault/lint.ts",
+    "cv": "node src/cv/cli.ts",
     "test": "vitest run",
     "types": "tsc --noEmit",
     "format": "prettier --write .",
