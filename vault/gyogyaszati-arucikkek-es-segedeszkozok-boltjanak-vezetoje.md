@@ -44,7 +44,7 @@ lateral:
   - "[[kerekpar-szakuzlet-vezetoje]]"
   - "[[textilbolt-vezetoje]]"
   - "[[szemuveg-es-latszereszeti-bolt-vezetoje]]"
-  - "[[audio-video-szakuzlet-vezetoje]]"
+  - "[[kerteszeti-es-viragbolt-vezetoje]]"
 ---
 
 # Gyógyászati árucikkek és segédeszközök boltjának vezetője
@@ -97,4 +97,4 @@ A gyógyászati árucikkek és segédeszközök boltjának vezetői felelősség
 - [[kerekpar-szakuzlet-vezetoje|kerékpár-szaküzlet vezetője]]
 - [[textilbolt-vezetoje|textilbolt vezetője]]
 - [[szemuveg-es-latszereszeti-bolt-vezetoje|szemüveg- és látszerészeti bolt vezetője]]
-- [[audio-video-szakuzlet-vezetoje|audio-video szaküzlet vezetője]]
+- [[kerteszeti-es-viragbolt-vezetoje|kertészeti és virágbolt vezetője]]

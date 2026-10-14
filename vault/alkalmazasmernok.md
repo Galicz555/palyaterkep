@@ -41,10 +41,12 @@ skills:
   - http://data.europa.eu/esco/skill/ed8de897-adbe-4f0e-b4d2-534953e64c72
   - http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998
 lateral:
-  - "[[szoftverfejleszto]]"
   - "[[nyelvi-mernok]]"
+  - "[[senior-szoftverfejleszto]]"
   - "[[precizios-mernok]]"
+  - "[[medior-szoftverfejleszto]]"
   - "[[felhasznaloi-felulet-fejleszto]]"
+  - "[[ai-mernok]]"
 ---
 
 # Alkalmazásmérnök
@@ -94,7 +96,9 @@ Az alkalmazásmérnökök a műszaki követelményekkel, az irányítással és 
 
 ## Váltások
 
-- [[szoftverfejleszto|szoftverfejlesztő]]
 - [[nyelvi-mernok|nyelvi mérnök]]
+- [[senior-szoftverfejleszto|Senior szoftverfejlesztő]]
 - [[precizios-mernok|precíziós mérnök]]
+- [[medior-szoftverfejleszto|Medior szoftverfejlesztő]]
 - [[felhasznaloi-felulet-fejleszto|felhasználói felület fejlesztő]]
+- [[ai-mernok|AI-mérnök]]

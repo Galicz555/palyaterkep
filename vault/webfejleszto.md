@@ -34,12 +34,12 @@ skills:
   - http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998
   - http://data.europa.eu/esco/skill/f84a433f-34f1-4083-b0a3-24802623509c
 lateral:
+  - "[[ikt-rendszerfejleszto]]"
   - "[[ikt-alkalmazasbeallito]]"
   - "[[felhasznaloi-felulet-fejleszto]]"
   - "[[digitalisjatek-fejleszto]]"
-  - "[[internetes-rendszergazda]]"
-  - "[[digitalis-media-tervezo]]"
-  - "[[webtartalom-menedzser]]"
+  - "[[medior-szoftverfejleszto]]"
+  - "[[junior-szoftverfejleszto]]"
 ---
 
 # Webfejlesztő
@@ -82,9 +82,9 @@ A webfejlesztők a rendelkezésre bocsátott terveken alapuló, interneten hozz�
 
 ## Váltások
 
+- [[ikt-rendszerfejleszto|IKT rendszerfejlesztő]]
 - [[ikt-alkalmazasbeallito|IKT alkalmazásbeállító]]
 - [[felhasznaloi-felulet-fejleszto|felhasználói felület fejlesztő]]
 - [[digitalisjatek-fejleszto|digitálisjáték-fejlesztő]]
-- [[internetes-rendszergazda|internetes rendszergazda]]
-- [[digitalis-media-tervezo|digitális média tervező]]
-- [[webtartalom-menedzser|webtartalom-menedzser]]
+- [[medior-szoftverfejleszto|Medior szoftverfejlesztő]]
+- [[junior-szoftverfejleszto|Junior szoftverfejlesztő]]

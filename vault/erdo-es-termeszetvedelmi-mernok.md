@@ -65,7 +65,7 @@ lateral:
   - "[[telepulestervezo-mernok]]"
   - "[[kozmologus]]"
   - "[[mezogazdasagi-kutato]]"
-  - "[[farmakologus]]"
+  - "[[kornyezetvedelmi-kutato]]"
 ---
 
 # Erdő- és természetvédelmi mérnök
@@ -139,4 +139,4 @@ Az erdő- és természetvédelmi mérnökök az erdők, parkok és egyéb termé
 - [[telepulestervezo-mernok|településtervező mérnök]]
 - [[kozmologus|kozmológus]]
 - [[mezogazdasagi-kutato|mezőgazdasági kutató]]
-- [[farmakologus|farmakológus]]
+- [[kornyezetvedelmi-kutato|környezetvédelmi kutató]]

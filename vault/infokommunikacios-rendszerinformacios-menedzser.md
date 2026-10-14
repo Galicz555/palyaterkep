@@ -33,8 +33,7 @@ skills:
   - http://data.europa.eu/esco/skill/faf208ae-d4a4-43b4-bb82-846b7348b740
   - http://data.europa.eu/esco/skill/fbafa41f-cd05-4109-a649-8b44d306d779
   - http://data.europa.eu/esco/skill/fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5
-lateral:
-  - "[[adatkezelesert-felelos-igazgato]]"
+lateral: []
 ---
 
 # Infokommunikációs rendszerinformációs menedzser
@@ -77,4 +76,4 @@ Az infokommunikációs rendszerinformációs menedzserek hozzájárulnak a szerv
 
 ## Váltások
 
-- [[adatkezelesert-felelos-igazgato|adatkezelésért felelős igazgató]]
+Nincs.

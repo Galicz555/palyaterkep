@@ -30,8 +30,8 @@ skills:
 lateral:
   - "[[befektetesi-elemzo]]"
   - "[[befektetesi-tanacsado]]"
-  - "[[befektetesialap-kezelo]]"
   - "[[fuzios-es-felvasarlasi-elemzo]]"
+  - "[[befektetesialap-kezelo]]"
   - "[[kockazatitoke-befekteto]]"
   - "[[osztalekelemzo]]"
 ---
@@ -72,7 +72,7 @@ A vállalati befektetési bankárok stratégiai tanácsadást nyújtanak vállal
 
 - [[befektetesi-elemzo|befektetési elemző]]
 - [[befektetesi-tanacsado|befektetési tanácsadó]]
-- [[befektetesialap-kezelo|befektetésialap-kezelő]]
 - [[fuzios-es-felvasarlasi-elemzo|fúziós és felvásárlási elemző]]
+- [[befektetesialap-kezelo|befektetésialap-kezelő]]
 - [[kockazatitoke-befekteto|kockázatitőke-befektető]]
 - [[osztalekelemzo|osztalékelemző]]

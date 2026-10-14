@@ -59,8 +59,8 @@ skills:
 lateral:
   - "[[szarazfoldi-szelenergiaval-foglalkozo-mernok]]"
   - "[[tengeri-megujulo-energiaval-foglalkozo-technikus]]"
-  - "[[tengeri-megujulo-energiat-hasznosito-eromu-uzemeltetoje]]"
   - "[[napenergia-mernok]]"
+  - "[[tengeri-megujulo-energiat-hasznosito-eromu-uzemeltetoje]]"
 ---
 
 # Tengeri megújuló energiával foglalkozó mérnök
@@ -129,5 +129,5 @@ A tengeri megújuló energiával foglalkozó mérnökök tervezik és felügyeli
 
 - [[szarazfoldi-szelenergiaval-foglalkozo-mernok|szárazföldi szélenergiával foglalkozó mérnök]]
 - [[tengeri-megujulo-energiaval-foglalkozo-technikus|tengeri megújuló energiával foglalkozó technikus]]
-- [[tengeri-megujulo-energiat-hasznosito-eromu-uzemeltetoje|tengeri megújuló energiát hasznosító erőmű üzemeltetője]]
 - [[napenergia-mernok|napenergia-mérnök]]
+- [[tengeri-megujulo-energiat-hasznosito-eromu-uzemeltetoje|tengeri megújuló energiát hasznosító erőmű üzemeltetője]]

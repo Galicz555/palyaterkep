@@ -32,11 +32,8 @@ skills:
   - http://data.europa.eu/esco/skill/fbafa41f-cd05-4109-a649-8b44d306d779
 lateral:
   - "[[tudasmernok]]"
-  - "[[adatbazis-tervezo]]"
   - "[[adattarhaz-tervezo]]"
-  - "[[szoftvermernok]]"
   - "[[ikt-halozati-mernok]]"
-  - "[[programtervezo-menedzser]]"
 ---
 
 # IT rendszermérnök
@@ -77,8 +74,5 @@ Az IKT rendszermérnökök architektúrát, alkatrészeket, modulokat, interfés
 ## Váltások
 
 - [[tudasmernok|tudásmérnök]]
-- [[adatbazis-tervezo|adatbázis-tervező]]
 - [[adattarhaz-tervezo|adattárház-tervező]]
-- [[szoftvermernok|szoftvermérnök]]
 - [[ikt-halozati-mernok|IKT hálózati mérnök]]
-- [[programtervezo-menedzser|programtervező menedzser]]

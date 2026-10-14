@@ -21,10 +21,10 @@ skills:
 lateral:
   - "[[ikt-rendszertesztelo]]"
   - "[[digitalisjatek-tesztelo]]"
-  - "[[szoftvertesztelo]]"
-  - "[[ikt-tesztelemzo]]"
+  - "[[junior-szoftvertesztelo]]"
+  - "[[medior-szoftvertesztelo]]"
+  - "[[senior-szoftvertesztelo]]"
   - "[[ikt-hasznalhatosagi-tesztelo]]"
-  - "[[ikt-hozzaferhetosegi-tesztelo]]"
 ---
 
 # IKT integrációs tesztmérnök
@@ -54,7 +54,7 @@ Az IKT integrációs tesztelők rendszerelem-, egység- vagy akár alkalmazáscs
 
 - [[ikt-rendszertesztelo|IKT rendszertesztelő]]
 - [[digitalisjatek-tesztelo|digitálisjáték-tesztelő]]
-- [[szoftvertesztelo|szoftvertesztelő]]
-- [[ikt-tesztelemzo|IKT-tesztelemző]]
+- [[junior-szoftvertesztelo|Junior szoftvertesztelő]]
+- [[medior-szoftvertesztelo|Medior szoftvertesztelő]]
+- [[senior-szoftvertesztelo|Senior szoftvertesztelő]]
 - [[ikt-hasznalhatosagi-tesztelo|IKT használhatósági tesztelő]]
-- [[ikt-hozzaferhetosegi-tesztelo|IKT hozzáférhetőségi tesztelő]]

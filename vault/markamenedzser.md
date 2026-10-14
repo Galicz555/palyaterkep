@@ -40,7 +40,6 @@ skills:
   - http://data.europa.eu/esco/skill/fe39d4db-4cb5-4299-bb9f-896c8fd6ab13
 lateral:
   - "[[digitalis-marketing-menedzser]]"
-  - "[[infokommunikacios-ertekesitesi-menedzser]]"
 ---
 
 # Márkamenedzser
@@ -89,4 +88,3 @@ A márkamenedzserek elemzik és megtervezik azt a módszert, amellyel a márkát
 ## Váltások
 
 - [[digitalis-marketing-menedzser|digitális marketing menedzser]]
-- [[infokommunikacios-ertekesitesi-menedzser|infokommunikációs értékesítési menedzser]]

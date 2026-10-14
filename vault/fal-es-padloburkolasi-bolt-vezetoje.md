@@ -40,10 +40,10 @@ skills:
 lateral:
   - "[[zene-es-videobolt-vezetoje]]"
   - "[[telekommunikacios-szakuzlet-vezetoje]]"
-  - "[[kisallatkereskedes-vezetoje]]"
   - "[[fenykepeszbolt-vezetoje]]"
   - "[[hasznaltcikkbolt-vezetoje]]"
   - "[[kerekpar-szakuzlet-vezetoje]]"
+  - "[[textilbolt-vezetoje]]"
 ---
 
 # Fal- és padlóburkolási bolt vezetője
@@ -92,7 +92,7 @@ A fal- és padlóburkolási boltok vezetői felelősséget vállalnak a fal- és
 
 - [[zene-es-videobolt-vezetoje|zene- és videóbolt vezetője]]
 - [[telekommunikacios-szakuzlet-vezetoje|telekommunikációs szaküzlet vezetője]]
-- [[kisallatkereskedes-vezetoje|kisállatkereskedés vezetője]]
 - [[fenykepeszbolt-vezetoje|fényképészbolt vezetője]]
 - [[hasznaltcikkbolt-vezetoje|használtcikkbolt vezetője]]
 - [[kerekpar-szakuzlet-vezetoje|kerékpár-szaküzlet vezetője]]
+- [[textilbolt-vezetoje|textilbolt vezetője]]

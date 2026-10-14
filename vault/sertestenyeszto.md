@@ -40,8 +40,8 @@ skills:
 lateral:
   - "[[premesallat-tenyeszto]]"
   - "[[lotenyeszto]]"
-  - "[[szarvasmarha-tenyeszto]]"
   - "[[juhtenyeszto]]"
+  - "[[szarvasmarha-tenyeszto]]"
   - "[[mehesz]]"
   - "[[kutyatenyeszto]]"
 ---
@@ -92,7 +92,7 @@ A sertéstenyésztők feladata a termelési folyamatok felügyelete, és a sert�
 
 - [[premesallat-tenyeszto|prémesállat-tenyésztő]]
 - [[lotenyeszto|lótenyésztő]]
-- [[szarvasmarha-tenyeszto|szarvasmarha-tenyésztő]]
 - [[juhtenyeszto|juhtenyésztő]]
+- [[szarvasmarha-tenyeszto|szarvasmarha-tenyésztő]]
 - [[mehesz|méhész]]
 - [[kutyatenyeszto|kutyatenyésztő]]

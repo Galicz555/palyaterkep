@@ -42,7 +42,8 @@ the edge set as the union of all notes' lists.
 ## Lateral edges
 
 Computed between every pair of roles (generated and curated) of different occupations whose
-levels are at most 1 apart. The score is the IDF-weighted Jaccard index of their `skills`: the
+levels are at most 1 apart and that no curated progression edge already links (a ladder's steps
+share most of their skills, and a lateral edge would only repeat the step). The score is the IDF-weighted Jaccard index of their `skills`: the
 summed weight of the shared skills over the summed weight of all their skills, a skill's weight
 being `ln(roles / roles needing it)`. A skill nearly every role lists, like „személyzetet irányít”,
 weighs little, so it does not link unrelated work. Pairs scoring at least 0.12 are taken strongest

@@ -29,11 +29,11 @@ skills:
   - http://data.europa.eu/esco/skill/f8e5f1fd-82ee-45c0-b179-399d8e9a22aa
 lateral:
   - "[[alternativ-allatterapeuta]]"
-  - "[[allat-csontkovacs]]"
-  - "[[allat-hidroterapeuta]]"
-  - "[[allat-fizikoterapeuta]]"
   - "[[allat-manualterapeuta]]"
   - "[[allatmasszor]]"
+  - "[[allat-csontkovacs]]"
+  - "[[allat-fizikoterapeuta]]"
+  - "[[allat-hidroterapeuta]]"
 ---
 
 # Állatgyógyász
@@ -71,8 +71,8 @@ Az állatgyógyász az állatorvosi diagnózist vagy beutalást követően terá
 ## Váltások
 
 - [[alternativ-allatterapeuta|alternatív állatterapeuta]]
-- [[allat-csontkovacs|állat csontkovács]]
-- [[allat-hidroterapeuta|állat hidroterapeuta]]
-- [[allat-fizikoterapeuta|állat fizikoterapeuta]]
 - [[allat-manualterapeuta|állat manuálterapeuta]]
 - [[allatmasszor|állatmasszőr]]
+- [[allat-csontkovacs|állat csontkovács]]
+- [[allat-fizikoterapeuta|állat fizikoterapeuta]]
+- [[allat-hidroterapeuta|állat hidroterapeuta]]

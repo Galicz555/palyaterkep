@@ -54,8 +54,8 @@ lateral:
   - "[[mikroelektro-mechanikai-mernok]]"
   - "[[elektromagneses-mernok]]"
   - "[[elektromechanikai-mernok]]"
-  - "[[optoelektronikai-mernok]]"
   - "[[gyartasautomatizalasi-mernok]]"
+  - "[[optoelektronikai-mernok]]"
 ---
 
 # Szenzormérnök
@@ -118,5 +118,5 @@ A szenzormérnökök szenzorokat, érzékelőrendszereket és szenzorokkal ellá
 - [[mikroelektro-mechanikai-mernok|mikroelektro-mechanikai mérnök]]
 - [[elektromagneses-mernok|elektromágneses mérnök]]
 - [[elektromechanikai-mernok|elektromechanikai mérnök]]
-- [[optoelektronikai-mernok|optoelektronikai mérnök]]
 - [[gyartasautomatizalasi-mernok|gyártásautomatizálási mérnök]]
+- [[optoelektronikai-mernok|optoelektronikai mérnök]]

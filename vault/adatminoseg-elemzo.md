@@ -28,12 +28,12 @@ skills:
   - http://data.europa.eu/esco/skill/e9575f7f-053a-439e-8074-f93df3334e92
   - http://data.europa.eu/esco/skill/f2d57f41-43b4-4f5b-8100-3df5c21eda50
 lateral:
-  - "[[adatelemzo]]"
+  - "[[senior-adatelemzo]]"
   - "[[adatrogzito]]"
-  - "[[adattudos]]"
-  - "[[adatbazis-tervezo]]"
   - "[[adattarhaz-tervezo]]"
   - "[[adatbazis-integrator]]"
+  - "[[medior-adatelemzo]]"
+  - "[[adattudos]]"
 ---
 
 # Adatminőség-elemző
@@ -70,9 +70,9 @@ Az adatminőség-elemzők felülvizsgálják a szervezet adatainak pontosságát
 
 ## Váltások
 
-- [[adatelemzo|adatelemző]]
+- [[senior-adatelemzo|Senior adatelemző]]
 - [[adatrogzito|adatrögzítő]]
-- [[adattudos|adattudós]]
-- [[adatbazis-tervezo|adatbázis-tervező]]
 - [[adattarhaz-tervezo|adattárház-tervező]]
 - [[adatbazis-integrator|adatbázis integrátor]]
+- [[medior-adatelemzo|Medior adatelemző]]
+- [[adattudos|Adattudós]]

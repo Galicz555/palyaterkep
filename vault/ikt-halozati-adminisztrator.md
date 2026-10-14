@@ -43,9 +43,9 @@ skills:
   - http://data.europa.eu/esco/skill/f8f1f725-0105-41fa-9887-4df9e7a7af1e
 lateral:
   - "[[ikt-halozati-technikus]]"
-  - "[[ikt-rendszeradminisztrator]]"
   - "[[ikt-halozatmernok]]"
   - "[[infokommunikacios-technikus]]"
+  - "[[rendszermernok]]"
   - "[[tavkozlesi-mernok]]"
 ---
 
@@ -98,7 +98,7 @@ Az IKT hálózati adminisztrátorok megbízható, biztonságos és hatékony ada
 ## Váltások
 
 - [[ikt-halozati-technikus|IKT hálózati technikus]]
-- [[ikt-rendszeradminisztrator|IKT rendszeradminisztrátor]]
 - [[ikt-halozatmernok|IKT hálózatmérnök]]
 - [[infokommunikacios-technikus|infokommunikációs technikus]]
+- [[rendszermernok|Rendszermérnök]]
 - [[tavkozlesi-mernok|távközlési mérnök]]

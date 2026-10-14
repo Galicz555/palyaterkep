@@ -43,9 +43,9 @@ lateral:
   - "[[italbolt-vezetoje]]"
   - "[[zoldseg-es-gyumolcsbolt-vezetoje]]"
   - "[[ortopediai-szakuzlet-vezetoje]]"
+  - "[[dohanybolt-vezetoje]]"
   - "[[konyvesbolt-vezetoje]]"
   - "[[regisegbolt-vezetoje]]"
-  - "[[szoftver-es-mediabolt-vezetoje]]"
 ---
 
 # Lőszerbolt vezetője
@@ -97,6 +97,6 @@ A lőszerboltok vezetői felelősséget vállalnak a szaküzletekben végzett te
 - [[italbolt-vezetoje|italbolt vezetője]]
 - [[zoldseg-es-gyumolcsbolt-vezetoje|zöldség- és gyümölcsbolt vezetője]]
 - [[ortopediai-szakuzlet-vezetoje|ortopédiai szaküzlet vezetője]]
+- [[dohanybolt-vezetoje|dohánybolt vezetője]]
 - [[konyvesbolt-vezetoje|könyvesbolt vezetője]]
 - [[regisegbolt-vezetoje|régiségbolt vezetője]]
-- [[szoftver-es-mediabolt-vezetoje|szoftver- és médiabolt vezetője]]

@@ -37,12 +37,12 @@ skills:
   - http://data.europa.eu/esco/skill/f4d3a8ff-2db1-4015-aa28-d4564afef3fd
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
-  - "[[muszaki-ertekesito]]"
-  - "[[banyaszati-es-epitoipari-gepekre-szakosodott-muszaki-ertekesito]]"
-  - "[[vegyipari-termekekre-szakosodott-muszaki-ertekesito]]"
-  - "[[mezogazdasagi-gepekre-szakosodott-muszaki-ertekesito]]"
-  - "[[textilipari-gepekre-szakosodott-muszaki-ertekesito]]"
-  - "[[epuletgepeszeti-muszaki-ertekesito]]"
+  - "[[gepipari-muszaki-ertekesito]]"
+  - "[[ertekesitesi-ugyintezo]]"
+  - "[[hirdetesszervezo]]"
+  - "[[vevoszolgalati-technikus]]"
+  - "[[infokommunikacios-ertekesitesi-menedzser]]"
+  - "[[ertekesitesi-ugyfel-kapcsolattarto]]"
 ---
 
 # Irodatechnikai műszaki értékesítő
@@ -88,9 +88,9 @@ Az irodatechnikai műszaki értékesítők a vállalkozásban készült árut é
 
 ## Váltások
 
-- [[muszaki-ertekesito|műszaki értékesítő]]
-- [[banyaszati-es-epitoipari-gepekre-szakosodott-muszaki-ertekesito|bányászati és építőipari gépekre szakosodott műszaki értékesítő]]
-- [[vegyipari-termekekre-szakosodott-muszaki-ertekesito|vegyipari termékekre szakosodott műszaki értékesítő]]
-- [[mezogazdasagi-gepekre-szakosodott-muszaki-ertekesito|mezőgazdasági gépekre szakosodott műszaki értékesítő]]
-- [[textilipari-gepekre-szakosodott-muszaki-ertekesito|textilipari gépekre szakosodott műszaki értékesítő]]
-- [[epuletgepeszeti-muszaki-ertekesito|épületgépészeti műszaki értékesítő]]
+- [[gepipari-muszaki-ertekesito|gépipari műszaki értékesítő]]
+- [[ertekesitesi-ugyintezo|értékesítési ügyintéző]]
+- [[hirdetesszervezo|hirdetésszervező]]
+- [[vevoszolgalati-technikus|vevőszolgálati technikus]]
+- [[infokommunikacios-ertekesitesi-menedzser|infokommunikációs értékesítési menedzser]]
+- [[ertekesitesi-ugyfel-kapcsolattarto|értékesítési ügyfél-kapcsolattartó]]

@@ -49,11 +49,11 @@ skills:
   - http://data.europa.eu/esco/skill/ff64e9fc-36dd-4035-872a-83aa41dc1ad9
 lateral:
   - "[[nyelvesz]]"
+  - "[[szociologus]]"
   - "[[kriminologus]]"
   - "[[tortenesz]]"
   - "[[egyetemi-tudomanyos-segedmunkatars]]"
   - "[[antropologus]]"
-  - "[[viselkedeskutato]]"
 ---
 
 # Tanatológus
@@ -111,8 +111,8 @@ A tanatológiai kutatók a halált és a haldoklókat tanulmányozzák egy sor t
 ## Váltások
 
 - [[nyelvesz|nyelvész]]
+- [[szociologus|szociológus]]
 - [[kriminologus|kriminológus]]
 - [[tortenesz|történész]]
 - [[egyetemi-tudomanyos-segedmunkatars|egyetemi tudományos segédmunkatárs]]
 - [[antropologus|antropológus]]
-- [[viselkedeskutato|viselkedéskutató]]

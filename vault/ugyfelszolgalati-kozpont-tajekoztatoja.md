@@ -22,6 +22,7 @@ skills:
   - http://data.europa.eu/esco/skill/de2f0ce8-f8d6-48c5-a213-4d065251cecf
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
+  - "[[vevoszolgalati-technikus]]"
   - "[[postai-ugyfelkapcsolati-foglalkozasu]]"
 ---
 
@@ -53,4 +54,5 @@ Az ügyfélszolgálati központok tájékoztatói telefonon és más eszközön,
 
 ## Váltások
 
+- [[vevoszolgalati-technikus|vevőszolgálati technikus]]
 - [[postai-ugyfelkapcsolati-foglalkozasu|postai ügyfélkapcsolati foglalkozású]]

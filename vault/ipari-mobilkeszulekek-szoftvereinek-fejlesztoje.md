@@ -31,8 +31,8 @@ lateral:
   - "[[beagyazott-szoftver-fejleszto-mernok]]"
   - "[[ikt-alkalmazasfejleszto]]"
   - "[[ikt-rendszerfejleszto]]"
-  - "[[szoftverfejleszto]]"
   - "[[digitalisjatek-fejleszto]]"
+  - "[[ikt-alkalmazasbeallito]]"
 ---
 
 # Ipari mobilkészülékek szoftvereinek fejlesztője
@@ -72,5 +72,5 @@ Az ipari mobileszközök szoftverfejlesztői ipari szükségleteken alapuló, sp
 - [[beagyazott-szoftver-fejleszto-mernok|beágyazott szoftver fejlesztő mérnök]]
 - [[ikt-alkalmazasfejleszto|IKT alkalmazásfejlesztő]]
 - [[ikt-rendszerfejleszto|IKT rendszerfejlesztő]]
-- [[szoftverfejleszto|szoftverfejlesztő]]
 - [[digitalisjatek-fejleszto|digitálisjáték-fejlesztő]]
+- [[ikt-alkalmazasbeallito|IKT alkalmazásbeállító]]

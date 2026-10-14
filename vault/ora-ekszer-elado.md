@@ -48,8 +48,8 @@ lateral:
   - "[[halbolti-elado]]"
   - "[[epitoanyagbolti-elado]]"
   - "[[zoldseg-gyumolcs-elado]]"
-  - "[[kerteszeti-es-viragbolti-elado]]"
   - "[[butorbolti-elado]]"
+  - "[[kerteszeti-es-viragbolti-elado]]"
 ---
 
 # Óra-ékszer eladó
@@ -106,5 +106,5 @@ Az óra-ékszer eladók ékszereket és karórákat értékesítenek, tartanak k
 - [[halbolti-elado|halbolti eladó]]
 - [[epitoanyagbolti-elado|építőanyagbolti eladó]]
 - [[zoldseg-gyumolcs-elado|zöldség-gyümölcs eladó]]
-- [[kerteszeti-es-viragbolti-elado|kertészeti és virágbolti eladó]]
 - [[butorbolti-elado|bútorbolti eladó]]
+- [[kerteszeti-es-viragbolti-elado|kertészeti és virágbolti eladó]]

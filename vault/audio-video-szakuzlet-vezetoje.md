@@ -39,12 +39,12 @@ skills:
   - http://data.europa.eu/esco/skill/efe5d94c-2249-4a50-8c44-6e77331c698d
   - http://data.europa.eu/esco/skill/fde186df-c9c4-49f5-b2a5-d66adc7c43a5
 lateral:
-  - "[[textilbolt-vezetoje]]"
-  - "[[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje]]"
   - "[[szemuveg-es-latszereszeti-bolt-vezetoje]]"
   - "[[szamitastechnikai-bolt-vezetoje]]"
   - "[[hirlaparu-papir-es-iroszerbolt-vezetoje]]"
   - "[[ruhazati-bolt-vezetoje]]"
+  - "[[haztartasi-keszulekek-boltjanak-vezetoje]]"
+  - "[[pekuzlet-vezetoje]]"
 ---
 
 # Audio-video szaküzlet vezetője
@@ -92,9 +92,9 @@ Az audio-video szaküzletek vezetői felelősséget vállalnak a szaküzletekben
 
 ## Váltások
 
-- [[textilbolt-vezetoje|textilbolt vezetője]]
-- [[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje|gyógyászati árucikkek és segédeszközök boltjának vezetője]]
 - [[szemuveg-es-latszereszeti-bolt-vezetoje|szemüveg- és látszerészeti bolt vezetője]]
 - [[szamitastechnikai-bolt-vezetoje|számítástechnikai bolt vezetője]]
 - [[hirlaparu-papir-es-iroszerbolt-vezetoje|hírlapáru-, papír- és írószerbolt vezetője]]
 - [[ruhazati-bolt-vezetoje|ruházati bolt vezetője]]
+- [[haztartasi-keszulekek-boltjanak-vezetoje|háztartási készülékek boltjának vezetője]]
+- [[pekuzlet-vezetoje|péküzlet vezetője]]

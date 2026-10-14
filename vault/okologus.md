@@ -54,7 +54,7 @@ skills:
   - http://data.europa.eu/esco/skill/ff64e9fc-36dd-4035-872a-83aa41dc1ad9
 lateral:
   - "[[erdo-es-termeszetvedelmi-mernok]]"
-  - "[[irodalmar]]"
+  - "[[kozmetikai-vegyesz]]"
   - "[[metrologus]]"
   - "[[biologus]]"
   - "[[allatkutato-tudomanyos-munkatars]]"
@@ -121,7 +121,7 @@ Az ökológusok értékeléseket végeznek az élő szervezetek, nevezetesen az 
 ## Váltások
 
 - [[erdo-es-termeszetvedelmi-mernok|erdő- és természetvédelmi mérnök]]
-- [[irodalmar|irodalmár]]
+- [[kozmetikai-vegyesz|kozmetikai vegyész]]
 - [[metrologus|metrológus]]
 - [[biologus|biológus]]
 - [[allatkutato-tudomanyos-munkatars|állatkutató tudományos munkatárs]]

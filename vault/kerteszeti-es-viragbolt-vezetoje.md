@@ -44,7 +44,7 @@ lateral:
   - "[[hus-es-hentesarubolt-vezetoje]]"
   - "[[pekuzlet-vezetoje]]"
   - "[[dohanybolt-vezetoje]]"
-  - "[[kerekpar-szakuzlet-vezetoje]]"
+  - "[[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje]]"
 ---
 
 # Kertészeti és virágbolt vezetője
@@ -97,4 +97,4 @@ A kertészeti és virágboltok vezetői felelősséget vállalnak a szaküzletek
 - [[hus-es-hentesarubolt-vezetoje|hús- és hentesárubolt vezetője]]
 - [[pekuzlet-vezetoje|péküzlet vezetője]]
 - [[dohanybolt-vezetoje|dohánybolt vezetője]]
-- [[kerekpar-szakuzlet-vezetoje|kerékpár-szaküzlet vezetője]]
+- [[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje|gyógyászati árucikkek és segédeszközök boltjának vezetője]]

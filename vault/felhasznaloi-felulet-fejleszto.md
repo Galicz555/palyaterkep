@@ -27,7 +27,7 @@ skills:
 lateral:
   - "[[webfejleszto]]"
   - "[[felhasznaloi-felulet-tervezo]]"
-  - "[[digitalisjatek-fejleszto]]"
+  - "[[junior-szoftverfejleszto]]"
   - "[[alkalmazasmernok]]"
 ---
 
@@ -64,5 +64,5 @@ A felhasználóifelület-fejlesztők végrehajtják, kódolják, dokumentálják
 
 - [[webfejleszto|webfejlesztő]]
 - [[felhasznaloi-felulet-tervezo|felhasználói felület tervező]]
-- [[digitalisjatek-fejleszto|digitálisjáték-fejlesztő]]
+- [[junior-szoftverfejleszto|Junior szoftverfejlesztő]]
 - [[alkalmazasmernok|alkalmazásmérnök]]

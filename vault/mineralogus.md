@@ -54,12 +54,12 @@ skills:
   - http://data.europa.eu/esco/skill/fa642fc3-5cc5-41cf-8926-6617a8b976a7
   - http://data.europa.eu/esco/skill/ff64e9fc-36dd-4035-872a-83aa41dc1ad9
 lateral:
+  - "[[hidrologus]]"
   - "[[kineziologus]]"
   - "[[metrologus]]"
   - "[[irodalmar]]"
   - "[[oktataskutato]]"
   - "[[kozmetikai-vegyesz]]"
-  - "[[ikt-kutatasi-tanacsado]]"
 ---
 
 # Mineralógus
@@ -122,9 +122,9 @@ A mineralógusok a Föld összetételét, felépítését és egyéb fizikai asp
 
 ## Váltások
 
+- [[hidrologus|hidrológus]]
 - [[kineziologus|kineziológus]]
 - [[metrologus|metrológus]]
 - [[irodalmar|irodalmár]]
 - [[oktataskutato|oktatáskutató]]
 - [[kozmetikai-vegyesz|kozmetikai vegyész]]
-- [[ikt-kutatasi-tanacsado|IKT kutatási tanácsadó]]

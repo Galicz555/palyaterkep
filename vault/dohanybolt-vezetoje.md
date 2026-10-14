@@ -43,9 +43,9 @@ lateral:
   - "[[hus-es-hentesarubolt-vezetoje]]"
   - "[[kerteszeti-es-viragbolt-vezetoje]]"
   - "[[pekuzlet-vezetoje]]"
-  - "[[haztartasi-keszulekek-boltjanak-vezetoje]]"
-  - "[[audiologia-szakuzlet-vezetoje]]"
   - "[[ortopediai-szakuzlet-vezetoje]]"
+  - "[[zoldseg-es-gyumolcsbolt-vezetoje]]"
+  - "[[loszerbolt-vezetoje]]"
 ---
 
 # Dohánybolt vezetője
@@ -97,6 +97,6 @@ A dohányboltok vezetői felelősséget vállalnak a szaküzletekben végzett te
 - [[hus-es-hentesarubolt-vezetoje|hús- és hentesárubolt vezetője]]
 - [[kerteszeti-es-viragbolt-vezetoje|kertészeti és virágbolt vezetője]]
 - [[pekuzlet-vezetoje|péküzlet vezetője]]
-- [[haztartasi-keszulekek-boltjanak-vezetoje|háztartási készülékek boltjának vezetője]]
-- [[audiologia-szakuzlet-vezetoje|audiológia szaküzlet vezetője]]
 - [[ortopediai-szakuzlet-vezetoje|ortopédiai szaküzlet vezetője]]
+- [[zoldseg-es-gyumolcsbolt-vezetoje|zöldség- és gyümölcsbolt vezetője]]
+- [[loszerbolt-vezetoje|lőszerbolt vezetője]]

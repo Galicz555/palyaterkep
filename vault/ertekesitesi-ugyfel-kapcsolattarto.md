@@ -31,6 +31,7 @@ skills:
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
   - "[[infokommunikacios-ertekesitesi-menedzser]]"
+  - "[[irodatechnikai-muszaki-ertekesito]]"
   - "[[hirdetesszervezo]]"
   - "[[ertekesitesi-ugyintezo]]"
   - "[[gepipari-muszaki-ertekesito]]"
@@ -74,6 +75,7 @@ Az értékesítési ügyfél-kapcsolattartók közvetítő szerepet töltenek be
 ## Váltások
 
 - [[infokommunikacios-ertekesitesi-menedzser|infokommunikációs értékesítési menedzser]]
+- [[irodatechnikai-muszaki-ertekesito|irodatechnikai műszaki értékesítő]]
 - [[hirdetesszervezo|hirdetésszervező]]
 - [[ertekesitesi-ugyintezo|értékesítési ügyintéző]]
 - [[gepipari-muszaki-ertekesito|gépipari műszaki értékesítő]]

@@ -24,8 +24,6 @@ skills:
   - http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998
 lateral:
   - "[[ikt-halozatmernok]]"
-  - "[[ikt-rendszeradminisztrator]]"
-  - "[[ikt-rendszerelemzo]]"
 ---
 
 # Rendszer konfigurátor
@@ -58,5 +56,3 @@ A rendszerkonfigurátorok számítógépes rendszereket szabnak a szervezet és 
 ## Váltások
 
 - [[ikt-halozatmernok|IKT hálózatmérnök]]
-- [[ikt-rendszeradminisztrator|IKT rendszeradminisztrátor]]
-- [[ikt-rendszerelemzo|IKT rendszerelemző]]

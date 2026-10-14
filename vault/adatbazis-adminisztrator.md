@@ -38,10 +38,10 @@ skills:
 lateral:
   - "[[adatbazis-fejleszto]]"
   - "[[adatkozpont-uzemelteto]]"
-  - "[[adattarhaz-tervezo]]"
   - "[[nagy-archivalt-adatallomanyok-kezeloje]]"
-  - "[[adatbazis-tervezo]]"
+  - "[[adattarhaz-tervezo]]"
   - "[[adatbazis-integrator]]"
+  - "[[ikt-biztonsagi-adminisztrator]]"
 ---
 
 # Adatbázis adminisztrátor
@@ -88,7 +88,7 @@ Az adatbázis-rendszergazdák tesztelik, létrehozzák és kezelik a számítóg
 
 - [[adatbazis-fejleszto|adatbázis fejlesztő]]
 - [[adatkozpont-uzemelteto|adatközpont-üzemeltető]]
-- [[adattarhaz-tervezo|adattárház-tervező]]
 - [[nagy-archivalt-adatallomanyok-kezeloje|nagy archivált adatállományok kezelője]]
-- [[adatbazis-tervezo|adatbázis-tervező]]
+- [[adattarhaz-tervezo|adattárház-tervező]]
 - [[adatbazis-integrator|adatbázis integrátor]]
+- [[ikt-biztonsagi-adminisztrator|IKT biztonsági adminisztrátor]]

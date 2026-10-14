@@ -29,8 +29,8 @@ skills:
   - http://data.europa.eu/esco/skill/dcc40345-d002-497d-ae1e-9be30ff39f81
   - http://data.europa.eu/esco/skill/de857fbb-91a6-4a3f-8a47-93a9c1a616c8
 lateral:
-  - "[[orakra-es-ekszerekre-szakosodott-export-import-ugyintezo]]"
   - "[[irodagepekkel-es-berendezesekkel-foglalkozo-export-import-ugyintezo]]"
+  - "[[orakra-es-ekszerekre-szakosodott-export-import-ugyintezo]]"
   - "[[banyaszati-es-epitoipari-gepekkel-foglalkozo-export-import-ugyintezo]]"
   - "[[villamos-haztartasi-keszulekekkel-foglalkozo-export-import-ugyintezo]]"
   - "[[boripari-export-import-ugyintezo]]"
@@ -72,8 +72,8 @@ Az irodabútorokkal foglalkozó export-import ügyintézők munkájuk során az 
 
 ## Váltások
 
-- [[orakra-es-ekszerekre-szakosodott-export-import-ugyintezo|órákra és ékszerekre szakosodott export-import ügyintéző]]
 - [[irodagepekkel-es-berendezesekkel-foglalkozo-export-import-ugyintezo|irodagépekkel és -berendezésekkel foglalkozó export-import ügyintéző]]
+- [[orakra-es-ekszerekre-szakosodott-export-import-ugyintezo|órákra és ékszerekre szakosodott export-import ügyintéző]]
 - [[banyaszati-es-epitoipari-gepekkel-foglalkozo-export-import-ugyintezo|bányászati és építőipari gépekkel foglalkozó export-import ügyintéző]]
 - [[villamos-haztartasi-keszulekekkel-foglalkozo-export-import-ugyintezo|villamos háztartási készülékekkel foglalkozó export-import ügyintéző]]
 - [[boripari-export-import-ugyintezo|bőripari export-import ügyintéző]]

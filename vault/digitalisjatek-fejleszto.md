@@ -28,11 +28,11 @@ skills:
   - http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998
 lateral:
   - "[[beagyazott-szoftver-fejleszto-mernok]]"
+  - "[[ikt-alkalmazasfejleszto]]"
+  - "[[mobilalkalmazas-fejleszto]]"
   - "[[ipari-mobilkeszulekek-szoftvereinek-fejlesztoje]]"
   - "[[webfejleszto]]"
-  - "[[felhasznaloi-felulet-fejleszto]]"
-  - "[[3d-modellezo]]"
-  - "[[3d-animator]]"
+  - "[[medior-szoftverfejleszto]]"
 ---
 
 # Digitálisjáték-fejlesztő
@@ -69,8 +69,8 @@ A digitálisjáték-fejlesztők digitális játékokat programoznak, valósítan
 ## Váltások
 
 - [[beagyazott-szoftver-fejleszto-mernok|beágyazott szoftver fejlesztő mérnök]]
+- [[ikt-alkalmazasfejleszto|IKT alkalmazásfejlesztő]]
+- [[mobilalkalmazas-fejleszto|mobilalkalmazás-fejlesztő]]
 - [[ipari-mobilkeszulekek-szoftvereinek-fejlesztoje|ipari mobilkészülékek szoftvereinek fejlesztője]]
 - [[webfejleszto|webfejlesztő]]
-- [[felhasznaloi-felulet-fejleszto|felhasználói felület fejlesztő]]
-- [[3d-modellezo|3D modellező]]
-- [[3d-animator|3D animátor]]
+- [[medior-szoftverfejleszto|Medior szoftverfejlesztő]]

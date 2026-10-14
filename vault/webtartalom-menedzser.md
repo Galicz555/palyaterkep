@@ -44,8 +44,8 @@ lateral:
   - "[[digitalis-media-tervezo]]"
   - "[[e-learning-fejleszto]]"
   - "[[muszaki-iro]]"
-  - "[[webfejleszto]]"
   - "[[internetes-rendszergazda]]"
+  - "[[keresomotor-optimalizalas-szakerto]]"
 ---
 
 # Webtartalom-menedzser
@@ -98,5 +98,5 @@ A webtartalom-kezelők a szervezet online tartalmára vagy ügyfeleire vonatkoz�
 - [[digitalis-media-tervezo|digitális média tervező]]
 - [[e-learning-fejleszto|e-learning fejlesztő]]
 - [[muszaki-iro|műszaki író]]
-- [[webfejleszto|webfejlesztő]]
 - [[internetes-rendszergazda|internetes rendszergazda]]
+- [[keresomotor-optimalizalas-szakerto|keresőmotor-optimalizálás szakértő]]

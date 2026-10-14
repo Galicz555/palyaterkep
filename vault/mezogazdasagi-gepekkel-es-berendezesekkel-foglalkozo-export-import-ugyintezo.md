@@ -34,8 +34,8 @@ lateral:
   - "[[fem-es-erckereskedelmi-export-import-ugyintezo]]"
   - "[[textilipari-gepekkel-foglalkozo-export-import-ugyintezo]]"
   - "[[femaruval-szerelvenyekkel-futesi-berendezesekkel-foglalkozo-export-import-ugyintezo]]"
-  - "[[orakra-es-ekszerekre-szakosodott-export-import-ugyintezo]]"
   - "[[irodagepekkel-es-berendezesekkel-foglalkozo-export-import-ugyintezo]]"
+  - "[[orakra-es-ekszerekre-szakosodott-export-import-ugyintezo]]"
 ---
 
 # Mezőgazdasági gépekkel és berendezésekkel foglalkozó export-import ügyintéző
@@ -78,5 +78,5 @@ A mezőgazdasági gépekkel és berendezésekkel foglalkozó export-import ügyi
 - [[fem-es-erckereskedelmi-export-import-ugyintezo|fém- és érckereskedelmi export-import ügyintéző]]
 - [[textilipari-gepekkel-foglalkozo-export-import-ugyintezo|textilipari gépekkel foglalkozó export-import ügyintéző]]
 - [[femaruval-szerelvenyekkel-futesi-berendezesekkel-foglalkozo-export-import-ugyintezo|fémáruval, szerelvényekkel, fűtési berendezésekkel foglalkozó export-import ügyintéző]]
-- [[orakra-es-ekszerekre-szakosodott-export-import-ugyintezo|órákra és ékszerekre szakosodott export-import ügyintéző]]
 - [[irodagepekkel-es-berendezesekkel-foglalkozo-export-import-ugyintezo|irodagépekkel és -berendezésekkel foglalkozó export-import ügyintéző]]
+- [[orakra-es-ekszerekre-szakosodott-export-import-ugyintezo|órákra és ékszerekre szakosodott export-import ügyintéző]]

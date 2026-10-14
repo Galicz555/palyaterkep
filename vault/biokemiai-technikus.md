@@ -31,8 +31,8 @@ skills:
   - http://data.europa.eu/esco/skill/ab6265f2-a9bf-49e8-a9a5-67cbab4de38b
   - http://data.europa.eu/esco/skill/ed3f3dba-3a35-4ed5-b113-67f4d10ef4c8
 lateral:
-  - "[[bakteriologiai-technikus]]"
   - "[[biologiai-technikus]]"
+  - "[[bakteriologiai-technikus]]"
   - "[[botanikai-technikus]]"
   - "[[zoologiai-technikus]]"
   - "[[biotechnikai-technikus]]"
@@ -76,8 +76,8 @@ A biokémiai technikus technikai segítséget nyújt az élő szervezetekből a 
 
 ## Váltások
 
-- [[bakteriologiai-technikus|bakteriológiai technikus]]
 - [[biologiai-technikus|biológiai technikus]]
+- [[bakteriologiai-technikus|bakteriológiai technikus]]
 - [[botanikai-technikus|botanikai technikus]]
 - [[zoologiai-technikus|zoológiai technikus]]
 - [[biotechnikai-technikus|biotechnikai technikus]]

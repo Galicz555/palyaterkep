@@ -33,12 +33,9 @@ skills:
   - http://data.europa.eu/esco/skill/fda917eb-0d6a-4371-8c93-2a10bf950966
   - http://data.europa.eu/esco/skill/fff0e2cd-d0bd-4b02-9daf-158b79d9688a
 lateral:
-  - "[[adatbazis-tervezo]]"
   - "[[it-rendszermernok]]"
   - "[[adattarhaz-tervezo]]"
-  - "[[mesterseges-intelligenciaval-foglalkozo-mernok-ai-mernok]]"
   - "[[digitalisjatek-tervezo]]"
-  - "[[adatelemzo]]"
 ---
 
 # Tudásmérnök
@@ -80,9 +77,6 @@ A tudásmérnökök strukturált tudást (tudásbázis) építenek be a számít
 
 ## Váltások
 
-- [[adatbazis-tervezo|adatbázis-tervező]]
 - [[it-rendszermernok|IT rendszermérnök]]
 - [[adattarhaz-tervezo|adattárház-tervező]]
-- [[mesterseges-intelligenciaval-foglalkozo-mernok-ai-mernok|mesterséges intelligenciával foglalkozó mérnök (AI-mérnök)]]
 - [[digitalisjatek-tervezo|digitálisjáték-tervező]]
-- [[adatelemzo|adatelemző]]

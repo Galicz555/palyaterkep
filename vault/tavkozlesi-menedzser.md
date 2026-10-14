@@ -17,7 +17,8 @@ skills:
   - http://data.europa.eu/esco/skill/7e1f9657-ab4e-407c-842f-b846197060e3
   - http://data.europa.eu/esco/skill/7f2afce6-e98b-4bbe-8441-d52b45e28ab8
   - http://data.europa.eu/esco/skill/af607e5e-4ba1-4e5f-a2a6-dc05806567c7
-lateral: []
+lateral:
+  - "[[informatikai-igazgato-cio]]"
 ---
 
 # Távközlési menedzser
@@ -44,4 +45,4 @@ A távközlési menedzserek koordinálják a távközlési személyzetet a távk
 
 ## Váltások
 
-Nincs.
+- [[informatikai-igazgato-cio|Informatikai igazgató (CIO)]]

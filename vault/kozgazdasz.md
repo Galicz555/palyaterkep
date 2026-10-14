@@ -60,7 +60,7 @@ lateral:
   - "[[kommunikaciokutato]]"
   - "[[meteorologus]]"
   - "[[informatikus]]"
-  - "[[hidrologus]]"
+  - "[[biometrikai-szakerto]]"
 ---
 
 # Közgazdász
@@ -129,4 +129,4 @@ A közgazdászok a közgazdaságtan területén végeznek kutatást és dolgozna
 - [[kommunikaciokutato|kommunikációkutató]]
 - [[meteorologus|meteorológus]]
 - [[informatikus|informatikus]]
-- [[hidrologus|hidrológus]]
+- [[biometrikai-szakerto|biometrikai szakértő]]

@@ -32,8 +32,8 @@ lateral:
   - "[[baromfitenyeszto]]"
   - "[[premesallat-tenyeszto]]"
   - "[[sertestenyeszto]]"
-  - "[[szarvasmarha-tenyeszto]]"
   - "[[juhtenyeszto]]"
+  - "[[szarvasmarha-tenyeszto]]"
   - "[[mehesz]]"
 ---
 
@@ -75,6 +75,6 @@ A kutyatenyésztők a kutyák tenyésztését és napi szintű gondozását fel�
 - [[baromfitenyeszto|baromfitenyésztő]]
 - [[premesallat-tenyeszto|prémesállat-tenyésztő]]
 - [[sertestenyeszto|sertéstenyésztő]]
-- [[szarvasmarha-tenyeszto|szarvasmarha-tenyésztő]]
 - [[juhtenyeszto|juhtenyésztő]]
+- [[szarvasmarha-tenyeszto|szarvasmarha-tenyésztő]]
 - [[mehesz|méhész]]

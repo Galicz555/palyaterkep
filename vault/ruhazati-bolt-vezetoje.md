@@ -45,7 +45,7 @@ lateral:
   - "[[szamitastechnikai-bolt-vezetoje]]"
   - "[[hirlaparu-papir-es-iroszerbolt-vezetoje]]"
   - "[[haztartasi-keszulekek-boltjanak-vezetoje]]"
-  - "[[pekuzlet-vezetoje]]"
+  - "[[audiologia-szakuzlet-vezetoje]]"
 ---
 
 # Ruházati bolt vezetője
@@ -99,4 +99,4 @@ A ruházati boltok vezetői felelősséget vállalnak a szaküzletekben végzett
 - [[szamitastechnikai-bolt-vezetoje|számítástechnikai bolt vezetője]]
 - [[hirlaparu-papir-es-iroszerbolt-vezetoje|hírlapáru-, papír- és írószerbolt vezetője]]
 - [[haztartasi-keszulekek-boltjanak-vezetoje|háztartási készülékek boltjának vezetője]]
-- [[pekuzlet-vezetoje|péküzlet vezetője]]
+- [[audiologia-szakuzlet-vezetoje|audiológia szaküzlet vezetője]]

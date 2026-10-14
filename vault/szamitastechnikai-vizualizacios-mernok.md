@@ -41,7 +41,7 @@ skills:
   - http://data.europa.eu/esco/skill/f9670490-8aa4-4540-b121-d440a8294aab
 lateral:
   - "[[adattudos]]"
-  - "[[adatelemzo]]"
+  - "[[senior-adatelemzo]]"
 ---
 
 # Számítástechnikai vizualizációs mérnök
@@ -91,5 +91,5 @@ A számítástechnikai vizualizációs mérnökök olyan mesterségesintelligenc
 
 ## Váltások
 
-- [[adattudos|adattudós]]
-- [[adatelemzo|adatelemző]]
+- [[adattudos|Adattudós]]
+- [[senior-adatelemzo|Senior adatelemző]]

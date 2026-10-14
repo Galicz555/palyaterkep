@@ -43,7 +43,7 @@ lateral:
   - "[[zene-es-videobolt-vezetoje]]"
   - "[[telekommunikacios-szakuzlet-vezetoje]]"
   - "[[fenykepeszbolt-vezetoje]]"
-  - "[[fal-es-padloburkolasi-bolt-vezetoje]]"
+  - "[[hasznaltcikkbolt-vezetoje]]"
 ---
 
 # Kisállatkereskedés vezetője
@@ -95,4 +95,4 @@ A kisállatkereskedések vezetői felelősséget vállalnak a szaküzletekben v�
 - [[zene-es-videobolt-vezetoje|zene- és videóbolt vezetője]]
 - [[telekommunikacios-szakuzlet-vezetoje|telekommunikációs szaküzlet vezetője]]
 - [[fenykepeszbolt-vezetoje|fényképészbolt vezetője]]
-- [[fal-es-padloburkolasi-bolt-vezetoje|fal- és padlóburkolási bolt vezetője]]
+- [[hasznaltcikkbolt-vezetoje|használtcikkbolt vezetője]]

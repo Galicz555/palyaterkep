@@ -138,6 +138,15 @@ describe("lateralEdges", () => {
     }
     expect(edges.get("far")).toEqual([]);
   });
+
+  it("does not link roles a progression edge already links, from either end", () => {
+    const junior = { ...ranked("junior", "A", 2, ["x", "y"]), progression: ["senior"] };
+    const senior = ranked("senior", "B", 3, ["x", "y"]);
+    const peer = ranked("peer", "C", 2, ["x", "y"]);
+    const edges = lateralEdges([junior, senior, peer, ranked("other", "D", 2, ["z"])], 0.1, 6);
+    expect(edges.get("junior")).toEqual(["peer"]);
+    expect(edges.get("senior")).toEqual(["peer"]);
+  });
 });
 
 describe("planVault", () => {

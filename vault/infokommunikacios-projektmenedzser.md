@@ -36,6 +36,7 @@ skills:
 lateral:
   - "[[projektmenedzser]]"
   - "[[programmenedzser]]"
+  - "[[fejlesztesi-vezeto]]"
 ---
 
 # Infokommunikációs projektmenedzser
@@ -80,3 +81,4 @@ Az infokommunikációs projektmenedzserek ütemezik, ellenőrzik és irányítj�
 
 - [[projektmenedzser|projektmenedzser]]
 - [[programmenedzser|programmenedzser]]
+- [[fejlesztesi-vezeto|Fejlesztési vezető]]

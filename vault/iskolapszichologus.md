@@ -34,6 +34,7 @@ skills:
 lateral:
   - "[[oktatasi-tanacsado]]"
   - "[[tanulmanyi-mentor]]"
+  - "[[pszichologus]]"
 ---
 
 # Iskolapszichológus
@@ -76,3 +77,4 @@ Az iskolapszichológusok olyan pszichológusok, akiket oktatási intézmények f
 
 - [[oktatasi-tanacsado|oktatási tanácsadó]]
 - [[tanulmanyi-mentor|tanulmányi mentor]]
+- [[pszichologus|pszichológus]]

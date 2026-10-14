@@ -33,8 +33,9 @@ skills:
   - http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51
   - http://data.europa.eu/esco/skill/f9a6f35b-01a7-40c9-8b61-b6ee46f97272
 lateral:
-  - "[[kiberbiztonsagi-esemenykezelo]]"
   - "[[beagyazott-rendszerekkel-foglalkozo-biztonsagi-mernok]]"
+  - "[[kiberbiztonsagi-esemenykezelo]]"
+  - "[[adatbazis-adminisztrator]]"
 ---
 
 # IKT biztonsági adminisztrátor
@@ -76,5 +77,6 @@ Az IKT biztonsági rendszergazdák megtervezik és végrehajtják a jogosulatlan
 
 ## Váltások
 
-- [[kiberbiztonsagi-esemenykezelo|kiberbiztonsági eseménykezelő]]
 - [[beagyazott-rendszerekkel-foglalkozo-biztonsagi-mernok|beágyazott rendszerekkel foglalkozó biztonsági mérnök]]
+- [[kiberbiztonsagi-esemenykezelo|kiberbiztonsági eseménykezelő]]
+- [[adatbazis-adminisztrator|adatbázis adminisztrátor]]

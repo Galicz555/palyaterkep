@@ -31,8 +31,8 @@ skills:
   - http://data.europa.eu/esco/skill/de857fbb-91a6-4a3f-8a47-93a9c1a616c8
 lateral:
   - "[[haztartasi-cikkekkel-foglalkozo-export-import-ugyintezo]]"
-  - "[[orakra-es-ekszerekre-szakosodott-export-import-ugyintezo]]"
   - "[[irodagepekkel-es-berendezesekkel-foglalkozo-export-import-ugyintezo]]"
+  - "[[orakra-es-ekszerekre-szakosodott-export-import-ugyintezo]]"
   - "[[irodabutorokkal-foglalkozo-export-import-ugyintezo]]"
   - "[[boripari-export-import-ugyintezo]]"
   - "[[elektronikai-es-hiradastechnikai-berendezesekkel-foglalkozo-export-import-ugyintezo]]"
@@ -75,8 +75,8 @@ A villamos háztartási készülékekkel foglalkozó export-import ügyintézők
 ## Váltások
 
 - [[haztartasi-cikkekkel-foglalkozo-export-import-ugyintezo|háztartási cikkekkel foglalkozó export-import ügyintéző]]
-- [[orakra-es-ekszerekre-szakosodott-export-import-ugyintezo|órákra és ékszerekre szakosodott export-import ügyintéző]]
 - [[irodagepekkel-es-berendezesekkel-foglalkozo-export-import-ugyintezo|irodagépekkel és -berendezésekkel foglalkozó export-import ügyintéző]]
+- [[orakra-es-ekszerekre-szakosodott-export-import-ugyintezo|órákra és ékszerekre szakosodott export-import ügyintéző]]
 - [[irodabutorokkal-foglalkozo-export-import-ugyintezo|irodabútorokkal foglalkozó export-import ügyintéző]]
 - [[boripari-export-import-ugyintezo|bőripari export-import ügyintéző]]
 - [[elektronikai-es-hiradastechnikai-berendezesekkel-foglalkozo-export-import-ugyintezo|elektronikai és híradástechnikai berendezésekkel foglalkozó export-import ügyintéző]]

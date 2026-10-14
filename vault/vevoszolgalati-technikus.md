@@ -26,10 +26,10 @@ skills:
 lateral:
   - "[[hirdetesszervezo]]"
   - "[[ertekesitesi-ugyintezo]]"
-  - "[[epuletgepeszeti-muszaki-ertekesito]]"
+  - "[[irodatechnikai-muszaki-ertekesito]]"
   - "[[gepipari-muszaki-ertekesito]]"
-  - "[[infokommunikacios-ugyfelszolgalati-munkatars]]"
   - "[[szolgaltatasmenedzser]]"
+  - "[[ugyfelszolgalati-kozpont-tajekoztatoja]]"
 ---
 
 # Vevőszolgálati technikus
@@ -64,7 +64,7 @@ A vevőszolgálati technikusok a fogyasztók számára értékesítés utáni sz
 
 - [[hirdetesszervezo|hirdetésszervező]]
 - [[ertekesitesi-ugyintezo|értékesítési ügyintéző]]
-- [[epuletgepeszeti-muszaki-ertekesito|épületgépészeti műszaki értékesítő]]
+- [[irodatechnikai-muszaki-ertekesito|irodatechnikai műszaki értékesítő]]
 - [[gepipari-muszaki-ertekesito|gépipari műszaki értékesítő]]
-- [[infokommunikacios-ugyfelszolgalati-munkatars|infokommunikációs ügyfélszolgálati munkatárs]]
 - [[szolgaltatasmenedzser|szolgáltatásmenedzser]]
+- [[ugyfelszolgalati-kozpont-tajekoztatoja|ügyfélszolgálati központ tájékoztatója]]

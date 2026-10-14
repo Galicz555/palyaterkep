@@ -31,7 +31,6 @@ skills:
   - http://data.europa.eu/esco/skill/e23e81f5-18db-49aa-ad9b-b3d0fdcad1d2
   - http://data.europa.eu/esco/skill/f5ac9226-0ace-4d34-a1c3-7b3845834a98
 lateral:
-  - "[[webfejleszto]]"
   - "[[digitalis-media-tervezo]]"
   - "[[webtartalom-menedzser]]"
 ---
@@ -73,6 +72,5 @@ Az internetes rendszergazdák webszervereket telepítenek, tartanak karban, köv
 
 ## Váltások
 
-- [[webfejleszto|webfejlesztő]]
 - [[digitalis-media-tervezo|digitális média tervező]]
 - [[webtartalom-menedzser|webtartalom-menedzser]]

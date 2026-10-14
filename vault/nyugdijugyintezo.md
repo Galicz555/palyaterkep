@@ -24,7 +24,6 @@ skills:
 lateral:
   - "[[tarsadalombiztositasi-ugyintezo]]"
   - "[[tarsadalombiztositasi-ellenor]]"
-  - "[[biztositasi-karugyintezo]]"
 ---
 
 # Nyugdíjügyintéző
@@ -57,4 +56,3 @@ A nyugdíjügyintézők a nyugdíjrendszerek igazgatása terén felmerülő admi
 
 - [[tarsadalombiztositasi-ugyintezo|társadalombiztosítási ügyintéző]]
 - [[tarsadalombiztositasi-ellenor|társadalombiztosítási ellenőr]]
-- [[biztositasi-karugyintezo|biztosítási kárügyintéző]]

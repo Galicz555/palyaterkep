@@ -44,10 +44,10 @@ skills:
 lateral:
   - "[[szamitastechnikai-bolt-vezetoje]]"
   - "[[ortopediai-szakuzlet-vezetoje]]"
-  - "[[loszerbolt-vezetoje]]"
   - "[[regisegbolt-vezetoje]]"
   - "[[italbolt-vezetoje]]"
   - "[[zoldseg-es-gyumolcsbolt-vezetoje]]"
+  - "[[sport-es-szabadido-szakuzlet-vezetoje]]"
 ---
 
 # Szoftver- és médiabolt vezetője
@@ -100,7 +100,7 @@ A szoftver- és médiaboltok vezetői felelősséget vállalnak a szaküzletekbe
 
 - [[szamitastechnikai-bolt-vezetoje|számítástechnikai bolt vezetője]]
 - [[ortopediai-szakuzlet-vezetoje|ortopédiai szaküzlet vezetője]]
-- [[loszerbolt-vezetoje|lőszerbolt vezetője]]
 - [[regisegbolt-vezetoje|régiségbolt vezetője]]
 - [[italbolt-vezetoje|italbolt vezetője]]
 - [[zoldseg-es-gyumolcsbolt-vezetoje|zöldség- és gyümölcsbolt vezetője]]
+- [[sport-es-szabadido-szakuzlet-vezetoje|sport és szabadidő szaküzlet vezetője]]

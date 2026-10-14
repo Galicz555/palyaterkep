@@ -34,9 +34,9 @@ lateral:
   - "[[adatkozpont-uzemelteto]]"
   - "[[adatbazis-adminisztrator]]"
   - "[[adatbazis-fejleszto]]"
-  - "[[adatbazis-tervezo]]"
   - "[[adattarhaz-tervezo]]"
   - "[[adatrogzito]]"
+  - "[[adatbazis-integrator]]"
 ---
 
 # Nagy archivált adatállományok kezelője
@@ -79,6 +79,6 @@ A nagy archivált adatállományok kezelői digitális médiakönyvtárakat oszt
 - [[adatkozpont-uzemelteto|adatközpont-üzemeltető]]
 - [[adatbazis-adminisztrator|adatbázis adminisztrátor]]
 - [[adatbazis-fejleszto|adatbázis fejlesztő]]
-- [[adatbazis-tervezo|adatbázis-tervező]]
 - [[adattarhaz-tervezo|adattárház-tervező]]
 - [[adatrogzito|adatrögzítő]]
+- [[adatbazis-integrator|adatbázis integrátor]]

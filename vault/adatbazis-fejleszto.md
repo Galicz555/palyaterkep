@@ -31,6 +31,7 @@ lateral:
   - "[[adatbazis-adminisztrator]]"
   - "[[nagy-archivalt-adatallomanyok-kezeloje]]"
   - "[[adatbazis-integrator]]"
+  - "[[adattarhaz-tervezo]]"
   - "[[adatkozpont-uzemelteto]]"
 ---
 
@@ -71,4 +72,5 @@ Az adatbázis-fejlesztők az adatbázis-kezelő rendszerek terén szerzett szak�
 - [[adatbazis-adminisztrator|adatbázis adminisztrátor]]
 - [[nagy-archivalt-adatallomanyok-kezeloje|nagy archivált adatállományok kezelője]]
 - [[adatbazis-integrator|adatbázis integrátor]]
+- [[adattarhaz-tervezo|adattárház-tervező]]
 - [[adatkozpont-uzemelteto|adatközpont-üzemeltető]]

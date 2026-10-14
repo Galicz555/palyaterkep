@@ -37,8 +37,9 @@ skills:
 lateral:
   - "[[felhasznaloi-felulet-fejleszto]]"
   - "[[digitalis-media-tervezo]]"
-  - "[[ugyfelelmeny-elemzo]]"
+  - "[[ikt-hozzaferhetosegi-tesztelo]]"
   - "[[digitalisjatek-tervezo]]"
+  - "[[ugyfelelmeny-elemzo]]"
 ---
 
 # Felhasználói felület tervező
@@ -84,5 +85,6 @@ A felhasználóifelület-tervezők feladata, hogy felhasználói interfészeket 
 
 - [[felhasznaloi-felulet-fejleszto|felhasználói felület fejlesztő]]
 - [[digitalis-media-tervezo|digitális média tervező]]
-- [[ugyfelelmeny-elemzo|ügyfélélmény elemző]]
+- [[ikt-hozzaferhetosegi-tesztelo|IKT hozzáférhetőségi tesztelő]]
 - [[digitalisjatek-tervezo|digitálisjáték-tervező]]
+- [[ugyfelelmeny-elemzo|ügyfélélmény elemző]]

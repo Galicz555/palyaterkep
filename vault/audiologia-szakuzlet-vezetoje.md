@@ -43,9 +43,9 @@ lateral:
   - "[[szemuveg-es-latszereszeti-bolt-vezetoje]]"
   - "[[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje]]"
   - "[[hirlaparu-papir-es-iroszerbolt-vezetoje]]"
+  - "[[ruhazati-bolt-vezetoje]]"
   - "[[haztartasi-keszulekek-boltjanak-vezetoje]]"
   - "[[ortopediai-szakuzlet-vezetoje]]"
-  - "[[dohanybolt-vezetoje]]"
 ---
 
 # Audiológia szaküzlet vezetője
@@ -97,6 +97,6 @@ Tapasztalt szint (3), vezetői pályatípus. _Gépi javaslat, nem ellenőrzött.
 - [[szemuveg-es-latszereszeti-bolt-vezetoje|szemüveg- és látszerészeti bolt vezetője]]
 - [[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje|gyógyászati árucikkek és segédeszközök boltjának vezetője]]
 - [[hirlaparu-papir-es-iroszerbolt-vezetoje|hírlapáru-, papír- és írószerbolt vezetője]]
+- [[ruhazati-bolt-vezetoje|ruházati bolt vezetője]]
 - [[haztartasi-keszulekek-boltjanak-vezetoje|háztartási készülékek boltjának vezetője]]
 - [[ortopediai-szakuzlet-vezetoje|ortopédiai szaküzlet vezetője]]
-- [[dohanybolt-vezetoje|dohánybolt vezetője]]

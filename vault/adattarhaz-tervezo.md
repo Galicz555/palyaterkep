@@ -36,12 +36,12 @@ skills:
   - http://data.europa.eu/esco/skill/cdd8b6b2-2fd9-453c-8d62-8a1dc6efcd49
   - http://data.europa.eu/esco/skill/d9e5349e-8791-49c2-8ba4-839fdd1606c2
 lateral:
-  - "[[adatbazis-tervezo]]"
   - "[[tudasmernok]]"
   - "[[it-rendszermernok]]"
   - "[[adatbazis-adminisztrator]]"
   - "[[adatminoseg-elemzo]]"
   - "[[nagy-archivalt-adatallomanyok-kezeloje]]"
+  - "[[adatbazis-fejleszto]]"
 ---
 
 # Adattárház-tervező
@@ -86,9 +86,9 @@ Az adattárház-tervezők feladata az adattárházrendszerek tervezése, összek
 
 ## Váltások
 
-- [[adatbazis-tervezo|adatbázis-tervező]]
 - [[tudasmernok|tudásmérnök]]
 - [[it-rendszermernok|IT rendszermérnök]]
 - [[adatbazis-adminisztrator|adatbázis adminisztrátor]]
 - [[adatminoseg-elemzo|adatminőség-elemző]]
 - [[nagy-archivalt-adatallomanyok-kezeloje|nagy archivált adatállományok kezelője]]
+- [[adatbazis-fejleszto|adatbázis fejlesztő]]

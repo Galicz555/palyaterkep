@@ -24,8 +24,9 @@ skills:
   - http://data.europa.eu/esco/skill/f5f5b244-6cea-4fbc-8a50-8f712791bc09
 lateral:
   - "[[felhoalapuszoftver-fejleszto]]"
-  - "[[devops-felhomernok]]"
+  - "[[felhoarchitekt]]"
   - "[[felhomernok]]"
+  - "[[devops-mernok]]"
 ---
 
 # Felhőalapúszemélyazonosság-kezelő
@@ -58,5 +59,6 @@ A felhőalapúszemélyazonosság-kezelők a személyazonossághoz való hozzáf�
 ## Váltások
 
 - [[felhoalapuszoftver-fejleszto|felhőalapúszoftver-fejlesztő]]
-- [[devops-felhomernok|DevOps felhőmérnök]]
+- [[felhoarchitekt|Felhőarchitekt]]
 - [[felhomernok|felhőmérnök]]
+- [[devops-mernok|DevOps mérnök]]

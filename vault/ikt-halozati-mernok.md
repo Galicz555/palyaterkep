@@ -37,7 +37,6 @@ skills:
   - http://data.europa.eu/esco/skill/fae27053-8924-4bfd-b565-c9fe502044c9
 lateral:
   - "[[it-rendszermernok]]"
-  - "[[szoftvermernok]]"
 ---
 
 # IKT hálózati mérnök
@@ -83,4 +82,3 @@ Az IKT hálózattervezők alakítják ki a – például hardverből, infrastruk
 ## Váltások
 
 - [[it-rendszermernok|IT rendszermérnök]]
-- [[szoftvermernok|szoftvermérnök]]

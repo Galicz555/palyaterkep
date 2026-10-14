@@ -72,12 +72,12 @@ skills:
   - http://data.europa.eu/esco/skill/fa642fc3-5cc5-41cf-8926-6617a8b976a7
   - http://data.europa.eu/esco/skill/ff64e9fc-36dd-4035-872a-83aa41dc1ad9
 lateral:
-  - "[[adattudos]]"
   - "[[akvakultura-biologus]]"
   - "[[klinikai-pszichologus]]"
   - "[[egeszsegpszichologus]]"
   - "[[pszichoterapeuta]]"
   - "[[szocialpolitikai-kutato]]"
+  - "[[iskolapszichologus]]"
 ---
 
 # Pszichológus
@@ -158,9 +158,9 @@ A pszichológusok az emberek viselkedését és a bennük zajló mentális folya
 
 ## Váltások
 
-- [[adattudos|adattudós]]
 - [[akvakultura-biologus|akvakultúra-biológus]]
 - [[klinikai-pszichologus|klinikai pszichológus]]
 - [[egeszsegpszichologus|egészségpszichológus]]
 - [[pszichoterapeuta|pszichoterapeuta]]
 - [[szocialpolitikai-kutato|szociálpolitikai kutató]]
+- [[iskolapszichologus|iskolapszichológus]]

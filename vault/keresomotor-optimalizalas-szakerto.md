@@ -23,6 +23,7 @@ skills:
   - http://data.europa.eu/esco/skill/ef64005d-75bc-4597-8ed6-717edec5e55e
 lateral:
   - "[[kozossegi-media-menedzser]]"
+  - "[[webtartalom-menedzser]]"
 ---
 
 # Keresőmotor-optimalizálás szakértő
@@ -54,3 +55,4 @@ A keresőmotor-optimalizálási szakértők a keresőmotor céllekérdezései te
 ## Váltások
 
 - [[kozossegi-media-menedzser|közösségi média menedzser]]
+- [[webtartalom-menedzser|webtartalom-menedzser]]

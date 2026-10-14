@@ -26,11 +26,11 @@ skills:
   - http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998
 lateral:
   - "[[mobilalkalmazas-fejleszto]]"
-  - "[[szoftverfejleszto]]"
-  - "[[beagyazott-szoftver-fejleszto-mernok]]"
   - "[[ipari-mobilkeszulekek-szoftvereinek-fejlesztoje]]"
+  - "[[beagyazott-szoftver-fejleszto-mernok]]"
   - "[[ikt-rendszerfejleszto]]"
   - "[[ikt-alkalmazasbeallito]]"
+  - "[[digitalisjatek-fejleszto]]"
 ---
 
 # IKT alkalmazásfejlesztő
@@ -65,8 +65,8 @@ Az IKT alkalmazásfejlesztők az alkalmazásspecifikus nyelvek, eszközök, plat
 ## Váltások
 
 - [[mobilalkalmazas-fejleszto|mobilalkalmazás-fejlesztő]]
-- [[szoftverfejleszto|szoftverfejlesztő]]
-- [[beagyazott-szoftver-fejleszto-mernok|beágyazott szoftver fejlesztő mérnök]]
 - [[ipari-mobilkeszulekek-szoftvereinek-fejlesztoje|ipari mobilkészülékek szoftvereinek fejlesztője]]
+- [[beagyazott-szoftver-fejleszto-mernok|beágyazott szoftver fejlesztő mérnök]]
 - [[ikt-rendszerfejleszto|IKT rendszerfejlesztő]]
 - [[ikt-alkalmazasbeallito|IKT alkalmazásbeállító]]
+- [[digitalisjatek-fejleszto|digitálisjáték-fejlesztő]]

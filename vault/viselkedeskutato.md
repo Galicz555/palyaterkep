@@ -58,7 +58,7 @@ lateral:
   - "[[szociologus]]"
   - "[[politologus]]"
   - "[[epidemiologus]]"
-  - "[[tanatologus]]"
+  - "[[antropologus]]"
 ---
 
 # Viselkedéskutató
@@ -125,4 +125,4 @@ A viselkedéskutatók a társadalomban tanúsított emberi viselkedést kutatjá
 - [[szociologus|szociológus]]
 - [[politologus|politológus]]
 - [[epidemiologus|epidemiológus]]
-- [[tanatologus|tanatológus]]
+- [[antropologus|antropológus]]

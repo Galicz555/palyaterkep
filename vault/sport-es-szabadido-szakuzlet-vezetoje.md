@@ -37,8 +37,8 @@ skills:
   - http://data.europa.eu/esco/skill/fde186df-c9c4-49f5-b2a5-d66adc7c43a5
 lateral:
   - "[[regisegbolt-vezetoje]]"
+  - "[[szoftver-es-mediabolt-vezetoje]]"
   - "[[italbolt-vezetoje]]"
-  - "[[zoldseg-es-gyumolcsbolt-vezetoje]]"
   - "[[butorbolt-vezetoje]]"
   - "[[konyvesbolt-vezetoje]]"
   - "[[ora-es-ekszerbolt-vezetoje]]"
@@ -87,8 +87,8 @@ A sport és szabadidő szaküzletek vezetői felelősséget vállalnak a szaküz
 ## Váltások
 
 - [[regisegbolt-vezetoje|régiségbolt vezetője]]
+- [[szoftver-es-mediabolt-vezetoje|szoftver- és médiabolt vezetője]]
 - [[italbolt-vezetoje|italbolt vezetője]]
-- [[zoldseg-es-gyumolcsbolt-vezetoje|zöldség- és gyümölcsbolt vezetője]]
 - [[butorbolt-vezetoje|bútorbolt vezetője]]
 - [[konyvesbolt-vezetoje|könyvesbolt vezetője]]
 - [[ora-es-ekszerbolt-vezetoje|óra- és ékszerbolt vezetője]]

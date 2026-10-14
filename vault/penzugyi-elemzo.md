@@ -30,8 +30,7 @@ skills:
   - http://data.europa.eu/esco/skill/e3c7bd87-edc1-4d9a-a3d5-36415de1aac6
   - http://data.europa.eu/esco/skill/ecc18804-a466-40d9-98b4-fba5cd67dd4b
   - http://data.europa.eu/esco/skill/f6ac6241-adb2-4ce2-b35f-09832cbb11ea
-lateral:
-  - "[[gazdasagi-elemzo]]"
+lateral: []
 ---
 
 # Pénzügyi elemző
@@ -71,4 +70,4 @@ A pénzügyi elemzők gazdasági kutatást végeznek, és olyan pénzügyi vonat
 
 ## Váltások
 
-- [[gazdasagi-elemzo|gazdasági elemző]]
+Nincs.

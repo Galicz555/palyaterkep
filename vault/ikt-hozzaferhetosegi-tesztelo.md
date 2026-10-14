@@ -32,9 +32,8 @@ lateral:
   - "[[ikt-hasznalhatosagi-tesztelo]]"
   - "[[ugyfelelmeny-elemzo]]"
   - "[[digitalisjatek-tesztelo]]"
-  - "[[ikt-integracios-tesztmernok]]"
-  - "[[ikt-tesztelemzo]]"
-  - "[[szoftvertesztelo]]"
+  - "[[junior-szoftvertesztelo]]"
+  - "[[felhasznaloi-felulet-tervezo]]"
 ---
 
 # IKT hozzáférhetőségi tesztelő
@@ -75,6 +74,5 @@ Az IKT hozzáférhetőségi tesztelők honlapokat, szoftveralkalmazásokat, rend
 - [[ikt-hasznalhatosagi-tesztelo|IKT használhatósági tesztelő]]
 - [[ugyfelelmeny-elemzo|ügyfélélmény elemző]]
 - [[digitalisjatek-tesztelo|digitálisjáték-tesztelő]]
-- [[ikt-integracios-tesztmernok|IKT integrációs tesztmérnök]]
-- [[ikt-tesztelemzo|IKT-tesztelemző]]
-- [[szoftvertesztelo|szoftvertesztelő]]
+- [[junior-szoftvertesztelo|Junior szoftvertesztelő]]
+- [[felhasznaloi-felulet-tervezo|felhasználói felület tervező]]

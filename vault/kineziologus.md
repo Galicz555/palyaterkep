@@ -59,10 +59,10 @@ skills:
 lateral:
   - "[[fiziologus]]"
   - "[[immunologus]]"
-  - "[[antropologus]]"
   - "[[mineralogus]]"
   - "[[oktataskutato]]"
   - "[[kozmetikai-vegyesz]]"
+  - "[[irodalmar]]"
 ---
 
 # Kineziológus
@@ -130,7 +130,7 @@ A kineziológusok a test mozgását, az izmokat és testrészeket tanulmányozz�
 
 - [[fiziologus|fiziológus]]
 - [[immunologus|immunológus]]
-- [[antropologus|antropológus]]
 - [[mineralogus|mineralógus]]
 - [[oktataskutato|oktatáskutató]]
 - [[kozmetikai-vegyesz|kozmetikai vegyész]]
+- [[irodalmar|irodalmár]]
