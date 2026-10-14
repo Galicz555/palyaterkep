@@ -31,10 +31,10 @@ skills:
   - http://data.europa.eu/esco/skill/f8e5f1fd-82ee-45c0-b179-399d8e9a22aa
 lateral:
   - "[[allatgyogyasz]]"
+  - "[[allatmasszor]]"
   - "[[allat-csontkovacs]]"
   - "[[allat-fizikoterapeuta]]"
   - "[[allat-hidroterapeuta]]"
-  - "[[allatmasszor]]"
   - "[[alternativ-allatterapeuta]]"
 ---
 
@@ -75,8 +75,8 @@ Az állati manuálterapeuták terápiás kezelést nyújtanak az állatorvosi di
 ## Váltások
 
 - [[allatgyogyasz|állatgyógyász]]
+- [[allatmasszor|állatmasszőr]]
 - [[allat-csontkovacs|állat csontkovács]]
 - [[allat-fizikoterapeuta|állat fizikoterapeuta]]
 - [[allat-hidroterapeuta|állat hidroterapeuta]]
-- [[allatmasszor|állatmasszőr]]
 - [[alternativ-allatterapeuta|alternatív állatterapeuta]]

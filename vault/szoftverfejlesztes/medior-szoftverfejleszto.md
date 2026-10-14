@@ -39,6 +39,7 @@ lateral:
 progression:
   - "[[senior-szoftverfejleszto]]"
   - "[[devops-mernok]]"
+  - "[[adatmernok]]"
 ---
 
 # Medior szoftverfejlesztő
@@ -79,6 +80,7 @@ progression:
 
 - [[senior-szoftverfejleszto|Senior szoftverfejlesztő]]
 - [[devops-mernok|DevOps mérnök]]
+- [[adatmernok|Adatmérnök]]
 
 ## Váltások
 

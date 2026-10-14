@@ -65,10 +65,10 @@ skills:
 lateral:
   - "[[toxikologus]]"
   - "[[biokemikus]]"
+  - "[[genetikus]]"
   - "[[vegyesz]]"
   - "[[biokemiai-mernok]]"
   - "[[mezogazdasagi-kutato]]"
-  - "[[erdo-es-termeszetvedelmi-mernok]]"
 ---
 
 # Farmakológus
@@ -142,7 +142,7 @@ A farmakológusok tanulmányozzák, hogy a gyógyszerek milyen módon hatnak a s
 
 - [[toxikologus|toxikológus]]
 - [[biokemikus|biokémikus]]
+- [[genetikus|genetikus]]
 - [[vegyesz|vegyész]]
 - [[biokemiai-mernok|biokémiai mérnök]]
 - [[mezogazdasagi-kutato|mezőgazdasági kutató]]
-- [[erdo-es-termeszetvedelmi-mernok|erdő- és természetvédelmi mérnök]]

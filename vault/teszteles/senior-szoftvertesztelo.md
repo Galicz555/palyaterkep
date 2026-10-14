@@ -34,8 +34,8 @@ skills:
 lateral:
   - "[[ikt-integracios-tesztmernok]]"
   - "[[senior-szoftverfejleszto]]"
-  - "[[medior-szoftverfejleszto]]"
   - "[[ikt-rendszertesztelo]]"
+  - "[[medior-szoftverfejleszto]]"
   - "[[fejlesztesi-csoportvezeto]]"
   - "[[szoftverarchitekt]]"
 progression:
@@ -86,7 +86,7 @@ Megtervezi, mit és hogyan kell tesztelni (tesztelemző): a specifikációból t
 
 - [[ikt-integracios-tesztmernok|IKT integrációs tesztmérnök]]
 - [[senior-szoftverfejleszto|Senior szoftverfejlesztő]]
-- [[medior-szoftverfejleszto|Medior szoftverfejlesztő]]
 - [[ikt-rendszertesztelo|IKT rendszertesztelő]]
+- [[medior-szoftverfejleszto|Medior szoftverfejlesztő]]
 - [[fejlesztesi-csoportvezeto|Fejlesztési csoportvezető]]
 - [[szoftverarchitekt|Szoftverarchitekt]]

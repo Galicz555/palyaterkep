@@ -36,7 +36,6 @@ skills:
 lateral:
   - "[[uzleti-konzulens]]"
   - "[[penzugyi-kockazatkezelo]]"
-  - "[[penzugyi-elemzo]]"
 ---
 
 # Gazdasági elemző
@@ -81,4 +80,3 @@ A gazdasági elemzők vállalkozások és vállalatok stratégiai helyzetét kut
 
 - [[uzleti-konzulens|üzleti konzulens]]
 - [[penzugyi-kockazatkezelo|pénzügyi kockázatkezelő]]
-- [[penzugyi-elemzo|pénzügyi elemző]]

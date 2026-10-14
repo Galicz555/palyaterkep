@@ -46,8 +46,8 @@ lateral:
   - "[[hitelkockazati-elemzo]]"
   - "[[vallalati-kockazatkezelo]]"
   - "[[banki-termekmenedzser]]"
-  - "[[vallalati-penzugyi-vezeto]]"
   - "[[gazdasagi-elemzo]]"
+  - "[[vallalati-penzugyi-vezeto]]"
   - "[[allamhaztartasi-referens]]"
 ---
 
@@ -104,6 +104,6 @@ A pénzügyi kockázatkezelők azonosítják és értékelik a szervezetek eszk�
 - [[hitelkockazati-elemzo|hitelkockázati elemző]]
 - [[vallalati-kockazatkezelo|vállalati kockázatkezelő]]
 - [[banki-termekmenedzser|banki termékmenedzser]]
-- [[vallalati-penzugyi-vezeto|vállalati pénzügyi vezető]]
 - [[gazdasagi-elemzo|gazdasági elemző]]
+- [[vallalati-penzugyi-vezeto|vállalati pénzügyi vezető]]
 - [[allamhaztartasi-referens|államháztartási referens]]

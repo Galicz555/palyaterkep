@@ -38,12 +38,12 @@ skills:
   - http://data.europa.eu/esco/skill/efe5d94c-2249-4a50-8c44-6e77331c698d
   - http://data.europa.eu/esco/skill/fde186df-c9c4-49f5-b2a5-d66adc7c43a5
 lateral:
+  - "[[kisallatkereskedes-vezetoje]]"
   - "[[fal-es-padloburkolasi-bolt-vezetoje]]"
   - "[[kerekpar-szakuzlet-vezetoje]]"
   - "[[textilbolt-vezetoje]]"
   - "[[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje]]"
   - "[[szemuveg-es-latszereszeti-bolt-vezetoje]]"
-  - "[[hus-es-hentesarubolt-vezetoje]]"
 ---
 
 # Használtcikkbolt vezetője
@@ -90,9 +90,9 @@ A használtcikkboltok vezetői felelősséget vállalnak a szaküzletekben végz
 
 ## Váltások
 
+- [[kisallatkereskedes-vezetoje|kisállatkereskedés vezetője]]
 - [[fal-es-padloburkolasi-bolt-vezetoje|fal- és padlóburkolási bolt vezetője]]
 - [[kerekpar-szakuzlet-vezetoje|kerékpár-szaküzlet vezetője]]
 - [[textilbolt-vezetoje|textilbolt vezetője]]
 - [[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje|gyógyászati árucikkek és segédeszközök boltjának vezetője]]
 - [[szemuveg-es-latszereszeti-bolt-vezetoje|szemüveg- és látszerészeti bolt vezetője]]
-- [[hus-es-hentesarubolt-vezetoje|hús- és hentesárubolt vezetője]]

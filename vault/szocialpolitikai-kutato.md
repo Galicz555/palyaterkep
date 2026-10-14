@@ -58,7 +58,6 @@ lateral:
   - "[[iskolai-gyermekvedelmi-felelos]]"
   - "[[szocialismunka-oktato-felsooktatasi-intezmenyben]]"
   - "[[pszichologus]]"
-  - "[[adattudos]]"
 ---
 
 # Szociálpolitikai kutató
@@ -125,4 +124,3 @@ A szociálismunka-kutatók olyan kutatási projekteket kezelnek, amelyek célja 
 - [[iskolai-gyermekvedelmi-felelos|iskolai gyermekvédelmi felelős]]
 - [[szocialismunka-oktato-felsooktatasi-intezmenyben|szociálismunka-oktató felsőoktatási intézményben]]
 - [[pszichologus|pszichológus]]
-- [[adattudos|adattudós]]

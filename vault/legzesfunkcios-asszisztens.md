@@ -28,8 +28,8 @@ lateral:
   - "[[klinikai-perfuzios-asszisztens]]"
   - "[[dietetikai-szakasszisztens]]"
   - "[[radiografus]]"
-  - "[[diagnosztikai-radiografus]]"
   - "[[covid-tesztelo]]"
+  - "[[diagnosztikai-radiografus]]"
   - "[[nuklearismedicina-radiografus]]"
 ---
 
@@ -67,6 +67,6 @@ A légzésfunkciós asszisztens légzési problémák kezelésében támogatja a
 - [[klinikai-perfuzios-asszisztens|klinikai perfúziós asszisztens]]
 - [[dietetikai-szakasszisztens|dietetikai szakasszisztens]]
 - [[radiografus|radiográfus]]
-- [[diagnosztikai-radiografus|diagnosztikai radiográfus]]
 - [[covid-tesztelo|Covid-tesztelő]]
+- [[diagnosztikai-radiografus|diagnosztikai radiográfus]]
 - [[nuklearismedicina-radiografus|nukleárismedicina-radiográfus]]

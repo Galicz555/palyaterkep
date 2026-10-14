@@ -66,7 +66,7 @@ lateral:
   - "[[biofizikus]]"
   - "[[biologus]]"
   - "[[bioinformatikus]]"
-  - "[[kozmetikai-vegyesz]]"
+  - "[[farmakologus]]"
 ---
 
 # Genetikus
@@ -141,4 +141,4 @@ A genetikusok kutatása a genetikára koncentrál. Elemzik a gének egymásra gy
 - [[biofizikus|biofizikus]]
 - [[biologus|biológus]]
 - [[bioinformatikus|bioinformatikus]]
-- [[kozmetikai-vegyesz|kozmetikai vegyész]]
+- [[farmakologus|farmakológus]]

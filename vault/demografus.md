@@ -55,8 +55,8 @@ lateral:
   - "[[csillagasz]]"
   - "[[kriminologus]]"
   - "[[statisztikus]]"
-  - "[[politologus]]"
   - "[[viselkedeskutato]]"
+  - "[[politologus]]"
   - "[[szociologus]]"
 ---
 
@@ -121,6 +121,6 @@ A demográfusok a népességhez kapcsolódó különböző paraméterekkel fogla
 - [[csillagasz|csillagász]]
 - [[kriminologus|kriminológus]]
 - [[statisztikus|statisztikus]]
-- [[politologus|politológus]]
 - [[viselkedeskutato|viselkedéskutató]]
+- [[politologus|politológus]]
 - [[szociologus|szociológus]]

@@ -41,10 +41,10 @@ skills:
 lateral:
   - "[[ruhazati-bolt-vezetoje]]"
   - "[[hasznaltcikkbolt-vezetoje]]"
+  - "[[fal-es-padloburkolasi-bolt-vezetoje]]"
   - "[[kerekpar-szakuzlet-vezetoje]]"
   - "[[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje]]"
   - "[[szemuveg-es-latszereszeti-bolt-vezetoje]]"
-  - "[[audio-video-szakuzlet-vezetoje]]"
 ---
 
 # Textilbolt vezetője
@@ -94,7 +94,7 @@ A textilboltok vezetői felelősséget vállalnak a szaküzletekben végzett tev
 
 - [[ruhazati-bolt-vezetoje|ruházati bolt vezetője]]
 - [[hasznaltcikkbolt-vezetoje|használtcikkbolt vezetője]]
+- [[fal-es-padloburkolasi-bolt-vezetoje|fal- és padlóburkolási bolt vezetője]]
 - [[kerekpar-szakuzlet-vezetoje|kerékpár-szaküzlet vezetője]]
 - [[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje|gyógyászati árucikkek és segédeszközök boltjának vezetője]]
 - [[szemuveg-es-latszereszeti-bolt-vezetoje|szemüveg- és látszerészeti bolt vezetője]]
-- [[audio-video-szakuzlet-vezetoje|audio-video szaküzlet vezetője]]

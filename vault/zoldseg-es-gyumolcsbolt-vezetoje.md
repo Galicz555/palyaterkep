@@ -43,11 +43,11 @@ skills:
   - http://data.europa.eu/esco/skill/fde186df-c9c4-49f5-b2a5-d66adc7c43a5
 lateral:
   - "[[loszerbolt-vezetoje]]"
+  - "[[dohanybolt-vezetoje]]"
   - "[[italbolt-vezetoje]]"
   - "[[konyvesbolt-vezetoje]]"
   - "[[regisegbolt-vezetoje]]"
   - "[[szoftver-es-mediabolt-vezetoje]]"
-  - "[[sport-es-szabadido-szakuzlet-vezetoje]]"
 ---
 
 # Zöldség- és gyümölcsbolt vezetője
@@ -99,8 +99,8 @@ A zöldség-gyümölcsboltok vezetői felelősséget vállalnak a zöldség-gyü
 ## Váltások
 
 - [[loszerbolt-vezetoje|lőszerbolt vezetője]]
+- [[dohanybolt-vezetoje|dohánybolt vezetője]]
 - [[italbolt-vezetoje|italbolt vezetője]]
 - [[konyvesbolt-vezetoje|könyvesbolt vezetője]]
 - [[regisegbolt-vezetoje|régiségbolt vezetője]]
 - [[szoftver-es-mediabolt-vezetoje|szoftver- és médiabolt vezetője]]
-- [[sport-es-szabadido-szakuzlet-vezetoje|sport és szabadidő szaküzlet vezetője]]

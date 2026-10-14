@@ -68,8 +68,8 @@ lateral:
   - "[[hardvertervezo]]"
   - "[[kozmologus]]"
   - "[[mezogazdasagi-kutato]]"
+  - "[[erdo-es-termeszetvedelmi-mernok]]"
   - "[[biokemiai-mernok]]"
-  - "[[muzeologus]]"
 ---
 
 # Környezetvédelmi kutató
@@ -146,5 +146,5 @@ A környezetvédelmi kutatók problémákat tárnak fel, és megoldásokat keres
 - [[hardvertervezo|hardvertervező]]
 - [[kozmologus|kozmológus]]
 - [[mezogazdasagi-kutato|mezőgazdasági kutató]]
+- [[erdo-es-termeszetvedelmi-mernok|erdő- és természetvédelmi mérnök]]
 - [[biokemiai-mernok|biokémiai mérnök]]
-- [[muzeologus|muzeológus]]

@@ -57,8 +57,8 @@ lateral:
   - "[[allatkutato-tudomanyos-munkatars]]"
   - "[[erdo-es-termeszetvedelmi-mernok]]"
   - "[[telepulestervezo-mernok]]"
+  - "[[mezogazdasagi-kutato]]"
   - "[[hardvertervezo]]"
-  - "[[kornyezetvedelmi-kutato]]"
   - "[[biokemiai-mernok]]"
 ---
 
@@ -126,6 +126,6 @@ A muzeológusok általános múzeumokban, botanikai kertekben, művészeti galé
 - [[allatkutato-tudomanyos-munkatars|állatkutató tudományos munkatárs]]
 - [[erdo-es-termeszetvedelmi-mernok|erdő- és természetvédelmi mérnök]]
 - [[telepulestervezo-mernok|településtervező mérnök]]
+- [[mezogazdasagi-kutato|mezőgazdasági kutató]]
 - [[hardvertervezo|hardvertervező]]
-- [[kornyezetvedelmi-kutato|környezetvédelmi kutató]]
 - [[biokemiai-mernok|biokémiai mérnök]]

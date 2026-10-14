@@ -43,9 +43,9 @@ lateral:
   - "[[hus-es-hentesarubolt-vezetoje]]"
   - "[[kerteszeti-es-viragbolt-vezetoje]]"
   - "[[dohanybolt-vezetoje]]"
+  - "[[audio-video-szakuzlet-vezetoje]]"
   - "[[szamitastechnikai-bolt-vezetoje]]"
   - "[[hirlaparu-papir-es-iroszerbolt-vezetoje]]"
-  - "[[ruhazati-bolt-vezetoje]]"
 ---
 
 # Péküzlet vezetője
@@ -97,6 +97,6 @@ A pékségvezetők felelnek a pékségbeli sütési tevékenységekért és munk
 - [[hus-es-hentesarubolt-vezetoje|hús- és hentesárubolt vezetője]]
 - [[kerteszeti-es-viragbolt-vezetoje|kertészeti és virágbolt vezetője]]
 - [[dohanybolt-vezetoje|dohánybolt vezetője]]
+- [[audio-video-szakuzlet-vezetoje|audio-video szaküzlet vezetője]]
 - [[szamitastechnikai-bolt-vezetoje|számítástechnikai bolt vezetője]]
 - [[hirlaparu-papir-es-iroszerbolt-vezetoje|hírlapáru-, papír- és írószerbolt vezetője]]
-- [[ruhazati-bolt-vezetoje|ruházati bolt vezetője]]

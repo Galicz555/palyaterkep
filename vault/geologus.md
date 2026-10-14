@@ -56,8 +56,8 @@ skills:
   - http://data.europa.eu/esco/skill/ff64e9fc-36dd-4035-872a-83aa41dc1ad9
 lateral:
   - "[[oceanografus]]"
-  - "[[csillagasz]]"
   - "[[paleontologus]]"
+  - "[[csillagasz]]"
   - "[[szeizmologus]]"
   - "[[fiziologus]]"
   - "[[elemzo-vegyesz]]"
@@ -125,8 +125,8 @@ A geológusok a Földet alkotó anyagokat kutatják. Észrevételeik a kutatás 
 ## Váltások
 
 - [[oceanografus|oceanográfus]]
-- [[csillagasz|csillagász]]
 - [[paleontologus|paleontológus]]
+- [[csillagasz|csillagász]]
 - [[szeizmologus|szeizmológus]]
 - [[fiziologus|fiziológus]]
 - [[elemzo-vegyesz|elemző vegyész]]

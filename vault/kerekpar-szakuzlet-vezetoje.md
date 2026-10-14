@@ -43,7 +43,7 @@ lateral:
   - "[[textilbolt-vezetoje]]"
   - "[[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje]]"
   - "[[szemuveg-es-latszereszeti-bolt-vezetoje]]"
-  - "[[kerteszeti-es-viragbolt-vezetoje]]"
+  - "[[hus-es-hentesarubolt-vezetoje]]"
 ---
 
 # Kerékpár-szaküzlet vezetője
@@ -95,4 +95,4 @@ A kerékpár-szaküzletek vezetői felelősséget vállalnak a kerékpárok ért
 - [[textilbolt-vezetoje|textilbolt vezetője]]
 - [[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje|gyógyászati árucikkek és segédeszközök boltjának vezetője]]
 - [[szemuveg-es-latszereszeti-bolt-vezetoje|szemüveg- és látszerészeti bolt vezetője]]
-- [[kerteszeti-es-viragbolt-vezetoje|kertészeti és virágbolt vezetője]]
+- [[hus-es-hentesarubolt-vezetoje|hús- és hentesárubolt vezetője]]

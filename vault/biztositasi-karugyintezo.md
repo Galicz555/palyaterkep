@@ -32,7 +32,6 @@ lateral:
   - "[[vagyonbiztositasi-kockazatelbiralo]]"
   - "[[biztositasi-karrendezesi-vezeto]]"
   - "[[biztositasi-ugynok]]"
-  - "[[nyugdijugyintezo]]"
 ---
 
 # Biztosítási kárügyintéző
@@ -73,4 +72,3 @@ A biztosítási kárügyintézők gondoskodnak arról, hogy minden biztosítási
 - [[vagyonbiztositasi-kockazatelbiralo|vagyonbiztosítási kockázatelbíráló]]
 - [[biztositasi-karrendezesi-vezeto|biztosítási kárrendezési vezető]]
 - [[biztositasi-ugynok|biztosítási ügynök]]
-- [[nyugdijugyintezo|nyugdíjügyintéző]]

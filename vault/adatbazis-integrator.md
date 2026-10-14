@@ -29,6 +29,8 @@ lateral:
   - "[[adatbazis-adminisztrator]]"
   - "[[adatminoseg-elemzo]]"
   - "[[adatkozpont-uzemelteto]]"
+  - "[[adatmernok]]"
+  - "[[nagy-archivalt-adatallomanyok-kezeloje]]"
 ---
 
 # Adatbázis integrátor
@@ -66,3 +68,5 @@ Az adatbázis-integrátorok a különböző adatbázisok közötti integrációt
 - [[adatbazis-adminisztrator|adatbázis adminisztrátor]]
 - [[adatminoseg-elemzo|adatminőség-elemző]]
 - [[adatkozpont-uzemelteto|adatközpont-üzemeltető]]
+- [[adatmernok|Adatmérnök]]
+- [[nagy-archivalt-adatallomanyok-kezeloje|nagy archivált adatállományok kezelője]]

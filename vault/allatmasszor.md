@@ -31,10 +31,10 @@ skills:
   - http://data.europa.eu/esco/skill/f8e5f1fd-82ee-45c0-b179-399d8e9a22aa
 lateral:
   - "[[allatgyogyasz]]"
+  - "[[allat-manualterapeuta]]"
   - "[[allat-csontkovacs]]"
   - "[[allat-fizikoterapeuta]]"
   - "[[allat-hidroterapeuta]]"
-  - "[[allat-manualterapeuta]]"
   - "[[alternativ-allatterapeuta]]"
 ---
 
@@ -75,8 +75,8 @@ Az állatmasszőr az állatorvosi diagnózis, illetve beutaló után a lágyszö
 ## Váltások
 
 - [[allatgyogyasz|állatgyógyász]]
+- [[allat-manualterapeuta|állat manuálterapeuta]]
 - [[allat-csontkovacs|állat csontkovács]]
 - [[allat-fizikoterapeuta|állat fizikoterapeuta]]
 - [[allat-hidroterapeuta|állat hidroterapeuta]]
-- [[allat-manualterapeuta|állat manuálterapeuta]]
 - [[alternativ-allatterapeuta|alternatív állatterapeuta]]

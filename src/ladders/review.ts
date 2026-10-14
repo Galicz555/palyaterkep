@@ -16,7 +16,7 @@ export const LADDERS: Record<string, string> = {
   szoftverfejlesztes: "Szoftverfejlesztés",
   teszteles: "Szoftvertesztelés",
   uzemeltetes: "Üzemeltetés és DevOps",
-  adat: "Adat és mesterséges intelligencia",
+  adat: "Adat",
 };
 
 const DOUBTS = [

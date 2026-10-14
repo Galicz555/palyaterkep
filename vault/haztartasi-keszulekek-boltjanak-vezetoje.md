@@ -40,12 +40,12 @@ skills:
   - http://data.europa.eu/esco/skill/efe5d94c-2249-4a50-8c44-6e77331c698d
   - http://data.europa.eu/esco/skill/fde186df-c9c4-49f5-b2a5-d66adc7c43a5
 lateral:
+  - "[[audio-video-szakuzlet-vezetoje]]"
   - "[[szamitastechnikai-bolt-vezetoje]]"
   - "[[hirlaparu-papir-es-iroszerbolt-vezetoje]]"
   - "[[ruhazati-bolt-vezetoje]]"
   - "[[audiologia-szakuzlet-vezetoje]]"
   - "[[ortopediai-szakuzlet-vezetoje]]"
-  - "[[dohanybolt-vezetoje]]"
 ---
 
 # Háztartási készülékek boltjának vezetője
@@ -94,9 +94,9 @@ A háztartási készülékek boltjainak vezetői felelősséget vállalnak a sza
 
 ## Váltások
 
+- [[audio-video-szakuzlet-vezetoje|audio-video szaküzlet vezetője]]
 - [[szamitastechnikai-bolt-vezetoje|számítástechnikai bolt vezetője]]
 - [[hirlaparu-papir-es-iroszerbolt-vezetoje|hírlapáru-, papír- és írószerbolt vezetője]]
 - [[ruhazati-bolt-vezetoje|ruházati bolt vezetője]]
 - [[audiologia-szakuzlet-vezetoje|audiológia szaküzlet vezetője]]
 - [[ortopediai-szakuzlet-vezetoje|ortopédiai szaküzlet vezetője]]
-- [[dohanybolt-vezetoje|dohánybolt vezetője]]

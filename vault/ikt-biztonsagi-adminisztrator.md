@@ -35,6 +35,7 @@ skills:
 lateral:
   - "[[beagyazott-rendszerekkel-foglalkozo-biztonsagi-mernok]]"
   - "[[kiberbiztonsagi-esemenykezelo]]"
+  - "[[adatbazis-adminisztrator]]"
 ---
 
 # IKT biztonsági adminisztrátor
@@ -78,3 +79,4 @@ Az IKT biztonsági rendszergazdák megtervezik és végrehajtják a jogosulatlan
 
 - [[beagyazott-rendszerekkel-foglalkozo-biztonsagi-mernok|beágyazott rendszerekkel foglalkozó biztonsági mérnök]]
 - [[kiberbiztonsagi-esemenykezelo|kiberbiztonsági eseménykezelő]]
+- [[adatbazis-adminisztrator|adatbázis adminisztrátor]]

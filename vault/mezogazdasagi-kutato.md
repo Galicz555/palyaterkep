@@ -61,12 +61,12 @@ skills:
   - http://data.europa.eu/esco/skill/fe39d4db-4cb5-4299-bb9f-896c8fd6ab13
   - http://data.europa.eu/esco/skill/ff64e9fc-36dd-4035-872a-83aa41dc1ad9
 lateral:
-  - "[[okologus]]"
   - "[[telepulestervezo-mernok]]"
   - "[[farmakologus]]"
   - "[[erdo-es-termeszetvedelmi-mernok]]"
   - "[[kornyezetvedelmi-kutato]]"
   - "[[kozmologus]]"
+  - "[[muzeologus]]"
 ---
 
 # Mezőgazdasági kutató
@@ -136,9 +136,9 @@ A mezőgazdasági kutatók a talajt, az állatokat és a növényeket kutatják 
 
 ## Váltások
 
-- [[okologus|ökológus]]
 - [[telepulestervezo-mernok|településtervező mérnök]]
 - [[farmakologus|farmakológus]]
 - [[erdo-es-termeszetvedelmi-mernok|erdő- és természetvédelmi mérnök]]
 - [[kornyezetvedelmi-kutato|környezetvédelmi kutató]]
 - [[kozmologus|kozmológus]]
+- [[muzeologus|muzeológus]]

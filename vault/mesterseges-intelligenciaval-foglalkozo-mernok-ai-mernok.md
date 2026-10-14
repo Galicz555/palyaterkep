@@ -40,9 +40,7 @@ skills:
   - http://data.europa.eu/esco/skill/fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5
 lateral:
   - "[[tudasmernok]]"
-  - "[[adatelemzo]]"
   - "[[a-dolgok-internetenek-fejlesztoje]]"
-  - "[[adattudos]]"
 ---
 
 # Mesterséges intelligenciával foglalkozó mérnök (AI-mérnök)
@@ -91,6 +89,4 @@ A mesterséges intelligenciával foglalkozó mérnökök a mesterséges intellig
 ## Váltások
 
 - [[tudasmernok|tudásmérnök]]
-- [[adatelemzo|adatelemző]]
 - [[a-dolgok-internetenek-fejlesztoje|a dolgok internetének fejlesztője]]
-- [[adattudos|adattudós]]

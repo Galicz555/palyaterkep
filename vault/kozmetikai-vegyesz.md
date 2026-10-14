@@ -57,7 +57,7 @@ lateral:
   - "[[irodalmar]]"
   - "[[mineralogus]]"
   - "[[metrologus]]"
-  - "[[genetikus]]"
+  - "[[okologus]]"
 ---
 
 # Kozmetikai vegyész
@@ -123,4 +123,4 @@ A kozmetikai vegyészek képleteket fejlesztenek ki új kozmetikai termékek lé
 - [[irodalmar|irodalmár]]
 - [[mineralogus|mineralógus]]
 - [[metrologus|metrológus]]
-- [[genetikus|genetikus]]
+- [[okologus|ökológus]]

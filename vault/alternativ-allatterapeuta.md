@@ -31,11 +31,11 @@ skills:
   - http://data.europa.eu/esco/skill/f8e5f1fd-82ee-45c0-b179-399d8e9a22aa
 lateral:
   - "[[allatgyogyasz]]"
-  - "[[allat-csontkovacs]]"
   - "[[allat-fizikoterapeuta]]"
-  - "[[allat-hidroterapeuta]]"
   - "[[allat-manualterapeuta]]"
   - "[[allatmasszor]]"
+  - "[[allat-csontkovacs]]"
+  - "[[allat-hidroterapeuta]]"
 ---
 
 # Alternatív állatterapeuta
@@ -75,8 +75,8 @@ Az alternatív állatterapeuta megvizsgálja a beteg vagy sérült kis- és nagy
 ## Váltások
 
 - [[allatgyogyasz|állatgyógyász]]
-- [[allat-csontkovacs|állat csontkovács]]
 - [[allat-fizikoterapeuta|állat fizikoterapeuta]]
-- [[allat-hidroterapeuta|állat hidroterapeuta]]
 - [[allat-manualterapeuta|állat manuálterapeuta]]
 - [[allatmasszor|állatmasszőr]]
+- [[allat-csontkovacs|állat csontkovács]]
+- [[allat-hidroterapeuta|állat hidroterapeuta]]
