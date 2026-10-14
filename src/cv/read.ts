@@ -10,7 +10,7 @@ import {
 } from "./extract.ts";
 import { skillUniverse, type Mapper } from "./mapping.ts";
 import type { CvResult } from "./result.ts";
-import { heldLevel, heldRole, placeCv, type RoleGraph } from "./states.ts";
+import { behindRoles, heldLevel, heldRole, placeCv, type RoleGraph } from "./states.ts";
 import { askVerified, fold, type Ask } from "./verify.ts";
 
 /** About ten pages; also keeps every prompt under the model's 100k-token price step. */
@@ -89,34 +89,40 @@ export async function readCv(
 }
 
 /**
- * The role each mapped job was held in. Years add up across the jobs of one occupation, since
- * experience carries over between employers. Jobs landing on one role share its entry.
+ * The role each mapped occupation was held in. The jobs of one occupation are pooled: years add up
+ * across employers, since experience carries over, and the level is taken once, from the strongest
+ * signal (title, else responsibility, else the pooled years) of any of its jobs. On one ladder only
+ * the highest held rung stays; rungs below it are behind the person, and their evidence moves up.
  */
 function heldRoles(
   graph: RoleGraph,
   jobs: Job[],
   chosen: Map<number, string | null>,
 ): CvResult["held"] {
-  const yearsIn = new Map<string, number>();
+  const byOccupation = new Map<string, Job[]>();
   jobs.forEach((job, i) => {
     const occupation = chosen.get(i);
-    if (occupation) yearsIn.set(occupation, (yearsIn.get(occupation) ?? 0) + (job.years ?? 0));
+    if (occupation) byOccupation.set(occupation, [...(byOccupation.get(occupation) ?? []), job]);
   });
   const held = new Map<string, string[]>();
-  jobs.forEach((job, i) => {
-    const occupation = chosen.get(i);
-    if (!occupation) return;
-    const { level, track } = heldLevel(
-      job.title,
-      job.responsibility,
-      yearsIn.get(occupation) ?? null,
-    );
+  for (const [occupation, group] of byOccupation) {
+    const years = group.reduce((sum, job) => sum + (job.years ?? 0), 0);
+    const { level, track } = group
+      .map((job) => heldLevel(job.title, job.responsibility, years))
+      .reduce((best, next) => (next.level > best.level ? next : best));
     const role = heldRole(graph, occupation, level, track);
-    if (!role) return;
-    const evidence = [job.title, job.dates, job.responsibility?.quote].filter(
-      (e): e is string => !!e,
-    );
+    if (!role) continue;
+    const evidence = group
+      .flatMap((job) => [job.title, job.dates, job.responsibility?.quote])
+      .filter((e): e is string => !!e);
     held.set(role, [...new Set([...(held.get(role) ?? []), ...evidence])]);
-  });
+  }
+  const behind = behindRoles(graph, [...held.keys()]);
+  for (const [role, evidence] of held) {
+    if (!behind.has(role)) continue;
+    held.delete(role);
+    const above = [...held.keys()].find((id) => behindRoles(graph, [id]).has(role))!;
+    held.set(above, [...new Set([...held.get(above)!, ...evidence])]);
+  }
   return [...held].map(([role, evidence]) => ({ role, evidence }));
 }

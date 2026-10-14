@@ -188,6 +188,129 @@ describe("readCv", () => {
     ]);
   });
 
+  describe("one held rung per ladder", () => {
+    // The software ladder's shape: developer rungs 1 → 2 → 3, then an architect occupation of its
+    // own at 4 above rung 3; a lateral AI role at 3 below the architect; a management track.
+    const rung = (occ: string, level: number, over: Partial<Role> = {}): Role => ({
+      curated: true,
+      occupation: OCC + occ,
+      label: `${occ} ${level}`,
+      level,
+      track: "individual",
+      branch: "it",
+      subBranch: "software",
+      skills: [SK + "python"],
+      lateral: [],
+      ...over,
+    });
+    const software = buildGraph(
+      new Map([
+        ["dev-1", rung("dev", 1, { progression: ["[[dev-2]]"] })],
+        ["dev-2", rung("dev", 2, { progression: ["[[dev-3]]"] })],
+        [
+          "dev-3",
+          rung("dev", 3, {
+            progression: ["[[arch]]", "[[head]]"],
+            lateral: ["[[ai]]", "[[lead]]"],
+          }),
+        ],
+        ["arch", rung("architect", 4)],
+        ["ai", rung("ai", 3, { progression: ["[[arch]]"] })],
+        ["lead", rung("lead", 3, { track: "management", progression: ["[[head]]"] })],
+        ["head", rung("lead", 4, { track: "management" })],
+      ]),
+    );
+    const text = `Independent Software Engineer, C
+04/2025 – Present
+
+Software Developer, B
+01/2024 – 03/2025
+
+Software Engineer, A
+05/2022 – 11/2023
+Led the mobile-first rebuild
+
+Software Engineer, E
+09/2021 – 05/2022
+
+Principal Software Architect, F
+2019 – 2020`;
+    const job = (title: string, dates: string, years: number, quote?: string) => ({
+      title,
+      occupation: "software developer",
+      dates,
+      years,
+      responsibility: quote ? { organisation: false, leadsPeople: false, quote } : null,
+    });
+    const jobs = [
+      job("Independent Software Engineer", "04/2025 – Present", 1.6),
+      job("Software Developer", "01/2024 – 03/2025", 1.25),
+      job("Software Engineer", "05/2022 – 11/2023", 1.6),
+    ];
+    const read = async (extracted: unknown[], occupation: (p: Prompt) => unknown) => {
+      const { ask } = model({
+        extract: [() => ({ jobs: extracted, skills: [] })],
+        occupations: [occupation],
+        skills: [() => ({ skills: [] })],
+      });
+      return (await readCv(text, { ask, graph: software, mapper, today: TODAY })).result;
+    };
+    const allDev = (p: Prompt) => ({
+      jobs: [0, 1, 2].map((i) => ({ job: i, occupation: idOf(p, "software developer") })),
+    });
+
+    it("levels the jobs of one occupation once, from the strongest signal", async () => {
+      // 4.45 years pooled: rung 2 by years; the stated responsibility lifts the whole occupation.
+      const withResponsibility = [
+        jobs[0]!,
+        jobs[1]!,
+        {
+          ...jobs[2]!,
+          responsibility: {
+            organisation: false,
+            leadsPeople: false,
+            quote: "Led the mobile-first rebuild",
+          },
+        },
+      ];
+      const { held } = await read(withResponsibility, allDev);
+      expect(held.map((h) => h.role)).toEqual(["arch"]);
+      expect(held[0]!.evidence).toContain("Independent Software Engineer");
+    });
+
+    it("keeps only the highest rung of a ladder when jobs land on different occupations", async () => {
+      const architect = {
+        ...jobs[2]!,
+        title: "Principal Software Architect",
+        occupation: "software architect",
+        dates: "2019 – 2020",
+        years: 1,
+        responsibility: null,
+      };
+      const { held } = await read([jobs[0]!, jobs[1]!, architect], (p) => ({
+        jobs: [
+          { job: 0, occupation: idOf(p, "software developer") },
+          { job: 1, occupation: idOf(p, "software developer") },
+          { job: 2, occupation: idOf(p, "software architect") },
+        ],
+      }));
+      expect(held.map((h) => h.role)).toEqual(["arch"]);
+      expect(held[0]!.evidence).toEqual(
+        expect.arrayContaining(["Principal Software Architect", "Software Developer"]),
+      );
+    });
+
+    it("places a developer of about five years on rung 3 and leaves its next steps reachable", async () => {
+      const years = [...jobs, job("Software Engineer", "09/2021 – 05/2022", 0.75)];
+      const both = (p: Prompt) => ({
+        jobs: [0, 1, 2, 3].map((i) => ({ job: i, occupation: idOf(p, "software developer") })),
+      });
+      const result = await read(years, both);
+      expect(result.held.map((h) => h.role)).toEqual(["dev-3"]);
+      expect(result.reachable.map((r) => r.role).sort()).toEqual(["ai", "arch", "head", "lead"]);
+    });
+  });
+
   it("refuses an empty or too long CV before any call", async () => {
     const { ask, calls } = model({});
     const reader = { ask, graph, mapper, today: TODAY };

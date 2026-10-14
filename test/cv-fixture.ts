@@ -52,6 +52,7 @@ export const mapper = buildMapper(
     occupations: [
       occupation("dev", "szoftverfejlesztő", "software developer", ["software engineer"]),
       occupation("tester", "szoftvertesztelő", "software tester"),
+      occupation("architect", "szoftverarchitekt", "software architect"),
       occupation("nurse", "ápoló", "nurse responsible for general care", ["nurse"]),
       occupation("chef", "szakács", "cook"),
     ],
