@@ -1,6 +1,7 @@
 <script lang="ts">
   // What the CV says about one role, in words: held with its evidence, covered with the share of
-  // skills, reachable with the gap list. Colour is never the only carrier.
+  // skills, reachable with the gap list. Colour is never the only carrier. `brief` leaves out the
+  // evidence and the gap list, for a small card that links to where they are.
   import type { RoleState } from "#lib/cv.ts";
   import GapList from "./GapList.svelte";
 
@@ -8,17 +9,23 @@
     state: RoleState;
     /** Name of the role a reachable role is reached from; falls back to its id. */
     fromLabel?: string | undefined;
+    brief?: boolean;
   }
-  let { state, fromLabel }: Props = $props();
+  let { state, fromLabel, brief = false }: Props = $props();
 </script>
 
 {#if state.kind === "held"}
-  <p class="line held"><strong>Betöltött szerep.</strong> Az önéletrajz ezt mutatja:</p>
-  <ul class="quotes">
-    {#each state.evidence as quote, i (i)}
-      <li><q>{quote}</q></li>
-    {/each}
-  </ul>
+  <p class="line held">
+    <strong>Betöltött szerep.</strong>
+    {#if !brief}Az önéletrajz ezt mutatja:{/if}
+  </p>
+  {#if !brief}
+    <ul class="quotes">
+      {#each state.evidence as quote, i (i)}
+        <li><q>{quote}</q></li>
+      {/each}
+    </ul>
+  {/if}
 {:else if state.kind === "covered"}
   <p class="line covered">
     <strong>Lefedett szerep.</strong> A szükséges készségek {Math.round(state.coverage * 100)} százalékát
@@ -29,8 +36,12 @@
     <strong>Elérhető szerep</strong>, {state.edge === "progression" ? "előrelépés" : "váltás"} innen:
     <a href="/szerep/{state.from}">{fromLabel ?? state.from}</a>.
   </p>
-  <p class="gap-title">Hiányzó készségek ({state.gap.length}):</p>
-  <GapList gap={state.gap} />
+  {#if brief}
+    <p class="gap-title">{state.gap.length} hiányzó készség</p>
+  {:else}
+    <p class="gap-title">Hiányzó készségek ({state.gap.length}):</p>
+    <GapList gap={state.gap} />
+  {/if}
 {/if}
 
 <style>

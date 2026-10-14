@@ -1,9 +1,14 @@
 <script lang="ts">
   import "../app.css";
   import { onMount } from "svelte";
+  import { page } from "$app/state";
+  import SiteNav from "#lib/components/SiteNav.svelte";
   import { cv } from "#lib/cv.svelte.ts";
 
   let { children, data } = $props();
+
+  // The map has the whole screen: only its overlay nav, no footer. Every other page is a page.
+  const onMap = $derived(page.url.pathname === "/");
 
   // A demo without a reading: ?cv=it-fejleszto shows a stored result (static/fixtures).
   onMount(() => {
@@ -14,42 +19,39 @@
 
 <a class="skip" href="#tartalom">Ugrás a tartalomra</a>
 
-<header class="site">
-  <a class="brand" href="/">Pályatérkép</a>
-</header>
+<SiteNav overlay={onMap} />
 
 {#if cv.error}
-  <p class="problem" role="alert">{cv.error}</p>
+  <p class="problem" class:overlay={onMap} role="alert">{cv.error}</p>
 {/if}
 
 {@render children()}
 
-<footer class="site">
-  <p>
-    Foglalkozás- és készségadatok: <a href="https://esco.ec.europa.eu">ESCO</a>
-    {data.esco}, © Európai Unió. A szerepek szintjét és pályatípusát nyelvi modell javasolta (gépi
-    javaslat, nem ellenőrzött); a készséglista az ESCO alapvető készségeit sorolja fel.
-  </p>
-  <p>
-    A terhelési adatok forrása: <a href="https://www.onetcenter.org">O*NET</a> 31.0, U.S. Department of
-    Labor/ETA, CC BY 4.0.
-  </p>
-</footer>
+{#if !onMap}
+  <footer class="site" id="forrasok">
+    <p>
+      Foglalkozás- és készségadatok: <a href="https://esco.ec.europa.eu">ESCO</a>
+      {data.esco}, © Európai Unió. A szerepek szintjét és pályatípusát nyelvi modell javasolta (gépi
+      javaslat, nem ellenőrzött); a készséglista az ESCO alapvető készségeit sorolja fel.
+    </p>
+    <p>
+      A terhelési adatok forrása: <a href="https://www.onetcenter.org">O*NET</a> 31.0, U.S. Department
+      of Labor/ETA, CC BY 4.0.
+    </p>
+  </footer>
+{/if}
 
 <style>
   .site {
     max-width: 96rem;
-    margin: 0 auto;
+    margin: 1rem auto 0;
     padding: 0.7rem 1rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
   }
-  header.site {
-    border-bottom: 1px solid var(--line);
-  }
-  .brand {
-    font-weight: 800;
-    font-size: 1.15rem;
-    color: var(--ink);
-    text-decoration: none;
+  .site p {
+    max-width: 60rem;
   }
   .problem {
     max-width: 96rem;
@@ -59,13 +61,13 @@
     background: #fbe9e9;
     color: #6b1010;
   }
-  footer.site {
-    margin-top: 1rem;
-    border-top: 1px solid var(--line);
-    font-size: 0.85rem;
-    color: var(--ink-soft);
-  }
-  footer p {
-    max-width: 60rem;
+  .problem.overlay {
+    position: fixed;
+    left: 50%;
+    top: 0.6rem;
+    z-index: 6;
+    max-width: min(36rem, calc(100% - 1.2rem));
+    margin: 0;
+    transform: translateX(-50%);
   }
 </style>

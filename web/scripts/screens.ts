@@ -1,10 +1,12 @@
 // Drives the built app (pnpm web:build, pnpm web:start) in headless Chrome: takes the screenshots
-// into raw/screens/, walks the list view with the keyboard alone, checks hover, picking, keyboard,
-// the branch filter and the CV marks on the map in every layout, and times its frames.
-// Usage: node web/scripts/screens.ts [shots|keyboard|layouts|bench|all] [base url]
-// CHROME names the browser binary, CHROME_FLAGS adds switches (for example to pick a GPU backend).
+// into raw/screens/, walks the list page with the keyboard alone, checks hover, picking, keyboard,
+// the branch filter and the CV marks on the map in every layout, how the pages hang together
+// (the CV result carries from page to page, a phone is offered the list), and times its frames.
+// Usage: node web/scripts/screens.ts [shots|keyboard|layouts|pages|bench|all] [base url]
+// CHROME names the browser binary, CHROME_FLAGS adds switches (for example to pick a GPU backend),
+// SHOT_PREFIX goes in front of every screenshot's name.
 
-import { mkdirSync } from "node:fs";
+import { mkdirSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { launch, type Page } from "./chrome.ts";
 
@@ -13,10 +15,13 @@ const base = process.argv[3] ?? "http://127.0.0.1:4173";
 const OUT = fileURLToPath(new URL("../../raw/screens/", import.meta.url));
 mkdirSync(OUT, { recursive: true });
 const flags = (process.env["CHROME_FLAGS"] ?? "").split(" ").filter(Boolean);
+const SHOTS = `${OUT}${process.env["SHOT_PREFIX"] ?? ""}`;
 
 const READY =
   "!!document.querySelector('canvas.map-canvas') && !document.querySelector('.stage .note')";
 const settle = (ms: number) => new Promise((r) => setTimeout(r, ms));
+/** The CV chip on the map: there once a result is shown. */
+const CV_CHIP = "!!document.querySelector('.chip a')";
 
 async function open(page: Page, path: string, ready = READY) {
   await page.goto(`${base}${path}`);
@@ -36,57 +41,64 @@ async function shots() {
   try {
     await page.viewport(1440, 900);
     await open(page, "/?elrendezes=B");
-    await page.screenshot(`${OUT}map-whole.png`);
+    await page.screenshot(`${SHOTS}map-whole.png`);
     await open(page, "/?elrendezes=B&cv=it-fejleszto");
-    await page.waitFor("!!document.querySelector('.summary')", "CV summary");
+    await page.waitFor(CV_CHIP, "CV chip");
     await settle(500);
-    await page.screenshot(`${OUT}map-whole-cv.png`);
+    await page.screenshot(`${SHOTS}map-whole-cv.png`);
     await open(page, "/?elrendezes=B&cv=it-fejleszto&ag=it");
+    await page.waitFor(CV_CHIP, "CV chip");
     await settle(900);
-    await page.screenshot(`${OUT}map-it-cv.png`);
+    await page.screenshot(`${SHOTS}map-it-cv.png`);
     await open(page, "/?elrendezes=B&cv=it-fejleszto&ag=it&szerep=felhoarchitekt");
-    await page.waitFor("!!document.querySelector('.panel .gap')", "gap list in the panel");
+    await page.waitFor("!!document.querySelector('.panel')", "role card");
     await settle(900);
-    await page.screenshot(`${OUT}map-it-selected.png`);
-    await open(page, "/?cv=it-fejleszto&nezet=list", "!!document.querySelector('.cv .gap')");
-    await page.screenshot(`${OUT}list-desktop-cv.png`);
+    await page.screenshot(`${SHOTS}map-it-selected.png`);
+    await open(page, "/lista?cv=it-fejleszto", "!!document.querySelector('.cvline')");
+    await page.screenshot(`${SHOTS}list-desktop-cv.png`);
+    await open(page, "/oneletrajz", "!!document.querySelector('.upload')");
+    await page.screenshot(`${SHOTS}cv-desktop.png`);
+    await open(page, "/oneletrajz?cv=it-fejleszto", "!!document.querySelector('.cv .gap')");
+    await page.screenshot(`${SHOTS}cv-desktop-result.png`);
     await open(
       page,
       "/szerep/senior-szoftverfejleszto?cv=it-fejleszto",
       "!!document.querySelector('.cv')",
     );
-    await page.screenshot(`${OUT}role-desktop.png`);
+    await page.screenshot(`${SHOTS}role-desktop.png`);
 
-    // One shot per layout, bare and with the demo CV marked, of the map's frame alone.
+    // One shot per layout, bare and with the demo CV marked: the whole screen, overlays and all.
     await open(page, "/");
     for (const id of await layoutIds(page)) {
       await open(page, `/?elrendezes=${id}`);
-      await page.screenshotOf(`${OUT}map-layout-${id}.png`, ".frame");
+      await page.screenshot(`${SHOTS}map-layout-${id}.png`);
       await open(page, `/?elrendezes=${id}&cv=it-fejleszto`);
-      await page.waitFor("!!document.querySelector('.summary')", "CV summary");
+      await page.waitFor(CV_CHIP, "CV chip");
       await settle(500);
-      await page.screenshotOf(`${OUT}map-layout-${id}-cv.png`, ".frame");
+      await page.screenshot(`${SHOTS}map-layout-${id}-cv.png`);
     }
 
     await page.viewport(390, 844, true);
-    await open(page, "/", "!!document.querySelector('.list')");
-    await page.screenshot(`${OUT}list-phone.png`);
-    await open(page, "/?cv=it-fejleszto", "!!document.querySelector('.cv .gap')");
-    await page.eval("document.getElementById('cv-title').scrollIntoView()");
-    await settle(300);
-    await page.screenshot(`${OUT}list-phone-cv.png`);
+    await open(page, "/", "!!document.querySelector('.gate')");
+    await page.screenshot(`${SHOTS}map-phone.png`);
+    await open(page, "/lista", "!!document.querySelector('.list')");
+    await page.screenshot(`${SHOTS}list-phone.png`);
+    await open(page, "/oneletrajz?cv=it-fejleszto", "!!document.querySelector('.cv .gap')");
+    await page.screenshot(`${SHOTS}cv-phone-result.png`);
+    await open(page, "/oneletrajz", "!!document.querySelector('.upload')");
+    await page.screenshot(`${SHOTS}cv-phone.png`);
     await open(
       page,
       "/szerep/felhoarchitekt?cv=it-fejleszto",
       "!!document.querySelector('.cv .gap')",
     );
-    await page.screenshot(`${OUT}role-phone.png`);
+    await page.screenshot(`${SHOTS}role-phone.png`);
   } finally {
     browser.close();
   }
 }
 
-/** Tab through the list view until `done` says the focused element is the one wanted. */
+/** Tab through the list page until `done` says the focused element is the one wanted. */
 async function tabTo(page: Page, done: string, what: string, limit = 80) {
   for (let n = 0; n <= limit; n++) {
     if (n > 0) await page.tab();
@@ -109,7 +121,7 @@ async function keyboard() {
   };
   try {
     await page.viewport(1440, 900);
-    await open(page, "/?nezet=list", "!!document.querySelector('.list')");
+    await open(page, "/lista", "!!document.querySelector('.list')");
     await page.tab();
     check(
       await page.eval<boolean>(
@@ -161,7 +173,7 @@ async function keyboard() {
     );
 
     // Space on a summary opens and closes its branch.
-    await open(page, "/?nezet=list", "!!document.querySelector('.list')");
+    await open(page, "/lista", "!!document.querySelector('.list')");
     await page.eval("document.querySelector('#ag-it summary').focus()");
     await page.key(" ", "Space", 32, " ");
     await settle(200);
@@ -177,7 +189,7 @@ async function keyboard() {
     );
 
     // Search narrows the list and opens what matches.
-    await open(page, "/?nezet=list", "!!document.querySelector('.list')");
+    await open(page, "/lista", "!!document.querySelector('.list')");
     await page.eval("document.querySelector('input[type=search]').focus()");
     await page.type("szoftverfejl");
     await settle(500);
@@ -209,7 +221,7 @@ async function bench() {
       await open(page, `/?elrendezes=${id}&teljesitmeny&cv=it-fejleszto`);
       await page.waitFor("typeof globalThis.__terkepBenchmark === 'function'", "benchmark hook");
       const nodes = await page.eval<number>(
-        "document.querySelector('.found').textContent.match(/\\d+/)[0] * 1",
+        "document.querySelector('canvas.map-canvas').getAttribute('aria-label').match(/\\d+/)[0] * 1",
       );
       const run = await page.eval<Record<string, number>>("globalThis.__terkepBenchmark(240)");
       console.log(
@@ -225,14 +237,8 @@ async function bench() {
   }
 }
 
-/** What the screen shows for a colour: the map's shaders write linear values as they are. */
-const shown = (hex: string) =>
-  [1, 3, 5]
-    .map((k) => parseInt(hex.slice(k, k + 2), 16) / 255)
-    .map((c) => Math.round(255 * (c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4)));
-
-/** How many pixels of a PNG (base64) lie near each colour. */
-const countColours = (page: Page, png: string, colours: number[][]) =>
+/** Near-white pixels of a PNG (base64) in a box around each point, one count per point. */
+const whiteAround = (page: Page, png: string, points: [number, number][], half: number) =>
   page.eval<number[]>(`(async () => {
     const img = new Image();
     img.src = "data:image/png;base64,${png}";
@@ -242,15 +248,30 @@ const countColours = (page: Page, png: string, colours: number[][]) =>
     c.height = img.height;
     const g = c.getContext("2d");
     g.drawImage(img, 0, 0);
-    const d = g.getImageData(0, 0, c.width, c.height).data;
-    const want = ${JSON.stringify(colours)};
-    const n = want.map(() => 0);
-    for (let i = 0; i < d.length; i += 4)
-      want.forEach((w, k) => {
-        if (Math.hypot(d[i] - w[0], d[i + 1] - w[1], d[i + 2] - w[2]) < 70) n[k] += 1;
-      });
-    return n;
+    return ${JSON.stringify(points)}.map(([x, y]) => {
+      const x0 = Math.max(0, Math.round(x) - ${half}), y0 = Math.max(0, Math.round(y) - ${half});
+      const d = g.getImageData(x0, y0, ${2 * half}, ${2 * half}).data;
+      let n = 0;
+      for (let i = 0; i < d.length; i += 4) if (Math.min(d[i], d[i + 1], d[i + 2]) > 190) n += 1;
+      return n;
+    });
   })()`);
+
+const median = (xs: number[]) => [...xs].sort((a, b) => a - b)[Math.floor(xs.length / 2)] ?? 0;
+
+/** The roles of each state in the demo CV, for the check that the three whites differ. */
+const demo = JSON.parse(
+  readFileSync(new URL("../static/fixtures/it-fejleszto.json", import.meta.url), "utf8"),
+) as {
+  held: { role: string }[];
+  covered: { role: string }[];
+  reachable: { role: string }[];
+};
+const heldIds = demo.held.map((h) => h.role);
+const coveredIds = demo.covered.map((h) => h.role).filter((r) => !heldIds.includes(r));
+const reachableIds = demo.reachable
+  .map((h) => h.role)
+  .filter((r) => !heldIds.includes(r) && !coveredIds.includes(r));
 
 /** In every layout: hover, picking, the keyboard, the branch filter and the CV's marks work. */
 async function layouts() {
@@ -269,7 +290,7 @@ async function layouts() {
     for (const id of await layoutIds(page)) {
       await open(page, `/?elrendezes=${id}&teljesitmeny&cv=it-fejleszto`);
       await page.waitFor("typeof globalThis.__terkepWhere === 'function'", "where hook");
-      await page.waitFor("!!document.querySelector('.summary')", "CV summary");
+      await page.waitFor(CV_CHIP, "CV chip");
       await settle(600);
       const stage = () =>
         page.eval<{ x: number; y: number; w: number; h: number }>(`(() => {
@@ -283,16 +304,32 @@ async function layouts() {
         return w ? { x: r.x + w[0], y: r.y + w[1] } : null;
       };
 
-      // The CV's marks show: held, covered and reachable each colour a good few pixels.
+      // The CV's marks show as white, and the three states differ: around a held role more
+      // white is lit than around a covered one, and around a covered one more than around a
+      // reachable one (the median of the ones that are on the screen; names hidden).
+      await page.eval("document.querySelector('.labels').style.display = 'none'");
       const picture = await page.screenshotOf(`${OUT}check-layout-${id}.png`, ".stage");
-      const [held, covered, reachable] = await countColours(page, picture, [
-        shown("#e69f00"),
-        shown("#2cc6a0"),
-        shown("#56b4e9"),
-      ]);
+      await page.eval("document.querySelector('.labels').style.display = ''");
+      const box0 = await stage();
+      const whites: Record<string, number> = {};
+      for (const [kind, ids] of [
+        ["held", heldIds],
+        ["covered", coveredIds],
+        ["reachable", reachableIds],
+      ] as const) {
+        const at2 = await page.eval<([number, number] | null)[]>(
+          `${JSON.stringify(ids)}.map((id) => globalThis.__terkepWhere(id))`,
+        );
+        const inside = at2.filter(
+          (w): w is [number, number] =>
+            w !== null && w[0] > 20 && w[0] < box0.w - 20 && w[1] > 20 && w[1] < box0.h - 20,
+        );
+        whites[kind] =
+          inside.length === 0 ? 0 : median(await whiteAround(page, picture, inside, 8));
+      }
       check(
-        held! > 25 && covered! > 25 && reachable! > 25,
-        `${id}: the marks show (held ${held}, covered ${covered}, reachable ${reachable} pixels)`,
+        whites["held"]! > whites["covered"]! && whites["covered"]! > whites["reachable"]!,
+        `${id}: the three white states differ (white pixels around held ${whites["held"]}, covered ${whites["covered"]}, reachable ${whites["reachable"]})`,
       );
 
       const spot = await at();
@@ -338,15 +375,16 @@ async function layouts() {
         );
       }
 
-      // The branch filter narrows, and the camera shows that branch.
-      await page.eval(`(() => {
-        const s = [...document.querySelectorAll('select')].find((e) => e.textContent.includes('Minden ág'));
-        s.value = "0";
-        s.dispatchEvent(new Event("change", { bubbles: true }));
-      })()`);
+      // A link that names a branch shows it: the chip says so, and the camera is on its roles.
+      await open(page, `/?elrendezes=${id}&teljesitmeny&cv=it-fejleszto&ag=it`);
+      await page.waitFor("typeof globalThis.__terkepWhere === 'function'", "where hook");
+      await page.waitFor(CV_CHIP, "CV chip");
       await settle(1500);
-      const found = await page.eval<string>("document.querySelector('.found').textContent");
-      check(/szűrésben/u.test(found), `${id}: the branch filter narrows (${found.trim()})`);
+      const chip = await page.eval<string>("document.querySelector('.chip')?.textContent ?? ''");
+      check(
+        /Informatika/u.test(chip),
+        `${id}: the branch from the address is shown (${chip.trim()})`,
+      );
       const spot2 = await at();
       const box = await stage();
       check(
@@ -364,7 +402,77 @@ async function layouts() {
   if (problems.length > 0) process.exitCode = 1;
 }
 
+/** How the pages hang together: what is on each, and a CV result carried from page to page. */
+async function pages() {
+  const browser = await launch(flags);
+  const { page } = browser;
+  const problems: string[] = [];
+  const check = (ok: boolean, text: string) => {
+    console.log(`${ok ? "ok  " : "FAIL"} ${text}`);
+    if (!ok) problems.push(text);
+  };
+  page.on("Runtime.exceptionThrown", (p) => problems.push(`page error: ${JSON.stringify(p)}`));
+  try {
+    await page.viewport(1440, 900);
+    await open(page, "/");
+    check(
+      await page.eval<boolean>(
+        "!document.querySelector('.list, form, footer, textarea, input[type=search]') && document.documentElement.scrollHeight <= innerHeight",
+      ),
+      "the map page is the map alone: no list, form or footer, and it does not scroll",
+    );
+    check(
+      await page.eval<boolean>(
+        "!!document.querySelector('.legend') && !!document.querySelector('.zoom') && !!document.querySelector('nav a[href=\"/lista\"]')",
+      ),
+      "the map page has its legend, zoom buttons and nav",
+    );
+
+    // A result read on the CV page shows on the map and in the list without a reload and
+    // without anything written to storage.
+    await open(page, "/oneletrajz?cv=it-fejleszto", "!!document.querySelector('.summary')");
+    await page.eval("window.__sameDocument = true");
+    await page.eval("document.querySelector('nav a[href=\"/\"]').click()");
+    await page.waitFor(READY, "map after navigating");
+    await page.waitFor(CV_CHIP, "CV chip after navigating");
+    check(
+      await page.eval<boolean>("window.__sameDocument === true"),
+      "the result went to the map by client navigation, not a reload",
+    );
+    check(
+      await page.eval<boolean>("/betöltött/u.test(document.querySelector('.chip a').textContent)"),
+      "the result is on the map",
+    );
+    await page.eval("document.querySelector('nav a[href=\"/lista\"]').click()");
+    await page.waitFor("!!document.querySelector('.cvline')", "result line on the list");
+    check(true, "the result is on the list");
+    check(
+      await page.eval<boolean>(
+        "localStorage.length === 0 && Object.keys(sessionStorage).every((k) => k.startsWith('sveltekit:')) && !JSON.stringify(sessionStorage).includes('szoftver')",
+      ),
+      "nothing of the result is stored in the browser (the router's own scroll notes aside)",
+    );
+
+    // A phone is offered the list, and can still ask for the map.
+    await page.viewport(390, 844, true);
+    await open(page, "/", "!!document.querySelector('.gate')");
+    check(
+      await page.eval<boolean>(
+        "!!document.querySelector('.gate a[href=\"/lista\"]') && !document.querySelector('canvas.map-canvas')",
+      ),
+      "a phone gets the choice, and the renderer is not started",
+    );
+    await page.eval("document.querySelector('.gate button').click()");
+    await page.waitFor(READY, "map on request");
+    check(true, "the map opens on request");
+  } finally {
+    browser.close();
+  }
+  if (problems.length > 0) process.exitCode = 1;
+}
+
 if (mode === "shots" || mode === "all") await shots();
 if (mode === "keyboard" || mode === "all") await keyboard();
 if (mode === "layouts" || mode === "all") await layouts();
+if (mode === "pages" || mode === "all") await pages();
 if (mode === "bench" || mode === "all") await bench();

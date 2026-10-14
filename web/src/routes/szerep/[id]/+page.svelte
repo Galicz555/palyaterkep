@@ -58,7 +58,7 @@
 
 <main id="tartalom" class="role">
   <nav aria-label="Hol vagy" class="crumbs">
-    <a href="/">Pályatérkép</a> › <a href="/?ag={role.branch.id}">{role.branch.label}</a> ›
+    <a href="/lista">Szerepek</a> › <a href="/lista?ag={role.branch.id}">{role.branch.label}</a> ›
     {role.subBranch.label}
   </nav>
 
@@ -67,9 +67,7 @@
     <RoleBadges level={role.level} management={role.management} curated={role.curated} />
   </p>
   <p>
-    <a class="button" href="/?ag={role.branch.id}&szerep={role.id}&nezet=map">
-      Megnézem a térképen
-    </a>
+    <a class="button" href="/?ag={role.branch.id}&szerep={role.id}"> Megnézem a térképen </a>
   </p>
 
   {#if !role.curated}
