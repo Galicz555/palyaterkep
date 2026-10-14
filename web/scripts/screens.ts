@@ -37,7 +37,7 @@ async function shots() {
     await open(page, "/?cv=it-fejleszto&ag=it");
     await settle(900);
     await page.screenshot(`${OUT}map-it-cv.png`);
-    await open(page, "/?cv=it-fejleszto&ag=it&szerep=szoftverarchitekt");
+    await open(page, "/?cv=it-fejleszto&ag=it&szerep=felhoarchitekt");
     await page.waitFor("!!document.querySelector('.panel .gap')", "gap list in the panel");
     await settle(900);
     await page.screenshot(`${OUT}map-it-selected.png`);
@@ -45,7 +45,7 @@ async function shots() {
     await page.screenshot(`${OUT}list-desktop-cv.png`);
     await open(
       page,
-      "/szerep/szoftverfejleszto?cv=it-fejleszto",
+      "/szerep/senior-szoftverfejleszto?cv=it-fejleszto",
       "!!document.querySelector('.cv')",
     );
     await page.screenshot(`${OUT}role-desktop.png`);
@@ -59,7 +59,7 @@ async function shots() {
     await page.screenshot(`${OUT}list-phone-cv.png`);
     await open(
       page,
-      "/szerep/szoftverarchitekt?cv=it-fejleszto",
+      "/szerep/felhoarchitekt?cv=it-fejleszto",
       "!!document.querySelector('.cv .gap')",
     );
     await page.screenshot(`${OUT}role-phone.png`);
