@@ -26,7 +26,7 @@ import { ground, R_HOLE, R_OUT, type Layout } from "../layout.ts";
 import type { MapData } from "../model.ts";
 import { BG, branchColor } from "../palette.ts";
 import { LEVEL_NAMES } from "../text.ts";
-import { ADD, NODE_FRAG, NODE_VERT, SHELL_FRAG, SHELL_VERT } from "./shaders.ts";
+import { ADD, NODE_BLEND, NODE_FRAG, NODE_VERT, SHELL_FRAG, SHELL_VERT } from "./shaders.ts";
 
 const TAU = Math.PI * 2;
 
@@ -39,6 +39,14 @@ const DOME = 0.5;
 /** A sub-branch gets its name on the rim once its slice is this wide on screen. */
 const SUB_LABEL_PX = 24;
 
+/** A rectangle on the screen, in pixels inside the stage. */
+export interface Box {
+  x0: number;
+  x1: number;
+  y0: number;
+  y1: number;
+}
+
 export interface Spot {
   x: number;
   y: number;
@@ -49,6 +57,8 @@ export interface Spot {
 /** What a frame needs from the renderer to put its labels on the screen. */
 export interface FrameCtx {
   project(x: number, y: number, z: number, out: Spot): void;
+  /** Keeps the names of marked roles off this box, in pixels in the stage. */
+  reserve(box: Box): void;
   place(e: HTMLElement, x: number, y: number, opacity: number, extra?: string): void;
   onScreen(x: number, y: number, pad?: number): boolean;
 }
@@ -390,23 +400,58 @@ function stars(p: Parts, host: Host, at3: Vec3[]) {
       uniforms: host.uniforms,
       vertexShader: NODE_VERT,
       fragmentShader: NODE_FRAG,
-      ...ADD,
+      ...NODE_BLEND,
     }),
   );
   points.frustumCulled = false;
-  points.renderOrder = 3;
+  // After the nodes, so the stars are not buried under the points around them.
+  points.renderOrder = 4;
   p.add(points, (a) => {
     alpha.array.fill(a);
     alpha.needsUpdate = true;
   });
 }
 
+/** The net of a cap on a shell: latitudes every third of the cap and meridians every 60 degrees. */
+function capNet(radius: number, cap: number): { net: number[]; rim: number[] } {
+  const at = (polar: number, az: number): Vec3 => [
+    radius * Math.sin(polar) * Math.sin(az),
+    radius * Math.cos(polar),
+    -radius * Math.sin(polar) * Math.cos(az),
+  ];
+  const net: number[] = [];
+  const rim: number[] = [];
+  const arc = (out: number[], from: (t: number) => Vec3, steps: number) => {
+    for (let k = 0; k < steps; k++) out.push(...from(k / steps), ...from((k + 1) / steps));
+  };
+  for (const f of [1 / 3, 2 / 3]) arc(net, (t) => at(f * cap, t * TAU), 96);
+  arc(rim, (t) => at(cap, t * TAU), 128);
+  for (let m = 0; m < 6; m++) arc(net, (t) => at(t * cap, (m / 6) * TAU), 24);
+  return { net, rim };
+}
+
 /** The glass sphere of the reference: shells that glow at the rim, a faint lat/long grid, rings. */
 function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame {
   const p = parts(host);
   const outer = spec.shells.at(-1)!.radius;
-  spec.shells.forEach((shell, k) => glass(p, shell.radius, k === spec.shells.length - 1 ? 1 : 0.4));
+  // Where the net marks the levels, the glass of the inner shells is fainter: less fog among the points.
+  const inner = spec.cap !== undefined ? 0.22 : 0.4;
+  spec.shells.forEach((shell, k) =>
+    glass(p, shell.radius, k === spec.shells.length - 1 ? 1 : inner),
+  );
   graticule(p, outer, 1, 0.2);
+  // Where the roles are: every shell has its own net and rim over the cap, so a level reads as a
+  // surface the points sit on, and the nested rims as the five levels.
+  if (spec.cap !== undefined) {
+    spec.shells.forEach((shell, k) => {
+      const { net, rim } = capNet(shell.radius, spec.cap!);
+      const grade = (k + 1) / spec.shells.length;
+      const mesh = lines(net, 0x3d7fc4, 0.05 + 0.09 * grade);
+      p.add(mesh.object, mesh.fade);
+      const edge = lines(rim, 0x4a96e0, 0.14 + 0.24 * grade);
+      p.add(edge.object, edge.fade);
+    });
+  }
   // Two rings beyond the glass, as in the reference.
   const ring = lines(latitude(0, outer * 1.18, 180), 0x3d7fc4, 0.34);
   p.add(ring.object, ring.fade);
@@ -426,6 +471,8 @@ function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame
     w: 0,
     h: 0,
   }));
+  // Where the layout asks for it, the names of the stars and of the levels are kept clear of.
+  const reserving = spec.cap !== undefined;
   // The level names run down one meridian on the side facing the camera, just below the data.
   const shellPins = spec.shells.map((shell) => {
     const polar = ((spec.labelPolar ?? 72) * Math.PI) / 180;
@@ -433,6 +480,8 @@ function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame
     return {
       e: p.pin("lbl-shell", `${shell.level} ${LEVEL_NAMES[shell.level]}`),
       at: new Vector3(0, Math.cos(polar) * r, Math.sin(polar) * r),
+      w: 0,
+      h: 0,
     };
   });
 
@@ -459,18 +508,37 @@ function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame
         const dy = spot.y - centre.y;
         const length = Math.hypot(dx, dy) || 1;
         const push = (pin.w / 2) * Math.abs(dx / length) + (pin.h / 2) * Math.abs(dy / length) + 14;
-        ctx.place(
-          pin.e,
-          spot.x + (dx / length) * push,
-          spot.y + (dy / length) * push,
-          f,
-          " translate(-50%,-50%)",
-        );
+        const x = spot.x + (dx / length) * push;
+        const y = spot.y + (dy / length) * push;
+        ctx.place(pin.e, x, y, f, " translate(-50%,-50%)");
+        if (reserving) {
+          ctx.reserve({
+            x0: x - pin.w / 2,
+            x1: x + pin.w / 2,
+            y0: y - pin.h / 2,
+            y1: y + pin.h / 2,
+          });
+        }
       }
       for (const pin of shellPins) {
         ctx.project(pin.at.x, pin.at.y, pin.at.z, spot);
-        if (spot.d < 0 || !ctx.onScreen(spot.x, spot.y)) pin.e.style.opacity = "0";
-        else ctx.place(pin.e, spot.x, spot.y, 0.75 * f, " translate(8px,-50%)");
+        if (spot.d < 0 || !ctx.onScreen(spot.x, spot.y)) {
+          pin.e.style.opacity = "0";
+          continue;
+        }
+        ctx.place(pin.e, spot.x, spot.y, 0.75 * f, " translate(8px,-50%)");
+        if (reserving) {
+          if (!pin.w) {
+            pin.w = pin.e.offsetWidth;
+            pin.h = pin.e.offsetHeight;
+          }
+          ctx.reserve({
+            x0: spot.x + 8,
+            x1: spot.x + 8 + pin.w,
+            y0: spot.y - pin.h / 2,
+            y1: spot.y + pin.h / 2,
+          });
+        }
       }
     },
   };

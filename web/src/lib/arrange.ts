@@ -6,6 +6,7 @@
 // up (see lib/layout.ts).
 
 import {
+  CAP_ANGLE,
   capDirection,
   CORNER_ANGLE,
   DEMANDS,
@@ -13,7 +14,9 @@ import {
   magnitudeOf,
   mixKey,
   mixOf,
+  radialStretch,
   triangle,
+  triangleRadius,
   type Mix,
 } from "./demand.ts";
 import { hash, layout as discLayout, R_OUT, type Layout } from "./layout.ts";
@@ -37,6 +40,8 @@ export type FrameSpec =
       shells: { level: Level; radius: number }[];
       /** Where the level names stand on the front meridian, degrees from the top; 72 if absent. */
       labelPolar?: number;
+      /** Polar angle of the cap the roles fill: each shell gets a net and a rim over it. */
+      cap?: number;
       /** The three demand stars, in `DEMANDS` order. */
       anchors: { label: string; at: Vec3 }[];
     }
@@ -87,6 +92,14 @@ export interface Arrangement {
   colors?: Float32Array;
   /** The three arms of every role's star, physical, mental, emotional, each 0 to 1; zero without data. */
   arms?: Float32Array;
+  /** The soft look: small glowing points that cover one another, drawn far to near, not additive. */
+  soft?: true;
+  /** What the roles a CV does not mark look like beside the marked ones: a share of grey, and an opacity. */
+  field?: { grey: number; alpha: number };
+  /** Names of marked roles try other places beside their point rather than lie over a name or a point. */
+  declutter?: true;
+  /** Marked roles are named once the camera is this close (1 is the whole map); 0.6 if absent. */
+  labelZoom?: number;
   /** How opaque a node is: where a layout packs the roles close, they are fainter, to stay apart. */
   alpha: number;
 }
@@ -142,8 +155,11 @@ const SHELL = [0.3, 0.48, 0.66, 0.83, 1].map((f) => f * R_OUT);
  * roles, and on a surface they would pile up. The shells are 17 to 18 units apart.
  */
 const SHELL_BAND = 8.5;
-/** The middle of the triangle is pushed outwards on the cap: half the roles sit within 0.36 of it. */
-const CAP_CURVE = 0.55;
+/**
+ * Half the roles sit within 0.36 of the triangle's centre: the radius is stretched (by the roles'
+ * own ranks) this far towards an even spread over the cap, 1 being all the way.
+ */
+export const CAP_FILL = 1;
 /** Roles that share their scores keep this far apart on their shell, in map units. */
 const SPACING = 1.7;
 
@@ -173,9 +189,14 @@ function sphere(data: MapData): Arrangement {
     roles.map((r) => `${r.level}|${mixKey(r.demands)}`),
     SPACING,
   );
+  const stretch = radialStretch(
+    roles.filter((r) => r.demands).map((r) => triangleRadius(mixOf(r.demands))),
+    CAP_FILL,
+  );
+  const radii = roles.map((role) => SHELL[role.level - 1]! - SHELL_BAND * hash(role.id));
   roles.forEach((role, i) => {
-    const dir = capDirection(mixOf(role.demands), CAP_CURVE);
-    const radius = SHELL[role.level - 1]! - SHELL_BAND * hash(role.id);
+    const dir = capDirection(mixOf(role.demands), stretch);
+    const radius = radii[i]!;
     const [e1, e2] = tangents(dir);
     const dx = offsets[i * 2]!;
     const dy = offsets[i * 2 + 1]!;
@@ -183,6 +204,19 @@ function sphere(data: MapData): Arrangement {
     const keep = radius / Math.hypot(...p);
     positions.set([p[0] * keep, p[1] * keep, p[2] * keep], i * 3);
     sizes[i] = sizeOfMagnitude(magnitudeOf(role.demands));
+  });
+  // Mixes that the stretch brings close still crowd: push neighbours of a level apart, then put
+  // each back on its own radius.
+  relax(
+    positions,
+    roles.map((r) => r.level),
+    [0, 1, 2],
+    0.9,
+  );
+  roles.forEach((_, i) => {
+    const keep =
+      radii[i]! / Math.hypot(positions[i * 3]!, positions[i * 3 + 1]!, positions[i * 3 + 2]!);
+    for (let k = 0; k < 3; k++) positions[i * 3 + k]! *= keep;
   });
   // A pure demand is a corner of the triangle: the anchor stars sit there, on the outermost shell.
   const corners: Mix[] = [
@@ -196,16 +230,22 @@ function sphere(data: MapData): Arrangement {
     frame: {
       kind: "sphere",
       shells: SHELL.map((radius, k) => ({ level: (k + 1) as Level, radius })),
+      cap: CAP_ANGLE,
+      labelPolar: 84,
       anchors: DEMANDS.map((d, k) => {
         const [x, y, z] = capDirection(corners[k]!);
         return { label: d.label, at: [x * R_OUT, y * R_OUT, z * R_OUT] };
       }),
     },
-    home: { target: [0, 6, 0], az: 0, pol: deg(62), fit: [R_OUT * 1.12, R_OUT * 1.12] },
+    home: { target: [0, 6, 0], az: 0, pol: deg(48), fit: [R_OUT * 1.12, R_OUT * 1.12] },
     free: true,
     extent: R_OUT,
     sizes,
-    alpha: 0.6,
+    soft: true,
+    declutter: true,
+    labelZoom: 1.05,
+    field: { grey: 0.25, alpha: 0.75 },
+    alpha: 0.95,
   };
 }
 

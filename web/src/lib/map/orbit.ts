@@ -27,8 +27,8 @@ import type { Arrangement } from "../arrange.ts";
 import type { MapData } from "../model.ts";
 import { BG, branchColor, MARK, MARK_COLOR } from "../palette.ts";
 import { capitalise } from "../text.ts";
-import { buildFrame, el, type Frame, type FrameCtx, type Spot } from "./frames.ts";
-import { ADD, EDGE_FRAG, EDGE_VERT, NODE_FRAG, NODE_VERT } from "./shaders.ts";
+import { buildFrame, el, type Box, type Frame, type FrameCtx, type Spot } from "./frames.ts";
+import { ADD, EDGE_FRAG, EDGE_VERT, NODE_BLEND, NODE_FRAG, NODE_VERT } from "./shaders.ts";
 
 export interface MapHooks {
   onSelect(index: number | null): void;
@@ -185,6 +185,10 @@ export function createMap(
   nodeGeo.setAttribute("aMark", aMark);
   nodeGeo.setAttribute("aShape", aShape);
   nodeGeo.setAttribute("aManage", aManage);
+  /** The order the nodes are drawn in: the roles' own, unless the soft look sorts them far to near. */
+  const order = new Uint32Array(N).map((_, i) => i);
+  const orderAttr = new BufferAttribute(order, 1);
+  nodeGeo.setIndex(orderAttr);
   const uniforms = {
     uMorph: { value: 1 },
     uScale: { value: 1000 },
@@ -192,10 +196,16 @@ export function createMap(
     uNear: { value: 100 },
     uSpan: { value: 200 },
     uMinPx: { value: MIN_PX },
+    uSoft: { value: first.soft ? 1 : 0 },
   };
   const nodes = new Points(
     nodeGeo,
-    new ShaderMaterial({ uniforms, vertexShader: NODE_VERT, fragmentShader: NODE_FRAG, ...ADD }),
+    new ShaderMaterial({
+      uniforms,
+      vertexShader: NODE_VERT,
+      fragmentShader: NODE_FRAG,
+      ...NODE_BLEND,
+    }),
   );
   nodes.frustumCulled = false;
   nodes.renderOrder = 3;
@@ -272,8 +282,8 @@ export function createMap(
         mark = 0.6;
         alpha = 1;
       } else if (marks) {
-        color = mix(base[i]!, GREY, 0.6);
-        alpha = 0.22;
+        color = mix(base[i]!, GREY, arr.field?.grey ?? 0.6);
+        alpha = arr.field?.alpha ?? 0.22;
       } else if (noData[i]) {
         color = mix(base[i]!, GREY, 0.7);
         alpha = 0.55;
@@ -488,12 +498,13 @@ export function createMap(
   observer.observe(stage);
 
   // Morph: the points, and the frame around them, move from one layout to the next. ---------------
-  let morph: { start: number } | null = null;
+  let morph: { start: number; softFrom: number; softTo: number } | null = null;
   function stepMorph(now: number) {
     if (!morph) return;
     const t = Math.min(1, (now - morph.start) / MORPH_MS);
     const e = ease(t);
     uniforms.uMorph.value = e;
+    uniforms.uSoft.value = morph.softFrom + (morph.softTo - morph.softFrom) * e;
     const from = nodeFrom.array as Float32Array;
     const to = nodeTo.array as Float32Array;
     for (let k = 0; k < cur.length; k++) cur[k] = from[k]! + (to[k]! - from[k]!) * e;
@@ -522,7 +533,12 @@ export function createMap(
     edgeEnds(next.positions, edgeTo);
     leaving?.dispose();
     leaving = frame;
+    const softFrom = uniforms.uSoft.value;
     arr = next;
+    if (!next.soft) {
+      order.forEach((_, k) => (order[k] = k));
+      orderAttr.needsUpdate = true;
+    }
     recolour(next);
     growArms(next);
     paint();
@@ -530,6 +546,7 @@ export function createMap(
     if (reducedMotion()) {
       cur.set(next.positions);
       uniforms.uMorph.value = 1;
+      uniforms.uSoft.value = next.soft ? 1 : 0;
       leaving.dispose();
       leaving = null;
       frame.fade(1);
@@ -537,7 +554,7 @@ export function createMap(
     } else {
       uniforms.uMorph.value = 0;
       frame.fade(0);
-      morph = { start: performance.now() };
+      morph = { start: performance.now(), softFrom, softTo: next.soft ? 1 : 0 };
     }
     if (next.free) controls.maxPolarAngle = Math.PI;
     // Staying in one layout (B with another demand) keeps the camera where the person put it.
@@ -669,50 +686,115 @@ export function createMap(
   function onScreen(x: number, y: number, pad = 24) {
     return x > -pad && x < W + pad && y > -pad && y < H + pad;
   }
-  const frameCtx: FrameCtx = { project, place, onScreen };
+  /** Far to near, so a near point covers a far one, and the marked ones last, on top of the field. */
+  const sortKeys = new Float64Array(N);
+  function sortNodes() {
+    for (let i = 0; i < N; i++) {
+      const front = marks?.[i] || i === selected ? 1e6 : 0;
+      sortKeys[i] = Math.round((front - sd[i]! + 2e6) * 16) * N + i;
+    }
+    sortKeys.sort();
+    for (let k = 0; k < N; k++) order[k] = sortKeys[k]! % N;
+    orderAttr.needsUpdate = true;
+  }
+
+  /** What the names of marked roles keep off, this frame: the frame's own names, and the picked one. */
+  let taken: Box[] = [];
+  const frameCtx: FrameCtx = { project, place, onScreen, reserve: (box) => taken.push(box) };
+  const hits = (a: Box, b: Box, pad: number) =>
+    a.x0 < b.x1 + pad && a.x1 > b.x0 - pad && a.y0 < b.y1 + pad && a.y1 > b.y0 - pad;
+  /** Where a name can stand beside its point, best first: the box it takes and how it is placed. */
+  const SPOTS: { at(x: number, y: number, w: number): Box; css: string }[] = [
+    {
+      at: (x, y, w) => ({ x0: x + 12, x1: x + 12 + w, y0: y - LABEL_H / 2, y1: y + LABEL_H / 2 }),
+      css: " translate(12px,-50%)",
+    },
+    {
+      at: (x, y, w) => ({ x0: x - 12 - w, x1: x - 12, y0: y - LABEL_H / 2, y1: y + LABEL_H / 2 }),
+      css: " translate(calc(-100% - 12px),-50%)",
+    },
+    {
+      at: (x, y, w) => ({ x0: x + 12, x1: x + 12 + w, y0: y - 4 - LABEL_H, y1: y - 4 }),
+      css: " translate(12px,calc(-100% - 4px))",
+    },
+    {
+      at: (x, y, w) => ({ x0: x + 12, x1: x + 12 + w, y0: y + 4, y1: y + 4 + LABEL_H }),
+      css: " translate(12px,4px)",
+    },
+    {
+      at: (x, y, w) => ({ x0: x - w / 2, x1: x + w / 2, y0: y - 10 - LABEL_H, y1: y - 10 }),
+      css: " translate(-50%,calc(-100% - 10px))",
+    },
+    {
+      at: (x, y, w) => ({ x0: x - w / 2, x1: x + w / 2, y0: y + 10, y1: y + 10 + LABEL_H }),
+      css: " translate(-50%,10px)",
+    },
+  ];
 
   /** `zoom` is 1 for the whole map and falls as the camera comes closer. */
   function placeLabels(zoom: number) {
+    taken = [];
     frame.place(frameCtx, zoom);
     leaving?.place(frameCtx, zoom);
-    // Roles the CV marks get a name when zoomed in, nearest to the top of the list first and
-    // never on top of another name.
-    const taken: { x0: number; x1: number; y0: number; y1: number }[] = [];
-    for (const pin of markPins) {
-      const i = pin.i;
-      // The picked role has its own, bolder name.
-      const visible =
-        zoom < 0.6 &&
-        i !== selected &&
-        sd[i]! > 0 &&
-        onScreen(sx[i]!, sy[i]!, 0) &&
-        (!pass || pass[i]);
-      if (!visible) {
-        pin.e.style.opacity = "0";
-        continue;
-      }
-      if (!pin.w) pin.w = pin.e.offsetWidth;
-      const box = {
-        x0: sx[i]! + 12,
-        x1: sx[i]! + 12 + (pin.w ?? 0),
-        y0: sy[i]! - LABEL_H / 2,
-        y1: sy[i]! + LABEL_H / 2,
-      };
-      const clash = taken.some(
-        (t) => box.x0 < t.x1 && box.x1 > t.x0 && box.y0 < t.y1 && box.y1 > t.y0,
-      );
-      if (clash) {
-        pin.e.style.opacity = "0";
-        continue;
-      }
-      taken.push(box);
-      place(pin.e, sx[i]!, sy[i]!, 1, " translate(12px,-50%)");
-    }
+    const declutter = arr.declutter === true;
+    // The picked role has its own, bolder name, which goes first.
     if (selected >= 0 && sd[selected]! > 0) {
       selectPin.hidden = false;
       selectPin.textContent = capitalise(roles[selected]!.label);
       place(selectPin, sx[selected]!, sy[selected]!, 1, " translate(14px,-130%)");
+      if (declutter) {
+        const w = selectPin.offsetWidth;
+        const h = selectPin.offsetHeight;
+        taken.push({
+          x0: sx[selected]! + 14,
+          x1: sx[selected]! + 14 + w,
+          y0: sy[selected]! - 1.3 * h,
+          y1: sy[selected]! - 0.3 * h,
+        });
+      }
     } else selectPin.hidden = true;
+    // Roles the CV marks get a name when zoomed in, nearest to the top of the list first and
+    // never on top of another name. Where the layout asks for it, a name that does not fit to the
+    // right of its point tries the other sides, and never covers another marked point.
+    const shown = markPins.filter(
+      (pin) =>
+        zoom < (arr.labelZoom ?? 0.6) &&
+        pin.i !== selected &&
+        sd[pin.i]! > 0 &&
+        onScreen(sx[pin.i]!, sy[pin.i]!, 0) &&
+        (!pass || pass[pin.i]),
+    );
+    const dots = declutter
+      ? shown.map((pin) => {
+          const r = Math.max(6, sr[pin.i]! * 0.8);
+          const x = sx[pin.i]!;
+          const y = sy[pin.i]!;
+          return { i: pin.i, box: { x0: x - r, x1: x + r, y0: y - r, y1: y + r } };
+        })
+      : [];
+    const spots = declutter ? SPOTS : SPOTS.slice(0, 1);
+    const pad = declutter ? 2 : 0;
+    for (const pin of markPins) {
+      if (!shown.includes(pin)) {
+        pin.e.style.opacity = "0";
+        continue;
+      }
+      const i = pin.i;
+      if (!pin.w) pin.w = pin.e.offsetWidth;
+      const fits = spots.find((s) => {
+        const box = s.at(sx[i]!, sy[i]!, pin.w ?? 0);
+        return (
+          !taken.some((t) => hits(box, t, pad)) &&
+          !dots.some((d) => d.i !== i && hits(box, d.box, 0))
+        );
+      });
+      if (!fits) {
+        pin.e.style.opacity = "0";
+        continue;
+      }
+      taken.push(fits.at(sx[i]!, sy[i]!, pin.w ?? 0));
+      place(pin.e, sx[i]!, sy[i]!, 1, fits.css);
+    }
   }
 
   function draw() {
@@ -721,6 +803,7 @@ export function createMap(
     uniforms.uSpan.value = arr.extent * 2;
     projDirty = true;
     ensureProjected();
+    if (arr.soft) sortNodes();
     placeLabels(camera.position.distanceTo(controls.target) / homeView().dist);
     placeMark(selectMark, selected);
     placeMark(hoverMark, hovered === selected ? -1 : hovered);
