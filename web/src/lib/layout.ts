@@ -8,7 +8,7 @@
 import type { MapData } from "./model.ts";
 
 /** The first lane starts here: a hole in the middle keeps the level-1 lane from being cramped. */
-export const R_HOLE = 18;
+export const R_HOLE = 12;
 /** The last lane ends here. Everything else is in these units. */
 export const R_OUT = 100;
 /** Management roles float this far above individual ones. */
@@ -28,17 +28,28 @@ const CELL_PAD = 0.7;
 /**
  * Sector widths. Half of each branch's angle is the same for all 13 branches, half follows its
  * share of the roles. Purely by count the 112 IT roles would get 13 degrees and industry 86; with
- * the blend IT gets 21 and industry 57, so a small branch stays readable and the density of dots
- * differs by 2x between the busiest and the quietest sector instead of 7x.
+ * the blend a small branch stays readable and the density of dots differs by 2x between the
+ * busiest and the quietest sector instead of 7x.
  */
 const EQUAL_SHARE = 0.5;
+/**
+ * Branches drawn wider than their roles earn. IT is where the product starts and where the zoomed
+ * view has to read best: a CV in IT lights up the most roles there, and their names are the
+ * longest, so IT gets 1.8x the blended width (about 33 degrees).
+ */
+const FEATURED: Record<string, number> = { it: 1.8 };
 /** A sub-branch's slice follows its role count plus this many, so one with 2 roles still shows. */
 const SUB_PAD = 3;
 /**
- * Lane depth. Levels are ordered, not measured, so the distance between lanes carries no meaning;
- * the depth of a lane follows how many roles it holds (square root of the count), so the 1769 roles
- * of level 2 get about three times the depth of the 26 of level 5, not seventy times the area.
+ * Lane radii. Levels are ordered, not measured, so how far apart the lanes are carries no meaning
+ * and can serve readability. Two rules are blended: equal dot density (a lane's area follows its
+ * role count, at least LANE_FLOOR of the disc: level 2 holds 1769 roles, level 5 holds 26) and
+ * depth by the square root of the count (so no lane is a mere line). 0.6 of the first and 0.4 of
+ * the second give each level about 8, 7, 10, 19 and 118 square units per role: the crowded levels
+ * are as roomy as the middle one, instead of 2.5 times tighter under the depth rule alone.
  */
+const LANE_DENSITY = 0.6;
+const LANE_FLOOR = 0.06;
 const LANE_CROWD = 3;
 
 export interface Span {
@@ -71,19 +82,29 @@ export function layout(data: MapData): Layout {
   const { branches, roles } = data;
   const total = roles.length;
 
-  // Lanes: depth follows the crowd of each level.
+  // Lanes: where each level's lane ends is a blend of two rules (see LANE_DENSITY).
   const perLevel = [0, 0, 0, 0, 0];
   for (const role of roles) perLevel[role.level - 1]! += 1;
   const crowd = Math.max(...perLevel, 1);
   const depthShare = perLevel.map((n) => 1 + LANE_CROWD * Math.sqrt(n / crowd));
   const depthSum = depthShare.reduce((a, b) => a + b, 0);
-  const free = R_OUT - R_HOLE - LANE_GAP * 4;
-  const lanes: Span[] = [];
-  let r = R_HOLE;
-  for (const share of depthShare) {
-    lanes.push({ start: r, end: r + (free * share) / depthSum });
-    r = lanes[lanes.length - 1]!.end + LANE_GAP;
-  }
+  const discArea = R_OUT * R_OUT - R_HOLE * R_HOLE;
+  const areaShare = perLevel.map((n) => Math.max(n / Math.max(total, 1), LANE_FLOOR));
+  const areaSum = areaShare.reduce((a, b) => a + b, 0);
+  const bounds = [R_HOLE];
+  let counted = 0;
+  let deep = 0;
+  perLevel.forEach((_, k) => {
+    counted += areaShare[k]! / areaSum;
+    deep += depthShare[k]! / depthSum;
+    const byDensity = Math.sqrt(R_HOLE * R_HOLE + counted * discArea);
+    const byDepth = R_HOLE + deep * (R_OUT - R_HOLE);
+    bounds.push(LANE_DENSITY * byDensity + (1 - LANE_DENSITY) * byDepth);
+  });
+  const lanes: Span[] = perLevel.map((_, k) => ({
+    start: k === 0 ? R_HOLE : bounds[k]! + LANE_GAP / 2,
+    end: k === perLevel.length - 1 ? R_OUT : bounds[k + 1]! - LANE_GAP / 2,
+  }));
 
   // Sectors: the first branch (IT) is centred on north.
   const perBranch = branches.map(() => 0);
@@ -92,9 +113,13 @@ export function layout(data: MapData): Layout {
     perBranch[role.branch]! += 1;
     perSub[role.branch]![role.sub]! += 1;
   }
-  const weights = perBranch.map(
-    (n) => (1 - EQUAL_SHARE) * (n / Math.max(total, 1)) + EQUAL_SHARE / branches.length,
+  const raw = perBranch.map(
+    (n, b) =>
+      ((1 - EQUAL_SHARE) * (n / Math.max(total, 1)) + EQUAL_SHARE / branches.length) *
+      (FEATURED[branches[b]!.id] ?? 1),
   );
+  const rawSum = raw.reduce((a, b) => a + b, 0);
+  const weights = raw.map((w) => w / rawSum);
   const arc = TAU - BRANCH_GAP * branches.length;
   const spans: Layout["branches"] = [];
   let angle = -(arc * (weights[0] ?? 0)) / 2;
