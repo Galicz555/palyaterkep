@@ -1,0 +1,588 @@
+{
+  "held": [
+    {
+      "role": "szoftverfejleszto",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "role": "webfejleszto",
+      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+    }
+  ],
+  "covered": [
+    {
+      "role": "ikt-alkalmazasfejleszto",
+      "coverage": 0.76
+    },
+    {
+      "role": "mobilalkalmazas-fejleszto",
+      "coverage": 0.67
+    },
+    {
+      "role": "ikt-rendszerfejleszto",
+      "coverage": 0.65
+    },
+    {
+      "role": "beagyazott-szoftver-fejleszto-mernok",
+      "coverage": 0.63
+    },
+    {
+      "role": "ikt-alkalmazasbeallito",
+      "coverage": 0.59
+    },
+    {
+      "role": "ipari-mobilkeszulekek-szoftvereinek-fejlesztoje",
+      "coverage": 0.58
+    },
+    {
+      "role": "folyamatmernok",
+      "coverage": 0.57
+    },
+    {
+      "role": "kutatomernok",
+      "coverage": 0.57
+    },
+    {
+      "role": "devops-felhomernok",
+      "coverage": 0.54
+    },
+    {
+      "role": "felhasznaloi-felulet-fejleszto",
+      "coverage": 0.53
+    },
+    {
+      "role": "gepeszuzemmernok",
+      "coverage": 0.53
+    },
+    {
+      "role": "logisztikai-mernok",
+      "coverage": 0.53
+    },
+    {
+      "role": "megfelelosegertekelo-mernok",
+      "coverage": 0.53
+    },
+    {
+      "role": "precizios-mernok",
+      "coverage": 0.53
+    },
+    {
+      "role": "ellenorzo-mernok",
+      "coverage": 0.5
+    },
+    {
+      "role": "felhoalapuszoftver-fejleszto",
+      "coverage": 0.5
+    }
+  ],
+  "reachable": [
+    {
+      "role": "alkalmazasmernok",
+      "from": "szoftverfejleszto",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38",
+        "http://data.europa.eu/esco/skill/26514334-a6b2-47d6-ae86-490f5ee972f7",
+        "http://data.europa.eu/esco/skill/68698869-c13c-4563-adc7-118b7644f45d",
+        "http://data.europa.eu/esco/skill/d90c6800-e653-4bdf-bc39-5f4e366fe68d",
+        "http://data.europa.eu/esco/skill/7482a123-e801-48de-9733-262125671410",
+        "http://data.europa.eu/esco/skill/ec66b111-d8d0-4516-88ba-ee0b6fe6f695",
+        "http://data.europa.eu/esco/skill/9d1b08b3-ba1e-41f6-a466-1ac1e62eb5f0",
+        "http://data.europa.eu/esco/skill/5d9e766b-8f17-4e17-bfab-3bb0e0719791",
+        "http://data.europa.eu/esco/skill/59ea80e1-463a-4dba-82c6-d0b6d577d532",
+        "http://data.europa.eu/esco/skill/ed8de897-adbe-4f0e-b4d2-534953e64c72",
+        "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+        "http://data.europa.eu/esco/skill/89f6560b-2194-45c9-9ece-d33049a73eef",
+        "http://data.europa.eu/esco/skill/438ff259-d086-4004-acda-1ec3e1631bc6",
+        "http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998",
+        "http://data.europa.eu/esco/skill/e2d0daae-2aa1-40cc-99e2-b340b02f97d3",
+        "http://data.europa.eu/esco/skill/b7a03115-41c9-4167-a0b6-7e40cf0fd607",
+        "http://data.europa.eu/esco/skill/a8ea1f32-be7e-48ff-8ef5-7e2847beadb1",
+        "http://data.europa.eu/esco/skill/81a2db2c-7e55-44d0-9cd9-74c25147d7cd",
+        "http://data.europa.eu/esco/skill/71746a0b-e58d-4dc4-ad03-bd84082eae21"
+      ]
+    },
+    {
+      "role": "digitalis-media-tervezo",
+      "from": "webfejleszto",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/b2f9eb81-eda4-49a9-8453-3ba345da2d98",
+        "http://data.europa.eu/esco/skill/719d8699-a221-4b5a-8fc3-68a8645cbe03",
+        "http://data.europa.eu/esco/skill/a88da605-095f-4a4f-be1c-d1444df8228a",
+        "http://data.europa.eu/esco/skill/397da142-ab35-48fe-b154-7c38f447adfb",
+        "http://data.europa.eu/esco/skill/5fd5c985-eaaa-47aa-8314-62359c54505a",
+        "http://data.europa.eu/esco/skill/f5369f2f-e52b-43d8-8d31-79a6c11188d8",
+        "http://data.europa.eu/esco/skill/7482a123-e801-48de-9733-262125671410",
+        "http://data.europa.eu/esco/skill/a71577b2-7550-4222-88ee-dcbd2d881516",
+        "http://data.europa.eu/esco/skill/f0f5bb34-71df-4715-9c9e-03567b76ec8f",
+        "http://data.europa.eu/esco/skill/123cf7c5-6a3b-419d-be4f-49a6cc020f9f",
+        "http://data.europa.eu/esco/skill/0af062de-eb43-41e9-9b96-249e2cd22d26",
+        "http://data.europa.eu/esco/skill/91ba97f5-7518-4638-b2d2-308996db3cf8",
+        "http://data.europa.eu/esco/skill/d6c29154-9cc1-48a4-a2de-3d1d0d7f0831",
+        "http://data.europa.eu/esco/skill/d4789070-2ff7-4bbb-94ca-8bb1739826a9",
+        "http://data.europa.eu/esco/skill/dfb9cec6-3ae3-408a-9d57-c44361bf7aaf",
+        "http://data.europa.eu/esco/skill/c1f29568-f2bb-49d2-b6c2-28748bd1629b",
+        "http://data.europa.eu/esco/skill/c2999f0c-eb37-4cdf-b9b0-82107b628794",
+        "http://data.europa.eu/esco/skill/f058bf62-70d1-4f5e-be2a-8b26fac24a96",
+        "http://data.europa.eu/esco/skill/e2103a1d-4a84-47a9-b4f7-774787573449",
+        "http://data.europa.eu/esco/skill/c0e2f74c-51f0-4020-9756-d190848cf181"
+      ]
+    },
+    {
+      "role": "digitalisjatek-fejleszto",
+      "from": "webfejleszto",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/1859883d-c047-4fe1-8e74-7bb4385d6ad2",
+        "http://data.europa.eu/esco/skill/3e7516dc-0f7c-4686-8b2f-fade4e5d21be",
+        "http://data.europa.eu/esco/skill/6e53fd99-b646-4327-9580-ac062ab21188",
+        "http://data.europa.eu/esco/skill/e8171178-9a60-40a6-ad3b-510e10cfebad",
+        "http://data.europa.eu/esco/skill/31c69100-b612-4a61-8db5-fd314318854c",
+        "http://data.europa.eu/esco/skill/5fd5c985-eaaa-47aa-8314-62359c54505a",
+        "http://data.europa.eu/esco/skill/afda6ca0-7aa8-41ef-ba5e-8dc607839daf",
+        "http://data.europa.eu/esco/skill/0e361e34-c563-4892-b9d3-873a6a4fef8a",
+        "http://data.europa.eu/esco/skill/172020d1-e151-445b-8173-e2a5fb16fe51",
+        "http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998"
+      ]
+    },
+    {
+      "role": "felhasznaloi-felulet-tervezo",
+      "from": "felhasznaloi-felulet-fejleszto",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/c4b626c1-e71c-44ec-9f88-042766f37fcc",
+        "http://data.europa.eu/esco/skill/fc4fcb4b-993f-4f2c-b158-c2171ec18ed8",
+        "http://data.europa.eu/esco/skill/9136cbf1-7916-4f1c-bc9a-0318ee1d6016",
+        "http://data.europa.eu/esco/skill/7482a123-e801-48de-9733-262125671410",
+        "http://data.europa.eu/esco/skill/465e7c78-cd26-4503-a5ca-40009e807705",
+        "http://data.europa.eu/esco/skill/7364cc39-b9c0-449f-9416-57723e2fd9c4",
+        "http://data.europa.eu/esco/skill/fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+        "http://data.europa.eu/esco/skill/2c28fc20-8a60-4311-8899-5ef8729c05b3",
+        "http://data.europa.eu/esco/skill/a71577b2-7550-4222-88ee-dcbd2d881516",
+        "http://data.europa.eu/esco/skill/f0f5bb34-71df-4715-9c9e-03567b76ec8f",
+        "http://data.europa.eu/esco/skill/7814e88f-c133-4c3b-b27f-857afa145d42",
+        "http://data.europa.eu/esco/skill/3e23db60-0c3d-498a-a6ac-ffbed0ecb033",
+        "http://data.europa.eu/esco/skill/123cf7c5-6a3b-419d-be4f-49a6cc020f9f",
+        "http://data.europa.eu/esco/skill/0af062de-eb43-41e9-9b96-249e2cd22d26",
+        "http://data.europa.eu/esco/skill/a8797f21-1af0-4c5e-98ca-bf1442929363",
+        "http://data.europa.eu/esco/skill/8c4c49d4-9708-433f-8ca7-bf2c5211ee49",
+        "http://data.europa.eu/esco/skill/c1f29568-f2bb-49d2-b6c2-28748bd1629b",
+        "http://data.europa.eu/esco/skill/f058bf62-70d1-4f5e-be2a-8b26fac24a96",
+        "http://data.europa.eu/esco/skill/1019423b-3368-4f83-b24f-19e5fa23e816",
+        "http://data.europa.eu/esco/skill/de0be6e8-644c-4cc9-9c8d-925dd98dda56",
+        "http://data.europa.eu/esco/skill/be64bb4c-84ac-4c83-8cc7-fc8593e15136",
+        "http://data.europa.eu/esco/skill/dc72ad0a-c5dc-4abd-bc0d-ca43e82162e1"
+      ]
+    },
+    {
+      "role": "felho-architekt",
+      "from": "devops-felhomernok",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/0a52bed5-fd29-45fb-aba6-e32bccfda1c1",
+        "http://data.europa.eu/esco/skill/4da4587a-fd0b-4ca2-886c-c42a1562d432",
+        "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+        "http://data.europa.eu/esco/skill/94b2c46e-6338-4a1d-950a-d44eef018c53"
+      ]
+    },
+    {
+      "role": "felhoalapuszemelyazonossag-kezelo",
+      "from": "devops-felhomernok",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/ce8ae6ca-61d8-4174-b457-641de96cbff4",
+        "http://data.europa.eu/esco/skill/9a0d0abc-010d-440b-8242-7e31510471ba",
+        "http://data.europa.eu/esco/skill/aa238394-8126-4ada-be2f-9dfe065cf314",
+        "http://data.europa.eu/esco/skill/bc0b0b5d-f6be-405a-b224-b6902a4dbe97",
+        "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+        "http://data.europa.eu/esco/skill/1c2978b8-bb0d-4249-9c23-877571a4dffa",
+        "http://data.europa.eu/esco/skill/df329d70-87b0-466b-a214-3431f36e2a5e",
+        "http://data.europa.eu/esco/skill/ab49f767-296b-47d5-af56-0b4a69515b03",
+        "http://data.europa.eu/esco/skill/d3286405-49f8-4e8a-8046-a4376b4e7963",
+        "http://data.europa.eu/esco/skill/f5f5b244-6cea-4fbc-8a50-8f712791bc09",
+        "http://data.europa.eu/esco/skill/a23659b1-a8bc-4331-a58d-eef263ca6a14",
+        "http://data.europa.eu/esco/skill/f14ff4b7-be1e-4b55-b39b-520005f8a97e"
+      ]
+    },
+    {
+      "role": "felhomernok",
+      "from": "devops-felhomernok",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/0a52bed5-fd29-45fb-aba6-e32bccfda1c1",
+        "http://data.europa.eu/esco/skill/9ef0f3a0-9ce2-4ef1-a987-0366b5cb2dbe",
+        "http://data.europa.eu/esco/skill/e5beeff8-7c98-490a-ae2c-16fbb6a87305",
+        "http://data.europa.eu/esco/skill/ce8ae6ca-61d8-4174-b457-641de96cbff4",
+        "http://data.europa.eu/esco/skill/b04f377b-ee80-4b38-aca1-19d266a23b17",
+        "http://data.europa.eu/esco/skill/38716afc-a93b-44ab-96cc-2ecf67edcf32",
+        "http://data.europa.eu/esco/skill/4da4587a-fd0b-4ca2-886c-c42a1562d432",
+        "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+        "http://data.europa.eu/esco/skill/1c2978b8-bb0d-4249-9c23-877571a4dffa",
+        "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+        "http://data.europa.eu/esco/skill/d3286405-49f8-4e8a-8046-a4376b4e7963",
+        "http://data.europa.eu/esco/skill/8088750d-8388-4170-a76f-48354c469c44",
+        "http://data.europa.eu/esco/skill/9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c",
+        "http://data.europa.eu/esco/skill/f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+        "http://data.europa.eu/esco/skill/440d5784-52a5-4729-8b04-29f978bd896d",
+        "http://data.europa.eu/esco/skill/2857540c-180b-4208-9127-e94a01871966",
+        "http://data.europa.eu/esco/skill/cdd8b6b2-2fd9-453c-8d62-8a1dc6efcd49",
+        "http://data.europa.eu/esco/skill/09f2f811-a3fb-4de3-a70f-6420a6935575",
+        "http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998",
+        "http://data.europa.eu/esco/skill/83218cac-3599-417e-93d2-26013cdccd98",
+        "http://data.europa.eu/esco/skill/7e796b51-49d7-4e73-95af-2e7323763f15"
+      ]
+    },
+    {
+      "role": "internetes-rendszergazda",
+      "from": "webfejleszto",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/9707091a-323b-4240-877a-5999a19286f0",
+        "http://data.europa.eu/esco/skill/574257ea-7b64-4100-b7b6-e27c233fe143",
+        "http://data.europa.eu/esco/skill/397da142-ab35-48fe-b154-7c38f447adfb",
+        "http://data.europa.eu/esco/skill/5fd5c985-eaaa-47aa-8314-62359c54505a",
+        "http://data.europa.eu/esco/skill/a71577b2-7550-4222-88ee-dcbd2d881516",
+        "http://data.europa.eu/esco/skill/e23e81f5-18db-49aa-ad9b-b3d0fdcad1d2",
+        "http://data.europa.eu/esco/skill/c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+        "http://data.europa.eu/esco/skill/6430eb0d-c6de-46b7-a7fc-3dd2e8e62a69",
+        "http://data.europa.eu/esco/skill/f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+        "http://data.europa.eu/esco/skill/0af062de-eb43-41e9-9b96-249e2cd22d26",
+        "http://data.europa.eu/esco/skill/c7cc6dc5-d56b-4323-8e5c-47c4022f615f",
+        "http://data.europa.eu/esco/skill/d4789070-2ff7-4bbb-94ca-8bb1739826a9",
+        "http://data.europa.eu/esco/skill/7e5147d1-60b1-4a68-804b-1f5cb0396b91",
+        "http://data.europa.eu/esco/skill/553e1d2d-abf1-4b37-8ac4-c5c78a8edbc0",
+        "http://data.europa.eu/esco/skill/6ad40ca3-dc34-4442-b23f-0b1b28936f56",
+        "http://data.europa.eu/esco/skill/5ef0c719-5bcb-49f8-b8eb-824388225333",
+        "http://data.europa.eu/esco/skill/c2999f0c-eb37-4cdf-b9b0-82107b628794",
+        "http://data.europa.eu/esco/skill/6fe76a8b-4d5f-4cea-b76b-5908463fb014",
+        "http://data.europa.eu/esco/skill/37a438f3-e28c-4e32-83c5-299f047c1dc9"
+      ]
+    },
+    {
+      "role": "komponensmernok",
+      "from": "folyamatmernok",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/31c69100-b612-4a61-8db5-fd314318854c",
+        "http://data.europa.eu/esco/skill/0864c444-c22f-46ee-ae1e-c0eeffd49c34",
+        "http://data.europa.eu/esco/skill/e95058a6-e139-42e7-a470-72038a606649",
+        "http://data.europa.eu/esco/skill/3786b61f-f22e-48d1-af8d-ad4c354534db",
+        "http://data.europa.eu/esco/skill/4339176e-3acd-4f7f-a5d9-445bee3d23f2",
+        "http://data.europa.eu/esco/skill/d74df140-eb69-43e2-bac9-1cafc824d702",
+        "http://data.europa.eu/esco/skill/59ea80e1-463a-4dba-82c6-d0b6d577d532",
+        "http://data.europa.eu/esco/skill/0823ccef-813f-4f22-afef-ac0d68615e8f",
+        "http://data.europa.eu/esco/skill/12c7b323-d870-4f5b-9d7d-d9f525206d77"
+      ]
+    },
+    {
+      "role": "nyelvi-mernok",
+      "from": "precizios-mernok",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38",
+        "http://data.europa.eu/esco/skill/af313ba1-a39e-49ac-99ec-94630fbe4f7f",
+        "http://data.europa.eu/esco/skill/7482a123-e801-48de-9733-262125671410",
+        "http://data.europa.eu/esco/skill/fc1fa8eb-a7fd-481c-b3b3-5fc45b3d1e97",
+        "http://data.europa.eu/esco/skill/87e4b9ce-910b-41d3-a6df-ad3a00f4b25e",
+        "http://data.europa.eu/esco/skill/32a2c63d-2d13-4784-abb8-678ef2cd8a46",
+        "http://data.europa.eu/esco/skill/9d1b08b3-ba1e-41f6-a466-1ac1e62eb5f0",
+        "http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2",
+        "http://data.europa.eu/esco/skill/310da5da-517c-4496-a673-92001098a2b7",
+        "http://data.europa.eu/esco/skill/59ea80e1-463a-4dba-82c6-d0b6d577d532",
+        "http://data.europa.eu/esco/skill/382c11ed-20d5-4ae7-b60e-15fec527fa6c",
+        "http://data.europa.eu/esco/skill/a056851d-4a8b-4007-b0f6-8224ca1ec1c2",
+        "http://data.europa.eu/esco/skill/fff0e2cd-d0bd-4b02-9daf-158b79d9688a"
+      ]
+    },
+    {
+      "role": "robotikai-mernok",
+      "from": "ellenorzo-mernok",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/7229b6dc-e2ef-44fe-b9a1-06b1c1075d8f",
+        "http://data.europa.eu/esco/skill/f96f5aa5-6ed7-40dc-a431-68b0a09d6d4b",
+        "http://data.europa.eu/esco/skill/0f5374e3-0b9b-4b16-af7a-49654ce0bb15",
+        "http://data.europa.eu/esco/skill/e95058a6-e139-42e7-a470-72038a606649",
+        "http://data.europa.eu/esco/skill/9c071f1d-eac3-449d-b004-c14775b5a3b9",
+        "http://data.europa.eu/esco/skill/efa141df-f382-418f-9121-bd88fd735669",
+        "http://data.europa.eu/esco/skill/d74df140-eb69-43e2-bac9-1cafc824d702",
+        "http://data.europa.eu/esco/skill/59ea80e1-463a-4dba-82c6-d0b6d577d532",
+        "http://data.europa.eu/esco/skill/f54c10e4-630d-4e50-95e9-4e9e268e8f12",
+        "http://data.europa.eu/esco/skill/42b23922-1c40-4dbe-9e0c-7a568dfdf06b",
+        "http://data.europa.eu/esco/skill/e87ec79a-c9ff-46f5-84fa-7a0f394cdf40",
+        "http://data.europa.eu/esco/skill/7a950986-27fe-4b6c-adf3-88f211e77019",
+        "http://data.europa.eu/esco/skill/4754d9fe-dc3a-4f8f-8ea6-5dbcea3a21ca"
+      ]
+    },
+    {
+      "role": "tervezomernok",
+      "from": "kutatomernok",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/31c69100-b612-4a61-8db5-fd314318854c",
+        "http://data.europa.eu/esco/skill/a2b5dcf3-5b6a-453d-876c-cff540c0faf1",
+        "http://data.europa.eu/esco/skill/e95058a6-e139-42e7-a470-72038a606649",
+        "http://data.europa.eu/esco/skill/22c45bf7-e52b-475f-847b-c32a87f65a5d",
+        "http://data.europa.eu/esco/skill/4339176e-3acd-4f7f-a5d9-445bee3d23f2",
+        "http://data.europa.eu/esco/skill/d74df140-eb69-43e2-bac9-1cafc824d702",
+        "http://data.europa.eu/esco/skill/59ea80e1-463a-4dba-82c6-d0b6d577d532",
+        "http://data.europa.eu/esco/skill/b87f6102-5bab-4e99-a5d8-11b6be1b99c2",
+        "http://data.europa.eu/esco/skill/4c58528e-bdaa-43ad-8f5a-8ad0b8cd4bbb"
+      ]
+    },
+    {
+      "role": "webtartalom-menedzser",
+      "from": "webfejleszto",
+      "edge": "lateral",
+      "gap": [
+        "http://data.europa.eu/esco/skill/3d3ee5c3-4286-457f-9f76-1704011f7e11",
+        "http://data.europa.eu/esco/skill/1dae8445-12e5-423a-bb26-824010e299b9",
+        "http://data.europa.eu/esco/skill/4cb51222-3e2e-417c-9a5c-e9ccf262721d",
+        "http://data.europa.eu/esco/skill/df996a98-202f-4a9b-b088-38c8db03ef1b",
+        "http://data.europa.eu/esco/skill/5fd5c985-eaaa-47aa-8314-62359c54505a",
+        "http://data.europa.eu/esco/skill/f5369f2f-e52b-43d8-8d31-79a6c11188d8",
+        "http://data.europa.eu/esco/skill/a846cb9e-c152-41e7-bd34-45e7ff941e3b",
+        "http://data.europa.eu/esco/skill/03ff0d53-573a-47a0-a0ad-1995815a4339",
+        "http://data.europa.eu/esco/skill/0af062de-eb43-41e9-9b96-249e2cd22d26",
+        "http://data.europa.eu/esco/skill/a0bf9b9d-e53f-418c-a839-5d99eff718fe",
+        "http://data.europa.eu/esco/skill/d6c29154-9cc1-48a4-a2de-3d1d0d7f0831",
+        "http://data.europa.eu/esco/skill/06f33d6a-f7a7-4a2b-baa5-8c3c53bd1a9c",
+        "http://data.europa.eu/esco/skill/b9bf9e17-ae47-417b-bbb1-e8b7c263ccac",
+        "http://data.europa.eu/esco/skill/d4789070-2ff7-4bbb-94ca-8bb1739826a9",
+        "http://data.europa.eu/esco/skill/dfb9cec6-3ae3-408a-9d57-c44361bf7aaf",
+        "http://data.europa.eu/esco/skill/c1f29568-f2bb-49d2-b6c2-28748bd1629b",
+        "http://data.europa.eu/esco/skill/c2999f0c-eb37-4cdf-b9b0-82107b628794",
+        "http://data.europa.eu/esco/skill/be40c4c3-a855-4d67-9ca5-6f4428c34b0d",
+        "http://data.europa.eu/esco/skill/c0e2f74c-51f0-4020-9756-d190848cf181",
+        "http://data.europa.eu/esco/skill/0dcbf7c5-bedf-4485-b16b-23df54443864",
+        "http://data.europa.eu/esco/skill/96a67da1-881f-4d09-927e-ac75fcff4d93",
+        "http://data.europa.eu/esco/skill/9710092c-f174-4e84-95bf-2064d39ad7a0",
+        "http://data.europa.eu/esco/skill/37a438f3-e28c-4e32-83c5-299f047c1dc9",
+        "http://data.europa.eu/esco/skill/56a10e3e-c9e7-4d39-b6f1-6013398fcb3a",
+        "http://data.europa.eu/esco/skill/29154735-107a-4daa-a050-537f7707f34e",
+        "http://data.europa.eu/esco/skill/7234e847-451d-499a-9c7b-0050a4e758d6"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "uri": "http://data.europa.eu/esco/skill/04fe962b-4017-4eb7-9139-7d69b6922bc9",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL",
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/0b0335f3-0aa1-491e-895e-81fc8774a300",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/0e0c9c11-b39e-43cf-ba95-2fe646f5de64",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/901105f8-3a08-453e-b1dc-23619e317fd3",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL",
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/925463a7-d51f-4d5b-9f79-4d28cf30acde",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL",
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/d9e5349e-8791-49c2-8ba4-839fdd1606c2",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/be48353d-25c7-4f86-bea9-7b9e248fbc6e",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/6a899482-8bcf-40ca-ae67-579a1cc467ab",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/541561bc-510c-4a99-881c-2d8bf5a85462",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/2b7a79e5-84d8-4880-be66-3d9bb05bea17",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL",
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL",
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/2522a6ce-3202-4ac8-9f5b-b9cb5a3a83a1",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL",
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/9d2e926f-53d9-41f5-98f3-19dfaa687f3f",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/8b94aa1e-89c9-459d-b3b4-1dfab8dec2df",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL",
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/797a4416-0b8d-44f3-8fcd-eb10bd0be6b4",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL",
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/209a5498-3449-4689-8ed9-bd08cab4fd78",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/72a74f69-5cf1-43c5-99b9-62a444578919",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/4fabca9a-7435-4f33-b1da-3cdb00340fdc",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/f84a433f-34f1-4083-b0a3-24802623509c",
+      "evidence": [
+        "Szoftverfejlesztő, Példa Kft., 2020–2025: REST szolgáltatások Java és Spring alapon, PostgreSQL"
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/071233c4-ad2b-4f50-b79f-768d2231163e",
+      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/16a00c69-9c74-4c37-96d7-6301d285e5ce",
+      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/6014921e-1d25-4039-adc2-04852d61880e",
+      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/d2adb565-a865-424d-aeb5-9fbcbf2afe2a",
+      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/e74f4f21-8d45-412c-b5c3-652e6167ee32",
+      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/85c11255-469f-41bd-a6d1-382bc4a87783",
+      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/2d6d4784-0992-48e7-b100-22d7229b3f0a",
+      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/93e65de1-923c-437e-aa5b-e6002967ce71",
+      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/8696aff0-18c0-4ba6-a4d0-9a21861b3e5e",
+      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/47ca0da1-cae5-4395-ae6b-fd97b9ff48d3",
+      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/dfff95c6-9758-4c04-a228-7eaa88dec6cd",
+      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/f0de4973-0a70-4644-8fd4-3a97080476f4",
+      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/6195c5f7-a4fb-425d-a3dd-c4467c4471a3",
+      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/6b643893-0a1f-4f6c-83a1-e7eef75849b9",
+      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/11430d93-c835-48ed-8e70-285fa69c9ae6",
+      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/8efa6a7a-6556-4cb8-908d-59d3b5c58d2f",
+      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/b105ec9b-0857-41d6-8d07-a83e58b73d90",
+      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/64852ade-6ae1-4760-ba4a-976bf07ca255",
+      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/c13fb093-5ffb-491a-b8b7-fa2d42a57e2e",
+      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+    },
+    {
+      "uri": "http://data.europa.eu/esco/skill/24c200e5-be20-4370-a137-ab53797f3a17",
+      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+    }
+  ]
+}

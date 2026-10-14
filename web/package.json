@@ -10,7 +10,6 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
   },
   "imports": {
-    "#lib": "./src/lib/index.ts",
     "#lib/*": "./src/lib/*"
   },
   "devDependencies": {
@@ -21,6 +20,7 @@
     "svelte": "5.57.2",
     "svelte-check": "4.7.6",
     "three": "0.186.1",
-    "vite": "8.2.4"
+    "vite": "8.2.4",
+    "zod": "4.6.5"
   }
 }

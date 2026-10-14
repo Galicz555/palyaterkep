@@ -57,6 +57,9 @@ importers:
       vite:
         specifier: 8.2.4
         version: 8.2.4(@types/node@24.13.5)(yaml@2.9.1)
+      zod:
+        specifier: 4.6.5
+        version: 4.6.5
 
 packages:
 
