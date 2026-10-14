@@ -7,7 +7,7 @@ import { mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "nod
 import path from "node:path";
 import { loadBranches, placeOccupation, type Branch } from "../branches/branches.ts";
 import type { Esco, Occupation } from "../esco/model.ts";
-import { link, readNote, Role, slugify, writeNote, type Track } from "./note.ts";
+import { link, linkTarget, readNote, Role, slugify, writeNote, type Track } from "./note.ts";
 import { loadProposals, type Proposals } from "./propose.ts";
 
 export const VAULT = "vault";
@@ -25,10 +25,13 @@ export interface Ranked {
   occupation: string;
   level: number;
   skills: string[];
+  /** Ids this role has a progression edge to; such a pair gets no lateral edge. */
+  progression?: string[];
 }
 
 /**
- * Lateral edges between roles of different occupations whose levels are at most 1 apart. Skills
+ * Lateral edges between roles of different occupations whose levels are at most 1 apart and that
+ * no progression edge already links. Skills
  * shared by many roles weigh less (IDF), so generic ones like "manages staff" do not link everything.
  * Candidate edges are taken strongest first while both ends have room under the cap, so every
  * edge is listed on both of its roles and no role exceeds the cap.
@@ -57,6 +60,7 @@ export function lateralEdges(
     for (const [b, common] of shared) {
       const other = roles[b]!;
       if (other.occupation === role.occupation || Math.abs(other.level - role.level) > 1) continue;
+      if (role.progression?.includes(other.id) || other.progression?.includes(role.id)) continue;
       const score = common / (total[a]! + total[b]! - common);
       if (score >= min) candidates.push({ a, b, score });
     }
@@ -150,7 +154,11 @@ export function planVault(
   });
 
   const ranked: Ranked[] = [
-    ...[...curated].map(([id, role]) => ({ id, ...role })),
+    ...[...curated].map(([id, role]) => ({
+      id,
+      ...role,
+      progression: role.progression?.map(linkTarget),
+    })),
     ...generated.map((g) => ({
       id: g.id,
       occupation: g.occupation.uri,
