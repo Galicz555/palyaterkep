@@ -69,6 +69,26 @@ describe("buildEsco", () => {
     });
   });
 
+  it("collapses two revisions that differ only in modifiedDate", () => {
+    const [hu, en] = [tables("hu"), tables("en")];
+    for (const t of [hu, en]) {
+      const occ = t.occupations[0]!;
+      t.occupations = [
+        { ...occ, modifiedDate: "2025-11-26T10:02:16Z" },
+        { ...occ, modifiedDate: "2025-07-31T09:38:59Z" },
+      ];
+    }
+    expect(buildEsco({ hu, en }, relations).occupations).toHaveLength(1);
+  });
+
+  it("rejects a repeated concept whose content differs", () => {
+    const hu = tables("hu");
+    hu.skills.push({ ...hu.skills[0]!, preferredLabel: "Python 3" });
+    expect(() => buildEsco({ hu, en: tables("en") }, relations)).toThrow(
+      `repeat conceptUri ${PY} with different content`,
+    );
+  });
+
   it("rejects a concept missing from one language package", () => {
     const en = tables("en");
     en.skills = en.skills.slice(0, 1);

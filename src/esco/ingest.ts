@@ -17,14 +17,28 @@ export interface Tables {
 const VERSION = "v1.2.1";
 const DIR = "raw/esco";
 
+/**
+ * One row per concept. ESCO v1.2.1 lists a few concepts twice, as two revisions that differ only
+ * in modifiedDate, which this file does not keep. A repeat with any other difference is an error.
+ */
+function unique(rows: Row[], key: string, what: string): Map<string, Row> {
+  const map = new Map<string, Row>();
+  for (const row of rows) {
+    const id = row[key] ?? "";
+    const prev = map.get(id);
+    if (prev && Object.keys(prev).some((k) => k !== "modifiedDate" && prev[k] !== row[k])) {
+      throw new Error(`${what} repeat ${key} ${id} with different content`);
+    }
+    if (!prev) map.set(id, row);
+  }
+  return map;
+}
+
 /** Pairs each concept with its row in every language package; the packages must hold the same concepts. */
 function align(tables: Record<Lang, Tables>, kind: keyof Tables, key: string): Rows[] {
-  const maps = LANGS.map((lang) => {
-    const rows = tables[lang][kind];
-    const map = new Map(rows.map((row) => [row[key] ?? "", row]));
-    if (map.size !== rows.length) throw new Error(`${kind} in the ${lang} package repeat a ${key}`);
-    return map;
-  });
+  const maps = LANGS.map((lang) =>
+    unique(tables[lang][kind], key, `${kind} in the ${lang} package`),
+  );
   const sizes = new Set(maps.map((map) => map.size));
   if (sizes.size > 1) throw new Error(`${kind}: the language packages differ in size`);
 
