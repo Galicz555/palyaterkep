@@ -1,3 +1,5 @@
 /raw
 pnpm-lock.yaml
 vault/
+web/.svelte-kit
+web/build

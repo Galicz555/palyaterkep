@@ -17,11 +17,16 @@
     "types": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "pnpm format:check && pnpm types && pnpm test && pnpm vault:lint"
+    "web:dev": "pnpm --filter palyaterkep-web dev",
+    "web:build": "pnpm --filter palyaterkep-web build",
+    "web:start": "pnpm --filter palyaterkep-web start",
+    "web:check": "pnpm --filter palyaterkep-web check",
+    "check": "pnpm format:check && pnpm types && pnpm test && pnpm vault:lint && pnpm web:check"
   },
   "devDependencies": {
     "@types/node": "24.13.5",
     "prettier": "3.9.8",
+    "prettier-plugin-svelte": "4.1.1",
     "typescript": "6.0.3",
     "vitest": "5.0.1"
   },
