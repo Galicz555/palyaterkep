@@ -30,6 +30,10 @@
     {data.esco}, © Európai Unió. A szerepek szintjét és pályatípusát nyelvi modell javasolta (gépi
     javaslat, nem ellenőrzött); a készséglista az ESCO alapvető készségeit sorolja fel.
   </p>
+  <p>
+    A terhelési adatok forrása: <a href="https://www.onetcenter.org">O*NET</a> 31.0, U.S. Department of
+    Labor/ETA, CC BY 4.0.
+  </p>
 </footer>
 
 <style>
