@@ -14,7 +14,7 @@
     "vault": "node src/vault/generate.ts",
     "vault:lint": "node src/vault/lint.ts",
     "ladders:review": "node src/ladders/review.ts",
-    "cv": "node src/cv/cli.ts",
+    "cv": "node --env-file-if-exists=.env src/cv/cli.ts",
     "test": "vitest run",
     "types": "tsc --noEmit",
     "format": "prettier --write .",
