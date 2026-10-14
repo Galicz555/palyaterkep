@@ -1,10 +1,20 @@
 import { existsSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { branchOf, loadBranches, validateBranches, type Branch } from "../src/branches/branches.ts";
+import {
+  branchOf,
+  loadBranches,
+  placeOccupation,
+  validateBranches,
+  type Branch,
+} from "../src/branches/branches.ts";
 import type { Esco, IscoGroup } from "../src/esco/model.ts";
 
 const group = (code: string): IscoGroup => ({ code, label: { hu: code, en: code } });
 const iscoGroups = ["2", "25", "251", "2511", "2512", "133", "1330"].map(group);
+const occupations = [
+  { code: "2512.4", isco: "2512" },
+  { code: "1330.1", isco: "1330" },
+];
 
 function table(): Branch[] {
   return [
@@ -31,21 +41,32 @@ describe("branchOf", () => {
   });
 });
 
+describe("placeOccupation", () => {
+  it("prefers the occupation's own listing over its unit group", () => {
+    const t = table();
+    t[0]!.subBranches[1]!.occupations = ["1330.1"];
+    expect(placeOccupation(t, { code: "1330.1", isco: "1330" }).subBranch.id).toBe("analysis");
+    expect(placeOccupation(t, { code: "2512.4", isco: "2512" }).subBranch.id).toBe("software");
+  });
+});
+
 describe("validateBranches", () => {
   it("accepts a table that resolves every unit group", () => {
-    expect(() => validateBranches(table(), iscoGroups)).not.toThrow();
+    expect(() => validateBranches(table(), iscoGroups, occupations)).not.toThrow();
   });
 
   it("rejects a unit group left without a branch", () => {
     const t = table();
     t[0]!.subBranches[0]!.isco = ["251"];
-    expect(() => validateBranches(t, iscoGroups)).toThrow("no branch for ISCO unit group 1330");
+    expect(() => validateBranches(t, iscoGroups, occupations)).toThrow(
+      "no branch for ISCO unit group 1330",
+    );
   });
 
   it("rejects a code listed twice", () => {
     const t = table();
     t[0]!.subBranches[1]!.isco.push("251");
-    expect(() => validateBranches(t, iscoGroups)).toThrow(
+    expect(() => validateBranches(t, iscoGroups, occupations)).toThrow(
       "ISCO 251 is listed in both software and analysis",
     );
   });
@@ -53,7 +74,7 @@ describe("validateBranches", () => {
   it("rejects a code missing from ESCO", () => {
     const t = table();
     t[0]!.subBranches[1]!.isco.push("2519");
-    expect(() => validateBranches(t, iscoGroups)).toThrow(
+    expect(() => validateBranches(t, iscoGroups, occupations)).toThrow(
       "ISCO 2519 in analysis does not exist in ESCO",
     );
   });
@@ -61,21 +82,48 @@ describe("validateBranches", () => {
   it("rejects a major or sub-major group", () => {
     const t = table();
     t[0]!.subBranches[1]!.isco.push("25");
-    expect(() => validateBranches(t, iscoGroups)).toThrow("neither a minor nor a unit group");
+    expect(() => validateBranches(t, iscoGroups, occupations)).toThrow(
+      "neither a minor nor a unit group",
+    );
+  });
+
+  it("rejects an occupation code missing from ESCO", () => {
+    const t = table();
+    t[0]!.subBranches[1]!.occupations = ["1330.9"];
+    expect(() => validateBranches(t, iscoGroups, occupations)).toThrow(
+      "occupation 1330.9 in analysis does not exist in ESCO",
+    );
+  });
+
+  it("rejects an occupation placed twice", () => {
+    const t = table();
+    t[0]!.subBranches[1]!.occupations = ["1330.1"];
+    t[0]!.subBranches[0]!.occupations = ["1330.1"];
+    expect(() => validateBranches(t, iscoGroups, occupations)).toThrow(
+      "occupation 1330.1 is listed in both software and analysis",
+    );
+  });
+
+  it("rejects an occupation placed where its unit group already is", () => {
+    const t = table();
+    t[0]!.subBranches[0]!.occupations = ["2512.4"];
+    expect(() => validateBranches(t, iscoGroups, occupations)).toThrow(
+      "occupation 2512.4 is already in software through ISCO 2512",
+    );
   });
 
   it("rejects an id used twice", () => {
     const t = table();
     t[0]!.subBranches[1]!.id = "it";
-    expect(() => validateBranches(t, iscoGroups)).toThrow("id it is used twice");
+    expect(() => validateBranches(t, iscoGroups, occupations)).toThrow("id it is used twice");
   });
 });
 
 const ESCO = "raw/esco/esco.json";
 
 describe.skipIf(!existsSync(ESCO))("the real branch table", () => {
-  it("resolves every ISCO unit group of ESCO", () => {
+  it("is valid against ESCO", () => {
     const esco = JSON.parse(readFileSync(ESCO, "utf8")) as Esco;
-    expect(() => validateBranches(loadBranches(), esco.iscoGroups)).not.toThrow();
+    expect(() => validateBranches(loadBranches(), esco.iscoGroups, esco.occupations)).not.toThrow();
   });
 });

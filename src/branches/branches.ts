@@ -1,13 +1,16 @@
-// The branch table: every ISCO unit group belongs to one sub-branch of one main branch.
+// The branch table: every ISCO unit group belongs to one sub-branch of one main branch, and a
+// few occupations of mixed unit groups are placed one by one (ADR 0001).
 
 import { readFileSync } from "node:fs";
-import type { IscoGroup, Text } from "../esco/model.ts";
+import type { IscoGroup, Occupation, Text } from "../esco/model.ts";
 
 export interface SubBranch {
   id: string;
   label: Text;
   /** ISCO minor (3 digits) or unit (4 digits) groups. */
   isco: string[];
+  /** ESCO occupation codes placed here although their unit group is placed elsewhere. */
+  occupations?: string[];
 }
 
 /** A main branch (fő ág). The array order of the table is the order around the map. */
@@ -40,8 +43,28 @@ export function branchOf(branches: Branch[], unit: string): Placement {
   return byMinor;
 }
 
-/** Throws, listing every problem, unless each unit group of `iscoGroups` resolves to exactly one sub-branch. */
-export function validateBranches(branches: Branch[], iscoGroups: IscoGroup[]): void {
+/** An occupation goes where the table lists its ESCO code, otherwise where its unit group goes. */
+export function placeOccupation(
+  branches: Branch[],
+  occupation: Pick<Occupation, "code" | "isco">,
+): Placement {
+  for (const branch of branches) {
+    for (const subBranch of branch.subBranches) {
+      if (subBranch.occupations?.includes(occupation.code)) return { branch, subBranch };
+    }
+  }
+  return branchOf(branches, occupation.isco);
+}
+
+/**
+ * Throws, listing every problem, unless each unit group of `iscoGroups` resolves to exactly one
+ * sub-branch and each occupation placed one by one exists, is placed once, and is moved somewhere new.
+ */
+export function validateBranches(
+  branches: Branch[],
+  iscoGroups: IscoGroup[],
+  occupations: Pick<Occupation, "code" | "isco">[],
+): void {
   const problems: string[] = [];
   const known = new Set(iscoGroups.map((g) => g.code));
   const ids = new Set<string>();
@@ -72,6 +95,30 @@ export function validateBranches(branches: Branch[], iscoGroups: IscoGroup[]): v
       branchOf(branches, code);
     } catch (e) {
       problems.push((e as Error).message);
+    }
+  }
+
+  const byCode = new Map(occupations.map((o) => [o.code, o]));
+  const placed = new Map<string, string>();
+  for (const sub of branches.flatMap((b) => b.subBranches)) {
+    for (const code of sub.occupations ?? []) {
+      const prev = placed.get(code);
+      if (prev) problems.push(`occupation ${code} is listed in both ${prev} and ${sub.id}`);
+      placed.set(code, sub.id);
+      const occupation = byCode.get(code);
+      if (!occupation) {
+        problems.push(`occupation ${code} in ${sub.id} does not exist in ESCO`);
+        continue;
+      }
+      try {
+        if (branchOf(branches, occupation.isco).subBranch.id === sub.id) {
+          problems.push(
+            `occupation ${code} is already in ${sub.id} through ISCO ${occupation.isco}`,
+          );
+        }
+      } catch {
+        // An unplaced unit group is reported above.
+      }
     }
   }
 
