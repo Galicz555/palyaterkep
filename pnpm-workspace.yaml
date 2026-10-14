@@ -1,3 +1,5 @@
-# Single package; this file exists for pnpm settings only.
+# The CLI at the root, the web app in web/. Settings here apply to both.
+packages:
+  - web
 # A release must be a week old before it installs (supply-chain guard).
 minimumReleaseAge: 10080
