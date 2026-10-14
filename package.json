@@ -8,6 +8,7 @@
     "node": ">=26"
   },
   "scripts": {
+    "esco": "node src/esco/ingest.ts",
     "test": "vitest run",
     "types": "tsc --noEmit",
     "format": "prettier --write .",
