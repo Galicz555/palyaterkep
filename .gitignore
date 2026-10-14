@@ -1,5 +1,5 @@
 node_modules/
-raw/
+/raw
 .env*
 !.env.example
 *.log
