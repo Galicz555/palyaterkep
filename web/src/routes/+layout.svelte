@@ -5,7 +5,7 @@
 
   let { children, data } = $props();
 
-  // Until the CV reading route exists, a result comes from a fixture: ?cv=it-fejleszto.
+  // A demo without a reading: ?cv=it-fejleszto shows a stored result (static/fixtures).
   onMount(() => {
     const name = new URLSearchParams(location.search).get("cv");
     if (name) void cv.loadFixture(name);

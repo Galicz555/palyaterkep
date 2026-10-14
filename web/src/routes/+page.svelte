@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { onMount, tick } from "svelte";
+  import CvUpload from "#lib/components/CvUpload.svelte";
   import MapPane from "#lib/components/MapPane.svelte";
   import RoleList from "#lib/components/RoleList.svelte";
   import RolePanel from "#lib/components/RolePanel.svelte";
@@ -68,6 +69,18 @@
     return out;
   });
 
+  // The branch the result is mostly in, so the camera shows it rather than the whole map's specks.
+  const resultBranch = $derived.by(() => {
+    const tally = new Map<number, number>();
+    for (const [id, state] of cv.view?.states ?? []) {
+      const i = indexOf.get(id);
+      if (i === undefined) continue;
+      const b = map.roles[i]!.branch;
+      tally.set(b, (tally.get(b) ?? 0) + (state.kind === "held" ? 100 : 1));
+    }
+    return [...tally].sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
+  });
+
   const role = $derived(selected === null ? undefined : map.roles[indexOf.get(selected) ?? -1]);
   const roleState = $derived(role ? cv.view?.states.get(role.id) : undefined);
   const fromRole = $derived(
@@ -97,6 +110,20 @@
     }
   }
 
+  /** A result replaces the upload form, so focus goes to the summary that is on screen. */
+  async function focusSummary() {
+    await tick();
+    const shown = [...document.querySelectorAll<HTMLElement>(".summary")];
+    shown.find((el) => el.offsetParent !== null)?.focus();
+  }
+
+  /** Clearing brings the upload form back; focus follows it. */
+  async function clearResult() {
+    cv.clear();
+    await tick();
+    document.getElementById("cv-upload-title")?.focus();
+  }
+
   function showCvList() {
     mode = "list";
     queueMicrotask(() => document.getElementById("cv-list")?.scrollIntoView());
@@ -121,8 +148,12 @@
     </p>
   </header>
 
+  {#if !cv.view}
+    <CvUpload maxChars={data.maxChars} ondone={focusSummary} />
+  {/if}
+
   {#snippet summary(withListButton: boolean)}
-    <section class="summary" aria-label="Az önéletrajz eredménye">
+    <section class="summary" aria-label="Az önéletrajz eredménye" tabindex="-1">
       <p>
         <strong>{counts.held}</strong> betöltött, <strong>{counts.covered}</strong> lefedett,
         <strong>{counts.reachable}</strong> elérhető szerep.
@@ -136,9 +167,7 @@
             Hiányzó készségek a listában
           </button>
         {/if}
-        <button type="button" class="button" onclick={() => cv.clear()}>
-          Eredmény eltüntetése
-        </button>
+        <button type="button" class="button" onclick={clearResult}> Eredmény eltüntetése </button>
       </p>
     </section>
   {/snippet}
@@ -195,7 +224,7 @@
         {reach}
         {pass}
         {selected}
-        focus={branch}
+        focus={branch ?? resultBranch}
         onselect={(id) => (selected = id)}
         {onready}
       />

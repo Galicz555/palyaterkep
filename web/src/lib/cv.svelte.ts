@@ -1,8 +1,9 @@
 // The CV reading result the whole app shows, and how one gets in.
 //
-// Phase 6 will read a CV on the server and call `cv.set(result)`. Until then a result comes from a
-// JSON file: `?cv=it-fejleszto` loads `static/fixtures/it-fejleszto.json`. The result lives in
-// memory only: it holds quotes from a person's CV, so it is not written to storage.
+// A result comes from the reading route (CvUpload.svelte calls `cv.set(result)`), or for a demo
+// without a reading from a JSON file: `?cv=it-fejleszto` loads `static/fixtures/it-fejleszto.json`.
+// The result lives in memory only: it holds quotes from a person's CV, so it is not written to
+// storage.
 
 import { parseCvResult, readCvResult, type CvResult, type CvView } from "./cv.ts";
 import { skillKey } from "./model.ts";
