@@ -32,14 +32,21 @@ export const LAYOUTS: readonly LayoutInfo[] = [
   {
     id: "B",
     label: "B – Nézőpontváltó",
-    intro: "Minden szerep egy pont: a szög a szakterület, a távolság a szint.",
+    intro:
+      "Minden szerep egy pont: a szög a szakterület, a távolság a szint, a magasság a választott terhelés.",
     key: [
       ["Szög", "ág"],
       ["Távolság", "szint, kívül a magasabb"],
+      ["Magasság", "a választott terhelés, fent a nagyobb"],
     ],
     byBranch: true,
   },
 ];
+
+/** The three demands in the address, for the layout that lifts the points by one of them. */
+export const AXES = ["fizikai", "szellemi", "erzelmi"] as const;
+/** Which demand (an index into `AXES`) the address names; the first for anything else. */
+export const axisOf = (value: string | null): number => Math.max(0, AXES.indexOf(value as never));
 
 export const DEFAULT_LAYOUT: LayoutId = "A";
 

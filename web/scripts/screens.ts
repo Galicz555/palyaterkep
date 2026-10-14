@@ -323,6 +323,20 @@ async function layouts() {
       const after = await page.screenshotOf(`${OUT}check-layout-${id}.png`, ".stage");
       check(before !== after, `${id}: the arrow keys move the view`);
 
+      // B has a second control, for the demand that gives the height; it writes the address.
+      const hasAxis = await page.eval<boolean>("!!document.querySelector('.axis')");
+      check(hasAxis === (id === "B"), `${id}: the height control shows in B only`);
+      if (hasAxis) {
+        await page.eval(
+          "[...document.querySelectorAll('.axis button')].find((b) => b.textContent.includes('Szellemi')).click()",
+        );
+        await settle(300);
+        check(
+          await page.eval<boolean>("location.search.includes('tengely=szellemi')"),
+          `${id}: choosing a demand for the height writes it to the address`,
+        );
+      }
+
       // The branch filter narrows, and the camera shows that branch.
       await page.eval(`(() => {
         const s = [...document.querySelectorAll('select')].find((e) => e.textContent.includes('Minden ág'));

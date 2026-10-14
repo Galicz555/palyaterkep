@@ -15,7 +15,12 @@ type Vec3 = [number, number, number];
 
 /** What the renderer draws around the points. */
 export type FrameSpec =
-  | { kind: "disc"; plan: Layout }
+  | {
+      kind: "disc";
+      plan: Layout;
+      /** The ruler for the height, when the layout lifts the points: half its length and its title. */
+      ruler?: { half: number; title: string };
+    }
   | {
       kind: "sphere";
       /** One glass shell per level, innermost first. */
@@ -53,14 +58,25 @@ export interface Arrangement {
 
 const deg = (d: number) => (d * Math.PI) / 180;
 
-function disc(id: LayoutId, plan: Layout): Arrangement {
+function disc(id: LayoutId, plan: Layout, data: MapData, lift?: { axis: number }): Arrangement {
+  let positions = plan.positions;
+  let ruler: { half: number; title: string } | undefined;
+  if (lift) {
+    // Height is one demand, its percentile rank from the bottom to the top of the ruler; a role
+    // without data stays at the middle.
+    positions = new Float32Array(plan.positions);
+    data.roles.forEach((role, i) => {
+      positions[i * 3 + 1] = role.demands ? (role.demands[lift.axis]! - 0.5) * 2 * LIFT : 0;
+    });
+    ruler = { half: LIFT, title: `${DEMANDS[lift.axis]!.label} terhelés` };
+  }
   const pol = deg(46);
   // The disc and the branch names beyond its rim, wide and (tilted) tall, with some perspective.
   const reach = R_OUT + 34;
   return {
     id,
-    positions: plan.positions,
-    frame: { kind: "disc", plan },
+    positions,
+    frame: ruler ? { kind: "disc", plan, ruler } : { kind: "disc", plan },
     home: {
       target: [0, 0, 0],
       az: 0,
@@ -73,6 +89,9 @@ function disc(id: LayoutId, plan: Layout): Arrangement {
     alpha: 0.78,
   };
 }
+
+/** Half the height of the ruler of layout B, in map units: the 0th and 100th percentile. */
+const LIFT = 30;
 
 /** Shell radii by level: ordered, not measured, so they are evenly spaced from a hole outwards. */
 const SHELL = [0.3, 0.48, 0.66, 0.83, 1].map((f) => f * R_OUT);
@@ -149,15 +168,22 @@ function sphere(data: MapData): Arrangement {
 }
 
 /** The disc is worked out once and shared by the layouts that stand on it. */
-export function arranger(data: MapData): (id: LayoutId) => Arrangement {
+export function arranger(data: MapData): (id: LayoutId, axis?: number) => Arrangement {
   let plan: Layout | undefined;
-  const made = new Map<LayoutId, Arrangement>();
-  return (id) => {
-    let arrangement = made.get(id);
+  const made = new Map<string, Arrangement>();
+  return (id, axis = 0) => {
+    // Only B depends on the axis.
+    const key = id === "B" ? `${id}${axis}` : id;
+    let arrangement = made.get(key);
     if (!arrangement) {
       plan ??= discLayout(data);
-      arrangement = id === "A" ? sphere(data) : disc(id, plan);
-      made.set(id, arrangement);
+      arrangement =
+        id === "A"
+          ? sphere(data)
+          : id === "B"
+            ? disc(id, plan, data, { axis })
+            : disc(id, plan, data);
+      made.set(key, arrangement);
     }
     return arrangement;
   };

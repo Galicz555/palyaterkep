@@ -488,6 +488,7 @@ export function createMap(
   }
   function setLayout(next: Arrangement) {
     if (next === arr) return;
+    const sameLayout = next.id === arr.id;
     // From where the points are right now, even in the middle of another morph; their sizes
     // and colours go from what they show now.
     (aSizeFrom.array as Float32Array).set(aSize.array);
@@ -516,11 +517,14 @@ export function createMap(
       morph = { start: performance.now() };
     }
     if (next.free) controls.maxPolarAngle = Math.PI;
-    flyTo(
-      branchView(focused),
-      MORPH_MS,
-      next.free ? undefined : () => (controls.maxPolarAngle = FLAT_POLAR),
-    );
+    // Staying in one layout (B with another demand) keeps the camera where the person put it.
+    if (!sameLayout) {
+      flyTo(
+        branchView(focused),
+        MORPH_MS,
+        next.free ? undefined : () => (controls.maxPolarAngle = FLAT_POLAR),
+      );
+    }
     projDirty = true;
     request();
   }

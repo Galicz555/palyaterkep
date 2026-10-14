@@ -19,17 +19,20 @@
     pass: Uint8Array | null;
     selected: string | null;
     layout: LayoutId;
+    /** Which demand lifts the points where a layout does that: an index into `DEMANDS`. */
+    axis: number;
     /** Branch to show, an index into `data.branches`. */
     focus: number | null;
     onselect: (id: string | null) => void;
     /** Called once with the way to measure frames and to find a role on screen, when the map is up. */
     onready?: (tools: Pick<MapView, "benchmark" | "where">) => void;
   }
-  let { data, marks, reach, pass, selected, layout, focus, onselect, onready }: Props = $props();
+  let { data, marks, reach, pass, selected, layout, axis, focus, onselect, onready }: Props =
+    $props();
 
   const indexOf = $derived(new Map(data.roles.map((r, i) => [r.id, i])));
   const info = $derived(LAYOUTS.find((l) => l.id === layout) ?? LAYOUTS[0]!);
-  let arrange = $state.raw<((id: LayoutId) => Arrangement) | null>(null);
+  let arrange = $state.raw<((id: LayoutId, axis: number) => Arrangement) | null>(null);
   let stage = $state<HTMLDivElement>();
   let view = $state.raw<MapView | null>(null);
   let status = $state<"waiting" | "loading" | "ready" | "unsupported" | "failed">("waiting");
@@ -51,7 +54,7 @@
           onSelect: (i) => onselect(i === null ? null : (data.roles[i]?.id ?? null)),
           onHover: (i, x, y) => (hover = i === null ? null : { i, x, y }),
         },
-        place(layout),
+        place(layout, axis),
       );
       if (!made) {
         status = "unsupported";
@@ -83,7 +86,7 @@
   $effect(() => view?.setFilter(pass));
   $effect(() => view?.select(selected === null ? null : (indexOf.get(selected) ?? null)));
   $effect(() => {
-    if (arrange) view?.setLayout(arrange(layout));
+    if (arrange) view?.setLayout(arrange(layout, axis));
   });
   $effect(() => view?.focus(focus));
 

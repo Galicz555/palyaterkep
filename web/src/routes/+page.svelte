@@ -6,7 +6,8 @@
   import RoleList from "#lib/components/RoleList.svelte";
   import RolePanel from "#lib/components/RolePanel.svelte";
   import { cv } from "#lib/cv.svelte.ts";
-  import { DEFAULT_LAYOUT, LAYOUTS, layoutOf, type LayoutId } from "#lib/layouts.ts";
+  import { AXES, axisOf, DEFAULT_LAYOUT, LAYOUTS, layoutOf, type LayoutId } from "#lib/layouts.ts";
+  import { DEMANDS } from "#lib/demand.ts";
   import { MARK } from "#lib/palette.ts";
   import { capitalise, fold } from "#lib/text.ts";
 
@@ -29,11 +30,20 @@
   // Layout: which arrangement of the map; it lives in the address, so a link reproduces it.
   let layout = $state<LayoutId>(DEFAULT_LAYOUT);
   const layoutInfo = $derived(LAYOUTS.find((l) => l.id === layout) ?? LAYOUTS[0]!);
+  // Axis: the demand that lifts the points in layout B.
+  let axis = $state(0);
+  function toAddress(name: string, value: string) {
+    const url = new URL(location.href);
+    url.searchParams.set(name, value);
+    replaceState(url, {});
+  }
   function chooseLayout(next: LayoutId) {
     layout = next;
-    const url = new URL(location.href);
-    url.searchParams.set("elrendezes", next);
-    replaceState(url, {});
+    toAddress("elrendezes", next);
+  }
+  function chooseAxis(next: number) {
+    axis = next;
+    toAddress("tengely", AXES[next]!);
   }
   $effect(() => {
     const text = typed;
@@ -105,6 +115,7 @@
     const nezet = params.get("nezet");
     if (nezet === "map" || nezet === "list") mode = nezet;
     layout = layoutOf(params.get("elrendezes"));
+    axis = axisOf(params.get("tengely"));
     const szerep = params.get("szerep");
     if (szerep && indexOf.has(szerep)) selected = szerep;
 
@@ -239,6 +250,23 @@
         {/each}
       </select>
     </label>
+    {#if layout === "B"}
+      <div class="field axis" role="group" aria-label="A magasságot adó terhelés">
+        <span>Magasság</span>
+        <div class="modes">
+          {#each DEMANDS as d, k (d.key)}
+            <button
+              type="button"
+              class="button"
+              aria-pressed={axis === k}
+              onclick={() => chooseAxis(k)}
+            >
+              {d.label}
+            </button>
+          {/each}
+        </div>
+      </div>
+    {/if}
     <p class="found" role="status">{matches} szerep{pass ? " a szűrésben" : ""}</p>
   </div>
 
@@ -251,6 +279,7 @@
         {pass}
         {selected}
         {layout}
+        {axis}
         focus={branch ?? resultBranch}
         onselect={(id) => (selected = id)}
         {onready}
@@ -362,6 +391,9 @@
     gap: 0.15rem;
     font-size: 0.85rem;
     color: var(--ink-soft);
+  }
+  .field.axis {
+    flex: 0 0 auto;
   }
   .field.grow {
     flex-grow: 2;

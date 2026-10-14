@@ -183,7 +183,8 @@ function graticule(p: Parts, radius: number, squash: number, opacity: number) {
   p.add(wire.object, wire.fade);
 }
 
-function disc(plan: Layout, data: MapData, host: Host): Frame {
+function disc(spec: Extract<FrameSpec, { kind: "disc" }>, data: MapData, host: Host): Frame {
+  const { plan, ruler } = spec;
   const p = parts(host);
   const nBranches = data.branches.length;
   const bg = new Color(BG);
@@ -262,6 +263,31 @@ function disc(plan: Layout, data: MapData, host: Host): Frame {
     return { e: p.pin("lbl-level", String(k + 1)), at: new Vector3(x, FLOOR_Y, z) };
   });
 
+  // A ruler for the height through the empty middle, when the points are lifted by a demand.
+  const rulerPins: { e: HTMLElement; at: Vector3; dx: string }[] = [];
+  if (ruler) {
+    const x = 0;
+    const { half } = ruler;
+    const ticks = [-half, 0, half];
+    const line = [x, -half, 0, x, half, 0];
+    for (const y of ticks) line.push(x - 2, y, 0, x + 2, y, 0);
+    const bar = lines(line, 0x6f94c8, 0.7);
+    p.add(bar.object, bar.fade);
+    const names = ["alacsony", "közepes", "magas"];
+    ticks.forEach((y, k) =>
+      rulerPins.push({
+        e: p.pin("lbl-shell", names[k]!),
+        at: new Vector3(x, y, 0),
+        dx: " translate(8px,-50%)",
+      }),
+    );
+    rulerPins.push({
+      e: p.pin("lbl-anchor", ruler.title),
+      at: new Vector3(x, half + 6, 0),
+      dx: " translate(-50%,-100%)",
+    });
+  }
+
   const spot: Spot = { x: 0, y: 0, d: 0 };
   const centre: Spot = { x: 0, y: 0, d: 0 };
   return {
@@ -327,6 +353,11 @@ function disc(plan: Layout, data: MapData, host: Host): Frame {
         ctx.project(pin.at.x, pin.at.y, pin.at.z, spot);
         if (spot.d < 0 || !ctx.onScreen(spot.x, spot.y)) pin.e.style.opacity = "0";
         else ctx.place(pin.e, spot.x, spot.y, 0.8 * f, " translate(-50%,-50%)");
+      }
+      for (const pin of rulerPins) {
+        ctx.project(pin.at.x, pin.at.y, pin.at.z, spot);
+        if (spot.d < 0 || !ctx.onScreen(spot.x, spot.y)) pin.e.style.opacity = "0";
+        else ctx.place(pin.e, spot.x, spot.y, 0.85 * f, pin.dx);
       }
     },
   };
@@ -437,5 +468,5 @@ function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame
 }
 
 export function buildFrame(spec: FrameSpec, data: MapData, host: Host): Frame {
-  return spec.kind === "disc" ? disc(spec.plan, data, host) : sphere(spec, host);
+  return spec.kind === "disc" ? disc(spec, data, host) : sphere(spec, host);
 }

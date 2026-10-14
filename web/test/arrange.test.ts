@@ -84,6 +84,29 @@ describe("layout A, the sphere", () => {
   });
 });
 
+describe("layout B, the disc lifted by one demand", () => {
+  const flat = place("B", 0);
+  it("keeps the disc's places and lifts each role by the chosen demand's rank", () => {
+    for (const axis of [0, 1, 2]) {
+      const lifted = place("B", axis);
+      data.roles.forEach((r, i) => {
+        expect(lifted.positions[i * 3], r.id).toBe(flat.positions[i * 3]);
+        expect(lifted.positions[i * 3 + 2], r.id).toBe(flat.positions[i * 3 + 2]);
+        const y = lifted.positions[i * 3 + 1]!;
+        expect(Math.abs(y), r.id).toBeLessThanOrEqual(30 + 1e-4);
+        if (r.demands) expect(y, r.id).toBeCloseTo((r.demands[axis]! - 0.5) * 60, 3);
+        else expect(y, r.id).toBe(0);
+      });
+    }
+  });
+
+  it("puts a software developer high on mental and low on physical", () => {
+    const i = role("senior-szoftverfejleszto");
+    expect(place("B", 1).positions[i * 3 + 1]!).toBeGreaterThan(20);
+    expect(place("B", 0).positions[i * 3 + 1]!).toBeLessThan(-20);
+  });
+});
+
 describe("every layout", () => {
   it("has finite positions, a camera that has something to show and a size per role", () => {
     for (const id of ["A", "B"] as const) {
