@@ -358,7 +358,7 @@ export function createMap(
         alpha *= 0.16;
         mark = 0;
       }
-      if (spotlight && i !== selected && !spotlight.has(i)) alpha *= 0.45;
+      if (spotlight && !m && i !== selected && !spotlight.has(i)) alpha *= 0.45;
       if (i === selected) {
         size *= 1.5;
         mark = 1;

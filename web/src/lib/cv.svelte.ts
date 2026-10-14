@@ -10,6 +10,7 @@ import { skillKey } from "./model.ts";
 let result = $state.raw<CvResult | null>(null);
 let error = $state<string | null>(null);
 let labels = $state.raw<Record<string, string> | null>(null);
+let labelsFailed = $state(false);
 let labelsRequested = false;
 const view = $derived(result ? readCvResult(result) : null);
 
@@ -21,7 +22,9 @@ async function loadLabels() {
     const response = await fetch("/skills.json");
     if (!response.ok) throw new Error(String(response.status));
     labels = (await response.json()) as Record<string, string>;
+    labelsFailed = false;
   } catch {
+    labelsFailed = true;
     labelsRequested = false;
   }
 }
@@ -44,6 +47,10 @@ export const cv = {
   /** Whether the skill names have arrived. */
   get labelsLoaded() {
     return labels !== null;
+  },
+  /** Whether fetching the skill names failed. */
+  get labelsFailed() {
+    return labelsFailed;
   },
   set(next: CvResult) {
     result = next;

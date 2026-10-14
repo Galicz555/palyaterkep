@@ -51,7 +51,10 @@ export interface RoleDetail extends RoleLink {
   code: string;
   skills: { key: string; label: string; knowledge: boolean }[];
   lateral: RoleLink[];
+  /** The next steps: roles one further out. */
   progression: RoleLink[];
+  /** Roles whose next step this is; with `lateral`, where a CV can reach this role from. */
+  previous: RoleLink[];
 }
 
 const SKILL_PREFIX = "http://data.europa.eu/esco/skill/";

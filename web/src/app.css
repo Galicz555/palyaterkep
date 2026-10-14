@@ -1,0 +1,131 @@
+/* Light pages for reading, a dark stage for the map. Text pairs are at least 4.5:1. */
+:root {
+  color-scheme: light;
+  --bg: #faf9f5;
+  --surface: #ffffff;
+  --ink: #1b1c26;
+  --ink-soft: #4a4f60;
+  --line: #d8d5ca;
+  --accent: #0b5d73;
+  --accent-soft: #e0f0f4;
+  --focus: #1a5fd0;
+  --held: #7a4b00;
+  --held-bg: #fdefcf;
+  --covered: #005f45;
+  --covered-bg: #daf3e9;
+  --reach: #00507d;
+  --reach-bg: #dcedf9;
+  --proposal: #5a5f70;
+  --stage: #0b1020;
+  --stage-ink: #dce6f7;
+  --stage-soft: #a5b4d0;
+  --stage-line: #2a3556;
+  --stage-focus: #8ec5ff;
+  --radius: 0.5rem;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+button,
+select,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* The skip link shows when it has focus. */
+.skip {
+  position: absolute;
+  left: 0.5rem;
+  top: -4rem;
+  z-index: 10;
+  padding: 0.6rem 1rem;
+  background: var(--ink);
+  color: #fff;
+  border-radius: var(--radius);
+}
+.skip:focus {
+  top: 0.5rem;
+}
+
+.button {
+  min-height: 2.75rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.button:hover {
+  border-color: var(--accent);
+}
+.button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}

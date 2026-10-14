@@ -192,5 +192,9 @@ export function roleDetail(id: string): RoleDetail | undefined {
       .sort((a, b) => a.label.localeCompare(b.label, "hu")),
     lateral: [...own, ...incoming].map(link),
     progression: (note.progression ?? []).map((l) => link(index.get(linkTarget(l))!)),
+    previous: data.progression
+      .filter(([, to]) => to === i)
+      .map(([from]) => link(from))
+      .sort((a, b) => a.label.localeCompare(b.label, "hu")),
   };
 }
