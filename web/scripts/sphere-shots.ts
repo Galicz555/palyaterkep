@@ -82,8 +82,11 @@ try {
     }
     await page.screenshotOf(`${OUT}${prefix}-${name}.png`, ".frame");
     const clashes = await collisions(page);
+    const named = await page.eval<number>(
+      "[...document.querySelectorAll('.labels .lbl-state')].filter((e) => Number(getComputedStyle(e).opacity) > 0.05).length",
+    );
     console.log(
-      `${name}: ${clashes.length} label overlaps${clashes.length ? `: ${clashes.join("; ")}` : ""}`,
+      `${name}: ${named} marked roles named, ${clashes.length} label overlaps${clashes.length ? `: ${clashes.join("; ")}` : ""}`,
     );
   }
 } finally {
