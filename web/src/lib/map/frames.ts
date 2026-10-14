@@ -7,6 +7,7 @@ import {
   BufferAttribute,
   BufferGeometry,
   Color,
+  DoubleSide,
   Float32BufferAttribute,
   FrontSide,
   LineBasicMaterial,
@@ -467,6 +468,97 @@ function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame
   };
 }
 
+/** A glass triangular prism: edges, a plate per floor, faint sides, the corners named. */
+function prism(spec: Extract<FrameSpec, { kind: "prism" }>, host: Host): Frame {
+  const p = parts(host);
+  const { corners, floors, bottom, top } = spec;
+  const loop = (y: number) => {
+    const out: number[] = [];
+    corners.forEach((c, k) => {
+      const n = corners[(k + 1) % 3]!;
+      out.push(c.x, y, c.z, n.x, y, n.z);
+    });
+    return out;
+  };
+  // The three vertical edges and the outline of the base, the top and every floor.
+  const edges: number[] = [];
+  for (const c of corners) edges.push(c.x, bottom, c.z, c.x, top, c.z);
+  const outline = lines([...edges, ...loop(bottom), ...loop(top)], 0x4b86c8, 0.7);
+  p.add(outline.object, outline.fade);
+  const plates = lines(
+    floors.flatMap((f) => loop(f.y)),
+    0x2b5a8c,
+    0.4,
+  );
+  p.add(plates.object, plates.fade);
+  // Faint glass: the three sides and a plate on every floor, additive.
+  const glassPos: number[] = [];
+  corners.forEach((c, k) => {
+    const n = corners[(k + 1) % 3]!;
+    glassPos.push(c.x, bottom, c.z, n.x, bottom, n.z, n.x, top, n.z);
+    glassPos.push(c.x, bottom, c.z, n.x, top, n.z, c.x, top, c.z);
+  });
+  for (const f of floors) {
+    const [a, b, c] = corners as [(typeof corners)[0], (typeof corners)[0], (typeof corners)[0]];
+    glassPos.push(a.x, f.y, a.z, b.x, f.y, b.z, c.x, f.y, c.z);
+  }
+  const geometry = new BufferGeometry();
+  geometry.setAttribute("position", new Float32BufferAttribute(glassPos, 3));
+  const material = new MeshBasicMaterial({
+    color: 0x2f6aa6,
+    opacity: 0.045,
+    side: DoubleSide,
+    ...ADD,
+  });
+  const glassMesh = new Mesh(geometry, material);
+  glassMesh.renderOrder = 0;
+  p.add(glassMesh, (a) => (material.opacity = 0.045 * a));
+
+  const cornerPins = corners.map((c) => ({
+    e: p.pin("lbl-anchor", c.label),
+    at: new Vector3(c.x, top + 6, c.z),
+  }));
+  // The floors are named along the first edge, outside it.
+  const first = corners[0]!;
+  const floorPins = floors.map((f) => ({
+    e: p.pin("lbl-shell", `${f.level} ${LEVEL_NAMES[f.level]}`),
+    at: new Vector3(first.x * 1.12, f.y, first.z * 1.12),
+  }));
+  const spot: Spot = { x: 0, y: 0, d: 0 };
+  const centre: Spot = { x: 0, y: 0, d: 0 };
+  return {
+    fade: p.fade,
+    dispose: p.dispose,
+    place(ctx) {
+      const f = p.shown.amount;
+      ctx.project(0, (bottom + top) / 2, 0, centre);
+      for (const pin of cornerPins) {
+        ctx.project(pin.at.x, pin.at.y, pin.at.z, spot);
+        if (spot.d < 0 || !ctx.onScreen(spot.x, spot.y, 60)) {
+          pin.e.style.opacity = "0";
+          continue;
+        }
+        const dx = spot.x - centre.x;
+        const dy = Math.min(spot.y - centre.y, -4);
+        const length = Math.hypot(dx, dy) || 1;
+        ctx.place(
+          pin.e,
+          spot.x + (dx / length) * 24,
+          spot.y + (dy / length) * 14,
+          f,
+          " translate(-50%,-50%)",
+        );
+      }
+      for (const pin of floorPins) {
+        ctx.project(pin.at.x, pin.at.y, pin.at.z, spot);
+        if (spot.d < 0 || !ctx.onScreen(spot.x, spot.y)) pin.e.style.opacity = "0";
+        else ctx.place(pin.e, spot.x, spot.y, 0.8 * f, " translate(-100%,-50%) translate(-8px,0)");
+      }
+    },
+  };
+}
+
 export function buildFrame(spec: FrameSpec, data: MapData, host: Host): Frame {
-  return spec.kind === "disc" ? disc(spec, data, host) : sphere(spec, host);
+  if (spec.kind === "disc") return disc(spec, data, host);
+  return spec.kind === "sphere" ? sphere(spec, host) : prism(spec, host);
 }

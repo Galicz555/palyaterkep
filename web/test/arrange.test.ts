@@ -107,9 +107,41 @@ describe("layout B, the disc lifted by one demand", () => {
   });
 });
 
+describe("layout C, the prism", () => {
+  const prism = place("C");
+  it("puts each role on its level's floor, inside the triangle, near the corner of its top demand", () => {
+    if (prism.frame.kind !== "prism") throw new Error("C is the prism");
+    const { corners, floors } = prism.frame;
+    data.roles.forEach((r, i) => {
+      const [x, y, z] = at(prism, i);
+      expect(y, r.id).toBe(floors[r.level - 1]!.y);
+      // Inside the triangle, give or take the spiral of roles sharing a mix.
+      const dist = corners.map((c) => Math.hypot(x - c.x, z - c.z));
+      expect(Math.min(...dist), r.id).toBeLessThan(140);
+    });
+    const near = (id: string, k: number) => {
+      const [x, , z] = at(prism, role(id));
+      return Math.hypot(x - corners[k]!.x, z - corners[k]!.z);
+    };
+    expect(near("senior-szoftverfejleszto", 1)).toBeLessThan(near("senior-szoftverfejleszto", 0));
+    expect(near("tetofedo", 0)).toBeLessThan(near("tetofedo", 1));
+  });
+
+  it("does not stack two roles on one spot", () => {
+    const seen = new Set<string>();
+    data.roles.forEach((r, i) => {
+      const key = at(prism, i)
+        .map((c) => (c * 20).toFixed(0))
+        .join("/");
+      expect(seen.has(key), r.id).toBe(false);
+      seen.add(key);
+    });
+  });
+});
+
 describe("every layout", () => {
   it("has finite positions, a camera that has something to show and a size per role", () => {
-    for (const id of ["A", "B"] as const) {
+    for (const id of ["A", "B", "C"] as const) {
       const arrangement = place(id);
       expect(arrangement.positions.every(Number.isFinite)).toBe(true);
       expect(arrangement.home.fit[0]).toBeGreaterThan(0);

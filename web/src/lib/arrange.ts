@@ -5,11 +5,20 @@
 // Units are the disc's: the outermost shell and the disc's rim are R_OUT. The ground is x/z and y is
 // up (see lib/layout.ts).
 
-import { capDirection, DEMANDS, magnitudeOf, mixKey, mixOf, type Mix } from "./demand.ts";
+import {
+  capDirection,
+  CORNER_ANGLE,
+  DEMANDS,
+  magnitudeOf,
+  mixKey,
+  mixOf,
+  triangle,
+  type Mix,
+} from "./demand.ts";
 import { hash, layout as discLayout, R_OUT, type Layout } from "./layout.ts";
 import type { LayoutId } from "./layouts.ts";
 import type { Level, MapData } from "./model.ts";
-import { spread } from "./spread.ts";
+import { relax, spread } from "./spread.ts";
 
 type Vec3 = [number, number, number];
 
@@ -27,6 +36,15 @@ export type FrameSpec =
       shells: { level: Level; radius: number }[];
       /** The three demand stars, in `DEMANDS` order. */
       anchors: { label: string; at: Vec3 }[];
+    }
+  | {
+      kind: "prism";
+      /** The three vertical edges, in `DEMANDS` order: where each stands on the floor plan. */
+      corners: { label: string; x: number; z: number }[];
+      /** One floor per level, lowest first: its height. */
+      floors: { level: Level; y: number }[];
+      bottom: number;
+      top: number;
     };
 
 /** Where the camera opens, and how much it has to show. */
@@ -167,22 +185,83 @@ function sphere(data: MapData): Arrangement {
   };
 }
 
+/** Circumradius of the prism's triangle, and the height between two floors. */
+const PRISM_R = 70;
+const FLOOR_GAP = 28;
+
+function prism(data: MapData): Arrangement {
+  const { roles } = data;
+  const positions = new Float32Array(roles.length * 3);
+  // Roles of one floor with one mix would share a spot: they get a spiral of their own.
+  const offsets = spread(
+    roles.map((r) => `${r.level}|${mixKey(r.demands)}`),
+    SPACING,
+  );
+  roles.forEach((role, i) => {
+    const [east, north] = triangle(mixOf(role.demands));
+    positions.set(
+      [
+        east * PRISM_R + offsets[i * 2]!,
+        (role.level - 1) * FLOOR_GAP,
+        -north * PRISM_R + offsets[i * 2 + 1]!,
+      ],
+      i * 3,
+    );
+  });
+  // Mixes close together still crowd a floor: push neighbours on one floor 1.5 units apart.
+  relax(
+    positions,
+    roles.map((r) => r.level),
+    [0, 2],
+    1.5,
+  );
+  const top = 4 * FLOOR_GAP + 10;
+  return {
+    id: "C",
+    positions,
+    frame: {
+      kind: "prism",
+      corners: DEMANDS.map((d, k) => ({
+        label: d.label,
+        x: Math.sin(CORNER_ANGLE[k]!) * PRISM_R,
+        z: -Math.cos(CORNER_ANGLE[k]!) * PRISM_R,
+      })),
+      floors: [1, 2, 3, 4, 5].map((level) => ({
+        level: level as Level,
+        y: (level - 1) * FLOOR_GAP,
+      })),
+      bottom: -10,
+      top,
+    },
+    home: { target: [0, 50, -4], az: deg(18), pol: deg(64), fit: [PRISM_R * 1.5, PRISM_R * 1.55] },
+    free: true,
+    extent: PRISM_R * 1.4,
+    sizes: null,
+    alpha: 0.62,
+  };
+}
+
 /** The disc is worked out once and shared by the layouts that stand on it. */
 export function arranger(data: MapData): (id: LayoutId, axis?: number) => Arrangement {
   let plan: Layout | undefined;
   const made = new Map<string, Arrangement>();
+  const build = (id: LayoutId, axis: number): Arrangement => {
+    plan ??= discLayout(data);
+    switch (id) {
+      case "A":
+        return sphere(data);
+      case "B":
+        return disc(id, plan, data, { axis });
+      case "C":
+        return prism(data);
+    }
+  };
   return (id, axis = 0) => {
     // Only B depends on the axis.
     const key = id === "B" ? `${id}${axis}` : id;
     let arrangement = made.get(key);
     if (!arrangement) {
-      plan ??= discLayout(data);
-      arrangement =
-        id === "A"
-          ? sphere(data)
-          : id === "B"
-            ? disc(id, plan, data, { axis })
-            : disc(id, plan, data);
+      arrangement = build(id, axis);
       made.set(key, arrangement);
     }
     return arrangement;
