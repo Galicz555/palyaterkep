@@ -214,9 +214,8 @@ describe("placeCv", () => {
   it("finds covered roles at the threshold and reachable roles with their gaps", () => {
     const shown = new Set(skills("code", "git", "test", "report", "plan"));
     const { covered, reachable } = placeCv(graph, ["dev-2"], shown);
-    // tester: 4 of 5 skills; analyst: 2 of 3; dev-1: all; dev-3: 3 of 4.
+    // tester: 4 of 5 skills; analyst: 2 of 3; dev-3: 3 of 4. dev-1 is behind the held dev-2.
     expect(covered).toEqual([
-      { role: "dev-1", coverage: 1 },
       { role: "tester", coverage: 0.8 },
       { role: "dev-3", coverage: 0.75 },
       { role: "analyst", coverage: 2 / 3 },
@@ -231,7 +230,7 @@ describe("placeCv", () => {
     // dev-3: 2 of 4 skills.
     const shown = new Set(skills("code", "git"));
     const { covered, reachable } = placeCv(graph, ["dev-2"], shown);
-    expect(covered.map((c) => c.role)).toEqual(["dev-1"]);
+    expect(covered.map((c) => c.role)).toEqual([]);
     expect(reachable).toEqual([
       // dev-2 is held and already needs "test", so no gap from it lists it.
       { role: "dev-3", from: "dev-2", edge: "progression", gap: skills("design") },
@@ -247,6 +246,13 @@ describe("placeCv", () => {
   it("does not list a lower rung as reachable by progression", () => {
     const { reachable } = placeCv(graph, ["dev-3"], new Set(), 0.99);
     expect(reachable.map((r) => r.role)).toEqual(["dev-lead", "analyst"]);
+  });
+
+  it("does not list a rung below a held role as covered, however much of it the CV shows", () => {
+    // dev-3 is held; the CV shows all of dev-1's and dev-2's skills.
+    const { covered } = placeCv(graph, ["dev-3"], new Set(skills("code", "git", "test")));
+    expect(covered.map((c) => c.role)).not.toContain("dev-1");
+    expect(covered.map((c) => c.role)).not.toContain("dev-2");
   });
 
   it("never lists a rung below a held role, even by a lateral edge from another held role", () => {

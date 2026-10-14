@@ -8,18 +8,12 @@
     },
     {
       "role": "webfejleszto",
-      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+      "evidence": [
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
     }
   ],
   "covered": [
-    {
-      "role": "junior-szoftverfejleszto",
-      "coverage": 1
-    },
-    {
-      "role": "medior-szoftverfejleszto",
-      "coverage": 0.95
-    },
     {
       "role": "fejlesztesi-csoportvezeto",
       "coverage": 0.71
@@ -104,27 +98,6 @@
       ]
     },
     {
-      "role": "devops-mernok",
-      "from": "medior-szoftverfejleszto",
-      "edge": "progression",
-      "gap": [
-        "http://data.europa.eu/esco/skill/0868eef3-2213-4572-9343-74931345a7d3",
-        "http://data.europa.eu/esco/skill/2a3a96a3-709e-4d60-81f6-d247d6933f13",
-        "http://data.europa.eu/esco/skill/5ef0c719-5bcb-49f8-b8eb-824388225333",
-        "http://data.europa.eu/esco/skill/6430eb0d-c6de-46b7-a7fc-3dd2e8e62a69",
-        "http://data.europa.eu/esco/skill/6e4f75b4-c60f-4623-a9ba-760c8245753b",
-        "http://data.europa.eu/esco/skill/8efa6a7a-6556-4cb8-908d-59d3b5c58d2f",
-        "http://data.europa.eu/esco/skill/978db6a1-7297-4c89-819a-47605f2c3ba8",
-        "http://data.europa.eu/esco/skill/9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c",
-        "http://data.europa.eu/esco/skill/acf0a78c-f4e3-4bd9-a5cc-9cf4791b3b95",
-        "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
-        "http://data.europa.eu/esco/skill/ce8ae6ca-61d8-4174-b457-641de96cbff4",
-        "http://data.europa.eu/esco/skill/d3286405-49f8-4e8a-8046-a4376b4e7963",
-        "http://data.europa.eu/esco/skill/f0de4973-0a70-4644-8fd4-3a97080476f4",
-        "http://data.europa.eu/esco/skill/fbbcb9ab-4b95-4e57-a756-30d08b7da7a5"
-      ]
-    },
-    {
       "role": "senior-szoftvertesztelo",
       "from": "senior-szoftverfejleszto",
       "edge": "lateral",
@@ -194,35 +167,6 @@
         "http://data.europa.eu/esco/skill/d83cba15-8511-4d07-b89a-9fde0d1d8241",
         "http://data.europa.eu/esco/skill/fafe0b9d-dbd9-46bd-b770-26299539ce66",
         "http://data.europa.eu/esco/skill/fb7aee4d-f6c6-4a87-8e9d-8e542b3771f8"
-      ]
-    },
-    {
-      "role": "adatmernok",
-      "from": "medior-szoftverfejleszto",
-      "edge": "progression",
-      "gap": [
-        "http://data.europa.eu/esco/skill/07889c08-7220-47c8-96f7-6068fbea00dc",
-        "http://data.europa.eu/esco/skill/143769cb-b61e-47d8-a61e-eedfbec1016c",
-        "http://data.europa.eu/esco/skill/1b70a55d-b8a4-49fc-96c6-15ab4cff2522",
-        "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
-        "http://data.europa.eu/esco/skill/2daec0e6-f0c1-43e8-8178-aedba99130ec",
-        "http://data.europa.eu/esco/skill/3ec2e4d6-7000-4905-bf1a-c5b1679416de",
-        "http://data.europa.eu/esco/skill/4216e465-7baa-4884-a241-54b197bb9278",
-        "http://data.europa.eu/esco/skill/4463a721-69f3-413d-8321-43e3af13a4f1",
-        "http://data.europa.eu/esco/skill/46ec0033-3c71-415e-bcff-b065675ba2dc",
-        "http://data.europa.eu/esco/skill/48db96bf-3314-45c6-bad8-fdb6e20e5639",
-        "http://data.europa.eu/esco/skill/50b100ea-74fd-4706-99db-3e4ca55e51b8",
-        "http://data.europa.eu/esco/skill/54c9c155-9293-4329-8ed2-2e76e8b519d4",
-        "http://data.europa.eu/esco/skill/5ef0c719-5bcb-49f8-b8eb-824388225333",
-        "http://data.europa.eu/esco/skill/7e796b51-49d7-4e73-95af-2e7323763f15",
-        "http://data.europa.eu/esco/skill/9d0d89be-bffa-4393-b6f6-8d05bea49051",
-        "http://data.europa.eu/esco/skill/a56dec32-05ef-45de-a256-ee6741f356db",
-        "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f",
-        "http://data.europa.eu/esco/skill/c5e8abde-d2ba-4e8e-a65e-720b71180666",
-        "http://data.europa.eu/esco/skill/d3286405-49f8-4e8a-8046-a4376b4e7963",
-        "http://data.europa.eu/esco/skill/f9670490-8aa4-4540-b121-d440a8294aab",
-        "http://data.europa.eu/esco/skill/fbafa41f-cd05-4109-a649-8b44d306d779",
-        "http://data.europa.eu/esco/skill/fd6d2981-3d4a-4ce2-9741-cfc98c5b74bd"
       ]
     },
     {
@@ -570,79 +514,117 @@
     },
     {
       "uri": "http://data.europa.eu/esco/skill/16a00c69-9c74-4c37-96d7-6301d285e5ce",
-      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+      "evidence": [
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/2b7a79e5-84d8-4880-be66-3d9bb05bea17",
-      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+      "evidence": [
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/2d6d4784-0992-48e7-b100-22d7229b3f0a",
-      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+      "evidence": [
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
-      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+      "evidence": [
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/797a4416-0b8d-44f3-8fcd-eb10bd0be6b4",
-      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+      "evidence": [
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/85c11255-469f-41bd-a6d1-382bc4a87783",
-      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+      "evidence": [
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/901105f8-3a08-453e-b1dc-23619e317fd3",
-      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+      "evidence": [
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/93e65de1-923c-437e-aa5b-e6002967ce71",
-      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+      "evidence": [
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/c4b1f326-224a-420a-b8b3-814a8f13b6cb",
-      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+      "evidence": [
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/d2adb565-a865-424d-aeb5-9fbcbf2afe2a",
-      "evidence": ["Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"]
+      "evidence": [
+        "Webfejlesztő, Minta Zrt., 2018–2020: React alapú ügyfélportál, TypeScript"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/6195c5f7-a4fb-425d-a3dd-c4467c4471a3",
-      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+      "evidence": [
+        "Saját és céges projektek: Docker, CI/CD, felhőtelepítés"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/82de2df7-0d6c-42b1-94ac-b3e9a029e917",
-      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+      "evidence": [
+        "Saját és céges projektek: Docker, CI/CD, felhőtelepítés"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/ab49f767-296b-47d5-af56-0b4a69515b03",
-      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+      "evidence": [
+        "Saját és céges projektek: Docker, CI/CD, felhőtelepítés"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/ae4f0cc6-e0b9-47f5-bdca-2fc2e6316dce",
-      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+      "evidence": [
+        "Saját és céges projektek: Docker, CI/CD, felhőtelepítés"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/c13fb093-5ffb-491a-b8b7-fa2d42a57e2e",
-      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+      "evidence": [
+        "Saját és céges projektek: Docker, CI/CD, felhőtelepítés"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/cf3e976d-2c3e-495c-a874-f9e8a66d3b48",
-      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+      "evidence": [
+        "Saját és céges projektek: Docker, CI/CD, felhőtelepítés"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/e5b5053e-0ef6-4c4e-a3f2-42f955f4322c",
-      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+      "evidence": [
+        "Saját és céges projektek: Docker, CI/CD, felhőtelepítés"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
-      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+      "evidence": [
+        "Saját és céges projektek: Docker, CI/CD, felhőtelepítés"
+      ]
     },
     {
       "uri": "http://data.europa.eu/esco/skill/fc2f1d4f-a46f-471e-a618-cbd4d0496a53",
-      "evidence": ["Saját és céges projektek: Docker, CI/CD, felhőtelepítés"]
+      "evidence": [
+        "Saját és céges projektek: Docker, CI/CD, felhőtelepítés"
+      ]
     }
   ]
 }

@@ -148,7 +148,8 @@ export function behindRoles(graph: RoleGraph, from: string[]): Set<string> {
 }
 
 /**
- * Covered: roles not held whose skills the CV shows at or above the threshold. Reachable: roles one
+ * Covered: roles neither held nor behind a held role whose skills the CV shows at or above the
+ * threshold. Reachable: roles one
  * edge from a held or covered role, neither themselves, with the skills the CV does not show; a
  * held role's own skills are not part of a gap from it, since holding the role shows them. A
  * progression edge only counts outwards, to a higher level, and rungs below a held role on its
@@ -162,15 +163,14 @@ export function placeCv(
   threshold = COVERAGE_THRESHOLD,
 ): Pick<CvResult, "covered" | "reachable"> {
   const heldSet = new Set(held);
+  const behind = behindRoles(graph, held);
   const covered: CvResult["covered"] = [];
   for (const [id, role] of graph.roles) {
-    if (heldSet.has(id)) continue;
+    if (heldSet.has(id) || behind.has(id)) continue;
     const coverage = role.skills.filter((s) => shown.has(s)).length / role.skills.length;
     if (coverage >= threshold) covered.push({ role: id, coverage });
   }
   covered.sort((a, b) => b.coverage - a.coverage || (a.role < b.role ? -1 : 1));
-
-  const behind = behindRoles(graph, held);
 
   const placed = new Set([...heldSet, ...covered.map((c) => c.role), ...behind]);
   const best = new Map<string, { from: string; edge: EdgeKind; rank: number }>();
