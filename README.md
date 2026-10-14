@@ -17,8 +17,37 @@ pnpm web:build    # prerenders every page into web/build
 pnpm web:start    # serves the build on :3000
 ```
 
-Until CV reading exists, a result comes from a file: open `/?cv=it-fejleszto` to load
-`web/static/fixtures/it-fejleszto.json` (rebuilt from the vault with `node web/scripts/it-fixture.ts`).
+### Reading a CV
+
+The page takes a PDF (its text is read in the browser with pdf.js, loaded only when a file is
+chosen) or pasted text, and posts `{ "text": … }` to `/api/cv`. The route runs the reading core
+(`src/cv`) on a graph and mapper loaded once per server process and answers with the `CvResult`,
+which the map and the list show. The server never receives a file. The CV is not stored: not on
+disk, not in the log, not in browser storage; the log carries counts, timings, and the claims the
+verify gate dropped and the errors with their quoted spans cut out.
+
+| Status | When                                                                              |
+| ------ | --------------------------------------------------------------------------------- |
+| 200    | the result                                                                        |
+| 400    | the text is empty or over 30 000 characters, or the body is not JSON with a text  |
+| 429    | one client address has used its readings for the hour; `Retry-After`              |
+| 503    | the day's spend cap would be passed; `Retry-After` runs to the end of the UTC day |
+| 500    | anything else, with a generic text; the cause is in the server log                |
+
+The model is chosen by the environment: `CV_MODEL=subscription` sends the prompts to the subscription
+CLI (local dev only, no API spend), otherwise the Claude API with `ANTHROPIC_API_KEY` (`pnpm web:start`
+reads the repository's `.env`); with neither the route answers 500 and the server says why at start.
+Every reading goes through the spend guard in `raw/cv-spend.sqlite`: `CV_DAILY_CAP_USD` (default 2) and
+`CV_PER_CLIENT_PER_HOUR` (default 10). Behind a proxy, set adapter-node's `ADDRESS_HEADER`, or every
+visitor shares one client address.
+
+`CV_MODEL=subscription HOST=127.0.0.1 PORT=4173 CV_PER_CLIENT_PER_HOUR=30 pnpm web:start`, then
+`node web/scripts/cv-e2e.ts <base url>` drives headless Chrome through a made-up CV as a PDF and as pasted text,
+the refusals, and the page's error states, with screenshots in `raw/screens/`. Add `real` or `canned` after the base URL to run
+only what needs no model.
+
+Without a model, open `/?cv=it-fejleszto` to load `web/static/fixtures/it-fejleszto.json` (placed by
+`placeCv`; rebuild it with `node web/scripts/it-fixture.ts` after the vault or the rules change).
 `/?ag=it` flies to a branch, `/?szerep=<id>` picks a role, `/?nezet=list` opens the list.
 `node web/scripts/screens.ts` takes the screenshots into `raw/screens/`, walks the list with the
 keyboard alone and times the map's frames, against a running `pnpm web:start`.

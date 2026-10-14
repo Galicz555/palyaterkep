@@ -110,6 +110,55 @@ export class Page {
     writeFileSync(file, Buffer.from(data, "base64"));
   }
 
+  /** Puts files into a file input, as choosing them in the picker would. */
+  async setFiles(selector: string, files: string[]) {
+    const { root } = await this.send<{ root: { nodeId: number } }>("DOM.getDocument");
+    const { nodeId } = await this.send<{ nodeId: number }>("DOM.querySelector", {
+      nodeId: root.nodeId,
+      selector,
+    });
+    if (!nodeId) throw new Error(`no element matches ${selector}`);
+    await this.send("DOM.setFileInputFiles", { nodeId, files });
+  }
+
+  /**
+   * Answers requests whose URL matches `pattern` (a glob) with what `answer()` says at that moment:
+   * a canned response, "fail" for a network error, "hold" to leave the request hanging, or "pass".
+   */
+  async intercept(
+    pattern: string,
+    answer: () =>
+      { status: number; headers?: Record<string, string>; body: string } | "fail" | "hold" | "pass",
+  ) {
+    this.on("Fetch.requestPaused", (params) => {
+      const requestId = params["requestId"] as string;
+      const canned = answer();
+      if (canned === "hold") return;
+      if (canned === "pass") void this.send("Fetch.continueRequest", { requestId });
+      else if (canned === "fail") {
+        void this.send("Fetch.failRequest", { requestId, errorReason: "ConnectionRefused" });
+      } else {
+        const headers = { "content-type": "application/json", ...canned.headers };
+        void this.send("Fetch.fulfillRequest", {
+          requestId,
+          responseCode: canned.status,
+          responseHeaders: Object.entries(headers).map(([name, value]) => ({ name, value })),
+          body: Buffer.from(canned.body).toString("base64"),
+        });
+      }
+    });
+    await this.send("Fetch.enable", { patterns: [{ urlPattern: pattern }] });
+  }
+
+  /** The current page printed to PDF. */
+  async pdf(): Promise<Buffer> {
+    const { data } = await this.send<{ data: string }>("Page.printToPDF", {
+      printBackground: true,
+      preferCSSPageSize: true,
+    });
+    return Buffer.from(data, "base64");
+  }
+
   /** `held` is whether the left button is down during a move. */
   async mouse(
     type: "mousePressed" | "mouseMoved" | "mouseReleased",
