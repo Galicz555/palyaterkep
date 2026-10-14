@@ -58,6 +58,7 @@ async function shots() {
     await page.screenshot(`${OUT}role-desktop.png`);
 
     // One shot per layout, bare and with the demo CV marked, of the map's frame alone.
+    await open(page, "/");
     for (const id of await layoutIds(page)) {
       await open(page, `/?elrendezes=${id}`);
       await page.screenshotOf(`${OUT}map-layout-${id}.png`, ".frame");
