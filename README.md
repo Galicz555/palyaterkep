@@ -48,9 +48,13 @@ only what needs no model.
 
 Without a model, open `/?cv=it-fejleszto` to load `web/static/fixtures/it-fejleszto.json` (placed by
 `placeCv`; rebuild it with `node web/scripts/it-fixture.ts` after the vault or the rules change).
-`/?ag=it` flies to a branch, `/?szerep=<id>` picks a role, `/?nezet=list` opens the list.
-`node web/scripts/screens.ts` takes the screenshots into `raw/screens/`, walks the list with the
-keyboard alone and times the map's frames, against a running `pnpm web:start`.
+`/?ag=it` shows a branch, `/?szerep=<id>` picks a role, `/?nezet=list` opens the list,
+`/?elrendezes=B` chooses the map's layout (A is the default).
+`node web/scripts/screens.ts` takes the screenshots into `raw/screens/` (one map per layout, bare and
+with the demo CV), walks the list with the keyboard alone, checks hover, picking, the arrow keys, the
+branch filter and the CV's marks in every layout, and times the map's frames per layout, against a
+running `pnpm web:start`. `CHROME_FLAGS` picks the GPU backend; headless Chrome falls back to a
+software renderer without it.
 
 ## Data
 
