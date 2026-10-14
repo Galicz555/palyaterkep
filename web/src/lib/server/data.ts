@@ -24,7 +24,7 @@ function repositoryRoot(): string {
   return dir;
 }
 
-const ROOT = repositoryRoot();
+export const ROOT = repositoryRoot();
 const ESCO_FILE = "raw/esco/esco.json";
 
 interface Loaded {
@@ -136,6 +136,7 @@ function loadEsco(): EscoIndex {
 export const mapData = (): MapData => load().data;
 export const roleIds = (): string[] => load().data.roles.map((r) => r.id);
 export const escoVersion = (): string => loadEsco().esco.version;
+export const esco = (): Esco => loadEsco().esco;
 
 /** ESCO skill key → Hungarian label, for every skill some role needs. */
 export function skillLabels(): Record<string, string> {
