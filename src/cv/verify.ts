@@ -31,6 +31,14 @@ export function fold(source: string): Folded {
   return { source, text, origin };
 }
 
+/** Lower-case ASCII words: "Szenior Szoftverfejlesztő!" → "szenior szoftverfejleszto ". */
+export const words = (text: string): string =>
+  text
+    .normalize("NFKD")
+    .replace(/\p{M}/gu, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/gu, " ");
+
 /** A quote this short matches almost anything; "CTO" and "2019" are the shortest worth having. */
 const MIN_QUOTE = 2;
 

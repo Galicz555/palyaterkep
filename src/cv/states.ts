@@ -6,6 +6,7 @@ import path from "node:path";
 import { readVault, VAULT } from "../vault/generate.ts";
 import { linkTarget, readNote, Role, type Track } from "../vault/note.ts";
 import type { CvResult } from "./result.ts";
+import { words } from "./verify.ts";
 
 /** A role not held is covered when the CV shows at least this share of its skills. */
 export const COVERAGE_THRESHOLD = 0.6;
@@ -65,13 +66,6 @@ const TITLE_LEVELS: [RegExp, number][] = [
 // individual contributor, like "tech lead".
 const MANAGEMENT =
   /\w+vezeto\b|\b(manager|menedzser|head|director|chief|c[eitfop]o|vp|vice president|team lead|team leader)\b|igazgato/u;
-
-const words = (text: string) =>
-  text
-    .normalize("NFKD")
-    .replace(/\p{M}/gu, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/gu, " ");
 
 export interface Responsibility {
   level: 4 | 5;
