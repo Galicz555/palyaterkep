@@ -54,18 +54,23 @@ export function loadGraph(dir = VAULT): RoleGraph {
   return buildGraph(roles);
 }
 
-// Matched against the title folded to lower-case ASCII words. The highest level named wins.
+// Matched against the title folded to lower-case ASCII words; the highest level named wins. As the
+// curated ladders read them: a lead, tech lead or "-vezető" leads a team at the senior level (3,
+// management); staff and principal engineers are senior individual contributors (4); a manager,
+// head or "osztályvezető" leads team leads (4); chiefs and directors lead an organisation (5). "Staff"
+// alone is no level: a staff nurse is a nurse.
 const TITLE_LEVELS: [RegExp, number][] = [
   [/\b(junior|jr|intern|internship|trainee|apprentice|gyakornok|palyakezdo|kezdo)\b/u, 1],
   [/\b(medior|mid|intermediate)\b/u, 2],
-  [/\b(senior|sr|szenior|tapasztalt|experienced)\b/u, 3],
-  [/\b(lead|leader|principal|head)\b|vezeto\b/u, 4],
+  [/\b(senior|sr|szenior|tapasztalt|experienced|lead|leader)\b|vezeto\b/u, 3],
+  [
+    /\b(principal|head|manager|menedzser)\b|\bstaff (engineer|developer|software)|(osztaly|reszleg|uzletag)vezeto\b/u,
+    4,
+  ],
   [/\b(chief|c[eitfop]o|director|vp|vice president|alelnok|ugyvezeto)\b|igazgato/u, 5],
 ];
-// A compound "-vezető" (csoportvezető) leads people; a lone "vezető" (vezető fejlesztő) is a lead
-// individual contributor, like "tech lead".
 const MANAGEMENT =
-  /\w+vezeto\b|\b(manager|menedzser|head|director|chief|c[eitfop]o|vp|vice president|team lead|team leader)\b|igazgato/u;
+  /vezeto\b|\b(lead|leader|manager|menedzser|head|director|chief|c[eitfop]o|vp|vice president|alelnok)\b|igazgato/u;
 
 export interface Responsibility {
   level: 4 | 5;
@@ -94,9 +99,12 @@ export function heldLevel(
 }
 
 /**
- * The role a held occupation maps to: with a curated ladder, its role at the level and track
- * (failing that, the same track at the nearest level, then any track); otherwise its one
- * uncurated role.
+ * The role a held occupation maps to. Without curated roles, its one uncurated role. With them,
+ * the curated role closest to the level and track among the occupation's own and those its rungs
+ * reach by progression, since a ladder chains occupations (a principal developer is held as
+ * „Szoftverarchitekt”, an ESCO occupation of its own). Closest: a track mismatch costs 10, each
+ * level apart 2, each progression step away 1, so a near rung one level off beats an exact match
+ * in another ladder.
  */
 export function heldRole(
   graph: RoleGraph,
@@ -105,13 +113,20 @@ export function heldRole(
   track: Track,
 ): string | undefined {
   const ids = graph.byOccupation.get(occupation) ?? [];
-  const ladder = ids.filter((id) => graph.roles.get(id)!.curated);
-  if (ladder.length === 0) return ids[0];
-  const distance = (id: string) => {
+  const own = ids.filter((id) => graph.roles.get(id)!.curated);
+  if (own.length === 0) return ids[0];
+  const steps = new Map(own.map((id) => [id, 0]));
+  for (const id of steps.keys()) {
+    for (const { to, edge } of graph.edges.get(id) ?? []) {
+      if (edge === "progression" && graph.roles.get(to)!.curated && !steps.has(to))
+        steps.set(to, steps.get(id)! + 1);
+    }
+  }
+  const cost = (id: string) => {
     const role = graph.roles.get(id)!;
-    return (role.track === track ? 0 : 10) + Math.abs(role.level - level);
+    return (role.track === track ? 0 : 10) + 2 * Math.abs(role.level - level) + steps.get(id)!;
   };
-  return ladder.sort((a, b) => distance(a) - distance(b) || (a < b ? -1 : 1))[0];
+  return [...steps.keys()].sort((a, b) => cost(a) - cost(b) || (a < b ? -1 : 1))[0];
 }
 
 /**

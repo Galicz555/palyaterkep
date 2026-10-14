@@ -90,10 +90,20 @@ describe("heldLevel", () => {
     expect(heldLevel("Sr. Software Engineer", null, null).level).toBe(3);
   });
 
+  it("reads leads as senior managers, as the curated ladders do", () => {
+    for (const title of ["Tech Lead", "Team Lead", "Lead Developer", "Vezető fejlesztő"])
+      expect(heldLevel(title, null, 1), title).toEqual({ level: 3, track: "management" });
+    expect(heldLevel("Csoportvezető", null, 1)).toEqual({ level: 3, track: "management" });
+  });
+
   it("gives 4 and 5 from the title, with the track", () => {
-    expect(heldLevel("Tech Lead", null, 1)).toEqual({ level: 4, track: "individual" });
-    expect(heldLevel("Vezető fejlesztő", null, 1)).toEqual({ level: 4, track: "individual" });
-    expect(heldLevel("Csoportvezető", null, 1)).toEqual({ level: 4, track: "management" });
+    expect(heldLevel("Staff Software Engineer", null, 1)).toEqual({
+      level: 4,
+      track: "individual",
+    });
+    expect(heldLevel("Principal Engineer", null, 1)).toEqual({ level: 4, track: "individual" });
+    expect(heldLevel("Engineering Manager", null, 1)).toEqual({ level: 4, track: "management" });
+    expect(heldLevel("Osztályvezető", null, 1)).toEqual({ level: 4, track: "management" });
     expect(heldLevel("Head of Engineering", null, 1)).toEqual({ level: 4, track: "management" });
     expect(heldLevel("Ügyvezető", null, 1)).toEqual({ level: 5, track: "management" });
     expect(heldLevel("CTO", null, 1)).toEqual({ level: 5, track: "management" });
@@ -123,6 +133,61 @@ describe("heldLevel", () => {
   it("does not read a level from a word that only contains a keyword", () => {
     expect(heldLevel("Midwife", null, 1).level).toBe(1);
     expect(heldLevel("Leading Seaman", null, 3).level).toBe(2);
+    expect(heldLevel("Staff nurse", null, 3)).toEqual({ level: 2, track: "individual" });
+  });
+});
+
+describe("heldRole across a ladder of several occupations", () => {
+  // The shape of the curated software ladder: developer rungs on one occupation, the architect, the
+  // team lead and engineering manager, and the CTO on occupations of their own; a data ladder
+  // joined at the medior rung.
+  const rung = (occ: string, level: number, track: Role["track"], progression: string[] = []) =>
+    role({
+      occupation: OCC + occ,
+      curated: true,
+      level,
+      track,
+      skills: skills("code"),
+      progression: progression.map((id) => `[[${id}]]`),
+    });
+  const ladder = buildGraph(
+    new Map<string, Role>([
+      ["junior", rung("dev", 1, "individual", ["medior"])],
+      ["medior", rung("dev", 2, "individual", ["senior", "data-engineer"])],
+      ["senior", rung("dev", 3, "individual", ["architect", "eng-manager"])],
+      ["architect", rung("architect", 4, "individual", ["cto"])],
+      ["team-lead", rung("manager", 3, "management", ["eng-manager"])],
+      ["eng-manager", rung("manager", 4, "management", ["cto"])],
+      ["cto", rung("cto", 5, "management")],
+      ["data-engineer", rung("data-engineer", 3, "individual", ["data-architect"])],
+      ["data-architect", rung("data-architect", 4, "individual", ["data-lead"])],
+      ["data-lead", rung("data-lead", 4, "management")],
+      ["data-scientist", rung("data-scientist", 3, "individual", ["data-lead"])],
+    ]),
+  );
+  const held = (title: string, occupation: string) => {
+    const { level, track } = heldLevel(title, null, 1);
+    return heldRole(ladder, OCC + occupation, level, track);
+  };
+
+  it("climbs from the developer occupation to the rung the title names", () => {
+    expect(held("Senior Software Engineer", "dev")).toBe("senior");
+    expect(held("Principal Software Engineer", "dev")).toBe("architect");
+    expect(held("Staff Engineer", "dev")).toBe("architect");
+    expect(held("Tech Lead", "dev")).toBe("team-lead");
+    expect(held("Engineering Manager", "dev")).toBe("eng-manager");
+    expect(held("CTO", "dev")).toBe("cto");
+  });
+
+  it("stays on the occupation's own rungs when they fit", () => {
+    expect(held("Team Lead", "manager")).toBe("team-lead");
+    expect(held("Engineering Manager", "manager")).toBe("eng-manager");
+    expect(held("CTO", "cto")).toBe("cto");
+  });
+
+  it("prefers a near rung one level off to an exact match in another ladder", () => {
+    // The software team lead is the exact (3, management) match, seven steps away.
+    expect(held("Lead Data Scientist", "data-scientist")).toBe("data-lead");
   });
 });
 
