@@ -49,7 +49,7 @@ track: "individual" when the job is doing the work itself, however senior or exp
 
 Answer for every code exactly once. Each line below is: code | Hungarian title | English title | description.`;
 
-const line = (o: Occupation) =>
+export const line = (o: Occupation) =>
   [o.code, o.label.hu, o.label.en, o.description.en.replace(/\s+/gu, " ")].join(" | ");
 
 /** The answers that belong to the batch, each code once; anything else the model said is dropped. */
@@ -64,7 +64,7 @@ export function acceptAnswer(batch: string[], answer: z.infer<typeof Answer>): P
 }
 
 // The prompt carries ESCO text only; the model still gets no tools, MCP servers, hooks or CLAUDE.md.
-async function askClaude(prompt: string): Promise<z.infer<typeof Answer>> {
+export async function askClaude(prompt: string, model = MODEL): Promise<z.infer<typeof Answer>> {
   const schema: Record<string, unknown> = z.toJSONSchema(Answer);
   // The CLI's validator does not resolve the draft 2020-12 meta-schema URI zod stamps on.
   delete schema.$schema;
@@ -77,7 +77,7 @@ async function askClaude(prompt: string): Promise<z.infer<typeof Answer>> {
       "--strict-mcp-config",
       "--no-session-persistence",
       "--model",
-      MODEL,
+      model,
       "--output-format",
       "json",
       "--json-schema",
