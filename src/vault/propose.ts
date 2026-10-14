@@ -2,18 +2,16 @@
 // answers in data/proposals.json by ESCO code; a rerun only asks for codes not yet proposed.
 // Usage: node src/vault/propose.ts  (expects raw/esco/esco.json from `pnpm esco`)
 
-import { spawn } from "node:child_process";
 import { readFileSync, writeFileSync } from "node:fs";
-import { tmpdir } from "node:os";
 import { z } from "zod";
 import type { Esco, Occupation } from "../esco/model.ts";
+import { askCli } from "../shared/claude-cli.ts";
 import { Level, Track } from "./note.ts";
 
 export const PROPOSALS_FILE = "data/proposals.json";
 const MODEL = "sonnet";
 const BATCH = 40;
 const PARALLEL = 4;
-const TIMEOUT_MS = 5 * 60_000;
 
 export const Proposal = z.object({ level: Level, track: Track });
 export type Proposal = z.infer<typeof Proposal>;
@@ -63,58 +61,10 @@ export function acceptAnswer(batch: string[], answer: z.infer<typeof Answer>): P
   return Object.fromEntries([...seen].filter((entry): entry is [string, Proposal] => !!entry[1]));
 }
 
-// The prompt carries ESCO text only; the model still gets no tools, MCP servers, hooks or CLAUDE.md.
+// The prompt carries ESCO text only.
 export async function askClaude(prompt: string, model = MODEL): Promise<z.infer<typeof Answer>> {
-  const schema: Record<string, unknown> = z.toJSONSchema(Answer);
-  // The CLI's validator does not resolve the draft 2020-12 meta-schema URI zod stamps on.
-  delete schema.$schema;
-  const stdout = await run(
-    [
-      "-p",
-      "--safe-mode",
-      "--tools",
-      "",
-      "--strict-mcp-config",
-      "--no-session-persistence",
-      "--model",
-      model,
-      "--output-format",
-      "json",
-      "--json-schema",
-      JSON.stringify(schema),
-    ],
-    prompt,
-  );
-  const envelope = z
-    .object({
-      is_error: z.boolean(),
-      result: z.string().optional(),
-      structured_output: z.unknown(),
-    })
-    .parse(JSON.parse(stdout));
-  if (envelope.is_error) throw new Error(`claude -p failed: ${envelope.result ?? "no detail"}`);
-  return Answer.parse(envelope.structured_output);
+  return Answer.parse(await askCli(prompt, Answer, { model }));
 }
-
-const run = (args: string[], input: string): Promise<string> =>
-  new Promise((resolve, reject) => {
-    const child = spawn("claude", args, { cwd: tmpdir(), timeout: TIMEOUT_MS });
-    const out: Buffer[] = [];
-    const err: Buffer[] = [];
-    child.stdout.on("data", (chunk: Buffer) => out.push(chunk));
-    child.stderr.on("data", (chunk: Buffer) => err.push(chunk));
-    child.on("error", reject);
-    child.on("close", (code, signal) => {
-      if (code === 0) resolve(Buffer.concat(out).toString("utf8"));
-      else {
-        const detail = Buffer.concat([...err, ...out])
-          .toString("utf8")
-          .slice(0, 2000);
-        reject(new Error(`claude exited with ${code ?? signal ?? "?"}: ${detail}`));
-      }
-    });
-    child.stdin.end(input);
-  });
 
 if (import.meta.main) {
   const esco = JSON.parse(readFileSync("raw/esco/esco.json", "utf8")) as Esco;

@@ -1,8 +1,10 @@
 // The model behind `Ask`: Claude Haiku 5.5 with structured output. Usage is recorded per call, so a
-// caller can account for the spend even when reading fails part of the way.
+// caller can account for the spend even when reading fails part of the way. For dev-time runs the
+// same prompts can go to the subscription CLI instead, at no API spend.
 
 import Anthropic from "@anthropic-ai/sdk";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
+import { askCli } from "../shared/claude-cli.ts";
 import type { Ask, Prompt } from "./verify.ts";
 
 export const MODEL = "claude-haiku-5-5";
@@ -49,3 +51,9 @@ export function claudeAsk(usage: Usage[]): Ask {
     return JSON.parse(text);
   };
 }
+
+/** The same prompts on the subscription CLI, for dev-time runs; records no usage. */
+export const subscriptionAsk =
+  (model = "haiku"): Ask =>
+  (prompt) =>
+    askCli(prompt.user, prompt.schema, { model, system: prompt.system });
