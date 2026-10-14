@@ -28,7 +28,6 @@ skills:
   - http://data.europa.eu/esco/skill/fafe0b9d-dbd9-46bd-b770-26299539ce66
 lateral:
   - "[[ikt-audit-menedzser]]"
-  - "[[ikt-minosegbiztositasi-menedzser]]"
 ---
 
 # Informatikai auditor
@@ -65,4 +64,3 @@ Az informatikai auditorok információs rendszerek, platformok és üzemeltetés
 ## Váltások
 
 - [[ikt-audit-menedzser|IKT audit menedzser]]
-- [[ikt-minosegbiztositasi-menedzser|IKT minőségbiztosítási menedzser]]

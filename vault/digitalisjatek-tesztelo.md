@@ -17,10 +17,11 @@ skills:
   - http://data.europa.eu/esco/skill/c4b626c1-e71c-44ec-9f88-042766f37fcc
   - http://data.europa.eu/esco/skill/eb3aa8c1-fb14-47b4-a352-b7975abd2480
 lateral:
-  - "[[szoftvertesztelo]]"
   - "[[ikt-integracios-tesztmernok]]"
+  - "[[junior-szoftvertesztelo]]"
   - "[[ikt-rendszertesztelo]]"
   - "[[ikt-hasznalhatosagi-tesztelo]]"
+  - "[[medior-szoftvertesztelo]]"
   - "[[ikt-hozzaferhetosegi-tesztelo]]"
 ---
 
@@ -47,8 +48,9 @@ A digitálisjáték-tesztelők felülvizsgálják és tesztelik a különféle m
 
 ## Váltások
 
-- [[szoftvertesztelo|szoftvertesztelő]]
 - [[ikt-integracios-tesztmernok|IKT integrációs tesztmérnök]]
+- [[junior-szoftvertesztelo|Junior szoftvertesztelő]]
 - [[ikt-rendszertesztelo|IKT rendszertesztelő]]
 - [[ikt-hasznalhatosagi-tesztelo|IKT használhatósági tesztelő]]
+- [[medior-szoftvertesztelo|Medior szoftvertesztelő]]
 - [[ikt-hozzaferhetosegi-tesztelo|IKT hozzáférhetőségi tesztelő]]

@@ -32,9 +32,10 @@ skills:
 lateral:
   - "[[fejlesztesi-csoportvezeto]]"
   - "[[webfejleszto]]"
+  - "[[digitalisjatek-fejleszto]]"
+  - "[[medior-szoftvertesztelo]]"
+  - "[[senior-szoftvertesztelo]]"
   - "[[alkalmazasmernok]]"
-  - "[[felhasznaloi-felulet-fejleszto]]"
-  - "[[ikt-halozatmernok]]"
 progression:
   - "[[senior-szoftverfejleszto]]"
 ---
@@ -81,6 +82,7 @@ progression:
 
 - [[fejlesztesi-csoportvezeto|Fejlesztési csoportvezető]]
 - [[webfejleszto|webfejlesztő]]
+- [[digitalisjatek-fejleszto|digitálisjáték-fejlesztő]]
+- [[medior-szoftvertesztelo|Medior szoftvertesztelő]]
+- [[senior-szoftvertesztelo|Senior szoftvertesztelő]]
 - [[alkalmazasmernok|alkalmazásmérnök]]
-- [[felhasznaloi-felulet-fejleszto|felhasználói felület fejlesztő]]
-- [[ikt-halozatmernok|IKT hálózatmérnök]]

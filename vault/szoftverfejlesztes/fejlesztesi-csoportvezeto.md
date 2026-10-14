@@ -49,6 +49,8 @@ lateral:
   - "[[senior-szoftverfejleszto]]"
   - "[[szoftverarchitekt]]"
   - "[[medior-szoftverfejleszto]]"
+  - "[[tesztmenedzser]]"
+  - "[[senior-szoftvertesztelo]]"
   - "[[alkalmazasmernok]]"
 progression:
   - "[[fejlesztesi-vezeto]]"
@@ -113,4 +115,6 @@ Egy fejlesztőcsapatot vezet, miközben maga is fejleszt (team lead): ütemezi �
 - [[senior-szoftverfejleszto|Senior szoftverfejlesztő]]
 - [[szoftverarchitekt|Szoftverarchitekt]]
 - [[medior-szoftverfejleszto|Medior szoftverfejlesztő]]
+- [[tesztmenedzser|Tesztmenedzser]]
+- [[senior-szoftvertesztelo|Senior szoftvertesztelő]]
 - [[alkalmazasmernok|alkalmazásmérnök]]

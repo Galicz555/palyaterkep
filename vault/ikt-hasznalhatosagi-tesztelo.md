@@ -28,9 +28,9 @@ lateral:
   - "[[ikt-hozzaferhetosegi-tesztelo]]"
   - "[[digitalisjatek-tesztelo]]"
   - "[[ugyfelelmeny-elemzo]]"
-  - "[[ikt-tesztelemzo]]"
-  - "[[szoftvertesztelo]]"
   - "[[ikt-integracios-tesztmernok]]"
+  - "[[ikt-rendszertesztelo]]"
+  - "[[junior-szoftvertesztelo]]"
 ---
 
 # IKT használhatósági tesztelő
@@ -67,6 +67,6 @@ Az IKT használhatósági tesztelők biztosítják a követelményeknek való me
 - [[ikt-hozzaferhetosegi-tesztelo|IKT hozzáférhetőségi tesztelő]]
 - [[digitalisjatek-tesztelo|digitálisjáték-tesztelő]]
 - [[ugyfelelmeny-elemzo|ügyfélélmény elemző]]
-- [[ikt-tesztelemzo|IKT-tesztelemző]]
-- [[szoftvertesztelo|szoftvertesztelő]]
 - [[ikt-integracios-tesztmernok|IKT integrációs tesztmérnök]]
+- [[ikt-rendszertesztelo|IKT rendszertesztelő]]
+- [[junior-szoftvertesztelo|Junior szoftvertesztelő]]

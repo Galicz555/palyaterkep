@@ -51,6 +51,7 @@ skills:
 lateral:
   - "[[szoftverarchitekt]]"
   - "[[vallalati-architekt]]"
+  - "[[tesztmenedzser]]"
   - "[[infokommunikacios-projektmenedzser]]"
 progression:
   - "[[technologiai-igazgato-cto]]"
@@ -117,4 +118,5 @@ Több fejlesztőcsapatért és azok vezetőiért felel (engineering manager): em
 
 - [[szoftverarchitekt|Szoftverarchitekt]]
 - [[vallalati-architekt|Vállalati architekt]]
+- [[tesztmenedzser|Tesztmenedzser]]
 - [[infokommunikacios-projektmenedzser|infokommunikációs projektmenedzser]]

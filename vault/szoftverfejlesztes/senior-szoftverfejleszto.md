@@ -41,7 +41,10 @@ skills:
   - http://data.europa.eu/esco/skill/f84a433f-34f1-4083-b0a3-24802623509c
 lateral:
   - "[[fejlesztesi-csoportvezeto]]"
+  - "[[senior-szoftvertesztelo]]"
+  - "[[tesztmenedzser]]"
   - "[[alkalmazasmernok]]"
+  - "[[medior-szoftvertesztelo]]"
 progression:
   - "[[szoftverarchitekt]]"
   - "[[fejlesztesi-vezeto]]"
@@ -99,4 +102,7 @@ A nehéz eseteket viszi: nagyobb komponenseket tervez és határoz meg műszakil
 ## Váltások
 
 - [[fejlesztesi-csoportvezeto|Fejlesztési csoportvezető]]
+- [[senior-szoftvertesztelo|Senior szoftvertesztelő]]
+- [[tesztmenedzser|Tesztmenedzser]]
 - [[alkalmazasmernok|alkalmazásmérnök]]
+- [[medior-szoftvertesztelo|Medior szoftvertesztelő]]

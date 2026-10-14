@@ -34,7 +34,6 @@ lateral:
   - "[[ikt-halozati-adminisztrator]]"
   - "[[rendszer-konfigurator]]"
   - "[[ikt-halozati-technikus]]"
-  - "[[medior-szoftverfejleszto]]"
 ---
 
 # IKT hálózatmérnök
@@ -77,4 +76,3 @@ Az IKT hálózati mérnökök számítógépes hálózatokat valósítanak meg, 
 - [[ikt-halozati-adminisztrator|IKT hálózati adminisztrátor]]
 - [[rendszer-konfigurator|rendszer konfigurátor]]
 - [[ikt-halozati-technikus|IKT hálózati technikus]]
-- [[medior-szoftverfejleszto|Medior szoftverfejlesztő]]

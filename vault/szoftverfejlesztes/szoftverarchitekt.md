@@ -55,6 +55,8 @@ skills:
 lateral:
   - "[[fejlesztesi-csoportvezeto]]"
   - "[[fejlesztesi-vezeto]]"
+  - "[[senior-szoftvertesztelo]]"
+  - "[[tesztmenedzser]]"
 progression:
   - "[[vallalati-architekt]]"
   - "[[technologiai-igazgato-cto]]"
@@ -126,3 +128,5 @@ Egy rendszer vagy termék szerkezetéért felel: architektúrát és technológi
 
 - [[fejlesztesi-csoportvezeto|Fejlesztési csoportvezető]]
 - [[fejlesztesi-vezeto|Fejlesztési vezető]]
+- [[senior-szoftvertesztelo|Senior szoftvertesztelő]]
+- [[tesztmenedzser|Tesztmenedzser]]

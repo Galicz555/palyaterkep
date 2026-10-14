@@ -20,8 +20,8 @@ skills:
   - http://data.europa.eu/esco/skill/be48353d-25c7-4f86-bea9-7b9e248fbc6e
   - http://data.europa.eu/esco/skill/dba46f87-0831-49cd-a1c7-340a653c0221
 lateral:
-  - "[[digitalisjatek-fejleszto]]"
   - "[[webfejleszto]]"
+  - "[[medior-szoftvertesztelo]]"
   - "[[felhasznaloi-felulet-fejleszto]]"
 progression:
   - "[[medior-szoftverfejleszto]]"
@@ -57,6 +57,6 @@ Fejlesztő az első egy-két évében. Kisebb, jól körülhatárolt feladatokat
 
 ## Váltások
 
-- [[digitalisjatek-fejleszto|digitálisjáték-fejlesztő]]
 - [[webfejleszto|webfejlesztő]]
+- [[medior-szoftvertesztelo|Medior szoftvertesztelő]]
 - [[felhasznaloi-felulet-fejleszto|felhasználói felület fejlesztő]]

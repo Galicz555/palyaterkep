@@ -42,8 +42,8 @@ lateral:
   - "[[pekbolti-elado]]"
   - "[[hirlaparu-es-iroszerbolti-elado]]"
   - "[[szakuzleti-elado]]"
-  - "[[italbolti-elado]]"
   - "[[dohanybolti-elado]]"
+  - "[[italbolti-elado]]"
   - "[[hasznaltcikkbolti-elado]]"
 ---
 
@@ -95,6 +95,6 @@ A csemegeüzleti eladók csemegeárut értékesítenek szaküzletekben.
 - [[pekbolti-elado|pékbolti eladó]]
 - [[hirlaparu-es-iroszerbolti-elado|hírlapáru- és írószerbolti eladó]]
 - [[szakuzleti-elado|szaküzleti eladó]]
-- [[italbolti-elado|italbolti eladó]]
 - [[dohanybolti-elado|dohánybolti eladó]]
+- [[italbolti-elado|italbolti eladó]]
 - [[hasznaltcikkbolti-elado|használtcikkbolti eladó]]

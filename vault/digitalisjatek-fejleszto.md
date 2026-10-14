@@ -32,7 +32,7 @@ lateral:
   - "[[mobilalkalmazas-fejleszto]]"
   - "[[ipari-mobilkeszulekek-szoftvereinek-fejlesztoje]]"
   - "[[webfejleszto]]"
-  - "[[junior-szoftverfejleszto]]"
+  - "[[medior-szoftverfejleszto]]"
 ---
 
 # Digitálisjáték-fejlesztő
@@ -73,4 +73,4 @@ A digitálisjáték-fejlesztők digitális játékokat programoznak, valósítan
 - [[mobilalkalmazas-fejleszto|mobilalkalmazás-fejlesztő]]
 - [[ipari-mobilkeszulekek-szoftvereinek-fejlesztoje|ipari mobilkészülékek szoftvereinek fejlesztője]]
 - [[webfejleszto|webfejlesztő]]
-- [[junior-szoftverfejleszto|Junior szoftverfejlesztő]]
+- [[medior-szoftverfejleszto|Medior szoftverfejlesztő]]

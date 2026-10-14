@@ -42,8 +42,8 @@ skills:
 lateral:
   - "[[sertestenyeszto]]"
   - "[[premesallat-tenyeszto]]"
-  - "[[juhtenyeszto]]"
   - "[[szarvasmarha-tenyeszto]]"
+  - "[[juhtenyeszto]]"
   - "[[mehesz]]"
   - "[[baromfitenyeszto]]"
 ---
@@ -96,7 +96,7 @@ A lótenyésztők feladata a termelési folyamatok felügyelete, és a lovak nap
 
 - [[sertestenyeszto|sertéstenyésztő]]
 - [[premesallat-tenyeszto|prémesállat-tenyésztő]]
-- [[juhtenyeszto|juhtenyésztő]]
 - [[szarvasmarha-tenyeszto|szarvasmarha-tenyésztő]]
+- [[juhtenyeszto|juhtenyésztő]]
 - [[mehesz|méhész]]
 - [[baromfitenyeszto|baromfitenyésztő]]

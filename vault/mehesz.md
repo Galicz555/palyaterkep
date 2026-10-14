@@ -37,8 +37,8 @@ skills:
 lateral:
   - "[[premesallat-tenyeszto]]"
   - "[[sertestenyeszto]]"
-  - "[[szarvasmarha-tenyeszto]]"
   - "[[juhtenyeszto]]"
+  - "[[szarvasmarha-tenyeszto]]"
   - "[[lotenyeszto]]"
   - "[[kutyatenyeszto]]"
 ---
@@ -86,7 +86,7 @@ A méhészek feladata a termelési folyamatok felügyelete, és a méhek napi sz
 
 - [[premesallat-tenyeszto|prémesállat-tenyésztő]]
 - [[sertestenyeszto|sertéstenyésztő]]
-- [[szarvasmarha-tenyeszto|szarvasmarha-tenyésztő]]
 - [[juhtenyeszto|juhtenyésztő]]
+- [[szarvasmarha-tenyeszto|szarvasmarha-tenyésztő]]
 - [[lotenyeszto|lótenyésztő]]
 - [[kutyatenyeszto|kutyatenyésztő]]
