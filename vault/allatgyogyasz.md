@@ -30,8 +30,8 @@ skills:
 lateral:
   - "[[alternativ-allatterapeuta]]"
   - "[[allat-csontkovacs]]"
-  - "[[allat-hidroterapeuta]]"
   - "[[allat-fizikoterapeuta]]"
+  - "[[allat-hidroterapeuta]]"
   - "[[allat-manualterapeuta]]"
   - "[[allatmasszor]]"
 ---
@@ -72,7 +72,7 @@ Az állatgyógyász az állatorvosi diagnózist vagy beutalást követően terá
 
 - [[alternativ-allatterapeuta|alternatív állatterapeuta]]
 - [[allat-csontkovacs|állat csontkovács]]
-- [[allat-hidroterapeuta|állat hidroterapeuta]]
 - [[allat-fizikoterapeuta|állat fizikoterapeuta]]
+- [[allat-hidroterapeuta|állat hidroterapeuta]]
 - [[allat-manualterapeuta|állat manuálterapeuta]]
 - [[allatmasszor|állatmasszőr]]

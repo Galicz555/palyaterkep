@@ -31,7 +31,7 @@ skills:
   - http://data.europa.eu/esco/skill/df0612db-366c-4ff5-b106-40b9e385195c
   - http://data.europa.eu/esco/skill/f2c63b7a-ed6c-4890-9f8c-7685d172624c
 lateral:
-  - "[[technologiai-igazgato]]"
+  - "[[technologiai-igazgato-cto]]"
   - "[[ikt-biztonsagi-igazgato]]"
 ---
 
@@ -72,5 +72,5 @@ Az informatikai igazgatók meghatározzák és megvalósítják az információs
 
 ## Váltások
 
-- [[technologiai-igazgato|technológiai igazgató]]
+- [[technologiai-igazgato-cto|Technológiai igazgató (CTO)]]
 - [[ikt-biztonsagi-igazgato|IKT biztonsági igazgató]]

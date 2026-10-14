@@ -26,7 +26,6 @@ skills:
   - http://data.europa.eu/esco/skill/f88cb903-83a2-44a3-98a8-e72180ec37a9
   - http://data.europa.eu/esco/skill/fa465db3-56e8-4b5d-a781-e2a313a4ed2d
 lateral:
-  - "[[szoftvermenedzser]]"
   - "[[infokommunikacios-uzletfejlesztesi-menedzser]]"
 ---
 
@@ -62,5 +61,4 @@ Az IKT kutatásvezetők megtervezik, irányítják és felügyelik a kutatási t
 
 ## Váltások
 
-- [[szoftvermenedzser|szoftvermenedzser]]
 - [[infokommunikacios-uzletfejlesztesi-menedzser|infokommunikációs üzletfejlesztési menedzser]]

@@ -24,7 +24,6 @@ skills:
   - http://data.europa.eu/esco/skill/fcb7ca53-130f-451e-b29f-b0aa6d41ea86
 lateral:
   - "[[3d-modellezo]]"
-  - "[[digitalisjatek-fejleszto]]"
 ---
 
 # 3D animátor
@@ -57,4 +56,3 @@ A 3D animátorok tárgyak, virtuális környezetek, kinézetek, karakterek 3D-s 
 ## Váltások
 
 - [[3d-modellezo|3D modellező]]
-- [[digitalisjatek-fejleszto|digitálisjáték-fejlesztő]]

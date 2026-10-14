@@ -28,8 +28,8 @@ lateral:
   - "[[digitalis-keszsegfejleszto-tanar]]"
   - "[[repulesoktato]]"
   - "[[kotottpalyas-jarmuvek-vezetesenek-oktatoja]]"
-  - "[[turisztikai-szakoktato]]"
   - "[[egyetemi-tanarseged]]"
+  - "[[turisztikai-szakoktato]]"
 ---
 
 # Vállalati tréner
@@ -66,5 +66,5 @@ A vállalati trénerek oktatják a társaságok alkalmazottait, illetve útmutat
 - [[digitalis-keszsegfejleszto-tanar|digitális készségfejlesztő tanár]]
 - [[repulesoktato|repülésoktató]]
 - [[kotottpalyas-jarmuvek-vezetesenek-oktatoja|kötöttpályás járművek vezetésének oktatója]]
-- [[turisztikai-szakoktato|turisztikai szakoktató]]
 - [[egyetemi-tanarseged|egyetemi tanársegéd]]
+- [[turisztikai-szakoktato|turisztikai szakoktató]]

@@ -57,10 +57,9 @@ skills:
 lateral:
   - "[[kiberbiztonsagi-kockazatkezelo]]"
   - "[[ikt-katasztrofaelharitas-menedzser]]"
-  - "[[technologiai-igazgato]]"
   - "[[informatikai-igazgato]]"
-  - "[[megfelelesi-es-informaciobiztonsagi-igazgato]]"
   - "[[ikt-audit-menedzser]]"
+  - "[[megfelelesi-es-informaciobiztonsagi-igazgato]]"
 ---
 
 # IKT biztonsági igazgató
@@ -126,7 +125,6 @@ A vezető IKT biztonsági tisztviselők védik a céginformációkat és a munka
 
 - [[kiberbiztonsagi-kockazatkezelo|kiberbiztonsági kockázatkezelő]]
 - [[ikt-katasztrofaelharitas-menedzser|IKT katasztrófaelhárítás menedzser]]
-- [[technologiai-igazgato|technológiai igazgató]]
 - [[informatikai-igazgato|informatikai igazgató]]
-- [[megfelelesi-es-informaciobiztonsagi-igazgato|megfelelési és információbiztonsági igazgató]]
 - [[ikt-audit-menedzser|IKT audit menedzser]]
+- [[megfelelesi-es-informaciobiztonsagi-igazgato|megfelelési és információbiztonsági igazgató]]

@@ -25,8 +25,8 @@ skills:
   - http://data.europa.eu/esco/skill/eb8babfb-ab91-4937-a032-6a79f82e9b7f
 lateral:
   - "[[koltsegvetesi-vezeto]]"
-  - "[[penzugyi-vezeto]]"
   - "[[penzugyi-ellenor]]"
+  - "[[penzugyi-vezeto]]"
   - "[[szamviteli-vezeto]]"
   - "[[penzugyi-kockazatkezelo]]"
   - "[[kockazatitoke-befekteto]]"
@@ -63,8 +63,8 @@ A vállalati pénzügyi vezetők határozzák meg és felügyelik egy vállalat 
 ## Váltások
 
 - [[koltsegvetesi-vezeto|költségvetési vezető]]
-- [[penzugyi-vezeto|pénzügyi vezető]]
 - [[penzugyi-ellenor|pénzügyi ellenőr]]
+- [[penzugyi-vezeto|pénzügyi vezető]]
 - [[szamviteli-vezeto|számviteli vezető]]
 - [[penzugyi-kockazatkezelo|pénzügyi kockázatkezelő]]
 - [[kockazatitoke-befekteto|kockázatitőke-befektető]]

@@ -22,8 +22,8 @@ skills:
   - http://data.europa.eu/esco/skill/fbe6232a-e2b2-4830-a5e6-ed6415f01e85
 lateral:
   - "[[kulturpolitikai-referens]]"
-  - "[[kozossegfejlesztesi-szakerto]]"
   - "[[szocialpolitikai-referens]]"
+  - "[[kozossegfejlesztesi-szakerto]]"
   - "[[szocialpolitikai-szakerto]]"
   - "[[sportpolitikai-tisztviselo]]"
   - "[[polgarmester]]"
@@ -57,8 +57,8 @@ A társadalombiztosítási adminisztrátorok irányítják és fejlesztik a korm
 ## Váltások
 
 - [[kulturpolitikai-referens|kultúrpolitikai referens]]
-- [[kozossegfejlesztesi-szakerto|közösségfejlesztési szakértő]]
 - [[szocialpolitikai-referens|szociálpolitikai referens]]
+- [[kozossegfejlesztesi-szakerto|közösségfejlesztési szakértő]]
 - [[szocialpolitikai-szakerto|szociálpolitikai szakértő]]
 - [[sportpolitikai-tisztviselo|sportpolitikai tisztviselő]]
 - [[polgarmester|polgármester]]

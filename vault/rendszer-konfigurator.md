@@ -25,7 +25,6 @@ skills:
 lateral:
   - "[[ikt-halozatmernok]]"
   - "[[ikt-rendszeradminisztrator]]"
-  - "[[ikt-rendszerelemzo]]"
 ---
 
 # Rendszer konfigurátor
@@ -59,4 +58,3 @@ A rendszerkonfigurátorok számítógépes rendszereket szabnak a szervezet és 
 
 - [[ikt-halozatmernok|IKT hálózatmérnök]]
 - [[ikt-rendszeradminisztrator|IKT rendszeradminisztrátor]]
-- [[ikt-rendszerelemzo|IKT rendszerelemző]]

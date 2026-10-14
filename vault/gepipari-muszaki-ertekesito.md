@@ -41,7 +41,7 @@ skills:
   - http://data.europa.eu/esco/skill/f4d3a8ff-2db1-4015-aa28-d4564afef3fd
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
-  - "[[epuletgepeszeti-muszaki-ertekesito]]"
+  - "[[irodatechnikai-muszaki-ertekesito]]"
   - "[[ertekesitesi-ugyintezo]]"
   - "[[hirdetesszervezo]]"
   - "[[vevoszolgalati-technikus]]"
@@ -96,7 +96,7 @@ A gépipari műszaki értékesítők a vállalkozásban készült árut értéke
 
 ## Váltások
 
-- [[epuletgepeszeti-muszaki-ertekesito|épületgépészeti műszaki értékesítő]]
+- [[irodatechnikai-muszaki-ertekesito|irodatechnikai műszaki értékesítő]]
 - [[ertekesitesi-ugyintezo|értékesítési ügyintéző]]
 - [[hirdetesszervezo|hirdetésszervező]]
 - [[vevoszolgalati-technikus|vevőszolgálati technikus]]

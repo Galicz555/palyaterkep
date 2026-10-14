@@ -42,8 +42,8 @@ skills:
   - http://data.europa.eu/esco/skill/fd85fb40-02d8-4f10-a287-6277126e16f5
 lateral:
   - "[[csemegeuzleti-elado]]"
-  - "[[dohanybolti-elado]]"
   - "[[italbolti-elado]]"
+  - "[[dohanybolti-elado]]"
   - "[[hus-es-hentesaru-elado]]"
   - "[[edessegbolti-elado]]"
   - "[[halbolti-elado]]"
@@ -97,8 +97,8 @@ A pékbolti eladók pékárut és süteményeket értékesítenek szaküzletekbe
 ## Váltások
 
 - [[csemegeuzleti-elado|csemegeüzleti eladó]]
-- [[dohanybolti-elado|dohánybolti eladó]]
 - [[italbolti-elado|italbolti eladó]]
+- [[dohanybolti-elado|dohánybolti eladó]]
 - [[hus-es-hentesaru-elado|hús- és hentesáru-eladó]]
 - [[edessegbolti-elado|édességbolti eladó]]
 - [[halbolti-elado|halbolti eladó]]

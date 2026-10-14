@@ -30,7 +30,6 @@ skills:
   - http://data.europa.eu/esco/skill/f7b5d916-52f0-4865-b6a6-e1a3b711cb5e
 lateral:
   - "[[ebusiness-menedzser]]"
-  - "[[szoftvermernok]]"
   - "[[infokommunikacios-uzletfejlesztesi-menedzser]]"
 ---
 
@@ -70,5 +69,4 @@ Az infokommunikációs üzleti elemzési menedzserek azonosítják azokat a ter�
 ## Váltások
 
 - [[ebusiness-menedzser|eBusiness menedzser]]
-- [[szoftvermernok|szoftvermérnök]]
 - [[infokommunikacios-uzletfejlesztesi-menedzser|infokommunikációs üzletfejlesztési menedzser]]

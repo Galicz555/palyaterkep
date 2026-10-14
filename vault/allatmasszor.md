@@ -32,8 +32,8 @@ skills:
 lateral:
   - "[[allatgyogyasz]]"
   - "[[allat-csontkovacs]]"
-  - "[[allat-hidroterapeuta]]"
   - "[[allat-fizikoterapeuta]]"
+  - "[[allat-hidroterapeuta]]"
   - "[[allat-manualterapeuta]]"
   - "[[alternativ-allatterapeuta]]"
 ---
@@ -76,7 +76,7 @@ Az állatmasszőr az állatorvosi diagnózis, illetve beutaló után a lágyszö
 
 - [[allatgyogyasz|állatgyógyász]]
 - [[allat-csontkovacs|állat csontkovács]]
-- [[allat-hidroterapeuta|állat hidroterapeuta]]
 - [[allat-fizikoterapeuta|állat fizikoterapeuta]]
+- [[allat-hidroterapeuta|állat hidroterapeuta]]
 - [[allat-manualterapeuta|állat manuálterapeuta]]
 - [[alternativ-allatterapeuta|alternatív állatterapeuta]]

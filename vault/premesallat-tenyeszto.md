@@ -38,8 +38,8 @@ skills:
   - http://data.europa.eu/esco/skill/f842b607-730e-4a01-b27d-12e3e4535975
 lateral:
   - "[[sertestenyeszto]]"
-  - "[[juhtenyeszto]]"
   - "[[szarvasmarha-tenyeszto]]"
+  - "[[juhtenyeszto]]"
   - "[[mehesz]]"
   - "[[lotenyeszto]]"
   - "[[kutyatenyeszto]]"
@@ -89,8 +89,8 @@ A prémesállat-tenyésztők feladata a termelési folyamatok felügyelete, és 
 ## Váltások
 
 - [[sertestenyeszto|sertéstenyésztő]]
-- [[juhtenyeszto|juhtenyésztő]]
 - [[szarvasmarha-tenyeszto|szarvasmarha-tenyésztő]]
+- [[juhtenyeszto|juhtenyésztő]]
 - [[mehesz|méhész]]
 - [[lotenyeszto|lótenyésztő]]
 - [[kutyatenyeszto|kutyatenyésztő]]

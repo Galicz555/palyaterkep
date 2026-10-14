@@ -35,9 +35,9 @@ lateral:
   - "[[webtartalom-menedzser]]"
   - "[[internetes-rendszergazda]]"
   - "[[felhasznaloi-felulet-tervezo]]"
-  - "[[webfejleszto]]"
   - "[[videomuvesz]]"
   - "[[digitalisjatek-tervezo]]"
+  - "[[oktatastervezo]]"
 ---
 
 # Digitális média tervező
@@ -81,6 +81,6 @@ A digitális média tervezői grafika, animációk, hang, szöveg és videó ké
 - [[webtartalom-menedzser|webtartalom-menedzser]]
 - [[internetes-rendszergazda|internetes rendszergazda]]
 - [[felhasznaloi-felulet-tervezo|felhasználói felület tervező]]
-- [[webfejleszto|webfejlesztő]]
 - [[videomuvesz|videoművész]]
 - [[digitalisjatek-tervezo|digitálisjáték-tervező]]
+- [[oktatastervezo|oktatástervező]]

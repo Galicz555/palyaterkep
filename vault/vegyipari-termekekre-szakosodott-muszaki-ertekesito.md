@@ -42,7 +42,7 @@ lateral:
   - "[[mezogazdasagi-gepekre-szakosodott-muszaki-ertekesito]]"
   - "[[textilipari-gepekre-szakosodott-muszaki-ertekesito]]"
   - "[[elektronikai-es-telekommunikacios-eszkozokre-szakosodott-muszaki-ertekesito]]"
-  - "[[irodatechnikai-muszaki-ertekesito]]"
+  - "[[epuletgepeszeti-muszaki-ertekesito]]"
 ---
 
 # Vegyipari termékekre szakosodott műszaki értékesítő
@@ -93,4 +93,4 @@ A vegyipari termékekre szakosodott műszaki értékesítők a vállalkozásban 
 - [[mezogazdasagi-gepekre-szakosodott-muszaki-ertekesito|mezőgazdasági gépekre szakosodott műszaki értékesítő]]
 - [[textilipari-gepekre-szakosodott-muszaki-ertekesito|textilipari gépekre szakosodott műszaki értékesítő]]
 - [[elektronikai-es-telekommunikacios-eszkozokre-szakosodott-muszaki-ertekesito|elektronikai és telekommunikációs eszközökre szakosodott műszaki értékesítő]]
-- [[irodatechnikai-muszaki-ertekesito|irodatechnikai műszaki értékesítő]]
+- [[epuletgepeszeti-muszaki-ertekesito|épületgépészeti műszaki értékesítő]]

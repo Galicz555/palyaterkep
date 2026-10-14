@@ -39,7 +39,6 @@ lateral:
   - "[[szoftverelemzo]]"
   - "[[ikt-uzleti-elemzo]]"
   - "[[ikt-tanacsado]]"
-  - "[[rendszer-konfigurator]]"
 ---
 
 # IKT rendszerelemző
@@ -87,4 +86,3 @@ Az IKT rendszerelemzők határozzák meg végfelhasználói követelmények kiel
 - [[szoftverelemzo|szoftverelemző]]
 - [[ikt-uzleti-elemzo|IKT üzleti elemző]]
 - [[ikt-tanacsado|IKT tanácsadó]]
-- [[rendszer-konfigurator|rendszer konfigurátor]]

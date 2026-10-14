@@ -48,6 +48,7 @@ lateral:
   - "[[webtartalom-menedzser]]"
   - "[[muszaki-iro]]"
   - "[[e-learning-szakerto]]"
+  - "[[digitalis-media-tervezo]]"
 ---
 
 # Oktatástervező
@@ -104,3 +105,4 @@ Az oktatástervezők oktatási segédanyagokat dolgoznak ki a multimédiás tech
 - [[webtartalom-menedzser|webtartalom-menedzser]]
 - [[muszaki-iro|műszaki író]]
 - [[e-learning-szakerto|e-learning szakértő]]
+- [[digitalis-media-tervezo|digitális média tervező]]

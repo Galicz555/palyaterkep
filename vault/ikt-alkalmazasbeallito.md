@@ -29,7 +29,7 @@ lateral:
   - "[[mobilalkalmazas-fejleszto]]"
   - "[[beagyazott-szoftver-fejleszto-mernok]]"
   - "[[ikt-alkalmazasfejleszto]]"
-  - "[[szoftverfejleszto]]"
+  - "[[ipari-mobilkeszulekek-szoftvereinek-fejlesztoje]]"
   - "[[webfejleszto]]"
 ---
 
@@ -68,5 +68,5 @@ Az IKT alkalmazáskonfigurátorok felhasználói követelményeken és üzleti s
 - [[mobilalkalmazas-fejleszto|mobilalkalmazás-fejlesztő]]
 - [[beagyazott-szoftver-fejleszto-mernok|beágyazott szoftver fejlesztő mérnök]]
 - [[ikt-alkalmazasfejleszto|IKT alkalmazásfejlesztő]]
-- [[szoftverfejleszto|szoftverfejlesztő]]
+- [[ipari-mobilkeszulekek-szoftvereinek-fejlesztoje|ipari mobilkészülékek szoftvereinek fejlesztője]]
 - [[webfejleszto|webfejlesztő]]

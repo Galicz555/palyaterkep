@@ -21,8 +21,8 @@ skills:
 lateral:
   - "[[adjunktus]]"
   - "[[tutor]]"
-  - "[[digitalis-keszsegfejleszto-tanar]]"
   - "[[vallalati-trener]]"
+  - "[[digitalis-keszsegfejleszto-tanar]]"
   - "[[jelnyelvtanar]]"
 ---
 
@@ -53,6 +53,6 @@ Az egyetemi tanársegédek egyetemi hallgatók vagy friss diplomások, akik egy 
 
 - [[adjunktus|adjunktus]]
 - [[tutor|tutor]]
-- [[digitalis-keszsegfejleszto-tanar|digitális készségfejlesztő tanár]]
 - [[vallalati-trener|vállalati tréner]]
+- [[digitalis-keszsegfejleszto-tanar|digitális készségfejlesztő tanár]]
 - [[jelnyelvtanar|jelnyelvtanár]]

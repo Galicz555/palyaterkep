@@ -41,7 +41,7 @@ skills:
   - http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8
 lateral:
   - "[[hirdetesszervezo]]"
-  - "[[epuletgepeszeti-muszaki-ertekesito]]"
+  - "[[irodatechnikai-muszaki-ertekesito]]"
   - "[[gepipari-muszaki-ertekesito]]"
   - "[[vevoszolgalati-technikus]]"
   - "[[ertekesitesi-ugyfel-kapcsolattarto]]"
@@ -95,7 +95,7 @@ Az értékesítési ügyintézők képviselik a társaságot az értékesítésb
 ## Váltások
 
 - [[hirdetesszervezo|hirdetésszervező]]
-- [[epuletgepeszeti-muszaki-ertekesito|épületgépészeti műszaki értékesítő]]
+- [[irodatechnikai-muszaki-ertekesito|irodatechnikai műszaki értékesítő]]
 - [[gepipari-muszaki-ertekesito|gépipari műszaki értékesítő]]
 - [[vevoszolgalati-technikus|vevőszolgálati technikus]]
 - [[ertekesitesi-ugyfel-kapcsolattarto|értékesítési ügyfél-kapcsolattartó]]

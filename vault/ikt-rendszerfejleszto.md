@@ -33,7 +33,7 @@ lateral:
   - "[[ikt-alkalmazasfejleszto]]"
   - "[[beagyazott-szoftver-fejleszto-mernok]]"
   - "[[ipari-mobilkeszulekek-szoftvereinek-fejlesztoje]]"
-  - "[[szoftverfejleszto]]"
+  - "[[webfejleszto]]"
 ---
 
 # IKT rendszerfejlesztő
@@ -75,4 +75,4 @@ Az IKT-rendszerfejlesztők fenntartják, ellenőrzik és javítják a szervezeti
 - [[ikt-alkalmazasfejleszto|IKT alkalmazásfejlesztő]]
 - [[beagyazott-szoftver-fejleszto-mernok|beágyazott szoftver fejlesztő mérnök]]
 - [[ipari-mobilkeszulekek-szoftvereinek-fejlesztoje|ipari mobilkészülékek szoftvereinek fejlesztője]]
-- [[szoftverfejleszto|szoftverfejlesztő]]
+- [[webfejleszto|webfejlesztő]]

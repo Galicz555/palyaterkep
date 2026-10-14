@@ -31,8 +31,8 @@ skills:
 lateral:
   - "[[ipari-gep-karbantartoja-javitoja]]"
   - "[[folyamattechnikus]]"
-  - "[[pepkeszito]]"
   - "[[ipari-technikus]]"
+  - "[[pepkeszito]]"
   - "[[gepolajozo]]"
   - "[[iparigep-osszeszerelo]]"
 ---
@@ -74,7 +74,7 @@ A karbantartási mérnökök munkája a berendezések, az eljárások, a gépek 
 
 - [[ipari-gep-karbantartoja-javitoja|ipari gép karbantartója, javítója]]
 - [[folyamattechnikus|folyamattechnikus]]
-- [[pepkeszito|pépkészítő]]
 - [[ipari-technikus|ipari technikus]]
+- [[pepkeszito|pépkészítő]]
 - [[gepolajozo|gépolajozó]]
 - [[iparigep-osszeszerelo|iparigép-összeszerelő]]

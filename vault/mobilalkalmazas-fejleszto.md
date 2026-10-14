@@ -31,7 +31,7 @@ lateral:
   - "[[ikt-rendszerfejleszto]]"
   - "[[beagyazott-szoftver-fejleszto-mernok]]"
   - "[[ikt-alkalmazasbeallito]]"
-  - "[[szoftverfejleszto]]"
+  - "[[digitalisjatek-fejleszto]]"
 ---
 
 # Mobilalkalmazás-fejlesztő
@@ -71,4 +71,4 @@ A mobilalkalmazás-fejlesztőik mobil eszközökön futó alkalmazásszoftvereke
 - [[ikt-rendszerfejleszto|IKT rendszerfejlesztő]]
 - [[beagyazott-szoftver-fejleszto-mernok|beágyazott szoftver fejlesztő mérnök]]
 - [[ikt-alkalmazasbeallito|IKT alkalmazásbeállító]]
-- [[szoftverfejleszto|szoftverfejlesztő]]
+- [[digitalisjatek-fejleszto|digitálisjáték-fejlesztő]]
