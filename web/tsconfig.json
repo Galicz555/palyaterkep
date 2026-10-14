@@ -7,8 +7,9 @@
     "noImplicitOverride": true,
     "noFallthroughCasesInSwitch": true,
     "allowImportingTsExtensions": true,
+    "types": ["node", "$app/types"],
     "noEmit": true,
     "skipLibCheck": true
   },
-  "include": ["src", "test", "*.ts"]
+  "include": ["src", "test", "scripts", "*.ts"]
 }
