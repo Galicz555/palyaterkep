@@ -20,24 +20,26 @@ export const paintedRgb = ([r, g, b]: readonly number[]): string =>
 /**
  * One colour per branch, in branch-table order, as it should look on the map's dark ground. Picked
  * for distance, not for a hue wheel: five of the eight layouts tell branches apart by colour alone,
- * so any two sit at least 0.10 apart in OKLab (the old even-hue wheel had pairs 0.018 apart, about
- * the same colour once drawn), and as far from the three state colours. Lightness stays within
- * 0.66–0.82 so every branch reads on the dark ground and none looks like a pale no-data point.
+ * so any two sit at least 0.09 apart in OKLab (the old even-hue wheel had pairs 0.018 apart, about
+ * the same colour once drawn). Saturated, as the map's glow wants (mean OKLab chroma 0.20), which
+ * is what costs the distance: 13 vivid colours share the wheel with the three state colours, and
+ * transport's cyan sits 0.067 from them; a CV result greys every unmarked role, so the two never
+ * meet on the map.
  */
 const BRANCH_SHOWN = [
-  "#35dceb", // it
-  "#947deb", // engineering
-  "#80a108", // agriculture
-  "#b28b45", // industry
-  "#e16941", // construction
-  "#30a5a8", // transport
-  "#fe7b90", // trade
-  "#feac9e", // hospitality
-  "#d664a3", // health-social
-  "#b1d454", // education
-  "#e7a9fb", // culture
-  "#aba0e5", // public
-  "#a6b368", // business
+  "#2f7bff", // it
+  "#8a5cff", // engineering
+  "#4fc21a", // agriculture
+  "#ffe100", // industry
+  "#ff5a1f", // construction
+  "#00c2d1", // transport
+  "#ff2e63", // trade
+  "#ff6fae", // hospitality
+  "#e0218a", // health-social
+  "#a3e000", // education
+  "#c14bff", // culture
+  "#b8b0ff", // public
+  "#8fa000", // business
 ] as const;
 
 const shown = (branch: number): string => BRANCH_SHOWN[branch % BRANCH_SHOWN.length]!;
