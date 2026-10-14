@@ -3,6 +3,11 @@
 // role, a wide soft haze around the body.
 
 import { AdditiveBlending } from "three";
+import { DEMAND_LINEAR } from "../demand.ts";
+
+/** The arms of a three-armed star: the longest reaches this many body radii beyond the body. */
+const ARM_REACH = 4;
+const vec3 = (c: readonly number[]) => `vec3(${c.map((x) => x.toFixed(4)).join(", ")})`;
 
 /** The haze of a management role: a fixed size on the map, whatever size its node has. */
 const HAZE_DIAMETER = 6;
@@ -12,20 +17,22 @@ const HAZE_PEAK = 0.3;
 const HAZE_FAR = 0.15;
 
 export const NODE_VERT = /* glsl */ `
-attribute vec3 aTo; attribute float aSize; attribute float aSizeFrom; attribute float aAlpha; attribute float aShape; attribute float aMark; attribute float aManage; attribute vec3 aColor; attribute vec3 aColorFrom;
+attribute vec3 aTo; attribute float aSize; attribute float aSizeFrom; attribute float aAlpha; attribute float aShape; attribute float aMark; attribute float aManage; attribute vec3 aColor; attribute vec3 aColorFrom; attribute vec3 aArms; attribute vec3 aArmsFrom;
 uniform float uMorph; uniform float uScale; uniform float uPR; uniform float uNear; uniform float uSpan; uniform float uMinPx;
-varying vec3 vColor; varying float vAlpha; varying float vShape; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying float vUnit;
+varying vec3 vColor; varying float vAlpha; varying float vShape; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying float vUnit; varying vec3 vArms;
 #define BODY 0.6
 void main() {
   vec4 mv = modelViewMatrix * vec4(mix(position, aTo, uMorph), 1.0);
   float depth = clamp((-mv.z - uNear) / uSpan, 0.0, 1.0);
   vAlpha = aAlpha * mix(1.0, 0.72, depth);
-  vColor = mix(aColorFrom, aColor, uMorph); vShape = aShape; vMark = aMark; vManage = aManage;
+  vColor = mix(aColorFrom, aColor, uMorph); vArms = mix(aArmsFrom, aArms, uMorph); vShape = aShape; vMark = aMark; vManage = aManage;
   // The body's sprite (its size and colour morph with the points), and the pixels one map
   // unit covers here.
   float px = min(max(mix(aSizeFrom, aSize, uMorph) * uScale / -mv.z, uMinPx) * uPR / BODY, 240.0);
   float unit = uScale / -mv.z * uPR;
-  float size = min(max(px, aManage * ${HAZE_DIAMETER.toFixed(1)} * unit), 600.0);
+  // A star's sprite is wide enough for its longest arm.
+  float reach = px * BODY * 1.1 * (1.0 + ${ARM_REACH.toFixed(1)} * max(vArms.x, max(vArms.y, vArms.z)));
+  float size = min(max(max(px, reach), aManage * ${HAZE_DIAMETER.toFixed(1)} * unit), 600.0);
   vPx = px; vSize = size; vUnit = unit;
   gl_PointSize = size;
   gl_Position = projectionMatrix * mv;
@@ -33,8 +40,25 @@ void main() {
 
 export const NODE_FRAG = /* glsl */ `
 precision highp float;
-varying vec3 vColor; varying float vAlpha; varying float vShape; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying float vUnit;
+varying vec3 vColor; varying float vAlpha; varying float vShape; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying float vUnit; varying vec3 vArms;
 #define R 0.6
+// Where an arm points on the screen, and its colour: the triangle of the demands, physical lower
+// left, mental on top, emotional lower right, as on the disc's own triangle.
+const vec2 DIR0 = vec2(-0.8660, -0.5);
+const vec2 DIR1 = vec2(0.0, 1.0);
+const vec2 DIR2 = vec2(0.8660, -0.5);
+const vec3 ARM0 = ${vec3(DEMAND_LINEAR[0]!)};
+const vec3 ARM1 = ${vec3(DEMAND_LINEAR[1]!)};
+const vec3 ARM2 = ${vec3(DEMAND_LINEAR[2]!)};
+// One arm, a tapering line from the centre; p is in the units of l below, length a in 0..1.
+float arm(vec2 p, vec2 d, float a) {
+  if (a < 0.001) return 0.0;
+  float tip = R * (1.0 + ${ARM_REACH.toFixed(1)} * a);
+  float t = dot(p, d);
+  float s = abs(p.x * d.y - p.y * d.x);
+  float w = max(0.17 * (1.0 - t / tip) + 0.03, 1.4 / vPx);
+  return (1.0 - smoothstep(w * 0.55, w, s)) * smoothstep(0.0, 0.12, t) * (1.0 - smoothstep(tip * 0.75, tip, t));
+}
 void main() {
   // l is the distance from the centre in units of an ordinary sprite's half width, so the body and
   // the state halo look the same whether or not the sprite is widened for a haze.
@@ -58,8 +82,17 @@ void main() {
   float haze = vManage * ${HAZE_PEAK.toFixed(2)} * zoomed * exp(-reach * reach / (2.0 * ${(HAZE_SIGMA * HAZE_SIGMA).toFixed(4)}));
   vec3 col = mix(vColor, vec3(1.0), core * 0.55);
   float a = body + halo + core * 0.6 + haze;
+  // The arms of a three-armed star, dimmed where a state mark has to read; each in its own colour.
+  vec2 p = vec2(q.x, -q.y) * vSize / vPx;
+  float calm = 1.0 - 0.75 * vMark;
+  float l0 = arm(p, DIR0, vArms.x) * calm;
+  float l1 = arm(p, DIR1, vArms.y) * calm;
+  float l2 = arm(p, DIR2, vArms.z) * calm;
+  float lines = l0 + l1 + l2;
+  vec3 all = (col * a + ARM0 * l0 + ARM1 * l1 + ARM2 * l2) / max(a + lines, 0.0001);
+  a += lines;
   a *= 1.0 - smoothstep(0.82, 1.0, length(q));
-  gl_FragColor = vec4(col, clamp(a, 0.0, 1.0) * vAlpha);
+  gl_FragColor = vec4(all, clamp(a, 0.0, 1.0) * vAlpha);
 }`;
 
 export const EDGE_VERT = /* glsl */ `

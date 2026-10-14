@@ -158,6 +158,8 @@ export function createMap(
   const aSize = new BufferAttribute(new Float32Array(N), 1);
   const aSizeFrom = new BufferAttribute(new Float32Array(N), 1);
   const aColorFrom = new BufferAttribute(new Float32Array(N * 3), 3);
+  const aArms = new BufferAttribute(new Float32Array(N * 3), 3);
+  const aArmsFrom = new BufferAttribute(new Float32Array(N * 3), 3);
   const aAlpha = new BufferAttribute(new Float32Array(N), 1);
   const aMark = new BufferAttribute(new Float32Array(N), 1);
   const aShape = new BufferAttribute(new Float32Array(N), 1);
@@ -170,6 +172,15 @@ export function createMap(
   nodeGeo.setAttribute("aSize", aSize);
   nodeGeo.setAttribute("aSizeFrom", aSizeFrom);
   nodeGeo.setAttribute("aColorFrom", aColorFrom);
+  nodeGeo.setAttribute("aArms", aArms);
+  nodeGeo.setAttribute("aArmsFrom", aArmsFrom);
+  /** The three arms of every role's star, where the layout draws stars: else none. */
+  const growArms = (a: Arrangement) => {
+    (aArms.array as Float32Array).set(a.arms ?? new Float32Array(N * 3));
+    aArms.needsUpdate = true;
+  };
+  growArms(first);
+  (aArmsFrom.array as Float32Array).set(aArms.array);
   nodeGeo.setAttribute("aAlpha", aAlpha);
   nodeGeo.setAttribute("aMark", aMark);
   nodeGeo.setAttribute("aShape", aShape);
@@ -502,7 +513,8 @@ export function createMap(
     // and colours go from what they show now.
     (aSizeFrom.array as Float32Array).set(aSize.array);
     (aColorFrom.array as Float32Array).set(aColor.array);
-    aSizeFrom.needsUpdate = aColorFrom.needsUpdate = true;
+    (aArmsFrom.array as Float32Array).set(aArms.array);
+    aSizeFrom.needsUpdate = aColorFrom.needsUpdate = aArmsFrom.needsUpdate = true;
     (nodeFrom.array as Float32Array).set(cur);
     (nodeTo.array as Float32Array).set(next.positions);
     nodeFrom.needsUpdate = nodeTo.needsUpdate = true;
@@ -512,6 +524,7 @@ export function createMap(
     leaving = frame;
     arr = next;
     recolour(next);
+    growArms(next);
     paint();
     frame = buildFrame(next.frame, data, host);
     if (reducedMotion()) {

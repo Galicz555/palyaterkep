@@ -154,6 +154,24 @@
             <i class="dot" style:background={paintedRgb(DEMAND_LINEAR[k]!)}></i>{demand.label}
           </li>
         {/each}
+        {#if layout === "K"}
+          <li>
+            <svg class="glyph" viewBox="-12 -12 24 24" aria-hidden="true">
+              {#each DEMANDS as demand, k (demand.key)}
+                <line
+                  x1="0"
+                  y1="0"
+                  x2={[-9, 0, 9][k]}
+                  y2={[5, -10, 5][k]}
+                  stroke={paintedRgb(DEMAND_LINEAR[k]!)}
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                />
+              {/each}
+            </svg>
+            egy szerep: a kar hossza a terhelés
+          </li>
+        {/if}
       </ul>
     {:else if !info.byBranch}
       <ul class="key branches" aria-label="Az ágak színei">
@@ -377,6 +395,12 @@
   /* A role without demand data: pale and grey. */
   .key .ghost {
     background: color-mix(in srgb, var(--stage-soft) 55%, transparent);
+  }
+  .key .glyph {
+    width: 1.1rem;
+    height: 1.1rem;
+    vertical-align: middle;
+    margin-right: 0.2rem;
   }
   .key.branches {
     border-top: 0;

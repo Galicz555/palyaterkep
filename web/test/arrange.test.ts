@@ -219,9 +219,21 @@ describe("layout J, the whole sphere", () => {
   });
 });
 
+describe("layout K, the three-armed stars", () => {
+  const star = place("K");
+  const disc = place("G");
+  it("stands on the same flat disc as G, and gives every role arms equal to its demands", () => {
+    expect(star.positions).toEqual(disc.positions);
+    data.roles.forEach((r, i) => {
+      const arms = [0, 1, 2].map((k) => star.arms![i * 3 + k]!);
+      arms.forEach((a, k) => expect(a).toBeCloseTo(r.demands?.[k] ?? 0, 5));
+    });
+  });
+});
+
 describe("every layout", () => {
   it("has finite positions, a camera that has something to show and a size per role", () => {
-    for (const id of ["A", "B", "C", "D", "F", "G", "J"] as const) {
+    for (const id of ["A", "B", "C", "D", "F", "G", "J", "K"] as const) {
       const arrangement = place(id);
       expect(arrangement.positions.every(Number.isFinite)).toBe(true);
       expect(arrangement.home.fit[0]).toBeGreaterThan(0);

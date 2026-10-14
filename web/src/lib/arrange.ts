@@ -85,6 +85,8 @@ export interface Arrangement {
   sizes: Float32Array | null;
   /** Linear r, g, b of every role where the layout paints by something other than the branch. */
   colors?: Float32Array;
+  /** The three arms of every role's star, physical, mental, emotional, each 0 to 1; zero without data. */
+  arms?: Float32Array;
   /** How opaque a node is: where a layout packs the roles close, they are fainter, to stay apart. */
   alpha: number;
 }
@@ -460,6 +462,29 @@ function nebula(data: MapData): Arrangement {
   };
 }
 
+/** A star's body is small, so its arms can be long without hiding the neighbours. */
+const STAR_BODY = 0.6;
+/** The neutral, pale body of a star: the colours are the arms'. */
+const STAR_COLOR: [number, number, number] = [0.62, 0.68, 0.8];
+
+/** The disc of layout B, flat, with a three-armed star at every point. */
+function stars(id: LayoutId, plan: Layout, data: MapData): Arrangement {
+  const { roles } = data;
+  const arms = new Float32Array(roles.length * 3);
+  const colors = new Float32Array(roles.length * 3);
+  roles.forEach((role, i) => {
+    if (role.demands) arms.set(role.demands, i * 3);
+    colors.set(STAR_COLOR, i * 3);
+  });
+  return {
+    ...disc(id, plan, data),
+    colors,
+    arms,
+    sizes: new Float32Array(roles.length).fill(STAR_BODY),
+    alpha: 0.55,
+  };
+}
+
 /** The disc is worked out once and shared by the layouts that stand on it. */
 export function arranger(data: MapData): (id: LayoutId, axis?: number) => Arrangement {
   let plan: Layout | undefined;
@@ -479,6 +504,8 @@ export function arranger(data: MapData): (id: LayoutId, axis?: number) => Arrang
         return nebula(data);
       case "J":
         return globe(data);
+      case "K":
+        return stars(id, plan, data);
       case "G":
         return { ...disc(id, plan, data), colors: demandColors(data) };
     }
