@@ -246,6 +246,30 @@ describe("placeCv", () => {
     expect(reachable.map((r) => r.role)).toEqual(["analyst", "dev-lead"]);
   });
 
+  it("never lists a rung below a held role, even by a lateral edge from another held role", () => {
+    // A senior developer who was once a web developer: web's lateral edge leads to the junior rung.
+    const rung = (level: number, progression: string[]) =>
+      role({ occupation: OCC + "dev", curated: true, level, skills: skills("code"), progression });
+    const ladder = buildGraph(
+      new Map<string, Role>([
+        ["junior", rung(1, ["[[medior]]"])],
+        ["medior", rung(2, ["[[senior]]"])],
+        ["senior", rung(3, [])],
+        [
+          "web",
+          role({
+            occupation: OCC + "web",
+            level: 2,
+            skills: skills("code"),
+            lateral: ["[[junior]]"],
+          }),
+        ],
+      ]),
+    );
+    const { reachable } = placeCv(ladder, ["senior", "web"], new Set(), 0.99);
+    expect(reachable.map((r) => r.role)).toEqual([]);
+  });
+
   it("covers a role at exactly the threshold", () => {
     const { covered } = placeCv(graph, [], new Set(skills("test", "git", "report")));
     expect(covered).toContainEqual({ role: "tester", coverage: 0.6 });

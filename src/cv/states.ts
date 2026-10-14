@@ -132,8 +132,9 @@ export function heldRole(
 /**
  * Covered: roles not held whose skills the CV shows at or above the threshold. Reachable: roles one
  * edge from a held or covered role, neither themselves, with the skills the CV does not show. A
- * progression edge only counts outwards, to a higher level. Each reachable role is listed once,
- * from a held role before a covered one and by progression before lateral.
+ * progression edge only counts outwards, to a higher level, and rungs below a held role on its
+ * ladder are behind the person, so no edge makes them reachable. Each reachable role is listed
+ * once, from a held role before a covered one and by progression before lateral.
  */
 export function placeCv(
   graph: RoleGraph,
@@ -150,7 +151,20 @@ export function placeCv(
   }
   covered.sort((a, b) => b.coverage - a.coverage || (a.role < b.role ? -1 : 1));
 
-  const placed = new Set([...heldSet, ...covered.map((c) => c.role)]);
+  const behind = new Set<string>();
+  const below = [...held];
+  while (below.length > 0) {
+    const id = below.pop()!;
+    for (const { to, edge } of graph.edges.get(id) ?? []) {
+      const lower = graph.roles.get(to)!.level < graph.roles.get(id)!.level;
+      if (edge === "progression" && lower && !behind.has(to)) {
+        behind.add(to);
+        below.push(to);
+      }
+    }
+  }
+
+  const placed = new Set([...heldSet, ...covered.map((c) => c.role), ...behind]);
   const best = new Map<string, { from: string; edge: EdgeKind; rank: number }>();
   for (const [from, rankFrom] of [
     ...held.map((id) => [id, 0] as const),
