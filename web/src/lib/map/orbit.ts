@@ -58,6 +58,8 @@ export interface MapView {
   destroy(): void;
   /** Draws `frames` frames while turning the camera, waiting for the GPU after each. */
   benchmark(frames: number): Promise<BenchResult>;
+  /** Hides or shows the nodes, leaving the frame: for measuring what the nodes add to it. */
+  showNodes(on: boolean): void;
   /** Where role `index` is on the screen, in pixels inside the stage; null behind the camera. */
   where(index: number): [number, number] | null;
 }
@@ -839,6 +841,10 @@ export function createMap(
       flyTo({ ...now, dist: Math.min(MAX_DIST, Math.max(MIN_DIST, now.dist / factor)) });
     },
     resize,
+    showNodes(on) {
+      nodes.visible = on;
+      request();
+    },
     where(index) {
       ensureProjected();
       return sd[index]! < 0 ? null : [sx[index]!, sy[index]!];

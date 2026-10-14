@@ -129,6 +129,7 @@
   function onready(tools: {
     benchmark: (frames: number) => Promise<unknown>;
     where: (i: number) => unknown;
+    showNodes: (on: boolean) => void;
   }) {
     // Frame timings and roles' places on screen for the measurement script: ?teljesitmeny on the
     // address.
@@ -136,6 +137,7 @@
       const hooks = globalThis as Record<string, unknown>;
       hooks["__terkepBenchmark"] = tools.benchmark;
       hooks["__terkepWhere"] = (id: string) => tools.where(indexOf.get(id) ?? -1);
+      hooks["__terkepNodes"] = tools.showNodes;
     }
   }
 

@@ -25,8 +25,8 @@
     /** Branch to show, an index into `data.branches`. */
     focus: number | null;
     onselect: (id: string | null) => void;
-    /** Called once with the way to measure frames and to find a role on screen, when the map is up. */
-    onready?: (tools: Pick<MapView, "benchmark" | "where">) => void;
+    /** Called once with the ways to measure frames, to find a role on screen and to hide the nodes, when the map is up. */
+    onready?: (tools: Pick<MapView, "benchmark" | "where" | "showNodes">) => void;
   }
   let { data, marks, reach, pass, selected, layout, axis, focus, onselect, onready }: Props =
     $props();
@@ -64,7 +64,11 @@
       arrange = place;
       view = made;
       status = "ready";
-      onready?.({ benchmark: (frames) => made.benchmark(frames), where: (i) => made.where(i) });
+      onready?.({
+        benchmark: (frames) => made.benchmark(frames),
+        where: (i) => made.where(i),
+        showNodes: (on) => made.showNodes(on),
+      });
     } catch {
       status = "failed";
     }
