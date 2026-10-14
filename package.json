@@ -9,6 +9,7 @@
   },
   "scripts": {
     "esco": "node src/esco/ingest.ts",
+    "branches:review": "node src/branches/review.ts",
     "test": "vitest run",
     "types": "tsc --noEmit",
     "format": "prettier --write .",
