@@ -96,6 +96,10 @@ export interface Arrangement {
   soft?: true;
   /** What the roles a CV does not mark look like beside the marked ones: a share of grey, and an opacity. */
   field?: { grey: number; alpha: number };
+  /** Names of marked roles try other places beside their point rather than lie over a name or a point. */
+  declutter?: true;
+  /** Marked roles are named once the camera is this close (1 is the whole map); 0.6 if absent. */
+  labelZoom?: number;
   /** How opaque a node is: where a layout packs the roles close, they are fainter, to stay apart. */
   alpha: number;
 }
@@ -238,6 +242,8 @@ function sphere(data: MapData): Arrangement {
     extent: R_OUT,
     sizes,
     soft: true,
+    declutter: true,
+    labelZoom: 1.05,
     field: { grey: 0.25, alpha: 0.75 },
     alpha: 0.95,
   };

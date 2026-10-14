@@ -39,6 +39,14 @@ const DOME = 0.5;
 /** A sub-branch gets its name on the rim once its slice is this wide on screen. */
 const SUB_LABEL_PX = 24;
 
+/** A rectangle on the screen, in pixels inside the stage. */
+export interface Box {
+  x0: number;
+  x1: number;
+  y0: number;
+  y1: number;
+}
+
 export interface Spot {
   x: number;
   y: number;
@@ -49,6 +57,8 @@ export interface Spot {
 /** What a frame needs from the renderer to put its labels on the screen. */
 export interface FrameCtx {
   project(x: number, y: number, z: number, out: Spot): void;
+  /** Keeps the names of marked roles off this box, in pixels in the stage. */
+  reserve(box: Box): void;
   place(e: HTMLElement, x: number, y: number, opacity: number, extra?: string): void;
   onScreen(x: number, y: number, pad?: number): boolean;
 }
@@ -426,7 +436,9 @@ function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame
   const outer = spec.shells.at(-1)!.radius;
   // Where the net marks the levels, the glass of the inner shells is fainter: less fog among the points.
   const inner = spec.cap !== undefined ? 0.22 : 0.4;
-  spec.shells.forEach((shell, k) => glass(p, shell.radius, k === spec.shells.length - 1 ? 1 : inner));
+  spec.shells.forEach((shell, k) =>
+    glass(p, shell.radius, k === spec.shells.length - 1 ? 1 : inner),
+  );
   graticule(p, outer, 1, 0.2);
   // Where the roles are: every shell has its own net and rim over the cap, so a level reads as a
   // surface the points sit on, and the nested rims as the five levels.
@@ -459,6 +471,8 @@ function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame
     w: 0,
     h: 0,
   }));
+  // Where the layout asks for it, the names of the stars and of the levels are kept clear of.
+  const reserving = spec.cap !== undefined;
   // The level names run down one meridian on the side facing the camera, just below the data.
   const shellPins = spec.shells.map((shell) => {
     const polar = ((spec.labelPolar ?? 72) * Math.PI) / 180;
@@ -466,6 +480,8 @@ function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame
     return {
       e: p.pin("lbl-shell", `${shell.level} ${LEVEL_NAMES[shell.level]}`),
       at: new Vector3(0, Math.cos(polar) * r, Math.sin(polar) * r),
+      w: 0,
+      h: 0,
     };
   });
 
@@ -492,18 +508,37 @@ function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame
         const dy = spot.y - centre.y;
         const length = Math.hypot(dx, dy) || 1;
         const push = (pin.w / 2) * Math.abs(dx / length) + (pin.h / 2) * Math.abs(dy / length) + 14;
-        ctx.place(
-          pin.e,
-          spot.x + (dx / length) * push,
-          spot.y + (dy / length) * push,
-          f,
-          " translate(-50%,-50%)",
-        );
+        const x = spot.x + (dx / length) * push;
+        const y = spot.y + (dy / length) * push;
+        ctx.place(pin.e, x, y, f, " translate(-50%,-50%)");
+        if (reserving) {
+          ctx.reserve({
+            x0: x - pin.w / 2,
+            x1: x + pin.w / 2,
+            y0: y - pin.h / 2,
+            y1: y + pin.h / 2,
+          });
+        }
       }
       for (const pin of shellPins) {
         ctx.project(pin.at.x, pin.at.y, pin.at.z, spot);
-        if (spot.d < 0 || !ctx.onScreen(spot.x, spot.y)) pin.e.style.opacity = "0";
-        else ctx.place(pin.e, spot.x, spot.y, 0.75 * f, " translate(8px,-50%)");
+        if (spot.d < 0 || !ctx.onScreen(spot.x, spot.y)) {
+          pin.e.style.opacity = "0";
+          continue;
+        }
+        ctx.place(pin.e, spot.x, spot.y, 0.75 * f, " translate(8px,-50%)");
+        if (reserving) {
+          if (!pin.w) {
+            pin.w = pin.e.offsetWidth;
+            pin.h = pin.e.offsetHeight;
+          }
+          ctx.reserve({
+            x0: spot.x + 8,
+            x1: spot.x + 8 + pin.w,
+            y0: spot.y - pin.h / 2,
+            y1: spot.y + pin.h / 2,
+          });
+        }
       }
     },
   };
