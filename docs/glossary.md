@@ -19,6 +19,7 @@ gets a name in code.
 | `progression` | előrelépés  | An edge from a role to one further out: the same work at a higher level, or the next step of a ladder.                                                                                                                    |
 | `lateral`     | váltás      | An edge between roles in different occupations at a similar level, based on the skills they share.                                                                                                                        |
 | `ladder`      | létra       | The roles of one occupation, or of a chain of occupations, linked by progression edges, each level with its own skill list. The unit of curation.                                                                         |
+| `demands`     | terhelés    | How physical, mental and emotional an occupation's work is: three percentile ranks among the scored occupations, from O\*NET ratings (ADR 0003). Shared by every role of the occupation; absent where O\*NET has no data. |
 | `curated`     | ellenőrzött | A role or edge a person has checked. Everything else on the map is generated, and shown as such.                                                                                                                          |
 
 ## Levels
