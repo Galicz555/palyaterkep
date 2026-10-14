@@ -89,6 +89,8 @@ export interface Arrangement {
   colors?: Float32Array;
   /** The three arms of every role's star, physical, mental, emotional, each 0 to 1; zero without data. */
   arms?: Float32Array;
+  /** The soft look: small glowing points that cover one another, drawn far to near, not additive. */
+  soft?: true;
   /** How opaque a node is: where a layout packs the roles close, they are fainter, to stay apart. */
   alpha: number;
 }
@@ -228,7 +230,8 @@ function sphere(data: MapData): Arrangement {
     free: true,
     extent: R_OUT,
     sizes,
-    alpha: 0.6,
+    soft: true,
+    alpha: 0.95,
   };
 }
 

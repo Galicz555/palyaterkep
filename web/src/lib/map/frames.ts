@@ -26,7 +26,7 @@ import { ground, R_HOLE, R_OUT, type Layout } from "../layout.ts";
 import type { MapData } from "../model.ts";
 import { BG, branchColor } from "../palette.ts";
 import { LEVEL_NAMES } from "../text.ts";
-import { ADD, NODE_FRAG, NODE_VERT, SHELL_FRAG, SHELL_VERT } from "./shaders.ts";
+import { ADD, NODE_BLEND, NODE_FRAG, NODE_VERT, SHELL_FRAG, SHELL_VERT } from "./shaders.ts";
 
 const TAU = Math.PI * 2;
 
@@ -390,11 +390,12 @@ function stars(p: Parts, host: Host, at3: Vec3[]) {
       uniforms: host.uniforms,
       vertexShader: NODE_VERT,
       fragmentShader: NODE_FRAG,
-      ...ADD,
+      ...NODE_BLEND,
     }),
   );
   points.frustumCulled = false;
-  points.renderOrder = 3;
+  // After the nodes, so the stars are not buried under the points around them.
+  points.renderOrder = 4;
   p.add(points, (a) => {
     alpha.array.fill(a);
     alpha.needsUpdate = true;
