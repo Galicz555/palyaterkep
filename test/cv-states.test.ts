@@ -102,6 +102,8 @@ describe("heldLevel", () => {
       track: "individual",
     });
     expect(heldLevel("Principal Engineer", null, 1)).toEqual({ level: 4, track: "individual" });
+    expect(heldLevel("Software Architect", null, 1)).toEqual({ level: 4, track: "individual" });
+    expect(heldLevel("Szoftverarchitekt", null, 1)).toEqual({ level: 4, track: "individual" });
     expect(heldLevel("Engineering Manager", null, 1)).toEqual({ level: 4, track: "management" });
     expect(heldLevel("Osztályvezető", null, 1)).toEqual({ level: 4, track: "management" });
     expect(heldLevel("Head of Engineering", null, 1)).toEqual({ level: 4, track: "management" });

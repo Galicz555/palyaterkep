@@ -56,7 +56,8 @@ export function loadGraph(dir = VAULT): RoleGraph {
 
 // Matched against the title folded to lower-case ASCII words; the highest level named wins. As the
 // curated ladders read them: a lead, tech lead or "-vezető" leads a team at the senior level (3,
-// management); staff and principal engineers are senior individual contributors (4); a manager,
+// management); staff and principal engineers and architects are senior individual contributors
+// (4); a manager,
 // head or "osztályvezető" leads team leads (4); chiefs and directors lead an organisation (5). "Staff"
 // alone is no level: a staff nurse is a nurse.
 const TITLE_LEVELS: [RegExp, number][] = [
@@ -64,7 +65,7 @@ const TITLE_LEVELS: [RegExp, number][] = [
   [/\b(medior|mid|intermediate)\b/u, 2],
   [/\b(senior|sr|szenior|tapasztalt|experienced|lead|leader)\b|vezeto\b/u, 3],
   [
-    /\b(principal|head|manager|menedzser)\b|\bstaff (engineer|developer|software)|(osztaly|reszleg|uzletag)vezeto\b/u,
+    /\b(principal|head|manager|menedzser|architect)\b|architekt\b|\bstaff (engineer|developer|software)|(osztaly|reszleg|uzletag)vezeto\b/u,
     4,
   ],
   [/\b(chief|c[eitfop]o|director|vp|vice president|alelnok|ugyvezeto)\b|igazgato/u, 5],
