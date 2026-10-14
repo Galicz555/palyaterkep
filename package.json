@@ -9,6 +9,7 @@
   },
   "scripts": {
     "esco": "node src/esco/ingest.ts",
+    "demands": "node src/demands/generate.ts",
     "branches:review": "node src/branches/review.ts",
     "propose": "node src/vault/propose.ts",
     "vault": "node src/vault/generate.ts",

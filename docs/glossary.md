@@ -19,16 +19,16 @@ gets a name in code.
 | `progression` | előrelépés  | An edge from a role to one further out: the same work at a higher level, or the next step of a ladder.                                                                                                                                              |
 | `lateral`     | váltás      | An edge between roles in different occupations at a similar level, based on the skills they share.                                                                                                                                                  |
 | `ladder`      | létra       | The roles of one occupation, or of a chain of occupations, linked by progression edges, each level with its own skill list. The unit of curation.                                                                                                   |
+| `demands`     | terhelés    | How physical, mental and emotional an occupation's work is: three percentile ranks among the scored occupations, from O\*NET ratings (ADR 0003). Shared by every role of the occupation; absent where O\*NET has no data.                           |
 | `curated`     | ellenőrzött | A role or edge a person has checked. Everything else on the map is generated, and shown as such.                                                                                                                                                    |
 
 ## The layouts
 
-| Code / schema | Magyar     | Meaning                                                                                                                                                                                         |
-| ------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `demand`      | terhelés   | How much a role asks of a person in one of three ways: physical (fizikai), mental (szellemi), emotional (érzelmi). Each is the percentile rank of the occupation among all occupations, 0 to 1. |
-| `mix`         | arány      | A role's three demands as shares of their sum: where it sits on the triangle between the three. A role without data is placed in the middle and drawn so it reads as "no data".                 |
-| `magnitude`   | mérték     | A role's three demands averaged: how much it asks of a person at all, whatever the mix.                                                                                                         |
-| `layout`      | elrendezés | One way to place every role on the map, chosen from a dropdown and kept in the address (`?elrendezes=`). The map morphs from one layout to the next.                                            |
+| Code / schema | Magyar     | Meaning                                                                                                                                                                           |
+| ------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `mix`         | arány      | A role's three `demands` as shares of their sum: where it sits on the triangle between the three. A role without data is placed in the middle and drawn so it reads as "no data". |
+| `magnitude`   | mérték     | A role's three `demands` averaged: how much it asks of a person at all, whatever the mix.                                                                                         |
+| `layout`      | elrendezés | One way to place every role on the map, chosen from a dropdown and kept in the address (`?elrendezes=`). The map morphs from one layout to the next.                              |
 
 ## Levels
 

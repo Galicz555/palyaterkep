@@ -61,3 +61,11 @@ software renderer without it.
 Occupation and skill data: [ESCO](https://esco.ec.europa.eu) (European Skills, Competences,
 Qualifications and Occupations) v1.2.1, © European Union. Reuse is authorised provided the source is
 acknowledged.
+
+Job demands (`data/demands.json`, rebuilt by `pnpm demands` from the O\*NET database unzipped into
+`raw/onet/` and the ESCO–O\*NET crosswalk; see [ADR 0003](docs/adr/0003-demands-from-onet.md)):
+this project includes information from the [O\*NET 31.0 Database](https://www.onetcenter.org/database.html)
+by the U.S. Department of Labor, Employment and Training Administration (USDOL/ETA), used under the
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. O\*NET® is a trademark of USDOL/ETA.
+Pályatérkép has modified all or some of this information. USDOL/ETA has not approved, endorsed, or
+tested these modifications.

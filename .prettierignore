@@ -4,3 +4,5 @@ vault/
 /.claude/
 web/.svelte-kit
 web/build
+data/demands.json
+web/static/fixtures/
