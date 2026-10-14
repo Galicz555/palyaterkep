@@ -41,8 +41,8 @@ skills:
   - http://data.europa.eu/esco/skill/f84a433f-34f1-4083-b0a3-24802623509c
   - http://data.europa.eu/esco/skill/f9a6f35b-01a7-40c9-8b61-b6ee46f97272
 lateral:
-  - "[[devops-felhomernok]]"
   - "[[felhoalapuszoftver-fejleszto]]"
+  - "[[devops-mernok]]"
   - "[[felhoalapuszemelyazonossag-kezelo]]"
 ---
 
@@ -94,6 +94,6 @@ A felhőmérnökök felelnek a felhőalapú rendszerek kialakításáért, terve
 
 ## Váltások
 
-- [[devops-felhomernok|DevOps felhőmérnök]]
 - [[felhoalapuszoftver-fejleszto|felhőalapúszoftver-fejlesztő]]
+- [[devops-mernok|DevOps mérnök]]
 - [[felhoalapuszemelyazonossag-kezelo|felhőalapúszemélyazonosság-kezelő]]

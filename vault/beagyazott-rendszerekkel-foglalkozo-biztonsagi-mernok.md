@@ -42,6 +42,7 @@ lateral:
   - "[[biztonsagi-tesztelo]]"
   - "[[digitalis-kriminalisztika-szakerto]]"
   - "[[ikt-biztonsagi-adminisztrator]]"
+  - "[[infokommunikacios-biztonsagtechnikus]]"
 ---
 
 # Beágyazott rendszerekkel foglalkozó biztonsági mérnök
@@ -93,3 +94,4 @@ A beágyazott rendszerekkel foglalkozó biztonsági mérnökök tanácsot adnak 
 - [[biztonsagi-tesztelo|biztonsági tesztelő]]
 - [[digitalis-kriminalisztika-szakerto|digitális kriminalisztika szakértő]]
 - [[ikt-biztonsagi-adminisztrator|IKT biztonsági adminisztrátor]]
+- [[infokommunikacios-biztonsagtechnikus|infokommunikációs biztonságtechnikus]]

@@ -28,9 +28,9 @@ skills:
   - http://data.europa.eu/esco/skill/dfff95c6-9758-4c04-a228-7eaa88dec6cd
   - http://data.europa.eu/esco/skill/f7e2eb04-3e50-4561-bce1-7e51a1fec308
 lateral:
-  - "[[devops-felhomernok]]"
   - "[[felhomernok]]"
   - "[[felhoalapuszemelyazonossag-kezelo]]"
+  - "[[devops-mernok]]"
 ---
 
 # Felhőalapúszoftver-fejlesztő
@@ -67,6 +67,6 @@ A felhőalapú szoftverek fejlesztői mikroszolgáltatások, konténerek és sze
 
 ## Váltások
 
-- [[devops-felhomernok|DevOps felhőmérnök]]
 - [[felhomernok|felhőmérnök]]
 - [[felhoalapuszemelyazonossag-kezelo|felhőalapúszemélyazonosság-kezelő]]
+- [[devops-mernok|DevOps mérnök]]

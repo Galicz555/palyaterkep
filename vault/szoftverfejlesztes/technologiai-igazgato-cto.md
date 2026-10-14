@@ -54,7 +54,7 @@ skills:
   - http://data.europa.eu/esco/skill/fb7aee4d-f6c6-4a87-8e9d-8e542b3771f8
 lateral:
   - "[[vallalati-architekt]]"
-  - "[[informatikai-igazgato]]"
+  - "[[informatikai-igazgato-cio]]"
 ---
 
 # Technológiai igazgató (CTO)
@@ -121,4 +121,4 @@ Nincs.
 ## Váltások
 
 - [[vallalati-architekt|Vállalati architekt]]
-- [[informatikai-igazgato|informatikai igazgató]]
+- [[informatikai-igazgato-cio|Informatikai igazgató (CIO)]]

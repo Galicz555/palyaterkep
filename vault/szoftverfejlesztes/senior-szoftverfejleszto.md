@@ -45,6 +45,7 @@ lateral:
   - "[[tesztmenedzser]]"
   - "[[alkalmazasmernok]]"
   - "[[medior-szoftvertesztelo]]"
+  - "[[felhasznaloi-felulet-fejleszto]]"
 progression:
   - "[[szoftverarchitekt]]"
   - "[[fejlesztesi-vezeto]]"
@@ -106,3 +107,4 @@ A nehéz eseteket viszi: nagyobb komponenseket tervez és határoz meg műszakil
 - [[tesztmenedzser|Tesztmenedzser]]
 - [[alkalmazasmernok|alkalmazásmérnök]]
 - [[medior-szoftvertesztelo|Medior szoftvertesztelő]]
+- [[felhasznaloi-felulet-fejleszto|felhasználói felület fejlesztő]]

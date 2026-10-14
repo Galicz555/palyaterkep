@@ -45,6 +45,7 @@ lateral:
   - "[[biztonsagi-tesztelo]]"
   - "[[digitalis-kriminalisztika-szakerto]]"
   - "[[kiberbiztonsagi-esemenykezelo]]"
+  - "[[beagyazott-rendszerekkel-foglalkozo-biztonsagi-mernok]]"
 ---
 
 # Infokommunikációs biztonságtechnikus
@@ -98,3 +99,4 @@ Az infokommunikációs biztonságtechnikusok szükség esetén megfelelő bizton
 - [[biztonsagi-tesztelo|biztonsági tesztelő]]
 - [[digitalis-kriminalisztika-szakerto|digitális kriminalisztika szakértő]]
 - [[kiberbiztonsagi-esemenykezelo|kiberbiztonsági eseménykezelő]]
+- [[beagyazott-rendszerekkel-foglalkozo-biztonsagi-mernok|beágyazott rendszerekkel foglalkozó biztonsági mérnök]]

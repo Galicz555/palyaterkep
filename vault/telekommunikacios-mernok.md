@@ -34,7 +34,6 @@ skills:
   - http://data.europa.eu/esco/skill/ee1417ac-4e9a-4102-b89a-528ab4ffba13
 lateral:
   - "[[tavkozlesi-elemzo]]"
-  - "[[ikt-rendszeradminisztrator]]"
   - "[[tavkozlesi-mernok]]"
   - "[[radiotechnikus]]"
   - "[[integrator-mernok]]"
@@ -80,7 +79,6 @@ A telekommunikációs mérnökök adat- és hangalapú kommunikációs rendszere
 ## Váltások
 
 - [[tavkozlesi-elemzo|távközlési elemző]]
-- [[ikt-rendszeradminisztrator|IKT rendszeradminisztrátor]]
 - [[tavkozlesi-mernok|távközlési mérnök]]
 - [[radiotechnikus|rádiótechnikus]]
 - [[integrator-mernok|integrátor mérnök]]

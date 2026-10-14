@@ -31,8 +31,8 @@ lateral:
   - "[[ikt-katasztrofaelharitas-elemzo]]"
   - "[[ikt-biztonsagi-igazgato]]"
   - "[[biztonsagi-tesztelo]]"
-  - "[[kiberbiztonsagi-kockazatkezelo]]"
   - "[[biztonsagi-vezeto]]"
+  - "[[kiberbiztonsagi-kockazatkezelo]]"
 ---
 
 # IKT katasztrófaelhárítás menedzser
@@ -72,5 +72,5 @@ Az IKT katasztrófaelhárítás-menedzserek kutatják, megtervezik és fejleszti
 - [[ikt-katasztrofaelharitas-elemzo|IKT katasztrófaelhárítás elemző]]
 - [[ikt-biztonsagi-igazgato|IKT biztonsági igazgató]]
 - [[biztonsagi-tesztelo|biztonsági tesztelő]]
-- [[kiberbiztonsagi-kockazatkezelo|kiberbiztonsági kockázatkezelő]]
 - [[biztonsagi-vezeto|biztonsági vezető]]
+- [[kiberbiztonsagi-kockazatkezelo|kiberbiztonsági kockázatkezelő]]

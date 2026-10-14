@@ -38,8 +38,8 @@ skills:
   - http://data.europa.eu/esco/skill/f86cddfc-10bd-4ddc-a274-ed1bb7990a47
   - http://data.europa.eu/esco/skill/fde186df-c9c4-49f5-b2a5-d66adc7c43a5
 lateral:
-  - "[[fal-es-padloburkolasi-bolt-vezetoje]]"
   - "[[hasznaltcikkbolt-vezetoje]]"
+  - "[[fal-es-padloburkolasi-bolt-vezetoje]]"
   - "[[textilbolt-vezetoje]]"
   - "[[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje]]"
   - "[[szemuveg-es-latszereszeti-bolt-vezetoje]]"
@@ -90,8 +90,8 @@ A kerékpár-szaküzletek vezetői felelősséget vállalnak a kerékpárok ért
 
 ## Váltások
 
-- [[fal-es-padloburkolasi-bolt-vezetoje|fal- és padlóburkolási bolt vezetője]]
 - [[hasznaltcikkbolt-vezetoje|használtcikkbolt vezetője]]
+- [[fal-es-padloburkolasi-bolt-vezetoje|fal- és padlóburkolási bolt vezetője]]
 - [[textilbolt-vezetoje|textilbolt vezetője]]
 - [[gyogyaszati-arucikkek-es-segedeszkozok-boltjanak-vezetoje|gyógyászati árucikkek és segédeszközök boltjának vezetője]]
 - [[szemuveg-es-latszereszeti-bolt-vezetoje|szemüveg- és látszerészeti bolt vezetője]]

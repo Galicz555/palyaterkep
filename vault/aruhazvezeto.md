@@ -27,8 +27,8 @@ skills:
   - http://data.europa.eu/esco/skill/f75b740c-b36c-495e-bc67-efe347bbc6b5
 lateral:
   - "[[aruhazi-osztaly-reszlegvezeto]]"
-  - "[[uzletvezeto]]"
   - "[[kiskereskedo]]"
+  - "[[uzletvezeto]]"
   - "[[szallashely-szolgaltatasi-tevekenysegeket-folytato-egyseg-vezetoje]]"
 ---
 
@@ -65,6 +65,6 @@ Az áruházvezetők a kiskereskedelmi szolgáltatásokat nyújtó létesítmény
 ## Váltások
 
 - [[aruhazi-osztaly-reszlegvezeto|áruházi osztály-, részlegvezető]]
-- [[uzletvezeto|üzletvezető]]
 - [[kiskereskedo|kiskereskedő]]
+- [[uzletvezeto|üzletvezető]]
 - [[szallashely-szolgaltatasi-tevekenysegeket-folytato-egyseg-vezetoje|szálláshely-szolgáltatási tevékenységeket folytató egység vezetője]]

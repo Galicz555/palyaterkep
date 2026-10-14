@@ -33,8 +33,9 @@ skills:
 lateral:
   - "[[ikt-halozati-adminisztrator]]"
   - "[[ikt-halozati-technikus]]"
-  - "[[ikt-rendszeradminisztrator]]"
   - "[[mobileszkoz-technikus]]"
+  - "[[rendszermernok]]"
+  - "[[rendszergazda]]"
   - "[[kommunikacios-infrastruktura-karbantarto]]"
 ---
 
@@ -77,6 +78,7 @@ Az infokommunikációs technikusok információs rendszereket és infokommuniká
 
 - [[ikt-halozati-adminisztrator|IKT hálózati adminisztrátor]]
 - [[ikt-halozati-technikus|IKT hálózati technikus]]
-- [[ikt-rendszeradminisztrator|IKT rendszeradminisztrátor]]
 - [[mobileszkoz-technikus|mobileszköz-technikus]]
+- [[rendszermernok|Rendszermérnök]]
+- [[rendszergazda|Rendszergazda]]
 - [[kommunikacios-infrastruktura-karbantarto|kommunikációs infrastruktúra karbantartó]]

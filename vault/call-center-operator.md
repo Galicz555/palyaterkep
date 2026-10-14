@@ -28,7 +28,6 @@ lateral:
   - "[[elo-chates-kapcsolattarto]]"
   - "[[autolizingugynok]]"
   - "[[ertekesitesi-referens]]"
-  - "[[infokommunikacios-ugyfelszolgalati-munkatars]]"
   - "[[ugyfelkapcsolati-munkatars]]"
 ---
 
@@ -66,5 +65,4 @@ A call center operátorok a vállalkozások számára intézik a beérkező vagy
 - [[elo-chates-kapcsolattarto|élő-chates kapcsolattartó]]
 - [[autolizingugynok|autólízingügynök]]
 - [[ertekesitesi-referens|értékesítési referens]]
-- [[infokommunikacios-ugyfelszolgalati-munkatars|infokommunikációs ügyfélszolgálati munkatárs]]
 - [[ugyfelkapcsolati-munkatars|ügyfélkapcsolati munkatárs]]

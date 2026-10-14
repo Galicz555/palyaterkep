@@ -25,6 +25,7 @@ skills:
   - http://data.europa.eu/esco/skill/f0de4973-0a70-4644-8fd4-3a97080476f4
   - http://data.europa.eu/esco/skill/fafe0b9d-dbd9-46bd-b770-26299539ce66
 lateral:
+  - "[[devops-mernok]]"
   - "[[integrator-mernok]]"
 ---
 
@@ -60,4 +61,5 @@ Az IKT változás- és konfigurációs menedzserek megszervezik és végrehajtj�
 
 ## Váltások
 
+- [[devops-mernok|DevOps mérnök]]
 - [[integrator-mernok|integrátor mérnök]]

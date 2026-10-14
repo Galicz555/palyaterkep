@@ -28,8 +28,8 @@ lateral:
   - "[[ertekesitesi-ugyintezo]]"
   - "[[irodatechnikai-muszaki-ertekesito]]"
   - "[[gepipari-muszaki-ertekesito]]"
-  - "[[infokommunikacios-ugyfelszolgalati-munkatars]]"
   - "[[szolgaltatasmenedzser]]"
+  - "[[ugyfelszolgalati-kozpont-tajekoztatoja]]"
 ---
 
 # Vevőszolgálati technikus
@@ -66,5 +66,5 @@ A vevőszolgálati technikusok a fogyasztók számára értékesítés utáni sz
 - [[ertekesitesi-ugyintezo|értékesítési ügyintéző]]
 - [[irodatechnikai-muszaki-ertekesito|irodatechnikai műszaki értékesítő]]
 - [[gepipari-muszaki-ertekesito|gépipari műszaki értékesítő]]
-- [[infokommunikacios-ugyfelszolgalati-munkatars|infokommunikációs ügyfélszolgálati munkatárs]]
 - [[szolgaltatasmenedzser|szolgáltatásmenedzser]]
+- [[ugyfelszolgalati-kozpont-tajekoztatoja|ügyfélszolgálati központ tájékoztatója]]

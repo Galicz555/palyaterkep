@@ -32,7 +32,7 @@ lateral:
   - "[[kommunikacios-infrastruktura-karbantarto]]"
   - "[[infokommunikacios-technikus]]"
   - "[[ikt-halozatmernok]]"
-  - "[[ikt-rendszeradminisztrator]]"
+  - "[[rendszermernok]]"
   - "[[tavkozlesi-mernok]]"
 ---
 
@@ -74,5 +74,5 @@ Az IKT hálózati technikusok hálózatokat, adatátviteli berendezéseket és h
 - [[kommunikacios-infrastruktura-karbantarto|kommunikációs infrastruktúra karbantartó]]
 - [[infokommunikacios-technikus|infokommunikációs technikus]]
 - [[ikt-halozatmernok|IKT hálózatmérnök]]
-- [[ikt-rendszeradminisztrator|IKT rendszeradminisztrátor]]
+- [[rendszermernok|Rendszermérnök]]
 - [[tavkozlesi-mernok|távközlési mérnök]]

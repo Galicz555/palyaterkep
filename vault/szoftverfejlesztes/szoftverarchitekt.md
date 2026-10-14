@@ -56,6 +56,7 @@ lateral:
   - "[[fejlesztesi-csoportvezeto]]"
   - "[[fejlesztesi-vezeto]]"
   - "[[senior-szoftvertesztelo]]"
+  - "[[felhoarchitekt]]"
   - "[[tesztmenedzser]]"
 progression:
   - "[[vallalati-architekt]]"
@@ -129,4 +130,5 @@ Egy rendszer vagy termék szerkezetéért felel: architektúrát és technológi
 - [[fejlesztesi-csoportvezeto|Fejlesztési csoportvezető]]
 - [[fejlesztesi-vezeto|Fejlesztési vezető]]
 - [[senior-szoftvertesztelo|Senior szoftvertesztelő]]
+- [[felhoarchitekt|Felhőarchitekt]]
 - [[tesztmenedzser|Tesztmenedzser]]
