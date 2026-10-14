@@ -1,0 +1,1063 @@
+[
+  {
+    "id": "it",
+    "label": {
+      "hu": "Informatika és távközlés",
+      "en": "IT and telecommunications"
+    },
+    "subBranches": [
+      {
+        "id": "it-business",
+        "label": {
+          "hu": "IT-üzletfejlesztés és -értékesítés",
+          "en": "IT business development and sales"
+        },
+        "isco": ["2434"]
+      },
+      {
+        "id": "it-management",
+        "label": {
+          "hu": "IT-vezetés",
+          "en": "IT management"
+        },
+        "isco": ["133"]
+      },
+      {
+        "id": "systems-analysis",
+        "label": {
+          "hu": "Rendszerelemzés, architektúra és adat",
+          "en": "Systems analysis, architecture and data"
+        },
+        "isco": ["2511"]
+      },
+      {
+        "id": "software",
+        "label": {
+          "hu": "Szoftver- és webfejlesztés",
+          "en": "Software and web development"
+        },
+        "isco": ["2512", "2513", "2514"]
+      },
+      {
+        "id": "software-testing",
+        "label": {
+          "hu": "Szoftvertesztelés és minőségbiztosítás",
+          "en": "Software testing and quality assurance"
+        },
+        "isco": ["2519"]
+      },
+      {
+        "id": "it-operations",
+        "label": {
+          "hu": "Rendszer- és hálózatüzemeltetés, felhasználói támogatás",
+          "en": "Systems, networks and user support"
+        },
+        "isco": ["2521", "2522", "2523", "351"]
+      },
+      {
+        "id": "cybersecurity",
+        "label": {
+          "hu": "Kiberbiztonság",
+          "en": "Cybersecurity"
+        },
+        "isco": ["2529"]
+      },
+      {
+        "id": "telecom",
+        "label": {
+          "hu": "Távközlés",
+          "en": "Telecommunications"
+        },
+        "isco": ["2153", "3522", "7422"]
+      }
+    ]
+  },
+  {
+    "id": "engineering",
+    "label": {
+      "hu": "Mérnöki terület és természettudomány",
+      "en": "Engineering and science"
+    },
+    "subBranches": [
+      {
+        "id": "rnd-management",
+        "label": {
+          "hu": "Kutatás-fejlesztés és termékfejlesztés vezetése",
+          "en": "R&D and product development management"
+        },
+        "isco": ["1223"]
+      },
+      {
+        "id": "electrical",
+        "label": {
+          "hu": "Villamosmérnöki terület és elektronika",
+          "en": "Electrical and electronic engineering"
+        },
+        "isco": ["2151", "2152", "3113", "3114"]
+      },
+      {
+        "id": "mechanical",
+        "label": {
+          "hu": "Gépészmérnöki terület",
+          "en": "Mechanical engineering"
+        },
+        "isco": ["2144", "3115"]
+      },
+      {
+        "id": "drafting",
+        "label": {
+          "hu": "Műszaki rajzolás",
+          "en": "Technical drafting"
+        },
+        "isco": ["3118"]
+      },
+      {
+        "id": "production-engineering",
+        "label": {
+          "hu": "Ipari és gyártástechnológiai mérnöki terület",
+          "en": "Industrial and production engineering"
+        },
+        "isco": ["2141", "3119"]
+      },
+      {
+        "id": "other-engineering",
+        "label": {
+          "hu": "Egyéb mérnöki szakterületek",
+          "en": "Other engineering fields"
+        },
+        "isco": ["2149"]
+      },
+      {
+        "id": "process-engineering",
+        "label": {
+          "hu": "Vegyész-, kohó- és bányamérnöki terület",
+          "en": "Chemical, metallurgical and mining engineering"
+        },
+        "isco": ["2145", "2146", "3116", "3117"]
+      },
+      {
+        "id": "physical-sciences",
+        "label": {
+          "hu": "Fizika, kémia és földtudományok",
+          "en": "Physical and earth sciences"
+        },
+        "isco": ["211", "3111"]
+      },
+      {
+        "id": "mathematics",
+        "label": {
+          "hu": "Matematika és statisztika",
+          "en": "Mathematics and statistics"
+        },
+        "isco": ["212", "3314"]
+      },
+      {
+        "id": "life-sciences",
+        "label": {
+          "hu": "Élettudományok",
+          "en": "Life sciences"
+        },
+        "isco": ["2131", "3141"]
+      },
+      {
+        "id": "environment",
+        "label": {
+          "hu": "Környezetvédelem",
+          "en": "Environmental protection"
+        },
+        "isco": ["2133", "2143"]
+      }
+    ]
+  },
+  {
+    "id": "agriculture",
+    "label": {
+      "hu": "Mezőgazdaság, erdészet és halászat",
+      "en": "Agriculture, forestry and fishing"
+    },
+    "subBranches": [
+      {
+        "id": "agri-advisory",
+        "label": {
+          "hu": "Agrártudomány és szaktanácsadás",
+          "en": "Agricultural science and advisory"
+        },
+        "isco": ["2132", "3142"]
+      },
+      {
+        "id": "forestry",
+        "label": {
+          "hu": "Erdészet és vadgazdálkodás",
+          "en": "Forestry and hunting"
+        },
+        "isco": ["1311", "3143", "621", "6224", "9215", "9624"]
+      },
+      {
+        "id": "crops",
+        "label": {
+          "hu": "Növénytermesztés és kertészet",
+          "en": "Crop growing and horticulture"
+        },
+        "isco": ["611", "613", "631", "633", "8341", "9211", "9213", "9214"]
+      },
+      {
+        "id": "livestock",
+        "label": {
+          "hu": "Állattenyésztés",
+          "en": "Livestock farming"
+        },
+        "isco": ["612", "632", "9212"]
+      },
+      {
+        "id": "animal-care",
+        "label": {
+          "hu": "Állategészségügy és állatgondozás",
+          "en": "Animal health and care"
+        },
+        "isco": ["225", "324", "5164"]
+      },
+      {
+        "id": "fishing",
+        "label": {
+          "hu": "Halászat és halgazdálkodás",
+          "en": "Fishing and aquaculture"
+        },
+        "isco": ["1312", "622", "634", "9216"]
+      }
+    ]
+  },
+  {
+    "id": "industry",
+    "label": {
+      "hu": "Ipar, energetika és bányászat",
+      "en": "Manufacturing, energy and mining"
+    },
+    "subBranches": [
+      {
+        "id": "food",
+        "label": {
+          "hu": "Élelmiszer- és italgyártás",
+          "en": "Food and beverage production"
+        },
+        "isco": ["751", "816"]
+      },
+      {
+        "id": "textiles",
+        "label": {
+          "hu": "Textil-, ruha- és bőripar",
+          "en": "Textiles, clothing and leather"
+        },
+        "isco": ["753", "815"]
+      },
+      {
+        "id": "wood-paper",
+        "label": {
+          "hu": "Fa- és papíripar",
+          "en": "Wood and paper"
+        },
+        "isco": ["752", "817", "8143"]
+      },
+      {
+        "id": "printing",
+        "label": {
+          "hu": "Nyomdaipar",
+          "en": "Printing"
+        },
+        "isco": ["732"]
+      },
+      {
+        "id": "crafts",
+        "label": {
+          "hu": "Kézműipar",
+          "en": "Handicrafts"
+        },
+        "isco": ["731", "7549"]
+      },
+      {
+        "id": "chemicals",
+        "label": {
+          "hu": "Vegy-, gumi- és műanyagipar",
+          "en": "Chemicals, rubber and plastics"
+        },
+        "isco": ["3133", "3134", "8131", "8141", "8142"]
+      },
+      {
+        "id": "metal",
+        "label": {
+          "hu": "Fémipar és felületkezelés",
+          "en": "Metalworking and surface finishing"
+        },
+        "isco": ["3135", "721", "722", "812", "7132"]
+      },
+      {
+        "id": "assembly",
+        "label": {
+          "hu": "Gépgyártás és összeszerelés",
+          "en": "Machinery manufacturing and assembly"
+        },
+        "isco": ["821"]
+      },
+      {
+        "id": "maintenance",
+        "label": {
+          "hu": "Gépjavítás és karbantartás",
+          "en": "Machinery maintenance and repair"
+        },
+        "isco": ["723"]
+      },
+      {
+        "id": "electrical-trades",
+        "label": {
+          "hu": "Villamos- és elektronikai szerelés",
+          "en": "Electrical and electronics trades"
+        },
+        "isco": ["7412", "7421"]
+      },
+      {
+        "id": "production-management",
+        "label": {
+          "hu": "Gyártásirányítás",
+          "en": "Production management"
+        },
+        "isco": ["1321", "3122", "3139", "4322"]
+      },
+      {
+        "id": "quality-control",
+        "label": {
+          "hu": "Minőségellenőrzés",
+          "en": "Quality control"
+        },
+        "isco": ["7543"]
+      },
+      {
+        "id": "packaging",
+        "label": {
+          "hu": "Csomagolás és általános gyári munka",
+          "en": "Packaging and general factory work"
+        },
+        "isco": ["8183", "8189", "932"]
+      },
+      {
+        "id": "energy-utilities",
+        "label": {
+          "hu": "Energia, víz és hulladék",
+          "en": "Energy, water and waste"
+        },
+        "isco": ["3131", "3132", "7413", "8182", "961", "9623"]
+      },
+      {
+        "id": "mining",
+        "label": {
+          "hu": "Bányászat és ásványi termékek",
+          "en": "Mining and mineral products"
+        },
+        "isco": ["1322", "3121", "811", "8181", "7542", "9311"]
+      }
+    ]
+  },
+  {
+    "id": "construction",
+    "label": {
+      "hu": "Építőipar",
+      "en": "Construction"
+    },
+    "subBranches": [
+      {
+        "id": "construction-management",
+        "label": {
+          "hu": "Építésvezetés",
+          "en": "Construction management"
+        },
+        "isco": ["1323", "3123"]
+      },
+      {
+        "id": "architecture",
+        "label": {
+          "hu": "Építészet, településtervezés és földmérés",
+          "en": "Architecture, planning and surveying"
+        },
+        "isco": ["2161", "2162", "2164", "2165"]
+      },
+      {
+        "id": "civil-engineering",
+        "label": {
+          "hu": "Építőmérnöki terület és műszaki ellenőrzés",
+          "en": "Civil engineering and inspection"
+        },
+        "isco": ["2142", "3112"]
+      },
+      {
+        "id": "building-structure",
+        "label": {
+          "hu": "Szerkezetépítés",
+          "en": "Building structure"
+        },
+        "isco": ["711"]
+      },
+      {
+        "id": "finishing",
+        "label": {
+          "hu": "Befejező szakipari munkák",
+          "en": "Building finishing"
+        },
+        "isco": ["712", "7131", "7133"]
+      },
+      {
+        "id": "building-services",
+        "label": {
+          "hu": "Épületgépészet és villanyszerelés",
+          "en": "Plumbing, HVAC and electrical installation"
+        },
+        "isco": ["7126", "7127", "7411"]
+      },
+      {
+        "id": "plant-labour",
+        "label": {
+          "hu": "Építőgépek és segédmunka",
+          "en": "Construction plant and labour"
+        },
+        "isco": ["7541", "8342", "8343", "9312", "9313"]
+      }
+    ]
+  },
+  {
+    "id": "transport",
+    "label": {
+      "hu": "Közlekedés és logisztika",
+      "en": "Transport and logistics"
+    },
+    "subBranches": [
+      {
+        "id": "road",
+        "label": {
+          "hu": "Közúti közlekedés",
+          "en": "Road transport"
+        },
+        "isco": ["5165", "8322", "833", "9332"]
+      },
+      {
+        "id": "rail",
+        "label": {
+          "hu": "Vasúti közlekedés",
+          "en": "Rail transport"
+        },
+        "isco": ["5112", "831"]
+      },
+      {
+        "id": "water",
+        "label": {
+          "hu": "Vízi közlekedés",
+          "en": "Water transport"
+        },
+        "isco": ["3151", "3152", "835"]
+      },
+      {
+        "id": "air",
+        "label": {
+          "hu": "Légi közlekedés",
+          "en": "Air transport"
+        },
+        "isco": ["3153", "3154", "3155", "5111"]
+      },
+      {
+        "id": "dispatch",
+        "label": {
+          "hu": "Forgalomirányítás és fuvarszervezés",
+          "en": "Dispatch and transport coordination"
+        },
+        "isco": ["4323"]
+      },
+      {
+        "id": "postal-courier",
+        "label": {
+          "hu": "Posta és futárszolgálat",
+          "en": "Postal and courier services"
+        },
+        "isco": ["4412", "8321", "9331"]
+      },
+      {
+        "id": "warehousing",
+        "label": {
+          "hu": "Raktározás és anyagmozgatás",
+          "en": "Warehousing and materials handling"
+        },
+        "isco": ["4321", "8344", "9333"]
+      }
+    ]
+  },
+  {
+    "id": "trade",
+    "label": {
+      "hu": "Kereskedelem, értékesítés és marketing",
+      "en": "Trade, sales and marketing"
+    },
+    "subBranches": [
+      {
+        "id": "wholesale",
+        "label": {
+          "hu": "Nagykereskedelem és import-export",
+          "en": "Wholesale and import-export"
+        },
+        "isco": ["1324", "3324", "3331"]
+      },
+      {
+        "id": "purchasing",
+        "label": {
+          "hu": "Beszerzés",
+          "en": "Purchasing"
+        },
+        "isco": ["3323"]
+      },
+      {
+        "id": "technical-sales",
+        "label": {
+          "hu": "Műszaki és üzleti értékesítés",
+          "en": "Technical and business-to-business sales"
+        },
+        "isco": ["2433", "3322"]
+      },
+      {
+        "id": "marketing",
+        "label": {
+          "hu": "Értékesítési vezetés és marketing",
+          "en": "Sales management and marketing"
+        },
+        "isco": ["1221", "2431", "3339", "4227"]
+      },
+      {
+        "id": "retail-management",
+        "label": {
+          "hu": "Üzletvezetés",
+          "en": "Retail management"
+        },
+        "isco": ["1420", "5221", "5222"]
+      },
+      {
+        "id": "retail",
+        "label": {
+          "hu": "Bolti értékesítés",
+          "en": "Retail sales"
+        },
+        "isco": ["5223", "5230", "5245", "5249", "9334"]
+      },
+      {
+        "id": "direct-sales",
+        "label": {
+          "hu": "Közvetlen, telefonos és utcai értékesítés",
+          "en": "Direct, telephone and street sales"
+        },
+        "isco": ["521", "5242", "5243", "5244", "951", "952"]
+      }
+    ]
+  },
+  {
+    "id": "hospitality",
+    "label": {
+      "hu": "Vendéglátás, turizmus és személyi szolgáltatások",
+      "en": "Hospitality, tourism and personal services"
+    },
+    "subBranches": [
+      {
+        "id": "food-service",
+        "label": {
+          "hu": "Felszolgálás és bár",
+          "en": "Food and beverage service"
+        },
+        "isco": ["1412", "513", "5246"]
+      },
+      {
+        "id": "kitchen",
+        "label": {
+          "hu": "Konyha",
+          "en": "Kitchen"
+        },
+        "isco": ["3434", "512", "941"]
+      },
+      {
+        "id": "accommodation",
+        "label": {
+          "hu": "Szálláshely-szolgáltatás",
+          "en": "Accommodation"
+        },
+        "isco": ["1411", "4224", "4229", "5151", "9621"]
+      },
+      {
+        "id": "tourism-events",
+        "label": {
+          "hu": "Turizmus, utazás és rendezvényszervezés",
+          "en": "Tourism, travel and events"
+        },
+        "isco": ["1439", "3332", "4221", "5113"]
+      },
+      {
+        "id": "cleaning",
+        "label": {
+          "hu": "Takarítás, háztartás és épületgondnokság",
+          "en": "Cleaning, housekeeping and caretaking"
+        },
+        "isco": ["5152", "5153", "7544", "8157", "911", "912", "9622"]
+      },
+      {
+        "id": "other-personal",
+        "label": {
+          "hu": "Egyéb személyi szolgáltatások",
+          "en": "Other personal services"
+        },
+        "isco": ["5161", "5162", "5163", "5169"]
+      },
+      {
+        "id": "beauty",
+        "label": {
+          "hu": "Fodrászat és szépségápolás",
+          "en": "Hairdressing and beauty"
+        },
+        "isco": ["514"]
+      }
+    ]
+  },
+  {
+    "id": "health-social",
+    "label": {
+      "hu": "Egészségügy és szociális ellátás",
+      "en": "Health and social care"
+    },
+    "subBranches": [
+      {
+        "id": "complementary",
+        "label": {
+          "hu": "Természetgyógyászat",
+          "en": "Complementary medicine"
+        },
+        "isco": ["223", "323"]
+      },
+      {
+        "id": "therapy",
+        "label": {
+          "hu": "Terápia és rehabilitáció",
+          "en": "Therapy and rehabilitation"
+        },
+        "isco": ["2264", "2265", "2269", "3214", "3255"]
+      },
+      {
+        "id": "vision-hearing",
+        "label": {
+          "hu": "Látás- és hallásgondozás",
+          "en": "Vision and hearing care"
+        },
+        "isco": ["2266", "2267", "3254"]
+      },
+      {
+        "id": "medicine",
+        "label": {
+          "hu": "Orvoslás",
+          "en": "Medicine"
+        },
+        "isco": ["221", "224"]
+      },
+      {
+        "id": "dentistry",
+        "label": {
+          "hu": "Fogászat",
+          "en": "Dentistry"
+        },
+        "isco": ["2261", "3251"]
+      },
+      {
+        "id": "nursing",
+        "label": {
+          "hu": "Ápolás, szülészet és betegellátás",
+          "en": "Nursing, midwifery and patient care"
+        },
+        "isco": ["222", "322", "3256", "3258", "3259", "5321", "5329"]
+      },
+      {
+        "id": "pharmacy",
+        "label": {
+          "hu": "Gyógyszerészet",
+          "en": "Pharmacy"
+        },
+        "isco": ["2262", "3213"]
+      },
+      {
+        "id": "diagnostics",
+        "label": {
+          "hu": "Laboratórium és képalkotás",
+          "en": "Laboratory and imaging"
+        },
+        "isco": ["3211", "3212"]
+      },
+      {
+        "id": "psychology",
+        "label": {
+          "hu": "Pszichológia",
+          "en": "Psychology"
+        },
+        "isco": ["2634"]
+      },
+      {
+        "id": "public-health",
+        "label": {
+          "hu": "Népegészségügy és munkavédelem",
+          "en": "Public and occupational health"
+        },
+        "isco": ["2263", "3253", "3257"]
+      },
+      {
+        "id": "health-management",
+        "label": {
+          "hu": "Egészségügyi menedzsment és adminisztráció",
+          "en": "Health management and administration"
+        },
+        "isco": ["1342", "3252", "3344"]
+      },
+      {
+        "id": "care",
+        "label": {
+          "hu": "Idős- és otthoni gondozás",
+          "en": "Elderly and home care"
+        },
+        "isco": ["1343", "5322"]
+      },
+      {
+        "id": "social-work",
+        "label": {
+          "hu": "Szociális munka",
+          "en": "Social work"
+        },
+        "isco": ["1344", "2635", "3412"]
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "label": {
+      "hu": "Oktatás és nevelés",
+      "en": "Education"
+    },
+    "subBranches": [
+      {
+        "id": "early-childhood",
+        "label": {
+          "hu": "Kisgyermekkori nevelés",
+          "en": "Early childhood education and care"
+        },
+        "isco": ["1341", "2342", "5311"]
+      },
+      {
+        "id": "special-needs",
+        "label": {
+          "hu": "Gyógypedagógia",
+          "en": "Special needs education"
+        },
+        "isco": ["2352"]
+      },
+      {
+        "id": "school",
+        "label": {
+          "hu": "Közoktatás",
+          "en": "School education"
+        },
+        "isco": ["2341", "233", "5312"]
+      },
+      {
+        "id": "vocational",
+        "label": {
+          "hu": "Szakképzés",
+          "en": "Vocational education"
+        },
+        "isco": ["232"]
+      },
+      {
+        "id": "higher-education",
+        "label": {
+          "hu": "Felsőoktatás",
+          "en": "Higher education"
+        },
+        "isco": ["231"]
+      },
+      {
+        "id": "education-management",
+        "label": {
+          "hu": "Oktatásirányítás és -fejlesztés",
+          "en": "Education management and development"
+        },
+        "isco": ["1345", "2351"]
+      },
+      {
+        "id": "adult-learning",
+        "label": {
+          "hu": "Felnőttképzés és egyéb oktatás",
+          "en": "Adult learning and other teaching"
+        },
+        "isco": ["2353", "2356", "2359"]
+      },
+      {
+        "id": "arts-teaching",
+        "label": {
+          "hu": "Művészeti oktatás",
+          "en": "Arts teaching"
+        },
+        "isco": ["2354", "2355"]
+      }
+    ]
+  },
+  {
+    "id": "culture",
+    "label": {
+      "hu": "Kultúra, média, művészet és sport",
+      "en": "Culture, media, arts and sport"
+    },
+    "subBranches": [
+      {
+        "id": "sport-leisure",
+        "label": {
+          "hu": "Sport, szabadidő és szerencsejáték",
+          "en": "Sport, leisure and gaming"
+        },
+        "isco": ["342", "4212", "9629"]
+      },
+      {
+        "id": "culture-management",
+        "label": {
+          "hu": "Kulturális és szabadidős intézmények vezetése",
+          "en": "Cultural and leisure management"
+        },
+        "isco": ["1349", "1431"]
+      },
+      {
+        "id": "performing-arts",
+        "label": {
+          "hu": "Előadó-művészet",
+          "en": "Performing arts"
+        },
+        "isco": ["2652", "2653", "2655", "2659", "5241"]
+      },
+      {
+        "id": "stage-film",
+        "label": {
+          "hu": "Színház-, film- és műsorgyártás",
+          "en": "Stage, film and broadcast production"
+        },
+        "isco": ["2654", "3435", "3521"]
+      },
+      {
+        "id": "visual-arts",
+        "label": {
+          "hu": "Képzőművészet és fotográfia",
+          "en": "Visual arts and photography"
+        },
+        "isco": ["2651", "3431", "8132"]
+      },
+      {
+        "id": "design",
+        "label": {
+          "hu": "Tervezés és design",
+          "en": "Design"
+        },
+        "isco": ["2163", "2166", "3432"]
+      },
+      {
+        "id": "communications",
+        "label": {
+          "hu": "Kommunikáció és PR",
+          "en": "Communications and PR"
+        },
+        "isco": ["1222", "2432"]
+      },
+      {
+        "id": "journalism",
+        "label": {
+          "hu": "Újságírás és műsorvezetés",
+          "en": "Journalism and broadcasting"
+        },
+        "isco": ["2642", "2656"]
+      },
+      {
+        "id": "writing",
+        "label": {
+          "hu": "Írás, szerkesztés és fordítás",
+          "en": "Writing, editing and translation"
+        },
+        "isco": ["2641", "2643", "4413"]
+      },
+      {
+        "id": "heritage",
+        "label": {
+          "hu": "Múzeum, könyvtár és levéltár",
+          "en": "Museums, libraries and archives"
+        },
+        "isco": ["262", "3433", "4411"]
+      },
+      {
+        "id": "religion",
+        "label": {
+          "hu": "Vallás",
+          "en": "Religion"
+        },
+        "isco": ["2636", "3413"]
+      },
+      {
+        "id": "humanities",
+        "label": {
+          "hu": "Társadalom- és bölcsészettudomány",
+          "en": "Social sciences and humanities"
+        },
+        "isco": ["2632", "2633"]
+      }
+    ]
+  },
+  {
+    "id": "public",
+    "label": {
+      "hu": "Közigazgatás, jog és rendvédelem",
+      "en": "Public administration, law and security"
+    },
+    "subBranches": [
+      {
+        "id": "politics",
+        "label": {
+          "hu": "Politika és kormányzati vezetés",
+          "en": "Politics and government leadership"
+        },
+        "isco": ["111"]
+      },
+      {
+        "id": "military",
+        "label": {
+          "hu": "Honvédelem",
+          "en": "Armed forces"
+        },
+        "isco": ["011", "021", "031"]
+      },
+      {
+        "id": "policing",
+        "label": {
+          "hu": "Rendőrség és büntetés-végrehajtás",
+          "en": "Police and corrections"
+        },
+        "isco": ["3355", "5412", "5413"]
+      },
+      {
+        "id": "fire-service",
+        "label": {
+          "hu": "Tűzoltóság",
+          "en": "Fire service"
+        },
+        "isco": ["5411"]
+      },
+      {
+        "id": "security",
+        "label": {
+          "hu": "Vagyonvédelem és közbiztonság",
+          "en": "Security and public safety"
+        },
+        "isco": ["5414", "5419"]
+      },
+      {
+        "id": "legal",
+        "label": {
+          "hu": "Jog és igazságszolgáltatás",
+          "en": "Law and justice"
+        },
+        "isco": ["261", "3342", "3411"]
+      },
+      {
+        "id": "policy",
+        "label": {
+          "hu": "Közpolitika és közigazgatás",
+          "en": "Public policy and administration"
+        },
+        "isco": ["2422", "2631"]
+      },
+      {
+        "id": "regulatory",
+        "label": {
+          "hu": "Hatósági ügyintézés",
+          "en": "Regulatory government services"
+        },
+        "isco": ["335"]
+      }
+    ]
+  },
+  {
+    "id": "business",
+    "label": {
+      "hu": "Pénzügy, üzleti szolgáltatások és irodai munka",
+      "en": "Finance, business services and office work"
+    },
+    "subBranches": [
+      {
+        "id": "accounting",
+        "label": {
+          "hu": "Pénzügyi vezetés és számvitel",
+          "en": "Financial management and accounting"
+        },
+        "isco": ["1211", "2411", "3313", "4311", "4313"]
+      },
+      {
+        "id": "banking",
+        "label": {
+          "hu": "Banki szolgáltatások",
+          "en": "Banking"
+        },
+        "isco": ["1346", "3312", "4211", "4213", "4214", "4312"]
+      },
+      {
+        "id": "investment",
+        "label": {
+          "hu": "Befektetés és pénzügyi elemzés",
+          "en": "Investment and financial analysis"
+        },
+        "isco": ["2412", "2413", "3311"]
+      },
+      {
+        "id": "insurance",
+        "label": {
+          "hu": "Biztosítás és értékbecslés",
+          "en": "Insurance and valuation"
+        },
+        "isco": ["3315", "3321"]
+      },
+      {
+        "id": "real-estate",
+        "label": {
+          "hu": "Ingatlan",
+          "en": "Real estate"
+        },
+        "isco": ["3334"]
+      },
+      {
+        "id": "office",
+        "label": {
+          "hu": "Irodai és adminisztratív munka",
+          "en": "Office and administrative work"
+        },
+        "isco": ["3341", "3343", "411", "412", "413", "4414", "4415", "4419"]
+      },
+      {
+        "id": "customer-service",
+        "label": {
+          "hu": "Ügyfélszolgálat és recepció",
+          "en": "Customer service and reception"
+        },
+        "isco": ["4222", "4223", "4225", "4226"]
+      },
+      {
+        "id": "hr",
+        "label": {
+          "hu": "Emberi erőforrások",
+          "en": "Human resources"
+        },
+        "isco": ["1212", "2423", "2424", "3333", "4416"]
+      },
+      {
+        "id": "management",
+        "label": {
+          "hu": "Vállalatvezetés, stratégia és tanácsadás",
+          "en": "Management, strategy and consulting"
+        },
+        "isco": ["112", "1213", "1219", "2421"]
+      }
+    ]
+  }
+]
