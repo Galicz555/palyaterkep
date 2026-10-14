@@ -139,9 +139,38 @@ describe("layout C, the prism", () => {
   });
 });
 
+describe("layout D, the tetrahedron", () => {
+  const tet = place("D");
+  it("puts each role inside the tetrahedron, light ones toward the light vertex", () => {
+    if (tet.frame.kind !== "tetra") throw new Error("D is the tetrahedron");
+    const [, , , light] = tet.frame.vertices.map((v) => v.at);
+    const dist = (id: string, v: number[]) =>
+      Math.hypot(...at(tet, role(id)).map((c, k) => c - v[k]!));
+    // The tenth of the roles that ask the least sit nearer the light vertex than the tenth that ask most.
+    const scored = data.roles
+      .map((r, i) => ({
+        i,
+        m: r.demands ? (r.demands[0] + r.demands[1] + r.demands[2]) / 3 : null,
+      }))
+      .filter((x): x is { i: number; m: number } => x.m !== null)
+      .sort((p, q) => p.m - q.m);
+    const tenth = Math.floor(scored.length / 10);
+    const mean = (xs: { i: number }[]) =>
+      xs.reduce((s, x) => s + Math.hypot(...at(tet, x.i).map((c, k) => c - light![k]!)), 0) /
+      xs.length;
+    expect(mean(scored.slice(0, tenth))).toBeLessThan(mean(scored.slice(-tenth)) - 40);
+    for (let i = 0; i < data.roles.length; i++) {
+      expect(Math.hypot(...at(tet, i))).toBeLessThan(85 + 8);
+    }
+  });
+  it("shows the level as size and keeps roles apart", () => {
+    data.roles.forEach((r, i) => expect(tet.sizes![i]).toBeCloseTo(0.55 + 0.22 * (r.level - 1)));
+  });
+});
+
 describe("every layout", () => {
   it("has finite positions, a camera that has something to show and a size per role", () => {
-    for (const id of ["A", "B", "C"] as const) {
+    for (const id of ["A", "B", "C", "D"] as const) {
       const arrangement = place(id);
       expect(arrangement.positions.every(Number.isFinite)).toBe(true);
       expect(arrangement.home.fit[0]).toBeGreaterThan(0);

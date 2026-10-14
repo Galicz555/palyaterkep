@@ -1,7 +1,7 @@
 // The layouts the map can show, by name: what the dropdown, the address and the key under the map
 // say about each. Where the roles go is in lib/arrange.ts, which the map loads with three.js.
 
-export type LayoutId = "A" | "B" | "C";
+export type LayoutId = "A" | "B" | "C" | "D";
 
 export interface LayoutInfo {
   id: LayoutId;
@@ -49,6 +49,18 @@ export const LAYOUTS: readonly LayoutInfo[] = [
     key: [
       ["Helye az alapon", "a három terhelés aránya"],
       ["Magasság", "szint, fent a magasabb"],
+      ["Szín", "ág"],
+    ],
+    byBranch: false,
+  },
+  {
+    id: "D",
+    label: "D – Tetraéder",
+    intro:
+      "Minden szerep egy pont a tetraéderben: a fizikai, szellemi és érzelmi terhelés csúcsa között a terhelés aránya, a negyedik, „könnyű” csúcs felé pedig annál közelebb, minél kevésbé megterhelő a szerep; a méret a szint, a szín az ág.",
+    key: [
+      ["Helye", "a három terhelés aránya, és a könnyű csúcs felé: kis terhelés"],
+      ["Méret", "szint, nagyobb a magasabb"],
       ["Szín", "ág"],
     ],
     byBranch: false,

@@ -30,6 +30,8 @@ import { ADD, NODE_FRAG, NODE_VERT, SHELL_FRAG, SHELL_VERT } from "./shaders.ts"
 
 const TAU = Math.PI * 2;
 
+type Vec3 = [number, number, number];
+
 /** The disc's floor sits a little below the points on it. */
 export const FLOOR_Y = -1.5;
 /** How flat the glass around the disc is, as a fraction of a sphere. */
@@ -364,6 +366,41 @@ function disc(spec: Extract<FrameSpec, { kind: "disc" }>, data: MapData, host: H
   };
 }
 
+/** Bright stars at the corners of a layout: big glowing points, drawn with the nodes' shader. */
+function stars(p: Parts, host: Host, at3: Vec3[]) {
+  const n = at3.length;
+  const geometry = new BufferGeometry();
+  const at = new Float32Array(at3.flat());
+  geometry.setAttribute("position", new BufferAttribute(at, 3));
+  geometry.setAttribute("aTo", new BufferAttribute(at.slice(), 3));
+  const colors = new Float32Array(Array.from({ length: n }, () => [0.82, 0.9, 1]).flat());
+  geometry.setAttribute("aColor", new BufferAttribute(colors, 3));
+  geometry.setAttribute("aColorFrom", new BufferAttribute(colors.slice(), 3));
+  const sizes = new Float32Array(n).fill(5);
+  geometry.setAttribute("aSize", new BufferAttribute(sizes, 1));
+  geometry.setAttribute("aSizeFrom", new BufferAttribute(sizes.slice(), 1));
+  const alpha = new BufferAttribute(new Float32Array(n).fill(1), 1);
+  geometry.setAttribute("aAlpha", alpha);
+  geometry.setAttribute("aMark", new BufferAttribute(new Float32Array(n).fill(1), 1));
+  geometry.setAttribute("aShape", new BufferAttribute(new Float32Array(n), 1));
+  geometry.setAttribute("aManage", new BufferAttribute(new Float32Array(n), 1));
+  const points = new Points(
+    geometry,
+    new ShaderMaterial({
+      uniforms: host.uniforms,
+      vertexShader: NODE_VERT,
+      fragmentShader: NODE_FRAG,
+      ...ADD,
+    }),
+  );
+  points.frustumCulled = false;
+  points.renderOrder = 3;
+  p.add(points, (a) => {
+    alpha.array.fill(a);
+    alpha.needsUpdate = true;
+  });
+}
+
 /** The glass sphere of the reference: shells that glow at the rim, a faint lat/long grid, rings. */
 function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame {
   const p = parts(host);
@@ -377,40 +414,11 @@ function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame
   p.add(tilted.object, tilted.fade);
 
   // The three stars of the demands: the corners the mixes are pulled towards.
-  const n = spec.anchors.length;
-  const geometry = new BufferGeometry();
-  const at = new Float32Array(spec.anchors.flatMap((a) => a.at));
-  geometry.setAttribute("position", new BufferAttribute(at, 3));
-  geometry.setAttribute("aTo", new BufferAttribute(at.slice(), 3));
-  geometry.setAttribute(
-    "aColor",
-    new BufferAttribute(
-      new Float32Array(Array.from({ length: n }, () => [0.82, 0.9, 1]).flat()),
-      3,
-    ),
+  stars(
+    p,
+    host,
+    spec.anchors.map((a) => a.at),
   );
-  const size = new BufferAttribute(new Float32Array(n).fill(5), 1);
-  const alpha = new BufferAttribute(new Float32Array(n).fill(1), 1);
-  geometry.setAttribute("aSize", size);
-  geometry.setAttribute("aAlpha", alpha);
-  geometry.setAttribute("aMark", new BufferAttribute(new Float32Array(n).fill(1), 1));
-  geometry.setAttribute("aShape", new BufferAttribute(new Float32Array(n), 1));
-  geometry.setAttribute("aManage", new BufferAttribute(new Float32Array(n), 1));
-  const stars = new Points(
-    geometry,
-    new ShaderMaterial({
-      uniforms: host.uniforms,
-      vertexShader: NODE_VERT,
-      fragmentShader: NODE_FRAG,
-      ...ADD,
-    }),
-  );
-  stars.frustumCulled = false;
-  stars.renderOrder = 3;
-  p.add(stars, (a) => {
-    alpha.array.fill(a);
-    alpha.needsUpdate = true;
-  });
 
   const anchorPins = spec.anchors.map((a) => ({
     e: p.pin("lbl-anchor", a.label),
@@ -558,7 +566,65 @@ function prism(spec: Extract<FrameSpec, { kind: "prism" }>, host: Host): Frame {
   };
 }
 
+/** A glass tetrahedron: six edges, four faint faces, a star and a name at each vertex. */
+function tetra(spec: Extract<FrameSpec, { kind: "tetra" }>, host: Host): Frame {
+  const p = parts(host);
+  const v = spec.vertices.map((x) => x.at);
+  const edges: number[] = [];
+  const faces: number[] = [];
+  for (let a = 0; a < 4; a++) {
+    for (let b = a + 1; b < 4; b++) edges.push(...v[a]!, ...v[b]!);
+  }
+  for (const skip of [0, 1, 2, 3]) faces.push(...v.filter((_, k) => k !== skip).flat());
+  const outline = lines(edges, 0x4b86c8, 0.7);
+  p.add(outline.object, outline.fade);
+  const geometry = new BufferGeometry();
+  geometry.setAttribute("position", new Float32BufferAttribute(faces, 3));
+  const material = new MeshBasicMaterial({
+    color: 0x2f6aa6,
+    opacity: 0.05,
+    side: DoubleSide,
+    ...ADD,
+  });
+  const glassMesh = new Mesh(geometry, material);
+  glassMesh.renderOrder = 0;
+  p.add(glassMesh, (a) => (material.opacity = 0.05 * a));
+  stars(p, host, v);
+  const pins = spec.vertices.map((x) => ({
+    e: p.pin("lbl-anchor", x.label),
+    at: new Vector3(...x.at),
+  }));
+  const spot: Spot = { x: 0, y: 0, d: 0 };
+  const centre: Spot = { x: 0, y: 0, d: 0 };
+  return {
+    fade: p.fade,
+    dispose: p.dispose,
+    place(ctx) {
+      const f = p.shown.amount;
+      ctx.project(0, 0, 0, centre);
+      for (const pin of pins) {
+        ctx.project(pin.at.x, pin.at.y, pin.at.z, spot);
+        if (spot.d < 0 || !ctx.onScreen(spot.x, spot.y, 60)) {
+          pin.e.style.opacity = "0";
+          continue;
+        }
+        const dx = spot.x - centre.x;
+        const dy = spot.y - centre.y;
+        const length = Math.hypot(dx, dy) || 1;
+        ctx.place(
+          pin.e,
+          spot.x + (dx / length) * 40,
+          spot.y + (dy / length) * 22,
+          f,
+          " translate(-50%,-50%)",
+        );
+      }
+    },
+  };
+}
+
 export function buildFrame(spec: FrameSpec, data: MapData, host: Host): Frame {
   if (spec.kind === "disc") return disc(spec, data, host);
-  return spec.kind === "sphere" ? sphere(spec, host) : prism(spec, host);
+  if (spec.kind === "sphere") return sphere(spec, host);
+  return spec.kind === "tetra" ? tetra(spec, host) : prism(spec, host);
 }

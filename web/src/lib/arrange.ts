@@ -38,6 +38,11 @@ export type FrameSpec =
       anchors: { label: string; at: Vec3 }[];
     }
   | {
+      kind: "tetra";
+      /** Physical, mental, emotional and light, in that order. */
+      vertices: { label: string; at: Vec3 }[];
+    }
+  | {
       kind: "prism";
       /** The three vertical edges, in `DEMANDS` order: where each stands on the floor plan. */
       corners: { label: string; x: number; z: number }[];
@@ -241,6 +246,65 @@ function prism(data: MapData): Arrangement {
   };
 }
 
+/** Circumradius of the tetrahedron. */
+const TETRA_R = 85;
+
+/**
+ * How much of a role's place goes to the light vertex: none for the most demanding, 85% for the
+ * least. Magnitudes run from 0.3 to 0.72 for nine roles in ten.
+ */
+const lightOf = (m: number) => 0.85 * Math.min(1, Math.max(0, (0.78 - m) / 0.5));
+
+function tetra(data: MapData): Arrangement {
+  const { roles } = data;
+  const base = (TETRA_R * Math.sqrt(8)) / 3;
+  // A regular tetrahedron around the origin: the three demands on a floor, the light vertex above.
+  const vertices: Vec3[] = [
+    ...CORNER_ANGLE.map((a): Vec3 => [Math.sin(a) * base, -TETRA_R / 3, -Math.cos(a) * base]),
+    [0, TETRA_R, 0],
+  ];
+  const positions = new Float32Array(roles.length * 3);
+  const sizes = new Float32Array(roles.length);
+  const offsets = spread(
+    roles.map((r) => `${mixKey(r.demands)}|${Math.round(magnitudeOf(r.demands) * 50)}|${r.level}`),
+    SPACING,
+  );
+  roles.forEach((role, i) => {
+    const mix = mixOf(role.demands);
+    const light = lightOf(magnitudeOf(role.demands));
+    const weights = [...mix.map((w) => w * (1 - light)), light];
+    for (let k = 0; k < 3; k++) {
+      positions[i * 3 + k] = vertices.reduce((s, v, j) => s + weights[j]! * v[k]!, 0);
+    }
+    positions[i * 3]! += offsets[i * 2]!;
+    positions[i * 3 + 2]! += offsets[i * 2 + 1]!;
+    // Level has no axis here: it is the size.
+    sizes[i] = 0.55 + 0.22 * (role.level - 1);
+  });
+  relax(
+    positions,
+    roles.map(() => 0),
+    [0, 1, 2],
+    1.4,
+  );
+  return {
+    id: "D",
+    positions,
+    frame: {
+      kind: "tetra",
+      vertices: [...DEMANDS.map((d) => d.label), "Könnyű"].map((label, k) => ({
+        label,
+        at: vertices[k]!,
+      })),
+    },
+    home: { target: [0, 0, 0], az: deg(20), pol: deg(68), fit: [TETRA_R * 1.7, TETRA_R * 1.45] },
+    free: true,
+    extent: TETRA_R * 1.2,
+    sizes,
+    alpha: 0.62,
+  };
+}
+
 /** The disc is worked out once and shared by the layouts that stand on it. */
 export function arranger(data: MapData): (id: LayoutId, axis?: number) => Arrangement {
   let plan: Layout | undefined;
@@ -254,6 +318,8 @@ export function arranger(data: MapData): (id: LayoutId, axis?: number) => Arrang
         return disc(id, plan, data, { axis });
       case "C":
         return prism(data);
+      case "D":
+        return tetra(data);
     }
   };
   return (id, axis = 0) => {
