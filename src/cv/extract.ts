@@ -79,6 +79,30 @@ export interface Mention {
   quote: string;
 }
 
+const MONTH_YEAR =
+  /\b(0?[1-9]|1[0-2])\s*[./-]\s*((?:19|20)\d\d)\b|\b((?:19|20)\d\d)\s*[./-]\s*(0?[1-9]|1[0-2])\b/gu;
+const ONGOING = /present|current|now|today|jelenleg|napjainkig|folyamatban|jelen\b/iu;
+
+/**
+ * The length of a date range that names a month at both ends, or a start month and an open end,
+ * counted in whole months with both ends included, as a CV reader counts them: 09/2021 – 05/2022 is
+ * 9 months. Undefined for anything else (years only, odd formats); then the model's count stands.
+ */
+export function yearsFromDates(dates: string, today: string): number | undefined {
+  const months = [...dates.matchAll(MONTH_YEAR)].map((m) =>
+    m[1] ? Number(m[2]) * 12 + Number(m[1]) - 1 : Number(m[3]) * 12 + Number(m[4]) - 1,
+  );
+  const now = Number(today.slice(0, 4)) * 12 + Number(today.slice(5, 7)) - 1;
+  const [start, end] =
+    months.length === 2
+      ? months
+      : months.length === 1 && ONGOING.test(dates)
+        ? [months[0], now]
+        : [];
+  if (start === undefined || end === undefined || end < start) return undefined;
+  return (end - start + 1) / 12;
+}
+
 /** Four-digit years in a date range; with one year, the range runs to today. */
 function maxYears(dates: string, today: string): number | undefined {
   const years = [...dates.matchAll(/\b(19|20)\d\d\b/gu)].map((m) => Number(m[0]));
@@ -108,6 +132,8 @@ export function checkExtraction(
     } else if (dates === null && years !== null) {
       problems.push(`jobs[${i}].years ${years} is given without dates`);
       years = null;
+    } else if (dates !== null && yearsFromDates(dates, today) !== undefined) {
+      years = yearsFromDates(dates, today)!;
     } else if (dates !== null && years !== null) {
       const max = maxYears(dates, today);
       if (years < 0 || (max !== undefined && years > max)) {
