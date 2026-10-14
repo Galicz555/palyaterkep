@@ -3,7 +3,7 @@
 
 import { readFileSync, writeFileSync } from "node:fs";
 import type { Esco, Occupation } from "../esco/model.ts";
-import { branchOf, loadBranches, validateBranches } from "./branches.ts";
+import { branchOf, loadBranches, placeOccupation, validateBranches } from "./branches.ts";
 
 const OUT = "raw/branches-review.md";
 
@@ -11,15 +11,15 @@ const OUT = "raw/branches-review.md";
 const DOUBTS: Record<string, string> = {
   "0": "A fegyveres erők nem szakterület, az ISCO rendfokozat szerint osztja őket. A rendvédelem mellé kerültek, de a katonai mérnök, pilóta vagy hírszerző a saját szakterületén is otthon lenne.",
   "1324":
-    "90 foglalkozás, kb. 70 import-export és disztribúciós vezető (nagykereskedelem). Velük együtt a kereskedelembe kerülnek a közlekedési és logisztikai vezetők is: repülőtér-igazgató, vasútüzemi vezető, ellátásilánc-vezető, raktárvezető.",
+    "90 foglalkozás, kb. 70 import-export és disztribúciós vezető, ezért nagykereskedelem. A közlekedési, raktározási és logisztikai vezetők (repülőtér-igazgató, vasútüzem-vezető, ellátásilánc-vezető, raktárvezető), a beszerzési vezetők és a filmforgalmazó egyedileg a saját szakterületükön vannak.",
   "3331":
-    "40 foglalkozásból 37 import-export szakértő, ezért nagykereskedelem. A speditőr, a nemzetközi szállítmányozási koordinátor és a vámügyintéző a logisztikába, illetve a hatósági ügyintézésbe illene.",
+    "40 foglalkozásból 37 import-export szakértő, ezért nagykereskedelem. A speditőr, a szállítmányozási koordinátor és a hajózási ügynök egyedileg a logisztikában, a vámügyintéző a hatósági ügyintézésben van.",
   "1219":
-    "14-ből 8 üzleti vagy igazgatási vezető (projekt, létesítmény, CSR, biztonság), de 6 üzemvezető (vegyi üzem, öntöde, erőmű, víztisztító, faüzem), akik az iparba valók.",
+    "14-ből 8 üzleti vagy igazgatási vezető (projekt, létesítmény, CSR, biztonság). Az üzemvezetők (vegyi üzem, öntöde, faüzem, erőmű, víztisztító) egyedileg az iparban, a védelmi igazgatási tisztviselő a honvédelemben van.",
   "1213":
-    "Vállalati stratégia és közpolitika keveredik: az EU-forrás-menedzser, szakpolitikai vezető, társadalombiztosítási vezető és turisztikai szakpolitikai igazgató a közigazgatásba illene. A többség vállalati.",
+    "A többség vállalati stratégia. A közpolitikai vezetők (uniós alapok kezelője, szakpolitikai vezető, társadalombiztosítási adminisztrátor, turizmusfejlesztési igazgató) egyedileg a közigazgatásban, az EBK-vezető a munkavédelemben van.",
   "1349":
-    "24 vegyes vezető: 10 kulturális vagy kiadói (múzeumigazgató, könyvkiadó, művészeti igazgató, könyvtárvezető, fordítóiroda-vezető), 5 közbiztonsági vagy jogi, 4 légiforgalmi, 5 egyéb. Relatív többség szerint kultúra.",
+    "24 vegyes vezető, a relatív többség kulturális vagy kiadói, ezért kultúra. A légiforgalmi, jogi, rendvédelmi, tűzoltó, mentő, energetikai, környezetvédelmi, laboratóriumi és sportvezetők egyedileg a saját szakterületükön vannak.",
   "1431":
     "Kulturális központ, sportlétesítmény és szabadidő (6) mellett szerencsejáték (3) és szépségszalon, spa (2) vezetői.",
   "1439":
@@ -99,7 +99,7 @@ const DOUBTS: Record<string, string> = {
 
 const esco = JSON.parse(readFileSync("raw/esco/esco.json", "utf8")) as Esco;
 const branches = loadBranches();
-validateBranches(branches, esco.iscoGroups);
+validateBranches(branches, esco.iscoGroups, esco.occupations);
 
 const groupLabel = new Map(esco.iscoGroups.map((g) => [g.code, g.label.hu]));
 const units = esco.iscoGroups
@@ -108,7 +108,12 @@ const units = esco.iscoGroups
   .sort();
 const byUnit = new Map<string, Occupation[]>();
 for (const o of esco.occupations) byUnit.set(o.isco, [...(byUnit.get(o.isco) ?? []), o]);
-const count = (codes: string[]) => codes.reduce((n, c) => n + (byUnit.get(c)?.length ?? 0), 0);
+const subOf = new Map(
+  esco.occupations.map((o) => [o.code, placeOccupation(branches, o).subBranch.id]),
+);
+const count = (subIds: string[]) =>
+  esco.occupations.filter((o) => subIds.includes(subOf.get(o.code)!)).length;
+const byCode = new Map(esco.occupations.map((o) => [o.code, o]));
 const unitsOf = new Map<string, string[]>();
 for (const unit of units) {
   const id = branchOf(branches, unit).subBranch.id;
@@ -123,8 +128,8 @@ const lines = [
   "| # | Fő ág | id | Alág | Foglalkozás |",
   "| --: | --- | --- | --: | --: |",
   ...branches.map((b, i) => {
-    const codes = b.subBranches.flatMap((s) => unitsOf.get(s.id) ?? []);
-    return `| ${i + 1} | ${b.label.hu} | \`${b.id}\` | ${b.subBranches.length} | ${count(codes)} |`;
+    const n = count(b.subBranches.map((s) => s.id));
+    return `| ${i + 1} | ${b.label.hu} | \`${b.id}\` | ${b.subBranches.length} | ${n} |`;
   }),
   "",
   "## Kétes esetek",
@@ -135,8 +140,12 @@ for (const [code, reason] of Object.entries(DOUBTS)) {
   const unit = units.find((u) => u.startsWith(code));
   if (!unit || !groupLabel.has(code)) throw new Error(`doubt about unknown ISCO group ${code}`);
   const { branch, subBranch } = branchOf(branches, unit);
+  const moved = esco.occupations.filter(
+    (o) => o.isco.startsWith(code) && subOf.get(o.code) !== branchOf(branches, o.isco).subBranch.id,
+  ).length;
+  const note = moved ? ` ${moved} foglalkozása egyedileg máshová került.` : "";
   lines.push(
-    `- **${code}** ${groupLabel.get(code)} → ${branch.label.hu} / ${subBranch.label.hu}. ${reason}`,
+    `- **${code}** ${groupLabel.get(code)} → ${branch.label.hu} / ${subBranch.label.hu}. ${reason}${note}`,
   );
 }
 
@@ -148,31 +157,35 @@ lines.push(
 );
 
 const isDoubtful = (unit: string) => Object.keys(DOUBTS).some((code) => unit.startsWith(code));
-const examples = (unit: string) =>
-  (byUnit.get(unit) ?? [])
+const inSub = (unit: string, subId: string) =>
+  (byUnit.get(unit) ?? []).filter((o) => subOf.get(o.code) === subId);
+const examples = (unit: string, subId: string) =>
+  inSub(unit, subId)
     .toSorted((a, b) => a.code.localeCompare(b.code, "en", { numeric: true }))
     .slice(0, 3)
     .map((o) => o.label.hu)
     .join(", ");
 
 branches.forEach((branch, i) => {
-  const codes = branch.subBranches.flatMap((s) => unitsOf.get(s.id) ?? []);
-  lines.push(`## ${i + 1}. ${branch.label.hu} (\`${branch.id}\`): ${count(codes)} foglalkozás`, "");
+  const n = count(branch.subBranches.map((s) => s.id));
+  lines.push(`## ${i + 1}. ${branch.label.hu} (\`${branch.id}\`): ${n} foglalkozás`, "");
   for (const sub of branch.subBranches) {
     const subUnits = unitsOf.get(sub.id) ?? [];
     lines.push(
-      `### ${sub.label.hu} (\`${sub.id}\`): ${count(subUnits)} foglalkozás`,
+      `### ${sub.label.hu} (\`${sub.id}\`): ${count([sub.id])} foglalkozás`,
       "",
       `Listázott ISCO-kódok: ${sub.isco.join(", ")}`,
       "",
     );
     for (const unit of subUnits) {
-      const n = byUnit.get(unit)?.length ?? 0;
+      const n = inSub(unit, sub.id).length;
       const flag = isDoubtful(unit) ? " _(kétes)_" : "";
       lines.push(
-        `- **${unit}** ${groupLabel.get(unit)} (${n})${flag}${n ? `: ${examples(unit)}` : ""}`,
+        `- **${unit}** ${groupLabel.get(unit)} (${n})${flag}${n ? `: ${examples(unit, sub.id)}` : ""}`,
       );
     }
+    const single = (sub.occupations ?? []).map((c) => `${byCode.get(c)?.label.hu} (${c})`);
+    if (single.length) lines.push(`- Egyedileg ide sorolva: ${single.join(", ")}`);
     lines.push("");
   }
 });

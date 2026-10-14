@@ -165,7 +165,8 @@
           "hu": "Környezetvédelem",
           "en": "Environmental protection"
         },
-        "isco": ["2133", "2143"]
+        "isco": ["2133", "2143"],
+        "occupations": ["1349.13"]
       }
     ]
   },
@@ -319,7 +320,8 @@
           "hu": "Gyártásirányítás",
           "en": "Production management"
         },
-        "isco": ["1321", "3122", "3139", "4322"]
+        "isco": ["1321", "3122", "3139", "4322"],
+        "occupations": ["1219.5", "1219.5.1", "1219.5.2", "1219.5.5"]
       },
       {
         "id": "quality-control",
@@ -343,7 +345,8 @@
           "hu": "Energia, víz és hulladék",
           "en": "Energy, water and waste"
         },
-        "isco": ["3131", "3132", "7413", "8182", "961", "9623"]
+        "isco": ["3131", "3132", "7413", "8182", "961", "9623"],
+        "occupations": ["1219.5.3", "1219.5.4", "1349.12"]
       },
       {
         "id": "mining",
@@ -433,7 +436,8 @@
           "hu": "Közúti közlekedés",
           "en": "Road transport"
         },
-        "isco": ["5165", "8322", "833", "9332"]
+        "isco": ["5165", "8322", "833", "9332"],
+        "occupations": ["1324.3.1.4", "1324.3.1.5"]
       },
       {
         "id": "rail",
@@ -441,7 +445,8 @@
           "hu": "Vasúti közlekedés",
           "en": "Rail transport"
         },
-        "isco": ["5112", "831"]
+        "isco": ["5112", "831"],
+        "occupations": ["1324.3.1.3", "1324.7"]
       },
       {
         "id": "water",
@@ -449,7 +454,8 @@
           "hu": "Vízi közlekedés",
           "en": "Water transport"
         },
-        "isco": ["3151", "3152", "835"]
+        "isco": ["3151", "3152", "835"],
+        "occupations": ["1324.3.1.1", "1324.3.1.2", "3331.2.2"]
       },
       {
         "id": "air",
@@ -457,7 +463,8 @@
           "hu": "Légi közlekedés",
           "en": "Air transport"
         },
-        "isco": ["3153", "3154", "3155", "5111"]
+        "isco": ["3153", "3154", "3155", "5111"],
+        "occupations": ["1324.1", "1324.2", "1349.1", "1349.2", "1349.4", "1349.5"]
       },
       {
         "id": "dispatch",
@@ -465,7 +472,8 @@
           "hu": "Forgalomirányítás és fuvarszervezés",
           "en": "Dispatch and transport coordination"
         },
-        "isco": ["4323"]
+        "isco": ["4323"],
+        "occupations": ["1324.3.3", "1324.4", "1324.6", "1324.8", "1324.8.1", "3331.2", "3331.3"]
       },
       {
         "id": "postal-courier",
@@ -481,7 +489,8 @@
           "hu": "Raktározás és anyagmozgatás",
           "en": "Warehousing and materials handling"
         },
-        "isco": ["4321", "8344", "9333"]
+        "isco": ["4321", "8344", "9333"],
+        "occupations": ["1324.3.4", "1324.3.4.1"]
       }
     ]
   },
@@ -506,7 +515,8 @@
           "hu": "Beszerzés",
           "en": "Purchasing"
         },
-        "isco": ["3323"]
+        "isco": ["3323"],
+        "occupations": ["1324.8.2", "1324.8.2.1"]
       },
       {
         "id": "technical-sales",
@@ -684,7 +694,8 @@
           "hu": "Laboratórium és képalkotás",
           "en": "Laboratory and imaging"
         },
-        "isco": ["3211", "3212"]
+        "isco": ["3211", "3212"],
+        "occupations": ["1349.17"]
       },
       {
         "id": "psychology",
@@ -700,7 +711,8 @@
           "hu": "Népegészségügy és munkavédelem",
           "en": "Public and occupational health"
         },
-        "isco": ["2263", "3253", "3257"]
+        "isco": ["2263", "3253", "3257"],
+        "occupations": ["1213.7"]
       },
       {
         "id": "health-management",
@@ -814,7 +826,8 @@
           "hu": "Sport, szabadidő és szerencsejáték",
           "en": "Sport, leisure and gaming"
         },
-        "isco": ["342", "4212", "9629"]
+        "isco": ["342", "4212", "9629"],
+        "occupations": ["1349.22"]
       },
       {
         "id": "culture-management",
@@ -838,7 +851,8 @@
           "hu": "Színház-, film- és műsorgyártás",
           "en": "Stage, film and broadcast production"
         },
-        "isco": ["2654", "3435", "3521"]
+        "isco": ["2654", "3435", "3521"],
+        "occupations": ["1324.5"]
       },
       {
         "id": "visual-arts",
@@ -878,7 +892,8 @@
           "hu": "Írás, szerkesztés és fordítás",
           "en": "Writing, editing and translation"
         },
-        "isco": ["2641", "2643", "4413"]
+        "isco": ["2641", "2643", "4413"],
+        "occupations": ["1349.15", "1349.23"]
       },
       {
         "id": "heritage",
@@ -886,7 +901,8 @@
           "hu": "Múzeum, könyvtár és levéltár",
           "en": "Museums, libraries and archives"
         },
-        "isco": ["262", "3433", "4411"]
+        "isco": ["262", "3433", "4411"],
+        "occupations": ["1349.16", "1349.18"]
       },
       {
         "id": "religion",
@@ -927,7 +943,8 @@
           "hu": "Honvédelem",
           "en": "Armed forces"
         },
-        "isco": ["011", "021", "031"]
+        "isco": ["011", "021", "031"],
+        "occupations": ["1219.3"]
       },
       {
         "id": "policing",
@@ -935,7 +952,8 @@
           "hu": "Rendőrség és büntetés-végrehajtás",
           "en": "Police and corrections"
         },
-        "isco": ["3355", "5412", "5413"]
+        "isco": ["3355", "5412", "5413"],
+        "occupations": ["1349.9"]
       },
       {
         "id": "fire-service",
@@ -943,7 +961,8 @@
           "hu": "Tűzoltóság",
           "en": "Fire service"
         },
-        "isco": ["5411"]
+        "isco": ["5411"],
+        "occupations": ["1349.7"]
       },
       {
         "id": "security",
@@ -951,7 +970,8 @@
           "hu": "Vagyonvédelem és közbiztonság",
           "en": "Security and public safety"
         },
-        "isco": ["5414", "5419"]
+        "isco": ["5414", "5419"],
+        "occupations": ["1349.20"]
       },
       {
         "id": "legal",
@@ -959,7 +979,8 @@
           "hu": "Jog és igazságszolgáltatás",
           "en": "Law and justice"
         },
-        "isco": ["261", "3342", "3411"]
+        "isco": ["261", "3342", "3411"],
+        "occupations": ["1349.10", "1349.21.1"]
       },
       {
         "id": "policy",
@@ -967,7 +988,8 @@
           "hu": "Közpolitika és közigazgatás",
           "en": "Public policy and administration"
         },
-        "isco": ["2422", "2631"]
+        "isco": ["2422", "2631"],
+        "occupations": ["1213.2", "1213.2.1", "1213.2.3", "1213.6"]
       },
       {
         "id": "regulatory",
@@ -975,7 +997,8 @@
           "hu": "Hatósági ügyintézés",
           "en": "Regulatory government services"
         },
-        "isco": ["335"]
+        "isco": ["335"],
+        "occupations": ["3331.1"]
       }
     ]
   },
@@ -1032,7 +1055,8 @@
           "hu": "Irodai és adminisztratív munka",
           "en": "Office and administrative work"
         },
-        "isco": ["3341", "3343", "411", "412", "413", "4414", "4415", "4419"]
+        "isco": ["3341", "3343", "411", "412", "413", "4414", "4415", "4419"],
+        "occupations": ["1349.11"]
       },
       {
         "id": "customer-service",
