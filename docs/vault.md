@@ -69,9 +69,14 @@ pnpm vault     # rewrite the generated notes
 pnpm vault:lint
 ```
 
-`pnpm propose` runs `claude -p` on the subscription with the Haiku model, 40 occupations a call,
+`pnpm propose` runs `claude -p` on the subscription with the Sonnet model, 40 occupations a call,
 and only for ESCO codes `data/proposals.json` does not have yet; the file is committed, so a rerun
 of the vault makes no model call. To re-propose an occupation, delete its line. The prompt is
 `PROMPT` in `src/vault/propose.ts`.
+
+The proposed levels are honest only to about one step. Shifting the batch boundaries by 20
+occupations changed the level of 12.4% of 800 occupations with Sonnet (16.5% with Haiku), never by
+more than one step: many titles sit genuinely between two adjacent levels. That is why uncurated
+levels are marked unchecked; curated ladders set the real ones.
 
 `pnpm vault` is deterministic: a second run writes nothing.

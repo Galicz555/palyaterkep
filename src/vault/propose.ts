@@ -10,7 +10,7 @@ import type { Esco, Occupation } from "../esco/model.ts";
 import { Level, Track } from "./note.ts";
 
 export const PROPOSALS_FILE = "data/proposals.json";
-const MODEL = "haiku";
+const MODEL = "sonnet";
 const BATCH = 40;
 const PARALLEL = 4;
 const TIMEOUT_MS = 5 * 60_000;
