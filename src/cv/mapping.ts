@@ -13,8 +13,12 @@ export const OCCUPATION_CANDIDATES = 8;
 /** Candidate skills kept per skill mention, and the least trigram similarity they need. */
 export const SKILL_CANDIDATES = 3;
 export const SKILL_MIN_SCORE = 0.45;
-/** The most skills the model is asked about in one CV. */
-export const UNIVERSE_CAP = 400;
+/**
+ * The most skills the model is asked about in one CV. A held role and its neighbours need 49
+ * skills at the median and 96 at p90 of the vault, so this fits about five unrelated jobs before
+ * a neighbour's skills are cut and its gap is overstated.
+ */
+export const UNIVERSE_CAP = 600;
 /** Roles the skill mentions point at, beyond the held ones, whose skills are asked about. */
 export const MENTIONED_ROLES = 10;
 

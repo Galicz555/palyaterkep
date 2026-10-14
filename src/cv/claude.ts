@@ -21,7 +21,7 @@ export const costUsd = (usage: Usage[]): number =>
 
 /**
  * The most one CV can cost: three steps with a retry each, every call at the largest prompt
- * (30k CV characters plus 400 listed skills, well under 40k tokens) and the full output.
+ * (30k CV characters plus 600 listed skills, well under 40k tokens) and the full output.
  */
 export const CV_RESERVE_USD = costUsd(Array(6).fill({ input: 40_000, output: MAX_TOKENS }));
 
