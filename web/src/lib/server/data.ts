@@ -105,6 +105,7 @@ function load(): Loaded {
         curated: note.curated,
         branch,
         sub,
+        demands: null,
       })),
       lateral: [...lateral.values()],
       progression,

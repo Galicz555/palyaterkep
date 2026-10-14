@@ -3,6 +3,9 @@
 
 export type Level = 1 | 2 | 3 | 4 | 5;
 
+/** Physical, mental, emotional demand: each the percentile rank across occupations, 0 to 1. */
+export type Demands = [number, number, number];
+
 export interface MapRole {
   id: string;
   /** The vault label as it is: an uncurated role's is the ESCO label, often lower case. */
@@ -15,6 +18,8 @@ export interface MapRole {
   branch: number;
   /** Index into that branch's `subBranches`. */
   sub: number;
+  /** The occupation's demands; null where there is no data. */
+  demands: Demands | null;
 }
 
 export interface MapBranch {
