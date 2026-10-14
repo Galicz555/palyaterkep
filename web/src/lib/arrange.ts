@@ -6,6 +6,7 @@
 // up (see lib/layout.ts).
 
 import {
+  CAP_ANGLE,
   capDirection,
   CORNER_ANGLE,
   DEMANDS,
@@ -39,6 +40,8 @@ export type FrameSpec =
       shells: { level: Level; radius: number }[];
       /** Where the level names stand on the front meridian, degrees from the top; 72 if absent. */
       labelPolar?: number;
+      /** Polar angle of the cap the roles fill: each shell gets a net and a rim over it. */
+      cap?: number;
       /** The three demand stars, in `DEMANDS` order. */
       anchors: { label: string; at: Vec3 }[];
     }
@@ -221,12 +224,14 @@ function sphere(data: MapData): Arrangement {
     frame: {
       kind: "sphere",
       shells: SHELL.map((radius, k) => ({ level: (k + 1) as Level, radius })),
+      cap: CAP_ANGLE,
+      labelPolar: 84,
       anchors: DEMANDS.map((d, k) => {
         const [x, y, z] = capDirection(corners[k]!);
         return { label: d.label, at: [x * R_OUT, y * R_OUT, z * R_OUT] };
       }),
     },
-    home: { target: [0, 6, 0], az: 0, pol: deg(62), fit: [R_OUT * 1.12, R_OUT * 1.12] },
+    home: { target: [0, 6, 0], az: 0, pol: deg(48), fit: [R_OUT * 1.12, R_OUT * 1.12] },
     free: true,
     extent: R_OUT,
     sizes,

@@ -402,12 +402,44 @@ function stars(p: Parts, host: Host, at3: Vec3[]) {
   });
 }
 
+/** The net of a cap on a shell: latitudes every third of the cap and meridians every 60 degrees. */
+function capNet(radius: number, cap: number): { net: number[]; rim: number[] } {
+  const at = (polar: number, az: number): Vec3 => [
+    radius * Math.sin(polar) * Math.sin(az),
+    radius * Math.cos(polar),
+    -radius * Math.sin(polar) * Math.cos(az),
+  ];
+  const net: number[] = [];
+  const rim: number[] = [];
+  const arc = (out: number[], from: (t: number) => Vec3, steps: number) => {
+    for (let k = 0; k < steps; k++) out.push(...from(k / steps), ...from((k + 1) / steps));
+  };
+  for (const f of [1 / 3, 2 / 3]) arc(net, (t) => at(f * cap, t * TAU), 96);
+  arc(rim, (t) => at(cap, t * TAU), 128);
+  for (let m = 0; m < 6; m++) arc(net, (t) => at(t * cap, (m / 6) * TAU), 24);
+  return { net, rim };
+}
+
 /** The glass sphere of the reference: shells that glow at the rim, a faint lat/long grid, rings. */
 function sphere(spec: Extract<FrameSpec, { kind: "sphere" }>, host: Host): Frame {
   const p = parts(host);
   const outer = spec.shells.at(-1)!.radius;
-  spec.shells.forEach((shell, k) => glass(p, shell.radius, k === spec.shells.length - 1 ? 1 : 0.4));
+  // Where the net marks the levels, the glass of the inner shells is fainter: less fog among the points.
+  const inner = spec.cap !== undefined ? 0.22 : 0.4;
+  spec.shells.forEach((shell, k) => glass(p, shell.radius, k === spec.shells.length - 1 ? 1 : inner));
   graticule(p, outer, 1, 0.2);
+  // Where the roles are: every shell has its own net and rim over the cap, so a level reads as a
+  // surface the points sit on, and the nested rims as the five levels.
+  if (spec.cap !== undefined) {
+    spec.shells.forEach((shell, k) => {
+      const { net, rim } = capNet(shell.radius, spec.cap!);
+      const grade = (k + 1) / spec.shells.length;
+      const mesh = lines(net, 0x3d7fc4, 0.05 + 0.09 * grade);
+      p.add(mesh.object, mesh.fade);
+      const edge = lines(rim, 0x4a96e0, 0.14 + 0.24 * grade);
+      p.add(edge.object, edge.fade);
+    });
+  }
   // Two rings beyond the glass, as in the reference.
   const ring = lines(latitude(0, outer * 1.18, 180), 0x3d7fc4, 0.34);
   p.add(ring.object, ring.fade);
