@@ -237,7 +237,10 @@ async function bench() {
   }
 }
 
-/** Near-white pixels of a PNG (base64) in a box around each point, one count per point. */
+/**
+ * Near-white pixels of a PNG (base64) along a cross through each point, `half` pixels each way,
+ * one count per point: a star's body and spikes, not its neighbours' (a box would saturate).
+ */
 const whiteAround = (page: Page, png: string, points: [number, number][], half: number) =>
   page.eval<number[]>(`(async () => {
     const img = new Image();
@@ -248,11 +251,17 @@ const whiteAround = (page: Page, png: string, points: [number, number][], half: 
     c.height = img.height;
     const g = c.getContext("2d");
     g.drawImage(img, 0, 0);
+    const white = (x, y) => {
+      const d = g.getImageData(x, y, 1, 1).data;
+      return Math.min(d[0], d[1], d[2]) > 190 ? 1 : 0;
+    };
     return ${JSON.stringify(points)}.map(([x, y]) => {
-      const x0 = Math.max(0, Math.round(x) - ${half}), y0 = Math.max(0, Math.round(y) - ${half});
-      const d = g.getImageData(x0, y0, ${2 * half}, ${2 * half}).data;
       let n = 0;
-      for (let i = 0; i < d.length; i += 4) if (Math.min(d[i], d[i + 1], d[i + 2]) > 190) n += 1;
+      for (let k = -${half}; k <= ${half}; k++) {
+        const px = Math.round(x) + k, py = Math.round(y) + k;
+        if (px >= 0 && px < c.width) n += white(px, Math.round(y));
+        if (py >= 0 && py < c.height) n += white(Math.round(x), py);
+      }
       return n;
     });
   })()`);
@@ -325,11 +334,11 @@ async function layouts() {
             w !== null && w[0] > 20 && w[0] < box0.w - 20 && w[1] > 20 && w[1] < box0.h - 20,
         );
         whites[kind] =
-          inside.length === 0 ? 0 : median(await whiteAround(page, picture, inside, 8));
+          inside.length === 0 ? 0 : median(await whiteAround(page, picture, inside, 24));
       }
       check(
         whites["held"]! > whites["covered"]! && whites["covered"]! > whites["reachable"]!,
-        `${id}: the three white states differ (white pixels around held ${whites["held"]}, covered ${whites["covered"]}, reachable ${whites["reachable"]})`,
+        `${id}: the three white states differ (white pixels on a cross through held ${whites["held"]}, covered ${whites["covered"]}, reachable ${whites["reachable"]})`,
       );
 
       const spot = await at();

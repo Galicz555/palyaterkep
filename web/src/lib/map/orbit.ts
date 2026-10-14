@@ -280,12 +280,12 @@ export function createMap(
         alpha = 1;
       } else if (m === MARK.covered) {
         color = markColor;
-        size = NODE_D * 3.4;
+        size = NODE_D * 3.6;
         mark = 0.75;
         alpha = 1;
       } else if (m === MARK.reachable) {
         color = markColor;
-        size = NODE_D * 2.2;
+        size = NODE_D * 1.8;
         mark = 0.6;
         alpha = 0.8;
       } else if (marks) {
