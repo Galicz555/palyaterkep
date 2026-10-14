@@ -24,13 +24,14 @@ export const paintedRgb = ([r, g, b]: readonly number[]): string =>
  * the same colour once drawn). Saturated, as the map's glow wants (mean OKLab chroma 0.20), which
  * is what costs the distance: 13 vivid colours share the wheel with the three state colours, and
  * transport's cyan sits 0.067 from them; a CV result greys every unmarked role, so the two never
- * meet on the map.
+ * meet on the map. The loudest colour (yellow) goes to a small branch and a quiet one (violet) to
+ * industry, the largest by far, so no single branch's colour floods the layouts that cluster them.
  */
 const BRANCH_SHOWN = [
   "#2f7bff", // it
-  "#8a5cff", // engineering
-  "#4fc21a", // agriculture
-  "#ffe100", // industry
+  "#4fc21a", // engineering
+  "#ffe100", // agriculture
+  "#8a5cff", // industry
   "#ff5a1f", // construction
   "#00c2d1", // transport
   "#ff2e63", // trade
