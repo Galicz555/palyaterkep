@@ -69,3 +69,7 @@ by the U.S. Department of Labor, Employment and Training Administration (USDOL/E
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. O\*NET® is a trademark of USDOL/ETA.
 Pályatérkép has modified all or some of this information. USDOL/ETA has not approved, endorsed, or
 tested these modifications.
+
+## License
+
+The code is under the [MIT License](LICENSE). The ESCO and O\*NET data keep their own terms, above.
