@@ -20,6 +20,14 @@ describe("buildMapper", () => {
     expect(mapper.occupations(["Ápoló", "nurse"])[0]).toBe(OCC + "nurse");
   });
 
+  it("names the alternative label a job matched, never a main label", () => {
+    expect(mapper.matchedLabel(OCC + "dev", ["Senior Software Engineer"])).toBe(
+      "software engineer",
+    );
+    expect(mapper.matchedLabel(OCC + "dev", ["Szoftverfejlesztő"])).toBeUndefined();
+    expect(mapper.matchedLabel(OCC + "tester", ["Senior Software Engineer"])).toBeUndefined();
+  });
+
   it("finds a skill from an inflected Hungarian mention", () => {
     expect(mapper.skills(["Pythonban"])[0]).toBe(SK + "python");
     expect(mapper.skills(["szoftverhibák elhárításában"])).toContain(SK + "debug");

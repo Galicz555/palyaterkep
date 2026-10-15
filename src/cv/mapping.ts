@@ -37,6 +37,14 @@ const trigrams = (text: string): string[] => {
   return [...out];
 };
 
+/** Trigram Dice similarity of two texts, as `labelIndex` scores them. */
+function dice(a: string, b: string): number {
+  const x = trigrams(a);
+  const y = new Set(trigrams(b));
+  if (x.length + y.size === 0) return 0;
+  return (2 * x.filter((g) => y.has(g)).length) / (x.length + y.size);
+}
+
 /** A search over labels: each key scores the Dice similarity of its best-matching label. */
 export function labelIndex(entries: Iterable<[key: string, labels: string[]]>) {
   const labelKey: number[] = [];
@@ -88,6 +96,12 @@ export interface Mapper {
   skill: Map<string, Concept>;
   /** Candidate occupations for a job, from its title and the model's plain-English name for it. */
   occupations(queries: string[]): string[];
+  /**
+   * The alternative label of an occupation that best matches the queries, when it matches better
+   * than its two main labels: "army captain" is found as "battery commander", and the model choosing
+   * among candidates has to see why.
+   */
+  matchedLabel(uri: string, queries: string[]): string | undefined;
   /** Candidate skills for a skill mention, best first; only skills some role needs. */
   skills(queries: string[]): string[];
 }
@@ -102,6 +116,7 @@ export function buildMapper(esco: Pick<Esco, "occupations" | "skills">, graph: R
     ...c.altLabels.en,
   ];
   const searchOccupations = labelIndex(esco.occupations.map((o) => [o.uri, label(o)]));
+  const occupationLabels = new Map(esco.occupations.map((o) => [o.uri, label(o)]));
   const searchSkills = labelIndex(skills.map((s) => [s.uri, label(s)]));
   const merge = (
     search: (q: string, n: number) => Hit[],
@@ -127,6 +142,15 @@ export function buildMapper(esco: Pick<Esco, "occupations" | "skills">, graph: R
     ),
     skill: new Map(skills.map((s) => [s.uri, { hu: s.label.hu, en: s.label.en }])),
     occupations: (queries) => merge(searchOccupations, queries, OCCUPATION_CANDIDATES),
+    matchedLabel: (uri, queries) => {
+      const labels = occupationLabels.get(uri) ?? [];
+      const score = (l: string) => Math.max(0, ...queries.map((q) => dice(q, l)));
+      const best = labels.reduce<string | undefined>(
+        (top, l) => (top === undefined || score(l) > score(top) ? l : top),
+        undefined,
+      );
+      return best !== undefined && labels.indexOf(best) > 1 ? best : undefined;
+    },
     skills: (queries) => merge(searchSkills, queries, SKILL_CANDIDATES, SKILL_MIN_SCORE),
   };
 }
