@@ -42,6 +42,9 @@ export const words = (text: string): string =>
 /** A quote this short matches almost anything; "CTO" and "2019" are the shortest worth having. */
 const MIN_QUOTE = 2;
 
+const CLOSERS: Record<string, string> = { ")": "(", "]": "[", "”": "„", "»": "«" };
+const count = (text: string, ch: string) => text.split(ch).length - 1;
+
 /** The CV text the quote was copied from, or undefined if the CV does not contain it. */
 export function findQuote(quote: string, cv: Folded): string | undefined {
   const needle = fold(quote).text;
@@ -52,6 +55,11 @@ export function findQuote(quote: string, cv: Folded): string | undefined {
   let to = cv.origin[start + needle.length - 1]!;
   to += cv.source.codePointAt(to)! > 0xffff ? 2 : 1;
   while (to < cv.source.length && /\p{M}/u.test(cv.source[to]!)) to++;
+  // The match ends at a letter or digit, so a bracket or quote that closes one opened inside it
+  // would be cut: "Battery Commander (Officer)" must not come back as "Battery Commander (Officer".
+  const opener = CLOSERS[cv.source[to]!];
+  const kept = cv.source.slice(from, to);
+  if (opener && count(kept, opener) > count(kept, cv.source[to]!)) to++;
   return cv.source.slice(from, to).replace(/\s+/gu, " ");
 }
 

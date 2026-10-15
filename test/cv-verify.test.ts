@@ -27,6 +27,13 @@ describe("findQuote", () => {
     expect(findQuote("ápoló", decomposed)).toBe("Ápoló".normalize("NFD"));
   });
 
+  it("keeps a closing bracket or quote that the match opened", () => {
+    const cv = fold("Battery Commander (Officer), 2012 – 2019. Projekt „Térkép” (2024)");
+    expect(findQuote("Battery Commander (Officer", cv)).toBe("Battery Commander (Officer)");
+    expect(findQuote("Projekt „Térkép", cv)).toBe("Projekt „Térkép”");
+    expect(findQuote("Officer", cv)).toBe("Officer");
+  });
+
   it("does not find a fabricated quote", () => {
     expect(findQuote("Vezettem egy 50 fős csapatot", CV)).toBeUndefined();
     expect(findQuote("Senior software developer", CV)).toBeUndefined();
