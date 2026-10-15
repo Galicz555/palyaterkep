@@ -42,9 +42,9 @@ gets a name in code.
 
 ## Reading a CV against the map
 
-| Code / schema | Magyar     | Meaning                                                                                                                                                  |
-| ------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `held`        | betöltött  | A role the CV shows the person has worked in, at the level its job title, or failing that its years, shows.                                              |
-| `covered`     | lefedett   | A role the person has not held, but whose needed skills the CV shows above the coverage threshold.                                                       |
-| `reachable`   | elérhető   | A role one edge away from a held or covered role.                                                                                                        |
-| `gap`         | hiánylista | The skills a reachable role needs that the CV does not show, leaving out those the held role it is reached from already needs. The advice the map gives. |
+| Code / schema | Magyar     | Meaning                                                                                                                                                                                      |
+| ------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `held`        | betöltött  | A role the CV shows the person has worked in, at the level its job title, or failing that its years, shows.                                                                                  |
+| `covered`     | lefedett   | A role the person has not held, but whose needed skills the CV shows above the coverage threshold. A held role's skills count as shown, towards roles no higher than the highest level held. |
+| `reachable`   | elérhető   | A role one edge away from a held or covered role.                                                                                                                                            |
+| `gap`         | hiánylista | The skills a reachable role needs that the CV does not show, leaving out those the held role it is reached from already needs. The advice the map gives.                                     |

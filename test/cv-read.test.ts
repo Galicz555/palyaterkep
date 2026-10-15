@@ -307,7 +307,9 @@ Principal Software Architect, F
       });
       const result = await read(years, both);
       expect(result.held.map((h) => h.role)).toEqual(["dev-3"]);
-      expect(result.reachable.map((r) => r.role).sort()).toEqual(["ai", "arch", "head", "lead"]);
+      // ai and lead sit at rung 3 and need only the held role's skill, so holding it covers them.
+      expect(result.covered.map((c) => c.role).sort()).toEqual(["ai", "lead"]);
+      expect(result.reachable.map((r) => r.role).sort()).toEqual(["arch", "head"]);
     });
   });
 

@@ -149,7 +149,9 @@ export function behindRoles(graph: RoleGraph, from: string[]): Set<string> {
 
 /**
  * Covered: roles neither held nor behind a held role whose skills the CV shows at or above the
- * threshold. Reachable: roles one
+ * threshold. Holding a role shows its skills, but only towards roles no higher than the highest
+ * level held: the ranks and rungs above share most of their skills with the one below, and a
+ * captain does not cover a colonel. Reachable: roles one
  * edge from a held or covered role, neither themselves, with the skills the CV does not show; a
  * held role's own skills are not part of a gap from it, since holding the role shows them. A
  * progression edge only counts outwards, to a higher level, and rungs below a held role on its
@@ -164,10 +166,13 @@ export function placeCv(
 ): Pick<CvResult, "covered" | "reachable"> {
   const heldSet = new Set(held);
   const behind = behindRoles(graph, held);
+  const top = Math.max(0, ...held.map((id) => graph.roles.get(id)!.level));
+  const shownOrHeld = new Set([...shown, ...held.flatMap((id) => graph.roles.get(id)!.skills)]);
   const covered: CvResult["covered"] = [];
   for (const [id, role] of graph.roles) {
     if (heldSet.has(id) || behind.has(id)) continue;
-    const coverage = role.skills.filter((s) => shown.has(s)).length / role.skills.length;
+    const known = role.level <= top ? shownOrHeld : shown;
+    const coverage = role.skills.filter((s) => known.has(s)).length / role.skills.length;
     if (coverage >= threshold) covered.push({ role: id, coverage });
   }
   covered.sort((a, b) => b.coverage - a.coverage || (a.role < b.role ? -1 : 1));

@@ -279,6 +279,17 @@ describe("placeCv", () => {
     expect(reachable.map((r) => r.role)).toEqual([]);
   });
 
+  it("counts a held role's skills towards roles no higher than the highest level held", () => {
+    // dev-2 is held (code, git, test). tester (level 2): test, git from the held role and report,
+    // plan from the CV make 4 of 5; analyst (level 2) gets code and git from it, 2 of 3. dev-3
+    // (level 3) is above it: only the CV's skills count, none of its four.
+    const { covered } = placeCv(graph, ["dev-2"], new Set(skills("report", "plan")));
+    expect(covered).toEqual([
+      { role: "tester", coverage: 0.8 },
+      { role: "analyst", coverage: 2 / 3 },
+    ]);
+  });
+
   it("covers a role at exactly the threshold", () => {
     const { covered } = placeCv(graph, [], new Set(skills("test", "git", "report")));
     expect(covered).toContainEqual({ role: "tester", coverage: 0.6 });
