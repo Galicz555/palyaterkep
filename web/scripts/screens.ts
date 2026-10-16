@@ -2,7 +2,7 @@
 // into raw/screens/, walks the list page with the keyboard alone, checks hover, picking, keyboard,
 // the branch filter and the CV marks on the map in every layout, how the pages hang together
 // (the CV result carries from page to page, a phone is offered the list), and times its frames.
-// Usage: node web/scripts/screens.ts [shots|keyboard|layouts|pages|bench|all] [base url]
+// Usage: node web/scripts/screens.ts [shots|keyboard|layouts|pages|boom|bench|all] [base url]
 // CHROME names the browser binary, CHROME_FLAGS adds switches (for example to pick a GPU backend),
 // SHOT_PREFIX goes in front of every screenshot's name.
 
@@ -227,6 +227,13 @@ async function bench() {
       console.log(
         `layout ${id}: ${nodes} nodes, frames: ${run["frames"]}, mean ${run["meanMs"]?.toFixed(1)} ms, p95 ${run["p95Ms"]?.toFixed(1)} ms, max ${run["maxMs"]?.toFixed(1)} ms`,
       );
+      // The same turn of the camera while the MI-kiváltás effect plays through its stages.
+      const boom = await page.eval<Record<string, number>>(
+        "globalThis.__terkepBenchmark(240, true)",
+      );
+      console.log(
+        `layout ${id} with the blast: mean ${boom["meanMs"]?.toFixed(1)} ms, p95 ${boom["p95Ms"]?.toFixed(1)} ms, max ${boom["maxMs"]?.toFixed(1)} ms`,
+      );
     }
     const start = Date.now();
     await page.goto(`${base}/?teljesitmeny`);
@@ -411,6 +418,146 @@ async function layouts() {
   if (problems.length > 0) process.exitCode = 1;
 }
 
+/** The MI-kiváltás switch: the blast and its remnant in the map, the note, the list, the address, the keyboard. */
+async function boom() {
+  const browser = await launch(flags);
+  const { page } = browser;
+  const problems: string[] = [];
+  const check = (ok: boolean, text: string) => {
+    console.log(`${ok ? "ok  " : "FAIL"} ${text}`);
+    if (!ok) problems.push(text);
+  };
+  page.on("Runtime.exceptionThrown", (p) => problems.push(`page error: ${JSON.stringify(p)}`));
+  const ROLE = "webfejleszto";
+  const SWITCH = "document.querySelector('.switch input')";
+  /** Frames drawn by the map in `ms`: the render loop runs only while something moves. */
+  const framesIn = (ms: number) =>
+    page.eval<number>(`new Promise((done) => {
+      let n = 0;
+      const orig = window.requestAnimationFrame;
+      window.requestAnimationFrame = (cb) => orig((t) => { n++; cb(t); });
+      setTimeout(() => { window.requestAnimationFrame = orig; done(n); }, ${ms});
+    })`);
+  try {
+    await page.viewport(1440, 900);
+    await open(page, "/");
+    for (const id of await layoutIds(page)) {
+      for (const withCv of [false, true]) {
+        const cv = withCv ? "&cv=it-fejleszto" : "";
+        await open(page, `/?elrendezes=${id}&teljesitmeny${cv}`);
+        if (withCv) await page.waitFor(CV_CHIP, "CV chip");
+        await settle(500);
+        const quiet = await framesIn(600);
+        check(
+          quiet <= 2,
+          `${id}${cv}: the render loop is idle before the switch (${quiet} frames in 0.6 s)`,
+        );
+        await page.eval(`${SWITCH}.click()`);
+        await settle(1100);
+        if (id === "A" || id === "B")
+          await page.screenshot(`${SHOTS}boom-${id}${withCv ? "-cv" : ""}-mid.png`);
+        const playing = await framesIn(300);
+        check(
+          playing > 3,
+          `${id}${cv}: frames are drawn while the blast plays (${playing} in 0.3 s)`,
+        );
+        await settle(2800);
+        const after = await framesIn(600);
+        check(
+          after <= 2,
+          `${id}${cv}: the render loop stops once the remnants are left (${after} frames in 0.6 s)`,
+        );
+        await page.screenshot(`${SHOTS}boom-${id}${withCv ? "-cv" : ""}-remnant.png`);
+        check(
+          await page.eval<boolean>("location.search.includes('kivaltas=1')"),
+          `${id}${cv}: the switch writes the address`,
+        );
+        if (!withCv) continue;
+        // A remnant is still there to hover and pick, and says what it is.
+        const w = await page.eval<[number, number] | null>(`globalThis.__terkepWhere("${ROLE}")`);
+        const box = await page.eval<{ x: number; y: number }>(
+          "(() => { const r = document.querySelector('canvas.map-canvas').getBoundingClientRect(); return { x: r.x, y: r.y }; })()",
+        );
+        check(w !== null, `${id}: the remnant has a place on the screen`);
+        if (w) {
+          await page.mouse("mouseMoved", box.x + w[0], box.y + w[1]);
+          await settle(150);
+          const tip = await page.eval<string>("document.querySelector('.tip')?.textContent ?? ''");
+          check(
+            /Erősen kiváltható/u.test(tip),
+            `${id}: hovering the remnant says so (${tip.trim().slice(0, 40)})`,
+          );
+          await page.click(box.x + w[0], box.y + w[1]);
+          await settle(250);
+          const card = await page.eval<string>(
+            "document.querySelector('.panel')?.textContent ?? ''",
+          );
+          check(
+            /Webfejleszt/u.test(card) &&
+              /ILO/u.test(card) &&
+              !/megszűn|eltűn|\b20\d\d\b/u.test(card),
+            `${id}: clicking the remnant opens its card with the note (ILO, no "eltűnik", no years)`,
+          );
+        }
+        // Switching off restores the roles quietly.
+        await page.eval(`${SWITCH}.click()`);
+        await settle(400);
+        check(
+          await page.eval<boolean>("!location.search.includes('kivaltas')"),
+          `${id}: switching off clears the address`,
+        );
+        const idle = await framesIn(600);
+        check(idle <= 2, `${id}: switching off draws no effect (${idle} frames in 0.6 s)`);
+      }
+    }
+
+    // The link reproduces it: the effect plays on arrival.
+    await open(page, "/?kivaltas=1");
+    check(await page.eval<boolean>(`${SWITCH}.checked`), "?kivaltas=1 turns the switch on");
+
+    // Keyboard: the switch is reachable with Tab and flips with Space.
+    await open(page, "/");
+    const tabs = await tabTo(page, "a.matches('.switch input')", "the MI-kiváltás switch");
+    await page.key(" ", "Space", 32, " ");
+    await settle(300);
+    check(
+      await page.eval<boolean>(`${SWITCH}.checked && location.search.includes('kivaltas=1')`),
+      `the switch is reached with ${tabs} Tabs and Space turns it on`,
+    );
+    // The switch carries to the list by client navigation, and marks the same roles there.
+    await page.eval("document.querySelector('nav a[href=\"/lista\"]').click()");
+    await page.waitFor("!!document.querySelector('.list')", "list");
+    await settle(400);
+    const marked = await page.eval<number>(
+      "document.querySelectorAll('.role .replaceable').length",
+    );
+    check(marked === 52, `the list marks the 52 strongly replaceable roles (${marked})`);
+    await page.eval(`${SWITCH}.click()`);
+    await settle(200);
+    check(
+      await page.eval<boolean>("document.querySelectorAll('.role .replaceable').length === 0"),
+      "turning the switch off in the list removes the marks",
+    );
+    await open(page, "/lista?kivaltas=1", "!!document.querySelector('.list')");
+    await page.screenshot(`${SHOTS}boom-list.png`);
+
+    // Reduced motion: no blast, a plain fade; the loop still stops.
+    await page.send("Emulation.setEmulatedMedia", {
+      features: [{ name: "prefers-reduced-motion", value: "reduce" }],
+    });
+    await open(page, "/?elrendezes=B&teljesitmeny");
+    await page.eval(`${SWITCH}.click()`);
+    await settle(300);
+    await page.screenshot(`${SHOTS}boom-B-reduced-mid.png`);
+    await settle(1500);
+    await page.screenshot(`${SHOTS}boom-B-reduced-remnant.png`);
+    check((await framesIn(600)) <= 2, "reduced motion: the fade ends and the loop stops");
+  } finally {
+    browser.close();
+  }
+  if (problems.length > 0) process.exitCode = 1;
+}
+
 /** How the pages hang together: what is on each, and a CV result carried from page to page. */
 async function pages() {
   const browser = await launch(flags);
@@ -484,4 +631,5 @@ if (mode === "shots" || mode === "all") await shots();
 if (mode === "keyboard" || mode === "all") await keyboard();
 if (mode === "layouts" || mode === "all") await layouts();
 if (mode === "pages" || mode === "all") await pages();
+if (mode === "boom" || mode === "all") await boom();
 if (mode === "bench" || mode === "all") await bench();

@@ -4,6 +4,7 @@
   import RoleList from "#lib/components/RoleList.svelte";
   import { cv } from "#lib/cv.svelte.ts";
   import { countStates } from "#lib/cv.ts";
+  import { replaceable } from "#lib/replaceable.svelte.ts";
   import { fold } from "#lib/text.ts";
 
   let { data } = $props();
@@ -39,6 +40,7 @@
       (b) => b.id === new URLSearchParams(location.search).get("ag"),
     );
     if (ag >= 0) branch = ag;
+    replaceable.read();
   });
 </script>
 
@@ -83,6 +85,15 @@
         {/each}
       </select>
     </label>
+    <label class="switch">
+      <input
+        type="checkbox"
+        role="switch"
+        checked={replaceable.on}
+        onchange={(e) => replaceable.set(e.currentTarget.checked)}
+      />
+      <span>MI-kiváltás: jelölje az erősen kiváltható szerepeket</span>
+    </label>
     <p class="found" role="status">{matches} szerep{pass ? " a szűrésben" : ""}</p>
   </div>
 
@@ -92,6 +103,7 @@
     states={cv.view?.states ?? null}
     picked={branch}
     searching={needle !== ""}
+    replaceable={replaceable.on}
   />
 </main>
 
@@ -139,6 +151,20 @@
     background: var(--surface);
     color: var(--ink);
     font-size: 1rem;
+  }
+  .switch {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-height: 2.75rem;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+  .switch input {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0;
   }
   .found {
     margin: 0 0 0.6rem;

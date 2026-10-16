@@ -20,6 +20,8 @@ export interface MapRole {
   sub: number;
   /** The occupation's demands; null where there is no data. */
   demands: Demands | null;
+  /** The ILO's generative-AI exposure gradient, 4 the highest; null for minimal or none (ADR 0004). */
+  exposure: 1 | 2 | 3 | 4 | null;
 }
 
 export interface MapBranch {
@@ -67,3 +69,6 @@ const SKILL_PREFIX = "http://data.europa.eu/esco/skill/";
 /** An ESCO skill URI without its common prefix; what the pages and `/skills.json` key on. */
 export const skillKey = (uri: string): string =>
   uri.startsWith(SKILL_PREFIX) ? uri.slice(SKILL_PREFIX.length) : uri;
+
+/** The ILO's top gradient: strongly replaceable by generative AI, shown burnt out on the map (ADR 0004). */
+export const isReplaceable = (role: Pick<MapRole, "exposure">) => role.exposure === 4;

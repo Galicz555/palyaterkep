@@ -50,9 +50,12 @@ Without a model, open `/?cv=it-fejleszto` to load `web/static/fixtures/it-fejles
 `placeCv`; rebuild it with `node web/scripts/it-fixture.ts` after the vault or the rules change).
 `/?ag=it` shows a branch, `/?szerep=<id>` picks a role, `/?nezet=list` opens the list,
 `/?elrendezes=B` chooses the map's layout (A is the default).
+`/?kivaltas=1` turns on the MI-kiváltás switch: the roles the ILO rates strongly replaceable (gradient 4) burn out in a
+staggered supernova and leave a faint ring; the list marks the same roles. Reduced motion gets a plain fade.
 `node web/scripts/screens.ts` takes the screenshots into `raw/screens/` (one map per layout, bare and
 with the demo CV), walks the list with the keyboard alone, checks hover, picking, the arrow keys, the
-branch filter and the CV's marks in every layout, and times the map's frames per layout, against a
+branch filter and the CV's marks in every layout, the MI-kiváltás switch (`boom`: screenshots mid-blast and after, the
+note, the list, the address, the keyboard, reduced motion), and times the map's frames per layout, with and without the blast, against a
 running `pnpm web:start`. `CHROME_FLAGS` picks the GPU backend; headless Chrome falls back to a
 software renderer without it.
 
@@ -70,6 +73,12 @@ by the U.S. Department of Labor, Employment and Training Administration (USDOL/E
 Pályatérkép has modified all or some of this information. USDOL/ETA has not approved, endorsed, or
 tested these modifications.
 
+Generative-AI exposure (`data/genai-exposure.json`, transcribed from Table A1; see
+[ADR 0004](docs/adr/0004-genai-exposure-from-ilo.md)): Gmyrek, P. et al. (2025),
+[Generative AI and Jobs: A Refined Global Index of Occupational Exposure](https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure),
+ILO Working Paper 140, © International Labour Organization, under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
 ## License
 
-The code is under the [MIT License](LICENSE). The ESCO and O\*NET data keep their own terms, above.
+The code is under the [MIT License](LICENSE). The ESCO, O\*NET and ILO data keep their own terms, above.

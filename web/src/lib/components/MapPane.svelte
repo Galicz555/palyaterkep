@@ -6,7 +6,8 @@
   import { LAYOUTS, type LayoutId } from "#lib/layouts.ts";
   import type { Arrangement } from "#lib/arrange.ts";
   import type { MapView } from "#lib/map/orbit.ts";
-  import type { MapData } from "#lib/model.ts";
+  import { isReplaceable, type MapData } from "#lib/model.ts";
+  import { REPLACEABLE_NOTE } from "#lib/replaceable.svelte.ts";
   import { branchPainted, paintedRgb } from "#lib/palette.ts";
   import { DEMANDS, DEMAND_LINEAR } from "#lib/demand.ts";
   import { capitalise, CHECKED, levelText, trackText, UNCHECKED } from "#lib/text.ts";
@@ -25,12 +26,25 @@
     axis: number;
     /** Branch to show, an index into `data.branches`. */
     focus: number | null;
+    /** The roles the ILO finds strongly replaceable burn out and leave a faint remnant. */
+    replaceable: boolean;
     onselect: (id: string | null) => void;
     /** Called once with the ways to measure frames, to find a role on screen and to hide the nodes, when the map is up. */
     onready?: (tools: Pick<MapView, "benchmark" | "where" | "showNodes">) => void;
   }
-  let { data, marks, reach, pass, selected, layout, axis, focus, onselect, onready }: Props =
-    $props();
+  let {
+    data,
+    marks,
+    reach,
+    pass,
+    selected,
+    layout,
+    axis,
+    focus,
+    replaceable,
+    onselect,
+    onready,
+  }: Props = $props();
 
   const indexOf = $derived(new Map(data.roles.map((r, i) => [r.id, i])));
   const info = $derived(LAYOUTS.find((l) => l.id === layout) ?? LAYOUTS[0]!);
@@ -66,7 +80,7 @@
       view = made;
       status = "ready";
       onready?.({
-        benchmark: (frames) => made.benchmark(frames),
+        benchmark: (frames, blast) => made.benchmark(frames, blast),
         where: (i) => made.where(i),
         showNodes: (on) => made.showNodes(on),
       });
@@ -95,6 +109,7 @@
     if (arrange) view?.setLayout(arrange(layout, axis));
   });
   $effect(() => view?.focus(focus));
+  $effect(() => view?.setReplaceable(replaceable));
 
   const hovered = $derived(hover ? data.roles[hover.i] : undefined);
   const percent = (rank: number) => Math.round(rank * 100);
@@ -122,6 +137,9 @@
         <span>{levelText(hovered.level)} · {trackText(hovered.management)}</span>
         <span>{hovered.curated ? CHECKED : UNCHECKED}</span>
         <span>{data.branches[hovered.branch]?.subBranches[hovered.sub]?.label}</span>
+        {#if replaceable && isReplaceable(hovered)}
+          <span class="replaceable">{REPLACEABLE_NOTE}</span>
+        {/if}
         <span>
           {hovered.demands
             ? `fizikai ${percent(hovered.demands[0])} · szellemi ${percent(hovered.demands[1])} · érzelmi ${percent(hovered.demands[2])} (percentilis)`
@@ -147,6 +165,9 @@
         {/each}
         <li><i class="lead"></i> világosabb, nagyobb pont: vezetői szerep</li>
         <li><i class="ghost"></i> halvány szürke pont: nincs terhelési adat</li>
+        {#if replaceable}
+          <li><i class="ember"></i> halvány gyűrű: erősen kiváltható szerep (ILO, 4. gradiens)</li>
+        {/if}
         {#if marks}
           <li><i class="star held"></i> betöltött: fehér, a legnagyobb, négy sugárral</li>
           <li><i class="star covered"></i> lefedett: fehér, kisebb</li>
@@ -332,6 +353,9 @@
   .tip span {
     color: var(--stage-soft);
   }
+  .tip .replaceable {
+    color: #ffb27a;
+  }
   .zoom {
     position: absolute;
     right: 0.6rem;
@@ -450,6 +474,13 @@
   /* A role without demand data: pale and grey. */
   .key .ghost {
     background: color-mix(in srgb, var(--stage-soft) 55%, transparent);
+  }
+  /* What a blast leaves: a faint star in a thin warm ring. */
+  .key .ember {
+    background: color-mix(in srgb, #9f6b57 55%, transparent);
+    box-shadow: 0 0 0 2px var(--stage-line) inset;
+    outline: 1px solid #ff8a5c;
+    outline-offset: 1px;
   }
   .key .glyph {
     width: 1.1rem;

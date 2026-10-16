@@ -9,6 +9,7 @@ import { fileURLToPath } from "node:url";
 import { BRANCHES_FILE, loadBranches } from "../../../../src/branches/branches.ts";
 import { readDemands } from "../../../../src/demands/demands.ts";
 import type { Esco, Occupation, Skill } from "../../../../src/esco/model.ts";
+import { readExposure } from "../../../../src/exposure/exposure.ts";
 import { readVault, VAULT } from "../../../../src/vault/generate.ts";
 import { linkTarget, readNote, Role } from "../../../../src/vault/note.ts";
 import type { Level, MapData, RoleDetail, RoleLink } from "../model.ts";
@@ -71,6 +72,8 @@ function load(): Loaded {
   );
 
   const demands = readDemands();
+  const exposure = readExposure();
+  const { occupations } = loadEsco();
   const index = new Map(entries.map((e, i) => [e.id, i]));
   const target = (link: string) => {
     const i = index.get(linkTarget(link));
@@ -108,6 +111,7 @@ function load(): Loaded {
         branch,
         sub,
         demands: demands.get(note.occupation) ?? null,
+        exposure: exposure(occupationCode(occupations, note.occupation)),
       })),
       lateral: [...lateral.values()],
       progression,
@@ -117,6 +121,12 @@ function load(): Loaded {
     adjacent,
   };
   return loaded;
+}
+
+function occupationCode(occupations: Map<string, Occupation>, uri: string): string {
+  const occupation = occupations.get(uri);
+  if (!occupation) throw new Error(`${uri} is not in ESCO`);
+  return occupation.code;
 }
 
 function loadEsco(): EscoIndex {

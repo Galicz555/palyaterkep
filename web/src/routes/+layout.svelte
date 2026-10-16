@@ -38,6 +38,13 @@
       A terhelési adatok forrása: <a href="https://www.onetcenter.org">O*NET</a> 31.0, U.S. Department
       of Labor/ETA, CC BY 4.0.
     </p>
+    <p>
+      Az MI-érintettség forrása:
+      <a
+        href="https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure"
+        >ILO Working Paper 140</a
+      > (Gmyrek és mtsai., 2025), CC BY 4.0.
+    </p>
   </footer>
 {/if}
 

@@ -24,12 +24,13 @@ import {
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { R_HOLE, R_OUT, ground } from "../layout.ts";
 import type { Arrangement } from "../arrange.ts";
-import type { MapData } from "../model.ts";
+import { isReplaceable, type MapData } from "../model.ts";
 import { BG, branchColor, MARK } from "../palette.ts";
 import { capitalise } from "../text.ts";
 import { buildFrame, el, type Box, type Frame, type FrameCtx, type Spot } from "./frames.ts";
 import {
   ADD,
+  BLAST_S,
   EDGE_FRAG,
   EDGE_VERT,
   MAX_MARK_PX,
@@ -60,13 +61,15 @@ export interface MapView {
   select(index: number | null): void;
   /** Morphs the points, the frame and the camera to another layout. */
   setLayout(next: Arrangement): void;
+  /** Burns out the roles the ILO finds strongly replaceable (a blast, then a faint remnant), or restores them. */
+  setReplaceable(on: boolean): void;
   /** Fly to a branch (index into `MapData.branches`), or back to the whole map for `null`. */
   focus(branch: number | null): void;
   zoomBy(factor: number): void;
   resize(): void;
   destroy(): void;
-  /** Draws `frames` frames while turning the camera, waiting for the GPU after each. */
-  benchmark(frames: number): Promise<BenchResult>;
+  /** Draws `frames` frames while turning the camera, waiting for the GPU after each; with `blast`, the blast plays through them. */
+  benchmark(frames: number, blast?: boolean): Promise<BenchResult>;
   /** Hides or shows the nodes, leaving the frame: for measuring what the nodes add to it. */
   showNodes(on: boolean): void;
   /** Where role `index` is on the screen, in pixels inside the stage; null behind the camera. */
@@ -88,6 +91,16 @@ const MORPH_MS = 800;
 const FLAT_POLAR = (84 * Math.PI) / 180;
 /** Height of a role name on the map, for keeping them from overlapping. */
 const LABEL_H = 18;
+/** The blasts start spread over this many seconds, so the map goes off like a string of fireworks. */
+const BLAST_SPREAD = 1.5;
+/** The whole effect, from the first blast to the last remnant settling; a plain fade is quicker. */
+const BLAST_TOTAL = BLAST_SPREAD + 0.05 + BLAST_S + 0.15;
+const CALM_TOTAL = 1.2;
+/** Where uTime rests while nothing is burnt out: before every blast. */
+const NO_BLAST = -1000;
+/** The start of a role's blast, in seconds: a fixed shuffle, so the order is the same on every layout. */
+const blastStart = (i: number) =>
+  0.05 + (BLAST_SPREAD * (Math.imul(i + 1, 2654435761) >>> 0)) / 2 ** 32;
 
 const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const ease = (t: number) => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
@@ -173,6 +186,8 @@ export function createMap(
   const aAlpha = new BufferAttribute(new Float32Array(N), 1);
   const aMark = new BufferAttribute(new Float32Array(N), 1);
   const aManage = new BufferAttribute(new Float32Array(N), 1);
+  /** Seconds into the effect when the role's blast begins; huge for a role that does not burn out. */
+  const aBoom = new BufferAttribute(new Float32Array(N).fill(1e6), 1);
   roles.forEach((r, i) => {
     aManage.setX(i, r.management ? 1 : 0);
   });
@@ -192,6 +207,7 @@ export function createMap(
   nodeGeo.setAttribute("aAlpha", aAlpha);
   nodeGeo.setAttribute("aMark", aMark);
   nodeGeo.setAttribute("aManage", aManage);
+  nodeGeo.setAttribute("aBoom", aBoom);
   /** The order the nodes are drawn in: far to near, so a near star covers a far one. */
   const order = new Uint32Array(N).map((_, i) => i);
   const orderAttr = new BufferAttribute(order, 1);
@@ -203,6 +219,8 @@ export function createMap(
     uNear: { value: 100 },
     uSpan: { value: 200 },
     uMinPx: { value: MIN_PX },
+    uTime: { value: NO_BLAST },
+    uCalm: { value: 0 },
   };
   const nodes = new Points(
     nodeGeo,
@@ -237,6 +255,8 @@ export function createMap(
   edgeGeo.setAttribute("aTo", edgeTo);
   edgeGeo.setAttribute("aColor", eColor);
   edgeGeo.setAttribute("aAlpha", eAlpha);
+  const eBoom = new BufferAttribute(new Float32Array(edges.length * 2).fill(1e6), 1);
+  edgeGeo.setAttribute("aBoom", eBoom);
   const edgeLines = new LineSegments(
     edgeGeo,
     new ShaderMaterial({ uniforms, vertexShader: EDGE_VERT, fragmentShader: EDGE_FRAG, ...ADD }),
@@ -258,6 +278,9 @@ export function createMap(
   let selected = -1;
   let hovered = -1;
   let focused: number | null = null;
+  let burnt = false;
+  /** The effect playing: when it began. Null at rest, which is when nothing is drawn. */
+  let blast: { start: number } | null = null;
   /** A role without demand data is drawn as a pale ghost, so it reads as no data, not balanced. */
   const noData = roles.map((r) => r.demands === null);
   // A role the CV marks is a white star: held the largest, brightest and with spikes, covered
@@ -310,6 +333,16 @@ export function createMap(
       aAlpha.setX(i, alpha);
       aMark.setX(i, mark);
     }
+    // A burnt-out role that is shown (the filter may hide it) starts its blast at its own moment;
+    // with reduced motion all of them fade together.
+    const calm = reducedMotion();
+    for (let i = 0; i < N; i++) {
+      aBoom.setX(
+        i,
+        burnt && isReplaceable(roles[i]!) && (!pass || pass[i]) ? (calm ? 0 : blastStart(i)) : 1e6,
+      );
+    }
+    aBoom.needsUpdate = true;
     aColor.needsUpdate = aSize.needsUpdate = aAlpha.needsUpdate = aMark.needsUpdate = true;
 
     const reachKeys = new Set(reach.map(([a, b]) => `${Math.min(a, b)}:${Math.max(a, b)}`));
@@ -324,9 +357,10 @@ export function createMap(
         const color = picked ? SELECT_COLOR : stepped ? reachColor : base[v === 0 ? a : b]!;
         eColor.setXYZ(k * 2 + v, color.r, color.g, color.b);
         eAlpha.setX(k * 2 + v, alpha);
+        eBoom.setX(k * 2 + v, Math.min(aBoom.getX(a), aBoom.getX(b)));
       }
     }
-    eColor.needsUpdate = eAlpha.needsUpdate = true;
+    eColor.needsUpdate = eAlpha.needsUpdate = eBoom.needsUpdate = true;
     request();
   }
 
@@ -523,6 +557,21 @@ export function createMap(
     }
     projDirty = true;
   }
+  function stepBlast(now: number) {
+    if (!blast) return;
+    const total = uniforms.uCalm.value ? CALM_TOTAL : BLAST_TOTAL;
+    const s = (now - blast.start) / 1000;
+    uniforms.uTime.value = Math.min(s, total);
+    if (s >= total) blast = null;
+  }
+  function setReplaceable(on: boolean) {
+    if (on === burnt) return;
+    burnt = on;
+    uniforms.uCalm.value = reducedMotion() ? 1 : 0;
+    uniforms.uTime.value = on ? 0 : NO_BLAST;
+    blast = on ? { start: performance.now() } : null;
+    paint();
+  }
   function setLayout(next: Arrangement) {
     if (next === arr) return;
     const sameLayout = next.id === arr.id;
@@ -665,9 +714,10 @@ export function createMap(
     if (destroyed || W < 1) return;
     stepTween(now);
     stepMorph(now);
+    stepBlast(now);
     const moving = controls.update();
     draw();
-    if (moving || tween || morph) request();
+    if (moving || tween || morph || blast) request();
   }
 
   function placeMark(e: HTMLElement, i: number) {
@@ -832,6 +882,7 @@ export function createMap(
       paint();
     },
     setLayout,
+    setReplaceable,
     focus(branch) {
       focused = branch;
       flyTo(branchView(branch));
@@ -866,8 +917,14 @@ export function createMap(
       canvas.remove();
       layer.remove();
     },
-    async benchmark(frames) {
+    async benchmark(frames, withBlast = false) {
       const times: number[] = [];
+      if (withBlast) {
+        // Step the effect by frame, not by the clock, so every stage of it is drawn.
+        setReplaceable(false);
+        setReplaceable(true);
+        blast = null;
+      }
       const probe = new Uint8Array(4);
       const start = readView();
       for (let f = 0; f < frames; f++) {
@@ -878,6 +935,7 @@ export function createMap(
           dist: start.dist * (1 - 0.3 * Math.sin((f / frames) * Math.PI)),
         });
         controls.update();
+        if (withBlast) uniforms.uTime.value = (f / frames) * BLAST_TOTAL;
         const t0 = performance.now();
         draw();
         // Reading one pixel back makes the browser wait until the GPU has drawn the frame.
@@ -887,6 +945,7 @@ export function createMap(
       }
       setView(start);
       controls.update();
+      if (withBlast) setReplaceable(false);
       request();
       const sorted = [...times].sort((a, b) => a - b);
       return {

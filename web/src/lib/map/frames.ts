@@ -393,6 +393,7 @@ function stars(p: Parts, host: Host, at3: Vec3[]) {
   geometry.setAttribute("aAlpha", alpha);
   geometry.setAttribute("aMark", new BufferAttribute(new Float32Array(n).fill(0.8), 1));
   geometry.setAttribute("aManage", new BufferAttribute(new Float32Array(n), 1));
+  geometry.setAttribute("aBoom", new BufferAttribute(new Float32Array(n).fill(1e6), 1));
   const points = new Points(
     geometry,
     new ShaderMaterial({

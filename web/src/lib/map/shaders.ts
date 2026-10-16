@@ -25,11 +25,19 @@ const SPIKE_REACH = 6.0;
 const SPIKE_GAIN = 1.0;
 /** How much of its brightness a point on the far side of the map keeps. */
 const FAR = 0.5;
+/** A role the ILO finds strongly replaceable burns out: seconds the blast runs, and how far it reaches (CSS px). */
+export const BLAST_S = 1.2;
+const BLAST_REACH = 56;
+/** The role a blast has left: its star keeps this much of its size and alpha, and a faint ring stays. */
+const REMNANT_SIZE = 0.5;
+const REMNANT_ALPHA = 0.35;
+/** A role the CV marks keeps its mark legible on the remnant. */
+const REMNANT_ALPHA_MARKED = 0.9;
 
 export const NODE_VERT = /* glsl */ `
-attribute vec3 aTo; attribute float aSize; attribute float aSizeFrom; attribute float aAlpha; attribute float aMark; attribute float aManage; attribute vec3 aColor; attribute vec3 aColorFrom; attribute vec3 aArms; attribute vec3 aArmsFrom;
-uniform float uMorph; uniform float uScale; uniform float uPR; uniform float uNear; uniform float uSpan; uniform float uMinPx;
-varying vec3 vColor; varying float vAlpha; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying vec3 vArms;
+attribute vec3 aTo; attribute float aSize; attribute float aSizeFrom; attribute float aAlpha; attribute float aMark; attribute float aManage; attribute vec3 aColor; attribute vec3 aColorFrom; attribute vec3 aArms; attribute vec3 aArmsFrom; attribute float aBoom;
+uniform float uMorph; uniform float uScale; uniform float uPR; uniform float uNear; uniform float uSpan; uniform float uMinPx; uniform float uTime; uniform float uCalm;
+varying vec3 vColor; varying float vAlpha; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying vec3 vArms; varying float vT; varying float vSeed;
 void main() {
   vec4 mv = modelViewMatrix * vec4(mix(position, aTo, uMorph), 1.0);
   float depth = clamp((-mv.z - uNear) / uSpan, 0.0, 1.0);
@@ -42,10 +50,20 @@ void main() {
   // however close the camera comes: a star does not swell into a blob.
   float cap = (aMark > 0.0 ? ${MAX_MARK_PX.toFixed(1)} : ${MAX_PX.toFixed(1)}) * uPR;
   float px = min(max(mix(aSizeFrom, aSize, uMorph) * uScale / -mv.z, uMinPx) * uPR * (1.0 + ${MANAGE_GROW.toFixed(2)} * vManage), cap);
+  // A role the ILO finds strongly replaceable: seconds since its blast began (negative before, or
+  // never), and what is left of its star afterwards.
+  float t = uTime - aBoom;
+  vT = t; vSeed = aBoom;
+  float rem = smoothstep(0.1, 0.9, t);
+  px *= mix(1.0, mix(${REMNANT_SIZE.toFixed(2)}, 1.0, step(0.01, aMark)), rem);
   // The sprite is wide enough for the tail, a held role's spikes and a three-armed star's longest arm.
   float spiked = step(0.95, aMark);
   float reach = px * 1.1 * (1.0 + ${ARM_REACH.toFixed(1)} * max(vArms.x, max(vArms.y, vArms.z)));
-  float size = min(max(max(px * ${SPRITE.toFixed(1)}, reach), spiked * px * ${(1.25 * SPIKE_REACH).toFixed(2)}), 600.0);
+  // ...and wide enough for the blast while it runs, then for the ring the remnant keeps.
+  float live = step(0.0, t);
+  float ember = max(px * 0.95, 7.0 * uPR) + 3.0 * uPR;
+  float blastR = max(ember, ${BLAST_REACH.toFixed(1)} * uPR * (1.0 - uCalm) * step(t, ${BLAST_S.toFixed(1)}));
+  float size = min(max(max(max(px * ${SPRITE.toFixed(1)}, reach), spiked * px * ${(1.25 * SPIKE_REACH).toFixed(2)}), live * 2.0 * blastR), 600.0);
   vPx = px; vSize = size;
   gl_PointSize = size;
   gl_Position = projectionMatrix * mv;
@@ -53,7 +71,35 @@ void main() {
 
 export const NODE_FRAG = /* glsl */ `
 precision highp float;
-varying vec3 vColor; varying float vAlpha; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying vec3 vArms;
+varying vec3 vColor; varying float vAlpha; varying float vMark; varying float vManage; varying float vPx; varying float vSize; varying vec3 vArms; varying float vT; varying float vSeed;
+uniform float uPR; uniform float uCalm;
+float hash(float n) { return fract(sin(n * 127.1 + 1.7) * 43758.5453); }
+// The blast of a replaceable role, in CSS pixels from its centre (p) and seconds (t) since it began:
+// a white-hot flash with a soft orange halo and a few streaks, a blue-white shockwave ring that
+// widens and turns orange as it fades, and sparks flung outwards. Added to what is behind.
+vec3 blast(vec2 p, float t, float seed) {
+  float d = length(p);
+  float fade = clamp(1.0 - t / ${BLAST_S.toFixed(1)}, 0.0, 1.0);
+  float flash = 0.9 * exp(-t * 7.0) * exp(-d / (4.0 + 12.0 * t));
+  float halo = 0.2 * exp(-t * 4.5) * exp(-d / (12.0 + 14.0 * t));
+  float rays = pow(abs(cos(atan(p.y, p.x) * 5.0 + seed * 20.0)), 20.0) * exp(-d / 20.0) * exp(-t * 7.0) * 0.8;
+  float radius = ${BLAST_REACH.toFixed(1)} * 0.85 * (1.0 - exp(-t * 3.0));
+  float width = 1.2 + 3.0 * fade;
+  float u = (d - radius) / width;
+  float ring = exp(-u * u) * pow(fade, 1.5) * 1.1;
+  float sparks = 0.0;
+  for (int k = 0; k < 14; k++) {
+    float fk = float(k);
+    float a = hash(fk * 7.3 + seed * 31.0) * 6.2832;
+    float r = ${BLAST_REACH.toFixed(1)} * 0.7 * (0.35 + 0.65 * hash(fk * 3.1 + seed * 17.0)) * (1.0 - exp(-t * 2.6));
+    vec2 dv = p - vec2(cos(a), sin(a)) * r;
+    sparks += exp(-dot(dv, dv) / 1.6) * fade;
+  }
+  vec3 hot = vec3(1.0, 0.97, 0.9);
+  vec3 orange = vec3(1.0, 0.5, 0.2);
+  vec3 blue = vec3(0.62, 0.8, 1.0);
+  return hot * flash + orange * (halo + rays * 0.8) + mix(blue, orange, 1.0 - fade) * ring + vec3(1.0, 0.6, 0.25) * sparks * 0.7;
+}
 // Where an arm points on the screen, and its colour: the triangle of the demands, physical lower
 // left, mental on top, emotional lower right, as on the disc's own triangle.
 const vec2 DIR0 = vec2(-0.8660, -0.5);
@@ -106,13 +152,30 @@ void main() {
   // Premultiplied, drawn over what is behind: where stars crowd, the nearer covers the farther
   // instead of the sum going white.
   float A = clamp(a, 0.0, 1.0) * mix(vAlpha, 1.0, 0.5 * vManage);
-  gl_FragColor = vec4(all * A, A);
+  // After its blast a replaceable role is a dim ember: its star faint and warm (a role the CV marks
+  // keeps its mark), with a thin ring round it.
+  float rem = smoothstep(0.1, 0.9, vT);
+  float marked = step(0.01, vMark);
+  all = mix(all, vec3(0.62, 0.42, 0.34), 0.65 * rem * (1.0 - marked));
+  A *= mix(1.0, mix(${REMNANT_ALPHA.toFixed(2)}, ${REMNANT_ALPHA_MARKED.toFixed(2)}, marked), rem);
+  vec3 glow = vec3(0.0);
+  if (vT >= 0.0) {
+    vec2 pc = vec2(q.x, -q.y) * vSize * 0.5 / uPR;
+    float d = length(pc);
+    float rr = max(vPx * 0.95 / uPR, 7.0);
+    glow = vec3(1.0, 0.5, 0.3) * (1.0 - smoothstep(0.0, 1.1, abs(d - rr))) * 0.5 * rem;
+    if (uCalm < 0.5 && vT < ${BLAST_S.toFixed(1)}) glow += blast(pc, vT, vSeed);
+    glow *= 1.0 - smoothstep(0.85, 1.0, length(q));
+  }
+  gl_FragColor = vec4(all * A + glow, A);
 }`;
 
 export const EDGE_VERT = /* glsl */ `
-attribute vec3 aTo; attribute float aAlpha; attribute vec3 aColor; uniform float uMorph; varying vec3 vColor; varying float vAlpha;
+attribute vec3 aTo; attribute float aAlpha; attribute vec3 aColor; attribute float aBoom; uniform float uMorph; uniform float uTime; varying vec3 vColor; varying float vAlpha;
 void main() {
-  vColor = aColor; vAlpha = aAlpha;
+  vColor = aColor;
+  // An edge that touches a replaceable role dims as that role burns out.
+  vAlpha = aAlpha * mix(1.0, 0.12, smoothstep(0.3, 1.2, uTime - aBoom));
   gl_Position = projectionMatrix * modelViewMatrix * vec4(mix(position, aTo, uMorph), 1.0);
 }`;
 

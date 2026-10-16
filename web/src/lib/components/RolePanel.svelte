@@ -2,6 +2,7 @@
   // The role picked on the map, in a card over it: the facts at a glance, and a link to the role's page.
   import type { RoleState } from "#lib/cv.ts";
   import type { MapRole } from "#lib/model.ts";
+  import { REPLACEABLE_NOTE } from "#lib/replaceable.svelte.ts";
   import { capitalise } from "#lib/text.ts";
   import RoleBadges from "./RoleBadges.svelte";
   import StateInfo from "./StateInfo.svelte";
@@ -12,9 +13,11 @@
     path: string;
     state?: RoleState | undefined;
     fromLabel?: string | undefined;
+    /** Strongly replaceable by generative AI, and the switch for it is on. */
+    replaceable?: boolean;
     onclose: () => void;
   }
-  let { role, path, state, fromLabel, onclose }: Props = $props();
+  let { role, path, state, fromLabel, replaceable = false, onclose }: Props = $props();
 </script>
 
 <article class="panel">
@@ -25,7 +28,17 @@
     </button>
   </header>
   <p class="path">{path}</p>
-  <p><RoleBadges level={role.level} management={role.management} curated={role.curated} /></p>
+  <p>
+    <RoleBadges
+      level={role.level}
+      management={role.management}
+      curated={role.curated}
+      {replaceable}
+    />
+  </p>
+  {#if replaceable}
+    <p class="note">{REPLACEABLE_NOTE}</p>
+  {/if}
   {#if state}
     <StateInfo {state} {fromLabel} brief />
   {/if}
@@ -62,6 +75,11 @@
   }
   .path {
     margin: 0.2rem 0 0.4rem;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+  .note {
+    margin: 0 0 0.4rem;
     font-size: 0.85rem;
     color: var(--ink-soft);
   }

@@ -10,7 +10,9 @@
   import { countStates } from "#lib/cv.ts";
   import { AXES, axisOf, DEFAULT_LAYOUT, LAYOUTS, layoutOf, type LayoutId } from "#lib/layouts.ts";
   import { DEMANDS } from "#lib/demand.ts";
+  import { isReplaceable } from "#lib/model.ts";
   import { MARK } from "#lib/palette.ts";
+  import { replaceable } from "#lib/replaceable.svelte.ts";
   import { capitalise } from "#lib/text.ts";
 
   let { data } = $props();
@@ -96,6 +98,7 @@
     const ag = map.branches.findIndex((b) => b.id === params.get("ag"));
     if (ag >= 0) branch = ag;
     layout = layoutOf(params.get("elrendezes"));
+    replaceable.read();
     axis = axisOf(params.get("tengely"));
     const szerep = params.get("szerep");
     if (szerep && indexOf.has(szerep)) selected = szerep;
@@ -104,7 +107,7 @@
   });
 
   function onready(tools: {
-    benchmark: (frames: number) => Promise<unknown>;
+    benchmark: (frames: number, blast?: boolean) => Promise<unknown>;
     where: (i: number) => unknown;
     showNodes: (on: boolean) => void;
   }) {
@@ -146,6 +149,7 @@
       {layout}
       {axis}
       focus={branch ?? resultBranch}
+      replaceable={replaceable.on}
       onselect={(id) => (selected = id)}
       {onready}
     />
@@ -158,6 +162,15 @@
             <option value={l.id}>{l.label}</option>
           {/each}
         </select>
+      </label>
+      <label class="switch">
+        <input
+          type="checkbox"
+          role="switch"
+          checked={replaceable.on}
+          onchange={(e) => replaceable.set(e.currentTarget.checked)}
+        />
+        <span>MI-kiváltás<small>erősen kiváltható szerepek kioltása</small></span>
       </label>
       {#if layout === "B"}
         <div class="axis" role="group" aria-label="A magasságot adó terhelés">
@@ -196,6 +209,7 @@
             role.sub
           ]?.label}"
           state={roleState}
+          replaceable={replaceable.on && isReplaceable(role)}
           fromLabel={fromRole ? capitalise(fromRole.label) : undefined}
           onclose={() => (selected = null)}
         />
@@ -249,6 +263,7 @@
   }
   .select,
   .axis,
+  .switch,
   .chip {
     margin: 0;
     padding: 0.3rem 0.6rem;
@@ -276,6 +291,56 @@
     display: grid;
     gap: 0.2rem;
     color: var(--stage-soft);
+  }
+  .switch {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-height: 2.75rem;
+    box-sizing: border-box;
+    color: var(--stage-ink);
+    cursor: pointer;
+  }
+  .switch input {
+    flex: none;
+    width: 2.6rem;
+    height: 1.4rem;
+    margin: 0;
+    appearance: none;
+    border: 1px solid var(--stage-soft);
+    border-radius: 1rem;
+    background: var(--stage);
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .switch input::after {
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.17rem;
+    border-radius: 50%;
+    background: var(--stage-soft);
+    transition: transform 0.2s;
+  }
+  .switch input:checked {
+    background: #7a3a1c;
+    border-color: #ff8a5c;
+  }
+  .switch input:checked::after {
+    background: #ffd9b8;
+    transform: translateX(1.2rem);
+  }
+  .switch small {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--stage-soft);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .switch input,
+    .switch input::after {
+      transition: none;
+    }
   }
   .axis div {
     display: flex;

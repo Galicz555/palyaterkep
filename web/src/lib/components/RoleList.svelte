@@ -4,7 +4,7 @@
   // screen reader reaches everything the map shows. Branches are closed `<details>`, so the tab
   // order is not three thousand links long.
   import type { RoleState } from "#lib/cv.ts";
-  import type { MapData, MapRole } from "#lib/model.ts";
+  import { isReplaceable, type MapData, type MapRole } from "#lib/model.ts";
   import { branchPainted } from "#lib/palette.ts";
   import { capitalise } from "#lib/text.ts";
   import RoleBadges from "./RoleBadges.svelte";
@@ -19,8 +19,10 @@
     picked: number | null;
     /** A search is on: every branch with a match opens. */
     searching: boolean;
+    /** Mark the roles the ILO finds strongly replaceable, the map's burnt-out ones. */
+    replaceable?: boolean;
   }
-  let { data, pass, states, picked, searching }: Props = $props();
+  let { data, pass, states, picked, searching, replaceable = false }: Props = $props();
 
   const KIND_TEXT = { held: "Betöltött", covered: "Lefedett", reachable: "Elérhető" } as const;
 
@@ -55,13 +57,19 @@
 
 {#snippet roleRow(role: MapRole, withPath: boolean)}
   {@const state = stateOf(role)}
-  <li class="role">
+  {@const burnt = replaceable && isReplaceable(role)}
+  <li class="role" class:burnt>
     <a class="name" href="/szerep/{role.id}">{capitalise(role.label)}</a>
     {#if state}
       <span class="tag tag-{state.kind}">{KIND_TEXT[state.kind]}</span>
     {/if}
     {#if withPath}<span class="path">{pathOf(role)}</span>{/if}
-    <RoleBadges level={role.level} management={role.management} curated={role.curated} />
+    <RoleBadges
+      level={role.level}
+      management={role.management}
+      curated={role.curated}
+      replaceable={burnt}
+    />
   </li>
 {/snippet}
 
@@ -135,6 +143,10 @@
     gap: 0.1rem 0.8rem;
     padding: 0.55rem 0.2rem;
     border-bottom: 1px solid var(--line);
+  }
+  /* The map's remnant: the row stays, fainter. */
+  .burnt .name {
+    opacity: 0.7;
   }
   .name {
     font-weight: 600;
